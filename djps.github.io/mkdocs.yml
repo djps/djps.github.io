@@ -1,0 +1,7 @@
+site_name: David Sinden
+site_url: https://djps.github.io
+theme: simplex
+pages:
+- Home: index.md
+- About: about.md
+theme: readthedocs
