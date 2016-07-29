@@ -1,8 +1,11 @@
 site_name: David Sinden
-site_url: https://djps.github.io
+title: blog
+description: "This is my blog."
+site_url: "https://djps.github.io"
+twitter_username: david_sinden
+github_username:  djps
 theme: simplex
 pages:
-- Group: 'group.md'
 - Research: 'research.md'
 - About Me: 'index.md'
 - Code: 'code.md'
