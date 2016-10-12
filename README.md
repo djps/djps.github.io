@@ -1,2 +1,2 @@
 # djps.github.io
-Personal Website content 
+Personal website content 
