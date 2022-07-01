@@ -1,0 +1,120 @@
+\documentclass{article}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,240mm},
+ left=24mm,
+ top=24mm,
+ }
+
+%\newtheorem{innercustomgeneric}{\customgenericname}
+%\providecommand{\customgenericname}{}
+%\newcommand{\newcustomtheorem}[2]{%
+%  \newenvironment{#1}[1]
+%  {%
+%   \renewcommand\customgenericname{#2}%
+%   \renewcommand\theinnercustomgeneric{##1}%
+%   \innercustomgeneric
+%  }
+%  {\endinnercustomgeneric}
+%}
+%
+%\newcustomtheorem{customthm}{Theorem}
+%\newcustomtheorem{customlemma}{Lemma}
+%\usepackage[most]{tcolorbox}
+%\usepackage{tikz, tikz-3dplot, tikz-cd, tkz-tab, tkz-euclide, pgf, pgfplots}
+%\usepackage{thmtools}
+%
+%\declaretheoremstyle[
+%notefont=\bfseries,
+%notebraces={}{},
+%bodyfont=\normalfont\itshape,
+%headformat=\NAME~\NUMBER:\NOTE
+%]{nopar}
+%\declaretheorem[style=nopar]{theorem}
+%
+%\declaretheoremstyle[
+%notefont=\bfseries, 
+%notebraces={}{},
+%bodyfont=\normalfont,
+%headformat=\NAME~\NUMBER:\NOTE
+%]{nopar}
+%\declaretheorem[style=nopar]{defi}
+%
+%
+%
+%
+%\newtheorem*{theorem-non}{Theorem}
+%\newtheorem*{definition-non}{Definition}
+%
+%\tcolorboxenvironment{definition-non}{boxrule=0pt,boxsep=0pt,colback={red!10},
+%left=8pt, right=8pt, enhanced jigsaw, borderline west={2pt}{0pt}{red}, sharp corners, before skip=10pt, after skip=10pt, breakable}
+%
+%\tcolorboxenvironment{theorem-non}{boxrule=0pt,boxsep=0pt,colback={blue!10},
+%left=8pt, right=8pt, enhanced jigsaw, borderline west={2pt}{0pt}{blue}, sharp corners, before skip=10pt, after skip=10pt, breakable}
+
+
+\begin{document}
+
+\noindent\textsf{\textbf{\textcolor{MidnightBlue}{Jacobs University Bremen \hfill Spring Semester 2022}}}\\
+
+\noindent{}\textsf{\textbf{\textcolor{MidnightBlue}{Dr. D. Sinden}}}\\
+
+\begin{center}
+{\Large \textbf{\textsf{\textcolor{MidnightBlue}{CA-MATH-804: Numerical Analysis}}}}
+\end{center}
+
+\begin{flushright}
+\textbf{\textsf{\textcolor{MidnightBlue}{Assignment Sheet 4. Due: May 20, 2022}}}
+\end{flushright}
+
+\begin{center}
+\textcolor{MidnightBlue}{\rule[0.5\baselineskip]{1.0cm}{0.4pt}}
+\end{center}
+
+\noindent\textsf{\textbf{Exercise 1 [5 Points]}}: Let $I_n\left( f\right) = \sum_{k=0}^{n} \alpha_k f\left( x_k \right)$ be a Lagrange quadrature formula on $n+1$ nodes. Compute the degree of exactness $r$ for the formula
+\begin{equation}
+I_4 \left( f\right) = \dfrac{1}{4} \left[ f\left(-1\right) + 3f\left( -\dfrac{1}{3} \right) + 3f\left( \dfrac{1}{3} \right) + f\left(1\right) \right]. \nonumber
+\end{equation}
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 2 [5 Points]}}: Let $I_w (f) = \int_0^1 w(x)f(x) \,\mathrm{d}x$ with $w(x) = \sqrt{x}$ and let $Q(f) = \alpha f\left( x_1 \right)$ be a quadrature formula approximating $I_w$. Find $\alpha$ and $x_1$ such that $Q$ has maximum degree of exactness $r$.
+
+\vspace{0.5\baselineskip}
+\textit{Hint}: The degree of exactness is maximum integer $r \ge 0$ for which $I_{w,n}(f) = I_w(f) $ for all $f \in \mathcal{P}_r$. Thus construct an arbitrary polynomial, $f$, for which the quadrature formula, given by $Q$ is equal to $I_w$.
+
+
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 3 [5 Points]}}: Prove that $G^k\left(x_j\right) = h G\left( x_j, x_k \right)$, where $G$ is the Green’s function for the problem
+\begin{equation}
+u^{\prime\prime} = f \quad \mbox{in} \quad \left(0,1\right), \\ \nonumber
+u\left(x\right) = 0 \quad \mbox{on} \quad \left\{0,1\right\},  \nonumber
+\end{equation}
+and $G^k$ its corresponding discrete counterpart.
+
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 4 [3+3 Points]}}: Consider the matrix $A_{\mathrm{fd}} = h^{-2}\mathrm{tridiag}(-1, 2, -1)$ which appears in the finite difference discretization of the second derivative.
+\begin{itemize}
+\item[\textsf{\textbf{a})}] Show that $A_{\mathrm{fd}}$ is symmetric and positive definite
+\item[\textsf{\textbf{b})}] Show that $A_{\mathrm{fd}}$ has ${a_{ij} \le 0}$ for ${i \ne j}$ and all the entries of its inverse are non-negative.
+\end{itemize}
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 5 [3+3 Points]}}: Consider an equidistant grid with nodes $x_i$ and grid-width $h$ and a real
+valued function $f$ with sufficient smoothness. Using Taylor series expansion show that
+\begin{itemize}
+\item[\textsf{\textbf{a})}] $\left| f^{\prime} \left( x_i \right) - D_{i}^{-} f \left( x_i \right) \right| = \dfrac{h}{2} \left| f^{\prime\prime} \left( \xi \right) \right|$ for some ${\xi \in \left(x_{i-1},x_i \right)}$,
+\item[\textsf{\textbf{b})}]  $\left| f^{\prime\prime} \left( x_i \right) - D_{i}^{\pm} f \left( x_i \right) \right| = \dfrac{h^2}{24} \left| f^{\prime\prime\prime\prime} \left( \xi_1 \right) + f^{\prime\prime\prime\prime} \left( \xi_2 \right)\right|$ for some ${\xi_1 \in \left(x_{i-1},x_i \right)}$, ${\xi_2 \in \left(x_i,x_{i+1} \right)}$.
+\end{itemize}
+\end{document}

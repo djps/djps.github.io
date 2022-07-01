@@ -1,0 +1,174 @@
+\documentclass{article}
+
+\usepackage{amsmath,amssymb, amsthm}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,240mm},
+ left=24mm,
+ top=24mm,
+ }
+
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{theoremFrame}{%
+    linecolor=black,
+    outerlinewidth=1pt,
+    %roundcorner=20pt,
+    innertopmargin=0.5\baselineskip,
+    innerbottommargin=0.5\baselineskip,
+    rightmargin=-10pt,
+    leftmargin=-10pt %, backgroundcolor=gray!50!white
+    }
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customlemma}{Lemma}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz, tikz-3dplot, tikz-cd, tkz-tab, tkz-euclide, pgf, pgfplots}
+\usepackage{thmtools}
+
+\declaretheoremstyle[
+notefont=\bfseries,
+notebraces={}{},
+bodyfont=\normalfont\itshape,
+headformat=\NAME~\NUMBER:\NOTE
+]{nopar}
+\declaretheorem[style=nopar]{theorem}
+
+\declaretheoremstyle[
+notefont=\bfseries, 
+notebraces={}{},
+bodyfont=\normalfont,
+headformat=\NAME~\NUMBER:\NOTE
+]{nopar}
+\declaretheorem[style=nopar]{defi}
+
+
+
+
+\newtheorem*{theorem-non}{Theorem}
+\newtheorem*{definition-non}{Definition}
+
+\tcolorboxenvironment{definition-non}{boxrule=0pt,boxsep=0pt,colback={red!10},
+left=8pt, right=8pt, enhanced jigsaw, borderline west={2pt}{0pt}{red}, sharp corners, before skip=10pt, after skip=10pt, breakable}
+
+\tcolorboxenvironment{theorem-non}{boxrule=0pt,boxsep=0pt,colback={blue!10},
+left=8pt, right=8pt, enhanced jigsaw, borderline west={2pt}{0pt}{blue}, sharp corners, before skip=10pt, after skip=10pt, breakable}
+
+\begin{document}
+
+\noindent\textsf{\textbf{\textcolor{MidnightBlue}{Jacobs University Bremen \hfill Spring Semester 2022}}}\\
+
+\noindent{}\textsf{\textbf{\textcolor{MidnightBlue}{Dr. D. Sinden}}}\\
+
+\begin{center}
+{\Large \textbf{\textsf{\textcolor{MidnightBlue}{CA-MATH-804: Numerical Analysis}}}}
+\end{center}
+
+\begin{flushright}
+\textbf{\textsf{\textcolor{MidnightBlue}{Assignment Sheet 3. Due: April 18, 2022}}}
+\end{flushright}
+
+\begin{center}
+\textcolor{MidnightBlue}{\rule[0.5\baselineskip]{1.0cm}{0.4pt}}
+\end{center}
+
+\noindent\textsf{\textbf{Exercise 1 [5 Points]}}: Consider the matrix
+\begin{equation}
+A = \left( \begin{array}{cc}
+1 & \gamma \\
+0 & 1
+\end{array}
+\right) . \nonumber
+\end{equation}
+\begin{itemize}
+\item[\textsf{\textbf{a})}] Show that for ${\gamma \le 0}$ we have ${K_{\infty}(A) = K_1(A) = \left(1+\gamma\right)^{2}}$. 
+\item[\textsf{\textbf{b})}] For the linear system $Ax = b$, where $b$ is such that $x=\left( 1 - \gamma, 1 \right)^T$ is the solution, find a bound for $\left\Vert \delta x \right\Vert_{\infty}\slash \left\Vert x \right\Vert_{\infty}$ in terms of $\left\Vert \delta b \right\Vert_{\infty}\slash \left\Vert b \right\Vert_{\infty}$ when $\delta b = \left( \delta_1, \delta_2 \right)^T$. What can you say about the condition of the problem?
+\end{itemize}
+\noindent
+
+\begin{definition-non}
+A $\boldsymbol{p}$\textbf{-norm} for a vector is defined by $\left\Vert x \right\Vert_p = \left( \sum\limits_{i=0}^{n} \left| x_i \right|^p \right)^{1\slash p}$. As $p \rightarrow\infty$ so the norm approaches the \textbf{infinity norm} $\left\Vert x \right\Vert_\infty = \max\limits_{0\le i \le n} \left| x_i \right|$ (also known as the maximum norm).
+
+For a matrix $A \in \mathbb{R}^{n \times m}$, then if a $p$-norm for vectors is used for both spaces $x \in \mathbb{R}^{n}$ and $Ax \in \mathbb{R}^{n \times m}$, then the corresponding \textbf{matrix norm} is
+\begin{equation}
+\| A \|_{p} = \sup \limits_{x\neq 0} \dfrac{ \| A x \|_p }{\| x \|_p}. \nonumber
+\end{equation}
+A \textbf{condition number} for a matrix can be defined for a given norm as $K_p \left(A\right) = \bigl\Vert A \bigr \Vert_p \bigl\Vert A^{-1} \bigr \Vert_p$.
+\end{definition-non}
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 2 [5 Points]}}: Check that the matrix $A = \mathrm{tridiag}_n \left( -1,\alpha, -1 \right)$ with $\alpha \in \mathbb{R}$ has eigenvalues
+given by
+\begin{equation}
+\lambda_i = \alpha - 2 \cos( i \theta), \quad i= 1,\ldots,n, \nonumber
+\end{equation}
+and the corresponding eigenvectors are
+\begin{equation}
+v_i = \left( \sin\left(i\theta\right), \sin\left(2i\theta\right), \ldots, \sin\left(ni\theta\right)\right)^T , \nonumber
+\end{equation}
+where $\theta = \dfrac{\pi}{n+1}$.
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 3 [5 Points]}}: Consider the linear system $Ax=b$, where
+\begin{equation}
+A = \left( \begin{array}{ccc}
+1 & 1 & 1 \\
+\alpha & 1 & 1 \\ 
+\beta & \gamma & 1\\
+\end{array}
+\right) \nonumber
+\end{equation}
+and $\alpha, \beta, \gamma \in \mathbb{R}$. Define an iterative method for ${k \ge 0}$ as
+\begin{equation}
+x^{\left(k+1\right)} = U^{-1}\left( b - L x^{\left(k\right)} \right), \nonumber
+\end{equation}
+where
+\begin{equation}
+U = \left( \begin{array}{ccc}
+1 & 1 & 1 \\
+0 & 1 & 1 \\ 
+0 & 0 & 1\\
+\end{array}
+\right) \quad \mbox{and} \quad L = \left( \begin{array}{ccc}
+0 & 0 & 0 \\
+\alpha & 0 & 0 \\ 
+\beta & \gamma & 0\\
+\end{array}
+\right). \nonumber
+\end{equation}
+\begin{itemize}
+\item[\textsf{\textbf{a})}] Find all values of $\alpha, \beta, \gamma$ such that the sequence of iterates $\left\{ x^{(k)} \right\}$ converges for every initial guess $x^{(0)}$ and every right hand side.
+\item[\textsf{\textbf{b})}] Give an example for $b$ leading to non-convergence in the case ${\alpha = \beta = \gamma = -1}$.
+\item[\textsf{\textbf{c})}] Is the solution always found with at most two iterations if ${\alpha = \gamma = 0}$?
+\end{itemize} 
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 4 [3 $\boldsymbol{\times}$ 2 Points]}}: Compute the following derivatives:
+\begin{itemize}
+\item[\textsf{\textbf{a})}] $\dfrac{\mathrm{d}}{\mathrm{d}s} \left\Vert x + sp \right\Vert_q^2$ for $x,p \in\mathbb{R}$ and $1\le q < \infty$,
+\item[\textsf{\textbf{b})}] $\nabla \left\Vert u(x) \right\Vert_2^2$ where $u : \mathbb{R}^n \rightarrow \mathbb{R}^n$ is sufficiently smooth,
+\item[\textsf{\textbf{c})}] $\Delta \left\Vert x \right\Vert_2^2 : = \mathrm{div} \left( \left\Vert x \right\Vert_2^2\right) := \nabla \cdot \left( \nabla \left\Vert x \right\Vert_2^2 \right) $ for $x \in \mathbb{R}^n$.
+\end{itemize} 
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 5 [5 Points]}}: Given $n + 1$ distinct points $x_0, \ldots, x_n \in \mathbb{R}$ consider the functions
+\begin{equation}
+l_i = \prod \limits_{\substack{j=0\\{}j\ne{}i}}^{n} \dfrac{x-x_j}{x_i - x_j}, \quad i = 0, \ldots n. \nonumber
+\end{equation}
+Show that these functions form a basis for the polynomials $\mathbb{P}_n$ of degree less than or equal $n$ over $\mathbb{R}$.
+\end{document}
