@@ -1,0 +1,1416 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Sinden" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.
+Well Posed Problems Definition:	Well-Posed Problems A problem is said to be well-posed if" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/example/part-1/principles/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.95d53890c5839471cef2375b6c449b9f.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://djps.github.io/courses/example/part-1/principles/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@david_sinden" />
+    <meta property="twitter:creator" content="@david_sinden" />
+  
+  <meta property="og:site_name" content="djps" />
+  <meta property="og:url" content="https://djps.github.io/courses/example/part-1/principles/" />
+  <meta property="og:title" content="Principles of Numerical Mathematics | djps" />
+  <meta property="og:description" content="Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.
+Well Posed Problems Definition:	Well-Posed Problems A problem is said to be well-posed if" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="article:published_time" content="2021-06-01T00:00:00&#43;00:00" />
+    
+    <meta property="article:modified_time" content="2021-06-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <style type="text/css">
+  .card h4 a {text-transform: none;}
+</style>
+
+
+  
+  <link rel="stylesheet" href="https://djps.github.io/css/vendor-bundle.min.css"><link rel="stylesheet" href="https://djps.github.io/css/custom.css">
+  
+  <link rel="stylesheet" href="https://djps.github.iocss/custom.css" >
+
+  <title>Principles of Numerical Mathematics | djps</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a133699051772cd9f6c70fd039d4a617" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Overview
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/example/">Overview</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/courses/example/part-1/principles/">Principles</a></li>
+
+
+
+  <li class=""><a href="/courses/example/part-1/iterative-methods/">Iterative Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/example/part-2/interpolation/">Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/example/part-2/integration/">Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/example/part-3/fdm/">Finite Difference Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/example/part-3/fem/">Finite Element Methods</a></li>
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/example/assignments/">Assignments</a>
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/example/notebooks/">Notebooks</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/example/notebooks/lagrangeinterpolation/">Lagrange Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/example/notebooks/integrals/">Numerical Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/example/notebooks/1dfem/">One-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/example/notebooks/2dfem/">Two-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/example/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#well-posed-problems">Well Posed Problems</a></li>
+    <li><a href="#condition-number">Condition Number</a></li>
+    <li><a href="#stability">Stability</a></li>
+    <li><a href="#matrix-analysis">Matrix Analysis</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Principles of Numerical Mathematics</h1>
+
+          <div class="article-style">
+            <p>Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.</p>
+<h2 id="well-posed-problems">Well Posed Problems</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Well-Posed Problems</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
+<ul>
+<li>a solution exists,</li>
+<li>the solution is unique,</li>
+<li>the solution&rsquo;s behaviour changes continuously with the initial conditions.</li>
+</ul>
+<p>A problem which does not have these properties is said to be <strong>ill-posed</strong>.</p>
+</div>
+        </div>
+    </div>
+<h2 id="condition-number">Condition Number</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Relative and Absolute Condition Numbers</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The <strong>relative condition number</strong> of a problem is given by:
+\begin{equation}
+K ( d ) = \sup\limits_{\delta d \in \mathcal{D}} \dfrac{ \left\Vert \delta x \right\Vert / \left\Vert x \right\Vert}{\left\Vert \delta d \right\Vert / \left\Vert d \right\Vert}
+\end{equation}
+if either $x=0$ or $d=0$, the <strong>absolute condition number</strong> is then
+\begin{equation}
+K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Vert \delta x \right\Vert }{\left\Vert \delta d \right\Vert}
+\end{equation}</div>
+        </div>
+    </div>
+<h2 id="stability">Stability</h2>
+<p>Consider a well-posed problem, a construct a sequence of approximate solutions via a sequence of approximate solutions and data, i.e. $F_n (x_n, d_n)=0$</p>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Consistency</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is <strong>consistent</strong> if
+\begin{equation}
+\lim\limits_{n\rightarrow\infty} F_n (x,d)  \rightarrow F(x,d).
+\end{equation}
+The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Asymptotic and Relative Condition Numbers</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
+\begin{equation}
+K_n \left( d_n \right) = \sup\limits_{\delta d_n \in \mathcal{D}_n }  \dfrac{ \left\Vert \delta x_n \right\Vert /  \left\Vert x_n \right\Vert }{\left\Vert \delta d_n \right\Vert / \left\Vert d_n \right\Vert}
+\end{equation}
+and</p>
+<p>$$K_{n,\mathrm{abs}} \left( d_n \right) = \sup \limits_{\delta d_n \in \mathcal{D}_n}  \dfrac{ \left\Vert \delta x_n \right\Vert }{ \left\Vert \delta d_n \right\Vert }$$</p>
+<p>then the <strong>asymptotic condition number</strong> is</p>
+<p>$$K^{\mathrm{num}} (d) = \lim \limits_{k\rightarrow \infty} \sup\limits_{n \le k} K_n \left( d_n \right).$$</p>
+<p>The <strong>relative condition number</strong> is:</p>
+<p>\begin{equation}
+K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \infty} \sup \limits_{n \le k} K_{n, \mathrm{abs}} \left( d_n \right).
+\end{equation}</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Convergence</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A method is <strong>convergent</strong> if and only if:
+\begin{equation}
+\forall \varepsilon &gt; 0, \quad \exists ,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
+\end{equation}</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Lax-Ritchmyer</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A numerical algorithm converges if and only if it is consistent and stable.</div>
+        </div>
+    </div>
+<h2 id="matrix-analysis">Matrix Analysis</h2>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Let $A \in \mathbb{R}^{n \times n}$, then</p>
+<ol>
+<li>
+<p>$\lim\limits_{k \rightarrow \infty}A^k =0 \Leftrightarrow \rho \left( A \right) &lt; 1$. Where $\rho\left(A \right)$ is the largest absolute value of the eigenvalues of $A$.  This is called the <em>spectral radius</em></p>
+</li>
+<li>
+<p>The geometric series, $\sum\limits_{k=0}^{\infty}A^k$ is convergent if and only if $\rho \left( A \right) &lt; 1$. Then in this case, the sum is given by
+\begin{equation}
+\sum\limits_{k=0}^{\infty}A^k = \left( I - A \right)^{-1}
+\end{equation}</p>
+</li>
+<li>
+<p>Thus, if $\rho \left( A \right) &lt; 1$, the matrix $I-A$ is invertible and
+\begin{equation}
+\dfrac{1}{1+\left\Vert A \right\Vert} \le \left\Vert\left( I - A \right)^{-1}\right\Vert \le \dfrac{1}{1-\left\Vert A \right\Vert}
+\end{equation}
+where $\left\Vert \cdot \right\Vert$ is an <em>induced matrix norm</em> such that $\left\Vert A \right\Vert &lt;1$.</p>
+</li>
+</ol>
+</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert &lt; 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+\begin{equation}
+\left( A + \delta A \right)\left( x + \delta x \right) = b + \delta b
+\end{equation}
+for a $\delta b \in \mathbb{R}^n$, then
+\begin{equation}
+\left( A + \delta A \right)\left( x + \delta x \right) \le \dfrac{K(A)}{1- K(A) \left\Vert \delta A \right\Vert_2 / \left\Vert A \right\Vert_2} \left(\dfrac{\left\Vert \delta b \right\Vert_2}{\left\Vert b \right\Vert_2} + \dfrac{\left\Vert \delta A \right\Vert_2}{\left\Vert A \right\Vert_2} \right)
+\end{equation}</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+\begin{equation}
+A \left( x + \delta x \right) = b + \delta b
+\end{equation}
+then
+\begin{equation}
+\dfrac{1}{K(A)} \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert} \le \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le K(A) \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert}
+\end{equation}</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) &lt;1$, then the following holds
+\begin{equation}
+\dfrac{\left\Vert x+ \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{1+\gamma K(A)}{1-\gamma K(A)}
+\end{equation}
+and
+\begin{equation}
+\dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{2\gamma K(A)}{1-\gamma K(A)}
+\end{equation}</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 &lt; 1$ and
+\begin{equation}
+\bigl\Vert A^{-1} \bigr\Vert \le \dfrac{\left\Vert C \right\Vert}{1 - \left\Vert R \right\Vert}
+\end{equation}
+and
+\begin{equation}
+\dfrac{\left\Vert R \right\Vert}{\left\Vert A \right\Vert} \le {\left\Vert {C - A^{-1}} \right\Vert} \le \dfrac{\left\Vert C \right\Vert \left\Vert R \right\Vert }{1 - \left\Vert R \right\Vert}
+\end{equation}</p>
+<p>In the frame of backwards a priori analysis we can interpret $C$ as being the inverse of $A + \delta A$ (for a suitable unknown $\delta A$). We are thus assuming that
+$C(A + \delta A) = I$. This yields
+\begin{equation}
+\delta A = C^{−1} − A = −(AC − I)C^{−1} = −R C^{−1}
+\end{equation}
+and, as a consequence, if $\left\Vert R \right\Vert &lt;1$ it turns out that
+\begin{equation}
+\begin{aligned}
+\left\Vert \delta A \right\Vert &amp; \le  \left\Vert  R  \right\Vert  \left\Vert C^{-1} \right\Vert \newline
+&amp; \le \dfrac{ \left\Vert R \right\Vert \left\Vert A \right\Vert }{1 - \left\Vert R \right\Vert}
+\end{aligned}
+\end{equation}</p>
+</div>
+        </div>
+    </div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/example/part-1/iterative-methods/" rel="prev">Iterative Methods</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 1, 2021</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 David Sinden. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
