@@ -1,0 +1,1463 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Sinden" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Finite element methods approximate the solution on a small element. Distributions Denote by $\mathrm{H}^s(a, b)$, for $s \geq 1$, the space of the functions $f \in C^{s-1}(a, b)$ such that $f^{(s-1)}$ is continuous and piecewise differentiable, so that $f^{(s)}$ exists unless for a finite number of points and belongs to $\mathrm{L}^2(a, b)$." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalanalysis22/part-3/fem/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.95d53890c5839471cef2375b6c449b9f.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://djps.github.io/courses/numericalanalysis22/part-3/fem/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@david_sinden" />
+    <meta property="twitter:creator" content="@david_sinden" />
+  
+  <meta property="og:site_name" content="djps" />
+  <meta property="og:url" content="https://djps.github.io/courses/numericalanalysis22/part-3/fem/" />
+  <meta property="og:title" content="Finite Element Methods | djps" />
+  <meta property="og:description" content="Finite element methods approximate the solution on a small element. Distributions Denote by $\mathrm{H}^s(a, b)$, for $s \geq 1$, the space of the functions $f \in C^{s-1}(a, b)$ such that $f^{(s-1)}$ is continuous and piecewise differentiable, so that $f^{(s)}$ exists unless for a finite number of points and belongs to $\mathrm{L}^2(a, b)$." /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="article:published_time" content="2021-06-01T00:00:00&#43;00:00" />
+    
+    <meta property="article:modified_time" content="2021-06-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <style type="text/css">
+  .card h4 a {text-transform: none;}
+</style>
+
+
+  
+  <link rel="stylesheet" href="https://djps.github.io/css/vendor-bundle.min.css"><link rel="stylesheet" href="https://djps.github.io/css/custom.css">
+  
+  <link rel="stylesheet" href="https://djps.github.iocss/custom.css" >
+
+  <title>Finite Element Methods | djps</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="fa0a9284762b38c15fcfaf2e23a1211a" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#blog"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/courses/example/"><span>Numerical Analysis</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Overview
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/">Overview</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/principles/">Principles</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/iterative-methods/">Iterative Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/interpolation/">Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/integration/">Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-3/fdm/">Finite Difference Methods</a></li>
+
+
+
+  <li class="active"><a href="/courses/numericalanalysis22/part-3/fem/">Finite Element Methods</a></li>
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/assignments/">Assignments</a>
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/notebooks/">Notebooks</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/">Lagrange Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/integrals/">Numerical Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/1dfem/">One-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/2dfem/">Two-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#distributions">Distributions</a></li>
+    <li><a href="#galerkin-method">Galerkin Method</a></li>
+    <li><a href="#finite-element-method">Finite Element Method</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Finite Element Methods</h1>
+
+          <div class="article-style">
+            <div class="details quotemonition MyQuote open">
+        <div class="details-summary quotemonition-title">
+            <i class="icon fas fa-quote-left fa-fw" aria-hidden="true"></i>
+			
+        </div>
+        <div class="details-content">
+            <div class="quotemonition-content"><em>Finite element methods approximate the solution on a small element.</em></div>
+        </div>
+
+        <div class="details-summary quotemonition-title" align="right">
+            <i class="icon fas fa-quote-right fa-fw" aria-hidden="true"></i>
+			
+        </div>
+
+    </div>
+<h2 id="distributions">Distributions</h2>
+<p>Denote by $\mathrm{H}^s(a, b)$, for $s \geq 1$, the space of the functions $f \in C^{s-1}(a, b)$ such that $f^{(s-1)}$ is continuous and piecewise differentiable, so that $f^{(s)}$ exists unless for a finite number of points and belongs to $\mathrm{L}^2(a, b)$. The space $\mathrm{H}^s(a, b)$ is known as the Sobolev function space of order $s$ and is endowed with the norm $\left\Vert \cdot \right\Vert_{H^s(a,b)}$ defined as
+\begin{equation}
+\left\Vert f \right\Vert_s = \left( \sum_{k=0}^s \left\Vert f^{\left(k\right)} \right\Vert_{\mathrm{L}^2\left(a,b\right)}^2 \right)^{1/2}.
+\end{equation}</p>
+<p>Let
+\begin{align}
+C_0^\infty &amp; = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \mbox{such that} \quad \varphi(x)=0 \quad \mbox{for} \quad 0 \leq x &lt; a \quad \mbox{or} \quad b &lt; x \leq 1 \rbrace .
+\end{align}</p>
+<p>Then for a function $v \in \mathrm{L}^2(0,1)$ we say $v^\prime$ is the <strong>weak derivative</strong> (or <strong>distributional derivative</strong>) if
+\begin{equation}
+\int \limits_0^1 v^\prime \varphi \, \mathrm{d}x = - \int \limits_0^1 v \varphi^\prime \, \mathrm{d}x \quad \forall \, \varphi \in C^\infty_0 \left(0,1\right).
+\end{equation}</p>
+<p>Of interest is
+\begin{equation}
+H^1 (0, 1) = \lbrace v \in \mathrm{L}^2(0, 1) \, : \, v^\prime \in \mathrm{L}^2(0, 1) \rbrace
+\end{equation}</p>
+<p>where $v^\prime$ is the distributional derivative of $v$, and
+\begin{equation}
+H^1_0 (0, 1) = \lbrace v \in \mathrm{L}^2(0, 1) \, : \, v^\prime \in \mathrm{L}^2(0, 1), \, v(0) = v(1) = 0 \rbrace
+\end{equation}</p>
+<p>On $H^1$ there is the semi-norm:</p>
+
+$$
+\left| v \right|_{\mathrm{H}^1(0,1)} = \left( \int_0^1 \left\| v^\prime \left( x \right) \right\|^2 \mathrm{d}x \right)^{1/2} = \left\Vert v^\prime \right\Vert_{\mathrm{L}^2(0,1)}.
+$$
+
+<p>To see that it is a semi-norm and not a norm, consider $v$ a constant, so ${v^{\prime}=0}$ thus ${\left| v \right|_{\mathrm{H}^1(0,1)} =0}$ for ${v \neq 0}$ and thus by definition is a semi-norm, rather than a norm. Now consider the integral on functions in $H_0^1$, it is the case that if the integral is zero so the function is constant, but as it must be zero on the boundaries, so the function is zero and hence a norm.</p>
+<h2 id="galerkin-method">Galerkin Method</h2>
+<p>Consider the elementary problem:</p>
+<p>\begin{equation}
+-\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \mbox{on} \quad (0,1) \quad \mbox{with} \quad u(0) = u(1) = 0
+\end{equation}</p>
+<p>where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 &gt;0$ for all $x \in  \left[ 0, 1 \right]$.</p>
+<p>Next, on $\mathrm{L}^2(0,1)$, define the <strong>scalar product</strong>
+\begin{equation}
+\left( f, v \right) = \int \limits_0^1 f v \mathrm{d}x
+\end{equation}</p>
+<p>and a <strong>bilinear form</strong> $a : \left( \cdot, \cdot \right)$ which maps $H_0^1 \times H^1_0 \rightarrow \mathbb{R}$
+\begin{equation}
+a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime v + \gamma u v \right) \mathrm{d}x
+\end{equation}</p>
+<p>and consider the <strong>weak form</strong>
+\begin{equation}
+\mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
+\end{equation}</p>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>The following hold:</p>
+<ol>
+<li>Let $u$ be a $C^2$ be a solution of the elementary problem, then ${u \in H^1_0}$ also solves the weak form</li>
+<li>Let $u \in H^1_0$ be a solution of the weak problem. If and only if ${u \in C^2\left( \left[0,1 \right] \right)}$ then $u$ also solves the elementary problem.</li>
+</ol>
+</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Fundamental Theorem of the Calculus of Variations</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Suppose that $f$ is integrable on $(0,1)$ and
+\begin{equation}
+\int_0^1 \phi f \, \mathrm{d}x = 0 \quad \forall \, \phi \in C^\infty_0\left(\left[ 0,1 \right]\right)
+\end{equation}</p>
+<p>then $f=0$.</p>
+</div>
+        </div>
+    </div>
+<p>Approximate $H_0^1$ by $V_h$. The <strong>discrete weak problem</strong> is then:
+\begin{equation}
+\mbox{Find a} \quad u_h \in V_h \quad \mbox{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
+\end{equation}</p>
+<p>Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\mbox{dim}V_h$, so that
+\begin{equation}
+u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
+\end{equation}</p>
+<p>So the problem can be written as: Find ${\left(u_1, \ldots u_N \right) \in \mathbb{R}^N}$ such that
+\begin{equation}
+\sum\limits_{j=1}^N u_j a\left( \varphi_j, \varphi_i \right) = \left( f, \varphi_i \right) \quad i=1, \ldots, N.
+\end{equation}</p>
+<p>Denote ${a_{ij}=a\left( \varphi_j, \varphi_i \right)}$ as the elements of the matrix $A$, let ${u=\left(u_1, \ldots, u_N\right)}$ and ${f=\left(f_1, \ldots, f_N\right)}$ be vectors where each entry is given by ${f_i = f \varphi_i}$, so that the problem is equivalent to solving the linear problem ${Au=f}$</p>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Poincaré-Friedrich Inequality</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+\begin{equation}
+\bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
+\end{equation}</p>
+<p>For functions which are zero on the boundary a simplified form is
+\begin{equation}
+\int_{a}^b \left| v(x) \right|^2 \mathrm{d}x \leq C_p \int_a^b \bigl| v^\prime \left(x\right) \bigr|^2 \mathrm{d}x \quad \forall \, v \in V_0
+\end{equation}</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Let</p>
+<p>\begin{align}
+C &amp; = \dfrac{1}{\alpha_0} \Bigl( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \bigl\Vert \gamma \bigr\Vert_\infty \Bigr)
+\end{align}
+then</p>
+<p>$$
+\left| u - u_h \right|^{}_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
+$$</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Coercivity and Continuity of Bilinear Forms</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>A bilinear form $a\left(\cdot,\cdot\right)$ on $V$, with a norm $\bigl\Vert \cdot \bigr\Vert_V$, then a bilinear form is <strong>coercive</strong> if there exists an ${\alpha_0 &gt; 0}$ such that
+\begin{equation}
+a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
+\end{equation}</p>
+<p>A bilinear form is said to be <strong>continuous</strong> if there exists an ${M &gt; 0}$ such that
+\begin{equation}
+\left| a\left(u, v\right) \right| \leq M \bigl\Vert u \bigr\Vert_V  \bigl\Vert u \bigr\Vert_V \quad  \forall \, u, v \in V.
+\end{equation}</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Lax-Milgram</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If coercive and continuous, and the right hand side $(f, v)$ satisfies the following inequality
+\begin{equation}
+\left| \left( f, v \right) \right| \leq K \bigl\Vert v\bigr\Vert_V \quad \forall \, v \in V.
+\end{equation}</p>
+<p>Then the weak and discrete weak form problems admit unique solutions which satisfy
+\begin{equation}
+\bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \mbox{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
+\end{equation}</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Lemma open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Lemma:	<em>Céa</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">It can be shown that
+\begin{equation}
+\left\Vert u - u_h \right\Vert_V \le \dfrac{M}{\alpha_0} \min_{\substack{w_h \in V_h}} \left\Vert u - w_h \right\Vert_V . \tag{3}\label{eq:cea}
+\end{equation}</div>
+        </div>
+    </div>
+<h2 id="finite-element-method">Finite Element Method</h2>
+<p>The finite element method (FEM) is a special technique for constructing a subspace $V_h$ based on piecewise polynomial interpolation.</p>
+<p>Introduce a partition
+ $\mathcal{T}_h$ 
+of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width $h_j = x_{j+1} − x_j$, $j = 0, \ldots, n − 1$, with $0 = x_0 &lt; x_1 &lt; \ldots &lt; x_{n−1} &lt; x_n = 1$ and let  $h=\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$  .</p>
+<p>Since functions in  $\mathrm{H}_{0}^{1}(0,1)$  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in <a href="/courses/NumericalAnalysis22/part-2/interpolation#piecewise-lagrange-interpolation">$(2)$</a>, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.</p>
+<p>Considering the cases $k=1$ and $k=2$, set
+\begin{equation}
+V_{h} = X_{h}^{k, 0}=\lbrace v_{h} \in X_{h}^{k} \, : \, v_{h}(0) = v_{h}(1) = 0 \rbrace .
+\end{equation}</p>
+<p>The dimension $N$ of the finite element space $V_{h}$ is equal to ${n k -1}$. In the following the two cases $k=1$ and $k=2$ will be examined.</p>
+<p>To assess the accuracy of the Galerkin FEM, first notice that, due to Céa&rsquo;s lemma</p>
+
+\begin{equation}
+\min_{w_{h} \in V_{h}}\left\|u-w_{h}\right\|\_{\mathrm{H}_{0}^{1}(0,1)} \leq\left\|u-\Pi_{h}^{k} u\right\|_{\mathrm{H}_{0}^{1}(0,1)} \tag{4}\label{eq:cea_estimate}
+\end{equation}
+
+<p>where $\Pi_{h}^{k} u$ is the interpolant of the exact solution $u \in V$ from the weak form of the governing equation. From inequality \eqref{eq:cea_estimate} estimating the Galerkin approximation error  $\left\| u - u_{h} \right\|_{\mathrm{H}_{0}^{1}(0,1)}$  is then equivalent to estimating the interpolation error  $\left\| u -\Pi_{h}^{k} u \right\|_{H_{0}^{1}(0,1)}$  . When ${k=1}$, using \eqref{eq:cea} and the bounds on the interpolation errors <a href="/courses/NumericalAnalysis22/part-2/interpolation#lagrange-interpolation">$(1)$</a></p>
+
+$$
+\left\| u - u_{h} \right\|^{}\_{\mathrm{H}_{0}^{1}(0,1)} \leq \frac{M}{\alpha_{0}} C h \|u\|_{\mathrm{H}^{2}(0,1)}
+$$
+
+<p>provided that $u \in \mathrm{H}^{2}(0,1)$. This estimate can be extended to the case ${k&gt;1}$ as stated in the following convergence result.</p>
+
+\begin{equation}
+\left\| u - u_{h} \right\|_{ \mathrm{H}_{0}^{1}(0,1) }
+\end{equation}
+
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Lax-Milgram</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Let $u \in H_0^1\left( 0,1 \right)$ be the exact solution of
+\begin{equation}
+a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right)
+\end{equation}</p>
+<p>and let $u_h \in V_h$ be it finite element approximation using a continuous piecewise polynomial of degree less than or equal to $k$, where $k \ge 1$. Furthermore, assume that $u \in \mathrm{H}^{s}(0,1)$ for some $s \geq 2$. Then the error is bounded as</p>
+<p>\begin{equation}
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{H}_{0}^{1}(0,1)} \le \dfrac{M}{\alpha_0} C h^l \bigl\Vert u \bigr\Vert_{H^{l+1}(0,1)}
+\end{equation}</p>
+<p>where $l = \min\left( k, s-1 \right)$. Additionally, under the same assumptions it is possible to show that</p>
+<p>\begin{equation}
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{L}^{2}(0,1)} \leq C h^{l+1} \bigl\Vert u \bigr\Vert_{\mathrm{H}^{l+1}(0,1)} .
+\end{equation}</p>
+<p>The error estimate shows that the Galerkin method is convergent, that is the approximation error tends to zero as $h \rightarrow 0$. The order of convergence is $k$.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw" aria-hidden="true"></i>
+			example:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>An <code>.ipynb</code> notebook, with an example of the finite element method in one-dimension can be viewed <a href="/courses/NumericalAnalysis22/notebooks/1dfem">here</a>, or can be downloaded from <a href="/ipyth/1dfem.ipynb">here</a>.</p>
+<p>An  example of the finite element method in two-dimensions can be viewed <a href="/courses/NumericalAnalysis22/notebooks/2dfem">here</a>, or can be downloaded from <a href="/ipyth/2dfem.ipynb">here</a>.</p>
+</div>
+        </div>
+    </div>
+<!--
+In the space $H_0^1$ derivatives are used instead of functions $v \in L^2\left( 0,1 \right)$.
+
+Let
+
+\begin{equation}
+C_0^\infty = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \mbox{such that} \quad \varphi ( x ) = 0 \quad \mbox{for} \quad 0 \leq x < a \quad \mbox{or} \quad b < x \leq 1 \rbrace
+\end{equation}
+
+Then for a function $v \in L^2 (0,1)$ we say $v^\prime$ is the _weak derivative_ (or distributional derivative) if
+
+\begin{equation}
+\int \limits_0^1 v^\prime \varphi \, \mathrm{d}x = - \int \limits_0^1 v \varphi^\prime \, \mathrm{d}x \quad \forall \, \varphi \in C^\infty_0 \left(0,1\right).
+\end{equation}
+
+Approximate $H_0^1$ by $V_h$. The **discrete weak problem** is then:
+
+Find a $u_h \in V_h$ such that
+\begin{equation}
+a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h .
+\end{equation}
+
+Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\mbox{dim}V_h$, so that
+\begin{equation}
+u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
+\end{equation}
+So the problem can be written as:
+
+Find ${\left(u_1, \ldots u_N \right) \in \mathbb{R}^N}$ such that
+\begin{equation}
+\sum \limits_{j=1}^N u_j a\left( \varphi_j, \varphi_i \right) = \left( f, \varphi_i \right) \quad i=1, \ldots, N.
+\end{equation}
+Denote ${a_{ij}=a\left( \varphi_j, \varphi_i \right)}$ as elements of the matrix $A$, ${u=\left(u_1, \ldots, u_N\right)}$ and ${f = \left( f_1, \ldots, f_N \right)}$ where each entry in the vector is given by ${f_i = f \varphi_i}$, so that the problem is equivalent to solving the linear problem ${Au=f}$
+
+
+!!! note "Theorem:"
+
+    Let $u \in H_0^1\left( 0,1 \right)$ be the exact solution of
+
+    \begin{equation}
+    a\left( u, v\right) = f\left(v\right) \quad \forall \, v \in H_0^1 \left(0, 1 \right)
+    \end{equation}
+
+    and let $u_h \in V_h$ be it finite element approximation using a continuous piecewise polynomial of degree less than or equal to $k$, where $k \ge 1$.
+
+    Furthermore, assume that $u \in H^{s}(0,1)$ for some $s \geq 2$. Then the error is bounded as
+
+    \begin{equation}
+    \left\| u - u_{h}\right\|_{H_{0}^{1}(0,1)} \leq \frac{M}{\alpha_{0}} C h^{l}\|u\|_{H^{l+1}(0,1)}
+    \end{equation}
+
+    where $l = \min\left( k, s-1 \right)$. Additionally, under the same assumptions it is possible to show that
+
+    \begin{equation}
+    \left\| u - u_{h} \right\|_{L^{2}(0,1)} \leq C h^{l+1} \|u \|_{H^{l+1}(0,1)} .
+    \end{equation}
+
+
+The error estimate shows that the Galerkin method is _convergent_, that is the approximation error tends to zero as $h \rightarrow 0$. Additionally, the order of convergence is $k$.
+-->
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/numericalanalysis22/part-3/fdm/" rel="next">Finite Difference Methods</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 1, 2021</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 David Sinden. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

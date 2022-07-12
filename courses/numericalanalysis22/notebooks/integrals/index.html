@@ -1,0 +1,1255 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Sinden" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Examples of numerical integration" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.95d53890c5839471cef2375b6c449b9f.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@david_sinden" />
+    <meta property="twitter:creator" content="@david_sinden" />
+  
+  <meta property="og:site_name" content="djps" />
+  <meta property="og:url" content="https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/" />
+  <meta property="og:title" content="Numerical Integration | djps" />
+  <meta property="og:description" content="Examples of numerical integration" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-06-17T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-06-17T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <style type="text/css">
+  .card h4 a {text-transform: none;}
+</style>
+
+
+  
+  <link rel="stylesheet" href="https://djps.github.io/css/vendor-bundle.min.css"><link rel="stylesheet" href="https://djps.github.io/css/custom.css">
+  
+  <link rel="stylesheet" href="https://djps.github.iocss/custom.css" >
+
+  <title>Numerical Integration | djps</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2dddb03394cda67a0744f4950d4a55f2" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_0x70_resize_lanczos_3.png" alt="djps"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#blog"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/courses/example/"><span>Numerical Analysis</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Notebooks
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/">Overview</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/principles/">Principles</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/iterative-methods/">Iterative Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/interpolation/">Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/integration/">Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-3/fdm/">Finite Difference Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-3/fem/">Finite Element Methods</a></li>
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/assignments/">Assignments</a>
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/notebooks/">Notebooks</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/">Lagrange Interpolation</a></li>
+
+
+
+  <li class="active"><a href="/courses/numericalanalysis22/notebooks/integrals/">Numerical Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/1dfem/">One-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/2dfem/">Two-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Numerical Integration</h1>
+
+          <div class="article-style">
+            <p>Consider the integration of the function $f(x) = \exp \left( x^2 \right)$ between $[0,1]$.</p>
+<p>It can easily be shown that</p>
+<p>\begin{align}
+\int_0^1 e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}. \nonumber
+\end{align}</p>
+<p>First import the tools needed</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">scipy.integrate</span> <span class="k">as</span> <span class="nn">spi</span>
+</span></span></code></pre></div><style>
+.output {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+</style>
+<p>Next define the range to plot the function over and a number of point to evaluate the function.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x0</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span>
+</span></span><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="mf">1.5</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">100</span>
+</span></span></code></pre></div><p>So we have a range and a function.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><p>Let $m$ be vector whose elements are the number of evaluations of the integral.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">16</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+</span></span></code></pre></div><p>Compute and plot the successive approximations for the integral, as well as keeping track of the errors.</p>
+<p>We will use the function <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.trapezoid.html#scipy.integrate.trapezoid" target="_blank" rel="noopener">trapezoid</a> to compute the integral according to</p>
+<p>\begin{align}
+\int_a^b f(x) ,\mathrm{d}x \approx \sum\limits_{k=1}^{M} \dfrac{f\left( x_{k-1}\right) + f\left(x_{k}\right)}{2} \Delta x_{k} \quad \mbox{where} \quad x_0 = a \quad \mbox{and} \quad x_M = b. \nonumber
+\end{align}</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.99</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,))</span>
+</span></span><span class="line"><span class="cl"><span class="n">absolute_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,))</span>
+</span></span><span class="line"><span class="cl"><span class="n">relative_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,))</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">nsteps</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dx</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">nsteps</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_approx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">T</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">spi</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_approx</span><span class="p">),</span> <span class="n">x_approx</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nsteps</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x_start</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">dx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x_stop</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">dx</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y_start</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x_start</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y_stop</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x_stop</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">fill_between</span><span class="p">([</span><span class="n">x_start</span><span class="p">,</span><span class="n">x_stop</span><span class="p">],</span> <span class="p">[</span><span class="n">y_start</span><span class="p">,</span><span class="n">y_stop</span><span class="p">],</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="n">x_start</span><span class="p">,</span><span class="n">x_stop</span><span class="p">],</span> <span class="p">[</span><span class="n">y_start</span><span class="p">,</span><span class="n">y_stop</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Trapezoid Rule, $N$ = </span><span class="si">{}</span><span class="s1">, Approx: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">T</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">absolute_error</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span>  <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span> <span class="o">-</span> <span class="n">T</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">relative_error</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span> <span class="o">-</span> <span class="n">T</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span> <span class="p">)</span> <span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/integrals_11_0.png" alt="png" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Tabulate the data and display it</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">m</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">relative_error</span><span class="p">,</span> <span class="n">absolute_error</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;Order&#34;</span><span class="p">,</span> <span class="s2">&#34;Relative Error&#34;</span><span class="p">,</span> <span class="s2">&#34;Absolute Error&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">Order</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Order</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&#34;Results for $e^{-x^2}$&#34;</span><span class="p">))</span>
+</span></span></code></pre></div><style type="text/css">
+</style>
+<table id="T_7aea3_">
+  <caption>Results for $e^{-x^2}$</caption>
+  <thead>
+    <tr>
+      <th class="col_heading level0 col0" >Order</th>
+      <th class="col_heading level0 col1" >Relative Error</th>
+      <th class="col_heading level0 col2" >Absolute Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_7aea3_row0_col0" class="data row0 col0" >4</td>
+      <td id="T_7aea3_row0_col1" class="data row0 col1" >0.165015</td>
+      <td id="T_7aea3_row0_col2" class="data row0 col2" >0.146240</td>
+    </tr>
+    <tr>
+      <td id="T_7aea3_row1_col0" class="data row1 col0" >8</td>
+      <td id="T_7aea3_row1_col1" class="data row1 col1" >0.158712</td>
+      <td id="T_7aea3_row1_col2" class="data row1 col2" >0.140655</td>
+    </tr>
+    <tr>
+      <td id="T_7aea3_row2_col0" class="data row2 col0" >16</td>
+      <td id="T_7aea3_row2_col1" class="data row2 col1" >0.157607</td>
+      <td id="T_7aea3_row2_col2" class="data row2 col2" >0.139675</td>
+    </tr>
+  </tbody>
+</table>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/" rel="next">Lagrange Interpolation</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/numericalanalysis22/notebooks/1dfem/" rel="prev">One-Dimensional Finite Element Simulations</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 17, 2022</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 David Sinden. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
