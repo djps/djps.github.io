@@ -606,7 +606,7 @@
             </a>
             <div class="dropdown-menu">
               
-                <a class="dropdown-item" href="/courses/NumericalAnalysis22/"><span>Numerical Analysis</span></a>
+                <a class="dropdown-item" href="/courses/numericalanalysis22/"><span>Numerical Analysis</span></a>
               
             </div>
           </li>
@@ -888,11 +888,11 @@
 \end{equation}</p>
 <p>Therefore, if for some $n$,  $\left\| f - f_{n}\right\|_{\infty} < \varepsilon$ , then $\left|E_{n}(f)\right| \leq \varepsilon(b-a)$.</p>
 <p>The approximation of the function $f_{n}$ must be easily integrable, which is the case if, for example, $f_{n} \in \mathbb{P}_{n}$.</p>
-<p>In this respect, a natural approach consists of using $f_{n}=\Pi_{n} f$, the interpolating <a href="/courses/example/part-2/interpolation/#lagrange-interpolation">Lagrange polynomial</a> of $f$ over a set of $n+1$ distinct nodes $\lbrace x_{i} \rbrace$, with $i=0, \ldots, n$. It follows that the approximation to the integral is
+<p>In this respect, a natural approach consists of using $f_{n}=\Pi_{n} f$, the interpolating <a href="/courses/numericalanalysis22/part-2/interpolation/#lagrange-interpolation">Lagrange polynomial</a> of $f$ over a set of $n+1$ distinct nodes $\lbrace x_{i} \rbrace$, with $i=0, \ldots, n$. It follows that the approximation to the integral is
 \begin{equation}
 I_{n}(f) = \sum_{i=0}^{n} f \left( x_{i} \right) \int_{a}^{b} l_{i}(x) \mathrm{d} x
 \end{equation}</p>
-<p>where $l_{i}$ is the characteristic <a href="/courses/example/part-2/interpolation/#lagrange-interpolation">Lagrange polynomial</a> of degree $n$ associated with node $x_{i}$. It is called the <strong>Lagrange quadrature formula</strong>, and is a special instance of the following, generalised, quadrature formula
+<p>where $l_{i}$ is the characteristic <a href="/courses/numericalanalysis22/part-2/interpolation/#lagrange-interpolation">Lagrange polynomial</a> of degree $n$ associated with node $x_{i}$. It is called the <strong>Lagrange quadrature formula</strong>, and is a special instance of the following, generalised, quadrature formula
 \begin{equation}
 I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
 \end{equation}</p>
@@ -932,7 +932,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">An <code>.ipynb</code> notebook, detailing examples of the <a href="#midpoint-rule">Midpoint rule</a>, <a href="#trapezoidal-rule">Trapezoidal rule</a>, <a href="#simpsons-rule">Simpson’s rule</a> can be accessed <a href="/courses/example/notebooks/integrals">here</a>.  It can be downloaded from <a href="/python/integrals.py">here</a> as a python file or as ipyth It can be downloaded from <a href="/ipyth/integrals.ipynb">here</a>.</div>
+            <div class="admonition-content">An <code>.ipynb</code> notebook, detailing examples of the <a href="#midpoint-rule">Midpoint rule</a>, <a href="#trapezoidal-rule">Trapezoidal rule</a>, <a href="#simpsons-rule">Simpson’s rule</a> can be accessed <a href="/courses/numericalanalysis22/notebooks/integrals">here</a>.  It can be downloaded from <a href="/python/integrals.py">here</a> as a python file or as ipyth It can be downloaded from <a href="/ipyth/integrals.ipynb">here</a>.</div>
         </div>
     </div>
 <!-- Changed links to pages for notebook -->
