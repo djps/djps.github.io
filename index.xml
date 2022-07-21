@@ -250,7 +250,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
       <link>https://djps.github.io/courses/numericalanalysis22/part-1/iterative-methods/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-1/iterative-methods/</guid>
-      <description>&lt;p&gt;{{ partial &amp;ldquo;myReadingTime.html&amp;rdquo; . }}&lt;/p&gt;
+      <description>&lt;!-- {{ partial &#34;myReadingTime.html&#34; . }} --&gt;
 &lt;p&gt;Construct a scheme which solves the linear system $Ax=b$ by generating a sequence ${ x^{(n)} }$ which approximates the solution, $x$, that is
 \begin{equation}
 \lim_{n\rightarrow \infty} x^{(n)} = x. \nonumber
