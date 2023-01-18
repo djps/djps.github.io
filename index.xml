@@ -597,17 +597,17 @@ E_n(x) &amp;amp;= f(x) − \Pi_n f (x) \newline
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Define the following space
 \begin{equation}
-\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \mathrm{d}x &amp;lt; \infty \bigr \rbrace
+\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} , \mathrm{d}x &amp;lt; \infty \bigr \rbrace
 \end{equation}&lt;/p&gt;
 &lt;p&gt;with&lt;/p&gt;
 &lt;p&gt;\begin{equation}
 | f |^{}_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \mathrm{d} x \right)^{1 / 2}.
 \end{equation}&lt;/p&gt;
 &lt;p&gt;This defines a &lt;em&gt;norm&lt;/em&gt; for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.&lt;/p&gt;
-&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.&lt;/p&gt;
 &lt;p&gt;For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space&lt;/p&gt;
 &lt;p&gt;\begin{equation}
 X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,   v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2} \label{eq:piecewise}
@@ -716,7 +716,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, detailing examples of the &lt;a href=&#34;#midpoint-rule&#34;&gt;Midpoint rule&lt;/a&gt;, &lt;a href=&#34;#trapezoidal-rule&#34;&gt;Trapezoidal rule&lt;/a&gt;, &lt;a href=&#34;#simpsons-rule&#34;&gt;Simpson’s rule&lt;/a&gt; can be accessed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/integrals&#34;&gt;here&lt;/a&gt;.  It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py&#34;&gt;here&lt;/a&gt; as a python file or as ipyth It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, detailing examples of the &lt;a href=&#34;#midpoint-rule&#34;&gt;Midpoint rule&lt;/a&gt;, &lt;a href=&#34;#trapezoidal-rule&#34;&gt;Trapezoidal rule&lt;/a&gt;, &lt;a href=&#34;#simpsons-rule&#34;&gt;Simpson’s rule&lt;/a&gt; can be accessed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/&#34;&gt;here&lt;/a&gt;.  It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py&#34;&gt;here&lt;/a&gt; as a python file or as ipyth It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;!-- Changed links to pages for notebook --&gt;

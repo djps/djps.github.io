@@ -65,8 +65,7 @@
   
     
   
-  <meta name="description" content="Numerical treatment of problems often involves the process of discretization - i.e. going from a continuous function to set of discrete points.
-Interpolation provides a way of approximating continuous functions by discrete data." />
+  <meta name="description" content="Lagrange polynomials and Lagrange interpolation" />
 
   
   <link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/" />
@@ -317,8 +316,7 @@ Interpolation provides a way of approximating continuous functions by discrete d
   <meta property="og:site_name" content="David Sinden" />
   <meta property="og:url" content="https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/" />
   <meta property="og:title" content="Interpolation | David Sinden" />
-  <meta property="og:description" content="Numerical treatment of problems often involves the process of discretization - i.e. going from a continuous function to set of discrete points.
-Interpolation provides a way of approximating continuous functions by discrete data." /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+  <meta property="og:description" content="Lagrange polynomials and Lagrange interpolation" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -995,17 +993,17 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
         <div class="details-content">
             <div class="admonition-content"><p>Define the following space
 \begin{equation}
-\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \mathrm{d}x &lt; \infty \bigr \rbrace
+\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} , \mathrm{d}x &lt; \infty \bigr \rbrace
 \end{equation}</p>
 <p>with</p>
 <p>\begin{equation}
 | f |^{}_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \mathrm{d} x \right)^{1 / 2}.
 \end{equation}</p>
 <p>This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
-<p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.</p>
 </div>
         </div>
     </div>
+<p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.</p>
 <p>For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space</p>
 <p>\begin{equation}
 X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,   v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2} \label{eq:piecewise}
