@@ -1194,7 +1194,7 @@ V_{h} = X_{h}^{k, 0}=\lbrace v_{h} \in X_{h}^{k} \, : \, v_{h}(0) = v_{h}(1) = 0
 \min_{w_{h} \in V_{h}}\left\|u-w_{h}\right\|\_{\mathrm{H}_{0}^{1}(0,1)} \leq\left\|u-\Pi_{h}^{k} u\right\|_{\mathrm{H}_{0}^{1}(0,1)} \tag{4}\label{eq:cea_estimate}
 \end{equation}
 
-&lt;p&gt;where $\Pi_{h}^{k} u$ is the interpolant of the exact solution $u \in V$ from the weak form of the governing equation. From inequality \eqref{eq:cea_estimate} estimating the Galerkin approximation error  $\left\| u - u_{h} \right\|_{\mathrm{H}_{0}^{1}(0,1)}$  is then equivalent to estimating the interpolation error  $\left\| u -\Pi_{h}^{k} u \right\|_{H_{0}^{1}(0,1)}$  . When ${k=1}$, using \eqref{eq:cea} and the bounds on the interpolation errors &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation#lagrange-interpolation&#34;&gt;$(1)$&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;where $\Pi_{h}^{k} u$ is the interpolant of the exact solution $u \in V$ from the weak form of the governing equation. From inequality \eqref{eq:cea_estimate} estimating the Galerkin approximation error  $\left\| u - u_{h} \right\|_{\mathrm{H}_{0}^{1}(0,1)}$  is then equivalent to estimating the interpolation error  $\left\| u -\Pi_{h}^{k} u \right\|_{H_{0}^{1}(0,1)}$  . When ${k=1}$, using \eqref{eq:cea} and the bounds on the interpolation errors &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation#lagrange-interpolation/&#34;&gt;$(1)$&lt;/a&gt;&lt;/p&gt;
 
 $$
 \left\| u - u_{h} \right\|^{}\_{\mathrm{H}_{0}^{1}(0,1)} \leq \frac{M}{\alpha_{0}} C h \|u\|_{\mathrm{H}^{2}(0,1)}
@@ -1236,8 +1236,8 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, with an example of the finite element method in one-dimension can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/1dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;An  example of the finite element method in two-dimensions can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/2dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, with an example of the finite element method in one-dimension can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/1dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An  example of the finite element method in two-dimensions can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/2dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
