@@ -17,7 +17,9 @@
       <link>https://djps.github.io/courses/numericalanalysis22/part-1/principles/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-1/principles/</guid>
-      <description>&lt;p&gt;Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.&lt;/p&gt;
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;p&gt;Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.&lt;/p&gt;
 &lt;h2 id=&#34;well-posed-problems&#34;&gt;Well Posed Problems&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -482,7 +484,9 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
       <link>https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/</guid>
-      <description>&lt;p&gt;Numerical treatment of problems often involves the process of &lt;em&gt;discretization&lt;/em&gt; - i.e. going from a continuous function to set of discrete points.&lt;/p&gt;
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;p&gt;Numerical treatment of problems often involves the process of &lt;em&gt;discretization&lt;/em&gt; - i.e. going from a continuous function to set of discrete points.&lt;/p&gt;
 &lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
         &lt;div class=&#34;details-summary quotemonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-quote-left fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -640,7 +644,9 @@ with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polyno
       <link>https://djps.github.io/courses/numericalanalysis22/part-2/integration/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-2/integration/</guid>
-      <description>&lt;p&gt;If $f \in C^{0} \left([a, b]\right)$, the quadrature error $E_{n}(f) = I(f) - I_{n}(f)$ satisfies
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;p&gt;If $f \in C^{0} \left([a, b]\right)$, the quadrature error $E_{n}(f) = I(f) - I_{n}(f)$ satisfies
 \begin{equation}
 \left| E_{n}(f) \right| \leq \int_{a}^{b} \left| f(x) - f_{n}(x) \right| \mathrm{d} x \leq (b-a) \left| f - f_{n} \right|_{\infty}
 \end{equation}&lt;/p&gt;
@@ -727,7 +733,9 @@ where $\alpha_i$ are to be determined.&lt;/p&gt;
       <link>https://djps.github.io/courses/numericalanalysis22/part-3/fdm/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-3/fdm/</guid>
-      <description>&lt;h2 id=&#34;greens-functions&#34;&gt;Green&amp;rsquo;s functions&lt;/h2&gt;
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;greens-functions&#34;&gt;Green&amp;rsquo;s functions&lt;/h2&gt;
 &lt;p&gt;For a linear differential operator acting on $u$, that is $\mathcal{L} \left[ u \left( x \right) \right]$, which has a differential equation of the form
 \begin{equation}
 \mathcal{L}\left[ u \left( x \right) \right] = f \left(x \right),
@@ -989,7 +997,9 @@ then
       <link>https://djps.github.io/courses/numericalanalysis22/part-3/fem/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-3/fem/</guid>
-      <description>&lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
         &lt;div class=&#34;details-summary quotemonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-quote-left fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			
