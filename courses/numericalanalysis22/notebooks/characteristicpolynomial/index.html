@@ -65,8 +65,7 @@
   
     
   
-  <meta name="description" content="This notebook uses the scipy lagrange function to compute the Lagrange polynomial.
-import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy.interpolate import lagrange import matplotlib.pyplot as plt from IPython.display import Markdown as md plt." />
+  <meta name="description" content="Examples of Lagrange polynomials to interpolate and integrate" />
 
   
   <link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/" />
@@ -317,17 +316,16 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
   <meta property="og:site_name" content="David Sinden" />
   <meta property="og:url" content="https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/" />
   <meta property="og:title" content="Lagrange Polynomials | David Sinden" />
-  <meta property="og:description" content="This notebook uses the scipy lagrange function to compute the Lagrange polynomial.
-import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy.interpolate import lagrange import matplotlib.pyplot as plt from IPython.display import Markdown as md plt." /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+  <meta property="og:description" content="Examples of Lagrange polynomials to interpolate and integrate" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2019-09-01T00:00:00&#43;00:00"
+        content="2022-06-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2019-09-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-06-17T00:00:00&#43;00:00">
   
 
   
@@ -690,86 +688,200 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
     
     
 
-    <article class="article">
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-<div class="article-container pt-3">
-  <h1>Lagrange Polynomials</h1>
-
-  
-
-  
     
 
 
-<div class="article-metadata">
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Notebooks
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
 
   
   
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
 
   
-  <span class="article-date">
+    
+    
     
     
       
     
-    Sep 1, 2019
-  </span>
-  
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/">Overview</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/principles/">Principles</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-1/iterative-methods/">Iterative Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/interpolation/">Interpolation</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-2/integration/">Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-3/fdm/">Finite Difference Methods</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/part-3/fem/">Finite Element Methods</a></li>
+
+
 
   
+    
+    
+    
+    
+      
+    
+    
 
-  
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/assignments/">Assignments</a>
+    
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
+    
+      </div>
     
 
 
 
-
-
   
-</div>
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/numericalanalysis22/notebooks/">Notebooks</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/">Lagrange Interpolation</a></li>
 
 
 
-  <div class="article-container">
+  <li class="active"><a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
 
-    <div class="article-style">
-      <p>This notebook uses the scipy <a href="https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/generated/scipy.interpolate.lagrange.html" target="_blank" rel="noopener"><code>lagrange</code></a> function to compute the Lagrange polynomial.</p>
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/integrals/">Numerical Integration</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/1dfem/">One-Dimensional Finite Element Simulations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/2dfem/">Two-Dimensional Finite Element Simulations</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Lagrange Polynomials</h1>
+
+          <div class="article-style">
+            <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+March 11, 2022 &middot; 20 minute read </p>
+<p>This notebook uses the scipy <a href="https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/generated/scipy.interpolate.lagrange.html" target="_blank" rel="noopener"><code>lagrange</code></a> function to compute the Lagrange polynomial.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">numpy.polynomial.polynomial</span> <span class="kn">import</span> <span class="n">Polynomial</span>
 </span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">lagrange</span>
@@ -983,235 +1095,57 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
   </div></figure>
 </p>
 
-    </div>
+          </div>
 
-    
-
-
+          
 
 
 
-
-<div class="share-box">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/&amp;text=Lagrange%20Polynomials" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=Lagrange%20Polynomials&amp;body=https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/&amp;title=Lagrange%20Polynomials" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="whatsapp://send?text=Lagrange%20Polynomials%20https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/&amp;title=Lagrange%20Polynomials" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/" rel="next">Lagrange Interpolation</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/numericalanalysis22/notebooks/integrals/" rel="prev">Numerical Integration</a>
+  </div>
+  
 </div>
 
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jun 17, 2022</p>
+
+          
+
+
+
+          
 
 
 
 
+          
 
 
+        </div>
 
+      </article>
 
-
-
-  
-  
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <a href="https://djps.github.io"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hub0f211d8a22400f9e60f1bc8c0ab6eca_14835_270x270_fill_q75_lanczos_center.jpg" alt="David Sinden"></a>
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://djps.github.io">David Sinden</a></h5>
-      <h6 class="card-subtitle">Senior Research Scientist | <a href="https://www.mevis.fraunhofer.de/en/solutionpages/thermal-ablation-simulation.html" target="_blank" rel="noopener">Modelling and Simulation</a></h6>
-      <p class="card-text">Fraunhofer Institute for Digital Medicine MEVIS</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/david_sinden" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.co.uk/citations?view_op=list_works&amp;hl=en&amp;user=lauJqakAAAAJ" target="_blank" rel="noopener">
-        <i class="fas fa-graduation-cap"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/djps" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.researchgate.net/profile/David-Sinden" target="_blank" rel="noopener">
-        <i class="fab fa-researchgate"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/in/sindendavid" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-</article>
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
       <footer class="site-footer">
   
 
@@ -1285,7 +1219,15 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
 
 </footer>
 
-    </div>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
     
   </div>
 
@@ -1324,6 +1266,11 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
     
 
     
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
     
 
     
@@ -1371,11 +1318,10 @@ import numpy as np from numpy.polynomial.polynomial import Polynomial from scipy
     
     
     
-    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
     
     
-      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
     
     
     

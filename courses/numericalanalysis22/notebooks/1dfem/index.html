@@ -828,6 +828,10 @@
 
 
 
+  <li class=""><a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
+
+
+
   <li class=""><a href="/courses/numericalanalysis22/notebooks/integrals/">Numerical Integration</a></li>
 
 
@@ -837,10 +841,6 @@
 
 
   <li class=""><a href="/courses/numericalanalysis22/notebooks/2dfem/">Two-Dimensional Finite Element Simulations</a></li>
-
-
-
-  <li class=""><a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">Lagrange Polynomials</a></li>
 
       
         </ul>
@@ -877,6 +877,7 @@
 
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#construction-of-matrices">Construction of Matrices</a></li>
     <li><a href="#error-analysis">Error Analysis</a></li>
   </ul>
 </nav>
@@ -895,7 +896,10 @@
           <h1>One-Dimensional Finite Element Simulations</h1>
 
           <div class="article-style">
-            <p>This notebook is based on an example from Chapter 2 of <a href="https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;isbn=9780521728522" target="_blank" rel="noopener">An Introduction to Computational Stochastic PDEs</a>.</p>
+            <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+March 11, 2022 &middot; 20 minute read </p>
+<p>This notebook is based on an example from Chapter 2 of <a href="https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;isbn=9780521728522" target="_blank" rel="noopener">An Introduction to Computational Stochastic PDEs</a>.</p>
+<h2 id="construction-of-matrices">Construction of Matrices</h2>
 <p>The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this <a href="https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html" target="_blank" rel="noopener">compressed sparse column matrices</a> are used, but this is an implementational detail.</p>
 <p>First import the necessary libraries</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
