@@ -1182,7 +1182,7 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 &lt;p&gt;Introduce a partition
  $\mathcal{T}_h$ 
 of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width $h_j = x_{j+1} − x_j$, $j = 0, \ldots, n − 1$, with $0 = x_0 &amp;lt; x_1 &amp;lt; \ldots &amp;lt; x_{n−1} &amp;lt; x_n = 1$ and let  $h=\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$  .&lt;/p&gt;
-&lt;p&gt;Since functions in  $\mathrm{H}_{0}^{1}(0,1)$  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation#piecewise-lagrange-interpolation&#34;&gt;$(2)$&lt;/a&gt;, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.&lt;/p&gt;
+&lt;p&gt;Since functions in  $\mathrm{H}_{0}^{1}(0,1)$  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/#piecewise-lagrange-interpolation&#34;&gt;$(2)$&lt;/a&gt;, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.&lt;/p&gt;
 &lt;p&gt;Considering the cases $k=1$ and $k=2$, set
 \begin{equation}
 V_{h} = X_{h}^{k, 0}=\lbrace v_{h} \in X_{h}^{k} \, : \, v_{h}(0) = v_{h}(1) = 0 \rbrace .
@@ -1191,13 +1191,13 @@ V_{h} = X_{h}^{k, 0}=\lbrace v_{h} \in X_{h}^{k} \, : \, v_{h}(0) = v_{h}(1) = 0
 &lt;p&gt;To assess the accuracy of the Galerkin FEM, first notice that, due to Céa&amp;rsquo;s lemma&lt;/p&gt;
 
 \begin{equation}
-\min_{w_{h} \in V_{h}}\left\|u-w_{h}\right\|\_{\mathrm{H}_{0}^{1}(0,1)} \leq\left\|u-\Pi_{h}^{k} u\right\|_{\mathrm{H}_{0}^{1}(0,1)} \tag{4}\label{eq:cea_estimate}
+\min_{w_{h} \in V_{h}}\left\|u-w_{h}\right\|_{\mathrm{H}_{0}^{1}(0,1)} \leq\left\|u-\Pi_{h}^{k} u\right\|_{\mathrm{H}_{0}^{1}(0,1)} \tag{4}\label{eq:cea_estimate}
 \end{equation}
 
-&lt;p&gt;where $\Pi_{h}^{k} u$ is the interpolant of the exact solution $u \in V$ from the weak form of the governing equation. From inequality \eqref{eq:cea_estimate} estimating the Galerkin approximation error  $\left\| u - u_{h} \right\|_{\mathrm{H}_{0}^{1}(0,1)}$  is then equivalent to estimating the interpolation error  $\left\| u -\Pi_{h}^{k} u \right\|_{H_{0}^{1}(0,1)}$  . When ${k=1}$, using \eqref{eq:cea} and the bounds on the interpolation errors &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation#lagrange-interpolation/&#34;&gt;$(1)$&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;where $\Pi_{h}^{k} u$ is the interpolant of the exact solution $u \in V$ from the weak form of the governing equation. From inequality \eqref{eq:cea_estimate} estimating the Galerkin approximation error  $\left\| u - u_{h} \right\|_{\mathrm{H}_{0}^{1}(0,1)}$  is then equivalent to estimating the interpolation error  $\left\| u -\Pi_{h}^{k} u \right\|_{H_{0}^{1}(0,1)}$  . When ${k=1}$, using \eqref{eq:cea} and the bounds on the interpolation errors &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/#lagrange-interpolation/&#34;&gt;$(1)$&lt;/a&gt;&lt;/p&gt;
 
 $$
-\left\| u - u_{h} \right\|^{}\_{\mathrm{H}_{0}^{1}(0,1)} \leq \frac{M}{\alpha_{0}} C h \|u\|_{\mathrm{H}^{2}(0,1)}
+\left\| u - u_{h} \right\|^{}_{\mathrm{H}_{0}^{1}(0,1)} \leq \frac{M}{\alpha_{0}} C h \|u\|_{\mathrm{H}^{2}(0,1)}
 $$
 
 &lt;p&gt;provided that $u \in \mathrm{H}^{2}(0,1)$. This estimate can be extended to the case ${k&amp;gt;1}$ as stated in the following convergence result.&lt;/p&gt;
