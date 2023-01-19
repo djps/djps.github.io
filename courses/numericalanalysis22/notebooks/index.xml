@@ -18,8 +18,9 @@
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/lagrangeinterpolation/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 10 minute read &lt;/p&gt;
-&lt;p&gt;Interpolation of regularly space intervals can produce unsatisfactory results&lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
+&lt;p&gt;As will be seen, interpolation of regularly space intervals can produce unsatisfactory results.&lt;/p&gt;
 &lt;p&gt;First, load the tools needed.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
@@ -119,7 +120,8 @@ March 11, 2022 &amp;middot; 10 minute read &lt;/p&gt;
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 20 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
 &lt;p&gt;This notebook uses the scipy &lt;a href=&#34;https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/generated/scipy.interpolate.lagrange.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;lagrange&lt;/code&gt;&lt;/a&gt; function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy.polynomial.polynomial&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Polynomial&lt;/span&gt;
@@ -342,7 +344,8 @@ March 11, 2022 &amp;middot; 20 minute read &lt;/p&gt;
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 10 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
 &lt;p&gt;Consider the integration of the function $f(x) = \exp \left( x^2 \right)$ between $[0,1]$.&lt;/p&gt;
 &lt;p&gt;It can easily be shown that&lt;/p&gt;
 &lt;p&gt;\begin{align}
@@ -466,7 +469,8 @@ March 11, 2022 &amp;middot; 10 minute read &lt;/p&gt;
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 20 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
 &lt;p&gt;This notebook is based on an example from Chapter 2 of &lt;a href=&#34;https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;amp;isbn=9780521728522&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An Introduction to Computational Stochastic PDEs&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;construction-of-matrices&#34;&gt;Construction of Matrices&lt;/h2&gt;
 &lt;p&gt;The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this &lt;a href=&#34;https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;compressed sparse column matrices&lt;/a&gt; are used, but this is an implementational detail.&lt;/p&gt;
@@ -733,7 +737,8 @@ u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 20 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
 &lt;p&gt;This notebook, like the &lt;a href=&#34;https://djps.github.io/notebooks/1dfem/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one-dimensional finite element&lt;/a&gt; example is based on an example from Chapter 2 of &lt;a href=&#34;https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;amp;isbn=9780521728522&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An Introduction to Computational Stochastic PDEs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this &lt;a href=&#34;https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;compressed sparse column matrices&lt;/a&gt; are used, but this is an implementational detail.&lt;/p&gt;
 &lt;p&gt;First import the necessary libraries&lt;/p&gt;

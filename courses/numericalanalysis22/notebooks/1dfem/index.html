@@ -897,7 +897,8 @@
 
           <div class="article-style">
             <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
-March 11, 2022 &middot; 20 minute read </p>
+<i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
+<i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 20 minute read </p>
 <p>This notebook is based on an example from Chapter 2 of <a href="https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;isbn=9780521728522" target="_blank" rel="noopener">An Introduction to Computational Stochastic PDEs</a>.</p>
 <h2 id="construction-of-matrices">Construction of Matrices</h2>
 <p>The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this <a href="https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html" target="_blank" rel="noopener">compressed sparse column matrices</a> are used, but this is an implementational detail.</p>

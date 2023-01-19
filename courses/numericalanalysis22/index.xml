@@ -243,7 +243,8 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-1/iterative-methods/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;p&gt;Construct a scheme which solves the linear system $Ax=b$ by generating a sequence ${ x^{(n)} }$ which approximates the solution, $x$, that is
 \begin{equation}
 \lim_{n\rightarrow \infty} x^{(n)} = x. \nonumber
@@ -491,7 +492,8 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;p&gt;Numerical treatment of problems often involves the process of &lt;em&gt;discretization&lt;/em&gt; - i.e. going from a continuous function to set of discrete points.&lt;/p&gt;
 &lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
         &lt;div class=&#34;details-summary quotemonition-title&#34;&gt;
@@ -651,7 +653,8 @@ with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polyno
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-2/integration/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;p&gt;If $f \in C^{0} \left([a, b]\right)$, the quadrature error $E_{n}(f) = I(f) - I_{n}(f)$ satisfies
 \begin{equation}
 \left| E_{n}(f) \right| \leq \int_{a}^{b} \left| f(x) - f_{n}(x) \right| \mathrm{d} x \leq (b-a) \left| f - f_{n} \right|_{\infty}
@@ -740,7 +743,8 @@ where $\alpha_i$ are to be determined.&lt;/p&gt;
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-3/fdm/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;greens-functions&#34;&gt;Green&amp;rsquo;s functions&lt;/h2&gt;
 &lt;p&gt;For a linear differential operator acting on $u$, that is $\mathcal{L} \left[ u \left( x \right) \right]$, which has a differential equation of the form
 \begin{equation}
@@ -1004,7 +1008,8 @@ then
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-3/fem/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-March 11, 2022 &amp;middot; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
         &lt;div class=&#34;details-summary quotemonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-quote-left fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
