@@ -5,36 +5,12 @@
     <link>https://djps.github.io/category/abstract/</link>
       <atom:link href="https://djps.github.io/category/abstract/index.xml" rel="self" type="application/rss+xml" />
     <description>Abstract</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 Apr 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
       <title>Abstract</title>
       <link>https://djps.github.io/category/abstract/</link>
     </image>
-    
-    <item>
-      <title>Patient-Specific Modelling of Microwave Ablation</title>
-      <link>https://djps.github.io/abstracts/stm/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/abstracts/stm/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
-&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
-&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Factors for validation of measurement-based simulation</title>
-      <link>https://djps.github.io/abstracts/asa_virtual/</link>
-      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/abstracts/asa_virtual/</guid>
-      <description>&lt;p&gt;In many instances of therapeutic ultrasound it is preferable to produce near-field measurement-based simulations, rather than perform direct measurements. For example simulation from near-field measurements may have lower uncertainties than direct measurements at higher pressures; the entire field can be inspected and differing material properties can be modelled rather than make repeated measurements. However, to properly validate an approach there needs to be an understanding of uncertainties in data acquisition, the limitations of the governing equations and errors from the numerical methods employed. These are not independent, and are primarily determined by a combination of three factors: duration, intensity and inhomogeneity. Criteria for characterizing each factor are presented and consequent procedures outlined.&lt;/p&gt;
-&lt;p&gt;Measurements should consider burst length, positioning from transducer, spatial spacing, required resolution and averaging. From measurements, phase unwrapping and interpolation methods, pseudo-continuous wave approximations, as well as sparse and low-rank methods for data completion or identification of outliers, can be used to characterized the transducer as an initial source condition in an appropriate governing equation. This should consider transmission losses and reflections, frequency-dependent attenuation relations, shock-capturing and -fitting schemes, absorbing boundary conditions and the characterization of source terms for thermal simulations.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays</title>
