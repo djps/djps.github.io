@@ -12,5 +12,15 @@
       <link>https://djps.github.io/tag/measurement-based-simulation/</link>
     </image>
     
+    <item>
+      <title>Factors for validation of measurement-based simulation</title>
+      <link>https://djps.github.io/abstracts/asa_virtual/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/asa_virtual/</guid>
+      <description>&lt;p&gt;In many instances of therapeutic ultrasound it is preferable to produce near-field measurement-based simulations, rather than perform direct measurements. For example simulation from near-field measurements may have lower uncertainties than direct measurements at higher pressures; the entire field can be inspected and differing material properties can be modelled rather than make repeated measurements. However, to properly validate an approach there needs to be an understanding of uncertainties in data acquisition, the limitations of the governing equations and errors from the numerical methods employed. These are not independent, and are primarily determined by a combination of three factors: duration, intensity and inhomogeneity. Criteria for characterizing each factor are presented and consequent procedures outlined.&lt;/p&gt;
+&lt;p&gt;Measurements should consider burst length, positioning from transducer, spatial spacing, required resolution and averaging. From measurements, phase unwrapping and interpolation methods, pseudo-continuous wave approximations, as well as sparse and low-rank methods for data completion or identification of outliers, can be used to characterized the transducer as an initial source condition in an appropriate governing equation. This should consider transmission losses and reflections, frequency-dependent attenuation relations, shock-capturing and -fitting schemes, absorbing boundary conditions and the characterization of source terms for thermal simulations.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
