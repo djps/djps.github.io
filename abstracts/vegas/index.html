@@ -320,7 +320,12 @@
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
+      <meta
+        property="article:published_time"
+        content="2014-04-14T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2014-04-14T00:00:00&#43;00:00">
   
 
   
@@ -723,7 +728,7 @@
     
       
     
-    Jan 1, 0001
+    Apr 14, 2014
   </span>
   
 
@@ -770,7 +775,7 @@
 <p>The location of an optical tracker placed on the transducer head is calculated, so that the location of the treatment head location compared to the treatment plan can be verified. For ease of identifying the location of ablated regions, surface lesions can be generated automatically. From the computed position image planes which can be compared with ultrasound images are computed.</p>
 <p>The appropriate phases can be calculated so that the acoustic intensity on the ribs is constrained using a boundary element method.  A Rayleigh integral method, is used where the acoustic window is sufficiently large, or the tolerances of the ray-tracing algorithm sufficiently strict . For a given exposure duration, the amplitudes of each element required to give either a user-defined focal peak temperature rise or a volumetric dose as a function of the full-width half maximum are calculated. Thermal calculations are performed using a parallelised alternating-direction implicit method on a structured rectilinear grid derived from the unstructured polydata sets of the surface meshes of the skin, ribs and liver.</p>
 <p>Algorithms for motion compensation are introduced in order that motion can be exploited to enlarge the volume of the lesions treated, while still delivering a specified dose to the enlarged planning treatment volume.</p>
-<p>The computation routines are written in python and fortran, with bindings performed with f2py, graphical user interface from wxpython and three-dimensional visualisation using mayavi. The numpy and mkl libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an stl or vtk dataset. Settings are outputted as xml data in html files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.</p>
+<p>The computation routines are written in python and fortran, with bindings performed with <code>f2py</code>, graphical user interface from wxpython and three-dimensional visualisation using <code>mayavi</code>. The <code>numpy</code> and <code>mkl</code> libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an <code>.stl</code> or <code>.vtk</code> dataset. Settings are outputted as <code>.xml</code> data in <code>.html</code> files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.</p>
 
     </div>
 
