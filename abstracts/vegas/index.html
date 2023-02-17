@@ -65,10 +65,10 @@
   
     
   
-  <meta name="description" content="Abstract for Society of Thermal Medicine 2022 Annual Meeting" />
+  <meta name="description" content="Abstract for International Symposium on Therapeutic Ultrasound (ISTU), Las Vegas 2014" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/abstracts/stm/" />
+  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/abstracts/vegas/" />
 
   
   
@@ -288,7 +288,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://djps.github.io/abstracts/stm/" />
+  <link rel="canonical" href="https://djps.github.io/abstracts/vegas/" />
 
   
   
@@ -314,18 +314,13 @@
     <meta property="twitter:creator" content="@david_sinden" />
   
   <meta property="og:site_name" content="David Sinden" />
-  <meta property="og:url" content="https://djps.github.io/abstracts/stm/" />
-  <meta property="og:title" content="Patient-Specific Modelling of Microwave Ablation | David Sinden" />
-  <meta property="og:description" content="Abstract for Society of Thermal Medicine 2022 Annual Meeting" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://djps.github.io/abstracts/vegas/" />
+  <meta property="og:title" content="Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays | David Sinden" />
+  <meta property="og:description" content="Abstract for International Symposium on Therapeutic Ultrasound (ISTU), Las Vegas 2014" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta
-        property="article:published_time"
-        content="2022-05-01T00:00:00&#43;00:00"
-      />
     
-    <meta property="article:modified_time" content="2022-05-01T00:00:00&#43;00:00">
   
 
   
@@ -351,11 +346,11 @@
   <script type="text/javascript" src="/js/carousel.js"></script>
   <link rel="stylesheet" href="https://djps.github.iocss/carousel.css">
 
-  <title>Patient-Specific Modelling of Microwave Ablation | David Sinden</title>
+  <title>Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays | David Sinden</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="acbc379a52b192ccdeb32744efa9da57" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="767479e93a6a4daeca0b772de33d3945" >
 
   
   
@@ -709,7 +704,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Patient-Specific Modelling of Microwave Ablation</h1>
+  <h1>Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays</h1>
 
   
 
@@ -728,7 +723,7 @@
     
       
     
-    May 1, 2022
+    Jan 1, 0001
   </span>
   
 
@@ -762,12 +757,20 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p><strong>Introduction</strong>: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.</p>
-<p>However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.</p>
-<p><strong>Methods</strong>: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.</p>
-<p><strong>Results</strong>: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.</p>
-<p>Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.</p>
-<p><strong>Conclusion</strong>: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.</p>
+      <p>In this presentation we describe a comprehensive package of computation procedures developed for treatment planning and treatment delivery for transcostal high-intensity focused ultrasound using a phased-array.</p>
+<p>A number of robust computational routines designed to identify a target area, specify the position of the transducer, then perform parallelised ray-tracing from segmented CT data to ascertain the optimal position and angulation has been developed.  The aim is to:</p>
+<ol>
+<li>Minimize transmission losses through the skin/water interface arising from the angle of incidence between the field from each active element and the skin interface.</li>
+<li>Minimize the propagation path in tissue.</li>
+<li>Maximize the number of available elements which may be switched on if a isobaric beam corresponding to a given pressure value does not pass through the ribs.</li>
+<li>Ensure that the transducer can be viewed by an optical tracking system, in order to register the position of the treatment head to the position defined by the treatment plan.</li>
+<li>Ensure that an imaging probe located in the central aperture of the treatment head can image the target, for treatment monitoring.</li>
+<li>Ensure that organs at risk such as lungs or bowel are not exposed to the field.</li>
+</ol>
+<p>The location of an optical tracker placed on the transducer head is calculated, so that the location of the treatment head location compared to the treatment plan can be verified. For ease of identifying the location of ablated regions, surface lesions can be generated automatically. From the computed position image planes which can be compared with ultrasound images are computed.</p>
+<p>The appropriate phases can be calculated so that the acoustic intensity on the ribs is constrained using a boundary element method.  A Rayleigh integral method, is used where the acoustic window is sufficiently large, or the tolerances of the ray-tracing algorithm sufficiently strict . For a given exposure duration, the amplitudes of each element required to give either a user-defined focal peak temperature rise or a volumetric dose as a function of the full-width half maximum are calculated. Thermal calculations are performed using a parallelised alternating-direction implicit method on a structured rectilinear grid derived from the unstructured polydata sets of the surface meshes of the skin, ribs and liver.</p>
+<p>Algorithms for motion compensation are introduced in order that motion can be exploited to enlarge the volume of the lesions treated, while still delivering a specified dose to the enlarged planning treatment volume.</p>
+<p>The computation routines are written in python and fortran, with bindings performed with f2py, graphical user interface from wxpython and three-dimensional visualisation using mayavi. The numpy and mkl libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an stl or vtk dataset. Settings are outputted as xml data in html files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.</p>
 
     </div>
 
