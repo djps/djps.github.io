@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perfusion | David Sinden</title>
+    <link>https://djps.github.io/tag/perfusion/</link>
+      <atom:link href="https://djps.github.io/tag/perfusion/index.xml" rel="self" type="application/rss+xml" />
+    <description>Perfusion</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 26 Nov 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Perfusion</title>
+      <link>https://djps.github.io/tag/perfusion/</link>
+    </image>
+    
+    <item>
+      <title>A comparison between theory and experiment in thermal ablation of perfused livers</title>
+      <link>https://djps.github.io/abstracts/npl/</link>
+      <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/npl/</guid>
+      <description>&lt;!-- Authors: D. Sinden, V. Bull, J. Civale, I. Rivens, D. Holroyd &amp; G. ter Haar --&gt;
+&lt;p&gt;While there is a vast literature on heat deposition by high-intensity focused ultrasound, much of the work tends to focus on a single approach. This talk provides a unified analysis of the heating due to HIFU, combing experimental, analytical and numerical approaches. One of the aims of this study is to ascertain the validity of the governing equations using clinically relevant experimental data.&lt;/p&gt;
+&lt;p&gt;Six freshly excised porcine livers were repeatedly exposed to five seconds of continuous high-intensity focused ultrasound at 1.7 MHz by a single element transducer at a variety of intensities, in a variety of locations beneath the surface of the liver, while being perfused an by a OrganOx Metra, an prototype adaptive-perfusion system.  Using ultrasound imaging to identify significant objects around the focal region, exposures were either performed at as distance close as possible to a thermally significant vessel and at a distance of approximately 0.5 cm from the vessel wall. The measured vessel diameter was 4 mm and the flow within the vessel was measured using Doppler ultrasound to be approximately 9 cm/s. A fibre-optic hydrophone measured the acoustic and thermal fields at the focus, sampling at a rate of 200 Hz.&lt;/p&gt;
+&lt;p&gt;For a single element, unsteered transducer the Khokhlov-Zabolotskaya-Kuznetsov (KZK) equation, modelling nonlinear wave propagation through both water and soft-tissue, was coupled to the bioheat transfer equation, from which the thermal-dose is calculated. Using the range of values from tissue characterisation measurements, distributions were found which matched the spread of data for various acoustic and thermal properties. Hence empirically derived confidence intervals for various material parameters were formulated. A sensitivity analysis was performed on the governing equations to show the relative importance of each of the acoustic and thermal properties. Simulations are found to be in good agreement with experimental data away from the vessels within the range of uncertainties of tissue properties.&lt;/p&gt;
+&lt;p&gt;Results from numerical and experiment data are presented, compared and discussed in the context of the implications for therapeutic ultrasound treatement planning, specifically for the effects of cavitation enhanced heating and the viability of treatment next to thermally significant large vessels.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
