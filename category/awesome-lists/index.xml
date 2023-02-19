@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog | David Sinden</title>
-    <link>https://djps.github.io/blog/</link>
-      <atom:link href="https://djps.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <description>Blog</description>
+    <title>Awesome lists | David Sinden</title>
+    <link>https://djps.github.io/category/awesome-lists/</link>
+      <atom:link href="https://djps.github.io/category/awesome-lists/index.xml" rel="self" type="application/rss+xml" />
+    <description>Awesome lists</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
-      <title>Blog</title>
-      <link>https://djps.github.io/blog/</link>
+      <title>Awesome lists</title>
+      <link>https://djps.github.io/category/awesome-lists/</link>
     </image>
     
     <item>
@@ -341,29 +341,6 @@ license&lt;/a&gt;,
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/gabrielpeyre&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gabriel Peyré on Twitter&lt;/a&gt; - One tweet a day on computational mathematics.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://discord.com/invite/hnTJ5MRX2Y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Discord: Numerical Software&lt;/a&gt; - Discord messaging server on numerical software.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Annual Meeting of the Society for Thermal Medicine 2022</title>
-      <link>https://djps.github.io/blog/stm/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/blog/stm/</guid>
-      <description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
-&lt;!--I hope to pad the reading time out more with this.
-
-There where some great talks though --&gt;
-&lt;p&gt;The conference site, with details on talks and schedules, can be found &lt;a href=&#34;https://virtual.oxfordabstracts.com/#/event/2827/program&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The conference homepage can be found &lt;a href=&#34;http://www.thermaltherapy.org/ebusSFTM/ANNUALMEETING/2022AnnualMeeting.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The presentation can be accessed from &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The abstract is below or &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;patient-specific-modelling-of-microwave-ablation&#34;&gt;Patient-Specific Modelling of Microwave Ablation&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
-&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
-&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;
 </description>
     </item>
     
