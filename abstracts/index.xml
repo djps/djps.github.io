@@ -5,12 +5,21 @@
     <link>https://djps.github.io/abstracts/</link>
       <atom:link href="https://djps.github.io/abstracts/index.xml" rel="self" type="application/rss+xml" />
     <description>Abstracts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
       <title>Abstracts</title>
       <link>https://djps.github.io/abstracts/</link>
     </image>
+    
+    <item>
+      <title>Artificial Intelligence in Therapeutic Ultrasound</title>
+      <link>https://djps.github.io/abstracts/lyon/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/lyon/</guid>
+      <description>&lt;p&gt;This educational talk presents an accessible introduction to the basic methods and terminology in artificial intelligence which could be applied to develop tools for therapeutic ultrasound delivery. The talk begins with an introduction to AI, focusing on what different neural networks are, and what is necessary to train a network. With this knowledge, a small number of applications are presented, covering segmentation and registration, treatment planning and physics-informed neural networks, treatment monitoring and outcome prediction.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Patient-Specific Modelling of Microwave Ablation</title>
