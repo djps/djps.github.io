@@ -825,6 +825,9 @@ methods for solving large-scale problems from various areas of science with the 
 computers. Typical problems are ordinary and partial differential equations (ODEs,
 PDEs), their discretizations, and the solution of linear algebra problems arising from
 them.</p>
+<blockquote>
+<p>Useful resources for scientific computing and numerical analysis, with a selection of ultrasound tools</p>
+</blockquote>
 <p>From my <a href="https://github.com/djps/awesome-scientific-computing" target="_blank" rel="noopener">fork</a> of Nico Schlömer&rsquo;s github repo, found <a href="https://github.com/nschloe/awesome-scientific-computing" target="_blank" rel="noopener">here</a>.</p>
 <h2 id="contents">Contents</h2>
 <ul>
@@ -843,6 +846,7 @@ them.</p>
 <li><a href="#wave-propagation">Wave propagation</a></li>
 <li><a href="#physics-informed-neural-networks">Physics-informed neural networks</a></li>
 <li><a href="#sbml">SBML</a></li>
+<li><a href="#resources">Resources</a></li>
 <li><a href="#other-libraries-and-tools">Other libraries and tools</a></li>
 <li><a href="#community">Community</a></li>
 </ul>
@@ -911,7 +915,7 @@ them.</p>
 (Python, MIT, <a href="https://github.com/inducer/meshpy" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://www.cgal.org" target="_blank" rel="noopener">CGAL</a> - Algorithms for computational geometry.
 (C++, mixed LGPL/GPL, <a href="https://github.com/CGAL/cgal" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/pygalmesh" target="_blank" rel="noopener">pygalmesh</a> - Python interface for CGAL&rsquo;s 3D meshing capabilities.
+<li><a href="https://github.com/meshpro/pygalmesh" target="_blank" rel="noopener">pygalmesh</a> - Python interface for CGAL&rsquo;s 3D meshing capabilities.
 (Python, GPL 3, GitHub)</li>
 <li><a href="https://www.wias-berlin.de/software/index.jsp?id=TetGen" target="_blank" rel="noopener">TetGen</a> - Quality tetrahedral mesh generator and 3D Delaunay triangulator.
 (C++, AGPLv3)</li>
@@ -921,8 +925,8 @@ them.</p>
 (MATLAB, GPL 3)</li>
 <li><a href="https://trimsh.org/" target="_blank" rel="noopener">trimesh</a> - Loading and using triangular meshes with an emphasis on watertight surfaces.
 (Python, MIT, <a href="https://github.com/mikedh/trimesh" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/dmsh" target="_blank" rel="noopener">dmsh</a> - Simple generator for unstructured triangular meshes, inspired by distmesh.
-(Python, GPL 3, GitHub)</li>
+<li><a href="https://github.com/meshpro/dmsh" target="_blank" rel="noopener">dmsh</a> - Simple generator for unstructured triangular meshes, inspired by distmesh.
+(Python, proprietary, GitHub)</li>
 <li><a href="https://yixin-hu.github.io/tetwild.pdf" target="_blank" rel="noopener">TetWild</a> - Generate tetrahedral meshes for triangular surface meshes.
 (C++, GPL 3, <a href="https://github.com/Yixin-Hu/TetWild" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://cims.nyu.edu/gcl/papers/2019-TriWild.pdf" target="_blank" rel="noopener">TriWild</a> - Robust triangulation with curve constraints.
@@ -943,14 +947,14 @@ them.</p>
 (Python, MIT, GitHub)</li>
 <li><a href="https://sigma.mcs.anl.gov/moab-library/" target="_blank" rel="noopener">MOAB</a> - Representing and evaluating mesh data.
 (C++, mostly LGPL 3, <a href="https://bitbucket.org/fathomteam/moab/" target="_blank" rel="noopener">Bitbucket</a>)</li>
-<li><a href="https://github.com/nschloe/optimesh" target="_blank" rel="noopener">optimesh</a> - Triangular mesh smoothing.
-(Python, GPL 3, GitHub)</li>
+<li><a href="https://github.com/meshpro/optimesh" target="_blank" rel="noopener">optimesh</a> - Triangular mesh smoothing.
+(Python, proprietary, GitHub)</li>
 <li><a href="https://www.pmp-library.org/" target="_blank" rel="noopener">pmp-library</a> - Polygon mesh processing library.
 (C++, MIT with Employer Disclaimer, <a href="https://github.com/pmp-library/pmp-library/" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://www.mmgtools.org/" target="_blank" rel="noopener">Mmg</a> - Robust, open-source &amp; multidisciplinary software for remeshing.
 (C, LGPL 3, <a href="https://github.com/MmgTools/mmg" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/meshplex" target="_blank" rel="noopener">meshplex</a> - Fast tools for simplex meshes.
-(Python, GPL 3, GitHub)</li>
+<li><a href="https://github.com/meshpro/meshplex" target="_blank" rel="noopener">meshplex</a> - Fast tools for simplex meshes.
+(Python, proprietary, GitHub)</li>
 </ul>
 <h2 id="data-formats">Data formats</h2>
 <ul>
@@ -986,7 +990,7 @@ license</a>,
 (C++, MIT, <a href="https://github.com/nmwsharp/polyscope" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://docs.pyvista.org/" target="_blank" rel="noopener">PyVista</a> - 3D plotting and mesh analysis through a streamlined interface for VTK.
 (Python, MIT, <a href="https://github.com/pyvista/pyvista" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://vedo.embl.es" target="_blank" rel="noopener">vedo</a> - Library for scientific analysis and visualization of 3D objects based on VTK.
+<li><a href="https://vedo.embl.es/" target="_blank" rel="noopener">vedo</a> - Library for scientific analysis and visualization of 3D objects based on VTK.
 (Python, MIT, <a href="https://github.com/marcomusy/vedo" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://yt-project.org/" target="_blank" rel="noopener">yt</a> - Toolkit for analysis and visualization of volumetric data.
 (Python, BSD, <a href="https://github.com/yt-project/yt" target="_blank" rel="noopener">GitHub</a>)</li>
@@ -1018,7 +1022,7 @@ license</a>,
 </ul>
 <h2 id="io">I/O</h2>
 <ul>
-<li><a href="https://rapidxml.sourceforge.net/" target="_blank" rel="noopener">rapidxml</a></li>
+<li><a href="https://rapidxml.sourceforge.net/" target="_blank" rel="noopener">rapidxml</a> - handling of xml in C++ (C++, SourceForge)</li>
 <li><a href="https://www.boost.org/doc/libs/1_81_0/doc/html/property_tree.html" target="_blank" rel="noopener">Boost Property Tree</a> - provides a data structure that stores an arbitrarily deeply nested tree of values, indexed at each level by some key (C++, Boost, <a href="https://github.com/boostorg/property_tree" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://json.nlohmann.me/" target="_blank" rel="noopener">json</a> - json for modern C++ (C++, MIT, <a href="https://github.com/nlohmann/json" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://pydicom.github.io/pydicom/dev" target="_blank" rel="noopener">pydicom</a> - Read, modify and write DICOM files with python code (Python, MIT, <a href="https://github.com/pydicom/pydicom" target="_blank" rel="noopener">GitHub</a>)</li>
@@ -1035,20 +1039,35 @@ license</a>,
 <li><a href="https://github.com/CNugteren/CLBlast" target="_blank" rel="noopener">CLBlast</a> - OpenCL BLAS library written in C++11 (C++, Apache-2, GitHub)</li>
 <li><a href="https://arrayfire.com/" target="_blank" rel="noopener">arrayfire</a> - A general purpose GPU library (C++, BSD-3,<a href="https://github.com/arrayfire/arrayfire" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://viennacl.sourceforge.net/" target="_blank" rel="noopener">viennaCL</a> - Open-source linear algebra library for computations on many-core architectures (C++, GNU, <a href="https://github.com/viennacl/viennacl-dev" target="_blank" rel="noopener">GitHub</a>)</li>
+<li>SyCL</li>
+<li>HIP</li>
 </ul>
 <h2 id="solvers">Solvers</h2>
 <ul>
 <li><a href="https://computing.llnl.gov/projects/sundials" target="_blank" rel="noopener">Sundials</a> - SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. (C/C++/Fortran, BSD-3, <a href="https://github.com/LLNL/sundials" target="_blank" rel="noopener">GitHub</a>)</li>
+<li><a href="https://icl.utk.edu/slate/" target="_blank" rel="noopener">Slate</a> - dense linear algebra for HPC (C++, BSD-3, <a href="https://github.com/icl-utk-edu/slate" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://github.com/SciML/diffeqpy" target="_blank" rel="noopener">diffeqpy</a> - Python wrapper for DifferentialEquations.jl (Python/Julia, MIT, GitHub)</li>
 </ul>
 <h2 id="wave-propagation">Wave propagation</h2>
+<p>The Focused Ultrasound Foundation provides a set of open-source tools for modelling and validation <a href="https://www.fusfoundation.org/for-researchers/open-access-technical-tools/#simulation" target="_blank" rel="noopener">[here]</a>.</p>
 <ul>
 <li><a href="https://github.com/stanfordnqp/jaxwell" target="_blank" rel="noopener">jaxwell</a> - An iterative solver for solving the finite-difference frequency-domain Maxwell equations on NVIDIA GPUs. (Python, GPL-3, GitHub)</li>
 <li><a href="http://www.mit.edu/~wsshin/fd3d.html" target="_blank" rel="noopener">fd3d</a> - Solve the frequency-domain Maxwell&rsquo;s equations in a 3D domain, using an iterative methods to avoid the large memory requirement of direct methods for 3D problems. (C, <a href="https://github.com/wsshin/fd3d" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="http://www.mit.edu/~wsshin/maxwellfdfd.html" target="_blank" rel="noopener">Maxwellfdfd</a> - Solves the frequency-domain Maxwell&rsquo;s equations (Matlab, <a href="https://github.com/wsshin/maxwellfdfd" target="_blank" rel="noopener">GitHub</a>)</li>
+<li><a href="http://www.mit.edu/~wsshin/maxwellfdfd.html" target="_blank" rel="noopener">Maxwellfdfd</a> - Solves the frequency-domain Maxwell&rsquo;s equations (Matlab, <a href="https://github.com/wsshin/maxwellfdfd" target="_blank" rel="noopener">GitHub</a>) -</li>
+<li><a href="https://github.com/zhaonat/py-maxwell-fd3d" target="_blank" rel="noopener">py-maxwell-fd3d</a> - Solve the frequency-domain Maxwell&rsquo;s equations in a 3D domain, with direct and iterative methods (python, MIT, GitHub)</li>
 <li><a href="https://bempp.com/" target="_blank" rel="noopener">bempp</a> - open-source computational boundary element platform to solve electrostatic, acoustic and electromagnetic problems. (Python, MIT, <a href="https://github.com/bempp" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://ucl-bug.github.io/jwave" target="_blank" rel="noopener">jwave</a> - k-Wave in JAX. (Python, LGPL-3, <a href="https://github.com/ucl-bug/jwave" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://github.com/jsoneson/HITU_Simulator" target="_blank" rel="noopener">HITU_simulator</a> - A nonlinear axisymmetric beamer simulator. (Matlab, GPL-3, GitHub)</li>
+<li><a href="https://www.fusfoundation.org/for-researchers/resources/kranion/" target="_blank" rel="noopener">Kranion</a> - interactive transcranial focused ultrasound visualization system (java, MIT, <a href="https://github.com/jws2f/Kranion" target="_blank" rel="noopener">GitHub</a>)</li>
+<li><a href="https://www.egr.msu.edu/~fultras-web/" target="_blank" rel="noopener">Focus</a> - Fast nearfield method (Matlab)</li>
+<li><a href="https://m-sound.github.io/mSOUND/home" target="_blank" rel="noopener">mSound</a> - Solves Westervelt equation by computing multiple reflections (Matlab, GNU, <a href="https://github.com/m-SOUND/mSOUND" target="_blank" rel="noopener">GitHub</a>)</li>
+<li>AberSim - No longer maintained/publically available.</li>
+<li>Bergen - No longer maintained/publically available.</li>
+<li><a href="http://field-ii.dk/" target="_blank" rel="noopener">FieldII</a> - Diagnostic simulator (Matlab, MIT)</li>
+<li><a href="http://limu.msu.ru/product/3555/home?language=en" target="_blank" rel="noopener">Beam</a> - 3D nonlinear continuous wave simulator (Matlab/Fortran )</li>
+<li><a href="https://www.stride.codes/" target="_blank" rel="noopener">Stride</a> - modelling and optimisation framework for medical ultrasound (python, AGPL-3, <a href="https://github.com/trustimaging/stride" target="_blank" rel="noopener">GitHub</a>)</li>
+<li><a href="https://github.com/ProteusMRIgHIFU/BabelViscoFDTD" target="_blank" rel="noopener">BabelBrain</a> - FDTD of viscoelastic equation using a staggered grid arrangement with support for GPU and CPU backends (C++/OpenCL, BSD-3, GitHub)</li>
+<li><a href="https://github.com/rvelseg/FiVoNAGI" target="_blank" rel="noopener">FiVoNAGI</a> - Finite volume nonlinear acoustics GPU implementation in 2D (C++/Cuda, BSD, GitHub)</li>
 </ul>
 <h2 id="physics-informed-neural-networks">Physics-informed neural networks</h2>
 <ul>
@@ -1057,6 +1076,18 @@ license</a>,
 <h2 id="sbml">SBML</h2>
 <ul>
 <li><a href="https://sbml.org/software/libsbml" target="_blank" rel="noopener">sbml</a> - Native library for reading, writing and manipulating files and data streams containing the Systems Biology Markup Language (C/C++/C#/Java/JavaScript/MATLAB/Perl/PHP/Python/R/Ruby, LGPL-2, <a href="https://github.com/sbmlteam/libsbml" target="_blank" rel="noopener">GitHub</a>).</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>
+<p><a href="https://mathematical-tours.github.io/" target="_blank" rel="noopener">Mathematical Tours</a> - Mathematical tours of data science.</p>
+</li>
+<li>
+<p><a href="http://www.numerical-tours.com/" target="_blank" rel="noopener">Numerical Tours</a> - Numerical tours of data science.</p>
+</li>
+<li>
+<p><a href="https://github.com/icl-utk-edu/heffte" target="_blank" rel="noopener">heffte</a> - Highly Efficient FFT for Exascale (C++, BSD-3, <a href="https://github.com/icl-utk-edu/heffte" target="_blank" rel="noopener">GitHub</a>)</p>
+</li>
 </ul>
 <hr>
 <h2 id="other-libraries-and-tools">Other libraries and tools</h2>
@@ -1070,13 +1101,13 @@ license</a>,
 (C/C++, GPL 3, <a href="https://savannah.gnu.org/projects/gsl" target="_blank" rel="noopener">Savannah</a>)</li>
 <li><a href="https://www.openfoam.com" target="_blank" rel="noopener">OpenFOAM</a> - Free, open source CFD (computational fluid dynamics) software.
 (C++, GPL 3, <a href="https://github.com/OpenFOAM/OpenFOAM-dev" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/quadpy" target="_blank" rel="noopener">quadpy</a> - Numerical integration (quadrature, cubature) in Python.
-(Python, GPL 3, GitHub)</li>
+<li><a href="https://github.com/sigma-py/quadpy" target="_blank" rel="noopener">quadpy</a> - Numerical integration (quadrature, cubature) in Python.
+(Python, proprietary, GitHub)</li>
 <li><a href="https://www.ctcms.nist.gov/fipy/" target="_blank" rel="noopener">FiPy</a> - Finite-volume PDE solver.
 (Python, <a href="https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications" target="_blank" rel="noopener">custom open-source
 license</a>,
 <a href="https://github.com/usnistgov/fipy" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/accupy" target="_blank" rel="noopener">accupy</a> - Accurate sums and dot products for Python.
+<li><a href="https://github.com/sigma-py/accupy" target="_blank" rel="noopener">accupy</a> - Accurate sums and dot products for Python.
 (Python, GPL 3, GitHub)</li>
 <li><a href="https://slepc.upv.es" target="_blank" rel="noopener">SLEPc</a> - Scalable Library for Eigenvalue Problem Computations.
 (C, 2-clause BSD, <a href="https://gitlab.com/slepc/slepc" target="_blank" rel="noopener">GitLab</a>)</li>
@@ -1092,8 +1123,8 @@ license</a>,
 (C/MATLAB, GPL 2, <a href="https://github.com/NFFT/nfft" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://precice.org/" target="_blank" rel="noopener">preCICE</a> - Coupling library for partitioned multi-physics simulations (FSI, CHT, and more).
 (C++, LGPL 3, <a href="https://github.com/precice/" target="_blank" rel="noopener">GitHub</a>)</li>
-<li><a href="https://github.com/nschloe/orthopy" target="_blank" rel="noopener">orthopy</a> - Compute orthogonal polynomials efficiently.
-(Python, GPL 3, GitHub)</li>
+<li><a href="https://github.com/sigma-py/orthopy" target="_blank" rel="noopener">orthopy</a> - Compute orthogonal polynomials efficiently.
+(Python, proprietary, GitHub)</li>
 <li><a href="https://pygam.readthedocs.io/en/latest/" target="_blank" rel="noopener">pyGAM</a> - Generalized Additive Models in Python.
 (Python, Apache 2.0, <a href="https://github.com/dswah/pyGAM" target="_blank" rel="noopener">GitHub</a>)</li>
 <li><a href="https://dedalus-project.org/" target="_blank" rel="noopener">Dedalus</a> - Solve partial differential equations with spectral methods.
@@ -1116,7 +1147,13 @@ license</a>,
 <li><a href="https://www.johndcook.com/blog/" target="_blank" rel="noopener">John D. Cook&rsquo;s blog</a> - Feats of scientific computing.</li>
 <li><a href="https://netlib.org/utk/people/JackDongarra/la-sw.html" target="_blank" rel="noopener">Jack Dongarra&rsquo;s software list</a> - List of freely available software for the solution of linear algebra problems.</li>
 <li><a href="https://netlib.org/na-digest-html/" target="_blank" rel="noopener">NA Digest</a> - Collection of articles on topics related to numerical analysis and those who practice it.</li>
+</ul>
+<!-- markdown-link-check-disable -->
+<ul>
 <li><a href="https://twitter.com/gabrielpeyre" target="_blank" rel="noopener">Gabriel Peyré on Twitter</a> - One tweet a day on computational mathematics.</li>
+</ul>
+<!-- markdown-link-check-enable -->
+<ul>
 <li><a href="https://discord.com/invite/hnTJ5MRX2Y" target="_blank" rel="noopener">Discord: Numerical Software</a> - Discord messaging server on numerical software.</li>
 </ul>
 
