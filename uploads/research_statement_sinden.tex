@@ -1,0 +1,210 @@
+\documentclass[11pt, a4paper, sans]{moderncv}        
+% possible options include:
+% font size ('10pt', '11pt' and '12pt'), 
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') 
+% font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\moderncvcolor{blue}                               
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+\renewcommand{\familydefault}{\sfdefault}         
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+\setlength{\footskip}{136.00005pt}                 
+% depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+
+%\setlength{\hintscolumnwidth}{3cm}                
+% if you want to change the width of the column with the dates
+
+%\setlength{\makecvheadnamewidth}{10cm}            
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+\newcommand{\myname}[1]{\uline{#1}}
+
+% personal data
+\name{David}{Sinden}
+\title{Applied Mathematician --- Curriculum Vitae}     % optional, remove / comment the line if not wanted
+
+% \born{4 July 1776}                                   % optional, remove / comment the line if not wanted
+
+% \address{street and number}{postcode city}{country}  % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+
+%\phone[mobile]{+1~(234)~567~890}                      % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+
+%\phone[fixed]{+2~(345)~678~901}
+
+%\phone[fax]{+3~(456)~789~012}
+
+\email{david.sinden@gmail.com}                         % optional, remove / comment the line if not wanted
+\homepage{djps.github.io}                              % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[linkedin]{sindendavid}                         % optional, remove / comment the line if not wanted
+\social[twitter]{david\_sinden}                        % optional, remove / comment the line if not wanted
+\social[github]{djps}                                  % optional, remove / comment the line if not wanted
+\social[orcid]{0000-0002-8514-8279}                    % optional, remove / comment the line if not wanted
+\social[researchgate]{David-Sinden}                    % optional, remove / comment the line if not wanted
+\social[googlescholar]{lauJqakAAAAJ}                   % optional, remove / comment the line if not wanted
+
+% \social[gitlab]{djps}                                % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{2306938/djps}                 % optional, remove / comment the line if not wanted
+
+% \social[bitbucket]{jdoe}                             % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                                 % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                              % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                          % optional, remove / comment the line if not wanted
+% \social[telegram]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[whatsapp]{12345678901}                       % optional, remove / comment the line if not wanted
+% \social[signal]{12345678901}                         % optional, remove / comment the line if not wanted
+% \social[matrix]{@johndoe:matrix.org}                 % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                    % optional, remove / comment the line if not wanted
+
+% \photo[64pt][0.4pt]{picture}                         % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+
+
+%%%%%
+%% Add the field "lettersubject" to the definition of the letter header
+%\makeatletter
+%\newcommand\lettersubject[1]{\def\@lettersubject{#1}}
+%
+%\renewcommand*{\makeletterhead}{%
+%  \makehead%
+%  \par%
+%  \begin{minipage}[t]{.5\textwidth}
+%    \raggedright%
+%    \addressfont%
+%    {\bfseries\upshape\@recipientname}\\%
+%    \@recipientaddress%
+%  \end{minipage}
+%  % date
+%  \hfill% US style
+%%  \\[1em]% UK style
+%  \@date\\[2em]% US informal style: "January 1, 1900"; UK formal style: "01/01/1900"
+%  %________ADDED_<<<<<<
+%\bigskip
+%\textbf{Subject: \@lettersubject}\\
+%\noindent
+%%_______________________
+%  % opening
+%  \raggedright%
+%  \@opening\\[1.5em]%
+%  % ensure no extra spacing after \makelettertitle due to a possible blank line
+%  \hspace{0pt}\par\vspace{-\baselineskip}\vspace{-\parskip}}
+%\makeatother
+%%%%%
+
+%-------------------------------------------------------------------------------
+%                letter head definition
+%-------------------------------------------------------------------------------
+% lengths
+%\renewcommand*{\recomputeletterheadlengths}{}
+
+\extrainfo{\href{https://www.github.com/djps}{\githubsocialsymbol}~djps~{\upshape{}|}~\href{https://www.twitter.com/david_sinden}{\twittersocialsymbol}~%
+           david\_{}sinden}
+
+% commands
+\makeatletter
+\newcommand*{\makemyletterhead}{%
+  % recompute lengths (in case we are switching from letter to resume, or vice versa)
+  \recomputeletterlengths%
+  % sender contact info
+  \hfill%
+  \begin{minipage}{.5\textwidth}%
+    % optional detailed information
+    \if@details%
+      \raggedleft%
+      \addressfont\textcolor{color2}{%
+        {\bfseries\upshape\@firstname~\@lastname}\@firstdetailselementfalse%
+        % optional detailed information
+        \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
+          \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
+          \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
+        \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
+          \makenewline\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}%
+        \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
+        \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httpslink{\@homepage}}%
+        %\ifthenelse{\isundefined{\@social[twitter]}}{}{\makenewline\twittersocialsymbol\httpslink{\@twitter}}%
+        \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}\fi%
+    \end{minipage}\\[2em]
+  % recipient block
+  \begin{minipage}[t]{.5\textwidth}
+    \raggedright%
+    \addressfont%
+    {\bfseries\upshape\@recipientname}\\%
+    \@recipientaddress%
+  \end{minipage}
+  % date
+  \hfill% US style
+%  \\[1em]% UK style
+  \@date\\[2em]% US informal style: "January 1, 1900"; UK formal style: "01/01/1900"
+  % optional subject
+  \ifthenelse{\isundefined{\@subject}}{}{{\bfseries\@subject\\[2em]}}
+  % opening
+  {\centering%
+  \textcolor{color1}{\@opening}\\[1.5em]}%
+  % ensure no extra spacing after \makelettertitle due to a possible blank line
+%  \ignorespacesafterend% not working
+  \hspace{0pt}\par\vspace{-\baselineskip}\vspace{-\parskip}}
+\makeatother
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+
+\date{January 01, 1984}
+
+\opening{Research Statement}
+
+\makemyletterhead
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\end{document}
