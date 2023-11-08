@@ -5,109 +5,6 @@ backend:
 collections:
 - create: true
   fields:
-  - label: Widget Type (https://wowchemy.com/docs/page-builder/)
-    name: widget
-    required: true
-    widget: string
-  - default: my-widget-123
-    label: Your reference for this widget (e.g. recent-posts)
-    name: widget_id
-    widget: string
-  - default: true
-    label: Headless?
-    name: headless
-    widget: hidden
-  - default: 10
-    label: Widget position
-    max: 1001
-    min: 0
-    name: weight
-    step: 10
-    value_type: int
-    widget: number
-  - label: Title
-    name: title
-    required: false
-    widget: string
-  - label: Subtitle
-    name: subtitle
-    required: false
-    widget: string
-  - default: true
-    label: Enabled?
-    name: active
-    required: false
-    widget: boolean
-  - fields:
-    - default: "2"
-      label: 'Columns (options: `1` or `2`)'
-      name: columns
-      required: false
-      widget: string
-    - fields:
-      - allowInput: true
-        enableAlpha: true
-        label: Solid color
-        name: color
-        required: false
-        widget: color
-      - allowInput: true
-        enableAlpha: true
-        label: Gradient start
-        name: gradient_start
-        required: false
-        widget: color
-      - allowInput: true
-        enableAlpha: true
-        label: Gradient end
-        name: gradient_end
-        required: false
-        widget: color
-      - default: false
-        label: Use a light text color?
-        name: text_color_light
-        required: false
-        widget: boolean
-      - label: Image
-        media_folder: /assets/media
-        media_library:
-          config:
-            multiple: false
-        name: image
-        public_folder: ""
-        required: false
-        widget: image
-      - default: 0
-        label: Darken the image? (0 is transparent & 1 is opaque)
-        max: 1
-        min: 0
-        name: image_darken
-        required: false
-        step: 0.1
-        value_type: float
-        widget: number
-      label: Background
-      name: background
-      required: false
-      widget: object
-    label: Widget Style
-    name: design
-    required: false
-    widget: object
-  - label: Body
-    name: body
-    required: false
-    widget: markdown
-  folder: content/home
-  identifier_field: widget_id
-  label: Homepage
-  media_folder: /assets/media
-  name: home
-  path: '{{slug}}'
-  public_folder: ""
-  summary: '{{filename}}: {{title}}'
-- create: true
-  fields:
   - label: Display name (such as your full name)
     name: title
     widget: string
@@ -154,7 +51,7 @@ collections:
       - label: Academic
         value: ai
       widget: select
-    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+    - label: Icon (see https://hugoblox.com/docs/page-builder/#icons)
       name: icon
       widget: string
     - label: Label (tooltip)
@@ -383,7 +280,7 @@ collections:
         value: ai
       required: false
       widget: select
-    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+    - label: Icon (see https://hugoblox.com/docs/page-builder/#icons)
       name: icon
       required: false
       widget: string
@@ -476,7 +373,7 @@ collections:
         value: ai
       required: false
       widget: select
-    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
+    - label: Icon (see https://hugoblox.com/docs/page-builder/#icons)
       name: icon
       required: false
       widget: string
@@ -576,29 +473,29 @@ collections:
     required: false
     widget: string
   - default:
-    - "0"
+    - paper-conference
     label: Publication type
     multiple: true
     name: publication_types
     options:
     - label: Uncategorized
-      value: "0"
+      value: manuscript
     - label: Conference paper
-      value: "1"
+      value: paper-conference
     - label: Journal article
-      value: "2"
+      value: article-journal
     - label: Preprint / Working Paper
-      value: "3"
+      value: paper
     - label: Report
-      value: "4"
+      value: report
     - label: Book
-      value: "5"
+      value: book
     - label: Book section
-      value: "6"
+      value: chapter
     - label: Thesis
-      value: "7"
+      value: thesis
     - label: Patent
-      value: "8"
+      value: patent
     required: true
     widget: select
   - label: Authors
