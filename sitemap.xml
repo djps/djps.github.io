@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://djps.github.io/courses/numericalmethods24/part-1/taylor/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://djps.github.io/courses/numericalmethods24/part-1/number-representations/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -531,6 +535,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/admin/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://djps.github.io/tag/maths-for-engineers/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/tag/numerical-analysis/</loc>
