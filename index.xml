@@ -301,6 +301,43 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
     </item>
     
     <item>
+      <title>Interpolation</title>
+      <link>https://djps.github.io/courses/numericalmethods24/part-2/interpolation/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/courses/numericalmethods24/part-2/interpolation/</guid>
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integration</title>
+      <link>https://djps.github.io/courses/numericalmethods24/part-2/integration/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/courses/numericalmethods24/part-2/integration/</guid>
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Finite Difference Methods for Differential Equations</title>
+      <link>https://djps.github.io/courses/numericalmethods24/part-3/odes/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/courses/numericalmethods24/part-3/odes/</guid>
+      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;finite-difference-methods-for-differential-equations&#34;&gt;Finite Difference Methods for Differential Equations&lt;/h2&gt;
+&lt;h3 id=&#34;forward-euler&#34;&gt;Forward Euler&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>QualiPerF</title>
       <link>https://djps.github.io/project/qualiperf/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
@@ -567,30 +604,6 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
     
     <item>
       <title>Interpolation</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part-2/interpolation/</link>
-      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part-2/interpolation/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
-&lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Integration</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part-2/integration/</link>
-      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part-2/integration/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
-&lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interpolation</title>
       <link>https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-2/interpolation/</guid>
@@ -748,19 +761,6 @@ with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polyno
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Finite Difference Methods for Differential Equations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part-3/odes/</link>
-      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part-3/odes/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
-&lt;h2 id=&#34;finite-difference-methods-for-differential-equations&#34;&gt;Finite Difference Methods for Differential Equations&lt;/h2&gt;
-&lt;h3 id=&#34;forward-euler&#34;&gt;Forward Euler&lt;/h3&gt;
 </description>
     </item>
     
