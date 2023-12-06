@@ -26,6 +26,34 @@
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;taylor-series&#34;&gt;Taylor Series&lt;/h2&gt;
+&lt;p&gt;The Taylor series, or Taylor expansion of a function,&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
+\begin{equation}
+\Sum_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}
+\end{equation}&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;This is a power series, which is convergent for some radius.&lt;/p&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;For a function $f \in C^{n+1}\left([a,b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a,b]$, then
+\begin{equation}
+f\left(x) = \Sum_{k=0}^{N} \dfrac{f^{(k)} \left(c\right)  }{k!}\left( x- c \right)^{k} + \dfrac{f^{(n+1)}\left(\xi \right)} }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
+\end{equation}&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
@@ -1005,8 +1033,7 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;stability-analysis&#34;&gt;Stability Analysis&lt;/h3&gt;
@@ -1253,8 +1280,7 @@ a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime
 &lt;ol&gt;
 &lt;li&gt;Let $u$ be a $C^2$ be a solution of the elementary problem, then ${u \in H^1_0}$ also solves the weak form&lt;/li&gt;
 &lt;li&gt;Let $u \in H^1_0$ be a solution of the weak problem. If and only if ${u \in C^2\left( \left[0,1 \right] \right)}$ then $u$ also solves the elementary problem.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;

@@ -839,8 +839,7 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;stability-analysis&#34;&gt;Stability Analysis&lt;/h3&gt;
@@ -1087,8 +1086,7 @@ a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime
 &lt;ol&gt;
 &lt;li&gt;Let $u$ be a $C^2$ be a solution of the elementary problem, then ${u \in H^1_0}$ also solves the weak form&lt;/li&gt;
 &lt;li&gt;Let $u \in H^1_0$ be a solution of the weak problem. If and only if ${u \in C^2\left( \left[0,1 \right] \right)}$ then $u$ also solves the elementary problem.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
