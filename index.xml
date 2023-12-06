@@ -44,13 +44,17 @@
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Taylor Theorem&lt;/em&gt;
+			Theorem:	&lt;em&gt;Taylor&amp;#39;s Theorem&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then
+            &lt;div class=&#34;admonition-content&#34;&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
 \begin{equation}
-f\left( x \right) = \sum\limits_{k=0}^{N} \dfrac{f^{(k)} \left(c\right)  }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
+f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right)  }{k!} \left( x- c \right)^{k} + \underbrace{\dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}}&lt;em&gt;{remainder}
+\end{equation}
+for some value $\xi \in \left[a,b\right]$ where
+\begin{equation}
+\lim&lt;/em&gt;{\xi \rightarrow c}\dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation}&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;

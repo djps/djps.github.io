@@ -1018,13 +1018,17 @@
 <div class="details admonition Theorem open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Taylor Theorem</em>
+			Theorem:	<em>Taylor&#39;s Theorem</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then
+            <div class="admonition-content">For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
 \begin{equation}
-f\left( x \right) = \sum\limits_{k=0}^{N} \dfrac{f^{(k)} \left(c\right)  }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
+f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right)  }{k!} \left( x- c \right)^{k} + \underbrace{\dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}}<em>{remainder}
+\end{equation}
+for some value $\xi \in \left[a,b\right]$ where
+\begin{equation}
+\lim</em>{\xi \rightarrow c}\dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation}</div>
         </div>
     </div>
