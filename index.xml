@@ -24,13 +24,13 @@
 --&gt;
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 15 minute read &lt;/p&gt;
 &lt;h2 id=&#34;taylor-series&#34;&gt;Taylor Series&lt;/h2&gt;
 &lt;p&gt;The Taylor series, or Taylor expansion of a function,&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Taylor Series&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -44,13 +44,13 @@
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
+			Theorem:	&lt;em&gt;Taylor Theorem&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then
 \begin{equation}
-f\left( x \right) = \sum\limits_{k=0}^{N} \dfrac{f^{(k)} \left(c\right)  }{k!}\left( x- c \right)^{k} + \dfrac{f^{(n+1)}\left(\xi \right)} }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
+f\left( x \right) = \sum\limits_{k=0}^{N} \dfrac{f^{(k)} \left(c\right)  }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation}&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
