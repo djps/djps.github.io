@@ -58,15 +58,15 @@ for some value $\xi \in \left[ a, b \right]$ where
 \end{equation}&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition warning open&#34;&gt;
+&lt;div class=&#34;details admonition example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-exclamation-triangle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			warning:	&lt;em&gt;Examples&lt;/em&gt;
+            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/taylor_series/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/TaylorSeries.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/TaylorSeries.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1666,7 +1666,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://djps.github.io/img/taylor_sin.png&#34; alt=&#34;Illustration of convergence of trapezoid rule&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://djps.github.io/img/taylor_sin.png&#34; alt=&#34;Illustration of convergence of taylor series for sin about zero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 </description>
