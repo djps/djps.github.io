@@ -1,0 +1,103 @@
+
+\documentclass{article}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,240mm},
+ left=24mm,
+ top=24mm,
+ }
+
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{theoremFrame}{%
+    linecolor=black,
+    outerlinewidth=1pt,
+    %roundcorner=20pt,
+    innertopmargin=0.5\baselineskip,
+    innerbottommargin=0.5\baselineskip,
+    rightmargin=-10pt,
+    leftmargin=-10pt %, backgroundcolor=gray!50!white
+    }
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customlemma}{Lemma}
+
+\begin{document}
+
+\noindent\textsf{\textbf{\textcolor{MidnightBlue}{Jacobs University Bremen \hfill Spring Semester 2022}}}\\
+
+\noindent{}\textsf{\textbf{\textcolor{MidnightBlue}{Dr. D. Sinden}}}\\
+
+\begin{center}
+{\Large \textbf{\textsf{\textcolor{MidnightBlue}{CA-MATH-804: Numerical Analysis}}}}
+\end{center}
+
+\begin{flushright}
+\textbf{\textsf{\textcolor{MidnightBlue}{Assignment Sheet 6. Due: }}}
+\end{flushright}
+
+\begin{center}
+\textcolor{MidnightBlue}{\rule[0.5\baselineskip]{1.0cm}{0.4pt}}
+\end{center}
+
+\noindent\textsf{\textbf{Exercise 1 [5 x 4* Points]}}: Consider the bending of a clamped beam subject to a transversal force
+$f$, which is described by the boundary value problem
+\begin{align*}
+u^{\prime\prime\prime\prime}\left(x\right) & = f\left(x\right) \quad \mbox{in} \quad(0,1), \\
+u(0) = u(1) & = 0, \\
+u^{\prime}(0) = u^{\prime}(1) & = 0.
+\end{align*}
+
+\begin{itemize}
+\item[\textsf{\textbf{a})}] Show that under certain conditions this problem is equivalent to the following variational (weak)
+problem:
+\begin{equation}
+\left( u^{\prime\prime}, v^{\prime\prime} \right) =  \left( f, v \right) \quad \forall v \in W \nonumber
+\end{equation}
+where
+\begin{equation*}
+\begin{gathered}
+W = \left\{ v : \left(0,1\right) \rightarrow \mathbb{R} \, \| \, v \, \mbox{and} \, v^\prime \, \mbox{are continuous,} \, v^{\prime\prime} \, \mbox{is piecewise continuous} \right. \nonumber \\
+\hspace{1cm} \left.  \mbox{and} \, v(0)=v(1) = v^\prime(0)=v^\prime(1) =0 \right\}. \nonumber
+\end{gathered}
+\end{equation*}
+
+\item[\textsf{\textbf{b})}] For an interval $I = [a, b]$ define
+\begin{equation}
+\begin{gathered}
+P_3\left(I\right) =\left\{ v : I \rightarrow \mathbb{R} \, \| \, v \, \mbox{is a polynomial of degree $\le$ 3, i.e.} \right. \\
+\hspace{1cm} \left. v(x) = a_3 x^3 + a_2 x^2 + a_1 x + a_0 \, \mbox{for} \, a_i \in \mathbb{R} \right\}. \nonumber
+\end{gathered}
+\end{equation}
+Show that $v \in P_3(I)$ is uniquely defined by the values $v(a)$, $v^\prime(a)$, $v(b)$, $v^\prime(b)$ and determine the
+corresponding basis functions $b_i(x)$ such that
+\begin{equation}
+v\left(x\right) = v(a)b_0\left(x\right) + v^\prime(a)b_1\left(x\right) + v(b)b_2\left(x\right) + v^\prime(b) b_3\left(x\right). \nonumber
+\end{equation}
+
+\item[\textsf{\textbf{c})}] Starting from b) use a uniform partitioning of $(0, 1)$ to construct a finite dimensional subspace $W_h$ of $W$ consisting of piecewise cubic functions. Specify suitable parameters to describe the functions in $W_h$ and determine the corresponding basis functions of $W_h$. What is the dimension of the resulting finite element space $W_h$?
+
+\item[\textsf{\textbf{d})}] Formulate a finite element method for the problem based on the space $W_h$. Find the corresponding system of equations.
+
+\item[\textsf{\textbf{e})}] Determine the finite element solution in the case of two intervals and ${f = 1}$. Compare with the exact solution.
+
+\end{itemize}
+
+\end{document}

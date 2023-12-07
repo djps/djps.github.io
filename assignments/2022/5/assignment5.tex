@@ -1,0 +1,100 @@
+
+\documentclass{article}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,240mm},
+ left=24mm,
+ top=24mm,
+ }
+
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{theoremFrame}{%
+    linecolor=black,
+    outerlinewidth=1pt,
+    %roundcorner=20pt,
+    innertopmargin=0.5\baselineskip,
+    innerbottommargin=0.5\baselineskip,
+    rightmargin=-10pt,
+    leftmargin=-10pt %, backgroundcolor=gray!50!white
+    }
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customlemma}{Lemma}
+
+\begin{document}
+
+\noindent\textsf{\textbf{\textcolor{MidnightBlue}{Jacobs University Bremen \hfill Spring Semester 2022}}}\\
+
+\noindent{}\textsf{\textbf{\textcolor{MidnightBlue}{Dr. D. Sinden}}}\\
+
+\begin{center}
+{\Large \textbf{\textsf{\textcolor{MidnightBlue}{CA-MATH-804: Numerical Analysis}}}}
+\end{center}
+
+\begin{flushright}
+\textbf{\textsf{\textcolor{MidnightBlue}{Assignment Sheet 5. Due: }}}
+\end{flushright}
+
+\begin{center}
+\textcolor{MidnightBlue}{\rule[0.5\baselineskip]{1.0cm}{0.4pt}}
+\end{center}
+
+\noindent\textsf{\textbf{Exercise 1 [5 Points]}}: Consider the fourth-order differential operator ${Lu(x) = - u^{\prime\prime\prime\prime}(x)}$ on the space of functions $\left\{ v \,:\, \mathbb{R} \rightarrow \mathbb{R} \right\}$ of sufficient smoothness. Using a centered finite differences derive a discretization of $L$ on a grid with nodes $x_i$.
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 2 [5 Points]}}: Consider the Heaviside function $H : \mathbb{R} \rightarrow \mathbb{R}$ with
+\begin{equation}
+H(x) = \left\{ \begin{array}{ll}
+1 & \quad\mathrm{if} \quad x \le 0, \\
+0 & \quad\mathrm{else.}
+\end{array} \right. \nonumber
+\end{equation}
+Show that the weak derivative (distributional derivative) of $H$ is given by the Dirac distribution $\delta$.
+
+\vspace{0.5\baselineskip}
+\noindent
+\textit{Hint}: According to the definition of weak derivative you thus have to show that ${\int H(x) v^\prime(x) \,\mathrm{d}x = \int \delta(x) v(x)\,\mathrm{d}x}$.
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 3 [5 Points]}}: Let $f : B_1(0) \rightarrow \mathbb{R}$, $f(x) = \left| x \right|^r$ for a given real number $r$, where $B_1(0) \subset \mathbb{R}^n$ is the unit ball around the origin. Show that $f$ has first order weak derivatives provided that ${r > 1- n}$.
+
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 4 [5 Points]}}: Let $\Omega_1, \Omega_2 \subset \mathbb{R}^n$ be bounded. The mapping ${F : \Omega_1 \rightarrow \Omega_2}$ shall be bijective, continuously differentiable and such that $\left\| D F(x) \right\|$ and $\left\| \left( DF(x) \right)^{-1}\right\|$ are bounded in a suitable compatible matrix norm for all $x$. Show that ${v \in H^{1,2}\left( \Omega_2 \right)}$ implies that ${v \circ F \in H^{1,2}\left( \Omega_2 \right)}$.
+
+
+\vspace{\baselineskip}
+\noindent\textsf{\textbf{Exercise 5 [5 Points]}}: For some $\Omega \subset \mathbb{R}^n$ consider the following problem: Find ${u : \Omega \subset \mathbb{R}}$ such that
+\begin{align}
+- \nabla \cdot \left( \alpha\left(x\right) \nabla u\left(x\right) \right) + \gamma \left(x\right) u\left(x\right) & = f\left(x\right) && \mathrm{in}\quad \Omega, \nonumber \\
+\nu \cdot \nabla u & = 0 && \mathrm{on} \quad\partial\Omega,  \nonumber
+\end{align}
+where $\alpha, \gamma : \Omega \rightarrow \mathbb{R}$ are functions of sufficient smoothness and where $\nu$ denotes the outer normal to the domain $\Omega$. The type of boundary condition here is referred to as Neumann or natural boundary condition, whereas the boundary conditions we studied so far in class are called Dirichlet or essential boundary conditions.
+
+Multiplying with a test function and integrating by parts derive the weak form of this problem. Which condition is required for the test functions in order to let the boundary integral vanish?
+
+\vspace{0.5\baselineskip}
+\noindent
+\textit{Hint}: In dimensions $n > 1$ the integration by parts formula is also referred to as Green’s formula or Green’s first identity.
+
+\end{document}
