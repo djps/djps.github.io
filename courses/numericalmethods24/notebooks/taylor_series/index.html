@@ -990,9 +990,9 @@
           <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> January 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
-<h2 id="taylor-series-expansion">Taylor series expansion:</h2>
-<p>Taylor series expansion of the sine function close to zero for an increasing number of terms in the approximation.</p>
-<p>Note that only odd powers of $x$ contribute to the expansion.</p>
+<h2 id="taylor-series-expansion">Taylor Series Expansion</h2>
+<p>This notebook presents the Taylor series expansion of the sine function close to zero for an increasing number of terms in the approximation.</p>
+<p>Note that in this example, only odd powers of $x$ contribute to the expansion.</p>
 <p>First import the tools needed</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
@@ -1000,15 +1000,15 @@
 </span></span></code></pre></div><p>Define the $x$ values and set up a figure for plotting</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-</span></span></code></pre></div><p>First order</p>
+</span></span></code></pre></div><p>First begin with the first order approximation</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 </span></span></code></pre></div><p>approximate $y$ values</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-</span></span></code></pre></div><p>Because only every other term is not equal to zero, we only have to go to $n/2$</p>
+</span></span></code></pre></div><p>Because only every other term is not equal to zero, we only have to compute $n/2$ terms</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
 </span></span></code></pre></div><p>Taylor series expansion up to $n$</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">  <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">i</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">i</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 </span></span></code></pre></div><p>Plotting</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;First Order&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><p>Third order (same structure as before)</p>
@@ -1058,7 +1058,7 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/integrals_11_0.png" alt="Illustration of convergence of trapezoid rule" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/taylor_sin.png" alt="Illustration of convergence of trapezoid rule" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 
