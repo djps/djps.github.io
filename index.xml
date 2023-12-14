@@ -1237,16 +1237,6 @@ then
         &lt;/div&gt;
 
     &lt;/div&gt;
-&lt;div class=&#34;details admonition quote open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-quote-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			quote:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;em&gt;Finite element methods approximate the solution on a small element!&lt;/em&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
 &lt;h2 id=&#34;distributions&#34;&gt;Distributions&lt;/h2&gt;
 &lt;p&gt;Denote by $\mathrm{H}^s(a, b)$, for $s \geq 1$, the space of the functions $f \in C^{s-1}(a, b)$ such that $f^{(s-1)}$ is continuous and piecewise differentiable, so that $f^{(s)}$ exists unless for a finite number of points and belongs to $\mathrm{L}^2(a, b)$. The space $\mathrm{H}^s(a, b)$ is known as the Sobolev function space of order $s$ and is endowed with the norm $\left\Vert \cdot \right\Vert_{H^s(a,b)}$ defined as
 \begin{equation}
