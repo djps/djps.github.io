@@ -1,0 +1,94 @@
+\documentclass{article}
+
+\usepackage{amsmath,amssymb}
+
+%\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,240mm},
+ left=24mm,
+ top=24mm,
+ }
+
+
+\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+
+\noindent\textsf{\textbf{\textcolor{MidnightBlue}{Jacobs University Bremen \hfill Spring Semester 2022}}}
+
+\vspace{1\baselineskip}
+\noindent{}\textsf{\textbf{\textcolor{MidnightBlue}{Dr. D. Sinden}}}
+
+\begin{center}
+{\Large \textbf{\textsf{\textcolor{MidnightBlue}{CA-MATH-804: Numerical Analysis}}}}
+\end{center}
+
+\begin{flushright}
+\textbf{\textsf{\textcolor{MidnightBlue}{Assignment Sheet 1. Due: February 28, 2022}}}
+\end{flushright}
+
+\begin{center}
+\textcolor{MidnightBlue}{\rule[0.5\baselineskip]{1.0cm}{0.4pt}}
+\end{center}
+
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 1 [5 Points]}}: Let ${ G \left( d \right) = \left( G_{+}(d), G_{-}(d) \right) : \mathbb{R} \rightarrow \mathbb{R}^{2} }$ be the resolvent for solving the equation
+\begin{equation}
+x^2 - 2 d x + 1 = 0, \nonumber
+\end{equation}
+for $d \ge 1$. Thus, $G_{\pm}(d) = d \pm \sqrt{d^2 - 1}$. Compute the absolute condition number, $\left\| G^\prime \right\|_2$ using the Euclidean norm. 
+
+
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 2 [5 Points]}}: Consider Newton's method for the finding of roots of a second-order polynomial
+\begin{equation}
+x^2 - 2 d x + 1, \nonumber
+\end{equation}
+for given data $d$. Show that the relative condition number of this numerical method is
+\begin{equation}
+K_n \left(d\right) = \dfrac{|d|}{|x_{n-1} - d|}. \nonumber 
+\end{equation}
+
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 3 [5 Points]}}: Let $X$, $Y$ be some normed spaces with norms ${\left\| \cdot \right\|_X}$ and ${\left\Vert \cdot \right\Vert_Y}$. Furthermore $B : X \rightarrow Y$. Show that the operator norm
+\begin{equation}
+\left\| B \right\| = \sup_{x \in X} \left\{ \dfrac{\left\| B x \right\|_Y}{\left\| x\right\|_X} \right\}
+\nonumber 
+\end{equation}
+satisfies the three properties required to be a norm.
+
+
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 4 [5 Points]}}: Consider the problem of finding $x$ and $y$ from the data $d$ for
+\begin{align*}
+x + dy & = 1, \\
+dx + y & = 0.
+\end{align*}
+\begin{itemize}
+\item[\textsf{\textbf{a})}] Show that the condition number for the problem, with respect to $\left\Vert \cdot \right\Vert_{\infty}$-norm, is given by
+\begin{equation*}
+\left| \dfrac{ |d| + 1}{ | d | - 1} \right| .
+\end{equation*}
+\item[\textsf{\textbf{b})}] Find the condition number with respect to the $\left\Vert \cdot \right\Vert_{2}$-norm.
+\end{itemize}
+\textit{Hint}: Recall that the condition number for a non-singular matrix is $K\left(A\right) = \bigl\Vert A^{-1} \bigr\Vert \,  \left\Vert A \right\Vert$.
+
+
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 5}}: Consider the simple linear function $f : \mathbb{R}^2 \rightarrow \mathbb{R}$ with $f(a, b) = a + b$. Use the vector-norm $\left\|x \right\|_1 = \sum_i | x_i |$ on the gradient of $f$ to compute the relative condition number of $f$. To this end make clear what the roles of data $d$ and solution $x$ are and use the formulas derived in class. Show that the addition of numbers with equal sign is well conditioned, whereas the subtraction of two numbers, which are almost equal, is ill-conditioned. 
+
+% note
+\vspace{0.5\baselineskip}
+\noindent\textit{\small\textcolor{gray!90!white}{Note: This fact leads to the cancellation of significant digits, whenever numbers can be represented with only a finite number of digits (as in floating point arithmetic on computers)}}.
+
+% fifth
+\vspace{1\baselineskip}
+\noindent\textsf{\textbf{Exercise 6}}: Let $A \in \mathbb{R}^{n\times n}$ and let ${P\left(A\right) = \sum_{k=0}^{n} c_k A^k}$ be a polynomial in $A$ with coefficients $c_k \in \mathbb{R}$. Check that if $\lambda\left(A\right)$ is the set of eigenvalues of $A$, then the set of eigenvalues of $P\left(A\right)$ is given by $P\left( \lambda\left(A\right)\right)$. 
+
+\end{document}
+
+
+
+
