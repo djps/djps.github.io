@@ -92,6 +92,7 @@ for some value $\xi \in \left[ a, b \right]$ where
 &lt;li&gt;Round-off errors&lt;/li&gt;
 &lt;li&gt;Truncation errors&lt;/li&gt;
 &lt;/ul&gt;
+&lt;!--  $\left| \dfrac{\tilde{a}-a}{a} \right|$  -- &gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -99,9 +100,10 @@ for some value $\xi \in \left[ a, b \right]$ where
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, if ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \dfrac{\tilde{a}-a}{a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, if ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \left( \tilde{a} - a \right) \slash {a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -114,10 +116,17 @@ for some value $\xi \in \left[ a, b \right]$ where
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;Error propagation&lt;/p&gt;
-&lt;p&gt;Numerical methods are a lot of computational schemes to solve mathematical problems when analytical solutions can&amp;rsquo;t be found.&lt;/p&gt;
-&lt;p&gt;How does the representation of a number in computer memory affect calculations?&lt;/p&gt;
-&lt;h2 id=&#34;number-representations&#34;&gt;Number Representations&lt;/h2&gt;
+
+Error propagation
+
+Numerical methods are a lot of computational schemes to solve mathematical problems when analytical solutions can&#39;t be found.
+
+How does the representation of a number in computer memory affect calculations?
+
+
+
+## Number Representations
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -128,6 +137,7 @@ for some value $\xi \in \left[ a, b \right]$ where
             &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -138,6 +148,7 @@ for some value $\xi \in \left[ a, b \right]$ where
             &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -148,6 +159,7 @@ for some value $\xi \in \left[ a, b \right]$ where
             &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -158,6 +170,8 @@ for some value $\xi \in \left[ a, b \right]$ where
             &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
