@@ -99,7 +99,7 @@ for some value $\xi \in \left[ a, b \right]$ where
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by ${\tilde{a}-a}$ and the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\dfrac{\tilde{a}-a}{a}$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, is ${a \ne 0}$ the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \dfrac{\tilde{a}-a}{a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
