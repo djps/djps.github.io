@@ -378,7 +378,7 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; 
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;IF $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &amp;lt; \omega &amp;lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &amp;lt; \omega &amp;lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h2 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h2&gt;

@@ -86,10 +86,69 @@ for some value $\xi \in \left[ a, b \right]$ where
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;errors&#34;&gt;Errors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Errors in data&lt;/li&gt;
+&lt;li&gt;Round-off errors&lt;/li&gt;
+&lt;li&gt;Truncation errors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then
+Absolute error is given by ${\tilde{a}-a$}$  and the relative error is $\dfrac{\tilde{a}-a}{a}$ and the rror bound is the magnitude of the admissible error.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;For both addition and subtraction the bounds for the absolute error are added. In division and multiplication the bounds for the realtive errors are added.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;Error propagation&lt;/p&gt;
 &lt;p&gt;Numerical methods are a lot of computational schemes to solve mathematical problems when analytical solutions can&amp;rsquo;t be found.&lt;/p&gt;
 &lt;p&gt;How does the representation of a number in computer memory affect calculations?&lt;/p&gt;
 &lt;h2 id=&#34;number-representations&#34;&gt;Number Representations&lt;/h2&gt;
-&lt;!-- Cobol --&gt;
+&lt;p&gt;Base representation&lt;/p&gt;
+&lt;p&gt;Euclid&lt;/p&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Algorithm:	&lt;em&gt;Horner&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Normalized Floating Point Representations&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Significant Bits&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
@@ -538,7 +597,7 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; 
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;IF $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &amp;lt; \omega &amp;lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &amp;lt; \omega &amp;lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h2 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h2&gt;
