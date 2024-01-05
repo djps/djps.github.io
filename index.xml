@@ -93,6 +93,7 @@ for some value $\xi \in \left[ a, b \right]$ where
 &lt;li&gt;Truncation errors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--  $\left| \dfrac{\tilde{a}-a}{a} \right|$  -- &gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -100,7 +101,7 @@ for some value $\xi \in \left[ a, b \right]$ where
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, if ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \left( \tilde{a} - a \right) \slash {a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, if ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \left( \tilde{a} - a \right) / a \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 
