@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 5, 2024 --><html lang="en-us" >
+<!-- Last Published: January 7, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1151,6 +1151,53 @@
 <p>finite difference method for partial differential equations</p>
 </li>
 </ul>
+<div class="mermaid">gantt
+  dateFormat  YYYY-MM-DD
+
+  section "Part 1: Errors"
+  Taylor Series              :a1, 2024-02-01, 30d
+  Number Representations     :after a1, 20d
+
+  section "Part 2: Equations"
+  Linear Equations           :2024-02-12, 12d
+  Nonlinear Equations        :12d
+  another task               :24d
+
+  section "Part 3: Approximations"
+  integration                     :2024-03-12, 12d
+  interpolation                   :12d
+
+  section "Part 4: Solutions"
+  Ordinary Differential Equations :2024-04-01, 14d
+</div>
+<div class="markmap" style="height: 500px;">
+
+<pre>- Numerical Methods
+  - Errors
+    - Taylor Series
+    - Floating Point Representation
+  - Equations
+    - Linear Equations
+      - Direct
+        - LU
+        - Cholesky
+      - Iterative
+        - CG
+    - Nonlinear
+      - Secant
+      - Newton
+      - Bisection
+  - Approximations
+    - Interpolation
+      - Bezier
+    - integration
+      - Simpson
+      - Trapezium
+  - Differential Equations
+    - Ordinary
+    - Partial</pre>
+</div>
+
 <h2 id="assessment">Assessment</h2>
 <table>
 <thead>
@@ -1331,6 +1378,9 @@
   
 
   
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
+  
 
 
 
@@ -1406,6 +1456,25 @@
 <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
 
+<style>
+    .markmap > svg {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    window.markmap = {
+      autoLoader: {
+        manual: false,
+        onReady() {
+          const { autoLoader, builtInPlugins } = window.markmap;
+          
+          autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 
 
 
