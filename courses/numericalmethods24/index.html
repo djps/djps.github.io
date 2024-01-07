@@ -986,7 +986,12 @@
         <li><a href="#text-books">Text Books</a></li>
       </ul>
     </li>
-    <li><a href="#course-outline">Course Outline</a></li>
+    <li><a href="#course-outline">Course Outline</a>
+      <ul>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="#structure">Structure</a></li>
+      </ul>
+    </li>
     <li><a href="#assessment">Assessment</a></li>
   </ul>
 </nav>
@@ -1151,25 +1156,29 @@
 <p>finite difference method for partial differential equations</p>
 </li>
 </ul>
+<h3 id="itinerary">Itinerary</h3>
+<p>Provisionally</p>
 <div class="mermaid">gantt
   dateFormat  YYYY-MM-DD
 
-  section "Part 1: Errors"
+  section "Part 1 - Errors"
   Taylor Series              :a1, 2024-02-01, 30d
   Number Representations     :after a1, 20d
 
-  section "Part 2: Equations"
+  section Part 2 - Equations
   Linear Equations           :2024-02-12, 12d
   Nonlinear Equations        :12d
   another task               :24d
 
-  section "Part 3: Approximations"
+  section "Part 3 - Approximations"
   integration                     :2024-03-12, 12d
   interpolation                   :12d
 
-  section "Part 4: Solutions"
+  section "Part 4 - Solutions"
   Ordinary Differential Equations :2024-04-01, 14d
 </div>
+<h3 id="structure">Structure</h3>
+<p>The course content has the following structure:</p>
 <div class="markmap" style="height: 500px;">
 
 <pre>- Numerical Methods
@@ -1179,14 +1188,14 @@
   - Equations
     - Linear Equations
       - Direct
-        - LU
-        - Cholesky
-      - Iterative
-        - CG
-    - Nonlinear
-      - Secant
-      - Newton
-      - Bisection
+        - Gaussian Elimination
+        - LU Decomposition
+        - Cholesky Decomposition
+      - Iterative methods
+    - Nonlinear Equations
+      - Secant Method
+      - Newton Method
+      - Bisection Method
   - Approximations
     - Interpolation
       - Bezier
@@ -1229,7 +1238,8 @@
 </tr>
 </tbody>
 </table>
-<p>By submitting <a href="/courses/numericalmethods24/assignments/">homework</a> you can improve this grade by up to 0.66 points. More details about homework will be announced in class.</p>
+<p>By submitting <a href="/courses/numericalmethods24/assignments/">homework assignments</a> you can improve this grade by up to 0.66 points.</p>
+<p>More details about assignments will be announced in class, but they will be posted <a href="assignments">here</a>.</p>
 
 
         </article>
