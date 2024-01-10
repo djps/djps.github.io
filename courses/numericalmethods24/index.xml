@@ -142,7 +142,8 @@ x = a_0 b^0 + a_1 b^1 + \ldots a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e. $\left(x \right)&lt;em&gt;{10}$,
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e.
+$\left(x \right)&lt;em&gt;{10}$
 into another base, $b$, i.e. $\left(y \right)&lt;/em&gt;{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
@@ -156,7 +157,8 @@ x_i = x \mbox{ mod } b^i
 $$&lt;/li&gt;
 &lt;li&gt;Output as&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;$\left(x \right)&lt;em&gt;{10} = a_n a&lt;/em&gt;{n-1} \cdots a_0$&lt;/p&gt;
+&lt;p&gt;$\left(x \right)&lt;em&gt;{10}
+= a_n a&lt;/em&gt;{n-1} \cdots a_0$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
