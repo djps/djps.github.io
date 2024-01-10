@@ -126,9 +126,9 @@ for some value $\xi \in \left[ a, b \right]$ where
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $b \in \mathbb{N} \ \left{ 1 \right}$. Every number $x \in \mathbb{N}&lt;em&gt;0$ can be written as a unique expansion with respect to base $b$ as
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $b \in \mathbb{N} \ \lbrace 1 \rbrace$. Every number $x \in \mathbb{N}&lt;em&gt;0$ can be written as a unique expansion with respect to base $b$ as
 $$ x = a_0 b^0 + a_1 b^1 + \ldots a_n b^n = \sum \limits&lt;/em&gt;{i=0}^{n} a_i b^i $$
-with $a_i &amp;lt; \mathbb{N}_0$ and $a_i &amp;lt; b$, i.e. ${a_i \in \left{ 0, \ldots, b-1 \right} }$&lt;/div&gt;
+with $a_i &amp;lt; \mathbb{N}_0$ and $a_i &amp;lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
@@ -169,7 +169,7 @@ $x_i = x \mbox{ mod } b^i$&lt;/li&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Normalized floating point representations with respect to some base $b$, store a number $x$ as
 $$x= 0 \cdot a_1 \ldots a_k \times b^n$$
-where the $a_i \in \left{ 0, 1, \ldots b-1\right}$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/div&gt;
+where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
