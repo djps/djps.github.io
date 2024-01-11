@@ -550,10 +550,10 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition example open&#34;&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			example:	&lt;em&gt;&lt;/em&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -701,10 +701,10 @@ I_1 = \dfrac{b-a}{2} \left( f \left( a \right) + f \left(b\right) \right).
 I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+ f \left(b\right) \right).
 \end{equation}&lt;/p&gt;
 &lt;!-- !!! warning &#34;Example:&#34; --&gt;
-&lt;div class=&#34;details admonition example open&#34;&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			example:	&lt;em&gt;&lt;/em&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -1009,7 +1009,16 @@ then
       <link>https://djps.github.io/courses/numericalanalysis22/part-3/fem/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalanalysis22/part-3/fem/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+      <description>&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;div class=&#34;details quotemonition MyQuote open&#34;&gt;
@@ -1270,10 +1279,10 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition example open&#34;&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			example:	&lt;em&gt;&lt;/em&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
