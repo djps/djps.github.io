@@ -60,7 +60,7 @@ for some value $\xi \in \left[ a, b \right]$ where
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-cogs fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -159,7 +159,7 @@ into another base, $b$, i.e. $\left(y \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;For $i=0,\ldots, n$
+&lt;li&gt;For $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; x \mbox{ div } b^i \\
@@ -858,7 +858,7 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Lemma:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -875,7 +875,7 @@ p^{(j)} \cdot r^{(k+1)} = 0.
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Lemma:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -973,7 +973,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-cogs fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -1135,7 +1135,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 &lt;!-- !!! warning &#34;Example:&#34; --&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-cogs fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -1317,7 +1317,7 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;p&gt;Let $V_h$ be the set of discrete functions defined on the nodal points $x_j$ and $V_h^0 \subset V_h$ contain the discrete functions $v_h \in V_h$ which vanish at $x_0$ and $x_n$, i.e. $v_0 =0$ and $v_n=0$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Lemma:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -1360,7 +1360,7 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Lemma:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -1671,7 +1671,7 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Lemma:	&lt;em&gt;Céa&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -1752,7 +1752,7 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-cogs fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;

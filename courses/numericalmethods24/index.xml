@@ -60,7 +60,7 @@ for some value $\xi \in \left[ a, b \right]$ where
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+            &lt;i class=&#34;icon fas fa-cogs fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
@@ -159,7 +159,7 @@ into another base, $b$, i.e. $\left(y \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;For $i=0,\ldots, n$
+&lt;li&gt;For $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; x \mbox{ div } b^i \\
