@@ -58,10 +58,10 @@ for some value $\xi \in \left[ a, b \right]$ where
 \end{equation}&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition MyExample open&#34;&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon admonition-icon icon-example&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			MyExample:	&lt;em&gt;&lt;/em&gt;
+            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -78,7 +78,16 @@ for some value $\xi \in \left[ a, b \right]$ where
       <link>https://djps.github.io/courses/numericalmethods24/part-1/number-representations/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part-1/number-representations/</guid>
-      <description>&lt;!--
+      <description>&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -100,7 +109,9 @@ for some value $\xi \in \left[ a, b \right]$ where
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$ and, if ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \left( \tilde{a} - a \right) / a \right|$ and the error bound is the magnitude of the admissible error.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$.&lt;/p&gt;
+&lt;p&gt;If ${a \ne 0}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \dfrac{\tilde{a}-a}{a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
