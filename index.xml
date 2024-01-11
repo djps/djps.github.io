@@ -436,11 +436,131 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
       <link>https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/</guid>
-      <description>&lt;h2 id=&#34;simultaneous-equations&#34;&gt;Simultaneous Equations&lt;/h2&gt;
-&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Linear Systems of Equations&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here: linear, square.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Banded Systems&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Symmetric Matrices&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Positive Definite Matrices&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Nonsingular matrix is regular full rank and an inverse.
+A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.
+If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If $\tilde{x}$ is an approximate solution to the linear problem $Ax=b$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as $r = A \tilde{x}-b$. If $\left| r \right|$ is large due to rounding, the matrix is said to be &lt;strong&gt;ill-conditioned&lt;/strong&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;direct-methods&#34;&gt;Direct Methods&lt;/h3&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Algorithm:	&lt;em&gt;Gaussian Elimination&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Algorithm:	&lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;$LU$-Decomposition&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;$LU$-Decomposition&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Cholesky-Decomposition&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Algorithm:	&lt;em&gt;Cholesky&amp;#34;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
-&lt;!-- Cobol --&gt;
 </description>
     </item>
     
