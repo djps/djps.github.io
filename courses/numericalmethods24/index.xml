@@ -239,7 +239,9 @@ then, at most $p$ and at least $q$ significant bits (i.e. digits at base $2$) ar
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\bar{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -249,7 +251,22 @@ then, at most $p$ and at least $q$ significant bits (i.e. digits at base $2$) ar
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix, $M$, is said to be &lt;strong&gt;positive definite&lt;/strong&gt; if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition note open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-pencil-alt fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			note:	&lt;em&gt;Properties of Nonsingular Matrices&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nonsingular matrix is regular full rank and has an inverse, $A^{-1}$.&lt;/li&gt;
+&lt;li&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/li&gt;
+&lt;li&gt;If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -259,19 +276,9 @@ then, at most $p$ and at least $q$ significant bits (i.e. digits at base $2$) ar
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Nonsingular matrix is regular full rank and an inverse.
-A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.
-If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $\tilde{x}$ is an approximate solution to the linear problem $Ax=b$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as $r = A \tilde{x}-b$. If $\left| r \right|$ is large due to rounding, the matrix is said to be &lt;strong&gt;ill-conditioned&lt;/strong&gt;.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.&lt;/p&gt;
+&lt;p&gt;If $\left| r \right|$ is large due to rounding, the matrix is said to be &lt;strong&gt;ill-conditioned&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;direct-methods&#34;&gt;Direct Methods&lt;/h3&gt;
@@ -328,7 +335,7 @@ If a matrix is singular, both versions of Gaussian elimination will fail due to 
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Algorithm:	&lt;em&gt;Cholesky&amp;#34;&lt;/em&gt;
+			Algorithm:	&lt;em&gt;Cholesky&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
