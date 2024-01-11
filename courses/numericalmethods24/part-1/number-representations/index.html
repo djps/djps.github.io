@@ -1104,11 +1104,11 @@ into another base, $b$, i.e. $\left(y \right)_{b}$.</p>
 <ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Determine the smallest integer $n$ such that ${x &lt; b^{n+1}}$</li>
-<li>For $i=n, \ldots, 0$
+<li>Let $y=x$. Then for $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
-a_i &amp; = &amp; x \mbox{ div } b^i \\
-x_i &amp; = &amp; x \mbox{ mod } b^i
+a_i &amp; = &amp; y \mbox{ div } b^i \\
+y &amp; = &amp; y \mbox{ mod } b^i
 \end{array}
 $$</li>
 <li>Output as $\left(x \right)_{10} = a_n a_{n-1} \cdots a_0$</li>

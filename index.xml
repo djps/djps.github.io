@@ -159,11 +159,11 @@ into another base, $b$, i.e. $\left(y \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;For $i=n, \ldots, 0$
+&lt;li&gt;Let $y=x$. Then for $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
-a_i &amp;amp; = &amp;amp; x \mbox{ div } b^i \\
-x_i &amp;amp; = &amp;amp; x \mbox{ mod } b^i
+a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
+y &amp;amp; = &amp;amp; y \mbox{ mod } b^i
 \end{array}
 $$&lt;/li&gt;
 &lt;li&gt;Output as $\left(x \right)_{10} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
