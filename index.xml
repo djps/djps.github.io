@@ -150,10 +150,10 @@ into another base, $b$, i.e. $\left(y \right)_{b}$.&lt;/p&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
 &lt;li&gt;For $i=0,\ldots, n$
 $$
-\begin{align}
-a_i = x \mbox{ div } b^i \\
-x_i = x \mbox{ mod } b^i
-\end{align}
+\begin{array}{rcl}
+a_i &amp;amp; = &amp;amp; x \mbox{ div } b^i \\
+x_i &amp;amp; = &amp;amp; x \mbox{ mod } b^i
+\end{array}
 $$&lt;/li&gt;
 &lt;li&gt;Output as $\left(x \right)_{10} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
@@ -465,7 +465,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\widebar{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -486,7 +486,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that $A^{-1}A = A A^{-1} = I$, where $I$ is the identity matrix.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I}$, where $I$ is the identity matrix.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Note open&#34;&gt;
@@ -1122,10 +1122,10 @@ I_1 = \dfrac{b-a}{2} \left( f \left( a \right) + f \left(b\right) \right).
 I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+ f \left(b\right) \right).
 \end{equation}&lt;/p&gt;
 &lt;!-- !!! warning &#34;Example:&#34; --&gt;
-&lt;div class=&#34;details admonition warning open&#34;&gt;
+&lt;div class=&#34;details admonition example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-exclamation-triangle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			warning:	&lt;em&gt;Examples&lt;/em&gt;
+            &lt;i class=&#34;icon fas fa-list-ol fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			example:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
