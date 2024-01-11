@@ -1059,7 +1059,7 @@
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>A square matrix $A$ is <strong>symmetric</strong> if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.</p>
-<p>A square matrix is said to be <strong>Hermitian</strong> if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\bar{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.</p>
+<p>A square matrix is said to be <strong>Hermitian</strong> if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\widebar{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.</p>
 </div>
         </div>
     </div>
@@ -1073,16 +1073,26 @@
             <div class="admonition-content">A matrix, $M$, is said to be <strong>positive definite</strong> if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.</div>
         </div>
     </div>
-<div class="details admonition note open">
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Nonsingular Matrices</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A matrix is <strong>non-singular</strong> or <strong>invertible</strong> if there exists a matrix $A^{-1}$ such that $A^{-1}A = A A^{-1} = I$, where $I$ is the identity matrix.</div>
+        </div>
+    </div>
+<div class="details admonition Note open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>
-			note:	<em>Properties of Nonsingular Matrices</em>
+			Note:	<em>Properties of Nonsingular Matrices</em>
 			
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>For a nonsingular matrix, the following all hold:</p>
 <ul>
-<li>Nonsingular matrix is regular full rank and has an inverse, $A^{-1}$.</li>
+<li>Nonsingular matrix has full rank</li>
 <li>A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.</li>
 <li>If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.</li>
 </ul></div>
