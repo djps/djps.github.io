@@ -601,7 +601,55 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;root-finding&#34;&gt;Root Finding&lt;/h2&gt;
-&lt;!-- Cobol --&gt;
+&lt;h3 id=&#34;bisection&#34;&gt;Bisection&lt;/h3&gt;
+&lt;h3 id=&#34;newton-method&#34;&gt;Newton Method&lt;/h3&gt;
+&lt;h3 id=&#34;secant-methods&#34;&gt;Secant Methods&lt;/h3&gt;
+&lt;h2 id=&#34;convergence&#34;&gt;Convergence&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Order of convergence. Cubic, quadratic, linear, super-linearly, sub-linear,&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Regularity&lt;/th&gt;
+&lt;th&gt;Proximity to $r$&lt;/th&gt;
+&lt;th&gt;func calls&lt;/th&gt;
+&lt;th&gt;Convergence&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bisection&lt;/td&gt;
+&lt;td&gt;$\mathcal{c}^{0}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Newton&lt;/td&gt;
+&lt;td&gt;$\mathcal{c}^{2}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Secant&lt;/td&gt;
+&lt;td&gt;$\mathcal{c}^{2}$&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;systems-of-nonlinear-equation&#34;&gt;Systems of Nonlinear Equation&lt;/h2&gt;
 </description>
     </item>
     
@@ -652,7 +700,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler&#34;&gt;Forward Euler&lt;/h3&gt;
 &lt;h3 id=&#34;backward-euler&#34;&gt;Backward Euler&lt;/h3&gt;
-&lt;h3 id=&#34;huen&#34;&gt;Huen&lt;/h3&gt;
+&lt;h3 id=&#34;huen-scheme&#34;&gt;Huen Scheme&lt;/h3&gt;
 &lt;h3 id=&#34;crank-nicolson&#34;&gt;Crank-Nicolson&lt;/h3&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -672,7 +720,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Holder and Lipshitz continuouity&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Holder and Lipshitz continuity&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
