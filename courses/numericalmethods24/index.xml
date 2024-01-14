@@ -476,7 +476,7 @@ Super-linearly, sub-linear,&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Initial Value Problems&lt;/em&gt;
+			Definition:	&lt;em&gt;Ordinary Differential Equations&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -491,7 +491,7 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$ and initial value $y\left(a\right)=y_a$ for the unknown function $y\left(t\right)$. Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation $y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$. Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -501,7 +501,7 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the solution at time step $i+1$ depends only on the previous one.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the solution at time step ${i+1}$ depends only on the previous one.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler&#34;&gt;Forward Euler&lt;/h3&gt;
@@ -562,7 +562,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, \tau \right]}$, the solution satisfies the condition that ${}\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow \infty}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, \tau \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow \infty}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -604,7 +604,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\Re{\lambda} \lt 0}, for a fixed value of $h$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\Re \lambda \lt 0}, for a fixed value of $h$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;runge-kutta-schemes-and-multi-step-schemes&#34;&gt;Runge-Kutta Schemes And Multi-Step Schemes&lt;/h3&gt;
