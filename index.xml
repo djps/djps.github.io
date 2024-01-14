@@ -755,11 +755,11 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A function $f$ is Holder continuous if there exists real constants ${C \gt 0}$ and ${\alpha \le 0}$ such that
+            &lt;div class=&#34;admonition-content&#34;&gt;A function $f$ is &lt;strong&gt;Holder continuous&lt;/strong&gt; if there exists real constants ${C \gt 0}$ and ${\alpha \le 0}$ such that
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$
-for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz&lt;/strong&gt; continuous.&lt;/div&gt;
+for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
