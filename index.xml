@@ -716,7 +716,9 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation $y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$. Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.&lt;/p&gt;
+&lt;p&gt;Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
