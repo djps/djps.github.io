@@ -604,7 +604,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\Re \lambda \lt 0}, for a fixed value of $h$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$, for a fixed value of $h$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;runge-kutta-schemes-and-multi-step-schemes&#34;&gt;Runge-Kutta Schemes And Multi-Step Schemes&lt;/h3&gt;
