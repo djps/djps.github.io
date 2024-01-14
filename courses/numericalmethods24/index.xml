@@ -473,15 +473,35 @@ Super-linearly, sub-linear,&lt;/div&gt;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;finite-difference-methods-for-differential-equations&#34;&gt;Finite Difference Methods for Differential Equations&lt;/h2&gt;
 &lt;p&gt;Solutions are functions.&lt;/p&gt;
-&lt;p&gt;IVP&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Initial Value Problems&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;One step method&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  --&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Initial Value Problems&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$ and initial value $y\left(a\right)=y_a$ for the unknown function $y\left(t\right)$. Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;One step methods&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the solution at time step $i+1$ depends only on the previous one.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler&#34;&gt;Forward Euler&lt;/h3&gt;
@@ -496,7 +516,9 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Implicit and explicit&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$, $i&amp;lt;k$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -506,13 +528,17 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Holder and Lipshitz continuity&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A function $f$ is Holder continuous if there exists real constants ${C \gt 0}$ and ${\alpha \le 0}$ such that
+$$
+\left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
+$$
+for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz&lt;/strong&gt; continuous.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Stable&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -522,7 +548,7 @@ Super-linearly, sub-linear,&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Consistent&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -532,14 +558,56 @@ Super-linearly, sub-linear,&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Order&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Order&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, \tau \right]}$, the solution satisfies the condition that ${}\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow \infty}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;h3 id=&#34;runge-kutta-schemes-and-multi-step-schemes&#34;&gt;Runge-Kutta Schemes And Multi-Step schemes&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Zero stable &lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If increment function is Lipshitz continuous for $y_n$ for any $h$ and $t_n$, then the one step method is zero-stable.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If increment function is Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$ and the method is consistent, then
+$$\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0. $$
+Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Absolute Stability&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\Re{\lambda} \lt 0}, for a fixed value of $h$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;h3 id=&#34;runge-kutta-schemes-and-multi-step-schemes&#34;&gt;Runge-Kutta Schemes And Multi-Step Schemes&lt;/h3&gt;
 </description>
     </item>
     

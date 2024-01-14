@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 12, 2024 --><html lang="en-us" >
+<!-- Last Published: January 14, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -994,7 +994,7 @@
     </li>
     <li><a href="#analysis-of-one-step-methods">Analysis of One-Step Methods</a>
       <ul>
-        <li><a href="#runge-kutta-schemes-and-multi-step-schemes">Runge-Kutta Schemes And Multi-Step schemes</a></li>
+        <li><a href="#runge-kutta-schemes-and-multi-step-schemes">Runge-Kutta Schemes And Multi-Step Schemes</a></li>
       </ul>
     </li>
   </ul>
@@ -1039,15 +1039,35 @@
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <h2 id="finite-difference-methods-for-differential-equations">Finite Difference Methods for Differential Equations</h2>
 <p>Solutions are functions.</p>
-<p>IVP</p>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Initial Value Problems</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">One step method</div>
+            <div class="admonition-content">An <strong>ordinary differential equation</strong> (ODE) is an equation that involves one of more derivatives of a function of a single variable.</div>
+        </div>
+    </div>
+<!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  -->
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Initial Value Problems</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">An <strong>initial value problem</strong> (IVP) is given by an ordinary differential equation $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$ and initial value $y\left(a\right)=y_a$ for the unknown function $y\left(t\right)$. Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>One step methods</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the solution at time step $i+1$ depends only on the previous one.</div>
         </div>
     </div>
 <h3 id="forward-euler">Forward Euler</h3>
@@ -1062,7 +1082,9 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Implicit and explicit</div>
+            <div class="admonition-content"><p>A numerical method is said to be <strong>explicit</strong> if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$, $i&lt;k$. Otherwise, the method is said to be <strong>implicit</strong>.</p>
+<p>Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.</p>
+</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1072,13 +1094,17 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Holder and Lipshitz continuity</div>
+            <div class="admonition-content">A function $f$ is Holder continuous if there exists real constants ${C \gt 0}$ and ${\alpha \le 0}$ such that
+$$
+\left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
+$$
+for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz</strong> continuous.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Stable</em>
 			
         </div>
         <div class="details-content">
@@ -1088,7 +1114,7 @@
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Consistent</em>
 			
         </div>
         <div class="details-content">
@@ -1098,14 +1124,56 @@
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Order</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Order</div>
+            <div class="admonition-content">A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, \tau \right]}$, the solution satisfies the condition that ${}\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow \infty}$.</div>
         </div>
     </div>
-<h3 id="runge-kutta-schemes-and-multi-step-schemes">Runge-Kutta Schemes And Multi-Step schemes</h3>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Zero stable </em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"></div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If increment function is Lipshitz continuous for $y_n$ for any $h$ and $t_n$, then the one step method is zero-stable.</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If increment function is Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$ and the method is consistent, then
+$$\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0. $$
+Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Absolute Stability</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be <strong>absolutely stable</strong> if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\Re{\lambda} \lt 0}, for a fixed value of $h$.</div>
+        </div>
+    </div>
+<h3 id="runge-kutta-schemes-and-multi-step-schemes">Runge-Kutta Schemes And Multi-Step Schemes</h3>
 
 
         </article>
