@@ -283,12 +283,12 @@
 
   
 
-<meta name="description" content="Numerical Methods JTMS-MAT-13 -- taught at [Constructor University](https://constructor.university/), Bremen 2024" />
+<meta name="description" content="Examples of iterative solvers for linear systems" />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalmethods24/" />
-<link rel="canonical" href="https://djps.github.io/courses/numericalmethods24/" />
+<link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalmethods24/notebooks/iterative/" />
+<link rel="canonical" href="https://djps.github.io/courses/numericalmethods24/notebooks/iterative/" />
 
 
 
@@ -328,14 +328,20 @@
 
   
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
 <meta property="og:site_name" content="David Sinden" />
-<meta property="og:url" content="https://djps.github.io/courses/numericalmethods24/" />
-<meta property="og:title" content="JTMS-MAT-13: Numerical Methods | David Sinden" />
-<meta property="og:description" content="Numerical Methods JTMS-MAT-13 -- taught at [Constructor University](https://constructor.university/), Bremen 2024" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://djps.github.io/courses/numericalmethods24/notebooks/iterative/" />
+<meta property="og:title" content="Iterative Linear Equation Solvers | David Sinden" />
+<meta property="og:description" content="Examples of iterative solvers for linear systems" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
-    <meta property="og:updated_time" content="2023-11-14T00:00:00&#43;00:00" />
+    <meta
+      property="article:published_time"
+      content="2023-12-07T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2022-12-07T00:00:00&#43;00:00">
   
 
 
@@ -344,6 +350,8 @@
 
 
 
+  
+
 
 
 
@@ -352,8 +360,6 @@
   
 
   
-  
-    <link rel="alternate" href="/courses/numericalmethods24/index.xml" type="application/rss+xml" title="David Sinden" />
   
 
   
@@ -390,7 +396,7 @@
 
 
   
-  <title>JTMS-MAT-13: Numerical Methods | David Sinden</title>
+  <title>Iterative Linear Equation Solvers | David Sinden</title>
 
   
   
@@ -415,7 +421,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="2b286f6ec5e9283d78941059a5e34c43" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ce4c4885db32143f695d1b51c6b59ca5" >
 
   
   
@@ -806,7 +812,7 @@
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
         
-          Courses
+          Notebooks
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -843,6 +849,10 @@
 
       
       
+        
+          
+        
+      
 
 
   
@@ -856,7 +866,7 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link  active" href="/courses/numericalmethods24/">JTMS-MAT-13: Numerical Methods</a>
+        <a class="docs-toc-link " href="/courses/numericalmethods24/">JTMS-MAT-13: Numerical Methods</a>
     
       
         <ul class="nav docs-sidenav">
@@ -909,7 +919,7 @@
       
 
 
-  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative/">Iterative Solvers</a></li>
+  <li class="active"><a href="/courses/numericalmethods24/notebooks/iterative/">Iterative Solvers</a></li>
 
 
 
@@ -981,59 +991,6 @@
 
     
     
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#lectures">Lectures</a></li>
-    <li><a href="#intended-learning-outcomes">Intended Learning Outcomes</a></li>
-    <li><a href="#knowledge-abilities-or-skills">Knowledge, Abilities, or Skills</a></li>
-    <li><a href="#recommendations-for-preparation">Recommendations for Preparation</a></li>
-    <li><a href="#usability-and-relationship-to-other-modules">Usability and Relationship to other Modules</a>
-      <ul>
-        <li><a href="#text-books">Text Books</a></li>
-      </ul>
-    </li>
-    <li><a href="#course-outline">Course Outline</a>
-      <ul>
-        <li><a href="#itinerary">Itinerary</a></li>
-        <li><a href="#structure">Structure</a></li>
-      </ul>
-    </li>
-    <li><a href="#assessment">Assessment</a></li>
-  </ul>
-</nav>
-
-      
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
@@ -1047,250 +1004,17 @@
 
       <div class="docs-article-container">
         
-        <h1>JTMS-MAT-13: Numerical Methods</h1>
+        <h1>Iterative Linear Equation Solvers</h1>
 
         <article class="article-style">
 
           
           
 
-          <h2 id="lectures">Lectures</h2>
-<p>Lectures will take place in spring 2024, Wednesdays and Thursdays at 14:15.</p>
-<h2 id="intended-learning-outcomes">Intended Learning Outcomes</h2>
-<p>By the end of the module, students will be able to:</p>
-<ul>
-<li>describe the basic principles of discretization which are used in the numerical treatment of continuous problems;</li>
-<li>command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;</li>
-<li>recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;</li>
-<li>implement simple numerical algorithms in a high level programming language;</li>
-<li>understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.</li>
-</ul>
-<h2 id="knowledge-abilities-or-skills">Knowledge, Abilities, or Skills</h2>
-<ul>
-<li>
-<p>Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations</p>
-</li>
-<li>
-<p>Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations</p>
-</li>
-<li>
-<p>Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.</p>
-</li>
-</ul>
-<h2 id="recommendations-for-preparation">Recommendations for Preparation</h2>
-<p>Taking &ldquo;<em>Calculus and Elements of Linear Algebra II</em>&rdquo; (CTMS-MAT-10) before taking this module is recommended, but not a pre-requisite. A thorough review of &ldquo;<em>Calculus and Elements of Linear Algebra</em>&rdquo; (CTMS-MAT-09), with emphasis on the topics listed as &ldquo;Content and Educational Aims&rdquo; is recommended.</p>
-<h2 id="usability-and-relationship-to-other-modules">Usability and Relationship to other Modules</h2>
-<ul>
-<li>The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).</li>
-<li>This module is a co-recommendation for the module &ldquo;<em>Applied Dynamical Systems Lab</em>&rdquo; (CA-S-MAT-810) in which the actual implementation in a high level programming language of the learned methods will be covered.</li>
-<li>The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).</li>
-<li>Mandatory for ECE</li>
-<li>Mandatory elective for CS and RIS</li>
-</ul>
-<h3 id="text-books">Text Books</h3>
-<ul>
-<li>&ldquo;<em>Numerical Mathematics</em>&rdquo; - Quarteroni, Sacco and Saleri (2007)</li>
-<li>&ldquo;<em>A First Course in the Numerical Analysis of Differential Equations</em>&rdquo; - Iserles (2012)</li>
-</ul>
-<h2 id="course-outline">Course Outline</h2>
-<p>The following topics will be covered:</p>
-<ul>
-<li>
-<p>Taylor series</p>
-</li>
-<li>
-<p>number representations</p>
-</li>
-<li>
-<p>Gaussian elimination</p>
-</li>
-<li>
-<p>LU decomposition</p>
-</li>
-<li>
-<p>Cholesky decomposition</p>
-</li>
-<li>
-<p>iterative methods</p>
-</li>
-<li>
-<p>bisection method</p>
-</li>
-<li>
-<p>Newton&rsquo;s method</p>
-</li>
-<li>
-<p>secant method</p>
-</li>
-<li>
-<p>polynomial interpolation</p>
-</li>
-<li>
-<p>Aitken&rsquo;s algorithm</p>
-</li>
-<li>
-<p>Lagrange interpolation</p>
-</li>
-<li>
-<p>Newton interpolation</p>
-</li>
-<li>
-<p>Hermite interpolation</p>
-</li>
-<li>
-<p>Bezier curves</p>
-</li>
-<li>
-<p>De Casteljau&rsquo;s algorithm</p>
-</li>
-<li>
-<p>piecewise interpolation</p>
-</li>
-<li>
-<p>spline interpolation</p>
-</li>
-<li>
-<p>$b$-splines</p>
-</li>
-<li>
-<p>least squares approximation</p>
-</li>
-<li>
-<p>polynomial regression</p>
-</li>
-<li>
-<p>difference schemes</p>
-</li>
-<li>
-<p>Richardson extrapolation</p>
-</li>
-<li>
-<p>quadrature rules</p>
-</li>
-<li>
-<p>Monte Carlo integration</p>
-</li>
-<li>
-<p>time stepping schemes for ordinary differential equations</p>
-</li>
-<li>
-<p>Runge-Kutta schemes</p>
-</li>
-<li>
-<p>finite difference method for partial differential equations</p>
-</li>
-</ul>
-<h3 id="itinerary">Itinerary</h3>
-<p>Provisionally, the course will run as follows</p>
-<div class="mermaid">gantt
-  dateFormat  MM-DD
-  axisFormat %m-%d
-  todayMarker off
-  title Provisional Schedule
-
-  section Errors
-  Taylor Series                   :a1, 02-01, 1w
-  Number Representations          :after a1, 1w
-
-  section Equations
-  Linear Equations                :a2, 02-14, 3w
-  Nonlinear Equations             :after a2, 3w
-
-  section  Approximations
-  Integration                     :a3, 04-03, 2w
-  Interpolation                   :after a3, 2w
-
-  section Solutions
-  Ordinary Differential Equations :05-02, 2w
-</div>
-<h3 id="structure">Structure</h3>
-<p>The course content has the following structure:</p>
-<div class="markmap" style="height: 500px;">
-
-<pre>- Numerical Methods
-  - Errors
-    - Taylor Series
-    - Number Representations
-  - Equations
-    - Linear Equations
-      - Direct Methods
-        - Gaussian Elimination
-        - Partial Pivoting
-        - LU Decomposition
-        - Cholesky Decomposition
-      - Iterative Methods
-        - Jacobi
-        - Gauss-Seidel
-        - SOR
-    - Nonlinear Equations
-      - Bisection Method
-      - Newton Method
-      - Secant Method
-  - Approximations
-    - Interpolation
-      - Hermite
-      - Bezier
-      - $b$-splines
-    - Integration
-      - Simpson
-      - Trapezium
-      - Romberg Algorithm
-  - Differential Equations
-    - Difference Schemes
-    - Ordinary Differential Equations
-    - Partial Differential Equations</pre>
-</div>
-
-<h2 id="assessment">Assessment</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Examination Type:</td>
-<td>Module examination</td>
-</tr>
-<tr>
-<td>Assessment Type:</td>
-<td>Written examination</td>
-</tr>
-<tr>
-<td>Scope:</td>
-<td>All intended learning outcomes of this module</td>
-</tr>
-<tr>
-<td>Duration:</td>
-<td>120 min</td>
-</tr>
-<tr>
-<td>Weight:</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table>
-<p>By submitting <a href="/courses/numericalmethods24/assignments/">homework assignments</a> you can improve this grade by up to 0.66 points.</p>
-<p>More details about assignments will be announced in class, but they will be posted <a href="assignments">here</a>.</p>
-<!--
-1 Feb
-7, 8
-14, 15
-21, 22
-28, 29
-6, 7 March
-13, 14
-20, 21
-3, 4 April
-10, 11
-17, 18
-24, 25.
-2 May
-8 May
-15 May  revision
--->
+          <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+<i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> January 11, 2024 &middot;
+<i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
+<h3 id="iterative">Iterative</h3>
 
 
         </article>
@@ -1312,6 +1036,12 @@
 <div class="post-nav">
   
   
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/numericalmethods24/notebooks/linear_systems/" rel="prev">Linear Systems of Equations</a>
+  </div>
+  
 </div>
 
         </div>
@@ -1319,7 +1049,7 @@
       </div>
 
       <div class="body-footer">
-        <p>Last updated on Dec 8, 2023</p>
+        <p>Last updated on Dec 7, 2022</p>
 
         
 
@@ -1439,9 +1169,6 @@
   
 
   
-    
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
-  
 
 
 
@@ -1517,25 +1244,6 @@
 <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
 
-<style>
-    .markmap > svg {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  <script>
-    window.markmap = {
-      autoLoader: {
-        manual: false,
-        onReady() {
-          const { autoLoader, builtInPlugins } = window.markmap;
-          
-          autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
-        },
-      },
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 
 
 

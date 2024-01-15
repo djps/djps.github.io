@@ -919,6 +919,10 @@
       
 
 
+  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative/">Iterative Solvers</a></li>
+
+
+
   <li class=""><a href="/courses/numericalmethods24/notebooks/linear_systems/">Linear Systems</a></li>
 
 
@@ -928,6 +932,14 @@
 
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/number_representations/">Number Representations</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalmethods24/notebooks/ode_solvers/">ODE Solvers</a></li>
+
+
+
+  <li class=""><a href="/courses/numericalmethods24/notebooks/runge/">Runge Phenomena</a></li>
 
 
 
@@ -1073,23 +1085,24 @@ Initial interval is $[-2; 2]$ and initial guess for Newton method is $2$. Analyt
 </span></span><span class="line"><span class="cl">            <span class="n">b</span> <span class="o">=</span> <span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">=</span> <span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">#Break off, if we found the solution; in practice, a sufficiently close solution would also work</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">#e.g., np.abs(f(x_B[i]))&lt;10**-7 or something like that</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">#or the difference between two new iterations is very small,</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">#i.e. the update from one iteration to the next is smaller than some threshold</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Break off, if we find the solution. in practice, a sufficiently close solution would</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># also work</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># e.g., np.abs(f(x_B[i]))&lt;10**-7 or something like that</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># or the difference between two new iterations is very small,</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># i.e. the update from one iteration to the next is smaller than some threshold</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found root&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">break</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No sign change; bisection does not work!&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#Netwon method; same as before:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Newton method; same as before:</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_N</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.</span>
+</span></span><span class="line"><span class="cl"><span class="n">x_N</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">f_deriv</span><span class="p">(</span><span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#Plotting iterations for both methods (orange: Newton, blue: bisection)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Plotting iterations for both methods (orange: Newton, blue: bisection)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_B</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_N</span><span class="p">)</span>
 </span></span></code></pre></div><h3 id="nonlinear-solver-2d-newton-method">Nonlinear solver, 2D-Newton method</h3>
@@ -1099,11 +1112,11 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
 <p>For Newton&rsquo;s method to converge, we need to be &lsquo;sufficiently&rsquo; close to the root of the nonlinear equation and the function needs to be sufficiently smooth (differentiable). If it converges and certain conditions hold, the convergence is quadratic.</p>
 <p>Define the function</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">  <span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">64.0</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">64.0</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">v</span>
 </span></span></code></pre></div><p>Define the Jacobian matrix analytically</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f_deriv</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">  <span class="n">dv</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dv</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">]]</span>
 </span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">dv</span>
 </span></span></code></pre></div><p>Initial guess and iteration</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">])</span>
@@ -1113,12 +1126,12 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
 </span></span><span class="line"><span class="cl"><span class="n">x_old</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </span></span></code></pre></div><p>Perform Newton iterations until the difference between successive steps is less than the tolerance or the number of iterations reaches an upper limit</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x_new</span> <span class="o">-</span> <span class="n">x_old</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">tol</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">Nmax</span><span class="p">)):</span>
-</span></span><span class="line"><span class="cl">  <span class="n">x_old</span> <span class="o">=</span> <span class="n">x_new</span>
-</span></span><span class="line"><span class="cl">  <span class="n">fu</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="n">dfu</span> <span class="o">=</span> <span class="n">f_deriv</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="n">in_dfu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">dfu</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="n">x_new</span> <span class="o">=</span> <span class="n">x_new</span> <span class="o">-</span> <span class="n">in_dfu</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fu</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_old</span> <span class="o">=</span> <span class="n">x_new</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fu</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dfu</span> <span class="o">=</span> <span class="n">f_deriv</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">in_dfu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">dfu</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x_new</span> <span class="o">=</span> <span class="n">x_new</span> <span class="o">-</span> <span class="n">in_dfu</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fu</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution estimate is &#39;</span><span class="p">,</span> <span class="n">x_new</span><span class="p">,</span> <span class="s1">&#39; after &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; iterations &#39;</span> <span class="p">)</span>
 </span></span></code></pre></div>
 
