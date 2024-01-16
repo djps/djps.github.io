@@ -283,12 +283,12 @@
 
   
 
-<meta name="description" content="Solutions to nonlinear equations" />
+<meta name="description" content="Examples of Secant Method" />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/" />
-<link rel="canonical" href="https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/" />
+<link rel="alternate" hreflang="en-us" href="https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/" />
+<link rel="canonical" href="https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/" />
 
 
 
@@ -330,15 +330,18 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="David Sinden" />
-<meta property="og:url" content="https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/" />
-<meta property="og:title" content="Nonlinear Equations | David Sinden" />
-<meta property="og:description" content="Solutions to nonlinear equations" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/" />
+<meta property="og:title" content="Secant Method | David Sinden" />
+<meta property="og:description" content="Examples of Secant Method" /><meta property="og:image" content="https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
-    <meta property="article:published_time" content="2023-11-17T00:00:00&#43;00:00" />
+    <meta
+      property="article:published_time"
+      content="2023-12-07T00:00:00&#43;00:00"
+    />
   
   
-    <meta property="article:modified_time" content="2023-11-17T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-12-07T00:00:00&#43;00:00">
   
 
 
@@ -393,7 +396,7 @@
 
 
   
-  <title>Nonlinear Equations | David Sinden</title>
+  <title>Secant Method | David Sinden</title>
 
   
   
@@ -418,7 +421,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="86f44b5a1c0119529d7b8f56b4d16bc8" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="22a105977008418b526e5c725bc92829" >
 
   
   
@@ -809,7 +812,7 @@
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
         
-          JTMS-MAT-13: Numerical Methods
+          Notebooks
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -882,7 +885,7 @@
 
 
 
-  <li class="active"><a href="/courses/numericalmethods24/part-1/nonlinear-equations/">Nonlinear Equations</a></li>
+  <li class=""><a href="/courses/numericalmethods24/part-1/nonlinear-equations/">Nonlinear Equations</a></li>
 
 
 
@@ -944,7 +947,7 @@
 
 
 
-  <li class=""><a href="/courses/numericalmethods24/notebooks/max_finder/">Secant Method</a></li>
+  <li class="active"><a href="/courses/numericalmethods24/notebooks/max_finder/">Secant Method</a></li>
 
 
 
@@ -1000,52 +1003,6 @@
 
     
     
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#root-finding">Root Finding</a>
-      <ul>
-        <li><a href="#bisection-method">Bisection Method</a></li>
-        <li><a href="#newtons-method">Newton&rsquo;s Method</a></li>
-        <li><a href="#secant-methods">Secant Methods</a></li>
-      </ul>
-    </li>
-    <li><a href="#convergence">Convergence</a></li>
-    <li><a href="#systems-of-nonlinear-equation">Systems of Nonlinear Equation</a></li>
-  </ul>
-</nav>
-
-      
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
@@ -1059,77 +1016,147 @@
 
       <div class="docs-article-container">
         
-        <h1>Nonlinear Equations</h1>
+        <h1>Secant Method</h1>
 
         <article class="article-style">
 
           
           
 
-          <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
-<i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2024 &middot;
-<i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
-<h2 id="root-finding">Root Finding</h2>
-<h3 id="bisection-method">Bisection Method</h3>
-<h3 id="newtons-method">Newton&rsquo;s Method</h3>
-<h3 id="secant-methods">Secant Methods</h3>
-<h2 id="convergence">Convergence</h2>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Order of convergence: cubic, quadratic, linear.
-Super-linearly, sub-linear,</div>
-        </div>
-    </div>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Regularity</th>
-<th>Proximity to $r$</th>
-<th>func calls</th>
-<th>Convergence</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bisection</td>
-<td>$\mathcal{C}^{0}$</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Newton</td>
-<td>$\mathcal{C}^{2}$</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Secant</td>
-<td>$\mathcal{C}^{2}$</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="systems-of-nonlinear-equation">Systems of Nonlinear Equation</h2>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Jacobian</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">here.</div>
-        </div>
-    </div>
+          <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</span></span></code></pre></div><p>Let $g(x)$ be a function given by</p>
+<p>\begin{equation}
+e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
+\end{equation}`</p>
+<p>To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a function <code>gprime</code></p>
+<p>To find roots and confirm if it is a maxima, we need <code>gdoubleprime(x)</code>, as $g(x)$ is at maximum if $g^{\prime\prime}(x)$ is negative</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.718</span> <span class="o">+</span> <span class="mf">0.16969</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mf">4.07799</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">3.3653</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">4.1279</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">0.16969</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="mf">4.07799</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">3.3653</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="mf">4.1279</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gdoubleprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="mf">4.07799</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">3.3653</span> <span class="o">*</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">4.1279</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+</span></span></code></pre></div><p>Plot the function</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/max_finder1.png" alt="Sketch of function g(x)" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Newton method</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">newton_step</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">step_num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">val</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">gprime</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">gdoubleprime</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Step Num: </span><span class="si">{</span><span class="n">step_num</span><span class="si">}</span><span class="s2">, x: </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">val</span><span class="p">,</span> <span class="n">step_num</span>
+</span></span></code></pre></div><p>Secant method</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">secant_step</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">val</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x2</span> <span class="o">-</span> <span class="n">x1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Step Num: </span><span class="si">{</span><span class="n">step_num</span><span class="si">}</span><span class="s2">, x: </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">step_num</span>
+</span></span></code></pre></div><p>Execution: We use secant method here because we can bound it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_first_max</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span>      <span class="c1"># These bounds are found by analyzing the graph</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="mf">0.2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">19</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span> <span class="o">=</span> <span class="n">secant_step</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span><span class="p">,</span> <span class="n">gprime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_second_max</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="mf">0.6</span>      <span class="c1"># These bounds are found by analyzing the graph</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="mf">0.7</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span> <span class="o">=</span> <span class="n">secant_step</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span><span class="p">,</span> <span class="n">gprime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Calculating x for first maximum in x -&gt; [0, 1], in interval [0, 0.2]:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_x_1</span> <span class="o">=</span> <span class="n">calculate_first_max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;First maximum value: &#34;</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_1</span><span class="p">))</span>
+</span></span></code></pre></div><p>.. parsed-literal::</p>
+<pre><code>Calculating x for first maximum in x -&gt; [0, 1], in interval [0, 0.2]:
+Step Num: 1, x: 0.14900380590331655
+Step Num: 2, x: -0.08821605866212776
+Step Num: 3, x: 0.12814220849590097
+Step Num: 4, x: 0.11341387156881519
+Step Num: 5, x: 0.0806834268432286
+Step Num: 6, x: 0.09017014204250429
+Step Num: 7, x: 0.08892692738129448
+Step Num: 8, x: 0.08886390723627205
+Step Num: 9, x: 0.08886440328278541
+Step Num: 10, x: 0.08886440309559314
+Step Num: 11, x: 0.08886440309559253
+Step Num: 12, x: 0.0888644030955926
+Step Num: 13, x: 0.08886440309559303
+Step Num: 14, x: 0.08886440309559265
+Step Num: 15, x: 0.08886440309559258
+Step Num: 16, x: 0.08886440309559261
+Step Num: 17, x: 0.0888644030955926
+Step Num: 18, x: 0.08886440309559261
+Step Num: 19, x: 0.08886440309559261
+First maximum value:  0.006812940563426053
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Calculating x for second maximum in x -&gt; [0, 1], in interval [0.6, 0.7]:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_x_2</span> <span class="o">=</span> <span class="n">calculate_second_max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Second maximum value: &#34;</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_2</span><span class="p">))</span>
+</span></span></code></pre></div><p>.. parsed-literal::</p>
+<pre><code>Calculating x for second maximum in x -&gt; [0, 1], in interval [0.6, 0.7]:
+Step Num: 1, x: 0.6307415305490232
+Step Num: 2, x: 0.6353034667646523
+Step Num: 3, x: 0.6358951723781623
+Step Num: 4, x: 0.6358866382102938
+Step Num: 5, x: 0.6358866518459403
+Step Num: 6, x: 0.6358866518462564
+Second maximum value:  0.004225969342977254
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">max_x_1</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_1</span><span class="p">),</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">max_x_2</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_2</span><span class="p">),</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/max_finder2.png" alt="Sketch of function g(x) with local maxima" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
 
 
         </article>
@@ -1154,14 +1181,14 @@ Super-linearly, sub-linear,</div>
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/courses/numericalmethods24/part-1/linear-equations/" rel="next">Linear Equations</a>
+    <a href="/courses/numericalmethods24/notebooks/runge/" rel="next">Runge Phenomena</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/courses/numericalmethods24/part-2/interpolation/" rel="prev">Interpolation</a>
+    <a href="/courses/numericalmethods24/notebooks/taylor_series/" rel="prev">Taylor Series</a>
   </div>
   
 </div>
@@ -1171,7 +1198,7 @@ Super-linearly, sub-linear,</div>
       </div>
 
       <div class="body-footer">
-        <p>Last updated on Nov 17, 2023</p>
+        <p>Last updated on Dec 7, 2022</p>
 
         
 
