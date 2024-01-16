@@ -2065,7 +2065,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
-&lt;h2 id=&#34;eigenvectors-and-eigenvalues-of-matrices&#34;&gt;Eigenvectors and eigenvalues of matrices&lt;/h2&gt;
+&lt;h2 id=&#34;eigenvectors-and-eigenvalues-of-matrices&#34;&gt;Eigenvectors and Eigenvalues of Matrices&lt;/h2&gt;
 &lt;p&gt;(assuming real numbers here) Eigenvectors give the direction of change (they are normalized to length 1).&lt;/p&gt;
 &lt;p&gt;Eigenvalues give the amplitude of change in that direction.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
@@ -2113,6 +2113,7 @@ A = \left(
 2 &amp;amp; -1 &amp;amp; 0 \\
 -1 &amp;amp; 3 &amp;amp; -1 \\
 0 &amp;amp; -1 &amp;amp; 2
+\end{array}
 \right)
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
@@ -2165,7 +2166,7 @@ A = \left(
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;style type=&#34;text/css&#34;&gt;
 &lt;/style&gt;
 &lt;table id=&#34;TabIT&#34;&gt;
-  &lt;caption&gt;Convergence matrix inversion schemes&lt;/caption&gt;
+  &lt;caption&gt;Convergence of matrix inversion schemes&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th class=&#34;col_heading level0 col0&#34; &gt;Scheme&lt;/th&gt;
