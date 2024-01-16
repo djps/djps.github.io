@@ -2110,8 +2110,8 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues&
 \begin{equation}
 A = \left(
 \begin{array}{ccc}
-2 &amp;amp; -1 &amp;amp; 0\
--1 &amp;amp; 3 &amp;amp; -1\
+2 &amp;amp; -1 &amp;amp; 0 \\
+-1 &amp;amp; 3 &amp;amp; -1 \\
 0 &amp;amp; -1 &amp;amp; 2
 \right)
 \end{equation}&lt;/p&gt;
@@ -2278,8 +2278,8 @@ A = \left(
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;K&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;L&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;L&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;transpose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Reconstruction of original matrix by LL^T&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lower triangular matrix of Cholesky decomposition
-[[&amp;lsquo;1.41421356&amp;rsquo; &amp;lsquo;0.0&amp;rsquo; &amp;lsquo;0.0&amp;rsquo; ]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Lower triangular matrix of Cholesky decomposition&lt;/p&gt;
+&lt;p&gt;[[&amp;lsquo;1.41421356&amp;rsquo; &amp;lsquo;0.0&amp;rsquo; &amp;lsquo;0.0&amp;rsquo; ]
 [0.70710678 1.58113883 0. ]
 [0. 0.63245553 1.26491106]]&lt;/p&gt;
 &lt;p&gt;Check that $A =LL^T$&lt;/p&gt;
