@@ -953,10 +953,6 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
-
-
-  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative2/">Iterative2</a></li>
-
       
         </ul>
       
@@ -1035,7 +1031,9 @@
 </span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mf">10.0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mf">10.0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution 1 is &#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span><span class="s1">&#39; and Solution 2 is &#39;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-</span></span></code></pre></div><p>Subtraction of values of similar size also leads to loss of precision (with double precision often quite difficult, as there may actually be extra digits available for certain computations). But it still becomes obvious for $x=1/150000000$ in the example.</p>
+</span></span></code></pre></div><pre><code>Solution 1 is 0.0 and Solution 2 is 0.009999999999999997
+</code></pre>
+<p>Subtraction of values of similar size also leads to loss of precision (with double precision often quite difficult, as there may actually be extra digits available for certain computations). But it still becomes obvious for $x=1/150000000$ in the example.</p>
 <p>Alternative here: Use approximation of sine by Taylor expansion for angles close to zero and you actually get a better answer, because first terms of Taylor expansion are accurate enough and we work with numbers of not too similar and not too different sizes in the expansion.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#Try also removing some zeros below</span>
 </span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mf">150000000.0</span>
@@ -1044,10 +1042,16 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.90f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.90f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">y</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.90f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">z</span><span class="p">)</span>
-</span></span></code></pre></div><p>If we use the Taylor series approximation of $x-\sin(x)$ for $x$ close to $0$; we can get even better by adding more terms</p>
+</span></span></code></pre></div><pre><code>0.000000006666666666666666806150405534189817835510893928585574030876159667968750000000000000
+0.000000006666666666666666806150405534189817835510893928585574030876159667968750000000000000
+0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+</code></pre>
+<p>If we use the Taylor series approximation of $x-\sin(x)$ for $x$ close to $0$; we can get even better by adding more terms</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="o">**</span><span class="mi">7</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.90f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">z</span><span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><pre><code>0.000000000000000000000000049382716049382722698032335288340181891714993182513789445547602556
+</code></pre>
+
 
         </article>
 

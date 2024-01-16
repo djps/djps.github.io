@@ -953,10 +953,6 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
-
-
-  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative2/">Iterative2</a></li>
-
       
         </ul>
       
@@ -1029,8 +1025,8 @@
 </span></span></code></pre></div><p>Let $g(x)$ be a function given by</p>
 <p>\begin{equation}
 e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
-\end{equation}`</p>
-<p>To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a function <code>gprime</code></p>
+\end{equation}</p>
+<p>To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a can define a function <code>gprime(x)</code></p>
 <p>To find roots and confirm if it is a maxima, we need <code>gdoubleprime(x)</code>, as $g(x)$ is at maximum if $g^{\prime\prime}(x)$ is negative</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.718</span> <span class="o">+</span> <span class="mf">0.16969</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mf">4.07799</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">3.3653</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">4.1279</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">4</span>
@@ -1040,8 +1036,8 @@ e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gdoubleprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="mf">4.07799</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="mf">3.3653</span> <span class="o">*</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">4.1279</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-</span></span></code></pre></div><p>Plot the function</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span></span></code></pre></div><p>Plot the function over the unit interval</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </span></span></code></pre></div><p>
@@ -1062,7 +1058,7 @@ e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/max_finder1.png" alt="Sketch of function g(x)" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/max_finder2.png" alt="Sketch of function g(x)" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p>Newton method</p>
@@ -1077,27 +1073,24 @@ e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
 </span></span><span class="line"><span class="cl">    <span class="n">val</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">x2</span> <span class="o">-</span> <span class="n">x1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Step Num: </span><span class="si">{</span><span class="n">step_num</span><span class="si">}</span><span class="s2">, x: </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">step_num</span>
-</span></span></code></pre></div><p>Execution: We use secant method here because we can bound it.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_first_max</span><span class="p">():</span>
+</span></span></code></pre></div><p>Use secant method here because we can bound it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_first_max</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">nmax</span> <span class="o">=</span> <span class="mi">20</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span>      <span class="c1"># These bounds are found by analyzing the graph</span>
-</span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="mf">0.2</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">19</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nmax</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span> <span class="o">=</span> <span class="n">secant_step</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span><span class="p">,</span> <span class="n">gprime</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_second_max</span><span class="p">():</span>
 </span></span><span class="line"><span class="cl">    <span class="n">step_num</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="mf">0.6</span>      <span class="c1"># These bounds are found by analyzing the graph</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x1</span> <span class="o">=</span> <span class="mf">0.</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x2</span> <span class="o">=</span> <span class="mf">0.7</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span> <span class="o">=</span> <span class="n">secant_step</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">step_num</span><span class="p">,</span> <span class="n">gprime</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x2</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Calculating x for first maximum in x -&gt; [0, 1], in interval [0, 0.2]:&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">max_x_1</span> <span class="o">=</span> <span class="n">calculate_first_max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_x_1</span> <span class="o">=</span> <span class="n">calculate_first_max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mi">19</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;First maximum value: &#34;</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_1</span><span class="p">))</span>
-</span></span></code></pre></div><p>.. parsed-literal::</p>
-<pre><code>Calculating x for first maximum in x -&gt; [0, 1], in interval [0, 0.2]:
+</span></span></code></pre></div><pre><code>Calculating x for first maximum in x -&gt; [0, 1], in interval [0, 0.2]:
 Step Num: 1, x: 0.14900380590331655
 Step Num: 2, x: -0.08821605866212776
 Step Num: 3, x: 0.12814220849590097
@@ -1120,10 +1113,9 @@ Step Num: 19, x: 0.08886440309559261
 First maximum value:  0.006812940563426053
 </code></pre>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Calculating x for second maximum in x -&gt; [0, 1], in interval [0.6, 0.7]:&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">max_x_2</span> <span class="o">=</span> <span class="n">calculate_second_max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_x_2</span> <span class="o">=</span> <span class="n">calculate_second_max</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Second maximum value: &#34;</span><span class="p">,</span> <span class="n">g</span><span class="p">(</span><span class="n">max_x_2</span><span class="p">))</span>
-</span></span></code></pre></div><p>.. parsed-literal::</p>
-<pre><code>Calculating x for second maximum in x -&gt; [0, 1], in interval [0.6, 0.7]:
+</span></span></code></pre></div><pre><code>Calculating x for second maximum in x -&gt; [0, 1], in interval [0.6, 0.7]:
 Step Num: 1, x: 0.6307415305490232
 Step Num: 2, x: 0.6353034667646523
 Step Num: 3, x: 0.6358951723781623
@@ -1154,7 +1146,7 @@ Second maximum value:  0.004225969342977254
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/max_finder2.png" alt="Sketch of function g(x) with local maxima" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/max_finder1.png" alt="Sketch of function g(x) with local maxima" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 

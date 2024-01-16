@@ -953,10 +953,6 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
-
-
-  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative2/">Iterative2</a></li>
-
       
         </ul>
       
@@ -1034,13 +1030,13 @@
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">copy</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">lagrange</span>
-</span></span></code></pre></div><p>Lagrange interpolation of the Runge function for 5 data points, i.e. of degree 4
-Subdivision of interval for interpolation points</p>
+</span></span></code></pre></div><p>Lagrange interpolation of the Runge function for 5 data points, i.e. of degree 4</p>
+<p>Subdivision of interval for interpolation points</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">h</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">+</span><span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
 </span></span></code></pre></div><p>Runge function</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">25.0</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-</span></span></code></pre></div><p>Interpolation</p>
+</span></span></code></pre></div><p>Interpolation, use the built-in Lagrange polynomial function <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.lagrange.html" target="_blank" rel="noopener"><code>lagrange</code></a> from the scipy interpolation library</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">poly</span> <span class="o">=</span> <span class="n">lagrange</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </span></span></code></pre></div><p>Plotting</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
@@ -1056,14 +1052,35 @@ Subdivision of interval for interpolation points</p>
 </span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">+</span><span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">25.0</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">poly</span> <span class="o">=</span> <span class="n">lagrange</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span><span class="n">poly</span><span class="p">(</span><span class="n">x_new</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;degree 10&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">poly</span><span class="p">(</span><span class="n">x_new</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;degree 10&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><p>Analytical representation of the Runge function</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="mf">25.0</span> <span class="o">*</span> <span class="n">x_new</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </span></span></code></pre></div><p>plot everything</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;analytic&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/runge.png" alt="Runge phenomenon" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
 
         </article>
 

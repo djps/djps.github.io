@@ -953,10 +953,6 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
-
-
-  <li class=""><a href="/courses/numericalmethods24/notebooks/iterative2/">Iterative2</a></li>
-
       
         </ul>
       
@@ -1035,65 +1031,95 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">copy</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Function is x^3</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">v</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Derivative of function, here analytically</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f_deriv</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span></code></pre></div><p>Derivative of function, here analytically</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f_deriv</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">dv</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dv</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Array to save iteration results</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_N1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Initial guess</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_N1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Newton method with 20 iterations</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
+</span></span></code></pre></div><p>Array to save iteration results</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">x_N1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span></code></pre></div><p>Initial guess</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_N1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+</span></span></code></pre></div><p>Newton method with 20 iterations</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">f_deriv</span><span class="p">(</span><span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Plotting solution; analytic  root should be 0    </span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_N1</span><span class="p">)</span>
-</span></span></code></pre></div><p>In this case, convergence is relatively slow.</p>
+</span></span></code></pre></div><p>Plotting solution; analytic root should be 0</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_N1</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/nonlinear0.png" alt="convergence of newton method" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>In this case, convergence is relatively slow.</p>
 <p>One can observe a saddle point of the function at the root 0 which causes the slower convergence.</p>
 <p>Shown below is the error with respect to the analytical solution for each iteration.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.52f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.0</span><span class="p">))</span>
-</span></span></code></pre></div><p>Next, we try the function $x^3 - 2$. We use both bisection method and Newton method.
-Initial interval is $[-2; 2]$ and initial guess for Newton method is $2$. Analytic solution is $2^{1/3}$.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Function is x^3-2</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.52f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x_N1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.0</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>1.0000000000000000000000000000000000000000000000000000
+0.6666666666666667406815349750104360282421112060546875
+0.4444444444444444752839729062543483451008796691894531
+0.2962962962962962798485477833310142159461975097656250
+0.1975308641975308532323651888873428106307983398437500
+0.1316872427983539206586272030108375474810600280761719
+0.0877914951989026137724181353405583649873733520507812
+0.0585276634659350758482787568937055766582489013671875
+0.0390184423106233815858878699600609252229332923889160
+0.0260122948737489187442939453376311575993895530700684
+0.0173415299158326124961959635584207717329263687133789
+0.0115610199438884089090384676978828792925924062728882
+0.0077073466292589395618128911280564352637156844139099
+0.0051382310861726263745419274187042901758104562759399
+0.0034254873907817512054818642752707091858610510826111
+0.0022836582605211671812006635207126237219199538230896
+0.0015224388403474444983465296843405667459592223167419
+0.0010149592268982963322310197895603778306394815444946
+0.0006766394845988642214873465263735852204263210296631
+0.0004510929897325761115181586013989090133691206574440
+</code></pre>
+<p>Next, we try the function $x^3 - 2$. We use both bisection method and Newton method.</p>
+<p>Initial interval is $[-2, 2]$ and initial guess for Newton method is $2$. Analytic solution is $2^{1/3}$.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">v</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Derivative of function, here analytically</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f_deriv</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span></code></pre></div><p>Derivative of function, here analytically</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">f_deriv</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">dv</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dv</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">niter</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">#Array to save iteration results</span>
+</span></span></code></pre></div><p>Array to save iteration results</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">niter</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">niter</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Endpoints of initial interval for bisection method.</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_B</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_B</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.</span>
-</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.</span>
-</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mf">2.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Bisection method; One needs to first check that it works (i.e. sign change).</span>
+</span></span></code></pre></div><p>Endpoints of initial interval for bisection method.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_B</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">x_B</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">tol</span> <span class="o">=</span> <span class="mf">10E-7</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+</span></span></code></pre></div><p>Bisection method; One needs to first check that it works (i.e. sign change).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">niter</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="c1"># Bisect interval</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># bisect interval</span>
 </span></span><span class="line"><span class="cl">        <span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># Pick the right half of the interval, so that a sign change occurs</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span> <span class="n">f</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="n">b</span> <span class="o">=</span> <span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">=</span> <span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -1102,22 +1128,92 @@ Initial interval is $[-2; 2]$ and initial guess for Newton method is $2$. Analyt
 </span></span><span class="line"><span class="cl">        <span class="c1"># e.g., np.abs(f(x_B[i]))&lt;10**-7 or something like that</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># or the difference between two new iterations is very small,</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># i.e. the update from one iteration to the next is smaller than some threshold</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found root&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">break</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No sign change; bisection does not work!&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Newton method; same as before:</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</span></span></code></pre></div><p>Newton method (same as before)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x_N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">niter</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_N</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">niter</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">f_deriv</span><span class="p">(</span><span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Plotting iterations for both methods (orange: Newton, blue: bisection)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_B</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_N</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="nonlinear-solver-2d-newton-method">Nonlinear solver, 2D-Newton method</h3>
+</span></span></code></pre></div><p>Plotting iterations for both methods</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_B</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bisection&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_N</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Newton&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="n">niter</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/nonlinear1.png" alt="convergence bisection and newton method" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Error of bisection method for each iteration. One can see a linear reduction of error. Sometimes error gets larger again, as the selection of the interval changes (left or right part of bisected interval).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.52f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x_B</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">x_true</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>3.2599210498948734127111492853146046400070190429687500
+0.7400789501051268093334556397167034447193145751953125
+1.2599210498948731906665443602832965552806854248046875
+0.2599210498948731906665443602832965552806854248046875
+0.2400789501051268093334556397167034447193145751953125
+0.0099210498948731906665443602832965552806854248046875
+0.1150789501051268093334556397167034447193145751953125
+0.0525789501051268093334556397167034447193145751953125
+0.0213289501051268093334556397167034447193145751953125
+0.0057039501051268093334556397167034447193145751953125
+0.0021085498948731906665443602832965552806854248046875
+0.0017977001051268093334556397167034447193145751953125
+0.0001554248948731906665443602832965552806854248046875
+0.0008211376051268093334556397167034447193145751953125
+0.0003328563551268093334556397167034447193145751953125
+0.0000887157301268093334556397167034447193145751953125
+0.0000333545823731906665443602832965552806854248046875
+0.0000276805738768093334556397167034447193145751953125
+0.0000028370042481906665443602832965552806854248046875
+0.0000124217848143093334556397167034447193145751953125
+</code></pre>
+<p>Error of Newton method for each iteration. One can see a quadratic reduction of error. As the error gets smaller, especially below 1, the amount of correct digits suddenly increases drastically from one iteration to the next. We need only 7 iterations (excluding the initial guess) to reach machine precision.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.52f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x_N</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">x_true</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>0.7400789501051268093334556397167034447193145751953125
+0.2400789501051268093334556397167034447193145751953125
+0.0363752464014230891820034230477176606655120849609375
+0.0010111748468752956853222713107243180274963378906250
+0.0000008106710529531824249716009944677352905273437500
+0.0000000000005215827769688985426910221576690673828125
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+0.0000000000000000000000000000000000000000000000000000
+</code></pre>
+<h3 id="nonlinear-solver-2d-newton-method">Nonlinear solver, 2D-Newton method</h3>
 <p>Application of the Newton Method to the function $f(x, y) = (x^2 - 64; x + y^3)^T$.</p>
 <p>One needs the Jacobian matrix (i.e. matrix of partial derivatives) for this.
 Here it is given analytically. Similar as for the one-dimensional case, it can also be estimated with central or other differencing schemes.</p>
@@ -1145,7 +1241,9 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
 </span></span><span class="line"><span class="cl">    <span class="n">x_new</span> <span class="o">=</span> <span class="n">x_new</span> <span class="o">-</span> <span class="n">in_dfu</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fu</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution estimate is &#39;</span><span class="p">,</span> <span class="n">x_new</span><span class="p">,</span> <span class="s1">&#39; after &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; iterations &#39;</span> <span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><pre><code>Solution estimate is array([ 8., -2.]) after 8 iterations
+</code></pre>
+
 
         </article>
 
