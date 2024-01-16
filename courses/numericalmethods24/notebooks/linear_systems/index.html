@@ -1042,7 +1042,22 @@
 </span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Not a square matrix&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
 </span></span></code></pre></div><p>We first check if potential conditions for termination of the algorithm hold. This step might be as costly as or even more costly than the algorithm itself, which is why one wouldn&rsquo;t do this in general. In many practical cases, there might be indications prior to using the algorithm that the conditions hold. Sometimes, one just simply applies the algorithm without checking at all and just checks if it fails. Below, we first apply the checks and then apply the algorithm.</p>
-<p>Consider a matrix $A$ and right-hand side $y$ for linear system $Ax=y$</p>
+<p>Consider a matrix $A$ and right-hand side $y$ for linear system $Ax=y$
+\begin{equation}
+A = \left(
+\begin{array}{ccc}
+2 &amp; -1 &amp; 0 \\
+1 &amp; 3 &amp; 1 \\
+0 &amp; 1 &amp; 2
+\end{array}
+\right) \quad \mbox{and} \quad b = \left(
+\begin{array}{ccc}
+1 \\
+2 \\
+5
+\end{array}
+\right).
+\end{equation}</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">])</span>
 </span></span></code></pre></div><p>Check for positive definiteness and symmetry</p>
@@ -1087,9 +1102,6 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">L</span> <span class="o">=</span> <span class="n">cholesky</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lower triangular matrix of Cholesky decomposition &#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">K</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">transpose</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reconstruction of original matrix by LL^T&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="p">)</span>
 </span></span></code></pre></div><p>Lower triangular matrix of Cholesky decomposition</p>
 <p>[[&lsquo;1.41421356&rsquo; &lsquo;0.0&rsquo; &lsquo;0.0&rsquo; ]
 [0.70710678 1.58113883 0. ]
