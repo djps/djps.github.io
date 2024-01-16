@@ -1060,8 +1060,10 @@ A x = b
 <li><strong>Gauss-Seidel</strong>: $Q$ is lower triangular part of $A$.</li>
 <li><strong>Successive over-relaxtion</strong> (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0&lt;\omega&lt;2}$.</li>
 </ul>
-<p>Let the matrix $A$ be
-\begin{equation}
+<p>In the example we will make use of a number of routines: <a href="https://numpy.org/doc/stable/reference/generated/numpy.tril.html" target="_blank" rel="noopener"><code>np.tril</code></a> as well as <a href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html" target="_blank" rel="noopener"><code>np.diag</code></a>,
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank" rel="noopener"><code>np.linalg.inv</code></a> and <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html" target="_blank" rel="noopener"><code>np.linalg.norm</code></a>.</p>
+<p>Let the matrix $A$ be</p>
+<p>\begin{equation}
 A = \left(
 \begin{array}{ccc}
 2 &amp; -1 &amp; 0 \\
