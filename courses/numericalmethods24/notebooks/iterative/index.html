@@ -1103,7 +1103,36 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">It3</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="n">Q3</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution SOR &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39; after &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; iterations&#39;</span> <span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><style type="text/css">
+</style>
+<table id="TabIT">
+  <caption>Convergence for $\dfrac{1}{2}x(1-x)$</caption>
+  <thead>
+    <tr>
+      <th class="col_heading level0 col0" >Scheme</th>
+      <th class="col_heading level0 col1" >Solution</th>
+      <th class="col_heading level0 col2" >Iterations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="TabIT_row0_col0" class="data row0 col0" >Jacobi</td>
+      <td id="TabIT_row0_col1" class="data row0 col1" >(1.9999746 , 2.99999435, -1.0000254)</td>
+      <td id="TabIT_row0_col2" class="data row0 col2" >22</td>
+    </tr>
+    <tr>
+      <td id="TabIT_row1_col0" class="data row1 col0" >Gauss-Seidel</td>
+      <td id="TabIT_row1_col1" class="data row1 col1" >(1.9999619, 2.9999746, -1.0000127)</td>
+      <td id="TabIT_row1_col1" class="data row1 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="TabIT_row2_col0" class="data row2 col0" >SOR</td>
+      <td id="TabIT_row2_col1" class="data row2 col1" >(2.00000705, 3.00000339, -0.99999909),</td>
+      <td id="TabIT_row2_col1" class="data row2 col2" >8</td>
+    </tr>
+  </tbody>
+</table>
+
 
         </article>
 
