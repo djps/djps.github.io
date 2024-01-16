@@ -1055,11 +1055,21 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 <li><strong>Gauss-Seidel</strong>: $Q$ is lower triangular part of $A$.</li>
 <li><strong>Successive over-relaxtion</strong> (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0&lt;\omega&lt;2}$.</li>
 </ul>
-<p>Matrix</p>
+<p>Matrix $A$,
+\begin{equation}
+A = \left(
+\begin{array}{ccc}
+2 &amp; -1 &amp; 0\
+-1 &amp; 3 &amp; -1\
+0 &amp; -1 &amp; 2
+\right)
+\end{equation}</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]])</span>
-</span></span></code></pre></div><p>Jacobi; inverse of diagonal matrix</p>
+</span></span></code></pre></div><p>Result vector $b=\left( 1, 8, -5 \right)^T$</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
+</span></span></code></pre></div><p>Jacobi; $Q$ is inverse of diagonal matrix</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
 </span></span></code></pre></div><p>Gauss-Seidel; inverse of lower triangular matrix</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tmp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tril</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
@@ -1075,8 +1085,6 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 </span></span></code></pre></div><p>Starting point for iteration; starting error set to $\sqrt{3}$, i.e. <code>norm([0,0,0] - [1,1,1])</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
-</span></span></code></pre></div><p>Result vector $b$</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
 </span></span></code></pre></div><p>Iterate as long as successive iterations are changing by more than ${10^{-4}=0.0001}$</p>
 <p>Jacobi iteration</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1106,7 +1114,7 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 </span></span></code></pre></div><style type="text/css">
 </style>
 <table id="TabIT">
-  <caption>Convergence for $\dfrac{1}{2}x(1-x)$</caption>
+  <caption>Convergence matrix inversion schemes</caption>
   <thead>
     <tr>
       <th class="col_heading level0 col0" >Scheme</th>
