@@ -1098,15 +1098,15 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 A x = b
 \end{equation}</p>
 <p>for $x$.</p>
-<p>They are of general form $x_{k+1}= \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.</p>
+<p>They are of general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.</p>
 <ul>
 <li><strong>Jacobi</strong>: $Q$ is diagonal matrix of $A$.</li>
 <li><strong>Gauss-Seidel</strong>: $Q$ is lower triangular part of $A$.</li>
-<li><strong>Successive over-relaxtion</strong> (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0&lt;\omega&lt;2}$.</li>
+<li><strong>Successive over-relaxtion</strong> (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0 &lt; \omega &lt; 2}$.</li>
 </ul>
 <p>In the example we will make use of a number of routines: <a href="https://numpy.org/doc/stable/reference/generated/numpy.tril.html" target="_blank" rel="noopener"><code>np.tril</code></a> as well as <a href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html" target="_blank" rel="noopener"><code>np.diag</code></a>,
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank" rel="noopener"><code>np.linalg.inv</code></a> and <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html" target="_blank" rel="noopener"><code>np.linalg.norm</code></a>.</p>
-<p>Let the matrix $A$ be</p>
+<p>Let the matrix $A$ be given by</p>
 <p>\begin{equation}
 A = \left(
 \begin{array}{ccc}

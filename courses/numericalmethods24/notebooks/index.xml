@@ -149,15 +149,15 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues&
 A x = b
 \end{equation}&lt;/p&gt;
 &lt;p&gt;for $x$.&lt;/p&gt;
-&lt;p&gt;They are of general form $x_{k+1}= \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.&lt;/p&gt;
+&lt;p&gt;They are of general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Jacobi&lt;/strong&gt;: $Q$ is diagonal matrix of $A$.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;: $Q$ is lower triangular part of $A$.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Successive over-relaxtion&lt;/strong&gt; (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0&amp;lt;\omega&amp;lt;2}$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Successive over-relaxtion&lt;/strong&gt; (SOR): Same as Gauss-Seidel, but $Q$ is multiplied with a factor $1 / \omega $ for the diagonal elements, where ${0 &amp;lt; \omega &amp;lt; 2}$.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the example we will make use of a number of routines: &lt;a href=&#34;https://numpy.org/doc/stable/reference/generated/numpy.tril.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;np.tril&lt;/code&gt;&lt;/a&gt; as well as &lt;a href=&#34;https://numpy.org/doc/stable/reference/generated/numpy.diag.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;np.diag&lt;/code&gt;&lt;/a&gt;,
 &lt;a href=&#34;https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;np.linalg.inv&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;np.linalg.norm&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Let the matrix $A$ be&lt;/p&gt;
+&lt;p&gt;Let the matrix $A$ be given by&lt;/p&gt;
 &lt;p&gt;\begin{equation}
 A = \left(
 \begin{array}{ccc}
