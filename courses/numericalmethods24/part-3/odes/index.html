@@ -1166,11 +1166,7 @@ $$</div>
 <p>Both the Forward Euler and Heun&rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.</p>
 <p>Alternatively,
 $$
-y\left( t + h \right) = y\left( t \right) + \int\limits_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
-$$</p>
-<p>or
-$$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
 $$</p>
 <p>Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.</p>
 <h2 id="analysis-of-one-step-methods">Analysis of One-Step Methods</h2>
@@ -1280,7 +1276,7 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>If increment function is</p>
+            <div class="admonition-content"><p>If the increment function $\Phi$ is</p>
 <ul>
 <li>Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$</li>
 </ul>

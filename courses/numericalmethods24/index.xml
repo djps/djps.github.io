@@ -608,11 +608,7 @@ $$&lt;/div&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.&lt;/p&gt;
 &lt;p&gt;Alternatively,
 $$
-y\left( t + h \right) = y\left( t \right) + \int\limits_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
-$$&lt;/p&gt;
-&lt;p&gt;or
-$$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
 $$&lt;/p&gt;
 &lt;p&gt;Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
@@ -722,7 +718,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If increment function is&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$&lt;/li&gt;
 &lt;/ul&gt;

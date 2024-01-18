@@ -1087,7 +1087,7 @@ is the <em>residual</em>.</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">An iterative method is consistent if $x=Bx +f$, or equivalently,
+            <div class="admonition-content">An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
 \begin{equation}
 f = (I-B) A^{-1} b
 \end{equation}</div>
@@ -1100,7 +1100,7 @@ f = (I-B) A^{-1} b
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">If an iterative scheme is <strong>consistent</strong>, then if and only if $\rho \left( B \right) &lt; 1$ the method will converge for any initial guess $x^{(0)}$.</div>
+            <div class="admonition-content">If an iterative scheme is consistent, then if and only if $\rho \left( B \right) &lt; 1$ the method will converge for any initial guess $x^{(0)}$.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1199,7 +1199,7 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an <em>energy norm</em> which is ind
         </div>
     </div>
 <h2 id="gradient-descent">Gradient Descent</h2>
-<p>Consider the function $\Phi \left( y \right) , : , \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
+<p>Consider the function $\Phi \left( y \right) \, : \, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
 \begin{equation}
 \Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b.
 \end{equation}
@@ -1249,7 +1249,7 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be <strong>$A$-orthogonal</strong> or <strong>conjugate</strong> if $u \cdot Av=0$.</div>
+            <div class="admonition-content">If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be <strong>$\mathbf{A}$-orthogonal</strong> or <strong>conjugate</strong> if $u \cdot Av=0$.</div>
         </div>
     </div>
 <div class="details admonition Lemma open">
