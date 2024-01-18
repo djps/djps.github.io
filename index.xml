@@ -867,6 +867,7 @@ $$
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;!-- 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -877,7 +878,9 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
             &lt;div class=&#34;admonition-content&#34;&gt;stable&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;!-- &lt;div class=&#34;details admonition Definition open&#34;&gt;
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Definition:	&lt;em&gt;Consistent&lt;/em&gt;
@@ -945,11 +948,13 @@ $$&lt;/p&gt;
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If increment function is&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;and&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* the method is consistent
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;the method is consistent&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;then
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0.
