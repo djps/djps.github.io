@@ -589,6 +589,47 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
+&lt;p&gt;$Q x_{k +1}= \left(Q-A \right) x_{k} +Q^{-1} b$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Richardson Iteration&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here $Q=I$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Jacobi&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here $Q=D$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Gauss-Seidel&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;$Q=L$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Successive Over Relaxation&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;$Q=L + \dfrac{1}{\omega}D$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
@@ -732,9 +773,69 @@ Super-linearly, sub-linear,&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative through a the first-order forward difference approximation of the first-order derivative
+$$
+u_{n+1} = u_n + h f_n
+$$
+Error is $\mathcal{O}\left( h^2 \right)$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
-&lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
+$$
+u_{n+1} = u_n + h f_{n+1}
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
+$$
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+$$
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right)}$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Heun’s method&lt;/strong&gt;
+$$
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.&lt;/p&gt;
+&lt;p&gt;Alternatively,
+$$
+y\left( t + h \right) = y\left( t \right) + \int\limits_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \mathrm{d}\tau
+$$
+Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -772,16 +873,21 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
             &lt;div class=&#34;admonition-content&#34;&gt;stable&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
+&lt;!-- &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
 			Definition:	&lt;em&gt;Consistent&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;consistent&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $y\left( t\right)$ be the solution to an initial value problem and ${h_{\mathrm{max}} = \max\limits_{x_k} h_k}$
+A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if the function $f$ satisfies the Lipshitz condition, with respect to $y$, in an interval then
+$$
+\lim\limits_{h_{\mathrm{max}}} \left( \max\limits_{x_k \in I_h} \left| f\left(t_k, y\left(t_k\right) \right) - \Phi\left(t_k, y\left(t_k\right), h_k \right) \right| \right) = 0
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+--&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -795,13 +901,28 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Zero stable &lt;/em&gt;
+			Definition:	&lt;em&gt;Zero Stable Methods&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A method of the form
+$$
+u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
+$$
+is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_0$ and a constant, $C$, such that for all
+${h \in \left[0, h_0\right]}$ and for ${\varepsilon\ gt 0}$, then the following holds:&lt;/p&gt;
+&lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and
+$$
+z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
+$$
+and $z_0 = {y_0 +\delta_0}$, then
+$$
+\left| z_n - u_n \right| \le c \varepsilon \quad \mbox{for} \quad 0 \le n \le N.
+$$&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;This means that small perturbations in the computations lead to small perturbations in the approximations.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -819,9 +940,17 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If increment function is Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$ and the method is consistent, then
-$$\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0. $$
-Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If increment function is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$
+and&lt;/li&gt;
+&lt;li&gt;the method is consistent
+then
+$$
+\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0.
+$$
+Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
