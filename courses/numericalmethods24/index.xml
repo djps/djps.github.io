@@ -559,7 +559,7 @@ Super-linearly, sub-linear,&lt;/div&gt;
 $$
 u_{n+1} = u_n + h f_n
 $$
-Error is $\mathcal{O}\left( h^2 \right)$&lt;/div&gt;
+where ${f_{n+1} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
@@ -573,7 +573,8 @@ Error is $\mathcal{O}\left( h^2 \right)$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
 $$
 u_{n+1} = u_n + h f_{n+1}
-$$&lt;/div&gt;
+$$
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right)}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
@@ -587,8 +588,7 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
 $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
-$$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right)}$.&lt;/div&gt;
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
@@ -608,9 +608,13 @@ $$&lt;/div&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.&lt;/p&gt;
 &lt;p&gt;Alternatively,
 $$
-y\left( t + h \right) = y\left( t \right) + \int\limits_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \mathrm{d}\tau
+y\left( t + h \right) = y\left( t \right) + \int\limits_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
+$$&lt;/p&gt;
+&lt;p&gt;or
 $$
-Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) , \mathrm{d}\tau
+$$&lt;/p&gt;
+&lt;p&gt;Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -685,14 +689,14 @@ $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$
 is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_0$ and a constant, $C$, such that for all
-${h \in \left[0, h_0\right]}$ and for ${\varepsilon\ gt 0}$, then the following holds:&lt;/p&gt;
+${h \in \left[0, h_0\right]}$ and for ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
 &lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and
 $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
 $$
 and $z_0 = {y_0 +\delta_0}$, then
 $$
-\left| z_n - u_n \right| \le c \varepsilon \quad \mbox{for} \quad 0 \le n \le N.
+\left| z_n - u_n \right| \le C \varepsilon \quad \mbox{for} \quad 0 \le n \le N.
 $$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
@@ -716,16 +720,17 @@ $$&lt;/p&gt;
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If increment function is&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$
-and&lt;/li&gt;
-&lt;li&gt;the method is consistent
-then
+&lt;pre&gt;&lt;code&gt;* Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* the method is consistent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;then
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| =0.
 $$
-Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, the convergence is of order $p$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
