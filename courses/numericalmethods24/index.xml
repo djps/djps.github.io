@@ -489,6 +489,75 @@ Super-linearly, sub-linear,&lt;/div&gt;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Given as set of points $p_0$, $\ldots$, $p_n \in \mathbb{R}$ and corresponding nodes $u_0$, $ldots$, $u_n$, a function $f , :  : \mathbb{R} \rightarrow \mathbb{R}$ with $f(u_i)=p_i$ is an **interpolating ** function&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
+So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
+$$\Phi \alpha = p$$
+where $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
+So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
+$$\Phi \alpha = p$$
+where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Lagrange&lt;/strong&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Aitken&lt;/strong&gt;.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;polynomial’s are all the same.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;h2 id=&#34;piecewise-polynomial-interpolation&#34;&gt;Piecewise Polynomial Interpolation&lt;/h2&gt;
+&lt;h2 id=&#34;spline-interpolation&#34;&gt;Spline Interpolation&lt;/h2&gt;
+&lt;h2 id=&#34;least-squares-interpolation&#34;&gt;Least-Squares Interpolation&lt;/h2&gt;
 </description>
     </item>
     
@@ -500,7 +569,101 @@ Super-linearly, sub-linear,&lt;/div&gt;
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+&lt;h2 id=&#34;numerical-differentiation&#34;&gt;Numerical Differentiation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
+\begin{equation}
+D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
+\end{equation}&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backwards Difference Quotient:&lt;/strong&gt;
+\begin{equation}
+D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
+\end{equation}&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Central Difference Quotient:&lt;/strong&gt;
+\begin{equation}
+D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
+\end{equation}&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Richardson Extrapolation&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Higher Order Derivatives&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;with $f(x+h)$ and $f(x-h)$, so
+$$
+f^{\prime\prime} = \dfrac{f(x-h) - 2f(x) + f(x+h)}{h^2} +\mathcla{O}\left(h^2\right)
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Riemann Sum&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Partition
+Approximate the area under the curve by summing the rectangles
+If $f$ is continuous, the value of $x_{i}^{\ast}$ may be choosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$
+Then the &lt;strong&gt;Lower&lt;/strong&gt; and &lt;strong&gt;Upper&lt;/strong&gt; sums are given by
+$$
+L\left(f, p\right) \le \int\limits_{a}^{b} f\left(x \right] , \mathrm{d}x \le U\left(f, p\right).
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Trapezoidal Rule&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Error for Trapezoidal&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Algorithm:	&lt;em&gt;Romberg Algorithm&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     

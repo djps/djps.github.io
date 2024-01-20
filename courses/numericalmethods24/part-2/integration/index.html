@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 19, 2024 --><html lang="en-us" >
+<!-- Last Published: January 20, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1016,6 +1016,7 @@
 
       <nav id="TableOfContents">
   <ul>
+    <li><a href="#numerical-differentiation">Numerical Differentiation</a></li>
     <li><a href="#numerical-integration">Numerical Integration</a></li>
   </ul>
 </nav>
@@ -1057,7 +1058,101 @@
           <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+<h2 id="numerical-differentiation">Numerical Differentiation</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Finite-Difference Quotients</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
+<ol>
+<li><strong>Forward Difference Quotient:</strong>
+\begin{equation}
+D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
+\end{equation}</li>
+<li><strong>Backwards Difference Quotient:</strong>
+\begin{equation}
+D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
+\end{equation}</li>
+<li><strong>Central Difference Quotient:</strong>
+\begin{equation}
+D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
+\end{equation}</li>
+</ol></div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Richardson Extrapolation</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Higher Order Derivatives</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">with $f(x+h)$ and $f(x-h)$, so
+$$
+f^{\prime\prime} = \dfrac{f(x-h) - 2f(x) + f(x+h)}{h^2} +\mathcla{O}\left(h^2\right)
+$$</div>
+        </div>
+    </div>
 <h2 id="numerical-integration">Numerical Integration</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Riemann Sum</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Partition
+Approximate the area under the curve by summing the rectangles
+If $f$ is continuous, the value of $x_{i}^{\ast}$ may be choosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$
+Then the <strong>Lower</strong> and <strong>Upper</strong> sums are given by
+$$
+L\left(f, p\right) \le \int\limits_{a}^{b} f\left(x \right] , \mathrm{d}x \le U\left(f, p\right).
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Trapezoidal Rule</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Error for Trapezoidal</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
+        </div>
+    </div>
+<div class="details admonition Algorithm open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
+			Algorithm:	<em>Romberg Algorithm</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
+        </div>
+    </div>
 
 
         </article>
