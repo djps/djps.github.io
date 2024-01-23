@@ -733,17 +733,19 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
-So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
+So that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 $$\Phi \alpha = p$$
 where $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
 $$
 \Phi = \left( \begin{array}{cccc}
-\varphi_0\left(u_0\right) &amp;amp; \varphi_1\left(u_1\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) &lt;br&gt;
-\vdots &amp;amp; &amp;amp; \vdots &lt;br&gt;
+\varphi_0\left(u_0\right) &amp;amp; \varphi_1\left(u_1\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \\
+\vdots &amp;amp; &amp;amp; \vdots \\
 \varphi_0\left(u_n\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \end{array} \right)
 $$
-Thus $ \alpha = \Phi^{-1} p$. The collocation matrix is invertible if and only if the set of function $\varphi$ are linearly independent.&lt;/div&gt;
+Thus $ \alpha = \Phi^{-1} p$.&lt;/p&gt;
+&lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -779,14 +781,29 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Aitken&lt;/strong&gt;.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Aitken’s&lt;/strong&gt; (or Neville’s) algorithm is an iterative process for evaluating Lagrange interpolation polynomials with explicitly constructing them.
+$$
+p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
+$$
+this can be written as
+$$
+p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; &amp;amp; &amp;amp; \
+&amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; &amp;amp; \
+p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; \
+&amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
+p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
+&amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
+&amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; &amp;amp; \
+p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; &amp;amp; &amp;amp;
+\end{array}
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
@@ -852,8 +869,8 @@ $$&lt;/p&gt;
 $$
 \Phi = \left(
 \begin{array}{ccc}
-\mathcal{N}_{0}^{n} \left(u_0\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_0\right) \
-\vdots &amp;amp; \vdots \
+\mathcal{N}_{0}^{n} \left(u_0\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\
+\vdots &amp;amp; \vdots \\
 \mathcal{N}_{0}^{n} \left(u_m\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_m\right)
 \end{array}
 \right)
