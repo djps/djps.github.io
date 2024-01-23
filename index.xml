@@ -733,17 +733,20 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the interpolating function is a polynomial, write can be written as
+$$
+p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
+$$
 So that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 $$\Phi \alpha = p$$
-where $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
+where $p$ is the vector defined the polynomial evaulated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
 $$
 \Phi = \left( \begin{array}{cccc}
 \varphi_0\left(u_0\right) &amp;amp; \varphi_1\left(u_1\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \\
-\vdots &amp;amp; &amp;amp; \vdots \\
-\varphi_0\left(u_n\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \end{array} \right)
+\vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
+\varphi_0\left(u_n\right) &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \end{array} \right)
 $$
-Thus $ \alpha = \Phi^{-1} p$.&lt;/p&gt;
+Thus $ \alpha = \Phi^{-1} p$,&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
@@ -770,7 +773,7 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
 \begin{equation}
-\Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
+\Pi_n \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i l_i\left(x\right)
 \end{equation}&lt;/p&gt;
 &lt;p&gt;where&lt;/p&gt;
 &lt;p&gt;$l_{i} \in \mathbb{P}_{n}$
@@ -794,14 +797,15 @@ p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$
 this can be written as
 $$
-p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; &amp;amp; &amp;amp; \
-&amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; &amp;amp; \
-p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; \
-&amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
-p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
-&amp;amp; p\left( u \right)   &amp;amp;  &amp;amp; p_0^1\left(u\right) &amp;amp; \
-&amp;amp; p_0^1\left(u\right) &amp;amp; &amp;amp; &amp;amp; \
-p\left( u \right) = p_{0}^{n} &amp;amp;                     &amp;amp; &amp;amp; &amp;amp;
+\begin{array}{lllll}
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp; \
+&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; \
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; \
+&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; \
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \
+&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; \
+&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; \
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp;
 \end{array}
 $$&lt;/div&gt;
         &lt;/div&gt;
@@ -870,7 +874,7 @@ $$
 \Phi = \left(
 \begin{array}{ccc}
 \mathcal{N}_{0}^{n} \left(u_0\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\
-\vdots &amp;amp; \vdots \\
+\vdots &amp;amp; &amp;amp; \vdots \\
 \mathcal{N}_{0}^{n} \left(u_m\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_m\right)
 \end{array}
 \right)
