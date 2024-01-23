@@ -1161,20 +1161,20 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>B-Splines</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>A spline of the form</p>
+            <div class="admonition-content"><p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
 <p>$$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
 $$</p>
-<p>where $\mathcal{N}$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support, that is they are positive in the domain and zero outside. The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then</p>
+<p>where $\mathcal{N}^n$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then</p>
 <p>$$
 \mathcal{N}_{i}^{0} \left(u \right) =
-\left{
+\left\{
 \begin{array}{ll}
-1 &amp; \quad \mbox{for} \quad u_i \le u \le u_{i+1} \
+1 &amp; \quad \mbox{for} \quad u_i \le u \le u_{i+1} \\
 0 &amp; \quad \mbox{else.}
 \end{array}
 \right.
@@ -1185,7 +1185,7 @@ $$</p>
 $$</p>
 <p>where</p>
 <p>$$
-\alpha_{i}^{n-1} = \dfrac{u - u_i}{u_{i+n} - u_i}
+\alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
 $$
 is a local parameter.</p>
 </div>
@@ -1199,9 +1199,9 @@ $$</p>
 $$
 \Phi = \left(
 \begin{array}{ccc}
-\mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}<em>{m}^{n} \left(u_0\right) \
+\mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_0\right) \
 \vdots &amp; \vdots \
-\mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}</em>{m}^{n} \left(u_m\right)
+\mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
 \end{array}
 \right)
 $$</p>
