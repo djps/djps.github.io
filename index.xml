@@ -721,7 +721,9 @@ Super-linearly, sub-linear,&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating&lt;/strong&gt; function.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating&lt;/strong&gt; function.&lt;/p&gt;
+&lt;p&gt;This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -734,7 +736,14 @@ Super-linearly, sub-linear,&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 $$\Phi \alpha = p$$
-where $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;.&lt;/div&gt;
+where $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
+$$
+\Phi = \left( \begin{array}{cccc}
+\varphi_0\left(u_0\right) &amp;amp; \varphi_1\left(u_1\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) &lt;br&gt;
+\vdots &amp;amp; &amp;amp; \vdots &lt;br&gt;
+\varphi_0\left(u_n\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \end{array} \right)
+$$
+Thus $ \alpha = \Phi^{-1} p$. The collocation matrix is invertible if and only if the set of function $\varphi$ are linearly independent.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -753,11 +762,21 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;&lt;/em&gt;
+			Definition:	&lt;em&gt;Lagrange Polynomials&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Lagrange&lt;/strong&gt;.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
+\begin{equation}
+\Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
+\end{equation}&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;$l_{i} \in \mathbb{P}_{n}$
+such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
+\begin{equation}
+l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. &lt;br&gt;
+\end{equation}&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -782,6 +801,62 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
     &lt;/div&gt;
 &lt;h2 id=&#34;piecewise-polynomial-interpolation&#34;&gt;Piecewise Polynomial Interpolation&lt;/h2&gt;
 &lt;h2 id=&#34;spline-interpolation&#34;&gt;Spline Interpolation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain $[a,b]$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i=0, \ldots m-1}$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A spline of the form
+$$
+s(u) = \sum\limits{i=0}^{m} \alpha_i \mathcal{N}&lt;em&gt;{i}^{n} \left(u \right)
+$$
+where $\mathcal{N} are the &lt;strong&gt;basis spline functions&lt;/strong&gt; of degree $n$ with minimal support, that is they are positive in the domain and zero outside. The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then
+$$
+\mathcal{N}&lt;em&gt;i^0 \left(u \right) =
+\left{
+\begin{array}{ll}
+1 &amp;amp; \quad \mbox{for} \quad u_i \le u \le u&lt;/em&gt;{i+1} &lt;br&gt;
+0 &amp;amp; \quad \mbox{else.}
+\end{array}
+\right.
+$$
+and
+$$
+\mathcal{N}&lt;/em&gt;{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)   \mathcal{N}&lt;em&gt;i^{n-1} \left(u \right) + \left( 1 - \alpha&lt;/em&gt;{i+1}^{n-1}\left(u \right)\right)   \mathcal{N}&lt;em&gt;{i+1}^{n-1} \left(u \right)
+$$
+where
+$$
+\alpha&lt;/em&gt;{i}^{n-1} = \dfrac{u - u_i}{u_{i+n} - u_i}
+$$
+is a local parameter.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving
+$$
+\mbox{Find} \quad s = \sum\limits-{i=0}^{m} \alpha_i \mathcal[N}^&lt;em&gt;{i}^n \left( u\right) \quad \mbox{such that} \quad s\left(u_i \right) = p_i \quad \mbox{for} \quaf i=0, \ldots m
+$$
+which is matrix form is $\Phi \alpha = p$, where the collocation matrix, $\phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+$$
+\Phi = \left(
+\begin{array}{ccc}
+\mathcal{N}&lt;/em&gt;{0}^{n} \left(u_0\right) &amp;amp; \cdots &amp;amp; \mathcal{N}&lt;em&gt;{m}^{n} \left(u_0\right) \
+\vdots &amp;amp; \vdots \
+\mathcal{N}&lt;/em&gt;{0}^{n} \left(u_m\right) &amp;amp; \cdots &amp;amp; \mathcal{N}_{m}^{n} \left(u_m\right)
+\end{array}
+\right)
+$$&lt;/p&gt;
 &lt;h2 id=&#34;least-squares-interpolation&#34;&gt;Least-Squares Interpolation&lt;/h2&gt;
 </description>
     </item>

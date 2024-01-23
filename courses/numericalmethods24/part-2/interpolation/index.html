@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 21, 2024 --><html lang="en-us" >
+<!-- Last Published: January 23, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1068,7 +1068,9 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating</strong> function.</div>
+            <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating</strong> function.</p>
+<p>This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.</p>
+</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1081,7 +1083,14 @@
             <div class="admonition-content">If $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 $$\Phi \alpha = p$$
-where $\Phi$ is the <strong>collocation matrix</strong>.</div>
+where $\Phi$ is the <strong>collocation matrix</strong>, given by
+$$
+\Phi = \left( \begin{array}{cccc}
+\varphi_0\left(u_0\right) &amp; \varphi_1\left(u_1\right) &amp; \cdots &amp; \varphi_n\left(u_n\right) <br>
+\vdots &amp; &amp; \vdots <br>
+\varphi_0\left(u_n\right) &amp; \cdots &amp; \varphi_n\left(u_n\right) \end{array} \right)
+$$
+Thus $ \alpha = \Phi^{-1} p$. The collocation matrix is invertible if and only if the set of function $\varphi$ are linearly independent.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1100,11 +1109,21 @@ where $\Phi$ is the <strong>Vandermonde matrix</strong>.</div>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Lagrange Polynomials</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>Lagrange</strong>.</div>
+            <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
+\begin{equation}
+\Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
+\end{equation}</p>
+<p>where</p>
+<p>$l_{i} \in \mathbb{P}_{n}$
+such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
+\begin{equation}
+l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. <br>
+\end{equation}</p>
+</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1129,6 +1148,62 @@ where $\Phi$ is the <strong>Vandermonde matrix</strong>.</div>
     </div>
 <h2 id="piecewise-polynomial-interpolation">Piecewise Polynomial Interpolation</h2>
 <h2 id="spline-interpolation">Spline Interpolation</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A function $s\left(u\right)$ is called a <strong>spline</strong> of degree $k$ on the domain $[a,b]$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i=0, \ldots m-1}$.</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A spline of the form
+$$
+s(u) = \sum\limits{i=0}^{m} \alpha_i \mathcal{N}<em>{i}^{n} \left(u \right)
+$$
+where $\mathcal{N} are the <strong>basis spline functions</strong> of degree $n$ with minimal support, that is they are positive in the domain and zero outside. The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then
+$$
+\mathcal{N}<em>i^0 \left(u \right) =
+\left{
+\begin{array}{ll}
+1 &amp; \quad \mbox{for} \quad u_i \le u \le u</em>{i+1} <br>
+0 &amp; \quad \mbox{else.}
+\end{array}
+\right.
+$$
+and
+$$
+\mathcal{N}</em>{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)   \mathcal{N}<em>i^{n-1} \left(u \right) + \left( 1 - \alpha</em>{i+1}^{n-1}\left(u \right)\right)   \mathcal{N}<em>{i+1}^{n-1} \left(u \right)
+$$
+where
+$$
+\alpha</em>{i}^{n-1} = \dfrac{u - u_i}{u_{i+n} - u_i}
+$$
+is a local parameter.</div>
+        </div>
+    </div>
+<p>Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving
+$$
+\mbox{Find} \quad s = \sum\limits-{i=0}^{m} \alpha_i \mathcal[N}^<em>{i}^n \left( u\right) \quad \mbox{such that} \quad s\left(u_i \right) = p_i \quad \mbox{for} \quaf i=0, \ldots m
+$$
+which is matrix form is $\Phi \alpha = p$, where the collocation matrix, $\phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+$$
+\Phi = \left(
+\begin{array}{ccc}
+\mathcal{N}</em>{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}<em>{m}^{n} \left(u_0\right) \
+\vdots &amp; \vdots \
+\mathcal{N}</em>{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
+\end{array}
+\right)
+$$</p>
 <h2 id="least-squares-interpolation">Least-Squares Interpolation</h2>
 
 
