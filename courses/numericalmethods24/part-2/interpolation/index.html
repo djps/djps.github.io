@@ -1165,42 +1165,43 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A spline of the form
-$$
-s\left(u\right) = \sum \limits{i=0}^{m} \alpha_{i} \mathcal{N}<em>{i}^{n} \left(u \right)
-$$
-where $\mathcal{N}$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support, that is they are positive in the domain and zero outside. The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then
-$$
-\mathcal{N}<em>i^0 \left(u \right) =
+            <div class="admonition-content"><p>A spline of the form</p>
+<p>$$
+s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
+$$</p>
+<p>where $\mathcal{N}$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support, that is they are positive in the domain and zero outside. The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then</p>
+<p>$$
+\mathcal{N}_{i}^{0} \left(u \right) =
 \left{
 \begin{array}{ll}
-1 &amp; \quad \mbox{for} \quad u_i \le u \le u</em>{i+1} <br>
+1 &amp; \quad \mbox{for} \quad u_i \le u \le u_{i+1} \
 0 &amp; \quad \mbox{else.}
 \end{array}
 \right.
+$$</p>
+<p>and</p>
+<p>$$
+\mathcal{N}_{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)  \mathcal{N}_{i}^{n-1} \left(u \right) + \left( 1 - \alpha_{i+1}^{n-1}\left(u \right)\right)  \mathcal{N}_{i+1}^{n-1} \left(u \right)
+$$</p>
+<p>where</p>
+<p>$$
+\alpha_{i}^{n-1} = \dfrac{u - u_i}{u_{i+n} - u_i}
 $$
-and
-$$
-\mathcal{N}</em>{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)   \mathcal{N}<em>i^{n-1} \left(u \right) + \left( 1 - \alpha</em>{i+1}^{n-1}\left(u \right)\right)   \mathcal{N}<em>{i+1}^{n-1} \left(u \right)
-$$
-where
-$$
-\alpha</em>{i}^{n-1} = \dfrac{u - u_i}{u_{i+n} - u_i}
-$$
-is a local parameter.</div>
+is a local parameter.</p>
+</div>
         </div>
     </div>
 <p>Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving</p>
 <p>$$
 \mbox{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \mbox{such that} \quad s\left(u_i \right) = p_i \quad \mbox{for} \quad i=0, \ldots, m
 $$</p>
-<p>which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+<p>which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
 $$
 \Phi = \left(
 \begin{array}{ccc}
-\mathcal{N}<em>{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}</em>{m}^{n} \left(u_0\right) \
+\mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}<em>{m}^{n} \left(u_0\right) \
 \vdots &amp; \vdots \
-\mathcal{N}<em>{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}</em>{m}^{n} \left(u_m\right)
+\mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}</em>{m}^{n} \left(u_m\right)
 \end{array}
 \right)
 $$</p>
