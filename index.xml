@@ -798,7 +798,7 @@ $$
 this can be written as
 $$
 \begin{equation}
-\begin{array}{lllll}
+\begin{array}{llllc}
 l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp; {} \
 &amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; {} \
 l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; {} \
@@ -814,9 +814,9 @@ $$&lt;/div&gt;
     &lt;/div&gt;
 &lt;p&gt;\begin{equation}
 \begin{array}{lllll}
-l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp; &lt;br&gt;
-&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; &lt;br&gt;
-l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; &lt;br&gt;
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp; \
+&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; \
+l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; \\
 &amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; &lt;br&gt;
 l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &lt;br&gt;
 &amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; &lt;br&gt;
