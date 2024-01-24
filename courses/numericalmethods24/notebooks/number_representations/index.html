@@ -1019,13 +1019,14 @@
           
           
 
-          <h2 id="number-representations">Number representations:</h2>
-<p>The order of operations and the respective number representation can lead to rounding errors and error propagation</p>
+          <h2 id="number-representations--accuracy">Number Representations &amp; Accuracy</h2>
+<p>The order of operations and the respective number representation can lead to rounding errors and propagation of errors.</p>
 <p>The order of operations matters on computers as addition/subtraction is not associative.</p>
-<p>Here, addition of small number $b$ to large number $a$ is causing the issue.</p>
+<p>Here, addition of small number $b$ to a large number $a$ can cause a problem.</p>
+<p>In a python environment, import the libraries we need:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
-</span></span></code></pre></div><p>Here $c$ and $d$ should be the same:</p>
+</span></span></code></pre></div><p>Here $c$ and $d$ should be identical:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">7</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mf">10.0</span><span class="p">)</span>
@@ -1033,9 +1034,9 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution 1 is &#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span><span class="s1">&#39; and Solution 2 is &#39;</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
 </span></span></code></pre></div><pre><code>Solution 1 is 0.0 and Solution 2 is 0.009999999999999997
 </code></pre>
-<p>Subtraction of values of similar size also leads to loss of precision (with double precision often quite difficult, as there may actually be extra digits available for certain computations). But it still becomes obvious for $x=1/150000000$ in the example.</p>
-<p>Alternative here: Use approximation of sine by Taylor expansion for angles close to zero and you actually get a better answer, because first terms of Taylor expansion are accurate enough and we work with numbers of not too similar and not too different sizes in the expansion.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#Try also removing some zeros below</span>
+<p>Subtraction of values of similar size also leads to loss of precision (with double precision often quite difficult, as there may actually be extra digits available for certain computations). But it still becomes obvious for ${x = 1/150000000}$ in the example.</p>
+<p>Alternative application: use an approximation of sine by the Taylor expansion for angles close to zero to yield a better answer, because first terms of Taylor expansion are accurate enough and we work with numbers of not too similar and not too different sizes in the expansion.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Try also removing some zeros below</span>
 </span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mf">150000000.0</span>
 </span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
