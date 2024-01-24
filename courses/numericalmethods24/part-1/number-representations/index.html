@@ -1136,7 +1136,7 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.</p>
 <ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Determine the smallest integer $n$ such that ${x &lt; b^{n+1}}$</li>
-<li>Let $y=x$. Then \texttt{for} $i=n, \ldots, 0$
+<li>Let $y=x$. Then $\mbox{\texttt{for}}$ $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp; = &amp; y \mbox{ div } b^i \\
@@ -1148,11 +1148,13 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 </ol></div>
         </div>
     </div>
-<p>A number can be written in a nested form:
+<p>A number can be written in a nested form:</p>
+<p>$$
 \begin{eqnarry}
-\left(x\right)_b &amp; = a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
-&amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
-\end{equation}</p>
+\left(x\right)_b &amp; = &amp; a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
+&amp; = &amp; a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
+\end{equation}
+$$</p>
 <div class="details admonition Algorithm open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
@@ -1163,7 +1165,7 @@ which at each steps provides an $a_i$ and updates $y$.</li>
             <div class="admonition-content"><ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Set $i=0$</li>
-<li>Let $y=x$. Then \texttt{while} $x&gt;0$
+<li>Let $y=x$. Then $\texttt{while}$ $x&gt;0$
 $$
 \begin{array}{rcl}
 a_i &amp; = &amp; y \mbox{ div } b^i \\
@@ -1184,19 +1186,9 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Normalized floating point representations with respect to some base $b$, store a number $x$ as
+            <div class="admonition-content"><em>Normalized</em> floating point representations with respect to some base $b$, store a number $x$ as
 $$x= 0 \cdot a_1 \ldots a_k \times b^n$$
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</div>
-        </div>
-    </div>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Significant Bits</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Here</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1208,7 +1200,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digi
         <div class="details-content">
             <div class="admonition-content">Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
-then, at most $p$ and at least $q$ significant bits (i.e. digits at base $2$) are lost during subtraction.</div>
+then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.</div>
         </div>
     </div>
 

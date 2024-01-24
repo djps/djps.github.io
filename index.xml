@@ -159,7 +159,7 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then \texttt{for} $i=n, \ldots, 0$
+&lt;li&gt;Let $y=x$. Then $\mbox{\texttt{for}}$ $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
@@ -171,11 +171,13 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;A number can be written in a nested form:
+&lt;p&gt;A number can be written in a nested form:&lt;/p&gt;
+&lt;p&gt;$$
 \begin{eqnarry}
-\left(x\right)_b &amp;amp; = a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
-&amp;amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
-\end{equation}&lt;/p&gt;
+\left(x\right)_b &amp;amp; = &amp;amp; a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
+&amp;amp; = &amp;amp; a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
+\end{equation}
+$$&lt;/p&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -186,7 +188,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Set $i=0$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then \texttt{while} $x&amp;gt;0$
+&lt;li&gt;Let $y=x$. Then $\texttt{while}$ $x&amp;gt;0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
@@ -207,19 +209,9 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Normalized floating point representations with respect to some base $b$, store a number $x$ as
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, store a number $x$ as
 $$x= 0 \cdot a_1 \ldots a_k \times b^n$$
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Significant Bits&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
@@ -231,7 +223,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &amp;gt; y &amp;gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
-then, at most $p$ and at least $q$ significant bits (i.e. digits at base $2$) are lost during subtraction.&lt;/div&gt;
+then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 </description>
