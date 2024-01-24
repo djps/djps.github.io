@@ -140,7 +140,7 @@ mjx-assistive-mml {
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every number $x \in \mathbb{N}_0$
 can be written as a unique expansion with respect to base $b$ as&lt;/p&gt;
 &lt;p&gt;\begin{equation}
-x = a_0 b^0 + a_1 b^1 + \ldots a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
+\left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation}&lt;/p&gt;
 &lt;p&gt;with $a_i &amp;lt; \mathbb{N}_0$ and $a_i &amp;lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$&lt;/p&gt;
 &lt;/div&gt;
@@ -155,21 +155,27 @@ x = a_0 b^0 + a_1 b^1 + \ldots a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e.
 $\left(x \right)_{10}$
-into another base, $b$, i.e. $\left(y \right)_{b}$.&lt;/p&gt;
+into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then for $i=n, \ldots, 0$
+&lt;li&gt;Let $y=x$. Then \texttt{for} $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
 y &amp;amp; = &amp;amp; y \mbox{ mod } b^i
 \end{array}
-$$&lt;/li&gt;
-&lt;li&gt;Output as $\left(x \right)_{10} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
+$$
+which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
+&lt;li&gt;Output as $\left(x \right)_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;A number can be written in a nested form:
+\begin{eqnarry}
+\left(x\right)_b &amp;amp; = a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
+&amp;amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
+\end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -177,7 +183,21 @@ $$&lt;/li&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
+&lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
+&lt;li&gt;Set $i=0$&lt;/li&gt;
+&lt;li&gt;Let $y=x$. Then \texttt{while} $x&amp;gt;0$
+$$
+\begin{array}{rcl}
+a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
+y &amp;amp; = &amp;amp; y \mbox{ mod } b^i \\
+i &amp;amp; = &amp;amp; i+1
+\end{array}
+$$
+which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
+&lt;li&gt;Output as $\left(x \right)_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -526,6 +546,7 @@ Thus $ \alpha = \Phi^{-1} p$,&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -539,6 +560,7 @@ $$\Phi \alpha = p$$
 where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+--&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -548,7 +570,7 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
 \begin{equation}
-\Pi_n \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i l_i\left(x\right)
+p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i l_i\left(x\right)
 \end{equation}&lt;/p&gt;
 &lt;p&gt;where&lt;/p&gt;
 &lt;p&gt;$l_{i} \in \mathbb{P}_{n}$
@@ -566,26 +588,11 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; (or Neville&amp;rsquo;s) algorithm is an iterative process for evaluating Lagrange interpolation polynomials with explicitly constructing them.
-$$
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; (or Neville&amp;rsquo;s) algorithm is an iterative process for evaluating Lagrange interpolation polynomials without explicitly constructing them.&lt;/p&gt;
+&lt;p&gt;$$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
-$$
-this can be written as
-$$
-\begin{equation}
-\begin{array}{llllc}
-l\left( u \right) = p_{0} &amp;amp; &amp;amp; &amp;amp;  &amp;amp; \\
-&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; {} \\
-l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; {} \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; {} \\
-l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; {} \\
-&amp;amp; p_0^1\left(u\right) &amp;amp;  &amp;amp; &amp;amp; {} \\
-l\left( u \right) = p_{3} &amp;amp; &amp;amp;  &amp;amp;  &amp;amp;
-\end{array}
-\end{equation}
 $$&lt;/p&gt;
-&lt;p&gt;alternatively&lt;/p&gt;
+&lt;p&gt;this can be written as&lt;/p&gt;
 &lt;p&gt;$$
 \begin{equation}
 \begin{array}{lllll}
@@ -602,19 +609,6 @@ $$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;!--
-\begin{equation}
-\begin{array}{lllll}
-l\left( u \right) = p_{0} &amp;                     &amp;                     &amp;                     &amp; \\\
-&amp; p_0^1\left(u\right) &amp;                     &amp;                     &amp; \\\
-l\left( u \right) = p_{1} &amp;                     &amp; l_0^1\left(u\right) &amp;                     &amp; \\\
-&amp; p\left( u \right)   &amp;                     &amp; l_0^1\left(u\right) &amp; \\\
-l\left( u \right) = p_{2} &amp;                     &amp; l\left( u \right)   &amp;                     &amp; l_0^1\left(u\right) \\\
-&amp; p\left( u \right)   &amp;                     &amp; l_0^1\left(u\right) &amp; \\\
-l\left( u \right) = p_{3} &amp;                     &amp;                     &amp;                     &amp;
-\end{array}
-\end{equation}
---&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
