@@ -101,7 +101,6 @@ mjx-assistive-mml {
 &lt;li&gt;Round-off errors&lt;/li&gt;
 &lt;li&gt;Truncation errors&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!--  $\left| \dfrac{\tilde{a}-a}{a} \right|$  --&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -143,9 +142,6 @@ $\left| \Delta x_i \right| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;!-- Numerical methods are a lot of computational schemes to solve mathematical problems when analytical solutions can&#39;t be found.
-
-How does the representation of a number in computer memory affect calculations? --&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
