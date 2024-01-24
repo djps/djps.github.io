@@ -1136,7 +1136,7 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.</p>
 <ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Determine the smallest integer $n$ such that ${x &lt; b^{n+1}}$</li>
-<li>Let $y=x$. Then $\mbox{\texttt{for}}$ $i=n, \ldots, 0$
+<li>Let $y=x$. Then for $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp; = &amp; y \mbox{ div } b^i \\
@@ -1150,10 +1150,10 @@ which at each steps provides an $a_i$ and updates $y$.</li>
     </div>
 <p>A number can be written in a nested form:</p>
 <p>$$
-\begin{eqnarry}
-\left(x\right)_b &amp; = &amp; a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
-&amp; = &amp; a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
-\end{equation}
+\begin{align}
+\left(x\right)_b &amp; = a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
+&amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
+\end{align}
 $$</p>
 <div class="details admonition Algorithm open">
         <div class="details-summary admonition-title">
@@ -1165,7 +1165,7 @@ $$</p>
             <div class="admonition-content"><ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Set $i=0$</li>
-<li>Let $y=x$. Then $\texttt{while}$ $x&gt;0$
+<li>Let $y=x$. Then while $x&gt;0$
 $$
 \begin{array}{rcl}
 a_i &amp; = &amp; y \mbox{ div } b^i \\

@@ -1066,11 +1066,45 @@
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Linear Systems of Equations</em>
+			Definition:	<em>Systems of Linear Equations</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here: linear, square.</div>
+            <div class="admonition-content">A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for
+$$
+\begin{align}
+a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \
+a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \
+\vdots &amp;  \
+a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m
+\end{align}
+$$
+The system of linear equations can be written in matrix form ${Ax=b}$, where
+$$
+A = \left(
+\begin{array}{cccc}
+a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \
+a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \
+a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}
+\end{array}
+\right), \quad x = \left(
+\begin{array}
+x_1 \
+x_2 \
+\vdots \
+x_n
+\end{array}
+\right), \quad b = \left(
+\begin{array}
+b_1 \
+b_2 \
+\vdots \
+b_m
+\end{array}
+\right),
+$$
+so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1080,7 +1114,7 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">A <strong>banded</strong> matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.</div>
         </div>
     </div>
 <div class="details admonition Definition open">

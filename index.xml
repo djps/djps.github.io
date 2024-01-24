@@ -159,7 +159,7 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Determine the smallest integer $n$ such that ${x &amp;lt; b^{n+1}}$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then $\mbox{\texttt{for}}$ $i=n, \ldots, 0$
+&lt;li&gt;Let $y=x$. Then for $i=n, \ldots, 0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
@@ -173,10 +173,10 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
     &lt;/div&gt;
 &lt;p&gt;A number can be written in a nested form:&lt;/p&gt;
 &lt;p&gt;$$
-\begin{eqnarry}
-\left(x\right)_b &amp;amp; = &amp;amp; a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
-&amp;amp; = &amp;amp; a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
-\end{equation}
+\begin{align}
+\left(x\right)_b &amp;amp; = a_0 b^0 + a_1 b^1 + \ldots a_n b^n \\
+&amp;amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
+\end{align}
 $$&lt;/p&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -188,7 +188,7 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Set $i=0$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then $\texttt{while}$ $x&amp;gt;0$
+&lt;li&gt;Let $y=x$. Then while $x&amp;gt;0$
 $$
 \begin{array}{rcl}
 a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
@@ -463,11 +463,45 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Linear Systems of Equations&lt;/em&gt;
+			Definition:	&lt;em&gt;Systems of Linear Equations&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here: linear, square.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for
+$$
+\begin{align}
+a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp;amp; = b_1 \
+a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp;amp; = b_2 \
+\vdots &amp;amp;  \
+a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp;amp; = b_m
+\end{align}
+$$
+The system of linear equations can be written in matrix form ${Ax=b}$, where
+$$
+A = \left(
+\begin{array}{cccc}
+a_{1,1} &amp;amp; a_{1,2} &amp;amp; \cdots &amp;amp; a_{1,n} \
+a_{2,1} &amp;amp; a_{2,2} &amp;amp; \cdots &amp;amp; a_{2,n} \
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \
+a_{m,1} &amp;amp; a_{m,2} &amp;amp; \cdots &amp;amp; a_{m,n}
+\end{array}
+\right), \quad x = \left(
+\begin{array}
+x_1 \
+x_2 \
+\vdots \
+x_n
+\end{array}
+\right), \quad b = \left(
+\begin{array}
+b_1 \
+b_2 \
+\vdots \
+b_m
+\end{array}
+\right),
+$$
+so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -477,7 +511,7 @@ and, as a consequence, if $\left\Vert R \right\Vert &amp;lt;1$ it turns out that
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;banded&lt;/strong&gt; matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
