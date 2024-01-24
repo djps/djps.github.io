@@ -188,11 +188,11 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Set $i=0$&lt;/li&gt;
-&lt;li&gt;Let $y=x$. Then while $x&amp;gt;0$
+&lt;li&gt;Let $y=x$. Then while $y&amp;gt;0$
 $$
 \begin{array}{rcl}
-a_i &amp;amp; = &amp;amp; y \mbox{ div } b^i \\
-y &amp;amp; = &amp;amp; y \mbox{ mod } b^i \\
+a_i &amp;amp; = &amp;amp; y \mbox{ div } b \\
+y &amp;amp; = &amp;amp; y \mbox{ mod } b \\
 i &amp;amp; = &amp;amp; i+1
 \end{array}
 $$
@@ -242,41 +242,42 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for
-$$
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for&lt;/p&gt;
+&lt;p&gt;$$
 \begin{align}
-a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp;amp; = b_1 \
-a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp;amp; = b_2 \
-\vdots &amp;amp;  \
+a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp;amp; = b_1 \\
+a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp;amp; = b_2 \\
+\vdots &amp;amp;  \\
 a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp;amp; = b_m
 \end{align}
-$$
-The system of linear equations can be written in matrix form ${Ax=b}$, where
+$$&lt;/p&gt;
+&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where
 $$
 A = \left(
 \begin{array}{cccc}
-a_{1,1} &amp;amp; a_{1,2} &amp;amp; \cdots &amp;amp; a_{1,n} \
-a_{2,1} &amp;amp; a_{2,2} &amp;amp; \cdots &amp;amp; a_{2,n} \
-\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \
+a_{1,1} &amp;amp; a_{1,2} &amp;amp; \cdots &amp;amp; a_{1,n} \\
+a_{2,1} &amp;amp; a_{2,2} &amp;amp; \cdots &amp;amp; a_{2,n} \\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
 a_{m,1} &amp;amp; a_{m,2} &amp;amp; \cdots &amp;amp; a_{m,n}
 \end{array}
 \right), \quad x = \left(
 \begin{array}
-x_1 \
-x_2 \
-\vdots \
+x_1 \\
+x_2 \\
+\vdots \\
 x_n
 \end{array}
 \right), \quad b = \left(
 \begin{array}
-b_1 \
-b_2 \
-\vdots \
+b_1 \\
+b_2 \\
+\vdots \\
 b_m
 \end{array}
 \right),
 $$
-so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/div&gt;
+so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
