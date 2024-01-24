@@ -126,7 +126,22 @@ mjx-assistive-mml {
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;Error propagation&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Linear Sensitivity to Uncertainties&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $y(x)$ is a smooth function, i.e. is differentiable, then $\left| y^{\prime} \right|$ can be interpreted as the &lt;strong&gt;linear sensitivity&lt;/strong&gt; of $y(x)$ to uncertainties in $x$.&lt;/p&gt;
+&lt;p&gt;For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then
+$$
+\left| \Delta y \right| \le \sum\limits_{i}^{}\left| \dfrac{\partial y}{\partial x_i} \right|\left| \Delta x_i \right|
+$$
+where $\left| \Delta x_i \right| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_i$, thus  ${}\left| \Delta y_i \right| = \tilde{y}_i - y_i =f(\tilde{x}_i) - f(x)}$&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;p&gt;Numerical methods are a lot of computational schemes to solve mathematical problems when analytical solutions can&amp;rsquo;t be found.&lt;/p&gt;
 &lt;p&gt;How does the representation of a number in computer memory affect calculations?&lt;/p&gt;
 &lt;h2 id=&#34;number-representations&#34;&gt;Number Representations&lt;/h2&gt;
@@ -795,7 +810,7 @@ p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
 $$
 So that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 $$\Phi \alpha = p$$
-where $p$ is the vector defined the polynomial evaulated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
+where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, given by
 $$
 \Phi = \left( \begin{array}{cccc}
 \varphi_0\left(u_0\right) &amp;amp; \varphi_1\left(u_1\right) &amp;amp; \cdots &amp;amp; \varphi_n\left(u_n\right) \\
