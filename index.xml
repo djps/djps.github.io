@@ -66,7 +66,7 @@ for some value $\xi \in \left[ a, b \right]$ where
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/taylor_series/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/TaylorSeries.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/TaylorSeries.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -709,6 +709,18 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
             &lt;div class=&#34;admonition-content&#34;&gt;$Q=L + \dfrac{1}{\omega}D$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/iterative/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
@@ -724,6 +736,30 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;h3 id=&#34;bisection-method&#34;&gt;Bisection Method&lt;/h3&gt;
 &lt;h3 id=&#34;newtons-method&#34;&gt;Newton&amp;rsquo;s Method&lt;/h3&gt;
 &lt;h3 id=&#34;secant-methods&#34;&gt;Secant Methods&lt;/h3&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/nonlinear/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h2 id=&#34;convergence&#34;&gt;Convergence&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -871,6 +907,18 @@ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x
 \begin{equation}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. &lt;br&gt;
 \end{equation}&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/runge/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/runge.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/runge.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1188,6 +1236,18 @@ $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
 $$&lt;/p&gt;
 &lt;p&gt;Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -1215,7 +1275,7 @@ $$
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;!-- 
+&lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
