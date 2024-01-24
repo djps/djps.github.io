@@ -376,7 +376,7 @@ Matrix is diagonally dominant  True
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
-&lt;h3 id=&#34;nonlinear-solvers-newton-method-vs-bisection-method&#34;&gt;Nonlinear solvers: Newton method vs bisection method:&lt;/h3&gt;
+&lt;h3 id=&#34;nonlinear-solvers-newton-method-vs-bisection-method&#34;&gt;Nonlinear solvers: Newton method vs bisection method&lt;/h3&gt;
 &lt;p&gt;One needs the derivative of the original function for Newton method. Here it is given analytically.&lt;/p&gt;
 &lt;p&gt;It can also be estimated with central or other differencing schemes (e.g. Secant method).&lt;/p&gt;
 &lt;p&gt;For Newton&amp;rsquo;s method to converge, we need to be &amp;lsquo;sufficiently&amp;rsquo; close to the root of the nonlinear equation and the function needs to be sufficiently smooth (differentiable; actually in practice often twice differentiable).&lt;/p&gt;
