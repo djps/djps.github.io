@@ -1248,17 +1248,17 @@ More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|^q } = \mu
 $$
-Thus a sequence is said to converge quadratically when ${q=2}$ and cubically when $q=3$.</div>
+Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.</div>
         </div>
     </div>
 <table>
 <thead>
 <tr>
-<th></th>
+<th>Method</th>
 <th>Regularity</th>
 <th>Proximity to $r$</th>
-<th>initial points</th>
-<th>func calls</th>
+<th>Initial points</th>
+<th>Function calls</th>
 <th>Convergence</th>
 </tr>
 </thead>
@@ -1303,9 +1303,9 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and cubically whe
 J = \left(
 \begin{array}{cccc}
 \dfrac{\partial f_1 }{\partial x_1} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_1 }{\partial x_n} \\
-\dfrac{\partial f_1 }{\partial x_2} &amp; &amp; &amp; \\
+\dfrac{\partial f_2 }{\partial x_1} &amp; &amp; &amp; \\
 \vdots &amp; &amp; &amp; \vdots \\
-\dfrac{\partial f_1 }{\partial x_n} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n}
+\dfrac{\partial f_n }{\partial x_1} &amp; \dfrac{\partial f_n }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n}
 \end{array}
 \right)
 \end{equation}
