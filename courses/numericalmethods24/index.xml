@@ -521,10 +521,12 @@ $$&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &amp;lt; 0}$&lt;/p&gt;
-&lt;p&gt;Bisect the interval into two subintervals: a &amp;lt; c &amp;lt; b.&lt;/p&gt;
-&lt;p&gt;If $f(c) = 0$ or is sufficiently close,&lt;/p&gt;
-&lt;p&gt;If $f(c)f(a) &amp;lt; 0$ continue in the interval $[a, c]$&lt;/p&gt;
-&lt;p&gt;If $f(c)f(b) &amp;lt; 0$ continue in the interval $[c, b]$&lt;/p&gt;
+&lt;p&gt;Bisect the interval into two subintervals $[a,c]$ and $[c,b]$ such that $a &amp;lt; c &amp;lt; b$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $f(c) = 0$ or is sufficiently close, then $c$ is a root&lt;/li&gt;
+&lt;li&gt;If $f(c)f(a) &amp;lt; 0$ continue in the interval $[a, c]$&lt;/li&gt;
+&lt;li&gt;If $f(c)f(b) &amp;lt; 0$ continue in the interval $[c, b]$&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -535,14 +537,26 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &amp;lt; 0}$ will compute, after $n$ steps an approximation $c_n$ of the root $r$ with error&lt;/p&gt;
-&lt;p&gt;$$
+            &lt;div class=&#34;admonition-content&#34;&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &amp;lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
+$$
 \left| r - c_n \right| \lt \dfrac{b-a}{2n}
-$$&lt;/p&gt;
-&lt;/div&gt;
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;newtons-method&#34;&gt;Newton&amp;rsquo;s Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton’s method is
+$$
+x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -550,7 +564,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;When Newton’s method converges it converges to a root, $r$, of $f$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;When Newton’s method converges it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
@@ -623,7 +637,7 @@ $$
 Then there exists a $\delta &amp;gt; 0$ such that when ${\left|  r - x_0 \right| &amp;lt; \delta}$ and ${\left|  r - x_1 \right| &amp;lt; \delta}$, then the following holds:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$\lim\limits_{n\rightarrow\infty} \left|  r - x_n \right| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$&lt;/li&gt;
-&lt;li&gt;$\left|  r - x_{n+1} \right| \le \mu \left|  r - x_{n} \right|^{\alpha}$ with ${}\alpha =\dfrac{1+\sqrt{5}}{2} }$&lt;/li&gt;
+&lt;li&gt;$\left|  r - x_{n+1} \right| \le \mu \left|  r - x_{n} \right|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }$&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -730,7 +744,7 @@ J = \left(
 \begin{array}{cccc}
 \dfrac{\partial f_1 }{\partial x_1} &amp;amp; \dfrac{\partial f_1 }{\partial x_2} &amp;amp; \cdots &amp;amp; \dfrac{\partial f_1 }{\partial x_n} &lt;br&gt;
 \dfrac{\partial f_1 }{\partial x_2} &amp;amp; &amp;amp; &amp;amp;  &lt;br&gt;
-vdots &amp;amp; &amp;amp; \vdots &lt;br&gt;
+\vdots &amp;amp; &amp;amp; \vdots &lt;br&gt;
 \dfrac{\partial f_1 }{\partial x_n} &amp;amp; \dfrac{\partial f_1 }{\partial x_2} &amp;amp; \cdots &amp;amp; \dfrac{\partial f_n }{\partial x_n} &lt;br&gt;
 \end{array}
 \right)
@@ -743,7 +757,7 @@ where $J^{-1} \left( x_n \right)$ is the inverse of the Jacobian matrix evaluate
 $$
 J \left( x_n \right) \left( x_{n+1} - x_n \right) = -f \left( x_n \right)
 $$
-is solved for the unknown $x_{n+1} - x_n$.&lt;/div&gt;
+is solved for the unknown vector $x_{n+1} - x_n$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 </description>

@@ -1079,10 +1079,12 @@
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$</p>
-<p>Bisect the interval into two subintervals: a &lt; c &lt; b.</p>
-<p>If $f(c) = 0$ or is sufficiently close,</p>
-<p>If $f(c)f(a) &lt; 0$ continue in the interval $[a, c]$</p>
-<p>If $f(c)f(b) &lt; 0$ continue in the interval $[c, b]$</p>
+<p>Bisect the interval into two subintervals $[a,c]$ and $[c,b]$ such that $a &lt; c &lt; b$.</p>
+<ul>
+<li>If $f(c) = 0$ or is sufficiently close, then $c$ is a root</li>
+<li>If $f(c)f(a) &lt; 0$ continue in the interval $[a, c]$</li>
+<li>If $f(c)f(b) &lt; 0$ continue in the interval $[c, b]$</li>
+</ul>
 </div>
         </div>
     </div>
@@ -1093,14 +1095,26 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps an approximation $c_n$ of the root $r$ with error</p>
-<p>$$
+            <div class="admonition-content">The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
+$$
 \left| r - c_n \right| \lt \dfrac{b-a}{2n}
-$$</p>
-</div>
+$$</div>
         </div>
     </div>
 <h3 id="newtons-method">Newton&rsquo;s Method</h3>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton’s method is
+$$
+x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}
+$$</div>
+        </div>
+    </div>
 <div class="details admonition Theorem open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
@@ -1108,7 +1122,7 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">When Newton’s method converges it converges to a root, $r$, of $f$.</div>
+            <div class="admonition-content">When Newton’s method converges it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1181,7 +1195,7 @@ $$
 Then there exists a $\delta &gt; 0$ such that when ${\left|  r - x_0 \right| &lt; \delta}$ and ${\left|  r - x_1 \right| &lt; \delta}$, then the following holds:</p>
 <ol>
 <li>$\lim\limits_{n\rightarrow\infty} \left|  r - x_n \right| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$</li>
-<li>$\left|  r - x_{n+1} \right| \le \mu \left|  r - x_{n} \right|^{\alpha}$ with ${}\alpha =\dfrac{1+\sqrt{5}}{2} }$</li>
+<li>$\left|  r - x_{n+1} \right| \le \mu \left|  r - x_{n} \right|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }$</li>
 </ol></div>
         </div>
     </div>
@@ -1288,7 +1302,7 @@ J = \left(
 \begin{array}{cccc}
 \dfrac{\partial f_1 }{\partial x_1} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_1 }{\partial x_n} <br>
 \dfrac{\partial f_1 }{\partial x_2} &amp; &amp; &amp;  <br>
-vdots &amp; &amp; \vdots <br>
+\vdots &amp; &amp; \vdots <br>
 \dfrac{\partial f_1 }{\partial x_n} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n} <br>
 \end{array}
 \right)
@@ -1301,7 +1315,7 @@ where $J^{-1} \left( x_n \right)$ is the inverse of the Jacobian matrix evaluate
 $$
 J \left( x_n \right) \left( x_{n+1} - x_n \right) = -f \left( x_n \right)
 $$
-is solved for the unknown $x_{n+1} - x_n$.</div>
+is solved for the unknown vector $x_{n+1} - x_n$.</div>
         </div>
     </div>
 
