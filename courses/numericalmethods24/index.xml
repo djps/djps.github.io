@@ -739,7 +739,11 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
+$$
+x= \left( x_1, x_2 \ldots x_n \right)
+$$
+the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 &lt;p&gt;$$
 \begin{equation}
 J = \left(
@@ -752,7 +756,7 @@ J = \left(
 \right)
 \end{equation}
 $$&lt;/p&gt;
-&lt;p&gt;If the derivatives are evaluated at a value $x$, the Jacobian matrix can be written as $J\left(x\right)$ and Newton&amp;rsquo;s method can be written as
+&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
 $$
 x_{n+1} = x_n - J^{-1} \left( x_n \right) f\left( x_n \right)
 $$
