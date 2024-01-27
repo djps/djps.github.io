@@ -1161,7 +1161,8 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">$$
+            <div class="admonition-content">The secant method is defined as
+$$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}
 $$</div>
         </div>
@@ -1173,7 +1174,15 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"></div>
+            <div class="admonition-content"><p>Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
+$$
+x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}
+$$
+Then there exists a $\delta &gt; 0$ such that when ${\left|  r - x_0 \right| &lt; \delta}$ and ${\left|  r - x_1 \right| &lt; \delta}$, then the following holds:</p>
+<ol>
+<li>$\lim\limits_{n\rightarrow\infty} \left|  r - x_n \right| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$</li>
+<li>$\left|  r - x_{n+1} \right| \le \mu \left|  r - x_{n} \right|^{\alpha}$ with ${}\alpha =\dfrac{1+\sqrt{5}}{2} }$</li>
+</ol></div>
         </div>
     </div>
 <div class="details admonition Example open">
@@ -1269,11 +1278,30 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and cubically whe
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Jacobian</em>
+			Definition:	<em>Multi-dimensional Newton Method</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">here.</div>
+            <div class="admonition-content">For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, the <strong>Jacobian</strong> matrix is defined as
+$$
+J = \left(
+\begin{array}{cccc}
+\dfrac{\partial f_1 }{\partial x_1} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_1 }{\partial x_n} <br>
+\dfrac{\partial f_1 }{\partial x_2} &amp; &amp; &amp;  <br>
+vdots &amp; &amp; \vdots <br>
+\dfrac{\partial f_1 }{\partial x_n} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n} <br>
+\end{array}
+\right)
+$$
+If the derivatives are evaluated at a value $x$, the Jacobian matrix can be written as $J\left(x\right)$ and Newton’s method can be written as
+$$
+x_{n+1} = x_n - J^{-1} \left( x_n \right) f\left( x_n \right)
+$$
+where $J^{-1} \left( x_n \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_n$. In practice, as matrix inversion can be computationally expensive, the system
+$$
+J \left( x_n \right) \left( x_{n+1} - x_n \right) = -f \left( x_n \right)
+$$
+is solved for the unknown $x_{n+1} - x_n$.</div>
         </div>
     </div>
 
