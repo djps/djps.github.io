@@ -389,7 +389,12 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;row swapping&lt;/li&gt;
+&lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
+&lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
@@ -399,17 +404,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;$LU$-Decomposition&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A pivot element is the element of a matrix which is selected first to do certain calculations. Pivoting helps reduce errors due to rounding. &lt;strong&gt;partial pivoting&lt;/strong&gt; and &lt;strong&gt;scaled pivoting&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Partial pivoting&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
@@ -419,7 +416,14 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
+$$
+L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
+$$
+where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination.
+$$
+U = U_{n-1} \cdots U_2 U_1 A
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -429,7 +433,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A symmetric, positive definite matrix can be decomposed as $A=LL^T$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
@@ -509,7 +513,71 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;root-finding&#34;&gt;Root Finding&lt;/h2&gt;
 &lt;h3 id=&#34;bisection-method&#34;&gt;Bisection Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Bisection Method&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &amp;lt; 0}$&lt;/p&gt;
+&lt;p&gt;Bisect the interval into two subintervals: a &amp;lt; c &amp;lt; b.&lt;/p&gt;
+&lt;p&gt;If $f(c) = 0$ or is sufficiently close,&lt;/p&gt;
+&lt;p&gt;If $f(c)f(a) &amp;lt; 0$ continue in the interval $[a, c]$&lt;/p&gt;
+&lt;p&gt;If $f(c)f(b) &amp;lt; 0$ continue in the interval $[c, b]$&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Bisection Method&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &amp;lt; 0}$ will compute, after $n$ steps an approximation $c_n$ of the root $r$ with error&lt;/p&gt;
+&lt;p&gt;$$
+\left| r - c_n \right| \lt \dfrac{b-a}{2n}
+$$&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;newtons-method&#34;&gt;Newton&amp;rsquo;s Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;When Newton’s method converges it converges to a root of $f$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f(a)f(b) &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;$f^\prime \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
+&lt;li&gt;$f^{\prime\prime}$ exists, is continuous and either ${f^{\prime\prime} &amp;gt; 0}$ or {$f^{\prime\prime} &amp;lt; 0}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then $f(x)=0$ has exactly one root, $r$, in the interval and the sequence generated by Newton iterations converges to the root when the initial guess is chosen according to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if $f(a) &amp;lt; 0$ and $f^{\prime\prime} &amp;lt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &amp;gt; 0$ and $f^{\prime\prime} &amp;gt; 0$ then $x \in \left[ a, r \right]$&lt;/li&gt;
+&lt;li&gt;if $f(a) &amp;lt; 0$ and $f^{\prime\prime} &amp;gt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &amp;gt; 0$ and $f^{\prime\prime} &amp;lt; 0$ then $x \in \left[ r, b \right]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The iterate in the sequence satisfies
+$$
+\left| x_n - r\right| \lt \dfrac{f\left( x_n \right)}{\min \limits_{[a,b]}\left| f^{\prime}\left( x \right) \right|}
+$$&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h3 id=&#34;secant-methods&#34;&gt;Secant Methods&lt;/h3&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -543,8 +611,23 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Order of convergence: cubic, quadratic, linear.
-Super-linearly, sub-linear,&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that
+$$
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = \mu
+$$
+The sequences converges &lt;strong&gt;super-linearly&lt;/strong&gt; if
+$$
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = 0
+$$
+and &lt;strong&gt;sub-linearly&lt;/strong&gt; if
+$$
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = 1
+$$
+More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that
+$$
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|^q } = \mu
+$$
+Thus a sequence is said to converge quadratically when ${q=2}$ and cubically when $q=3$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;table&gt;

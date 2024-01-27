@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 25, 2024 --><html lang="en-us" >
+<!-- Last Published: January 27, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1189,7 +1189,12 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content"><p>Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:</p>
+<ul>
+<li>row swapping</li>
+<li>row scaling, i.e. multiplying by a non-zero scalar</li>
+<li>row addition, i.e. adding a multiple of one row to another</li>
+</ul></div>
         </div>
     </div>
 <div class="details admonition Algorithm open">
@@ -1199,17 +1204,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
-        </div>
-    </div>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>$LU$-Decomposition</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content"><p>A pivot element is the element of a matrix which is selected first to do certain calculations. Pivoting helps reduce errors due to rounding. <strong>partial pivoting</strong> and <strong>scaled pivoting</strong>.</p>
+<p>Partial pivoting</p>
+</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1219,7 +1216,14 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
+$$
+L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
+$$
+where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination.
+$$
+U = U_{n-1} \cdots U_2 U_1 A
+$$</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1229,7 +1233,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">A symmetric, positive definite matrix can be decomposed as $A=LL^T$.</div>
         </div>
     </div>
 <div class="details admonition Algorithm open">
@@ -1582,7 +1586,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 </div>
 
 
-  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
 
 
 
