@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 27, 2024 --><html lang="en-us" >
+<!-- Last Published: January 28, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1247,7 +1247,35 @@ $$</div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>
-<p>$Q x_{k +1}= \left(Q-A \right) x_{k} +Q^{-1} b$.</p>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Diagonally Dominant</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A matrix $A \in \mathbb{R}^{n\timesn}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+$$
+\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Spectral Radius</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The <strong>spectral radius</strong> of a matrix $A$ is defined as
+$$
+\rho \left( A \right) = \max \left{ \left| \lambda_1 \right|, \left| \lambda_1 \right|, \ldots  \left| \lambda_n \right| \right}
+$$
+where the $\lambda_i$ are the eigenvalues of the matrix.</div>
+        </div>
+    </div>
+<p>For a non-singular matrix $A$, consider the iterative scheme
+$Q x_{k +1}= \left( Q - A \right) x_{k} + Q^{-1} b$.</p>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1255,7 +1283,24 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here $Q=I$</div>
+            <div class="admonition-content">Let $Q=I$. Then <strong>Richardson iteration</strong> computes the sequence of vectors
+$$
+x_{k +1} = \left(I - A \right) x_{k} + b
+$$
+This may converge, depending on $A$. The <strong>modified Richardson iteration</strong> scales ${Q= \omega I}$, so that
+$$
+x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Richardson iteration converges if and only if ${\rho\left( I - Q^{-1} A \right) \lt 1}$</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1265,7 +1310,20 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here $Q=D$</div>
+            <div class="admonition-content">The <strong>Jacobi iteration</strong> has $Q=D$, so
+$$
+x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the matrix $A$ is diagonally dominant, then the Jacobi scheme converges for any initial guess $x_0$.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1275,7 +1333,22 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">$Q=L$</div>
+            <div class="admonition-content">Let $Q=L + D$, then the <strong>Gauss-Seidel</strong> scheme is given by
+$$
+\begin{equation}
+(D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
+\end{equation}
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the matrix $A$ is diagonally dominant, then the Gauss-Seidel scheme converges for any initial guess $x_0$.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1285,7 +1358,22 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">$Q=L + \dfrac{1}{\omega}D$</div>
+            <div class="admonition-content">$Q=L + \dfrac{1}{\omega}D$
+$$
+\begin{equation}
+(D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
+\end{equation}
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Successive Over Relaxation</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${}\omega \in \left(0,2\right)}$. The, if and only if $A$ is positive definite will the method of successive over relaxation converge.</div>
         </div>
     </div>
 <div class="details admonition Example open">
