@@ -479,7 +479,7 @@ $$&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as&lt;/p&gt;
 &lt;p&gt;$$
-\rho \left( A \right) = \max \left{ \left| \lambda_1 \right|, \left| \lambda_1 \right|, \ldots  \left| \lambda_n \right| \right}
+\rho \left( A \right) = \max \left\{ \left\| \lambda_1 \right\|, \left\| \lambda_1 \right\|, \ldots  \left\| \lambda_n \right\| \right\}
 $$&lt;/p&gt;
 &lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 &lt;/div&gt;
