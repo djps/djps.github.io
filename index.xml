@@ -634,6 +634,16 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Upper and Lower Triangular Matrices&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -675,11 +685,11 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Diagonally Dominant&lt;/em&gt;
+			Definition:	&lt;em&gt;Diagonally Dominant Matrices&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n\timesn}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 $$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
 $$&lt;/div&gt;
@@ -688,19 +698,30 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Spectral Radius&lt;/em&gt;
+			Definition:	&lt;em&gt;Spectral Radius of a matrix&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as
-$$
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as&lt;/p&gt;
+&lt;p&gt;$$
 \rho \left( A \right) = \max \left{ \left| \lambda_1 \right|, \left| \lambda_1 \right|, \ldots  \left| \lambda_n \right| \right}
-$$
-where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/div&gt;
+$$&lt;/p&gt;
+&lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme
-$Q x_{k +1}= \left( Q - A \right) x_{k} + Q^{-1} b$.&lt;/p&gt;
+$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to ${ x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Convergence&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -708,30 +729,22 @@ $Q x_{k +1}= \left( Q - A \right) x_{k} + Q^{-1} b$.&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=I$. Then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors
-$$
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=I$. Then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
+&lt;p&gt;$$
 x_{k +1} = \left(I - A \right) x_{k} + b
-$$
-This may converge, depending on $A$. The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q= \omega I}$, so that
+$$&lt;/p&gt;
+&lt;p&gt;This may converge, depending on $A$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q= \omega I}$, so that
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
-$$&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Richardson iteration converges if and only if ${\rho\left( I - Q^{-1} A \right) \lt 1}$&lt;/div&gt;
+$$&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Jacobi&lt;/em&gt;
+			Definition:	&lt;em&gt;Jacobi Iteration&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -744,7 +757,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
+			Theorem:	&lt;em&gt;Convergence of Jacobi Scheme&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -754,7 +767,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Gauss-Seidel&lt;/em&gt;
+			Definition:	&lt;em&gt;Gauss-Seidel Scheme&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -769,7 +782,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
+			Theorem:	&lt;em&gt;Convergence of Gauss-Seidel&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -794,11 +807,11 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Successive Over Relaxation&lt;/em&gt;
+			Theorem:	&lt;em&gt;Convergence of Successive Over Relaxation&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${}\omega \in \left(0,2\right)}$. The, if and only if $A$ is positive definite will the method of successive over relaxation converge.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. The, if and only if $A$ is positive definite will the method of successive over relaxation converge.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
