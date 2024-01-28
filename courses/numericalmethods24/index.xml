@@ -351,7 +351,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I}$, where $I$ is the identity matrix.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Note open&#34;&gt;
@@ -457,36 +457,25 @@ $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Diagonally Dominant Matrices&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
-$$
-\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
-$$&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Spectral Radius of a matrix&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as&lt;/p&gt;
-&lt;p&gt;$$
-\rho \left( A \right) = \max \left\{ | \lambda_1 |, \left\| \lambda_1 \right\|, \ldots  \left\| \lambda_n \right\| \right\}
-$$&lt;/p&gt;
-&lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
-&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
 &lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme
-$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to ${ x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}$.&lt;/p&gt;
+$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to&lt;/p&gt;
+&lt;p&gt;$$
+x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}.
+$$&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Spectral Radius of a Matrix&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as
+$$
+\rho \left( A \right) = \max \left{ | \lambda_1 |, | \lambda_1 |, \ldots  | \lambda_n | \right}
+$$
+where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -526,6 +515,19 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Jacobi iteration&lt;/strong&gt; has $Q=D$, so
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Diagonally Dominant Matrices&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+$$
+\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -996,7 +998,7 @@ l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;               
 l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; \\
 &amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; \\
 l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; \\
+&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp;   &amp;amp; \\
 l\left( u \right) = p_{3} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp;
 \end{array}
 \end{equation}

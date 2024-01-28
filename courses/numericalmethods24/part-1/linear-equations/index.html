@@ -1151,7 +1151,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A matrix is <strong>non-singular</strong> or <strong>invertible</strong> if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I}$, where $I$ is the identity matrix.</div>
+            <div class="admonition-content">A matrix is <strong>non-singular</strong> or <strong>invertible</strong> if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.</div>
         </div>
     </div>
 <div class="details admonition Note open">
@@ -1257,36 +1257,25 @@ $$</div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Diagonally Dominant Matrices</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A matrix $A \in \mathbb{R}^{n \times n}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
-$$
-\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
-$$</div>
-        </div>
-    </div>
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Spectral Radius of a matrix</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The <strong>spectral radius</strong> of a matrix $A$ is defined as</p>
-<p>$$
-\rho \left( A \right) = \max \left\{ | \lambda_1 |, \left\| \lambda_1 \right\|, \ldots  \left\| \lambda_n \right\| \right\}
-$$</p>
-<p>where the $\lambda_i$ are the eigenvalues of the matrix.</p>
-</div>
-        </div>
-    </div>
 <p>For a non-singular matrix $A$, consider the iterative scheme
-$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to ${ x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}$.</p>
+$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to</p>
+<p>$$
+x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}.
+$$</p>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Spectral Radius of a Matrix</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The <strong>spectral radius</strong> of a matrix $A$ is defined as
+$$
+\rho \left( A \right) = \max \left{ | \lambda_1 |, | \lambda_1 |, \ldots  | \lambda_n | \right}
+$$
+where the $\lambda_i$ are the eigenvalues of the matrix.</div>
+        </div>
+    </div>
 <div class="details admonition Theorem open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
@@ -1326,6 +1315,19 @@ $$</p>
             <div class="admonition-content">The <strong>Jacobi iteration</strong> has $Q=D$, so
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b
+$$</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Diagonally Dominant Matrices</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">A matrix $A \in \mathbb{R}^{n \times n}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+$$
+\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
 $$</div>
         </div>
     </div>
