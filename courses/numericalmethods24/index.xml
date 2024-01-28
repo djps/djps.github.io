@@ -993,16 +993,17 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \begin{equation}
 \begin{array}{lllll}
-l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp; \\
-&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;                     &amp;amp; \\
-l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;                     &amp;amp; \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp; \\
-l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp;   &amp;amp; \\
-l\left( u \right) = p_{3} &amp;amp;                     &amp;amp;                     &amp;amp;                     &amp;amp;
+l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;  \\
+&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;  \\
+l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;  \\
+&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \\
+l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;  \\
+&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp;  \\
+l\left( u \right) = p_{3} &amp;amp;                     &amp;amp;                     &amp;amp;
 \end{array}
 \end{equation}
-$$&lt;/p&gt;
+$$
+where the coefficients are evaluated from left to right.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1013,7 +1014,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;polynomial’s are all the same.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;polynomial’s convergence.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h2 id=&#34;piecewise-polynomial-interpolation&#34;&gt;Piecewise Polynomial Interpolation&lt;/h2&gt;
@@ -1025,7 +1026,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain $[a,b]$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i=0, \ldots m-1}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -1076,6 +1077,7 @@ $$
 \right)
 $$&lt;/p&gt;
 &lt;h2 id=&#34;least-squares-interpolation&#34;&gt;Least-Squares Interpolation&lt;/h2&gt;
+&lt;p&gt;To appear.&lt;/p&gt;
 </description>
     </item>
     
