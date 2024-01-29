@@ -1260,13 +1260,13 @@ $$</p>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>B-Splines</em>
+			Definition:	<em>Least-Squares Approximation</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Given a set of points $Y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by parameters $\beta$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+            <div class="admonition-content">Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
 $$
-E = \sum\limits_{i=0}^{n} \left( Y - f\left(x_i, \beta \right) \right)^2.
+E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
 $$
 The minimum is found when
 $$
@@ -1274,8 +1274,30 @@ $$
 $$
 i.e.
 $$
--2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} \quad \mbox{for all } \quad j=1, \ldots m
+-2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \mbox{for all } \quad j=1, \ldots m
 $$</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Linear Least-Squares Approximation</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">If the function $f$ is a function of the form
+$$
+y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
+$$
+then the least squares problem can be expressed as
+$$
+\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right)
+$$
+then the parameters $\beta$ can be determined by solving the <em>linear system</em>,
+$$
+\Phi \Phi^T \beta = \Phi y,
+$$
+i.e. $\beta = \left( \Phi^T \Phi \right)^{-1} \Phi^T y$, where $\Phi$ is the collocation matrix.</div>
         </div>
     </div>
 
