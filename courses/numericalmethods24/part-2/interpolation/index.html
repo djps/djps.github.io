@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: January 28, 2024 --><html lang="en-us" >
+<!-- Last Published: January 29, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1023,7 +1023,7 @@
     <li><a href="#interpolation">Interpolation</a></li>
     <li><a href="#piecewise-polynomial-interpolation">Piecewise Polynomial Interpolation</a></li>
     <li><a href="#spline-interpolation">Spline Interpolation</a></li>
-    <li><a href="#least-squares-interpolation">Least-Squares Interpolation</a></li>
+    <li><a href="#least-squares-approximation">Least-Squares Approximation</a></li>
   </ul>
 </nav>
 
@@ -1256,8 +1256,28 @@ $$
 \end{array}
 \right)
 $$</p>
-<h2 id="least-squares-interpolation">Least-Squares Interpolation</h2>
-<p>To appear.</p>
+<h2 id="least-squares-approximation">Least-Squares Approximation</h2>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>B-Splines</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Given a set of points $Y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by parameters $\beta$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+$$
+E = \sum\limits_{i=0}^{n} \left( Y - f\left(x_i, \beta \right) \right)^2.
+$$
+The minimum is found when
+$$
+\dfrac{\partial E}{\partial \beta_j} = 0 \quad \mbox{for all } \quad j=1, \ldots m
+$$
+i.e.
+$$
+-2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} \quad \mbox{for all } \quad j=1, \ldots m
+$$</div>
+        </div>
+    </div>
 
 
         </article>

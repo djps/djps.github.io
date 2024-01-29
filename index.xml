@@ -1301,8 +1301,28 @@ $$
 \end{array}
 \right)
 $$&lt;/p&gt;
-&lt;h2 id=&#34;least-squares-interpolation&#34;&gt;Least-Squares Interpolation&lt;/h2&gt;
-&lt;p&gt;To appear.&lt;/p&gt;
+&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;B-Splines&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Given a set of points $Y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by parameters $\beta$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+$$
+E = \sum\limits_{i=0}^{n} \left( Y - f\left(x_i, \beta \right) \right)^2.
+$$
+The minimum is found when
+$$
+\dfrac{\partial E}{\partial \beta_j} = 0 \quad \mbox{for all } \quad j=1, \ldots m
+$$
+i.e.
+$$
+-2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} \quad \mbox{for all } \quad j=1, \ldots m
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
