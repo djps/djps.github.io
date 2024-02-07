@@ -1081,7 +1081,15 @@ Second maximum value:  0.004225969342977254
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
 &lt;h2 id=&#34;taylor-series-expansion&#34;&gt;Taylor Series Expansion&lt;/h2&gt;
-&lt;p&gt;This notebook presents the Taylor series expansion of the sine function close to zero for an increasing number of terms in the approximation.&lt;/p&gt;
+&lt;p&gt;This notebook presents the Taylor series expansion of the sine function, $\sin\left( x\right)$ close to zero for an increasing number of terms in the approximation.&lt;/p&gt;
+&lt;p&gt;Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
+\end{equation}&lt;/p&gt;
+&lt;p&gt;Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\sin \left( x \right) \approx x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \dfrac{x^7}{7!}  \ldots
+\end{equation}&lt;/p&gt;
 &lt;p&gt;Note that in this example, only odd powers of $x$ contribute to the expansion.&lt;/p&gt;
 &lt;p&gt;First import the tools needed&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
