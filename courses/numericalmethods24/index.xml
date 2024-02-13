@@ -244,7 +244,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A number may be represented as
 $$
-x = \sigma \tims f \times b^{t-p}
+x = \sigma \times f \times b^{t-p}
 $$
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, may store a number $x$ as
