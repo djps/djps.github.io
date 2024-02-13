@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: February 8, 2024 --><html lang="en-us" >
+<!-- Last Published: February 13, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1219,13 +1219,20 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Normalized Floating Point Representations</em>
+			Definition:	<em>Floating Point Representations</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><em>Normalized</em> floating point representations with respect to some base $b$, store a number $x$ as
-$$x= 0 \cdot a_1 \ldots a_k \times b^n$$
-where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</div>
+            <div class="admonition-content"><p>A number may be represented as
+$$
+x = \sigma \tims f \times b^{t-p}
+$$
+where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)</p>
+<p><em>Normalized</em> floating point representations with respect to some base $b$, may store a number $x$ as
+$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$
+where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</p>
+<p>Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.</p>
+</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
