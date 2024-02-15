@@ -224,8 +224,8 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;li&gt;Let $y=x$. Then while $y&amp;gt;0$
 $$
 \begin{array}{rcl}
-a_i &amp;amp; = &amp;amp; y \mbox{ div } b \\
-y &amp;amp; = &amp;amp; y \mbox{ mod } b \\
+a_i &amp;amp; = &amp;amp; y \mbox{ mod } b \\
+y &amp;amp; = &amp;amp; y \mbox{ div } b \\
 i &amp;amp; = &amp;amp; i+1
 \end{array}
 $$
