@@ -632,7 +632,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;p&gt;$\quad$ For $i$ = $k$ + 1 to $n$&lt;/p&gt;
 &lt;p&gt;$\quad \quad$ For $j$ = k to $n$&lt;/p&gt;
 &lt;p&gt;$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$&lt;/p&gt;
-&lt;p&gt;$\quad \quad $b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$&lt;/p&gt;
+&lt;p&gt;$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$&lt;/p&gt;
 &lt;p&gt;Then back substitute,&lt;/p&gt;
 &lt;p&gt;$x_n = \dfrac{b_n}{a_{n,n}}$&lt;/p&gt;
 &lt;p&gt;For $i$ =$n$-1 to 1&lt;/p&gt;
