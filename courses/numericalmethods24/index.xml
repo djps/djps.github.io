@@ -459,7 +459,17 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Here&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;For $i$=1 to $n$
+$\quad$ For $j$ = 1 to $i-1$
+$\quad \quad$ $y = a_{i,j}$
+$\quad \quad$ For $k$ = 1 to $j$-1
+$\quad \quad \quad y = y - l_{i,k} l_{j,k}$
+$\quad \quad l_{i,j} = y / l_{j,j}$
+$\quad y= a_{i,i}$
+$\quad$ For $k$= 1 to $i-1$
+$\quad \quad y = y - l_{i,k} l_{i,k}$
+$\quad$ if $y \le 0$ there is no solution
+$\quad$ else $l_{i,i} = \sqrt{y}&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
@@ -478,12 +488,6 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as
 $$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
-$$&lt;/p&gt;
-&lt;p&gt;$$
-\rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right| \right\}
-$$&lt;/p&gt;
-&lt;p&gt;$$
-\rho \left( A \right) = \max \left\{  \left\|  \lambda_1 \right\| \right\}
 $$&lt;/p&gt;
 &lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 &lt;/div&gt;
