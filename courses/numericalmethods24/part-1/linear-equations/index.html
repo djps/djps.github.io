@@ -1189,12 +1189,25 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:</p>
+            <div class="admonition-content"><p>Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:</p>
 <ul>
 <li>row swapping</li>
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
-</ul></div>
+</ul>
+<p>Find the maximal absolute value of all the entries in each row, i.e. $s_i = \max\limits_{j=1, \ldots n} \left| a_{i,j} \right|$
+For $k$=1 to $n-1$ \newline
+$\quad$ For $i$ = k to $n$ \newline
+$\quad \quad$ Compute $a_{i,k} = a_{i,k} / s_i$ \newline
+$\quad Find the row with the largest relative pivot element
+$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline
+$\quad \quad l_{i,j} = y / l_{j,j}$ \newline
+$\quad y= a_{i,i}$ \newline
+$\quad$ For $k$= 1 to $i-1$ \newline
+$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline
+$\quad$ if $y \le 0$ there is no solution \newline
+$\quad$ else $l_{i,i} = \sqrt{y}$ \newline</p>
+</div>
         </div>
     </div>
 <div class="details admonition Algorithm open">
@@ -1251,17 +1264,18 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">For $i$=1 to $n$ \newline
-$\quad$ For $j$ = 1 to $i-1$ \newline
-$\quad \quad$ $y = a_{i,j}$ \newline
-$\quad \quad$ For $k$ = 1 to $j$-1 \newline
-$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline
-$\quad \quad l_{i,j} = y / l_{j,j}$ \newline
-$\quad y= a_{i,i}$ \newline
-$\quad$ For $k$= 1 to $i-1$ \newline
-$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline
-$\quad$ if $y \le 0$ there is no solution \newline
-$\quad$ else $l_{i,i} = \sqrt{y}$ \newline</div>
+            <div class="admonition-content"><p>For $i$=1 to $n$ \newline
+$\quad$ For $j$ = 1 to $i-1$ \
+$\quad \quad$ $y = a_{i,j}$ \newline</p>
+<p>$\quad \quad$ For $k$ = 1 to $j$-1 \newline</p>
+<p>$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline</p>
+<p>$\quad \quad l_{i,j} = y / l_{j,j}$ \newline</p>
+<p>$\quad y= a_{i,i}$ \newline</p>
+<p>$\quad$ For $k$= 1 to $i-1$ \newline</p>
+<p>$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline</p>
+<p>$\quad$ if $y \le 0$ there is no solution \newline</p>
+<p>$\quad$ else $l_{i,i} = \sqrt{y}$ \newline</p>
+</div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>

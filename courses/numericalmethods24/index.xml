@@ -397,12 +397,25 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;row swapping&lt;/li&gt;
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;/ul&gt;
+&lt;p&gt;Find the maximal absolute value of all the entries in each row, i.e. $s_i = \max\limits_{j=1, \ldots n} \left| a_{i,j} \right|$
+For $k$=1 to $n-1$ \newline
+$\quad$ For $i$ = k to $n$ \newline
+$\quad \quad$ Compute $a_{i,k} = a_{i,k} / s_i$ \newline
+$\quad Find the row with the largest relative pivot element
+$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline
+$\quad \quad l_{i,j} = y / l_{j,j}$ \newline
+$\quad y= a_{i,i}$ \newline
+$\quad$ For $k$= 1 to $i-1$ \newline
+$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline
+$\quad$ if $y \le 0$ there is no solution \newline
+$\quad$ else $l_{i,i} = \sqrt{y}$ \newline&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
@@ -459,17 +472,18 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;For $i$=1 to $n$ \newline
-$\quad$ For $j$ = 1 to $i-1$ \newline
-$\quad \quad$ $y = a_{i,j}$ \newline
-$\quad \quad$ For $k$ = 1 to $j$-1 \newline
-$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline
-$\quad \quad l_{i,j} = y / l_{j,j}$ \newline
-$\quad y= a_{i,i}$ \newline
-$\quad$ For $k$= 1 to $i-1$ \newline
-$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline
-$\quad$ if $y \le 0$ there is no solution \newline
-$\quad$ else $l_{i,i} = \sqrt{y}$ \newline&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For $i$=1 to $n$ \newline
+$\quad$ For $j$ = 1 to $i-1$ \
+$\quad \quad$ $y = a_{i,j}$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad \quad$ For $k$ = 1 to $j$-1 \newline&lt;/p&gt;
+&lt;p&gt;$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad \quad l_{i,j} = y / l_{j,j}$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad y= a_{i,i}$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad$ For $k$= 1 to $i-1$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline&lt;/p&gt;
+&lt;p&gt;$\quad$ if $y \le 0$ there is no solution \newline&lt;/p&gt;
+&lt;p&gt;$\quad$ else $l_{i,i} = \sqrt{y}$ \newline&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
