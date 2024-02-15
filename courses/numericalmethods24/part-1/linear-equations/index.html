@@ -1195,18 +1195,18 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
-<p>Find the maximal absolute value of all the entries in each row, i.e. $s_i = \max\limits_{j=1, \ldots n} \left| a_{i,j} \right|$
-For $k$=1 to $n-1$ \newline
-$\quad$ For $i$ = k to $n$ \newline
-$\quad \quad$ Compute $a_{i,k} = a_{i,k} / s_i$ \newline
-$\quad Find the row with the largest relative pivot element
-$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline
-$\quad \quad l_{i,j} = y / l_{j,j}$ \newline
-$\quad y= a_{i,i}$ \newline
-$\quad$ For $k$= 1 to $i-1$ \newline
-$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline
-$\quad$ if $y \le 0$ there is no solution \newline
-$\quad$ else $l_{i,i} = \sqrt{y}$ \newline</p>
+<p>For $k$=1 to $n-1$</p>
+<p>$\quad$ For $i$ = $k$ + 1 to $n$</p>
+<p>$\quad \quad$ For $j$ = k to $n$</p>
+<p>$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$</p>
+<p>$\quad \quad $b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$</p>
+<p>Then back substitute,</p>
+<p>$x_n = \dfrac{b_n}{a_{n,n}}$</p>
+<p>For $i$ =$n$-1 to 1</p>
+<p>$\quad y = b_i$</p>
+<p>$\quad$ For $j$ = $n$ to $i+1$</p>
+<p>$\quad \quad y = y - a_{i,j} x_y$</p>
+<p>$\quad x_i = \dfrac{y}{a_{i,i}}$</p>
 </div>
         </div>
     </div>
@@ -1264,17 +1264,17 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>For $i$=1 to $n$ \newline
-$\quad$ For $j$ = 1 to $i-1$ \
-$\quad \quad$ $y = a_{i,j}$ \newline</p>
-<p>$\quad \quad$ For $k$ = 1 to $j$-1 \newline</p>
-<p>$\quad \quad \quad y = y - l_{i,k} l_{j,k}$ \newline</p>
-<p>$\quad \quad l_{i,j} = y / l_{j,j}$ \newline</p>
-<p>$\quad y= a_{i,i}$ \newline</p>
-<p>$\quad$ For $k$= 1 to $i-1$ \newline</p>
-<p>$\quad \quad y = y - l_{i,k} l_{i,k}$ \newline</p>
-<p>$\quad$ if $y \le 0$ there is no solution \newline</p>
-<p>$\quad$ else $l_{i,i} = \sqrt{y}$ \newline</p>
+            <div class="admonition-content"><p>For $i$=1 to $n$</p>
+<p>$\quad$ For $j$ = 1 to $i-1$</p>
+<p>$\quad \quad$ $y = a_{i,j}$</p>
+<p>$\quad \quad$ For $k$ = 1 to $j$-1</p>
+<p>$\quad \quad \quad y = y - l_{i,k} l_{j,k}$</p>
+<p>$\quad \quad l_{i,j} = y / l_{j,j}$</p>
+<p>$\quad y= a_{i,i}$</p>
+<p>$\quad$ For $k$= 1 to $i-1$</p>
+<p>$\quad \quad y = y - l_{i,k} l_{i,k}$</p>
+<p>$\quad$ if $y \le 0$ there is no solution</p>
+<p>$\quad$ else $l_{i,i} = \sqrt{y}$</p>
 </div>
         </div>
     </div>
