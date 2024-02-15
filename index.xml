@@ -637,9 +637,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A pivot element is the element of a matrix which is selected first to do certain calculations. Pivoting helps reduce errors due to rounding. &lt;strong&gt;partial pivoting&lt;/strong&gt; and &lt;strong&gt;scaled pivoting&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Partial pivoting&lt;/p&gt;
-&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A pivot element is the element of a matrix which is selected first to do certain calculations. Pivoting helps reduce errors due to rounding.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -693,7 +691,7 @@ $$&lt;/div&gt;
 &lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme
 $Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to&lt;/p&gt;
 &lt;p&gt;$$
-x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b}.
+x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
 $$&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -704,7 +702,7 @@ $$&lt;/p&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as
 $$
-\rho \left( A \right) = \max \left{ | \lambda_1 |, | \lambda_1 |, \ldots  | \lambda_n | \right}
+\rho \left( A \right) = \max \left{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right}
 $$
 where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/div&gt;
         &lt;/div&gt;
