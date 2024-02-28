@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>curl-curl Maxwell equations | David Sinden</title>
+    <title>Curl-Curl Maxwell Equations | David Sinden</title>
     <link>https://djps.github.io/category/curl-curl-maxwell-equations/</link>
       <atom:link href="https://djps.github.io/category/curl-curl-maxwell-equations/index.xml" rel="self" type="application/rss+xml" />
-    <description>curl-curl Maxwell equations</description>
+    <description>Curl-Curl Maxwell Equations</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 May 2022 14:20:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
-      <title>curl-curl Maxwell equations</title>
+      <title>Curl-Curl Maxwell Equations</title>
       <link>https://djps.github.io/category/curl-curl-maxwell-equations/</link>
     </image>
+    
+    <item>
+      <title>Patient-Specific Modelling of Microwave Ablation</title>
+      <link>https://djps.github.io/talks/stm/</link>
+      <pubDate>Sun, 01 May 2022 14:20:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/stm/</guid>
+      <description>&lt;!--
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Christain Rieder, Miriam Zibell,
+Franz Poch, Kai Lehmann, Tobias Preusser
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; May 1 2022 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+Society for Thermal Medicine 2022 Annual Meeting
+--&gt;
+&lt;p&gt;A recording of the talk can be found &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/stm.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

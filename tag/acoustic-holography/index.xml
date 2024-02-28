@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>acoustic holography | David Sinden</title>
+    <title>Acoustic Holography | David Sinden</title>
     <link>https://djps.github.io/tag/acoustic-holography/</link>
       <atom:link href="https://djps.github.io/tag/acoustic-holography/index.xml" rel="self" type="application/rss+xml" />
-    <description>acoustic holography</description>
+    <description>Acoustic Holography</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
-      <title>acoustic holography</title>
+      <title>Acoustic Holography</title>
       <link>https://djps.github.io/tag/acoustic-holography/</link>
     </image>
+    
+    <item>
+      <title>Factors for Validation of Measurement-Based Simulation</title>
+      <link>https://djps.github.io/talks/asa_virtual/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/asa_virtual/</guid>
+      <description>&lt;!-- &lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; December 8 2020 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;a href=&#34;https://djps.github.io/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
+--&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/virtual_asa.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/asa_virtual/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
