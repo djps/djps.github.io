@@ -643,21 +643,6 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;Fetch for &lt;a href=&#34;https://api.github.com/repos/djps/k-wave-python/contents/examples/at_focused_annular_array?per_page=100&amp;amp;ref=modelling_in_3D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://api.github.com/repos/djps/k-wave-python/contents/examples/at_focused_annular_array?per_page=100&amp;ref=modelling_in_3D&lt;/a&gt; failed: {
-&amp;ldquo;message&amp;rdquo;: &amp;ldquo;Not Found&amp;rdquo;,
-&amp;ldquo;documentation_url&amp;rdquo;: &amp;ldquo;&lt;a href=&#34;https://docs.github.com/rest/repos/contents#get-repository-content%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.github.com/rest/repos/contents#get-repository-content&#34;&lt;/a&gt;
-}&lt;/p&gt;
-&lt;p&gt;CustomError: Fetch for &lt;a href=&#34;https://api.github.com/repos/djps/k-wave-python/contents/examples/at_focused_annular_array?per_page=100&amp;amp;ref=modelling_in_3D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://api.github.com/repos/djps/k-wave-python/contents/examples/at_focused_annular_array?per_page=100&amp;ref=modelling_in_3D&lt;/a&gt; failed: {
-&amp;ldquo;message&amp;rdquo;: &amp;ldquo;Not Found&amp;rdquo;,
-&amp;ldquo;documentation_url&amp;rdquo;: &amp;ldquo;&lt;a href=&#34;https://docs.github.com/rest/repos/contents#get-repository-content%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.github.com/rest/repos/contents#get-repository-content&#34;&lt;/a&gt;
-}&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;at new zL (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:2356:68)
-at ua.program_ (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:2339:435)
-at wa (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:16:57)
-at ua.next_ (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:14:195)
-at laa.next (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:17:48)
-at b (https://ssl.gstatic.com/colaboratory-static/common/3e1e9f5191f3657451c6f18bfa55805d/external_polymer_binary_l10n__en_gb.js:17:309)
-&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-laptop-code fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
