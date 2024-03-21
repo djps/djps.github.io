@@ -1150,7 +1150,7 @@ Thus, the weights $\beta$ can be determined by solving the &lt;em&gt;linear syst
 $$
 \Phi \Phi^T \beta = \Phi y,
 $$
-i.e. $\beta = \left( \Phi^T \Phi \right)^{-1} \Phi^T y$, where $\Phi$ is the collocation matrix.&lt;/div&gt;
+i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 </description>
