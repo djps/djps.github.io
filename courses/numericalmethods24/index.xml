@@ -1222,7 +1222,7 @@ $$&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Partition
 Approximate the area under the curve by summing the rectangles
-If $f$ is continuous, the value of $x_{i}^{\ast}$ may be choosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$
+If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$
 Then the &lt;strong&gt;Lower&lt;/strong&gt; and &lt;strong&gt;Upper&lt;/strong&gt; sums are given by
 $$
 L\left(f, p\right) \le \int\limits_{a}^{b} f\left(x \right) , \mathrm{d}x \le U\left(f, p\right).
@@ -1380,7 +1380,7 @@ $$&lt;/div&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
 $$&lt;/p&gt;
-&lt;p&gt;Then, the Forward Euler method is the left Reimann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
+&lt;p&gt;Then, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
