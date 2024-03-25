@@ -1215,11 +1215,13 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
-<p>\begin{array}{lll}
-\text{For} , k=1 , \text{to} , n-1 &amp; &amp; \\
-&amp; \text{For } i = k + 1 \mbox{ to } n &amp; \\
-&amp;                          &amp; \textsf{For } j = k \text{ to }$n
-\end{array}</p>
+<p>\begin{flushleft}
+\begin{array}{llll}
+\footnotesize{\textsf{1}} &amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp; &amp; \\
+\footnotesize{\textsf{2}} &amp;                                               &amp; \textsf{For } i = k + 1 \textsf{ to } n &amp; \\
+\footnotesize{\textsf{3}} &amp;                                               &amp;                                         &amp; \textsf{For } j = k \text{ to } n
+\end{array}
+\end{flushleft}</p>
 <p>For $k$=1 to $n-1$</p>
 <p>$\quad$ For $i$ = $k$ + 1 to $n$</p>
 <p>$\quad \quad$ For $j$ = k to $n$</p>
@@ -1289,23 +1291,25 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p><small>1</small> For $i$=1 to $n$ \newline
-<small>2</small> $\quad$ For $j$ = 1 to $i-1$ <br>
-<small>2</small> $\quad \quad$ $y = a_{i,j}$ \
-<small>2</small> $\quad \quad$ For $k$ = 1 to $j$-1</p>
-<p><small>2</small> $\quad \quad \quad y = y - l_{i,k} l_{j,k}$</p>
-<p><small>2</small>  $\quad \quad l_{i,j} = y / l_{j,j}$</p>
-<p><small>2</small> $\quad y= a_{i,i}$</p>
-<p><small>2</small>  $\quad$ For $k$= 1 to $i-1$</p>
-<p><small>2</small>  $\quad \quad y = y - l_{i,k} l_{i,k}$</p>
-<p><small>2</small> $\quad$ if $y \le 0$ there is no solution</p>
-<p><small>2</small> $\quad$ else $l_{i,i} = \sqrt{y}$</p>
-</div>
+            <div class="admonition-content"><small>1</small>  For $i$=1 to $n$ <br>
+<small>2</small>  $\quad$ For $j$ = 1 to $i-1$ <br>
+<small>3</small>  $\quad \quad$ $y = a_{i,j}$ <br>
+<small>4</small>  $\quad \quad$ For $k$ = 1 to $j$-1 <br>
+<small>5</small>  $\quad \quad \quad y = y - l_{i,k} l_{j,k}$<br>
+<small>6</small>  $\quad \quad l_{i,j} = y / l_{j,j}$<br>
+<small>7</small>  $\quad y= a_{i,i}$<br>
+<small>8</small>  $\quad$ For $k$= 1 to $i-1$<br>
+<small>9</small>  $\quad \quad y = y - l_{i,k} l_{i,k}$<br>
+<small>10</small> $\quad$ if $y \le 0$ there is no solution<br>
+<small>11</small> $\quad$ else $l_{i,i} = \sqrt{y}$<br></div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>
 <p>For a non-singular matrix $A$, consider the iterative scheme
-$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to</p>
+$$
+Q x_{k +1}= \left( Q - A \right) x_{k} + b.
+$$</p>
+<p>This is equivalent to</p>
 <p>$$
 x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
 $$</p>
@@ -1331,7 +1335,7 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$</div>
+            <div class="admonition-content">The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1345,7 +1349,7 @@ $$</p>
 <p>$$
 x_{k +1} = \left(I - A \right) x_{k} + b
 $$</p>
-<p>This may converge, depending on $A$.</p>
+<p>This may converge to $x = A^{-1} b$, depending on $A$.</p>
 <p>The <strong>modified Richardson iteration</strong> scales ${Q= \omega I}$, so that
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
@@ -1360,9 +1364,9 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">The <strong>Jacobi iteration</strong> has $Q=D$, so
+            <div class="admonition-content">The <strong>Jacobi iteration</strong> scheme has $Q=D$, so
 $$
-x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b
+x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$</div>
         </div>
     </div>
@@ -1373,7 +1377,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A matrix $A \in \mathbb{R}^{n \times n}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+            <div class="admonition-content">A matrix $A \in \mathbb{R}^{n \times n}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 $$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
 $$</div>
@@ -1399,7 +1403,7 @@ $$</div>
             <div class="admonition-content">Let $Q=L + D$, then the <strong>Gauss-Seidel</strong> scheme is given by
 $$
 \begin{equation}
-(D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
+(D + L) x^{(n+1)} = -U x^{(n)} + b. \label{eq:GS}
 \end{equation}
 $$</div>
         </div>
@@ -1421,7 +1425,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">$Q=L + \dfrac{1}{\omega}D$
+            <div class="admonition-content">Let $Q=L + \dfrac{1}{\omega}D$, thus
 $$
 \begin{equation}
 (D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
@@ -1436,7 +1440,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. The, if and only if $A$ is positive definite will the method of successive over relaxation converge.</div>
+            <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of successive over relaxation converge.</div>
         </div>
     </div>
 <div class="details admonition Example open">

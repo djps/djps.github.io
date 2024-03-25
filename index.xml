@@ -628,11 +628,13 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;\begin{array}{lll}
-\text{For} , k=1 , \text{to} , n-1 &amp;amp; &amp;amp; \\
-&amp;amp; \text{For } i = k + 1 \mbox{ to } n &amp;amp; \\
-&amp;amp;                          &amp;amp; \textsf{For } j = k \text{ to }$n
-\end{array}&lt;/p&gt;
+&lt;p&gt;\begin{flushleft}
+\begin{array}{llll}
+\footnotesize{\textsf{1}} &amp;amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp;amp; &amp;amp; \\
+\footnotesize{\textsf{2}} &amp;amp;                                               &amp;amp; \textsf{For } i = k + 1 \textsf{ to } n &amp;amp; \\
+\footnotesize{\textsf{3}} &amp;amp;                                               &amp;amp;                                         &amp;amp; \textsf{For } j = k \text{ to } n
+\end{array}
+\end{flushleft}&lt;/p&gt;
 &lt;p&gt;For $k$=1 to $n-1$&lt;/p&gt;
 &lt;p&gt;$\quad$ For $i$ = $k$ + 1 to $n$&lt;/p&gt;
 &lt;p&gt;$\quad \quad$ For $j$ = k to $n$&lt;/p&gt;
@@ -702,23 +704,25 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;small&gt;1&lt;/small&gt; For $i$=1 to $n$ \newline
-&lt;small&gt;2&lt;/small&gt; $\quad$ For $j$ = 1 to $i-1$ &lt;br&gt;
-&lt;small&gt;2&lt;/small&gt; $\quad \quad$ $y = a_{i,j}$ \
-&lt;small&gt;2&lt;/small&gt; $\quad \quad$ For $k$ = 1 to $j$-1&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt; $\quad \quad \quad y = y - l_{i,k} l_{j,k}$&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt;  $\quad \quad l_{i,j} = y / l_{j,j}$&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt; $\quad y= a_{i,i}$&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt;  $\quad$ For $k$= 1 to $i-1$&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt;  $\quad \quad y = y - l_{i,k} l_{i,k}$&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt; $\quad$ if $y \le 0$ there is no solution&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;2&lt;/small&gt; $\quad$ else $l_{i,i} = \sqrt{y}$&lt;/p&gt;
-&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;small&gt;1&lt;/small&gt;  For $i$=1 to $n$ &lt;br&gt;
+&lt;small&gt;2&lt;/small&gt;  $\quad$ For $j$ = 1 to $i-1$ &lt;br&gt;
+&lt;small&gt;3&lt;/small&gt;  $\quad \quad$ $y = a_{i,j}$ &lt;br&gt;
+&lt;small&gt;4&lt;/small&gt;  $\quad \quad$ For $k$ = 1 to $j$-1 &lt;br&gt;
+&lt;small&gt;5&lt;/small&gt;  $\quad \quad \quad y = y - l_{i,k} l_{j,k}$&lt;br&gt;
+&lt;small&gt;6&lt;/small&gt;  $\quad \quad l_{i,j} = y / l_{j,j}$&lt;br&gt;
+&lt;small&gt;7&lt;/small&gt;  $\quad y= a_{i,i}$&lt;br&gt;
+&lt;small&gt;8&lt;/small&gt;  $\quad$ For $k$= 1 to $i-1$&lt;br&gt;
+&lt;small&gt;9&lt;/small&gt;  $\quad \quad y = y - l_{i,k} l_{i,k}$&lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; $\quad$ if $y \le 0$ there is no solution&lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\quad$ else $l_{i,i} = \sqrt{y}$&lt;br&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
 &lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme
-$Q x_{k +1}= \left( Q - A \right) x_{k} + b$. This is equivalent to&lt;/p&gt;
+$$
+Q x_{k +1}= \left( Q - A \right) x_{k} + b.
+$$&lt;/p&gt;
+&lt;p&gt;This is equivalent to&lt;/p&gt;
 &lt;p&gt;$$
 x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
 $$&lt;/p&gt;
@@ -744,7 +748,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -758,7 +762,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 x_{k +1} = \left(I - A \right) x_{k} + b
 $$&lt;/p&gt;
-&lt;p&gt;This may converge, depending on $A$.&lt;/p&gt;
+&lt;p&gt;This may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q= \omega I}$, so that
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
@@ -773,9 +777,9 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Jacobi iteration&lt;/strong&gt; has $Q=D$, so
+            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Jacobi iteration&lt;/strong&gt; scheme has $Q=D$, so
 $$
-x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b
+x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -786,7 +790,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute vale of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+            &lt;div class=&#34;admonition-content&#34;&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 $$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \mbox{for all } i \in (1,n)
 $$&lt;/div&gt;
@@ -812,7 +816,7 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + D$, then the &lt;strong&gt;Gauss-Seidel&lt;/strong&gt; scheme is given by
 $$
 \begin{equation}
-(D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
+(D + L) x^{(n+1)} = -U x^{(n)} + b. \label{eq:GS}
 \end{equation}
 $$&lt;/div&gt;
         &lt;/div&gt;
@@ -834,7 +838,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;$Q=L + \dfrac{1}{\omega}D$
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus
 $$
 \begin{equation}
 (D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
@@ -849,7 +853,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. The, if and only if $A$ is positive definite will the method of successive over relaxation converge.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of successive over relaxation converge.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
