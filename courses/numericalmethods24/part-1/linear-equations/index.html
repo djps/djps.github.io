@@ -1217,14 +1217,11 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 </ul>
 <p>{\raggedright
 \begin{array}{llll}
-\footnotesize{\textsf{1}} &amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp; &amp; \\
+{\footnotesize \textsf{1}} &amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp; &amp; \\
 \footnotesize{\textsf{2}} &amp;                                               &amp; \textsf{For } i = k + 1 \textsf{ to } n &amp; \\
-\footnotesize{\textsf{3}} &amp;                                               &amp;                                         &amp; \textsf{For } j = k \text{ to } n
+<small>3</small> &amp;                                               &amp;                                         &amp; \textsf{For } j = k \text{ to } n
 \end{array}
 }</p>
-<p>\begin{flushleft}
-things
-\end{flushleft}</p>
 <p>For $k$=1 to $n-1$</p>
 <p>$\quad$ For $i$ = $k$ + 1 to $n$</p>
 <p>$\quad \quad$ For $j$ = k to $n$</p>
@@ -1295,16 +1292,16 @@ $$</div>
         </div>
         <div class="details-content">
             <div class="admonition-content"><small>1</small>  For $i$=1 to $n$ <br>
-<small>2</small>  $\quad$ For $j$ = 1 to $i-1$ <br>
-<small>3</small>  $\quad \quad$ $y = a_{i,j}$ <br>
-<small>4</small>  $\quad \quad$ For $k$ = 1 to $j$-1 <br>
-<small>5</small>  $\quad \quad \quad y = y - l_{i,k} l_{j,k}$<br>
-<small>6</small>  $\quad \quad l_{i,j} = y / l_{j,j}$<br>
-<small>7</small>  $\quad y= a_{i,i}$<br>
-<small>8</small>  $\quad$ For $k$= 1 to $i-1$<br>
-<small>9</small>  $\quad \quad y = y - l_{i,k} l_{i,k}$<br>
-<small>10</small> $\quad$ if $y \le 0$ there is no solution<br>
-<small>11</small> $\quad$ else $l_{i,i} = \sqrt{y}$<br></div>
+<small>2</small>  $\hspace{3cm}$ For $j$ = 1 to $i-1$ <br>
+<small>3</small>  \hspace{6cm} $y = a_{i,j}$ <br>
+<small>4</small>  <div class="horizontalgap" style="width:6cm"></div> For $k$ = 1 to $j$-1 <br>
+<small>5</small>  $\quad \quad \quad y = y - l_{i,k} l_{j,k}$ <br>
+<small>6</small>  $\quad \quad l_{i,j} = y / l_{j,j}$ <br>
+<small>7</small>  $\quad y= a_{i,i}$ <br>
+<small>8</small>  $\quad$ For $k$= 1 to $i-1$ <br>
+<small>9</small>  $\quad \quad y = y - l_{i,k} l_{i,k}$ <br>
+<small>10</small> $\quad$ if $y \le 0$ there is no solution <br>
+<small>11</small> $\quad$ else $l_{i,i} = \sqrt{y}$ <br></div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>
