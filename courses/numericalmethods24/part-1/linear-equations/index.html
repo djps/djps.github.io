@@ -1284,10 +1284,19 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>equation*<span class="nb">}</span>
-</span></span><span class="line"><span class="cl">e = mc<span class="nb">^</span>2.
-</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>equation*<span class="nb">}</span>
-</span></span></code></pre></div><p>For $i$=1 to $n$</p>
+            <div class="admonition-content"><p>$$
+\begin{algorithmic}
+\State $i \gets 10$
+\If{$i\geq 5$}
+\State $i \gets i-1$
+\Else
+\If{$i\leq 3$}
+\State $i \gets i+2$
+\EndIf
+\EndIf
+\end{algorithmic}
+$$</p>
+<p>For $i$=1 to $n$</p>
 <p>$\quad$ For $j$ = 1 to $i-1$</p>
 <p>$\quad \quad$ $y = a_{i,j}$</p>
 <p>$\quad \quad$ For $k$ = 1 to $j$-1</p>

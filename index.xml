@@ -697,10 +697,19 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;equation*&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;e = mc&lt;span class=&#34;nb&#34;&gt;^&lt;/span&gt;2.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;equation*&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For $i$=1 to $n$&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;$$
+\begin{algorithmic}
+\State $i \gets 10$
+\If{$i\geq 5$}
+\State $i \gets i-1$
+\Else
+\If{$i\leq 3$}
+\State $i \gets i+2$
+\EndIf
+\EndIf
+\end{algorithmic}
+$$&lt;/p&gt;
+&lt;p&gt;For $i$=1 to $n$&lt;/p&gt;
 &lt;p&gt;$\quad$ For $j$ = 1 to $i-1$&lt;/p&gt;
 &lt;p&gt;$\quad \quad$ $y = a_{i,j}$&lt;/p&gt;
 &lt;p&gt;$\quad \quad$ For $k$ = 1 to $j$-1&lt;/p&gt;
