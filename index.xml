@@ -628,12 +628,15 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;\begin{flushleft}
+&lt;p&gt;{\raggedright
 \begin{array}{llll}
 \footnotesize{\textsf{1}} &amp;amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp;amp; &amp;amp; \\
 \footnotesize{\textsf{2}} &amp;amp;                                               &amp;amp; \textsf{For } i = k + 1 \textsf{ to } n &amp;amp; \\
 \footnotesize{\textsf{3}} &amp;amp;                                               &amp;amp;                                         &amp;amp; \textsf{For } j = k \text{ to } n
 \end{array}
+}&lt;/p&gt;
+&lt;p&gt;\begin{flushleft}
+things
 \end{flushleft}&lt;/p&gt;
 &lt;p&gt;For $k$=1 to $n-1$&lt;/p&gt;
 &lt;p&gt;$\quad$ For $i$ = $k$ + 1 to $n$&lt;/p&gt;
