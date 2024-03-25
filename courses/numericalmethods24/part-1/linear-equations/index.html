@@ -1215,7 +1215,12 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
-<p>For $k$=1 to $n-1$</p>
+<p>\begin{array}{lll}
+For $k$=1 to $n-1$ &amp; &amp; \
+&amp; For $i$ = $k$ + 1 to $n$ &amp; \
+&amp;                          &amp; For $j$ = k to $n$ \
+\end{array}</p>
+<p>For $k$=1 to $n-1$ &amp; &amp; \</p>
 <p>$\quad$ For $i$ = $k$ + 1 to $n$</p>
 <p>$\quad \quad$ For $j$ = k to $n$</p>
 <p>$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$</p>
@@ -1284,29 +1289,17 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>$$
-\begin{algorithmic}
-\State $i \gets 10$
-\If{$i\geq 5$}
-\State $i \gets i-1$
-\Else
-\If{$i\leq 3$}
-\State $i \gets i+2$
-\EndIf
-\EndIf
-\end{algorithmic}
-$$</p>
-<p>For $i$=1 to $n$</p>
-<p>$\quad$ For $j$ = 1 to $i-1$</p>
-<p>$\quad \quad$ $y = a_{i,j}$</p>
-<p>$\quad \quad$ For $k$ = 1 to $j$-1</p>
-<p>$\quad \quad \quad y = y - l_{i,k} l_{j,k}$</p>
-<p>$\quad \quad l_{i,j} = y / l_{j,j}$</p>
-<p>$\quad y= a_{i,i}$</p>
-<p>$\quad$ For $k$= 1 to $i-1$</p>
-<p>$\quad \quad y = y - l_{i,k} l_{i,k}$</p>
-<p>$\quad$ if $y \le 0$ there is no solution</p>
-<p>$\quad$ else $l_{i,i} = \sqrt{y}$</p>
+            <div class="admonition-content"><p>\tiny{1} For $i$=1 to $n$
+\tiny{2} $\quad$ For $j$ = 1 to $i-1$
+\tiny{3} $\quad \quad$ $y = a_{i,j}$ \
+\tiny{4} $\quad \quad$ For $k$ = 1 to $j$-1</p>
+<p>\tiny{5} $\quad \quad \quad y = y - l_{i,k} l_{j,k}$</p>
+<p>\tiny{6} $\quad \quad l_{i,j} = y / l_{j,j}$</p>
+<p>\tiny{7} $\quad y= a_{i,i}$</p>
+<p>\tiny{8} $\quad$ For $k$= 1 to $i-1$</p>
+<p>\tiny{9} $\quad \quad y = y - l_{i,k} l_{i,k}$</p>
+<p>\tiny{10} $\quad$ if $y \le 0$ there is no solution</p>
+<p>\tiny{11} $\quad$ else $l_{i,i} = \sqrt{y}$</p>
 </div>
         </div>
     </div>

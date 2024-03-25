@@ -403,7 +403,12 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For $k$=1 to $n-1$&lt;/p&gt;
+&lt;p&gt;\begin{array}{lll}
+For $k$=1 to $n-1$ &amp;amp; &amp;amp; \
+&amp;amp; For $i$ = $k$ + 1 to $n$ &amp;amp; \
+&amp;amp;                          &amp;amp; For $j$ = k to $n$ \
+\end{array}&lt;/p&gt;
+&lt;p&gt;For $k$=1 to $n-1$ &amp;amp; &amp;amp; \&lt;/p&gt;
 &lt;p&gt;$\quad$ For $i$ = $k$ + 1 to $n$&lt;/p&gt;
 &lt;p&gt;$\quad \quad$ For $j$ = k to $n$&lt;/p&gt;
 &lt;p&gt;$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$&lt;/p&gt;
@@ -472,29 +477,17 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;$$
-\begin{algorithmic}
-\State $i \gets 10$
-\If{$i\geq 5$}
-\State $i \gets i-1$
-\Else
-\If{$i\leq 3$}
-\State $i \gets i+2$
-\EndIf
-\EndIf
-\end{algorithmic}
-$$&lt;/p&gt;
-&lt;p&gt;For $i$=1 to $n$&lt;/p&gt;
-&lt;p&gt;$\quad$ For $j$ = 1 to $i-1$&lt;/p&gt;
-&lt;p&gt;$\quad \quad$ $y = a_{i,j}$&lt;/p&gt;
-&lt;p&gt;$\quad \quad$ For $k$ = 1 to $j$-1&lt;/p&gt;
-&lt;p&gt;$\quad \quad \quad y = y - l_{i,k} l_{j,k}$&lt;/p&gt;
-&lt;p&gt;$\quad \quad l_{i,j} = y / l_{j,j}$&lt;/p&gt;
-&lt;p&gt;$\quad y= a_{i,i}$&lt;/p&gt;
-&lt;p&gt;$\quad$ For $k$= 1 to $i-1$&lt;/p&gt;
-&lt;p&gt;$\quad \quad y = y - l_{i,k} l_{i,k}$&lt;/p&gt;
-&lt;p&gt;$\quad$ if $y \le 0$ there is no solution&lt;/p&gt;
-&lt;p&gt;$\quad$ else $l_{i,i} = \sqrt{y}$&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;\tiny{1} For $i$=1 to $n$
+\tiny{2} $\quad$ For $j$ = 1 to $i-1$
+\tiny{3} $\quad \quad$ $y = a_{i,j}$ \
+\tiny{4} $\quad \quad$ For $k$ = 1 to $j$-1&lt;/p&gt;
+&lt;p&gt;\tiny{5} $\quad \quad \quad y = y - l_{i,k} l_{j,k}$&lt;/p&gt;
+&lt;p&gt;\tiny{6} $\quad \quad l_{i,j} = y / l_{j,j}$&lt;/p&gt;
+&lt;p&gt;\tiny{7} $\quad y= a_{i,i}$&lt;/p&gt;
+&lt;p&gt;\tiny{8} $\quad$ For $k$= 1 to $i-1$&lt;/p&gt;
+&lt;p&gt;\tiny{9} $\quad \quad y = y - l_{i,k} l_{i,k}$&lt;/p&gt;
+&lt;p&gt;\tiny{10} $\quad$ if $y \le 0$ there is no solution&lt;/p&gt;
+&lt;p&gt;\tiny{11} $\quad$ else $l_{i,i} = \sqrt{y}$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
