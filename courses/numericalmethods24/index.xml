@@ -403,25 +403,19 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;{\raggedright
-\begin{array}{llll}
-{\footnotesize \textsf{1}} &amp;amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp;amp; &amp;amp; \\
-\footnotesize{\textsf{2}} &amp;amp;                                               &amp;amp; \textsf{For } i = k + 1 \textsf{ to } n &amp;amp; \\
-&lt;small&gt;3&lt;/small&gt; &amp;amp;                                               &amp;amp;                                         &amp;amp; \textsf{For } j = k \text{ to } n
-\end{array}
-}&lt;/p&gt;
-&lt;p&gt;For $k$=1 to $n-1$&lt;/p&gt;
-&lt;p&gt;$\quad$ For $i$ = $k$ + 1 to $n$&lt;/p&gt;
-&lt;p&gt;$\quad \quad$ For $j$ = k to $n$&lt;/p&gt;
-&lt;p&gt;$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$&lt;/p&gt;
-&lt;p&gt;$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$&lt;/p&gt;
-&lt;p&gt;Then back substitute,&lt;/p&gt;
-&lt;p&gt;$x_n = \dfrac{b_n}{a_{n,n}}$&lt;/p&gt;
-&lt;p&gt;For $i$ =$n$-1 to 1&lt;/p&gt;
-&lt;p&gt;$\quad y = b_i$&lt;/p&gt;
-&lt;p&gt;$\quad$ For $j$ = $n$ to $i+1$&lt;/p&gt;
-&lt;p&gt;$\quad \quad y = y - a_{i,j} x_y$&lt;/p&gt;
-&lt;p&gt;$\quad x_i = \dfrac{y}{a_{i,i}}$&lt;/p&gt;
+&lt;p&gt;Forward elimination is written as&lt;/p&gt;
+&lt;p&gt;For $k=1$ to $n-1$ &lt;br&gt;
+$\quad$ For $i = k + 1$ to $n$ &lt;br&gt;
+$\quad \quad$ For $j = k$ to $n$ &lt;br&gt;
+$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
+$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
+&lt;p&gt;$x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;For $i$ =$n-1$ to $1$&lt;br&gt;
+$\quad y = b_i$ &lt;br&gt;
+$\quad$ For $j = n$ to $i+1$ &lt;br&gt;
+$\quad \quad y = y - a_{i,j} x_j$ &lt;br&gt;
+$\quad x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -479,18 +473,21 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Cholesky’a algorithm to compute the entries of the triangular matrix $L$ can be written as
-&lt;small&gt;1&lt;/small&gt;  For $i$=1 to $n$ &lt;br&gt;
-&lt;small&gt;2&lt;/small&gt;  $\hspace{3cm}$ For $j$ = 1 to $i-1$ &lt;br&gt;
-&lt;small&gt;3&lt;/small&gt;  $\hspace{6cm}$ $y = a_{i,j}$ &lt;br&gt;
-&lt;small&gt;4&lt;/small&gt;  &lt;span class=&#34;horizontalgap&#34; style=&#34;width:6cm&#34;&gt;&lt;/span&gt; For $k$ = 1 to $j$-1 &lt;br&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Cholesky&amp;rsquo;a algorithm to compute the entries of the triangular matrix $L$ can be written as&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;1&lt;/small&gt;  For $i=1$ to $n$: &lt;br&gt;
+&lt;small&gt;2&lt;/small&gt;  $\hspace{3cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
+&lt;small&gt;3&lt;/small&gt;  $\hspace{6cm} y = a_{i,j}$ &lt;br&gt;
+&lt;small&gt;4&lt;/small&gt;  $\hspace{6cm}$ For $k = 1$ to $j-1$: &lt;br&gt;
 &lt;small&gt;5&lt;/small&gt;  $\hspace{9cm} y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
 &lt;small&gt;6&lt;/small&gt;  $\hspace{6cm} l_{i,j} = y / l_{j,j}$ &lt;br&gt;
-&lt;small&gt;7&lt;/small&gt;  $\hspace{3cm} y= a_{i,i}$ &lt;br&gt;
-&lt;small&gt;8&lt;/small&gt;  $\hspace{3cm}$ For $k$= 1 to $i-1$ &lt;br&gt;
+&lt;small&gt;7&lt;/small&gt;  $\hspace{3cm} y = a_{i,i}$ &lt;br&gt;
+&lt;small&gt;8&lt;/small&gt;  $\hspace{3cm}$ For $k= 1$ to $i-1$: &lt;br&gt;
 &lt;small&gt;9&lt;/small&gt;  $\hspace{6cm} y = y - l_{i,k} l_{i,k}$ &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; $\hspace{3cm}$ if $y \le 0$ there is no solution &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\hspace{3cm}$ else $l_{i,i} = \sqrt{y}$ &lt;br&gt;&lt;/div&gt;
+&lt;small&gt;10&lt;/small&gt; $\hspace{3cm}$ if $y \le 0$: &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{6cm}$ there is no solution &lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; $\hspace{3cm}$ else: &lt;br&gt;
+&lt;small&gt;13&lt;/small&gt; $\hspace{6cm} l_{i,i} = \sqrt{y}$ &lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;

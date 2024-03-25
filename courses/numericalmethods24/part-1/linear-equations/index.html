@@ -1215,25 +1215,19 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
-<p>{\raggedright
-\begin{array}{llll}
-{\footnotesize \textsf{1}} &amp; \textsf{For} \, k=1 \, \textsf{to} \, n-1 &amp; &amp; \\
-\footnotesize{\textsf{2}} &amp;                                               &amp; \textsf{For } i = k + 1 \textsf{ to } n &amp; \\
-<small>3</small> &amp;                                               &amp;                                         &amp; \textsf{For } j = k \text{ to } n
-\end{array}
-}</p>
-<p>For $k$=1 to $n-1$</p>
-<p>$\quad$ For $i$ = $k$ + 1 to $n$</p>
-<p>$\quad \quad$ For $j$ = k to $n$</p>
-<p>$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$</p>
-<p>$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$</p>
-<p>Then back substitute,</p>
-<p>$x_n = \dfrac{b_n}{a_{n,n}}$</p>
-<p>For $i$ =$n$-1 to 1</p>
-<p>$\quad y = b_i$</p>
-<p>$\quad$ For $j$ = $n$ to $i+1$</p>
-<p>$\quad \quad y = y - a_{i,j} x_y$</p>
-<p>$\quad x_i = \dfrac{y}{a_{i,i}}$</p>
+<p>Forward elimination is written as</p>
+<p>For $k=1$ to $n-1$ <br>
+$\quad$ For $i = k + 1$ to $n$ <br>
+$\quad \quad$ For $j = k$ to $n$ <br>
+$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
+$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br></p>
+<p>Then back substitute, starting with the last unknown first:</p>
+<p>$x_n = \dfrac{b_n}{a_{n,n}}$ <br></p>
+<p>For $i$ =$n-1$ to $1$<br>
+$\quad y = b_i$ <br>
+$\quad$ For $j = n$ to $i+1$ <br>
+$\quad \quad y = y - a_{i,j} x_j$ <br>
+$\quad x_i = \dfrac{y}{a_{i,i}}$ <br></p>
 </div>
         </div>
     </div>
@@ -1291,18 +1285,21 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Cholesky’a algorithm to compute the entries of the triangular matrix $L$ can be written as
-<small>1</small>  For $i$=1 to $n$ <br>
-<small>2</small>  $\hspace{3cm}$ For $j$ = 1 to $i-1$ <br>
-<small>3</small>  $\hspace{6cm}$ $y = a_{i,j}$ <br>
-<small>4</small>  <span class="horizontalgap" style="width:6cm"></span> For $k$ = 1 to $j$-1 <br>
+            <div class="admonition-content"><p>Cholesky&rsquo;a algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
+<p><small>1</small>  For $i=1$ to $n$: <br>
+<small>2</small>  $\hspace{3cm}$ For $j = 1$ to $i-1$: <br>
+<small>3</small>  $\hspace{6cm} y = a_{i,j}$ <br>
+<small>4</small>  $\hspace{6cm}$ For $k = 1$ to $j-1$: <br>
 <small>5</small>  $\hspace{9cm} y = y - l_{i,k} l_{j,k}$ <br>
 <small>6</small>  $\hspace{6cm} l_{i,j} = y / l_{j,j}$ <br>
-<small>7</small>  $\hspace{3cm} y= a_{i,i}$ <br>
-<small>8</small>  $\hspace{3cm}$ For $k$= 1 to $i-1$ <br>
+<small>7</small>  $\hspace{3cm} y = a_{i,i}$ <br>
+<small>8</small>  $\hspace{3cm}$ For $k= 1$ to $i-1$: <br>
 <small>9</small>  $\hspace{6cm} y = y - l_{i,k} l_{i,k}$ <br>
-<small>10</small> $\hspace{3cm}$ if $y \le 0$ there is no solution <br>
-<small>11</small> $\hspace{3cm}$ else $l_{i,i} = \sqrt{y}$ <br></div>
+<small>10</small> $\hspace{3cm}$ if $y \le 0$: <br>
+<small>11</small> $\hspace{6cm}$ there is no solution <br>
+<small>12</small> $\hspace{3cm}$ else: <br>
+<small>13</small> $\hspace{6cm} l_{i,i} = \sqrt{y}$ <br></p>
+</div>
         </div>
     </div>
 <h3 id="indirect-methods">Indirect Methods</h3>
