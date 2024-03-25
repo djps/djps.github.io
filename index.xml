@@ -704,17 +704,18 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;small&gt;1&lt;/small&gt;  For $i$=1 to $n$ &lt;br&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Cholesky’a algorithm to compute the entries of the triangular matrix $L$ can be written as
+&lt;small&gt;1&lt;/small&gt;  For $i$=1 to $n$ &lt;br&gt;
 &lt;small&gt;2&lt;/small&gt;  $\hspace{3cm}$ For $j$ = 1 to $i-1$ &lt;br&gt;
-&lt;small&gt;3&lt;/small&gt;  \hspace{6cm} $y = a_{i,j}$ &lt;br&gt;
-&lt;small&gt;4&lt;/small&gt;  &lt;div class=&#34;horizontalgap&#34; style=&#34;width:6cm&#34;&gt;&lt;/div&gt; For $k$ = 1 to $j$-1 &lt;br&gt;
-&lt;small&gt;5&lt;/small&gt;  $\quad \quad \quad y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
-&lt;small&gt;6&lt;/small&gt;  $\quad \quad l_{i,j} = y / l_{j,j}$ &lt;br&gt;
-&lt;small&gt;7&lt;/small&gt;  $\quad y= a_{i,i}$ &lt;br&gt;
-&lt;small&gt;8&lt;/small&gt;  $\quad$ For $k$= 1 to $i-1$ &lt;br&gt;
-&lt;small&gt;9&lt;/small&gt;  $\quad \quad y = y - l_{i,k} l_{i,k}$ &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; $\quad$ if $y \le 0$ there is no solution &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\quad$ else $l_{i,i} = \sqrt{y}$ &lt;br&gt;&lt;/div&gt;
+&lt;small&gt;3&lt;/small&gt;  $\hspace{6cm}$ $y = a_{i,j}$ &lt;br&gt;
+&lt;small&gt;4&lt;/small&gt;  &lt;span class=&#34;horizontalgap&#34; style=&#34;width:6cm&#34;&gt;&lt;/span&gt; For $k$ = 1 to $j$-1 &lt;br&gt;
+&lt;small&gt;5&lt;/small&gt;  $\hspace{9cm} y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
+&lt;small&gt;6&lt;/small&gt;  $\hspace{6cm} l_{i,j} = y / l_{j,j}$ &lt;br&gt;
+&lt;small&gt;7&lt;/small&gt;  $\hspace{3cm} y= a_{i,i}$ &lt;br&gt;
+&lt;small&gt;8&lt;/small&gt;  $\hspace{3cm}$ For $k$= 1 to $i-1$ &lt;br&gt;
+&lt;small&gt;9&lt;/small&gt;  $\hspace{6cm} y = y - l_{i,k} l_{i,k}$ &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; $\hspace{3cm}$ if $y \le 0$ there is no solution &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{3cm}$ else $l_{i,i} = \sqrt{y}$ &lt;br&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
@@ -724,7 +725,7 @@ Q x_{k +1}= \left( Q - A \right) x_{k} + b.
 $$&lt;/p&gt;
 &lt;p&gt;This is equivalent to&lt;/p&gt;
 &lt;p&gt;$$
-x_{k +1}= \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
+x_{k +1} = \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
 $$&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
