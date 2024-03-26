@@ -1213,29 +1213,29 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back-substitution to solve the system. The row operations are:</p>
+            <div class="admonition-content"><p>Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back substitution to solve the system. The row operations are:</p>
 <ul>
 <li>row swapping</li>
 <li>row scaling, i.e. multiplying by a non-zero scalar</li>
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
 <p>Forward elimination is written as</p>
-<p><small>1</small> For $k=1$ to $n-1$: <br>
-<small>2</small> $\hspace{2cm}$ For $i = k + 1$ to $n$: <br>
-<small>3</small> $\hspace{4cm}$ For $j = k$ to $n$: <br>
-<small>4</small> $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
-<small>5</small> $\hspace{4cm}$ End <br>
-<small>6</small> $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br>
-<small>7</small> End <br></p>
+<p><small>1 </small> For $k=1$ to $n-1$: <br>
+<small>2 </small> $\hspace{2cm}$ For $i = k + 1$ to $n$: <br>
+<small>3 </small> $\hspace{4cm}$ For $j = k$ to $n$: <br>
+<small>4 </small> $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
+<small>5 </small> $\hspace{4cm}$ End <br>
+<small>6 </small> $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br>
+<small>7 </small> End <br></p>
 <p>Then back substitute, starting with the last unknown first:</p>
-<p><small>8</small> $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
-<small>9</small> For $i$ =$n-1$ to $1$: <br>
-<small>11</small> $\hspace{2cm} y = b_i$ <br>
-<small>12</small> $\hspace{2cm}$ For $j = n$ to $i+1$: <br>
-<small>13</small> $\hspace{4cm} y = y - a_{i,j} x_j$ <br>
-<small>14</small> $\hspace{2cm}$ End <br>
-<small>15</small> $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ <br>
-<small>16</small> End</p>
+<p><small>8 </small> Set $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
+<small>9 </small> For $i$ =$n-1$ to $1$: <br>
+<small>10</small> $\hspace{2cm} y = b_i$ <br>
+<small>11</small> $\hspace{2cm}$ For $j = n$ to $i+1$: <br>
+<small>12</small> $\hspace{4cm} y = y - a_{i,j} x_j$ <br>
+<small>13</small> $\hspace{2cm}$ End <br>
+<small>14</small> $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ <br>
+<small>15</small> End</p>
 </div>
         </div>
     </div>
@@ -1308,13 +1308,13 @@ $$</div>
             <div class="admonition-content"><p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
 <p><small>1 </small> For $i=1$ to $n$: <br>
 <small>2 </small> $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
-<small>3 </small> $\hspace{4cm}$ $y = a_{i,j}$ <br>
+<small>3 </small> $\hspace{4cm}$ Set $y = a_{i,j}$ <br>
 <small>4 </small> $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
 <small>5 </small> $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ <br>
 <small>6 </small> $\hspace{4cm}$ End <br>
 <small>7 </small> $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ <br>
 <small>8 </small> $\hspace{2cm}$ End <br>
-<small>9 </small> $\hspace{2cm}$ $y = a_{i,i}$ <br>
+<small>9 </small> $\hspace{2cm}$ Set $y = a_{i,i}$ <br>
 <small>10</small> $\hspace{2cm}$ For $k= 1$ to $i-1$: <br>
 <small>11</small> $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ <br>
 <small>12</small> $\hspace{2cm}$ End <br>
