@@ -1247,15 +1247,15 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.</p>
-<p><small>1</small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ <br>
-<small>2</small> For $k=1$ to $n-1$: <br>
-<small>3</small> $\hspace{2cm}$ For $i = k$ to $n$: <br>
-<small>4</small> $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
-<small>5</small> $\hspace{2cm}$ End <br>
-<small>6</small> $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ <br>
-<small>7</small> $\hspace{2cm}$ Swap rows $k$ and $j$ <br>
-<small>8</small> $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ <br>
-<small>9</small> $\hspace{2cm}$ Do forward elimination on row $k$ <br>
+<p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ <br>
+<small>2 </small> For $k=1$ to $n-1$: <br>
+<small>3 </small> $\hspace{2cm}$ For $i = k$ to $n$: <br>
+<small>4 </small> $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
+<small>5 </small> $\hspace{2cm}$ End <br>
+<small>6 </small> $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ <br>
+<small>7 </small> $\hspace{2cm}$ Swap rows $k$ and $j$ <br>
+<small>8 </small> $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ <br>
+<small>9 </small> $\hspace{2cm}$ Do forward elimination on row $k$ <br>
 <small>10</small> End <br></p>
 <p>The matrix will be in row-echelon form, so that back substitution can now be performed.</p>
 </div>
@@ -1306,24 +1306,24 @@ $$</div>
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
-<p><small>1</small>  For $i=1$ to $n$: <br>
-<small>2</small>  $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
-<small>3</small>  $\hspace{4cm} y = a_{i,j}$ <br>
-<small>4</small>  $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
-<small>5</small>  $\hspace{6cm} y = y - l_{i,k} l_{j,k}$ <br>
-<small>6</small>  $\hspace{4cm}$ End <br>
-<small>7</small>  $\hspace{4cm} l_{i,j} = y / l_{j,j}$ <br>
-<small>8</small>  $\hspace{2cm}$ End <br>
-<small>9</small>  $\hspace{2cm}$ $y = a_{i,i}$ <br>
+<p><small>1 </small> For $i=1$ to $n$: <br>
+<small>2 </small> $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
+<small>3 </small> $\hspace{4cm}$ $y = a_{i,j}$ <br>
+<small>4 </small> $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
+<small>5 </small> $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ <br>
+<small>6 </small> $\hspace{4cm}$ End <br>
+<small>7 </small> $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ <br>
+<small>8 </small> $\hspace{2cm}$ End <br>
+<small>9 </small> $\hspace{2cm}$ $y = a_{i,i}$ <br>
 <small>10</small> $\hspace{2cm}$ For $k= 1$ to $i-1$: <br>
-<small>11</small> $\hspace{4cm} y = y - l_{i,k} l_{i,k}$ <br>
+<small>11</small> $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ <br>
 <small>12</small> $\hspace{2cm}$ End <br>
 <small>13</small> $\hspace{2cm}$ If $y \le 0$: <br>
 <small>14</small> $\hspace{4cm}$ exit as there is no solution <br>
 <small>15</small> $\hspace{2cm}$ Else: <br>
-<small>16</small> $\hspace{4cm} l_{i,i} = \sqrt{y}$ <br>
+<small>16</small> $\hspace{4cm}$ $l_{i,i} = \sqrt{y}$ <br>
 <small>12</small> $\hspace{2cm}$ End <br>
-<small>17</small>  End <br></p>
+<small>17</small> End <br></p>
 </div>
         </div>
     </div>
