@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: March 25, 2024 --><html lang="en-us" >
+<!-- Last Published: March 26, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -957,6 +957,10 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
+
+
+  <li class=""><a href="/courses/numericalmethods24/notebooks/lagrange_polynomials/">Lagrange Polynomials</a></li>
+
       
         </ul>
       
@@ -1216,18 +1220,22 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
 <p>Forward elimination is written as</p>
-<p>For $k=1$ to $n-1$ <br>
-$\quad$ For $i = k + 1$ to $n$ <br>
-$\quad \quad$ For $j = k$ to $n$ <br>
-$\quad \quad \quad a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
-$\quad \quad b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br></p>
+<p><small>1</small> For $k=1$ to $n-1$: <br>
+<small>2</small> $\hspace{2cm}$ For $i = k + 1$ to $n$: <br>
+<small>3</small> $\hspace{4cm}$ For $j = k$ to $n$: <br>
+<small>4</small> $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
+<small>5</small> $\hspace{4cm}$ End <br>
+<small>6</small> $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br>
+<small>7</small> End <br></p>
 <p>Then back substitute, starting with the last unknown first:</p>
-<p>$x_n = \dfrac{b_n}{a_{n,n}}$ <br></p>
-<p>For $i$ =$n-1$ to $1$<br>
-$\quad y = b_i$ <br>
-$\quad$ For $j = n$ to $i+1$ <br>
-$\quad \quad y = y - a_{i,j} x_j$ <br>
-$\quad x_i = \dfrac{y}{a_{i,i}}$ <br></p>
+<p><small>8</small> $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
+<small>9</small> For $i$ =$n-1$ to $1$: <br>
+<small>11</small> $\hspace{2cm} y = b_i$ <br>
+<small>12</small> $\hspace{2cm}$ For $j = n$ to $i+1$: <br>
+<small>13</small> $\hspace{4cm} y = y - a_{i,j} x_j$ <br>
+<small>14</small> $\hspace{2cm}$ End
+<small>15</small> $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ <br>
+<small>16</small> End</p>
 </div>
         </div>
     </div>
@@ -1285,20 +1293,24 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Cholesky&rsquo;a algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
+            <div class="admonition-content"><p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
 <p><small>1</small>  For $i=1$ to $n$: <br>
-<small>2</small>  $\hspace{3cm}$ For $j = 1$ to $i-1$: <br>
-<small>3</small>  $\hspace{6cm} y = a_{i,j}$ <br>
-<small>4</small>  $\hspace{6cm}$ For $k = 1$ to $j-1$: <br>
-<small>5</small>  $\hspace{9cm} y = y - l_{i,k} l_{j,k}$ <br>
-<small>6</small>  $\hspace{6cm} l_{i,j} = y / l_{j,j}$ <br>
-<small>7</small>  $\hspace{3cm} y = a_{i,i}$ <br>
-<small>8</small>  $\hspace{3cm}$ For $k= 1$ to $i-1$: <br>
-<small>9</small>  $\hspace{6cm} y = y - l_{i,k} l_{i,k}$ <br>
-<small>10</small> $\hspace{3cm}$ if $y \le 0$: <br>
-<small>11</small> $\hspace{6cm}$ there is no solution <br>
-<small>12</small> $\hspace{3cm}$ else: <br>
-<small>13</small> $\hspace{6cm} l_{i,i} = \sqrt{y}$ <br></p>
+<small>2</small>  $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
+<small>3</small>  $\hspace{4cm} y = a_{i,j}$ <br>
+<small>4</small>  $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
+<small>5</small>  $\hspace{6cm} y = y - l_{i,k} l_{j,k}$ <br>
+<small>X</small>  $\hspace{4cm}$ End <br>
+<small>6</small>  $\hspace{4cm} l_{i,j} = y / l_{j,j}$ <br>
+<small>X</small>  $\hspace{2cm}$ End <br>
+<small>7</small>  $\hspace{2cm} y = a_{i,i}$ <br>
+<small>8</small>  $\hspace{2cm}$ For $k= 1$ to $i-1$: <br>
+<small>9</small>  $\hspace{4cm} y = y - l_{i,k} l_{i,k}$ <br>
+<small>X</small>  $\hspace{2cm}$ End <br>
+<small>10</small> $\hspace{2cm}$ if $y \le 0$: <br>
+<small>11</small> $\hspace{4cm}$ exit as there is no solution <br>
+<small>12</small> $\hspace{2cm}$ else: <br>
+<small>13</small> $\hspace{4cm} l_{i,i} = \sqrt{y}$ <br>
+<small>X</small>  End <br></p>
 </div>
         </div>
     </div>

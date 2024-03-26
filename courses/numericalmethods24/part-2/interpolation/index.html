@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: March 25, 2024 --><html lang="en-us" >
+<!-- Last Published: March 26, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -957,6 +957,10 @@
 
   <li class=""><a href="/courses/numericalmethods24/notebooks/taylor_series/">Taylor Series</a></li>
 
+
+
+  <li class=""><a href="/courses/numericalmethods24/notebooks/lagrange_polynomials/">Lagrange Polynomials</a></li>
+
       
         </ul>
       
@@ -1100,11 +1104,11 @@ mjx-assistive-mml {
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Interpolating Functions</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating</strong> function.</p>
+            <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating function</strong>.</p>
 <p>This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.</p>
 </div>
         </div>
@@ -1112,24 +1116,24 @@ mjx-assistive-mml {
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
+			Definition:	<em>Polynomial Interpolation</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>If the interpolating function is a polynomial, write can be written as
+            <div class="admonition-content"><p>If the interpolating function is a polynomial, it can be written as
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
 $$
-So that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
+so that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, for weights $\alpha_j$. Thus, solving for values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 $$\Phi \alpha = p$$
-where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the <strong>collocation matrix</strong>, given by
+where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the <strong>collocation matrix</strong>, whose entries are given by the polynomials evaluated at the node points
 $$
 \Phi = \left( \begin{array}{cccc}
-\varphi_0\left(u_0\right) &amp; \varphi_1\left(u_1\right) &amp; \cdots &amp; \varphi_n\left(u_n\right) \\
+\varphi_0 (u_0) &amp; \varphi_1 (u_1) &amp; \cdots &amp; \varphi_n (u_n) \\
 \vdots &amp; &amp; &amp; \vdots \\
-\varphi_0\left(u_n\right) &amp; \cdots &amp; \cdots &amp; \varphi_n\left(u_n\right) \end{array} \right)
+\varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right)
 $$
-Thus $ \alpha = \Phi^{-1} p$,</p>
+Thus, to fit the polynomials to the data $ \alpha = \Phi^{-1} p$,</p>
 <p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 </div>
         </div>
@@ -1158,21 +1162,30 @@ where $\Phi$ is the <strong>Vandermonde matrix</strong>.</div>
         <div class="details-content">
             <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
 \begin{equation}
-p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i l_i\left(x\right)
+p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation}</p>
-<p>where</p>
-<p>$l_{i} \in \mathbb{P}_{n}$
-such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
+<p>where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
 \begin{equation}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. <br>
 \end{equation}</p>
+<p>By construction, the collocation matrix is the identity matrix. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.</p>
 </div>
         </div>
     </div>
 <div class="details admonition Example open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
+			Example:	<em>Lagrange Interpolation</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">An <code>.ipynb</code> notebook with an example of interpolation using Lagrange polynomials can be accessed online <a href="/courses/numericalmethods24/notebooks/lagrange_polynomials/">here</a>.</div>
+        </div>
+    </div>
+<div class="details admonition Example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+			Example:	<em>Runge&#39;s Phenomenon</em>
 			
         </div>
         <div class="details-content">
@@ -1279,7 +1292,7 @@ $$
 \vdots &amp; &amp; \vdots \\
 \mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
 \end{array}
-\right)
+\right).
 $$</p>
 <h2 id="least-squares-approximation">Least-Squares Approximation</h2>
 <div class="details admonition Definition open">
