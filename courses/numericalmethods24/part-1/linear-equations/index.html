@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: March 26, 2024 --><html lang="en-us" >
+<!-- Last Published: March 28, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1220,16 +1220,16 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <li>row addition, i.e. adding a multiple of one row to another</li>
 </ul>
 <p>Forward elimination is written as</p>
-<p><small>1 </small> For $k=1$ to $n-1$: <br>
-<small>2 </small> $\hspace{2cm}$ For $i = k + 1$ to $n$: <br>
-<small>3 </small> $\hspace{4cm}$ For $j = k$ to $n$: <br>
-<small>4 </small> $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
-<small>5 </small> $\hspace{4cm}$ End <br>
-<small>6 </small> $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br>
-<small>7 </small> End <br></p>
+<p><small>1 </small> For $k=1$ to $n-1$: <br>
+<small>2 </small> $\hspace{2cm}$ For $i = k + 1$ to $n$: <br>
+<small>3 </small> $\hspace{4cm}$ For $j = k$ to $n$: <br>
+<small>4 </small> $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ <br>
+<small>5 </small> $\hspace{4cm}$ End <br>
+<small>6 </small> $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ <br>
+<small>7 </small> End <br></p>
 <p>Then back substitute, starting with the last unknown first:</p>
-<p><small>8 </small> Set $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
-<small>9 </small> For $i$ =$n-1$ to $1$: <br>
+<p><small>8 </small> Set $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
+<small>9 </small> For $i$ =$n-1$ to $1$: <br>
 <small>10</small> $\hspace{2cm} y = b_i$ <br>
 <small>11</small> $\hspace{2cm}$ For $j = n$ to $i+1$: <br>
 <small>12</small> $\hspace{4cm} y = y - a_{i,j} x_j$ <br>
@@ -1247,15 +1247,15 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.</p>
-<p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ <br>
-<small>2 </small> For $k=1$ to $n-1$: <br>
-<small>3 </small> $\hspace{2cm}$ For $i = k$ to $n$: <br>
-<small>4 </small> $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
-<small>5 </small> $\hspace{2cm}$ End <br>
-<small>6 </small> $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ <br>
-<small>7 </small> $\hspace{2cm}$ Swap rows $k$ and $j$ <br>
-<small>8 </small> $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ <br>
-<small>9 </small> $\hspace{2cm}$ Do forward elimination on row $k$ <br>
+<p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ <br>
+<small>2 </small> For $k=1$ to $n-1$: <br>
+<small>3 </small> $\hspace{2cm}$ For $i = k$ to $n$: <br>
+<small>4 </small> $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
+<small>5 </small> $\hspace{2cm}$ End <br>
+<small>6 </small> $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ <br>
+<small>7 </small> $\hspace{2cm}$ Swap rows $k$ and $j$ <br>
+<small>8 </small> $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ <br>
+<small>9 </small> $\hspace{2cm}$ Do forward elimination on row $k$ <br>
 <small>10</small> End <br></p>
 <p>The matrix will be in row-echelon form, so that back substitution can now be performed.</p>
 </div>
@@ -1306,17 +1306,16 @@ $$</div>
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
-<p><small>1 </small> For $i=1$ to $n$: <br>
-<small>2 </small> $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
-<small>3 </small> $\hspace{4cm}$ Set $y = a_{i,j}$ <br>
-<small>4 </small> $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
-<small>5 </small> $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ <br>
-<small>6 </small> $\hspace{4cm}$ End <br>
-<small>7 </small> $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ <br>
-<small>8 </small> $\hspace{2cm}$ End <br>
+<p><small>1 </small> For $i=1$ to $n$: <br>
+<small>2 </small> $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
+<small>3 </small> $\hspace{4cm}$ Set $y = a_{i,j}$ <br>
+<small>4 </small> $\hspace{4cm}$ For $k = 1$ to $j-1$: <br>
+<small>5 </small> $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ <br>
+<small>6 </small> $\hspace{4cm}$ End <br>
+<small>7 </small> $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ <br>
+<small>8 </small> $\hspace{2cm}$ End <br>
 <small>9 </small> $\hspace{2cm}$ Set $y = a_{i,i}$ <br>
 <small>10</small> $\hspace{2cm}$ For $k= 1$ to $i-1$: <br>
-<small>9 </small> $\hspace{2cm}$ Set $y = a_{i,i}$ <br>
 <small>11</small> $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ <br>
 <small>12</small> $\hspace{2cm}$ End <br>
 <small>13</small> $\hspace{2cm}$ If $y \le 0$: <br>

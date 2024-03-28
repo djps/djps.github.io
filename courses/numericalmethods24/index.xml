@@ -404,16 +404,16 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Forward elimination is written as&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $i = k + 1$ to $n$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ For $j = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $i = k + 1$ to $n$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ For $j = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
+&lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; $\hspace{2cm} y = b_i$ &lt;br&gt;
 &lt;small&gt;11&lt;/small&gt; $\hspace{2cm}$ For $j = n$ to $i+1$: &lt;br&gt;
 &lt;small&gt;12&lt;/small&gt; $\hspace{4cm} y = y - a_{i,j} x_j$ &lt;br&gt;
@@ -431,15 +431,15 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
 &lt;/div&gt;
@@ -490,17 +490,16 @@ $$&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $i=1$ to $n$: &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ Set $y = a_{i,j}$ &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ For $k = 1$ to $j-1$: &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $i=1$ to $n$: &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ Set $y = a_{i,j}$ &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ For $k = 1$ to $j-1$: &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Set $y = a_{i,i}$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; $\hspace{2cm}$ For $k= 1$ to $i-1$: &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Set $y = a_{i,i}$ &lt;br&gt;
 &lt;small&gt;11&lt;/small&gt; $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ &lt;br&gt;
 &lt;small&gt;12&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ If $y \le 0$: &lt;br&gt;
@@ -977,7 +976,7 @@ mjx-assistive-mml {
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
 $$
-so that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, for weights $\alpha_j$. Thus, solving for values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
+so that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, for some weights $\alpha_i$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 $$\Phi \alpha = p$$
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
 $$
@@ -1054,26 +1053,30 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials without explicitly constructing them.&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
 &lt;p&gt;$$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$&lt;/p&gt;
-&lt;p&gt;this can be written as&lt;/p&gt;
+&lt;!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. --&gt;
+&lt;p&gt;The interpolation is achieved by constructing a series of polynomials $p_{i}^{k}$ given by&lt;/p&gt;
+&lt;p&gt;$$
+p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
+$$&lt;/p&gt;
+&lt;p&gt;with $p_i^0 = y_i$,&lt;/p&gt;
 &lt;p&gt;$$
 \begin{equation}
 \begin{array}{lllll}
-l\left( u \right) = p_{0} &amp;amp;                     &amp;amp;                     &amp;amp;  \\
-&amp;amp; p_0^1\left(u\right) &amp;amp;                     &amp;amp;  \\
-l\left( u \right) = p_{1} &amp;amp;                     &amp;amp; l_0^1\left(u\right) &amp;amp;  \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp; l_0^1\left(u\right) \\
-l\left( u \right) = p_{2} &amp;amp;                     &amp;amp; l\left( u \right)   &amp;amp;  \\
-&amp;amp; p\left( u \right)   &amp;amp;                     &amp;amp;  \\
-l\left( u \right) = p_{3} &amp;amp;                     &amp;amp;                     &amp;amp;
+p\left( u_0 \right) = p_{0}^0 &amp;amp;                       &amp;amp;                     &amp;amp;  \\
+&amp;amp; p_0^1\left(u\right)     &amp;amp;                     &amp;amp;  \\
+p\left( u_1 \right) = p_{1}^0 &amp;amp;                       &amp;amp; p_0^2\left(u\right) &amp;amp;  \\
+&amp;amp; p_1^1\left( u \right)   &amp;amp;                     &amp;amp; p_0^3\left(u\right) \\
+p\left( u_2 \right) = p_{2}^0 &amp;amp;                       &amp;amp; p_1^2\left(u\right  &amp;amp;  \\
+&amp;amp; p_2^1\left( u \right)   &amp;amp;                     &amp;amp;  \\
+p\left( u_4 \right) = p_{3}^0 &amp;amp;                       &amp;amp;                     &amp;amp;
 \end{array}
 \end{equation}
 $$
 where the coefficients are evaluated from left to right.&lt;/p&gt;
-&lt;p&gt;The corresponding method for Newton&amp;rsquo;s form of the interpolating polynomial is called Neville&amp;rsquo;s algorithm.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
