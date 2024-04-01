@@ -1474,7 +1474,7 @@ f^{\prime}\left( x \right) = \varphi \left( h \right) + a_2 \left( \dfrac{h}{2} 
 $$&lt;/p&gt;
 &lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
 &lt;p&gt;$$
-f^{\prime}\left( x \right) = \varphi \left( \dfrac{h}{2} \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
+f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
 $$&lt;/p&gt;
 &lt;p&gt;The process can be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations to higher order derivatives.&lt;/p&gt;
 &lt;/div&gt;
