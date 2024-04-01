@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: March 28, 2024 --><html lang="en-us" >
+<!-- Last Published: April 1, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1206,11 +1206,11 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$</p>
 <!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. -->
-<p>The interpolation is achieved by constructing a series of polynomials $p_{i}^{k}$ given by</p>
+<p>The interpolation is achieved by constructing a series of polynomials, evaluated at the ${u=u^{*}}$, where $p_{i}^{k}\left( u \right)$ is given by</p>
 <p>$$
 p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
 $$</p>
-<p>with $p_i^0 = y_i^{\vphantom{0}}$.</p>
+<p>with initial values $p_i^0 = y_i^{\vphantom{0}}$.</p>
 <p>$$
 \begin{equation}
 \begin{array}{lllll}

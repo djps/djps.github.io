@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: March 28, 2024 --><html lang="en-us" >
+<!-- Last Published: April 1, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1121,7 +1121,20 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content"><p>This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then</p>
+<p>$$
+f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
+$$</p>
+<p>Now evaluate the derivative at ${h=h/2}$, so that</p>
+<p>$$
+f^{\prime}\left( x \right) = \varphi \left( \dfrac{h}{2} \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
+$$</p>
+<p>Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as</p>
+<p>$$
+f^{\prime}\left( x \right) = \varphi \left( \dfrac{h}{2} \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
+$$</p>
+<p>The process can be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations to higher order derivatives.</p>
+</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1145,13 +1158,23 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Partition
-Approximate the area under the curve by summing the rectangles
-If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$
-Then the <strong>Lower</strong> and <strong>Upper</strong> sums are given by
+            <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that for ${i=0, 1, \ldots n-1}$, there are sub-intervals $\left[x_i, x_{i+1} \right]$.
+Then approximate the area under the curve by summing the areas in each subinterval defined as</p>
+<p>$$
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+$$</p>
+<p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>Lower</strong> and <strong>Upper</strong> sums are given by</p>
+<p>$$
+\begin{align*}
+L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right) \
+U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+\end{align*}
 $$
-L\left(f, p\right) \le \int\limits_{a}^{b} f\left(x \right) , \mathrm{d}x \le U\left(f, p\right).
-$$</div>
+so that
+$$
+L\left(f, p\right) \le \int\limits_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
+$$</p>
+</div>
         </div>
     </div>
 <div class="details admonition Definition open">
@@ -1161,7 +1184,14 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">Rather than rectangles, use trapezoids to approximate the integral in a sub domain
+$$
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i_1} \right)}{2}
+$$
+If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
+$$
+\dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
+$$</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1194,6 +1224,26 @@ $$</div>
             <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of numerical integration using the Trapezium rule can be accessed online <a href="/courses/numericalmethods24/notebooks/integrals/">here</a>.</p>
 <p>It can be downloaded from <a href="/ipyth/integrals.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/integrals.ipynb">here</a>.</p>
 </div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Simpson&#39;s Rule</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
+        </div>
+    </div>
+<div class="details admonition Theorem open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+			Theorem:	<em>Gaussian Quadrature</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Here</div>
         </div>
     </div>
 
