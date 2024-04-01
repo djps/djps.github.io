@@ -1243,7 +1243,7 @@ f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
 $$&lt;/p&gt;
 &lt;p&gt;Now evaluate the derivative at ${h=h/2}$, so that&lt;/p&gt;
 &lt;p&gt;$$
-f^{\prime}\left( x \right) = \varphi \left( \dfrac{h}{2} \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
+f^{\prime}\left( x \right) = \varphi \left( h \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
 $$&lt;/p&gt;
 &lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
 &lt;p&gt;$$
@@ -1277,12 +1277,12 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define nodes ${a = x_0 &amp;lt; x_1 &amp;lt; \ldots &amp;lt; x_n =b}$, so that for ${i=0, 1, \ldots n-1}$, there are sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
 &lt;p&gt;$$
-\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right), \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
 $$&lt;/p&gt;
 &lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;Lower&lt;/strong&gt; and &lt;strong&gt;Upper&lt;/strong&gt; sums are given by&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align*}
-L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right) \
+L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right) \\
 U\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
@@ -1306,7 +1306,7 @@ $$
 $$
 If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
 $$
-\dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
+T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
