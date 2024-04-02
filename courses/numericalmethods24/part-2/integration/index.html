@@ -1125,7 +1125,7 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
         <div class="details-content">
             <div class="admonition-content">with $f(x+h)$ and $f(x-h)$, so
 $$
-f^{\prime\prime}(x) = \dfrac{f(x-h) - 2f(x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2\ right).
+f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$</div>
         </div>
     </div>
@@ -1253,19 +1253,20 @@ Simpson’s rule uses quadratic interpolation. It can be applied in a composite 
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that
-\begin{itemize}
-\item[(i)] it has $n+1$ distinct roots, denoted as $x_i$, in $\left[a,b\right]$,
-\item[(ii)] the polynomial satisfies
+            <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
+<ol>
+<li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[a,b\right]$,</li>
+<li>the polynomial satisfies
 $$
-\int\limits_{a}^{b} x^k q\left(x\right) , \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots n.
+\int\limits_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots n.
+$$</li>
+</ol>
+<p>Then, denote the integral as
 $$
-\end{itemize}
-Then, denote the integral as
+I\left[ f\right] = \int\limits_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$
-I\left[ f\right] = \int\limits_{a}^{b} f\left(x\right) , \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
-$$
-with $A_i = \int \limits_{a}^{b} L_i \left(x\right) , \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>. The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</div>
+with $A_i = \int \limits_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>. The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
+</div>
         </div>
     </div>
 
