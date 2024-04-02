@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 1, 2024 --><html lang="en-us" >
+<!-- Last Published: April 2, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1203,7 +1203,11 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$. Then the error for the trapezium rule is
+$$
+\left| \int \limits_{a}^b f\left(x\right) , \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
+$$
+for a ${\xi \in \left(a,b\right)}$</div>
         </div>
     </div>
 <div class="details admonition Algorithm open">
@@ -1235,7 +1239,11 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">The integral is approximated as
+$$
+\int \limits_a^b f\left( x\right) , \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
+$$
+Simpson’s rule uses quadratic interpolation. It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1245,7 +1253,19 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Here</div>
+            <div class="admonition-content">Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that
+\begin{enumerate}
+\item it has $n+1$ distinct roots, denoted as $x_i$, in $\left[a,b\right]$
+\item the polynomial satisfies
+$$
+\int\limits_{a}^{b} x^k q\left(x\right) , \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots n.
+$$
+\end{enumerate}
+Then, denote the integral as
+$$
+I\left[ f\right] = \int\limits_{a}^{b} f\left(x\right) , \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
+$$
+with $A_i = \int \limits_{a}^{b} L_i \left(x\right) , \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>. The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</div>
         </div>
     </div>
 
