@@ -70,6 +70,32 @@ for some value $\xi \in \left[ a, b \right]$ where
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Rolle&amp;#39;s Theorem&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that
+$$
+f^\prime (c) = 0
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Mean Value Theorem&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
+$$
+f^\prime (c) = \dfrac{f(b)-f(a)}{b-a}}.
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 </description>
     </item>
     
@@ -1183,7 +1209,7 @@ $$&lt;/div&gt;
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
 $$
-where $\varphi_$ are linearly independent. Then the least squares problem can be expressed as
+where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
 $$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
 $$
@@ -1422,6 +1448,19 @@ I\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=
 $$
 with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;. The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
 &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Orthogonal functions&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Two functions $f(x)$ and $g(x)$ are said to be orthogonal if
+$$
+\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 </description>
