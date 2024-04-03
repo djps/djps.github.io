@@ -1404,17 +1404,21 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If the function $f$ is a function of the form
+            &lt;div class=&#34;admonition-content&#34;&gt;If the function $y(x)$ is a function of the form
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
 $$
-then the least squares problem can be expressed as
+where $\varphi_$ are linearly independent. Then the least squares problem can be expressed as
 $$
-\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right).
+E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
 $$
-Thus, the weights $\beta$ can be determined by solving the &lt;em&gt;linear system&lt;/em&gt;,
+This has a minimum when
 $$
-\Phi \Phi^T \beta = \Phi y,
+\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
+$$
+Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,
+$$
+\Phi^T \Phi \beta = \Phi^T y,
 $$
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/div&gt;
         &lt;/div&gt;
