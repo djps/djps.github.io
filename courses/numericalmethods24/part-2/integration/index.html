@@ -1172,8 +1172,8 @@ $$</p>
 <p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>lower</strong> and <strong>upper Riemann sums</strong> are given by</p>
 <p>$$
 \begin{align*}
-L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{\textnormal{where}} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
-U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{\textnormal{where}} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{<span>where</span>} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
+U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 so that
@@ -1291,7 +1291,10 @@ $$</p>
 I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
 \end{equation}
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
-<p>Can the weights be chosen such that the error in an integral is minimized? Furthermore, can the nodes be chosen such that the integral can be further improved?</p>
+<ul>
+<li>Can the weights be chosen such that the error in an integral is minimized?</li>
+<li>Furthermore, can the nodes be chosen such that the integral can be further improved?</li>
+</ul>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1325,7 +1328,8 @@ i.e. is orthogonal to $x^k$.</li>
 $$
 I\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$
-with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>. The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
+with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>.</p>
+<p>The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
 </div>
         </div>
     </div>
