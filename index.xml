@@ -1557,14 +1557,15 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain
-$$
-\int\limits_{a}^{b}f\left( x\right) , \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}
-$$
-If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/p&gt;
+&lt;p&gt;$$
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}
+$$&lt;/p&gt;
+&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
-$$&lt;/div&gt;
+$$&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
@@ -1669,10 +1670,11 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if
-$$
-\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0.
-$$&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
+&lt;p&gt;$$
+\langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
+$$&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
