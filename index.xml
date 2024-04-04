@@ -1539,7 +1539,7 @@ $$&lt;/p&gt;
 &lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align*}
-L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{&lt;span&gt;where&lt;/span&gt;} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
+L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
