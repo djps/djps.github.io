@@ -92,7 +92,7 @@ $$&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
 $$
-f^\prime (c) = \dfrac{f(b)-f(a)}{b-a}}.
+f^\prime (c) = \dfrac{f(b) - f(a)}{b - a}.
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1534,13 +1534,13 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define nodes ${a = x_0 &amp;lt; x_1 &amp;lt; \ldots &amp;lt; x_n =b}$, so that for ${i=0, 1, \ldots n-1}$, there are sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
 &lt;p&gt;$$
-\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right), \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
 $$&lt;/p&gt;
 &lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align*}
-L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
-U\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{\text{where}} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
+U\left(f, p\right) = &amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{\textsf{where}} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 so that
@@ -1652,6 +1652,26 @@ $$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
+&lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
+\begin{equation}
+I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+\end{equation}
+The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
+&lt;p&gt;Can the weights be chosen such that the error in an integral is minimized? Furthermore, can the nodes be chosen such that the integral can be further improved?&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Orthogonal functions&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if
+$$
+\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0.
+$$&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -1661,11 +1681,12 @@ $$&lt;/p&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[a,b\right]$,&lt;/li&gt;
+&lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,&lt;/li&gt;
 &lt;li&gt;the polynomial satisfies
 $$
 \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots, n.
-$$&lt;/li&gt;
+$$
+i.e. is orthogonal to $x^k$.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, denote the integral as
 $$
@@ -1678,14 +1699,24 @@ with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Orthogonal functions&lt;/em&gt;
+			Definition:	&lt;em&gt;Gauss-Legendre Quadrature&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Two functions $f(x)$ and $g(x)$ are said to be orthogonal if
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
 $$
-\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0
-$$&lt;/div&gt;
+\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \mbox{for} \quad n \ne m.
+$$
+and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
+$$
+P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x), \quad \mbox{for} \quad n \ge 2.
+$$
+Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for ${f=1, x, x^2}$.&lt;/p&gt;
+&lt;p&gt;The domain of integration can be scaled via the invertible transformation ${x= \dfrac{b-a}{2} t + \dfrac{a+b}{2}}$, so that
+$$
+\int_a^b f(x) , \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) , \mathrm{d}t.
+$$&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 </description>

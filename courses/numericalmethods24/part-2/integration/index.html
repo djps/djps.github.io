@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 3, 2024 --><html lang="en-us" >
+<!-- Last Published: April 4, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1048,7 +1048,11 @@
       <nav id="TableOfContents">
   <ul>
     <li><a href="#numerical-differentiation">Numerical Differentiation</a></li>
-    <li><a href="#numerical-integration">Numerical Integration</a></li>
+    <li><a href="#numerical-integration">Numerical Integration</a>
+      <ul>
+        <li><a href="#gaussian-quadrature">Gaussian Quadrature</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1163,13 +1167,13 @@ $$</p>
             <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that for ${i=0, 1, \ldots n-1}$, there are sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as</p>
 <p>$$
-\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right), \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
 $$</p>
 <p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>lower</strong> and <strong>upper Riemann sums</strong> are given by</p>
 <p>$$
 \begin{align*}
-L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
-U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \mbox{\text{where}} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
+U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \mbox{\textsf{where}} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 so that
@@ -1281,6 +1285,26 @@ $$</p>
 </div>
         </div>
     </div>
+<h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
+<p>Generalise the quadrature formula so that an integral is approximated as
+\begin{equation}
+I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+\end{equation}
+The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
+<p>Can the weights be chosen such that the error in an integral is minimized? Furthermore, can the nodes be chosen such that the integral can be further improved?</p>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Orthogonal functions</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Two real-valued functions $f(x)$ and $g(x)$ are said to be <strong>orthogonal</strong> if
+$$
+\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0.
+$$</div>
+        </div>
+    </div>
 <div class="details admonition Theorem open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
@@ -1290,11 +1314,12 @@ $$</p>
         <div class="details-content">
             <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
 <ol>
-<li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[a,b\right]$,</li>
+<li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,</li>
 <li>the polynomial satisfies
 $$
 \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots, n.
-$$</li>
+$$
+i.e. is orthogonal to $x^k$.</li>
 </ol>
 <p>Then, denote the integral as
 $$
@@ -1307,14 +1332,24 @@ with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials 
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Orthogonal functions</em>
+			Definition:	<em>Gauss-Legendre Quadrature</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Two functions $f(x)$ and $g(x)$ are said to be orthogonal if
+            <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
 $$
-\langle f, g \rangle = \int_a^b f(x) g(x) , \mathrm{d} x = 0
-$$</div>
+\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \mbox{for} \quad n \ne m.
+$$
+and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
+$$
+P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x), \quad \mbox{for} \quad n \ge 2.
+$$
+Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for ${f=1, x, x^2}$.</p>
+<p>The domain of integration can be scaled via the invertible transformation ${x= \dfrac{b-a}{2} t + \dfrac{a+b}{2}}$, so that
+$$
+\int_a^b f(x) , \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) , \mathrm{d}t.
+$$</p>
+</div>
         </div>
     </div>
 
