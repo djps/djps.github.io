@@ -778,7 +778,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;spectral radius&lt;/strong&gt; of a matrix $A$ is defined as
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
 $$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
 $$&lt;/p&gt;
@@ -793,7 +793,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix $I - Q^{-1} A$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix ${I - Q^{-1} A}$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -803,12 +803,12 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=I$. Then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
 &lt;p&gt;$$
-x_{k +1} = \left(I - A \right) x_{k} + b
+x_{k +1} = \left(I - A \right) x_{k} + b.
 $$&lt;/p&gt;
-&lt;p&gt;This may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q= \omega I}$, so that
+&lt;p&gt;This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$&lt;/p&gt;
@@ -879,7 +879,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Successive Over Relaxation&lt;/em&gt;
+			Definition:	&lt;em&gt;Successive Over Relaxation (SOR)&lt;/em&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
@@ -901,7 +901,7 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of &lt;a href=&#34;#SOR&#34;&gt;successive over relaxation&lt;/a&gt; converge.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable.&lt;/p&gt;
+&lt;p&gt;It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable. &lt;a href=&#34;#spectral&#34;&gt; link &lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
