@@ -1582,7 +1582,7 @@ where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( 
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left(y\left(t_{n+1} \right),t_{n+1} )}$.&lt;/div&gt;
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( y\left(t_{n+1} \right), t_{n+1} \right) }$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
