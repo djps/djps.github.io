@@ -1294,7 +1294,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
 $$&lt;/p&gt;
-&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations to higher order derivatives.&lt;/p&gt;
+&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1306,7 +1306,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define nodes ${a = x_0 &amp;lt; x_1 &amp;lt; \ldots &amp;lt; x_n =b}$, so that for ${i=0, 1, \ldots n-1}$, there are sub-intervals $\left[x_i, x_{i+1} \right]$.
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 &amp;lt; x_1 &amp;lt; \ldots &amp;lt; x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
 &lt;p&gt;$$
 \int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
@@ -1350,7 +1350,12 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$. Then the error for the trapezium rule is&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
+&lt;p&gt;The error can be shown to have the form:
+$$
+\left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
+$$&lt;/p&gt;
+&lt;p&gt;that is, the error terms are even powers of the discretization.  The error for the trapezium rule is&lt;/p&gt;
 &lt;p&gt;$$
 \left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
 $$&lt;/p&gt;
