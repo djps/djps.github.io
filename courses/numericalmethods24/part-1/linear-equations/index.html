@@ -1282,9 +1282,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$
-where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination.
+where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
 $$
-U = U_{n-1} \cdots U_2 U_1 A
+U = U_{n-1} \cdots U_2 U_1 A.
 $$</div>
         </div>
     </div>
@@ -1295,7 +1295,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A symmetric, positive definite matrix can be decomposed as $A=LL^T$.</div>
+            <div class="admonition-content">A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has elements $\sqrt{d_i}$.</div>
         </div>
     </div>
 <div class="details admonition Algorithm open">
@@ -1448,7 +1448,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of <strong>successive over relaxation</strong> (SOR) is given by
+            <div class="admonition-content">Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of <a id="SOR"><strong>successive over relaxation</strong></a> (SOR) is given by
 $$
 \begin{equation}
 (D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
@@ -1463,9 +1463,10 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of successive over relaxation converge.</div>
+            <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of <a href="#SOR">successive over relaxation</a> converge.</div>
         </div>
     </div>
+<p>It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable.</p>
 <div class="details admonition Example open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>

@@ -717,9 +717,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$
-where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination.
+where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
 $$
-U = U_{n-1} \cdots U_2 U_1 A
+U = U_{n-1} \cdots U_2 U_1 A.
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -730,7 +730,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A symmetric, positive definite matrix can be decomposed as $A=LL^T$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has elements $\sqrt{d_i}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
@@ -883,7 +883,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;strong&gt;successive over relaxation&lt;/strong&gt; (SOR) is given by
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
 $$
 \begin{equation}
 (D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
@@ -898,9 +898,10 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of successive over relaxation converge.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of &lt;a href=&#34;#SOR&#34;&gt;successive over relaxation&lt;/a&gt; converge.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable.&lt;/p&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -1986,8 +1987,20 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if $\left|u_n\right| \rightarrow 0$ as $n \rightarrow \infty$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$, for a fixed value of $h$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;h3 id=&#34;runge-kutta-schemes-and-multi-step-schemes&#34;&gt;Runge-Kutta Schemes And Multi-Step Schemes&lt;/h3&gt;
+&lt;h3 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h3&gt;
 &lt;h2 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Absolute Stability&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A partial differential equation is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;CFL.&lt;/p&gt;
+&lt;p&gt;Heat Equation&lt;/p&gt;
 </description>
     </item>
     
