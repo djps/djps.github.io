@@ -1144,11 +1144,11 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><strong>Forward Euler</strong> approximates the derivative through a the first-order forward difference approximation of the first-order derivative
+            <div class="admonition-content"><strong>Forward Euler</strong> approximates the derivative through the forward difference approximation of the first-order derivative
 $$
 u_{n+1} = u_n + h f_n
 $$
-where ${f_{n+1} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$</div>
+where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.</div>
         </div>
     </div>
 <h3 id="backward-euler-method">Backward Euler Method</h3>
@@ -1163,7 +1163,7 @@ where ${f_{n+1} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right)}$.</div>
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left(y\left(t_{n+1} \right),t_{n+1} )}$.</div>
         </div>
     </div>
 <h3 id="crank-nicolson-method">Crank-Nicolson Method</h3>
@@ -1190,29 +1190,10 @@ $$</div>
         <div class="details-content">
             <div class="admonition-content"><strong>Heun’s method</strong>
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right)
 $$</div>
         </div>
     </div>
-<p>Both the Forward Euler and Heun&rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.</p>
-<p>Alternatively,
-$$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
-$$</p>
-<p>Then, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.</p>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/courses/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
-<p>It can be downloaded from <a href="/ipyth/ode_solvers.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/ode_solvers.ipynb">here</a>.</p>
-</div>
-        </div>
-    </div>
-<h2 id="analysis-of-one-step-methods">Analysis of One-Step Methods</h2>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1220,11 +1201,18 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>A numerical method is said to be <strong>explicit</strong> if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$, $i&lt;k$. Otherwise, the method is said to be <strong>implicit</strong>.</p>
+            <div class="admonition-content"><p>A numerical method is said to be <strong>explicit</strong> if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$ for ${i &lt; k}$. Otherwise, the method is said to be <strong>implicit</strong>.</p>
 <p>Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.</p>
 </div>
         </div>
     </div>
+<p>Both the Forward Euler and Heun&rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit. Huen&rsquo;s method can be interpreted as Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit term.</p>
+<p>Alternatively, the solution to the differential equation can be written as <a href="/courses/numericalmethods24/part-2/integration/#numerical-integration">quadrature</a>:
+$$
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
+$$</p>
+<p>Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.</p>
+<h2 id="analysis-of-one-step-methods">Analysis of One-Step Methods</h2>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1376,6 +1364,18 @@ k_3 &amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right) \\
 k_4 &amp; = f\left( u_n + h k_3, t_n + h \right).
 \end{align*}
 $$</p>
+<div class="details admonition Example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+			Example:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/courses/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
+<p>It can be downloaded from <a href="/ipyth/ode_solvers.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/ode_solvers.ipynb">here</a>.</p>
+</div>
+        </div>
+    </div>
 <h2 id="partial-differential-equations">Partial Differential Equations</h2>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">

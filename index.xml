@@ -1560,7 +1560,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;$$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}
 $$&lt;/p&gt;
@@ -1788,11 +1788,11 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative through a the first-order forward difference approximation of the first-order derivative
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative through the forward difference approximation of the first-order derivative
 $$
 u_{n+1} = u_n + h f_n
 $$
-where ${f_{n+1} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$&lt;/div&gt;
+where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
@@ -1807,7 +1807,7 @@ where ${f_{n+1} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right)}$.&lt;/div&gt;
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left(y\left(t_{n+1} \right),t_{n+1} )}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
@@ -1834,29 +1834,10 @@ $$&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Heun’s method&lt;/strong&gt;
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right)
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.&lt;/p&gt;
-&lt;p&gt;Alternatively,
-$$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau
-$$&lt;/p&gt;
-&lt;p&gt;Then, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Example:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -1864,11 +1845,18 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$, $i&amp;lt;k$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$ for ${i &amp;lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit. Huen&amp;rsquo;s method can be interpreted as Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit term.&lt;/p&gt;
+&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
+$$
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
+$$&lt;/p&gt;
+&lt;p&gt;Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -2020,6 +2008,18 @@ k_3 &amp;amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right) \\
 k_4 &amp;amp; = f\left( u_n + h k_3, t_n + h \right).
 \end{align*}
 $$&lt;/p&gt;
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Example:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;h2 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
