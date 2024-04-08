@@ -1192,7 +1192,7 @@ $$</p>
         <div class="details-content">
             <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
 <p>$$
-\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$</p>
 <p>If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
 $$
@@ -1213,11 +1213,11 @@ $$</p>
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$</p>
-<p>that is, the error terms are even powers of the discretization.  The error for the trapezium rule is</p>
+<p>that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as</p>
 <p>$$
 \left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
 $$</p>
-<p>for a ${\xi \in \left(a,b\right)}$.</p>
+<p>for some ${\xi \in \left(a, b\right)}$.</p>
 </div>
         </div>
     </div>

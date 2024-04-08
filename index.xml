@@ -1562,7 +1562,7 @@ $$&lt;/p&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;$$
-\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$&lt;/p&gt;
 &lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
 $$
@@ -1583,11 +1583,11 @@ $$&lt;/p&gt;
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$&lt;/p&gt;
-&lt;p&gt;that is, the error terms are even powers of the discretization.  The error for the trapezium rule is&lt;/p&gt;
+&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
 &lt;p&gt;$$
 \left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
 $$&lt;/p&gt;
-&lt;p&gt;for a ${\xi \in \left(a,b\right)}$.&lt;/p&gt;
+&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1990,7 +1990,7 @@ $$&lt;/p&gt;
 k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \ldots, s
 $$&lt;/p&gt;
 &lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
-&lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$.&lt;/p&gt;
+&lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt; is defined as
 $$
@@ -2039,9 +2039,10 @@ $$&lt;/p&gt;
     &lt;/div&gt;
 &lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function $u(x,t)$&lt;/p&gt;
 &lt;p&gt;$$
-a_1 u_{xx} + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t)
-$$&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by discretized operators.&lt;/p&gt;
+a_1 u_{xx} + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t).
+$$
+where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}§.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
 
