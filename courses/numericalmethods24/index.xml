@@ -1816,8 +1816,8 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 a_1 u_{xx} + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t).
 $$
-where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}§.&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized operators&lt;/a&gt;.&lt;/p&gt;
+where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
 
