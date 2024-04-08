@@ -1977,25 +1977,31 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h3&gt;
-&lt;p&gt;If a differential equation is given by $\dot{u}= f\left( u, t \right)$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
+&lt;p&gt;If a ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
 &lt;p&gt;$$
 u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
 $$&lt;/p&gt;
-&lt;p&gt;where $F$ is an increment function of the form ${F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i}$ where $k_i$ are defined as&lt;/p&gt;
+&lt;p&gt;where $F$ is an increment function given by&lt;/p&gt;
+&lt;p&gt;$$
+F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i,
+$$&lt;/p&gt;
+&lt;p&gt;with $k_i$ defined as&lt;/p&gt;
 &lt;p&gt;$$
 k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \ldots, s
 $$&lt;/p&gt;
-&lt;p&gt;where $s$ is referred to the number of stages of the method. Thus, the $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$.&lt;/p&gt;
-&lt;p&gt;If a matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are implicit, otherwise they are said to be implicit.&lt;/p&gt;
-&lt;p&gt;The local truncation error is defined as
+&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
+&lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$.&lt;/p&gt;
+&lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt; is defined as
 $$
-h \tau_{n+1}\left(h\right) = u\left(t_{n+1} \right) - u\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right)
+h \tau_{n+1}\left(h\right) = u\left(t_{n+1} \right) - u\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$&lt;/p&gt;
-&lt;p&gt;It can be shown that $\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
-&lt;p&gt;A Runge-Kutta method is of order ${p\ge 1}$ if $\tau\left( h \right) = \mathcal{O}\left( h^p \right)$ as ${h \rightarrow 0}$.&lt;/p&gt;
-&lt;p&gt;The order of an $s$-stage explicit RK method cannot be greater than $s$. And, there does not exist a $s$-stage explicit RK method with order $s$ if ${s \ge 5}$.&lt;/p&gt;
-&lt;p&gt;The order of an $s$-stage implicit RK method cannot be greater than $2s$.&lt;/p&gt;
-&lt;p&gt;RK4&lt;/p&gt;
+&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
+&lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
+&lt;p&gt;The order of an $s$-stage &lt;em&gt;explicit&lt;/em&gt; Runge-Kutta method cannot be greater than $s$. Additionally, there does not exist a $s$-stage explicit Runge-Kutta method with order $s$ if ${s \ge 5}$.&lt;/p&gt;
+&lt;p&gt;The order of an $s$-stage &lt;em&gt;implicit&lt;/em&gt; Runge-Kutta method cannot be greater than $2s$.&lt;/p&gt;
+&lt;h3 id=&#34;runge-kutta-4&#34;&gt;Runge-Kutta 4&lt;/h3&gt;
+&lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
 &lt;p&gt;$$
 u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
 $$
@@ -2003,8 +2009,8 @@ where
 $$
 \begin{align*}
 k_1 &amp;amp; = f\left( u_n, t_n \right), \\
-k_2 &amp;amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right) \\
-k_3 &amp;amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right) \\
+k_2 &amp;amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\
+k_3 &amp;amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right), \\
 k_4 &amp;amp; = f\left( u_n + h k_3, t_n + h \right).
 \end{align*}
 $$&lt;/p&gt;
@@ -2031,6 +2037,11 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;A partial differential equation is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function $u(x,t)$&lt;/p&gt;
+&lt;p&gt;$$
+a_1 u_xx + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t)
+$$&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by discretized operators.&lt;/p&gt;
 &lt;!--
 CFL.
 
