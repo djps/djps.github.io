@@ -1469,7 +1469,6 @@ $$</div>
             <div class="admonition-content">Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of <a href="#SOR">successive over relaxation</a> converge.</div>
         </div>
     </div>
-<!-- It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable. <a href="#spectral"> link </a>. -->
 <h3 id="fundamental-theorem-of-numerical-analysis">Fundamental Theorem of Numerical Analysis</h3>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
@@ -1491,15 +1490,15 @@ $$</div>
             <div class="admonition-content">A numerical method is said to be <strong>consistent</strong> if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.</div>
         </div>
     </div>
-<p>A fixed point fulfills
+<p>A fixed point, $\bar{x}$, fulfils
 $$
-x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
-$$
-If the method is stable, then
-$$
+\bar{x} = \left( I - Q^{-1} A \right) \bar{x} + Q^{-1} b \Leftrightarrow A \bar{x} = b.
+$$</p>
+<p>If the method is stable then</p>
+<p>$$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
 $$
-so then $\left| I - Q^{-1} A \right| &lt; 1$ for ${\left| e_k \right| &lt; \left| e_0 \right| }$.</p>
+so then ${\left| I - Q^{-1} A \right| &lt; 1}$ for ${\left| e_k \right| &lt; \left| e_0 \right| }$.</p>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1517,7 +1516,7 @@ so then $\left| I - Q^{-1} A \right| &lt; 1$ for ${\left| e_k \right| &lt; \left
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A numerical methods is convergent if and only if it is consistent and stable.</div>
+            <div class="admonition-content">A numerical method is convergent if and only if it is consistent and stable.</div>
         </div>
     </div>
 <div class="details admonition Example open">

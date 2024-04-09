@@ -678,7 +678,6 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of &lt;a href=&#34;#SOR&#34;&gt;successive over relaxation&lt;/a&gt; converge.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;!-- It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable. &lt;a href=&#34;#spectral&#34;&gt; link &lt;/a&gt;. --&gt;
 &lt;h3 id=&#34;fundamental-theorem-of-numerical-analysis&#34;&gt;Fundamental Theorem of Numerical Analysis&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -700,15 +699,15 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;A fixed point fulfills
+&lt;p&gt;A fixed point, $\bar{x}$, fulfils
 $$
-x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
-$$
-If the method is stable, then
-$$
+\bar{x} = \left( I - Q^{-1} A \right) \bar{x} + Q^{-1} b \Leftrightarrow A \bar{x} = b.
+$$&lt;/p&gt;
+&lt;p&gt;If the method is stable then&lt;/p&gt;
+&lt;p&gt;$$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
 $$
-so then $\left| I - Q^{-1} A \right| &amp;lt; 1$ for ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
+so then ${\left| I - Q^{-1} A \right| &amp;lt; 1}$ for ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -726,7 +725,7 @@ so then $\left| I - Q^{-1} A \right| &amp;lt; 1$ for ${\left| e_k \right| &amp;l
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical methods is convergent if and only if it is consistent and stable.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is convergent if and only if it is consistent and stable.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
@@ -1802,6 +1801,22 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;lax-equivalence&#34;&gt;Lax Equivalence&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a solution unique exists for any initial conditions and&lt;/li&gt;
+&lt;li&gt;the solution’s behaviour changes continuously with the initial conditions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A problem which does not have these properties is said to be &lt;strong&gt;ill-posed&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -1812,6 +1827,13 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is an equivalent form of the &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt;, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+&lt;!--
+https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
+https://people.maths.ox.ac.uk/trefethen/4all.pdf
+For a differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero.
+For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
+For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
+--&gt;
 &lt;h3 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h3&gt;
 &lt;p&gt;If a ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
 &lt;p&gt;$$

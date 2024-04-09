@@ -1335,6 +1335,22 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         </div>
     </div>
 <h3 id="lax-equivalence">Lax Equivalence</h3>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em></em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
+<ul>
+<li>a solution unique exists for any initial conditions and</li>
+<li>the solution’s behaviour changes continuously with the initial conditions.</li>
+</ul>
+<p>A problem which does not have these properties is said to be <strong>ill-posed</strong>.</p>
+</div>
+        </div>
+    </div>
 <div class="details admonition Theorem open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
@@ -1345,6 +1361,13 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is an equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-numerical-analysis">fundamental theorem of numerical analysis</a>, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
         </div>
     </div>
+<!--
+https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
+https://people.maths.ox.ac.uk/trefethen/4all.pdf
+For a differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero.
+For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
+For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
+-->
 <h3 id="runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</h3>
 <p>If a ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form</p>
 <p>$$
