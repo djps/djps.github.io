@@ -702,7 +702,7 @@ $$&lt;/div&gt;
     &lt;/div&gt;
 &lt;p&gt;A fixed point fulfills
 $$
-x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \LeftRightarrow A x^{\ast} = b.
+x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$
 If the method is stable, then
 $$
@@ -1632,7 +1632,7 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$.&lt;/div&gt;
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
@@ -1670,7 +1670,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $y_{k+1}$ can be calculated directly from already computed values $y_i$ for ${i &amp;lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &amp;lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
@@ -1799,6 +1799,17 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;h3 id=&#34;lax-equivalence&#34;&gt;Lax Equivalence&lt;/h3&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is an equivalent form of the &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt;, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h3&gt;
