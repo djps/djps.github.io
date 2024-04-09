@@ -679,6 +679,56 @@ $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;!-- It states that for a consistent finite difference method for a well-posed linear initial value problem, the method is convergent if and only if it is stable. &lt;a href=&#34;#spectral&#34;&gt; link &lt;/a&gt;. --&gt;
+&lt;h3 id=&#34;fundamental-theorem-of-numerical-analysis&#34;&gt;Fundamental Theorem of Numerical Analysis&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Stable&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Consistent&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;p&gt;A fixed point fulfills
+$$
+x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \LeftRightarrow A x^{\ast} = b.
+$$
+If the method is stable, then
+$$
+e_k = \left( I - Q^{-1} A \right)^k e_0,
+$$
+so then $\left| I - Q^{-1} A \right| &amp;lt; 1$ for ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Convergent&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${x_k \rightarrow x^{\ast}$ as ${k \rightarrow \infty}$ where $x^{\ast}$ is the exact solution.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Theorem:	&lt;em&gt;Fundamental Theorem of Numerical Analysis&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical methods is convergent if and only if it is consistent and stable.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -1552,7 +1602,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the solution at time step ${i+1}$ depends only on the previous one.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the solution at time step ${i+1}$ only depends on the previous one.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
@@ -1567,7 +1617,7 @@ $$&lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_n
 $$
-where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/div&gt;
+where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
@@ -1582,7 +1632,7 @@ where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( 
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( y\left(t_{n+1} \right), t_{n+1} \right) }$.&lt;/div&gt;
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
@@ -1595,7 +1645,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( y\left(t_{n+1} \rig
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1609,7 +1659,7 @@ $$&lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;strong&gt;Heun’s method&lt;/strong&gt;
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1812,12 +1862,12 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function $u(x,t)$&lt;/p&gt;
+&lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$&lt;/p&gt;
 &lt;p&gt;$$
-a_1 u_{xx} + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t).
-$$
-where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$.&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, all partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
+a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
+$$&lt;/p&gt;
+&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
 

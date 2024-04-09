@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 8, 2024 --><html lang="en-us" >
+<!-- Last Published: April 9, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1134,7 +1134,7 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the solution at time step ${i+1}$ depends only on the previous one.</div>
+            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the solution at time step ${i+1}$ only depends on the previous one.</div>
         </div>
     </div>
 <h3 id="forward-euler-method">Forward Euler Method</h3>
@@ -1149,7 +1149,7 @@
 $$
 u_{n+1} = u_n + h f_n
 $$
-where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.</div>
+where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.</div>
         </div>
     </div>
 <h3 id="backward-euler-method">Backward Euler Method</h3>
@@ -1164,7 +1164,7 @@ where ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( 
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( y\left(t_{n+1} \right), t_{n+1} \right) }$.</div>
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$.</div>
         </div>
     </div>
 <h3 id="crank-nicolson-method">Crank-Nicolson Method</h3>
@@ -1177,7 +1177,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( y\left(t_{n+1} \rig
         <div class="details-content">
             <div class="admonition-content">The <strong>Crank-Nicolson method</strong> is given by
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$</div>
         </div>
     </div>
@@ -1191,7 +1191,7 @@ $$</div>
         <div class="details-content">
             <div class="admonition-content"><strong>Heun’s method</strong>
 $$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right)
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$</div>
         </div>
     </div>
@@ -1394,12 +1394,12 @@ $$</p>
             <div class="admonition-content">A <strong>partial differential equation</strong> is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.</div>
         </div>
     </div>
-<p>A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function $u(x,t)$</p>
+<p>A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$</p>
 <p>$$
-a_1 u_{xx} + a_2 u_{xt} + a_3 u_{tt} + a_3 u_x + a_4 u_t + a_5 u = f(x,t).
-$$
-where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$.</p>
-<p>For finite-difference schemes, all partial derivatives must be approximated by <a href="/courses/numericalmethods24/part-2/integration/#numerical-differentiation">discretized differential operators</a>.</p>
+a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
+$$</p>
+<p>where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.</p>
+<p>For finite-difference schemes, <em>all</em> partial derivatives must be approximated by <a href="/courses/numericalmethods24/part-2/integration/#numerical-differentiation">discretized differential operators</a>.</p>
 <!--
 CFL.
 
