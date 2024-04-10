@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 9, 2024 --><html lang="en-us" >
+<!-- Last Published: April 10, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1055,10 +1055,10 @@
         <li><a href="#heuns-method">Heun&rsquo;s Method</a></li>
       </ul>
     </li>
-    <li><a href="#analysis-of-one-step-methods">Analysis of One-Step Methods</a>
+    <li><a href="#analysis-of-one-step-methods">Analysis of One-Step Methods</a></li>
+    <li><a href="#lax-equivalence">Lax Equivalence</a></li>
+    <li><a href="#runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</a>
       <ul>
-        <li><a href="#lax-equivalence">Lax Equivalence</a></li>
-        <li><a href="#runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</a></li>
         <li><a href="#runge-kutta-4">Runge-Kutta 4</a></li>
       </ul>
     </li>
@@ -1229,34 +1229,34 @@ $$
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz continuous</strong>.</div>
         </div>
     </div>
-<!--
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Stable</em>
+			Definition:	<em>Consistency Error</em>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">stable</div>
-        </div>
-    </div>
-
-
-<div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Consistent</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Let $y\left( t\right)$ be the solution to an initial value problem and ${h_{\mathrm{max}} = \max\limits_{x_k} h_k}$
-A method is said to be <strong>consistent</strong> if the function $f$ satisfies the Lipshitz condition, with respect to $y$, in an interval then
+            <div class="admonition-content"><p>Any explicit one-step method has the form
 $$
-\lim\limits_{h_{\mathrm{max}}} \left( \max\limits_{x_k \in I_h} \left| f\left(t_k, y\left(t_k\right) \right) - \Phi\left(t_k, y\left(t_k\right), h_k \right) \right| \right) = 0
-$$</div>
+u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
+$$
+with $\Phi$ the increment function. So
+$$
+\dfrac{u_{n+1} - u_n}{h} = \Phi = f\left( u_n, t_n \right)
+$$.</p>
+<p>For the exact solution to the differential equation, $y\left(t_n \right) = y_n$,</p>
+<p>$$
+y_{n+1} = y_n + h f\left( t_n, y_n\right) + \varepsilon_n<br>
+$$</p>
+<p>which can be written as</p>
+<p>$$
+\tau_n = \dfrac{y_{n+1} - y_n}{h} - f\left( t_n, y_n\right)
+$$</p>
+<p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)$ defined as the <strong>local truncation error</strong> at step $n$.</p>
+<p>The <strong>consistency error</strong> is given by ${\tau = \max_n | \tau_n | }$.</p>
+</div>
         </div>
     </div>
--->
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1331,10 +1331,16 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A numerical scheme for approximating the solution to the linear differential equation $y^{\prime}\left(t\right) = \lambda y\left(t\right)$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</div>
+            <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
+<p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set
+$$
+\left{ h \lambda \in \mathbb{C} \vert| | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \right}
+$$</p>
+</div>
         </div>
     </div>
-<h3 id="lax-equivalence">Lax Equivalence</h3>
+<p>Zero stability considers when ${h \rightarrow 0}$, whereas absolute stability concerns behaviour as ${t_n \rightarrow \infty}$.</p>
+<h2 id="lax-equivalence">Lax Equivalence</h2>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1358,7 +1364,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is an equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-numerical-analysis">fundamental theorem of numerical analysis</a>, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
+            <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is an equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">fundamental theorem of numerical analysis</a>, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
         </div>
     </div>
 <!--
@@ -1368,7 +1374,7 @@ For a differential equation, consistency means that a solution to the initial va
 For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
 For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
 -->
-<h3 id="runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</h3>
+<h2 id="runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</h2>
 <p>If a ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form</p>
 <p>$$
 u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
