@@ -1252,7 +1252,7 @@ $$</p>
 <p>$$
 \tau_n = \dfrac{y_{n+1} - y_n}{h} - f\left( t_n, y_n\right)
 $$</p>
-<p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)$ defined as the <strong>local truncation error</strong> at step $n$.</p>
+<p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the <strong>local truncation error</strong> at step $n$.</p>
 <p>The <strong>consistency error</strong> is given by ${\tau = \max_n | \tau_n | }$.</p>
 </div>
         </div>
@@ -1332,9 +1332,9 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
-<p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set
-$$
-\left{ h \lambda \in \mathbb{C} \vert| | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \right}
+<p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set</p>
+<p>$$
+\lbrace h \lambda \in \mathbb{C} \vert| | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
 $$</p>
 </div>
         </div>
@@ -1375,7 +1375,7 @@ For an initial value problem, consistency means that the error committed by the 
 For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
 -->
 <h2 id="runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</h2>
-<p>If a ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form</p>
+<p>If an ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form</p>
 <p>$$
 u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
 $$</p>
