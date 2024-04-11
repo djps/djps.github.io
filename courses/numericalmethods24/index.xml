@@ -1374,6 +1374,13 @@ so that
 $$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
 $$&lt;/p&gt;
+&lt;p&gt;Additionally, the &lt;strong&gt;left&lt;/strong&gt; and &lt;strong&gt;right Riemann sums&lt;/strong&gt; are given , respectively, by
+$$
+\begin{align*}
+&amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
+&amp;amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
+\end{align*}
+$$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1463,7 +1470,7 @@ $$&lt;/p&gt;
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp;amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots&lt;br&gt;
 \end{align*}
 $$&lt;/p&gt;
-&lt;p&gt;Note that there no odd terms in the error. Then,
+&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
 $$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
 $$
@@ -1805,7 +1812,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
 &lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
 &lt;p&gt;$$
-\lbrace h \lambda \in \mathbb{C} \, \vert| \, | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
+\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
 $$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
@@ -1841,7 +1848,7 @@ $$&lt;/p&gt;
 &lt;!--
 https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
 https://people.maths.ox.ac.uk/trefethen/4all.pdf
-For a differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero.
+For a _partial_ differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero, thus the error, i.e. the difference between the analytical solution and the computed solution tends to zero as the 
 For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
 For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
 --&gt;
