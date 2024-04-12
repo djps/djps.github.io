@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 11, 2024 --><html lang="en-us" >
+<!-- Last Published: April 12, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1203,12 +1203,12 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>A numerical method is said to be <strong>explicit</strong> if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be <strong>implicit</strong>.</p>
-<p>Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $y_{k+1}$.</p>
-</div>
+            <div class="admonition-content">A numerical method is said to be <strong>explicit</strong> if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be <strong>implicit</strong>.</div>
         </div>
     </div>
-<p>Both the Forward Euler and Heun&rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit. Huen&rsquo;s method can be interpreted as Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit term.</p>
+<p>Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
+<p>Both the Forward Euler and Heun&rsquo;s method are explicit. Backward Euler and Crank-Nicolson are implicit.</p>
+<p>Huen&rsquo;s method can be interpreted as Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.</p>
 <p>Alternatively, the solution to the differential equation can be written as <a href="/courses/numericalmethods24/part-2/integration/#numerical-integration">quadrature</a>:
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
@@ -1298,7 +1298,7 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $y_n$ for any $h$ and $t_n$, then the one step method is zero-stable.</div>
+            <div class="admonition-content">If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1336,7 +1336,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0 = 1}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
+            <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
 <p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set</p>
 <p>$$
 \lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
@@ -1375,12 +1375,12 @@ $$</p>
 <!--
 https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
 https://people.maths.ox.ac.uk/trefethen/4all.pdf
-For a _partial_ differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero, thus the error, i.e. the difference between the analytical solution and the computed solution tends to zero as the 
+For a _partial_ differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero, thus the error, i.e. the difference between the analytical solution and the computed solution tends to zero as the
 For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
 For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
 -->
 <h2 id="runge-kutta-and-multi-step-schemes">Runge-Kutta And Multi-Step Schemes</h2>
-<p>If an ordinary differential equation is given by ${\dot{u}= f\left( u, t \right)}$, then a Runge-Kutta scheme takes the form</p>
+<p>If an ordinary differential equation is given by ${\dot{y}= f\left( y, t \right)}$, then a Runge-Kutta scheme takes the form</p>
 <p>$$
 u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
 $$</p>
