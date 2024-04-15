@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 12, 2024 --><html lang="en-us" >
+<!-- Last Published: April 15, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1302,7 +1302,7 @@ $$</p>
 <h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
 <p>Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
-I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+I_{n}[f] = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
 \end{equation}
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
 <ul>
@@ -1320,6 +1320,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 <p>$$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$</p>
+<p>where $\langle f, g \rangle$ satisfies the conditions to be an inner product.</p>
 </div>
         </div>
     </div>

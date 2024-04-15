@@ -1145,12 +1145,12 @@ $$&lt;/p&gt;
 \begin{equation}
 \begin{array}{lllll}
 p\left( u_0 \right) = p_{0}^0 &amp;amp;                       &amp;amp;                        &amp;amp;  \\
-&amp;amp; p_0^1\left( u \right) &amp;amp;                        &amp;amp;  \\
-p\left( u_1 \right) = p_{1}^0 &amp;amp;                       &amp;amp; p_0^2 \left( u \right) &amp;amp;  \\
-&amp;amp; p_1^1\left( u \right) &amp;amp;                        &amp;amp; p_0^3\left( u \right) \\
-p\left( u_2 \right) = p_{2}^0 &amp;amp;                       &amp;amp; p_1^2 \left( u \right) &amp;amp;  \\
-&amp;amp; p_2^1\left( u \right) &amp;amp;                        &amp;amp;  \\
-p\left( u_4 \right) = p_{3}^0 &amp;amp;                       &amp;amp;                        &amp;amp;
+&amp;amp; p_0^1 &amp;amp;                        &amp;amp;  \\
+p\left( u_1 \right) = p_{1}^0 &amp;amp;                       &amp;amp; p_0^2  &amp;amp;  \\
+&amp;amp; p_1^1 &amp;amp;                        &amp;amp; p_0^3 \\
+p\left( u_2 \right) = p_{2}^0 &amp;amp;                       &amp;amp; p_1^2  &amp;amp;  \\
+&amp;amp; p_2^1 &amp;amp;                        &amp;amp;  \\
+p\left( u_3 \right) = p_{3}^0 &amp;amp;                       &amp;amp;                        &amp;amp;
 \end{array}
 \end{equation}
 $$&lt;/p&gt;
@@ -1496,7 +1496,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
 &lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
-I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+I_{n}[f] = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
 \end{equation}
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
 &lt;ul&gt;
@@ -1514,6 +1514,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 &lt;p&gt;$$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$&lt;/p&gt;
+&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;

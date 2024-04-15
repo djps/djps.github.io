@@ -1370,12 +1370,12 @@ $$&lt;/p&gt;
 \begin{equation}
 \begin{array}{lllll}
 p\left( u_0 \right) = p_{0}^0 &amp;amp;                       &amp;amp;                        &amp;amp;  \\
-&amp;amp; p_0^1\left( u \right) &amp;amp;                        &amp;amp;  \\
-p\left( u_1 \right) = p_{1}^0 &amp;amp;                       &amp;amp; p_0^2 \left( u \right) &amp;amp;  \\
-&amp;amp; p_1^1\left( u \right) &amp;amp;                        &amp;amp; p_0^3\left( u \right) \\
-p\left( u_2 \right) = p_{2}^0 &amp;amp;                       &amp;amp; p_1^2 \left( u \right) &amp;amp;  \\
-&amp;amp; p_2^1\left( u \right) &amp;amp;                        &amp;amp;  \\
-p\left( u_4 \right) = p_{3}^0 &amp;amp;                       &amp;amp;                        &amp;amp;
+&amp;amp; p_0^1 &amp;amp;                        &amp;amp;  \\
+p\left( u_1 \right) = p_{1}^0 &amp;amp;                       &amp;amp; p_0^2  &amp;amp;  \\
+&amp;amp; p_1^1 &amp;amp;                        &amp;amp; p_0^3 \\
+p\left( u_2 \right) = p_{2}^0 &amp;amp;                       &amp;amp; p_1^2  &amp;amp;  \\
+&amp;amp; p_2^1 &amp;amp;                        &amp;amp;  \\
+p\left( u_3 \right) = p_{3}^0 &amp;amp;                       &amp;amp;                        &amp;amp;
 \end{array}
 \end{equation}
 $$&lt;/p&gt;
@@ -1721,7 +1721,7 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
 &lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
-I_{n}(f) = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+I_{n}[f] = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
 \end{equation}
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
 &lt;ul&gt;
@@ -1739,6 +1739,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 &lt;p&gt;$$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$&lt;/p&gt;
+&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -4012,7 +4013,7 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
-&lt;p&gt;Consider the integration of the function $f(x) = \exp \left( x^2 \right)$ between $[0,1]$.&lt;/p&gt;
+&lt;p&gt;Consider the integration of the function $f(x) = \exp \left( -x^2 \right)$ between $[0,1]$.&lt;/p&gt;
 &lt;p&gt;It can easily be shown that&lt;/p&gt;
 &lt;p&gt;\begin{align}
 \int_0^1 e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}. \nonumber
@@ -4028,7 +4029,7 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
     text-align: center;
 }
 &lt;/style&gt;
-&lt;p&gt;Next define the range to plot the function over and a number of point to evaluate the function.&lt;/p&gt;
+&lt;p&gt;Next define the range to &lt;em&gt;plot&lt;/em&gt; the function over and a number of point to evaluate the function.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;
@@ -4037,9 +4038,9 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;lambda&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;**&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let $m$ be vector whose elements are the number of evaluations of the integral.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dtype&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dtype&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Compute and plot the successive approximations for the integral, as well as keeping track of the errors.&lt;/p&gt;
-&lt;p&gt;We will use the function &lt;a href=&#34;https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.trapezoid.html#scipy.integrate.trapezoid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trapezoid&lt;/a&gt; to compute the integral according to&lt;/p&gt;
+&lt;p&gt;We will use the scipy function &lt;a href=&#34;https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.trapezoid.html#scipy.integrate.trapezoid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;trapezoid&lt;/a&gt; to compute the integral according to&lt;/p&gt;
 &lt;p&gt;\begin{align}
 \int_a^b f(x) \, \mathrm{d}x \approx \sum\limits_{k=1}^{M} \dfrac{f\left( x_{k-1}\right) + f\left(x_{k}\right)}{2} \Delta x_{k} \quad \mbox{where} \quad x_0 = a \quad \mbox{and} \quad x_M = b. \nonumber
 \end{align}&lt;/p&gt;
@@ -4126,6 +4127,7 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;The same process can be repeated for other integration routines presented in the lectures, such as &lt;a href=&#34;https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.simpson.html#scipy-integrate-simpson&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Simpson&amp;rsquo;s rule&lt;/a&gt; or &lt;a href=&#34;https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html#scipy.integrate.quad&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gaussian quadrature&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
