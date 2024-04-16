@@ -1721,9 +1721,9 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
 &lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
-I_{n}[f] = \sum \limits_{i=0}^{n} \alpha_{i} f\left( x_{i} \right)
+I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right)
 \end{equation}
-The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $\alpha_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
+The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Can the weights be chosen such that the error in an integral is minimized?&lt;/li&gt;
 &lt;li&gt;Furthermore, can the nodes be chosen such that the integral can be further improved?&lt;/li&gt;
@@ -1753,18 +1753,19 @@ $$&lt;/p&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,&lt;/li&gt;
-&lt;li&gt;the polynomial satisfies
+&lt;li&gt;the polynomial $q(x)$ satisfies
 $$
 \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \mbox{for} \quad k=0,\ldots, n.
 $$
-i.e. is orthogonal to $x^k$.&lt;/li&gt;
+i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, denote the integral as
 $$
-I\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
+I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$
-with $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$. The integral $I\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
+with nodes given by the roots of the orthogonal polynomial, and weights given by $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
+&lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1783,8 +1784,12 @@ and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre
 $$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \mbox{for} \quad n \ge 2.
 $$
-Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for ${f=1, x, x^2 \ldots}$.&lt;/p&gt;
-&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation ${x= \dfrac{b-a}{2} t + \dfrac{a+b}{2}}$, so that
+Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2 \ldots}$&lt;/p&gt;
+&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
+$$
+x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
+$$
+so that
 $$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$&lt;/p&gt;
