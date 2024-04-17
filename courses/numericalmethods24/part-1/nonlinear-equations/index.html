@@ -1336,7 +1336,7 @@ the <strong>Jacobian</strong> matrix is defined as</p>
 J = \left(
 \begin{array}{cccc}
 \dfrac{\partial f_1 }{\partial x_1} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_1 }{\partial x_n} \\
-\dfrac{\partial f_2 }{\partial x_1} &amp; &amp; &amp; \\
+\dfrac{\partial f_2 }{\partial x_1} &amp; &amp; &amp; \vdots \\
 \vdots &amp; &amp; &amp; \vdots \\
 \dfrac{\partial f_n }{\partial x_1} &amp; \dfrac{\partial f_n }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n}
 \end{array}
@@ -1345,13 +1345,13 @@ J = \left(
 $$</p>
 <p>If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&rsquo;s method can be written as
 $$
-x_{n+1} = x_n - J^{-1} \left( x_n \right) f\left( x_n \right)
+x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
 $$
-where $J^{-1} \left( x_n \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_n$. In practice, as matrix inversion can be computationally expensive, the system
+where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$<sub>th</sub> iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
 $$
-J \left( x_n \right) \left( x_{n+1} - x_n \right) = -f \left( x_n \right)
+J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$
-is solved for the unknown vector $x_{n+1} - x_n$.</p>
+is solved for the unknown vector $x_{m+1} - x_m$.</p>
 </div>
         </div>
     </div>

@@ -991,7 +991,7 @@ the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 J = \left(
 \begin{array}{cccc}
 \dfrac{\partial f_1 }{\partial x_1} &amp;amp; \dfrac{\partial f_1 }{\partial x_2} &amp;amp; \cdots &amp;amp; \dfrac{\partial f_1 }{\partial x_n} \\
-\dfrac{\partial f_2 }{\partial x_1} &amp;amp; &amp;amp; &amp;amp; \\
+\dfrac{\partial f_2 }{\partial x_1} &amp;amp; &amp;amp; &amp;amp; \vdots \\
 \vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
 \dfrac{\partial f_n }{\partial x_1} &amp;amp; \dfrac{\partial f_n }{\partial x_2} &amp;amp; \cdots &amp;amp; \dfrac{\partial f_n }{\partial x_n}
 \end{array}
@@ -1000,13 +1000,13 @@ J = \left(
 $$&lt;/p&gt;
 &lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
 $$
-x_{n+1} = x_n - J^{-1} \left( x_n \right) f\left( x_n \right)
+x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
 $$
-where $J^{-1} \left( x_n \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_n$. In practice, as matrix inversion can be computationally expensive, the system
+where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$&lt;sub&gt;th&lt;/sub&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
 $$
-J \left( x_n \right) \left( x_{n+1} - x_n \right) = -f \left( x_n \right)
+J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$
-is solved for the unknown vector $x_{n+1} - x_n$.&lt;/p&gt;
+is solved for the unknown vector $x_{m+1} - x_m$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1719,21 +1719,17 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$
-with $\Phi$ the increment function. So, for the forward Euler approximation of the first-order derivative,
-$$
-\dfrac{u_{n+1} - u_n}{h} = \Phi = f\left( u_n, t_n \right).
-$$&lt;/p&gt;
-&lt;p&gt;For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
+with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
 &lt;p&gt;$$
-y_{n+1} = y_n + h f\left( t_n, y_n\right) + \varepsilon_n&lt;br&gt;
+y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n&lt;br&gt;
 $$&lt;/p&gt;
 &lt;p&gt;which can be written as&lt;/p&gt;
 &lt;p&gt;$$
-\tau_n = \dfrac{y_{n+1} - y_n}{h} - f\left( t_n, y_n\right)
+\tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
 $$&lt;/p&gt;
 &lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
-&lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$.&lt;/p&gt;
+&lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1753,7 +1749,7 @@ $$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
 $$
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim_{h \to 0} \max_{n} | e_{n} | = 0}$.&lt;/p&gt;
+&lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1814,7 +1810,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim_{h \rightarrow 0} \tau \left(h \right) 0$&lt;/p&gt;
+&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and&lt;/p&gt;
@@ -1839,7 +1835,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
 &lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
 &lt;p&gt;$$
-\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
+\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
 $$&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;

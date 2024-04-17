@@ -1240,21 +1240,17 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$
-with $\Phi$ the increment function. So, for the forward Euler approximation of the first-order derivative,
-$$
-\dfrac{u_{n+1} - u_n}{h} = \Phi = f\left( u_n, t_n \right).
-$$</p>
-<p>For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is</p>
+with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is</p>
 <p>$$
-y_{n+1} = y_n + h f\left( t_n, y_n\right) + \varepsilon_n<br>
+y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n<br>
 $$</p>
 <p>which can be written as</p>
 <p>$$
-\tau_n = \dfrac{y_{n+1} - y_n}{h} - f\left( t_n, y_n\right)
+\tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
 $$</p>
 <p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the <strong>local truncation error</strong> at step $n$.</p>
 <p>The <strong>consistency error</strong> is given by ${\tau = \max_n | \tau_n | }$.</p>
-<p>A method is said to be <strong>consistent</strong> if $\lim\limits_{h \to 0} \Phi = f$.</p>
+<p>A method is said to be <strong>consistent</strong> if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.</p>
 </div>
         </div>
     </div>
@@ -1274,7 +1270,7 @@ $$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
 $$
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be <strong>locally convergent</strong>.</p>
-<p>The scheme is <strong>convergent</strong> if the global truncation error goes to zero as the step size goes to zero, that is ${\lim_{h \to 0} \max_{n} | e_{n} | = 0}$.</p>
+<p>The scheme is <strong>convergent</strong> if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.</p>
 </div>
         </div>
     </div>
@@ -1335,7 +1331,7 @@ $$</p>
 <p>Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,</p>
 </li>
 <li>
-<p>the method is <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">consistent</a>, i.e. $\lim_{h \rightarrow 0} \tau \left(h \right) 0$</p>
+<p>the method is <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">consistent</a>, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$</p>
 </li>
 </ul>
 <p>and</p>
@@ -1360,7 +1356,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
             <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
 <p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set</p>
 <p>$$
-\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace
+\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
 $$</p>
 </div>
         </div>
