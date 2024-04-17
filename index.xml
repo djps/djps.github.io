@@ -1231,7 +1231,7 @@ where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluate
 $$
 J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$
-is solved for the unknown vector $x_{m+1} - x_m$.&lt;/p&gt;
+is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
