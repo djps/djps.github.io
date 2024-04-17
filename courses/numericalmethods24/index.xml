@@ -1719,11 +1719,11 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$
-with $\Phi$ the increment function. So
+with $\Phi$ the increment function. So, for the forward Euler approximation of the first-order derivative,
 $$
 \dfrac{u_{n+1} - u_n}{h} = \Phi = f\left( u_n, t_n \right).
 $$&lt;/p&gt;
-&lt;p&gt;For the exact solution to the differential equation, $y\left(t_n \right) = y_n$,&lt;/p&gt;
+&lt;p&gt;For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
 &lt;p&gt;$$
 y_{n+1} = y_n + h f\left( t_n, y_n\right) + \varepsilon_n&lt;br&gt;
 $$&lt;/p&gt;
@@ -1733,6 +1733,27 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
+&lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$.&lt;/p&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+			Definition:	&lt;em&gt;Convergence&lt;/em&gt;
+			
+        &lt;/div&gt;
+        &lt;div class=&#34;details-content&#34;&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
+$$
+\tau_{g,n} = \left| y_n - u_n \right|
+$$
+which is given by
+$$
+\tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
+$$
+If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim_{h \to 0} \max_{n} | e_{n} | = 0}$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1874,9 +1895,9 @@ $$&lt;/p&gt;
 &lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
 &lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt; is defined as
+&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
 $$
-h \tau_{n+1}\left(h\right) = u\left(t_{n+1} \right) - u\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
+h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$&lt;/p&gt;
 &lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
 &lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;

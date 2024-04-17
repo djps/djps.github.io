@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 16, 2024 --><html lang="en-us" >
+<!-- Last Published: April 17, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1240,11 +1240,11 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$
-with $\Phi$ the increment function. So
+with $\Phi$ the increment function. So, for the forward Euler approximation of the first-order derivative,
 $$
 \dfrac{u_{n+1} - u_n}{h} = \Phi = f\left( u_n, t_n \right).
 $$</p>
-<p>For the exact solution to the differential equation, $y\left(t_n \right) = y_n$,</p>
+<p>For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is</p>
 <p>$$
 y_{n+1} = y_n + h f\left( t_n, y_n\right) + \varepsilon_n<br>
 $$</p>
@@ -1254,6 +1254,27 @@ $$</p>
 $$</p>
 <p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the <strong>local truncation error</strong> at step $n$.</p>
 <p>The <strong>consistency error</strong> is given by ${\tau = \max_n | \tau_n | }$.</p>
+<p>A method is said to be <strong>consistent</strong> if $\lim\limits_{h \to 0} \Phi = f$.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition Definition open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+			Definition:	<em>Convergence</em>
+			
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>The <strong>global truncation error</strong> is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
+$$
+\tau_{g,n} = \left| y_n - u_n \right|
+$$
+which is given by
+$$
+\tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
+$$
+If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be <strong>locally convergent</strong>.</p>
+<p>The scheme is <strong>convergent</strong> if the global truncation error goes to zero as the step size goes to zero, that is ${\lim_{h \to 0} \max_{n} | e_{n} | = 0}$.</p>
 </div>
         </div>
     </div>
@@ -1395,9 +1416,9 @@ $$</p>
 <p>where $s$ is referred to as the number of stages of the method.</p>
 <p>Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$</p>
 <p>If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are <strong>explicit</strong>, otherwise they are said to be <strong>implicit</strong>.</p>
-<p>The <strong>local truncation error</strong> is defined as
+<p>The <strong>local truncation error</strong>, which characterises the error induced at each step of the method, is defined as
 $$
-h \tau_{n+1}\left(h\right) = u\left(t_{n+1} \right) - u\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
+h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$</p>
 <p>It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.</p>
 <p>A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.</p>
