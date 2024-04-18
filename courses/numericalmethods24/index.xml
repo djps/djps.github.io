@@ -1538,7 +1538,7 @@ i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$
-with nodes given by the roots of the orthogonal polynomial, and weights given by $A_i = \int_{a}^{b} L_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
+with nodes given by the roots of the orthogonal polynomial, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
 &lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
 &lt;/div&gt;
@@ -1559,7 +1559,7 @@ and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre
 $$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \mbox{for} \quad n \ge 2.
 $$
-Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2 \ldots}$&lt;/p&gt;
+Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
 &lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
