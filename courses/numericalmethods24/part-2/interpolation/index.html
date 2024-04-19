@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 18, 2024 --><html lang="en-us" >
+<!-- Last Published: April 19, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1124,16 +1124,16 @@ mjx-assistive-mml {
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
 $$
-so that for every $j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, for some weights $\alpha_i$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
+so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 $$\Phi \alpha = p$$
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the <strong>collocation matrix</strong>, whose entries are given by the polynomials evaluated at the node points
 $$
 \Phi = \left( \begin{array}{cccc}
 \varphi_0 (u_0) &amp; \varphi_1 (u_1) &amp; \cdots &amp; \varphi_n (u_n) \\
 \vdots &amp; &amp; &amp; \vdots \\
-\varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right)
+\varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
 $$
-Thus, to fit the polynomials to the data $ \alpha = \Phi^{-1} p$,</p>
+Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
 <p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 </div>
         </div>

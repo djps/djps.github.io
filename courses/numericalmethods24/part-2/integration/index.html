@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 18, 2024 --><html lang="en-us" >
+<!-- Last Published: April 19, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1127,7 +1127,7 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">with $f(x+h)$ and $f(x-h)$, so
+            <div class="admonition-content">Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
 $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$</div>
@@ -1302,7 +1302,7 @@ $$</p>
 <h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
 <p>Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
-I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right)
+I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
 \end{equation}
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
 <ul>

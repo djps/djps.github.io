@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 18, 2024 --><html lang="en-us" >
+<!-- Last Published: April 19, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1135,7 +1135,7 @@
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the solution at time step ${i+1}$ only depends on the previous one.</div>
+            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the computed solution at time step ${i+1}$, denoted by $u_{i+1}$, only depends on the previous one.</div>
         </div>
     </div>
 <h3 id="forward-euler-method">Forward Euler Method</h3>
@@ -1206,7 +1206,7 @@ $$</div>
             <div class="admonition-content">A numerical method is said to be <strong>explicit</strong> if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be <strong>implicit</strong>.</div>
         </div>
     </div>
-<p>Often, implicit methods require, at each step, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
+<p>Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
 <p>Both the Forward Euler and Heun&rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.</p>
 <p>Huen&rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.</p>
 <p>Alternatively, the solution to the differential equation can be written as <a href="/courses/numericalmethods24/part-2/integration/#numerical-integration">quadrature</a>:
@@ -1403,7 +1403,7 @@ u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
 $$</p>
 <p>where $F$ is an increment function given by</p>
 <p>$$
-F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i,
+F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i
 $$</p>
 <p>with $k_i$ defined as</p>
 <p>$$

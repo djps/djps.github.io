@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 18, 2024 --><html lang="en-us" >
+<!-- Last Published: April 19, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1105,7 +1105,7 @@
 a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \\
 a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\
 \vdots &amp;  \\
-a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m
+a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
 \end{align}
 $$</p>
 <p>The system of linear equations can be written in matrix form ${Ax=b}$, where
@@ -1431,7 +1431,7 @@ $$
 (D + L) x^{(n+1)} = -U x^{(n)} + b. \label{eq:GS}
 \end{equation}
 $$
-where $L$ is the lower triangular part of $A$, a $D$ is the diagonal matrix from $A$.</div>
+where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.</div>
         </div>
     </div>
 <div class="details admonition Theorem open">
@@ -1490,9 +1490,9 @@ $$</div>
             <div class="admonition-content">A numerical method is said to be <strong>consistent</strong> if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.</div>
         </div>
     </div>
-<p>A fixed point, $\bar{x}$, fulfils
+<p>A fixed point, $x^{\ast}$, fulfils
 $$
-\bar{x} = \left( I - Q^{-1} A \right) \bar{x} + Q^{-1} b \Leftrightarrow A \bar{x} = b.
+x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$</p>
 <p>If the method is stable then</p>
 <p>$$
