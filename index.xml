@@ -911,7 +911,7 @@ $$&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
-&lt;p&gt;Note that $\left| e_0 \right|$ is a norm of a vector, such as ${\left| x_0 \right|_2 = \sqrt{x_0^2 + x_1^2 + \ldots x_n^2} }$.&lt;/p&gt;
+&lt;p&gt;Note that $\Vert x \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert x \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots x_n^2} }$.&lt;/p&gt;
 &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
