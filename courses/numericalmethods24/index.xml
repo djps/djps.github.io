@@ -1117,7 +1117,7 @@ n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \l
 $$
 By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
 $$
-\alpha_{i+1} = \dfrac{ y_{i+1} - p_n \left( x_{n+1} \right) }{ n_n \left(  x_{n+1} \right) }.
+\alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1633,7 +1633,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step ${i+1}$, denoted by $u_{i+1}$, only depends on the previous one.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
