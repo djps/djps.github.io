@@ -636,8 +636,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.&lt;/p&gt;
-&lt;p&gt;If $\left| r \right|$ is large due to rounding, the matrix is said to be &lt;strong&gt;ill-conditioned&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
+&lt;!-- If $\left| r \right|$ is large due to rounding, the matrix is said to be **ill-conditioned**. --&gt;&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;h3 id=&#34;direct-methods&#34;&gt;Direct Methods&lt;/h3&gt;
@@ -862,7 +861,7 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + D$, then the &lt;strong&gt;Gauss-Seidel&lt;/strong&gt; scheme is given by
 $$
 \begin{equation}
-(D + L) x^{(n+1)} = -U x^{(n)} + b. \label{eq:GS}
+(D + L) x_{k+1} = -U x_{k} + b. \label{eq:GS}
 \end{equation}
 $$
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/div&gt;
@@ -888,7 +887,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
             &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
 $$
 \begin{equation}
-(D + \omega L) x^{(n+1)} = -\left( \left(\omega - 1 \right)D + \omega U \right) x^{(n)} + \omega b
+(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b
 \end{equation}
 $$&lt;/div&gt;
         &lt;/div&gt;
@@ -911,7 +910,9 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/div&gt;
+            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
+&lt;p&gt;Note that $\left| e_0 \right|$ is a norm of a vector, such as ${\left| x_0 \right|_2 = \sqrt{x_0^2 + x_1^2 + \ldots x_n^2} }$.&lt;/p&gt;
+&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
