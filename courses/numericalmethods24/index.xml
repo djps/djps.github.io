@@ -1117,8 +1117,7 @@ $$
 By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
 $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_n \left( x_{n+1} \right) }{ n_n \left(  x_{n+1} \right) }.
-$$
-Note that &lt;em&gt;the collocation matrix is a lower triangular matrix&lt;/em&gt;.&lt;/div&gt;
+$$&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
