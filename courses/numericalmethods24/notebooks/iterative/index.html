@@ -1149,7 +1149,7 @@ A = \left(
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Right hand side vector $b=\left( 1, 8, -5 \right)^T$.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
-</span></span></code></pre></div><p>Note that the inverse $A^{-1} is given as</p>
+</span></span></code></pre></div><p>Note that the inverse $A^{-1}$ is given as</p>
 <p>\begin{equation}
 A^{-1} = \dfrac{1}{8} \left(
 \begin{array}{ccc}
@@ -1160,8 +1160,8 @@ A^{-1} = \dfrac{1}{8} \left(
 \right) \quad \Rightarrow
 x = \left(
 \begin{array}{c}
-2 \
-3 \
+2 \\
+3 \\
 -1 \end{array} \right).
 \end{equation}</p>
 <p>Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.</p>
@@ -1178,18 +1178,18 @@ x = \left(
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">It1</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">Q1</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">It2</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">Q2</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">It3</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">Q3</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
-</span></span></code></pre></div><p>Starting point for iteration; starting error set to $\sqrt{3}$, i.e. <code>norm([0,0,0] - [1,1,1])</code></p>
+</span></span></code></pre></div><p>Starting point for iteration; starting error set to $\sqrt{3}$, i.e. from <code>norm([0,0,0] - [1,1,1])</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
 </span></span></code></pre></div><p>Iterate as long as successive iterations are changing by more than ${10^{-4}=0.0001}$</p>
-<p>Jacobi iteration</p>
+<p><a href="https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#Jacobi" target="_blank" rel="noopener">Jacobi</a> iteration</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x_o</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">4</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x_o</span> <span class="o">=</span> <span class="n">x</span>
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">It1</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">Q1</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution Jacobi &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39; after &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; iterations&#39;</span> <span class="p">)</span>
-</span></span></code></pre></div><p>Gauss-Seidel iteration</p>
+</span></span></code></pre></div><p><a href="https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#GS" target="_blank" rel="noopener">Gauss-Seidel</a> iteration</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1198,7 +1198,7 @@ x = \left(
 </span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">It2</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">Q2</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Solution GS &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39; after &#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; iterations&#39;</span> <span class="p">)</span>
-</span></span></code></pre></div><p>SOR iteration</p>
+</span></span></code></pre></div><p><a href="https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#SOR" target="_blank" rel="noopener">SOR iteration</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x_o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>

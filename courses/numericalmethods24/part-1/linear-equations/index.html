@@ -1091,7 +1091,19 @@
           
           
 
-          <h2 id="linear-equations">Linear Equations</h2>
+          <style>
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+</style>
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+<i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> April 45, 2024 &middot;
+<i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 60 minute read </p>
+<h2 id="linear-equations">Linear Equations</h2>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
@@ -1387,7 +1399,7 @@ $$</p>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">The <strong>Jacobi iteration</strong> scheme has $Q=D$, so
+            <div class="admonition-content">The  <a id="Jacobi"><strong>Jacobi iteration</strong></a> scheme has $Q=D$, so
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$
@@ -1424,7 +1436,7 @@ $$</div>
 			
         </div>
         <div class="details-content">
-            <div class="admonition-content">Let $Q=L + D$, then the <strong>Gauss-Seidel</strong> scheme is given by
+            <div class="admonition-content">Let $Q=L + D$, then the <a id="GS"><strong>Gauss-Seidel</strong></a> scheme is given by
 $$
 \begin{equation}
 (D + L) x_{k+1} = -U x_{k} + b. \label{eq:GS}
@@ -1453,7 +1465,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
             <div class="admonition-content">Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of <a id="SOR"><strong>successive over relaxation</strong></a> (SOR) is given by
 $$
 \begin{equation}
-(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b
+(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation}
 $$</div>
         </div>

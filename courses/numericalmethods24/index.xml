@@ -300,7 +300,19 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
       <link>https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/</guid>
-      <description>&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
+      <description>&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
+&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
@@ -596,7 +608,7 @@ $$&lt;/p&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;Jacobi iteration&lt;/strong&gt; scheme has $Q=D$, so
+            &lt;div class=&#34;admonition-content&#34;&gt;The  &lt;a id=&#34;Jacobi&#34;&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$
@@ -633,7 +645,7 @@ $$&lt;/div&gt;
 			
         &lt;/div&gt;
         &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + D$, then the &lt;strong&gt;Gauss-Seidel&lt;/strong&gt; scheme is given by
+            &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by
 $$
 \begin{equation}
 (D + L) x_{k+1} = -U x_{k} + b. \label{eq:GS}
@@ -662,7 +674,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
             &lt;div class=&#34;admonition-content&#34;&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
 $$
 \begin{equation}
-(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b
+(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation}
 $$&lt;/div&gt;
         &lt;/div&gt;
