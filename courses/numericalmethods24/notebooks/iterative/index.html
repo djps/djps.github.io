@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 24, 2024 --><html lang="en-us" >
+<!-- Last Published: April 25, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -1149,7 +1149,23 @@ A = \left(
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Right hand side vector $b=\left( 1, 8, -5 \right)^T$.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
-</span></span></code></pre></div><p>For the Jacobi method, $Q$ is the inverse of diagonal matrix</p>
+</span></span></code></pre></div><p>Note that the inverse $A^{-1} is given as</p>
+<p>\begin{equation}
+A^{-1} = \dfrac{1}{8} \left(
+\begin{array}{ccc}
+5 &amp; 2 &amp; 1 \\
+2 &amp; 4 &amp; 2 \\
+1 &amp; 2 &amp; 5
+\end{array}
+\right) \quad \Rightarrow
+x = \left(
+\begin{array}{c}
+2 \
+3 \
+-1 \end{array} \right).
+\end{equation}</p>
+<p>Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.</p>
+<p>For the Jacobi method, $Q$ is the inverse of diagonal matrix</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
 </span></span></code></pre></div><p>For the Gauss-Seidel method, $Q$ is the inverse of lower triangular matrix of $A$</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tmp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tril</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
