@@ -1503,15 +1503,15 @@ $$</div>
             <div class="admonition-content">A numerical method is said to be <strong>consistent</strong> if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.</div>
         </div>
     </div>
-<p>A fixed point, $x^{\ast}$, fulfils
+<p>For linear systems, a fixed point, $x^{\ast}$, fulfils
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$</p>
-<p>If the method is stable then</p>
+<p>If the iterative method for a linear system is stable then</p>
 <p>$$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
 $$
-so then ${\left| I - Q^{-1} A \right| &lt; 1}$ for ${\left| e_k \right| &lt; \left| e_0 \right| }$.</p>
+so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$.</p>
 <div class="details admonition Definition open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>

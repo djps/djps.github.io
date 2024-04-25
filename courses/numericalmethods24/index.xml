@@ -712,15 +712,15 @@ $$&lt;/div&gt;
             &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;p&gt;A fixed point, $x^{\ast}$, fulfils
+&lt;p&gt;For linear systems, a fixed point, $x^{\ast}$, fulfils
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$&lt;/p&gt;
-&lt;p&gt;If the method is stable then&lt;/p&gt;
+&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
 &lt;p&gt;$$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
 $$
-so then ${\left| I - Q^{-1} A \right| &amp;lt; 1}$ for ${\left| e_k \right| &amp;lt; \left| e_0 \right| }$.&lt;/p&gt;
+so then ${\Vert I - Q^{-1} A \Vert &amp;lt; 1}$ for ${\Vert e_k \Vert &amp;lt; \Vert e_0 \Vert}$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
         &lt;div class=&#34;details-summary admonition-title&#34;&gt;
             &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
