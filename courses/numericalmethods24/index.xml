@@ -1073,7 +1073,7 @@ $$\Phi \alpha = p$$
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
 $$
 \Phi = \left( \begin{array}{cccc}
-\varphi_0 (u_0) &amp;amp; \varphi_1 (u_1) &amp;amp; \cdots &amp;amp; \varphi_n (u_n) \\
+\varphi_0 (u_0) &amp;amp; \varphi_1 (u_0) &amp;amp; \cdots &amp;amp; \varphi_n (u_0) \\
 \vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
 \varphi_0 (u_n) &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \varphi_n (u_n) \end{array} \right).
 $$
