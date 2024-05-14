@@ -1922,6 +1922,17 @@ $$&lt;/p&gt;
 &lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
 &lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
+$$
+\renewcommand\arraystretch{1.2}
+\begin{array}{c|cccc}
+c_1    &amp;amp; a_{1,1} &amp;amp; \ldots &amp;amp; a_{1,s} \
+\vdots &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  \
+c_s    &amp;amp; a_{s,1} &amp;amp; \ldots &amp;amp; a_{s,s} \
+\hline
+&amp;amp; b_1     &amp;amp; \ldots &amp;amp; b_s
+\end{array}
+$$&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
 $$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).

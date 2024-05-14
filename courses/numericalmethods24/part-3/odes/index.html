@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: May 10, 2024 --><html lang="en-us" >
+<!-- Last Published: May 14, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -919,10 +919,6 @@
       
 
 
-  <li class=""><a href="/courses/numericalmethods24/notebooks/bezier/">Bezier Curves</a></li>
-
-
-
   <li class=""><a href="/courses/numericalmethods24/notebooks/iterative/">Iterative Solvers</a></li>
 
 
@@ -1412,6 +1408,17 @@ $$</p>
 <p>where $s$ is referred to as the number of stages of the method.</p>
 <p>Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$</p>
 <p>If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are <strong>explicit</strong>, otherwise they are said to be <strong>implicit</strong>.</p>
+<p>The components of a Runge-Kutta scheme are expressed in a Butcher array
+$$
+\renewcommand\arraystretch{1.2}
+\begin{array}{c|cccc}
+c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \
+\vdots &amp; \vdots  &amp; \ddots &amp; \vdots  \
+c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \
+\hline
+&amp; b_1     &amp; \ldots &amp; b_s
+\end{array}
+$$</p>
 <p>The <strong>local truncation error</strong>, which characterises the error induced at each step of the method, is defined as
 $$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
