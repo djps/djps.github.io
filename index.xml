@@ -2149,7 +2149,6 @@ $$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
 $$
-\renewcommand\arraystretch{1.2}
 \begin{array}{c|cccc}
 c_1    &amp;amp; a_{1,1} &amp;amp; \ldots &amp;amp; a_{1,s} \
 \vdots &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  \
