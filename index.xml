@@ -2150,9 +2150,9 @@ $$&lt;/p&gt;
 &lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
 $$
 \begin{array}{c|cccc}
-c_1    &amp;amp; a_{1,1} &amp;amp; \ldots &amp;amp; a_{1,s} \
-\vdots &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  \
-c_s    &amp;amp; a_{s,1} &amp;amp; \ldots &amp;amp; a_{s,s} \
+c_1    &amp;amp; a_{1,1} &amp;amp; \ldots &amp;amp; a_{1,s} \\
+\vdots &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  \\
+c_s    &amp;amp; a_{s,1} &amp;amp; \ldots &amp;amp; a_{s,s} \\
 \hline
 &amp;amp; b_1     &amp;amp; \ldots &amp;amp; b_s
 \end{array}
