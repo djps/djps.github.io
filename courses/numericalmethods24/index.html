@@ -1269,7 +1269,7 @@
   Ordinary Differential Equations  :a6,  05-02, 2w
 
   section  Summary
-  Summary                          :a7,  05-15, 1w
+  Summary                          :active, a7,  05-15, 1w
 
   click a1  href "https://djps.github.io/courses/numericalmethods24/part-1/taylor/"
   click a1b href "https://djps.github.io/courses/numericalmethods24/part-1/number-representations/"
@@ -1280,6 +1280,32 @@
   click a5  href "https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#indirect-methods"
   click a6  href "https://djps.github.io/courses/numericalmethods24/part-3/odes/"
 </div>
+<pre class="mermaid">
+  gantt
+    dateFormat  YYYY-MM-DD
+
+    section Clickable
+    Visit mermaidjs         :active, cl1, 2014-01-07, 3d
+    Print arguments         :cl2, after cl1, 3d
+    Print task              :cl3, after cl2, 3d
+
+    click cl1 href "https://mermaidjs.github.io/"
+    click cl2 call printArguments("test1", "test2", test3)
+    click cl3 call printTask()
+</pre>
+<script>
+  const printArguments = function (arg1, arg2, arg3) {
+    alert('printArguments called with arguments: ' + arg1 + ', ' + arg2 + ', ' + arg3);
+  };
+  const printTask = function (taskId) {
+    alert('taskId: ' + taskId);
+  };
+  const config = {
+    startOnLoad: true,
+    securityLevel: 'loose',
+  };
+  mermaid.initialize(config);
+</script>
 <h3 id="structure">Structure</h3>
 <p>The course content has the following structure:</p>
 <div class="markmap" style="height: 500px;">
