@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HIFU | Hugo Academic CV Theme</title>
+    <link>https://example.com/tags/hifu/</link>
+      <atom:link href="https://example.com/tags/hifu/index.xml" rel="self" type="application/rss+xml" />
+    <description>HIFU</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>HIFU</title>
+      <link>https://example.com/tags/hifu/</link>
+    </image>
+    
+    <item>
+      <title>Artificial Intelligence in Therapeutic Ultrasound</title>
+      <link>https://example.com/talks/istu2023/</link>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/talks/istu2023/</guid>
+      <description>&lt;p&gt;This talk aims at briefly introducing some key concepts in artificial intelligence which are relevant to therapeutic ultrasound.&lt;/p&gt;
+&lt;p&gt;It was delivered as an educational session at ISTU 2023 in Lyon.&lt;/p&gt;
+&lt;p&gt;There were a number of challenges in writing this, mainly relating to the breadth of the possible applications and, at the same time introducing a number of technical concepts which needed to be defined. Many of the subject areas could have been lecture courses in their own right.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/lyon/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The slides will be uploaded soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

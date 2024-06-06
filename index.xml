@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Academic CV Theme</title>
+    <link>https://example.com/</link>
+      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hugo Academic CV Theme</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Hugo Academic CV Theme</title>
+      <link>https://example.com/</link>
+    </image>
+    
+    <item>
+      <title>QualiPerF</title>
+      <link>https://example.com/project/qualiperf/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/qualiperf/</guid>
+      <description>&lt;h2 id=&#34;quantifying-liver-perfusion-function-relationship-in-complex-resection--a-systems-medicine-approach&#34;&gt;Quantifying Liver Perfusion-Function Relationship in Complex Resection – A Systems Medicine Approach&lt;/h2&gt;
+&lt;p&gt;The goal of the research unit is to better predict the recovery of hepatic function during regeneration after liver surgery of diseased livers.&lt;/p&gt;
+&lt;p&gt;Hepatic disease affect hepatic processes at different spatial scales: individual hepatocytes, hepatic sinusoids/lobuli (including zonated phenomena), the organ, and the entire organism. Surgery and subsequent regeneration further perturb the hepatic processes at the different scales.&lt;/p&gt;
+&lt;p&gt;In QuaLiPerF, these effects will be included in computational models of the metabolization of selected test compounds representative for liver function.&lt;/p&gt;
+&lt;p&gt;The goal of this project is to build a multi-scale computational model of test compound metabolism during liver regeneration. For this purpose, this project will integrate models at the cellular, lobular, and organism scale (by the modeling partners) with own models at the organ scale, in a four- scale framework. Combining the relevant complex and interacting processes in a computational model will require a deep understanding of the underlying physiology, biology, and biochemistry and of suitable modeling techniques for the respective spatial scales. Our mechanistically driven model translation and integration will be complemented by a data-driven approach in collaboration with the data integration partner. The computational models to be developed will be parameterized and validated using clinical and experimental physiological and metabolic data.&lt;/p&gt;
+&lt;p&gt;In addition, this project will combine the data acquired during regeneration to descriptive computational model of the recovery of physiological and metabolic parameters over time, to be combined with the models of test compound metabolization. Predictions obtained from simulations using the computational models will be used in QuaLiPerF to investigate biological and clinical questions driven by the clinical and experimental partners. Ultimately, a better prediction of the recovery of liver function developed in QuaLiPerF will help improve planning of individual surgery.&lt;/p&gt;
+&lt;h2 id=&#34;project-homepage&#34;&gt;Project Homepage&lt;/h2&gt;
+&lt;p&gt;The project homepage can be accessed &lt;a href=&#34;https://qualiperf.de/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EHMA</title>
+      <link>https://example.com/project/ehma/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/ehma/</guid>
+      <description>&lt;h2 id=&#34;enhancing-hepatic-microwave-ablation&#34;&gt;Enhancing Hepatic Microwave Ablation&lt;/h2&gt;
+&lt;p&gt;Details.&lt;/p&gt;
+&lt;!-- https://gepris.dfg.de/gepris/projekt/261433767?language=en --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computational Topology in Medical Imaging</title>
+      <link>https://example.com/project/comptop/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/comptop/</guid>
+      <description>&lt;h2 id=&#34;computational-topology&#34;&gt;Computational Topology&lt;/h2&gt;
+&lt;p&gt;More details to appear.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MAIBAI: Metrology for Image-Based AI</title>
+      <link>https://example.com/project/maibai/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/maibai/</guid>
+      <description>&lt;h2 id=&#34;developing-a-metrological-framework-for-assessment-of-image-based-artificial-intelligence-systems-for-disease-detection&#34;&gt;Developing a Metrological Framework for Assessment of Image-based Artificial Intelligence Systems for Disease Detection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Details can be found at the funder&amp;rsquo;s website &lt;a href=&#34;https://www.euramet.org/research-innovation/search-research-projects/details/project/developing-a-metrological-framework-for-assessment-of-image-based-artificial-intelligence-systems-for-disease-detection&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The project homepage can be found &lt;a href=&#34;https://www.maibaiproject.eu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CUBDL: Challenge on Ultrasound Beamforming with Deep Learning</title>
+      <link>https://example.com/project/cubdl/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/cubdl/</guid>
+      <description>&lt;h2 id=&#34;challenge-on-ultrasound-beamforming-with-deep-learning&#34;&gt;Challenge on Ultrasound Beamforming with Deep Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Details can be found at the organisers website &lt;a href=&#34;https://cubdl.jhu.edu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Award is &lt;a href=&#34;uploads/Challenge-mevis-team.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AEGEUS</title>
+      <link>https://example.com/project/aegeus/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/aegeus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cosserat Theory</title>
+      <link>https://example.com/project/cosserat/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/cosserat/</guid>
+      <description>&lt;h2 id=&#34;deformation-of-an-elastic-rod-in-a-magnetic-field&#34;&gt;Deformation of an elastic rod in a magnetic field&lt;/h2&gt;
+&lt;p&gt;This was my PhD which was undertaken at &lt;a href=&#34;https://ucl.ac.uk&#34;&gt;UCL&lt;/a&gt; with &lt;a href=&#34;https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/people/prof-gert-van-der-heijden&#34;&gt;Prof. Gert van der Heijden&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Thesis can be found online &lt;a href=&#34;https://discovery.ucl.ac.uk/id/eprint/15832/&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;https://example.com/publication/thesis/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Journal publications can be found&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com/publication/sinden2008ice/&#34;&gt;Integrability of a conducting elastic rod in a magnetic field&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com/publication/sinden2009sce/&#34;&gt;Spatial chaos of an extensible conducting rod in a uniform magnetic field&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conference proceeding can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com/publication/sinden2011bmc/&#34;&gt;The Buckling of Magneto-Strictive Cosserat Rods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com/publication/vanderheijden2011ltc/&#34;&gt;Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A presentation can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://example.com/talks/hamburg/&#34;&gt;Integrability, localisation and bifurcation of an elastic conducting rod in a magnetic field&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://example.com/experience/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://example.com/projects/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Awesome List of Scientific Computing Resources</title>
+      <link>https://example.com/blog/awesome-scientific-computing/</link>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/awesome-scientific-computing/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;#readme&#34;&gt;&lt;img src=&#34;https://nschloe.github.io/awesome-scientific-computing/sunglasses.svg&#34; align=&#34;right&#34; width=&#34;25%&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Useful resources for scientific computing and numerical analysis, with a selection of ultrasound and medical tools&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Scientific computing and numerical analysis are research fields that aim to provide
+methods for solving large-scale problems from various areas of science with the help of
+computers. Typical problems are ordinary and partial differential equations (ODEs,
+PDEs), their discretizations, and the solution of linear algebra problems arising from
+them.&lt;/p&gt;
+&lt;p&gt;This is from my &lt;a href=&#34;https://github.com/djps/awesome-scientific-computing&#34;&gt;fork&lt;/a&gt; of Nico Schlömer&amp;rsquo;s github repo, which can be found &lt;a href=&#34;https://github.com/nschloe/awesome-scientific-computing&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-linear-algebra&#34;&gt;Basic linear algebra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#multi-purpose-toolkits&#34;&gt;Multi-purpose toolkits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#finite-elements&#34;&gt;Finite Elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#meshing&#34;&gt;Meshing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#data-formats&#34;&gt;Data formats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sparse-linear-solvers&#34;&gt;Sparse linear solvers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#visualization&#34;&gt;Visualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#platforms&#34;&gt;Platforms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#io&#34;&gt;I/O&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#odes&#34;&gt;ODEs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#gpus&#34;&gt;GPUs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#solvers&#34;&gt;Solvers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wave-propagation&#34;&gt;Wave propagation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#physics-informed-neural-networks&#34;&gt;Physics-informed neural networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sbml&#34;&gt;SBML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#resources&#34;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#other-libraries-and-tools&#34;&gt;Other libraries and tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#community&#34;&gt;Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basic-linear-algebra&#34;&gt;Basic linear algebra&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://netlib.org/blas/&#34;&gt;BLAS&lt;/a&gt; - Standard building blocks for performing basic vector and matrix operations.
+(Fortran, public domain, &lt;a href=&#34;https://github.com/Reference-LAPACK/lapack/tree/master/BLAS&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openblas.net&#34;&gt;OpenBLAS&lt;/a&gt; - Optimized BLAS library based on GotoBLAS2.
+(C and Assembly, BSD, &lt;a href=&#34;https://github.com/xianyi/OpenBLAS&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/flame/blis&#34;&gt;BLIS&lt;/a&gt; - High-performance BLAS-like dense linear algebra libraries.
+(C, BSD, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://netlib.org/lapack/&#34;&gt;LAPACK&lt;/a&gt; - Routines for solving systems of linear equations, linear least-squares, eigenvalue problems, etc.
+(Fortran, BSD, &lt;a href=&#34;https://github.com/Reference-LAPACK/lapack&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eigen.tuxfamily.org/index.php?title=Main_Page&#34;&gt;Eigen&lt;/a&gt; - C++ template library for linear algebra.
+(C++, MPL 2, &lt;a href=&#34;https://gitlab.com/libeigen/eigen&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ginkgo-project.github.io/&#34;&gt;Ginkgo&lt;/a&gt; - High-performance manycore linear algebra library, focus on sparse systems.
+(C++, BSD, &lt;a href=&#34;https://github.com/ginkgo-project/ginkgo&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/blaze-lib/blaze&#34;&gt;blaze&lt;/a&gt; - High-performance C++ math library for dense and sparse arithmetic.
+(C++, BSD, Bitbucket)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;multi-purpose-toolkits&#34;&gt;Multi-purpose toolkits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mcs.anl.gov/petsc/&#34;&gt;PETSc&lt;/a&gt; - Parallel solution of scientific applications modeled by PDEs.
+(C, 2-clause BSD, &lt;a href=&#34;https://gitlab.com/petsc/petsc&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.dune-project.org&#34;&gt;DUNE Numerics&lt;/a&gt; - Toolbox for solving PDEs with grid-based methods.
+(C++, GPL 2, &lt;a href=&#34;https://gitlab.dune-project.org/core/&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scipy.org&#34;&gt;SciPy&lt;/a&gt; - Python modules for statistics, optimization, integration, linear algebra, etc.
+(Python, mostly BSD, &lt;a href=&#34;https://github.com/scipy/scipy/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://numpy.org/&#34;&gt;NumPy&lt;/a&gt; - Fundamental package needed for scientific computing with Python.
+(Python, BSD, &lt;a href=&#34;https://github.com/numpy/numpy&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://diffeq.sciml.ai/&#34;&gt;DifferentialEquations.jl&lt;/a&gt; - Toolbox for solving different types of differential equations numerically. (Julia, MIT, &lt;a href=&#34;https://github.com/SciML/DifferentialEquations.jl&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;finite-elements&#34;&gt;Finite Elements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://fenicsproject.org&#34;&gt;FEniCS&lt;/a&gt; - Computing platform for solving PDEs in Python and C++.
+(C++/Python, LGPL 3, &lt;a href=&#34;https://github.com/FEniCS&#34;&gt;GitHub&lt;/a&gt;/&lt;a href=&#34;https://bitbucket.org/fenics-project/&#34;&gt;Bitbucket&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://libmesh.github.io&#34;&gt;libMesh&lt;/a&gt; - Framework for the numerical simulation of PDEs using unstructured discretizations.
+(C++, LGPL 2.1, &lt;a href=&#34;https://github.com/libMesh/libmesh&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dealii.org&#34;&gt;deal.II&lt;/a&gt; - Software library supporting the creation of finite element codes.
+(C++, LGPL 2.1, &lt;a href=&#34;https://github.com/dealii/dealii&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ngsolve.org&#34;&gt;Netgen/NGSolve&lt;/a&gt; - High performance multiphysics finite element software.
+(C++, LGPL 2.1, &lt;a href=&#34;https://github.com/NGSolve/netgen&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.firedrakeproject.org&#34;&gt;Firedrake&lt;/a&gt; - Automated system for the solution of PDEs using the finite element method.
+(Python, LGPL 3, &lt;a href=&#34;https://github.com/firedrakeproject/firedrake&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mooseframework.inl.gov/&#34;&gt;MOOSE&lt;/a&gt; - Multiphysics Object Oriented Simulation Environment.
+(C++, LGPL 2.1, &lt;a href=&#34;https://github.com/idaholab/moose&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mfem.org&#34;&gt;MFEM&lt;/a&gt; - Free, lightweight, scalable C++ library for finite element methods.
+(C++, BSD-3-Clause, &lt;a href=&#34;https://github.com/mfem/mfem&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sfepy.org&#34;&gt;SfePy&lt;/a&gt; - Simple Finite Elements in Python.
+(Python, BSD, &lt;a href=&#34;https://github.com/sfepy/sfepy&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freefem.org&#34;&gt;FreeFEM&lt;/a&gt; - High level multiphysics-multimesh finite element language.
+(C++, LGPL, &lt;a href=&#34;https://github.com/FreeFem&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://libceed.readthedocs.io/en/latest/index.html&#34;&gt;libceed&lt;/a&gt; - Code for Efficient Extensible Discretizations.
+(C, 2-clause BSD, &lt;a href=&#34;https://github.com/CEED/libCEED&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kinnala/scikit-fem&#34;&gt;scikit-fem&lt;/a&gt; - Simple finite element assemblers.
+(Python, BSD/GPL, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;meshing&#34;&gt;Meshing&lt;/h2&gt;
+&lt;h3 id=&#34;triangular-and-tetrahedral-meshing&#34;&gt;Triangular and tetrahedral meshing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmsh.info&#34;&gt;Gmsh&lt;/a&gt; - Three-dimensional finite element mesh generator with pre- and post-processing facilities.
+(C++, GPL, &lt;a href=&#34;https://gitlab.onelab.info/gmsh/gmsh&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nschloe/pygmsh&#34;&gt;pygmsh&lt;/a&gt; - Python interface for Gmsh.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mathema.tician.de/software/meshpy/&#34;&gt;MeshPy&lt;/a&gt; - Quality triangular and tetrahedral mesh generation.
+(Python, MIT, &lt;a href=&#34;https://github.com/inducer/meshpy&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cgal.org&#34;&gt;CGAL&lt;/a&gt; - Algorithms for computational geometry.
+(C++, mixed LGPL/GPL, &lt;a href=&#34;https://github.com/CGAL/cgal&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/meshpro/pygalmesh&#34;&gt;pygalmesh&lt;/a&gt; - Python interface for CGAL&amp;rsquo;s 3D meshing capabilities.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wias-berlin.de/software/index.jsp?id=TetGen&#34;&gt;TetGen&lt;/a&gt; - Quality tetrahedral mesh generator and 3D Delaunay triangulator.
+(C++, AGPLv3)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cs.cmu.edu/~quake/triangle.html&#34;&gt;Triangle&lt;/a&gt; - Two-dimensional quality mesh generator and Delaunay triangulator.
+(C, &lt;em&gt;nonfree software&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://persson.berkeley.edu/distmesh/&#34;&gt;distmesh&lt;/a&gt; - Simple generator for unstructured triangular and tetrahedral meshes.
+(MATLAB, GPL 3)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://trimsh.org/&#34;&gt;trimesh&lt;/a&gt; - Loading and using triangular meshes with an emphasis on watertight surfaces.
+(Python, MIT, &lt;a href=&#34;https://github.com/mikedh/trimesh&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/meshpro/dmsh&#34;&gt;dmsh&lt;/a&gt; - Simple generator for unstructured triangular meshes, inspired by distmesh.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yixin-hu.github.io/tetwild.pdf&#34;&gt;TetWild&lt;/a&gt; - Generate tetrahedral meshes for triangular surface meshes.
+(C++, GPL 3, &lt;a href=&#34;https://github.com/Yixin-Hu/TetWild&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cims.nyu.edu/gcl/papers/2019-TriWild.pdf&#34;&gt;TriWild&lt;/a&gt; - Robust triangulation with curve constraints.
+(C++, MPL 2, &lt;a href=&#34;https://github.com/wildmeshing/TriWild&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1908.03581&#34;&gt;fTetWild&lt;/a&gt; - Same as TetWild, but faster.
+(C++, MPL 2, &lt;a href=&#34;https://github.com/wildmeshing/fTetWild&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/krober10nd/SeismicMesh&#34;&gt;SeismicMesh&lt;/a&gt; - Parallel 2D/3D triangle/tetrahedral mesh generation with sliver removal.
+(Python and C++, GPL 3, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quadrilateral-and-hexahedral-meshing&#34;&gt;Quadrilateral and hexahedral meshing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stanford.edu/~jingweih/papers/quadriflow/&#34;&gt;QuadriFlow&lt;/a&gt; - Scalable and robust quadrangulation from triangulation.
+(C++, BSD, &lt;a href=&#34;https://github.com/hjwdzh/QuadriFlow&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mesh-tools&#34;&gt;Mesh tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nschloe/meshio&#34;&gt;meshio&lt;/a&gt; - I/O for various mesh formats, file conversion.
+(Python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sigma.mcs.anl.gov/moab-library/&#34;&gt;MOAB&lt;/a&gt; - Representing and evaluating mesh data.
+(C++, mostly LGPL 3, &lt;a href=&#34;https://bitbucket.org/fathomteam/moab/&#34;&gt;Bitbucket&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/meshpro/optimesh&#34;&gt;optimesh&lt;/a&gt; - Triangular mesh smoothing.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pmp-library.org/&#34;&gt;pmp-library&lt;/a&gt; - Polygon mesh processing library.
+(C++, MIT with Employer Disclaimer, &lt;a href=&#34;https://github.com/pmp-library/pmp-library/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mmgtools.org/&#34;&gt;Mmg&lt;/a&gt; - Robust, open-source &amp;amp; multidisciplinary software for remeshing.
+(C, LGPL 3, &lt;a href=&#34;https://github.com/MmgTools/mmg&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/meshpro/meshplex&#34;&gt;meshplex&lt;/a&gt; - Fast tools for simplex meshes.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;data-formats&#34;&gt;Data formats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.unidata.ucar.edu/software/netcdf/&#34;&gt;NetCDF&lt;/a&gt; - Software libraries and data formats for array-oriented scientific data.
+(C/C++/Fortran/Java/Python, &lt;a href=&#34;https://www.unidata.ucar.edu/software/netcdf/copyright.html&#34;&gt;custom open-source
+license&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/Unidata/netcdf-c/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.hdfgroup.org/HDF5/&#34;&gt;HDF5&lt;/a&gt; - Data model, library, and file format for storing and managing data.
+(C/Fortran, BSD, &lt;a href=&#34;https://github.com/HDFGroup/hdf5&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xdmf.org/index.php/Main_Page&#34;&gt;XDMF&lt;/a&gt; - eXtensible Data Model and Format for data from High Performance Computing codes.
+(C++, &lt;a href=&#34;https://gitlab.kitware.com/xdmf/xdmf&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zarr.readthedocs.io/en/stable/&#34;&gt;Zarr&lt;/a&gt; - Format for the storage of chunked, compressed, N-dimensional arrays.
+(Python, MIT, &lt;a href=&#34;https://github.com/zarr-developers/zarr-python&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sparse-linear-solvers&#34;&gt;Sparse linear solvers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://portal.nersc.gov/project/sparse/superlu/&#34;&gt;SuperLU&lt;/a&gt; - Direct solution of large, sparse, nonsymmetric systems of linear equations.
+(C, mostly BSD, &lt;a href=&#34;https://github.com/xiaoyeli/superlu&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pyamg.readthedocs.io/en/latest/&#34;&gt;PyAMG&lt;/a&gt; - Algebraic Multigrid Solvers in Python.
+(Python, MIT, &lt;a href=&#34;https://github.com/pyamg/pyamg&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods&#34;&gt;hypre&lt;/a&gt; - Library of high-performance preconditioners and solvers.
+(C, Apache 2.0/MIT, &lt;a href=&#34;https://github.com/hypre-space/hypre&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;visualization&#34;&gt;Visualization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.paraview.org&#34;&gt;ParaView&lt;/a&gt; - Multi-platform data analysis and visualization application based on VTK.
+(C++, BSD, &lt;a href=&#34;https://gitlab.kitware.com/paraview/paraview&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vtk.org/&#34;&gt;VTK&lt;/a&gt; - Process images and create 3D computer graphics.
+(C++, BSD, &lt;a href=&#34;https://gitlab.kitware.com/vtk/vtk&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34;&gt;Mayavi&lt;/a&gt; - 3D scientific data visualization and plotting in Python.
+(Python, BSD, &lt;a href=&#34;https://github.com/enthought/mayavi&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://polyscope.run/&#34;&gt;Polyscope&lt;/a&gt; - Viewer and user interface for 3D geometry processing.
+(C++, MIT, &lt;a href=&#34;https://github.com/nmwsharp/polyscope&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.pyvista.org/&#34;&gt;PyVista&lt;/a&gt; - 3D plotting and mesh analysis through a streamlined interface for VTK.
+(Python, MIT, &lt;a href=&#34;https://github.com/pyvista/pyvista&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vedo.embl.es/&#34;&gt;vedo&lt;/a&gt; - Library for scientific analysis and visualization of 3D objects based on VTK.
+(Python, MIT, &lt;a href=&#34;https://github.com/marcomusy/vedo&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yt-project.org/&#34;&gt;yt&lt;/a&gt; - Toolkit for analysis and visualization of volumetric data.
+(Python, BSD, &lt;a href=&#34;https://github.com/yt-project/yt&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://f3d.app/&#34;&gt;F3D&lt;/a&gt; - Cross-platform, fast, and minimalist 3D viewer with scientific visualization tools.
+(C++, BSD, &lt;a href=&#34;https://github.com/f3d-app/f3d&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://topology-tool-kit.github.io/&#34;&gt;TTK&lt;/a&gt; - Topological data analysis and visualization.
+(C++/Python, BSD, &lt;a href=&#34;https://github.com/topology-tool-kit/ttk&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ABRG-Models/morphologica&#34;&gt;morphologica&lt;/a&gt; - Header-only, modern OpenGL code to visualize numerical simulations at runtime. (C++, Apache 2.0, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;medical-image-computing&#34;&gt;Medical image computing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://itk.org/&#34;&gt;ITK&lt;/a&gt; - Spatially-oriented architecture for processing, segmentation, and registration of scientific images in two, three, or more dimensions. (C++, Apache-2, &lt;a href=&#34;https://github.com/InsightSoftwareConsortium/ITK&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mitk.org/wiki/The_Medical_Imaging_Interaction_Toolkit_(MITK)&#34;&gt;MITK&lt;/a&gt; - Software for the development of interactive medical image processing software (C++, BSD-3-clause, &lt;a href=&#34;https://github.com/MITK/MITK&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AOT-AG/DicomToMesh&#34;&gt;DicomToMesh&lt;/a&gt; - converts DICOM to an stl&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://simvascular.github.io/index.html&#34;&gt;SimVascular&lt;/a&gt; - Simulations on vessels (C++, GNU, &lt;a href=&#34;https://github.com/SimVascular/SimVascular&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vmtk.org/&#34;&gt;vmkt&lt;/a&gt; - Vascular modelling toolkit (C/C++, BSD, &lt;a href=&#34;https://github.com/vmtk/vmtk&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://febio.org/&#34;&gt;FeBio&lt;/a&gt; finite elements for biological tissue (C++, MIT, &lt;a href=&#34;https://github.com/febiosoftware/FEBio&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://iso2mesh.sourceforge.net/cgi-bin/index.cgi&#34;&gt;Iso2Mesh&lt;/a&gt; - a 3D surface and volumetric mesh generator for MATLAB/Octave (Matlab, GPL, &lt;a href=&#34;https://github.com/fangq/iso2mesh&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;platforms&#34;&gt;Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slicer.org/&#34;&gt;Slicer3D&lt;/a&gt; - Visualization, processing, segmentation, registration, and analysis of medical, biomedical, and other 3D images and meshes; and planning and navigating image-guided procedures. (C++, BSD-like, &lt;a href=&#34;https://github.com/Slicer/Slicer&#34;&gt;GitHub&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slicerigt.org/wp/&#34;&gt;SlicerIGT&lt;/a&gt; - Modules supporting image-guided interventions in 3D Slicer. (C++, BSD-3-clause, &lt;a href=&#34;https://github.com/SlicerIGT&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MITK Workbench - platform for MITK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;io&#34;&gt;I/O&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rapidxml.sourceforge.net/&#34;&gt;rapidxml&lt;/a&gt; - handling of xml in C++ (C++, SourceForge)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.boost.org/doc/libs/1_81_0/doc/html/property_tree.html&#34;&gt;Boost Property Tree&lt;/a&gt; - provides a data structure that stores an arbitrarily deeply nested tree of values, indexed at each level by some key (C++, Boost, &lt;a href=&#34;https://github.com/boostorg/property_tree&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://json.nlohmann.me/&#34;&gt;json&lt;/a&gt; - json for modern C++ (C++, MIT, &lt;a href=&#34;https://github.com/nlohmann/json&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pydicom.github.io/pydicom/dev&#34;&gt;pydicom&lt;/a&gt; - Read, modify and write DICOM files with python code (Python, MIT, &lt;a href=&#34;https://github.com/pydicom/pydicom&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openigtlink.org/&#34;&gt;OpenIGTLink&lt;/a&gt; - (C/C++, BSD-3-clause, &lt;a href=&#34;https://github.com/openigtlink/OpenIGTLink&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;odes&#34;&gt;ODEs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.boost.org/doc/libs/1_81_0/libs/numeric/odeint/doc/html/index.html&#34;&gt;Boost OdeInt&lt;/a&gt; - A library for solving initial value problems (IVP) of ordinary differential equations. (C++, Boost, &lt;a href=&#34;https://github.com/boostorg/odeint&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gpus&#34;&gt;GPUs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;OpenCL&lt;/a&gt; - GPGPU language (&lt;a href=&#34;https://github.com/KhronosGroup/OpenCL-Headers&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://boostorg.github.io/compute/&#34;&gt;Boost Compute&lt;/a&gt; - A C++ interface to multi-core CPU and GPGPU computing platforms based on OpenCL. (C++, Boost, &lt;a href=&#34;https://github.com/boostorg/compute&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/CNugteren/CLBlast&#34;&gt;CLBlast&lt;/a&gt; - OpenCL BLAS library written in C++11 (C++, Apache-2, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arrayfire.com/&#34;&gt;arrayfire&lt;/a&gt; - A general purpose GPU library (C++, BSD-3,&lt;a href=&#34;https://github.com/arrayfire/arrayfire&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://viennacl.sourceforge.net/&#34;&gt;viennaCL&lt;/a&gt; - Open-source linear algebra library for computations on many-core architectures (C++, GNU, &lt;a href=&#34;https://github.com/viennacl/viennacl-dev&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;SyCL&lt;/li&gt;
+&lt;li&gt;HIP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solvers&#34;&gt;Solvers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://computing.llnl.gov/projects/sundials&#34;&gt;Sundials&lt;/a&gt; - SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. (C/C++/Fortran, BSD-3, &lt;a href=&#34;https://github.com/LLNL/sundials&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://icl.utk.edu/slate/&#34;&gt;Slate&lt;/a&gt; - dense linear algebra for HPC (C++, BSD-3, &lt;a href=&#34;https://github.com/icl-utk-edu/slate&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SciML/diffeqpy&#34;&gt;diffeqpy&lt;/a&gt; - Python wrapper for DifferentialEquations.jl (Python/Julia, MIT, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wave-propagation&#34;&gt;Wave propagation&lt;/h2&gt;
+&lt;p&gt;The Focused Ultrasound Foundation provides a set of open-source tools for modelling and validation &lt;a href=&#34;https://www.fusfoundation.org/for-researchers/open-access-technical-tools/#simulation&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stanfordnqp/jaxwell&#34;&gt;jaxwell&lt;/a&gt; - An iterative solver for solving the finite-difference frequency-domain Maxwell equations on NVIDIA GPUs. (Python, GPL-3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mit.edu/~wsshin/fd3d.html&#34;&gt;fd3d&lt;/a&gt; - Solve the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, using an iterative methods to avoid the large memory requirement of direct methods for 3D problems. (C, &lt;a href=&#34;https://github.com/wsshin/fd3d&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mit.edu/~wsshin/maxwellfdfd.html&#34;&gt;Maxwellfdfd&lt;/a&gt; - Solves the frequency-domain Maxwell&amp;rsquo;s equations (Matlab, &lt;a href=&#34;https://github.com/wsshin/maxwellfdfd&#34;&gt;GitHub&lt;/a&gt;) -&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zhaonat/py-maxwell-fd3d&#34;&gt;py-maxwell-fd3d&lt;/a&gt; - Solve the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, with direct and iterative methods (python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bempp.com/&#34;&gt;bempp&lt;/a&gt; - open-source computational boundary element platform to solve electrostatic, acoustic and electromagnetic problems. (Python, MIT, &lt;a href=&#34;https://github.com/bempp&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ucl-bug.github.io/jwave&#34;&gt;jwave&lt;/a&gt; - k-Wave in JAX. (Python, LGPL-3, &lt;a href=&#34;https://github.com/ucl-bug/jwave&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jsoneson/HITU_Simulator&#34;&gt;HITU_simulator&lt;/a&gt; - A nonlinear axisymmetric beamer simulator. (Matlab, GPL-3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fusfoundation.org/for-researchers/resources/kranion/&#34;&gt;Kranion&lt;/a&gt; - interactive transcranial focused ultrasound visualization system (java, MIT, &lt;a href=&#34;https://github.com/jws2f/Kranion&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.egr.msu.edu/~fultras-web/&#34;&gt;Focus&lt;/a&gt; - Fast nearfield method (Matlab)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://m-sound.github.io/mSOUND/home&#34;&gt;mSound&lt;/a&gt; - Solves Westervelt equation by computing multiple reflections (Matlab, GNU, &lt;a href=&#34;https://github.com/m-SOUND/mSOUND&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;AberSim - No longer maintained/publically available.&lt;/li&gt;
+&lt;li&gt;Bergen - No longer maintained/publically available.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://field-ii.dk/&#34;&gt;FieldII&lt;/a&gt; - Diagnostic simulator (Matlab, MIT)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://limu.msu.ru/product/3555/home?language=en&#34;&gt;Beam&lt;/a&gt; - 3D nonlinear continuous wave simulator (Matlab/Fortran )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.stride.codes/&#34;&gt;Stride&lt;/a&gt; - modelling and optimisation framework for medical ultrasound (python, AGPL-3, &lt;a href=&#34;https://github.com/trustimaging/stride&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ProteusMRIgHIFU/BabelViscoFDTD&#34;&gt;BabelBrain&lt;/a&gt; - FDTD of viscoelastic equation using a staggered grid arrangement with support for GPU and CPU backends (C++/OpenCL, BSD-3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rvelseg/FiVoNAGI&#34;&gt;FiVoNAGI&lt;/a&gt; - Finite volume nonlinear acoustics GPU implementation in 2D (C++/Cuda, BSD, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;physics-informed-neural-networks&#34;&gt;Physics-informed neural networks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sciml.ai/&#34;&gt;SciML&lt;/a&gt; - Website for open source software for scientific machine learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sbml&#34;&gt;SBML&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sbml.org/software/libsbml&#34;&gt;sbml&lt;/a&gt; - Native library for reading, writing and manipulating files and data streams containing the Systems Biology Markup Language (C/C++/C#/Java/JavaScript/MATLAB/Perl/PHP/Python/R/Ruby, LGPL-2, &lt;a href=&#34;https://github.com/sbmlteam/libsbml&#34;&gt;GitHub&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://mathematical-tours.github.io/&#34;&gt;Mathematical Tours&lt;/a&gt; - Mathematical tours of data science.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.numerical-tours.com/&#34;&gt;Numerical Tours&lt;/a&gt; - Numerical tours of data science.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34;&gt;heffte&lt;/a&gt; - Highly Efficient FFT for Exascale (C++, BSD-3, &lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34;&gt;GitHub&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;other-libraries-and-tools&#34;&gt;Other libraries and tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fftw.org&#34;&gt;FFTW&lt;/a&gt; - Discrete Fourier transforms in one or more dimensions, of arbitrary input size, real and complex.
+(C, GPL2, &lt;a href=&#34;https://github.com/FFTW/fftw3&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.qhull.org&#34;&gt;Qhull&lt;/a&gt; - Convex hull, Delaunay triangulation, Voronoi diagram, halfspace intersection about a point, etc.
+(C/C++, &lt;a href=&#34;http://www.qhull.org/COPYING.txt&#34;&gt;custom open source license&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/qhull/qhull/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/gsl/&#34;&gt;GSL&lt;/a&gt; - Random number generators, special functions, and least-squares fitting etc.
+(C/C++, GPL 3, &lt;a href=&#34;https://savannah.gnu.org/projects/gsl&#34;&gt;Savannah&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openfoam.com&#34;&gt;OpenFOAM&lt;/a&gt; - Free, open source CFD (computational fluid dynamics) software.
+(C++, GPL 3, &lt;a href=&#34;https://github.com/OpenFOAM/OpenFOAM-dev&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sigma-py/quadpy&#34;&gt;quadpy&lt;/a&gt; - Numerical integration (quadrature, cubature) in Python.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ctcms.nist.gov/fipy/&#34;&gt;FiPy&lt;/a&gt; - Finite-volume PDE solver.
+(Python, &lt;a href=&#34;https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications&#34;&gt;custom open-source
+license&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/usnistgov/fipy&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sigma-py/accupy&#34;&gt;accupy&lt;/a&gt; - Accurate sums and dot products for Python.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slepc.upv.es&#34;&gt;SLEPc&lt;/a&gt; - Scalable Library for Eigenvalue Problem Computations.
+(C, 2-clause BSD, &lt;a href=&#34;https://gitlab.com/slepc/slepc&#34;&gt;GitLab&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.chebfun.org/&#34;&gt;Chebfun&lt;/a&gt; - Computing with functions to about 15-digit accuracy.
+(MATLAB, BSD, &lt;a href=&#34;https://github.com/chebfun/chebfun&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pymor.org/&#34;&gt;pyMOR&lt;/a&gt; - Model Order Reduction with Python.
+(Python, 2-clause BSD, &lt;a href=&#34;https://github.com/pymor/pymor/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cvxpy.org/&#34;&gt;cvxpy&lt;/a&gt; - Modeling language for convex optimization problems.
+(Python, Apache 2.0, &lt;a href=&#34;https://github.com/cvxpy/cvxpy&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pywavelets.readthedocs.io/en/latest/&#34;&gt;PyWavelets&lt;/a&gt; - Wavelet transforms in Python.
+(Python, MIT, &lt;a href=&#34;https://github.com/PyWavelets/pywt&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www-user.tu-chemnitz.de/~potts/nfft/&#34;&gt;NFFT&lt;/a&gt; - Nonequispaced fast Fourier transform.
+(C/MATLAB, GPL 2, &lt;a href=&#34;https://github.com/NFFT/nfft&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://precice.org/&#34;&gt;preCICE&lt;/a&gt; - Coupling library for partitioned multi-physics simulations (FSI, CHT, and more).
+(C++, LGPL 3, &lt;a href=&#34;https://github.com/precice/&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sigma-py/orthopy&#34;&gt;orthopy&lt;/a&gt; - Compute orthogonal polynomials efficiently.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pygam.readthedocs.io/en/latest/&#34;&gt;pyGAM&lt;/a&gt; - Generalized Additive Models in Python.
+(Python, Apache 2.0, &lt;a href=&#34;https://github.com/dswah/pyGAM&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dedalus-project.org/&#34;&gt;Dedalus&lt;/a&gt; - Solve partial differential equations with spectral methods.
+(Python, GPL 3, &lt;a href=&#34;https://github.com/DedalusProject/dedalus&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://esa.github.io/pygmo/&#34;&gt;PyGMO&lt;/a&gt; - Massively parallel optimization.
+(Python/C++, MPL 2, &lt;a href=&#34;https://github.com/esa/pygmo2&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shenfun.readthedocs.io/en/latest/&#34;&gt;shenfun&lt;/a&gt; - High-performance Python library for the spectral Galerkin method.
+(Python, BSD-2, &lt;a href=&#34;https://github.com/spectralDNS/shenfun&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mathLab/PyDMD&#34;&gt;PyDMD&lt;/a&gt; - Dynamic Mode Decomposition (DMD) in Python.
+(Python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hpddm/hpddm&#34;&gt;HPDDM&lt;/a&gt; - High-performance unified framework for domain decomposition methods.
+(C++, LGPL 3, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;community&#34;&gt;Community&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://scicomp.stackexchange.com/&#34;&gt;SciComp StackExchange&lt;/a&gt; - Computational Science on the StackExchange network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.math.colostate.edu/~bangerth/videos.html&#34;&gt;Wolfgang Bangerth&amp;rsquo;s video class&lt;/a&gt; - MATH 676: Finite element methods in scientific computing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nhigham.com/&#34;&gt;Nick Higham&amp;rsquo;s blog&lt;/a&gt; - Mostly on MATLAB, general computing advice.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://people.maths.ox.ac.uk/trefethen/videos.html&#34;&gt;Nick Trefethen&amp;rsquo;s Video Lectures&lt;/a&gt; - 36 video lectures on approximation theory/practice and scientific computing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.johndcook.com/blog/&#34;&gt;John D. Cook&amp;rsquo;s blog&lt;/a&gt; - Feats of scientific computing.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://netlib.org/utk/people/JackDongarra/la-sw.html&#34;&gt;Jack Dongarra&amp;rsquo;s software list&lt;/a&gt; - List of freely available software for the solution of linear algebra problems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://netlib.org/na-digest-html/&#34;&gt;NA Digest&lt;/a&gt; - Collection of articles on topics related to numerical analysis and those who practice it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- markdown-link-check-disable --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/gabrielpeyre&#34;&gt;Gabriel Peyré on Twitter&lt;/a&gt; - One tweet a day on computational mathematics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- markdown-link-check-enable --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discord.com/invite/hnTJ5MRX2Y&#34;&gt;Discord: Numerical Software&lt;/a&gt; - Discord messaging server on numerical software.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A novel concept of transperineal focused ultrasound transducer for prostate cancer local deep hyperthermia treatments</title>
+      <link>https://example.com/publication/guillemin2022nct/</link>
+      <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guillemin2022nct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model</title>
+      <link>https://example.com/publication/neizert2022tav/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/neizert2022tav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis</title>
+      <link>https://example.com/publication/heimes2022set/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/heimes2022set/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pyroelectric ultrasound sensor model: directional response</title>
+      <link>https://example.com/publication/kaupinmaki2020pus/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/kaupinmaki2020pus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep learning for ultrasound image formation: CUBDL evaluation framework and open datasets</title>
+      <link>https://example.com/publication/hyun2021dlu/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/hyun2021dlu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving image quality of single plane wave ultrasound via deep learning based channel compounding</title>
+      <link>https://example.com/publication/rothluebbers2020iiq/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/rothluebbers2020iiq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building confidence in digital health through metrology</title>
+      <link>https://example.com/publication/smith2020bcd/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/smith2020bcd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numerical and experimental study of mechanisms involved in boiling histotripsy</title>
+      <link>https://example.com/publication/pahk2017nes/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/pahk2017nes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reducing uncertainties for spatial averaging at high frequencies</title>
+      <link>https://example.com/publication/sinden2017rus/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2017rus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dosimetry implications for correct ultrasound dose deposition: uncertainties in descriptors, planning and treatment delivery</title>
+      <link>https://example.com/publication/sinden2014dic/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2014dic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Approximations for acoustically excited bubble cluster dynamics</title>
+      <link>https://example.com/publication/sinden2012aae/</link>
+      <pubDate>Fri, 09 Mar 2012 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2012aae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The buckling of magneto-strictive Cosserat rods</title>
+      <link>https://example.com/publication/sinden2011bmc/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2011bmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation</title>
+      <link>https://example.com/publication/vanderheijden2011ltc/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/vanderheijden2011ltc/</guid>
+      <description>&lt;!--
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+
+Supplementary notes can be added here.
+
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The effects of nonlinear wave propagation on the stability of inertial cavitation</title>
+      <link>https://example.com/publication/sinden2009enw/</link>
+      <pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2009enw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrability, Localisation and Bifurcation of an Elastic Conducting Rod in a Uniform Magnetic Field</title>
+      <link>https://example.com/publication/thesis/</link>
+      <pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial chaos of an extensible conducting rod in a uniform magnetic field</title>
+      <link>https://example.com/publication/sinden2009sce/</link>
+      <pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2009sce/</guid>
+      <description>&lt;p&gt;A preprint can be found on the &lt;a href=&#34;https://arxiv.org/abs/0905.1309&#34;&gt;arxiv&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrability of a conducting elastic rod in a magnetic field</title>
+      <link>https://example.com/publication/sinden2008ice/</link>
+      <pubDate>Fri, 20 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sinden2008ice/</guid>
+      <description>&lt;p&gt;A preprint can be found on the &lt;a href=&#34;https://arxiv.org/abs/0708.1114&#34;&gt;arxiv&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

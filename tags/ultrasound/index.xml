@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ultrasound | Hugo Academic CV Theme</title>
+    <link>https://example.com/tags/ultrasound/</link>
+      <atom:link href="https://example.com/tags/ultrasound/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ultrasound</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Ultrasound</title>
+      <link>https://example.com/tags/ultrasound/</link>
+    </image>
+    
+    <item>
+      <title>CUBDL: Challenge on Ultrasound Beamforming with Deep Learning</title>
+      <link>https://example.com/project/cubdl/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/cubdl/</guid>
+      <description>&lt;h2 id=&#34;challenge-on-ultrasound-beamforming-with-deep-learning&#34;&gt;Challenge on Ultrasound Beamforming with Deep Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Details can be found at the organisers website &lt;a href=&#34;https://cubdl.jhu.edu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Award is &lt;a href=&#34;uploads/Challenge-mevis-team.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AEGEUS</title>
+      <link>https://example.com/project/aegeus/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/aegeus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Factors for Validation of Measurement-Based Simulation</title>
+      <link>https://example.com/talks/asa_virtual/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/talks/asa_virtual/</guid>
+      <description>&lt;!-- &lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; December 8 2020 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;a href=&#34;https://example.com/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
+--&gt;
+&lt;!--- 
+The slides can be found [[here]](/presentations/virtual_asa.pdf).
+
+The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/asa_virtual/&#34;&gt;[here]&lt;/a&gt;
+--&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
