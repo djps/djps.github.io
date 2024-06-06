@@ -1,0 +1,31 @@
+---
+title: 'Resources_0'
+
+type: landing
+
+sections:
+  - block: accomplishments
+    content:
+      title: Resources_1
+      subtitle: 'Code'
+      text: 'Some text'
+      # Date format: https://wowchemy.com/docs/customization/#date-format
+      date_format: Jan 2006
+      # Accomplishments.
+      #   Add/remove as many `items` blocks below as you like.
+      #   `title`, `organization`, and `date_start` are the required parameters.
+      #   Leave other parameters empty if not required.
+      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      items:
+        - title: pyKZK
+          organization: github
+          date_start: '2021-01-25'
+          description: |2-
+            Python implementation of version 2 of the FDA axisymmetric KZK HITU simulator
+          organization_url: https://github.com/djps/pyKZK
+          date_end: ''
+          url: https://github.com/djps/pyKZK
+          icon: trace
+    design:
+      columns: '2'
+---
