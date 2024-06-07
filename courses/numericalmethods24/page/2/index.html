@@ -1,0 +1,1394 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: June 7, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="David Sinden" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Numerical Methods JTMS-MAT-13 -- taught at [Constructor University](https://constructor.university/), Bremen 2024" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://example.com/courses/numericalmethods24/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/emerald.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+    
+    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+<meta name="google-site-verification" content="92qv2vMWAwD2LpDfnEcBVItt_GrB7dxSosDEHr-WLuE" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="alternate" href="/courses/numericalmethods24/index.xml" type="application/rss+xml" title="Hugo Academic CV Theme" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://example.com/courses/numericalmethods24/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@david_sinden" />
+    <meta property="twitter:creator" content="@david_sinden" />
+  
+  <meta property="og:site_name" content="Hugo Academic CV Theme" />
+  <meta property="og:url" content="https://example.com/courses/numericalmethods24/" />
+  <meta property="og:title" content="JTMS-MAT-13: Numerical Methods | Hugo Academic CV Theme" />
+  <meta property="og:description" content="Numerical Methods JTMS-MAT-13 -- taught at [Constructor University](https://constructor.university/), Bremen 2024" /><meta property="og:image" content="https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2023-11-14T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+
+  <title>JTMS-MAT-13: Numerical Methods | Hugo Academic CV Theme</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+
+<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      baseUrl: window.hbb.pagefind.baseUrl,
+      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+  
+  
+  
+  
+  <script defer src="/js/mermaid.bundle.addbbabb71331768410cfb03a610179690ff1dfd413519d34219c06a8fd39202.js" integrity="sha256-rdu6u3EzF2hBDPsDphAXlpD/Hf1BNRnTQhnAao/TkgI="></script>
+
+
+
+
+<style>
+  .markmap > svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<script>
+  window.markmap = {
+    autoLoader: {
+      manual: false,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+    },
+  };
+</script>
+
+
+<script defer src="/dist/lib/markmap/index.min.c9d7aae44c6040009be2304689eae39673e6614f1a92d8f4a69f581bed004b9b.js" integrity="sha256-ydeq5ExgQACb4jBGierjlnPmYU8aktj0pp9YG&#43;0AS5s="></script>
+
+
+
+
+  
+  
+  <link type="text/css" rel="stylesheet" href="/dist/lib/katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr&#43;QR0SQDNfgglgtcM=" />
+  
+  
+  <script defer src="/dist/lib/katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js" integrity="sha256-3ISyluw&#43;iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script>
+  
+  
+  
+  
+  <script defer src="/js/katex-renderer.6579ec9683211cfb952064aedf3a3baea5eeb17a061775b32b70917474637c80.js" integrity="sha256-ZXnsloMhHPuVIGSu3zo7rqXusXoGF3WzK3CRdHRjfIA="></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+      
+    
+  
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Hugo Academic CV Theme">
+        Your Name
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Bio</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/experience/"
+        >Experience</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/projects/"
+        >Projects</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">JTMS-MAT-13: Numerical Methods</h1>
+    <p>This site will be the primary source of course information.</p>
+<h2 id="lectures">Lectures</h2>
+<p>Lectures will take place in spring 2024 on Wednesdays and Thursdays at 14:15 in RLH-172 Conrad Naber Lecture Hall.</p>
+<p>The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.</p>
+<!-- 
+
+
+
+
+  
+    
+  
+
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+<span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+  <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+</span>
+  <span class="dark:text-neutral-300">The lecture on Wednesday 8 May will instead take place on <strong>Friday 10 May at 14:15 at Student Activity Center - Hall 3</strong></span>
+</div>
+-->
+<p>All information regarding scheduling, as well as a link to this site, can be found on CampusNet.</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+<span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+  <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+</span>
+  <span class="dark:text-neutral-300">A tutorial will be held on teams on Thursdays at 20:45.</span>
+</div>
+<!-- The teaching associates  -->
+<p>Course notes will be uploaded <a href="notes/">here</a>.</p>
+<h2 id="intended-learning-outcomes">Intended Learning Outcomes</h2>
+<p>By the end of the module, students will be able to:</p>
+<ul>
+<li>describe the basic principles of discretization which are used in the numerical treatment of continuous problems;</li>
+<li>command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;</li>
+<li>recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;</li>
+<li>implement simple numerical algorithms in a high level programming language;</li>
+<li>understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.</li>
+</ul>
+<h2 id="knowledge-abilities-or-skills">Knowledge, Abilities, or Skills</h2>
+<ul>
+<li>
+<p>Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations</p>
+</li>
+<li>
+<p>Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations</p>
+</li>
+<li>
+<p>Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.</p>
+</li>
+</ul>
+<h2 id="recommendations-for-preparation">Recommendations for Preparation</h2>
+<p>Taking &ldquo;<em>Calculus and Elements of Linear Algebra II</em>&rdquo; (CTMS-MAT-10) before taking this module is recommended, but not a pre-requisite. A thorough review of &ldquo;<em>Calculus and Elements of Linear Algebra</em>&rdquo; (CTMS-MAT-09), with emphasis on the topics listed as &ldquo;Content and Educational Aims&rdquo; is recommended.</p>
+<h2 id="usability-and-relationship-to-other-modules">Usability and Relationship to other Modules</h2>
+<ul>
+<li>The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).</li>
+<li>This module is a co-recommendation for the module &ldquo;<em>Applied Dynamical Systems Lab</em>&rdquo; (CA-S-MAT-810) in which the actual implementation in a high level programming language of the learned methods will be covered.</li>
+<li>The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).</li>
+<li>Mandatory for ECE, IMS, MATH, PHY.</li>
+<li>Elective for all other study programs.</li>
+</ul>
+<h2 id="text-books">Text Books</h2>
+<p>There is no primary or required book, but there are many suitable books, such as:</p>
+<ul>
+<li>&ldquo;<em>An Introduction to Numerical Methods and Analysis</em>&rdquo; - J. F. Epperson (2013) Wiley 2nd Edition.</li>
+<li>&ldquo;<em>Numerical Analysis</em>&rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition.</li>
+</ul>
+<h2 id="course-outline">Course Outline</h2>
+<p>The following topics will be covered:</p>
+<ul>
+<li>
+<p>Taylor series</p>
+</li>
+<li>
+<p>number representations</p>
+</li>
+<li>
+<p>Gaussian elimination</p>
+</li>
+<li>
+<p>LU decomposition</p>
+</li>
+<li>
+<p>Cholesky decomposition</p>
+</li>
+<li>
+<p>iterative methods</p>
+</li>
+<li>
+<p>bisection method</p>
+</li>
+<li>
+<p>Newton&rsquo;s method</p>
+</li>
+<li>
+<p>secant method</p>
+</li>
+<li>
+<p>polynomial interpolation</p>
+</li>
+<li>
+<p>Aitken&rsquo;s algorithm</p>
+</li>
+<li>
+<p>Lagrange interpolation</p>
+</li>
+<li>
+<p>Newton interpolation</p>
+</li>
+<li>
+<p>piecewise interpolation</p>
+</li>
+<li>
+<p>spline interpolation</p>
+</li>
+<li>
+<p>$b$-splines</p>
+</li>
+<li>
+<p>least squares approximation</p>
+</li>
+<li>
+<p>polynomial regression</p>
+</li>
+<li>
+<p>difference schemes</p>
+</li>
+<li>
+<p>Richardson extrapolation</p>
+</li>
+<li>
+<p>quadrature rules</p>
+</li>
+<li>
+<p>Monte Carlo integration</p>
+</li>
+<li>
+<p>time stepping schemes for ordinary differential equations</p>
+</li>
+<li>
+<p>Runge-Kutta schemes</p>
+</li>
+<li>
+<p>finite difference method for partial differential equations</p>
+</li>
+</ul>
+<!--  * Hermite interpolation
+      * Bezier curves
+      * De Casteljau's algorithm -->
+<h3 id="itinerary">Itinerary</h3>
+<p>Provisionally, the course will run as follows</p>
+<div class="mermaid">gantt
+  dateFormat   MM-DD
+  axisFormat   %m-%d
+  todayMarker  display:none
+
+  title Provisional Schedule
+
+  section  Errors
+  Taylor Series                    :a1,  02-01, 1w
+  Number Representations           :a1b, 02-08, 1w
+
+  section  Equations
+  Linear Equations 1               :a2,  02-14, 3w
+  Nonlinear Equations              :a2b, 03-02, 1w
+  Linear Equations 2               :a5,  04-17, 3w
+
+  section  Approximations
+  Interpolation                    :a3,  03-07, 2w
+  Integration                      :a4,  04-03, 2w
+
+  section  Solutions
+  Ordinary Differential Equations  :a6,  05-02, 2w
+
+  section  Summary
+  Summary                          :active, a7,  05-15, 1w
+
+  click a1  href "https://djps.github.io/courses/numericalmethods24/part-1/taylor/"
+  click a1b href "https://djps.github.io/courses/numericalmethods24/part-1/number-representations/"
+  click a2  href "https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#direct-methods"
+  click a2b href "https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/"
+  click a3  href "https://djps.github.io/courses/numericalmethods24/part-2/interpolation/"
+  click a4  href "https://djps.github.io/courses/numericalmethods24/part-2/integration/"
+  click a5  href "https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#indirect-methods"
+  click a6  href "https://djps.github.io/courses/numericalmethods24/part-3/odes/"
+</div>
+<!-- <pre class="mermaid">
+  gantt
+    dateFormat  YYYY-MM-DD
+
+    section Clickable
+    Visit mermaidjs         :active, cl1, 2014-01-07, 3d
+    Print arguments         :cl2, after cl1, 3d
+    Print task              :cl3, after cl2, 3d
+
+    click cl1 href "https://mermaidjs.github.io/"
+    click cl2 call printArguments("test1", "test2", test3)
+    click cl3 call printTask()
+</pre>
+
+<script>
+  const printArguments = function (arg1, arg2, arg3) {
+    alert('printArguments called with arguments: ' + arg1 + ', ' + arg2 + ', ' + arg3);
+  };
+  const printTask = function (taskId) {
+    alert('taskId: ' + taskId);
+  };
+  const config = {
+    startOnLoad: true,
+    securityLevel: 'loose',
+    theme: 'forest',
+  };
+  window.mermaid.initialize(config); 
+</script> -->
+<h3 id="structure">Structure</h3>
+<p>The course content has the following structure:</p>
+<div class="markmap" style="height: 500px;">
+
+<pre>- Numerical Methods
+  - Errors
+    - [Taylor Series](/courses/numericalmethods24/part-1/taylor/)
+    - [Number Representations](courses/numericalmethods24/part-1/number-representations/)
+  - Algebraic Equations
+    - Linear Equations
+      - [Direct Methods](/courses/numericalmethods24/part-1/linear-equations/#direct-methods)
+        - Gaussian Elimination
+        - Partial Pivoting
+        - LU Decomposition
+        - Cholesky Decomposition
+      - [Iterative Methods](/courses/numericalmethods24/part-1/linear-equations/#indirect-methods)
+        - Jacobi
+        - Gauss-Seidel
+        - SOR
+    - [Nonlinear Equations](/courses/numericalmethods24/part-1/nonlinear-equations/)
+      - Bisection Method
+      - Newton Method
+      - Secant Method
+  - Approximations
+    - [Interpolation](/courses/numericalmethods24/part-2/interpolation/)
+      - Polynomial
+      - Lagrange
+      - Newton
+      - $b$-splines
+    - [Integration](/courses/numericalmethods24/part-2/integration/#numerical-integration)
+      - Simpson
+      - Trapezium
+      - Romberg Algorithm
+      - Gaussian Quadrature
+  - [Differential Equations](/courses/numericalmethods24/part-3/odes/)
+    - Difference Schemes
+    - Ordinary Differential Equations
+    - Partial Differential Equations</pre>
+</div>
+
+<h2 id="assessment">Assessment</h2>
+<br>
+<br>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Examination Type:</td>
+<td>Module examination</td>
+</tr>
+<tr>
+<td>Assessment Type:</td>
+<td>Written examination</td>
+</tr>
+<tr>
+<td>Scope:</td>
+<td>All intended learning outcomes of this module</td>
+</tr>
+<tr>
+<td>Duration:</td>
+<td>120 min</td>
+</tr>
+<tr>
+<td>Weight:</td>
+<td>100%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+<span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+  <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+</span>
+  <span class="dark:text-neutral-300">The exam will take place on <strong>Thursday 23 May between 12:30 and 14:30 in SCC - Hall 1-2 and 3-4</strong>.</span>
+</div>
+<p><em>No</em> supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.</p>
+<p>Sample questions and solutions can be found <a href="exam">here</a>.</p>
+<p>By submitting homework assignments, via <del>Moodle</del> <em>Teams</em>, you can improve this grade by up to 0.66 points, as bonus achievements.</p>
+<p>More details about assignments will be announced in class, but they will be posted <a href="assignments">here</a>.</p>
+<p>Late submission will not be possible without a valid reason.</p>
+<!--
+1 Feb
+7, 8
+14, 15
+21, 22
+28, 29
+6, 7 March
+13, 14
+20, 21
+3, 4 April
+10, 11
+17, 18
+24, 25 - linear algebra
+29 - interpolation
+2 May - odes
+10 May - odes
+15 May  revision
+
+https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
+https://francisbach.com/richardson-extrapolation/
+https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
+-->
+
+  </article>
+</div>
+
+
+
+
+<div class="flex flex-col items-center">
+
+  <div class="container max-w-[65ch] mx-auto bg-white dark:bg-zinc-900 rounded-xl border-gray-100 dark:border-gray-700 border shadow-md overflow-hidden my-5">
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+<a href="/courses/numericalmethods24/part1/number-representations/"  class="mb-5">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0 overflow-hidden">
+      
+    </div>
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">Number Representations</div>
+      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+        Number representations</p>
+      <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Jun 1, 2021</p>
+    </div>
+  </div>
+</a>
+
+  
+
+  </div>
+
+
+  
+<nav class="mt-1">
+  <ul class="container mx-auto flex justify-center">
+    
+    <li class="p-5"><a class="page-link" href="/courses/numericalmethods24/">&laquo; Previous</a></li>
+    
+    
+  </ul>
+</nav>
+
+
+
+</div>
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by text-center">
+    © 2024 David Sinden. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
