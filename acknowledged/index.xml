@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers in which I have been acknowledged | Hugo Academic CV Theme</title>
+    <link>https://example.com/acknowledged/</link>
+      <atom:link href="https://example.com/acknowledged/index.xml" rel="self" type="application/rss+xml" />
+    <description>Papers in which I have been acknowledged</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Papers in which I have been acknowledged</title>
+      <link>https://example.com/acknowledged/</link>
+    </image>
+    
+    <item>
+      <title>Numerical analysis of a wave equation for lossy media obeying a frequency power law</title>
+      <link>https://example.com/acknowledged/baker2022/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/acknowledged/baker2022/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
