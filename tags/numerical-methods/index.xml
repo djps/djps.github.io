@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Numerical Methods | Hugo Academic CV Theme</title>
+    <link>https://example.com/tags/numerical-methods/</link>
+      <atom:link href="https://example.com/tags/numerical-methods/index.xml" rel="self" type="application/rss+xml" />
+    <description>Numerical Methods</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Numerical Methods</title>
+      <link>https://example.com/tags/numerical-methods/</link>
+    </image>
+    
+    <item>
+      <title>Courses</title>
+      <link>https://example.com/courses/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/courses/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
