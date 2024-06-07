@@ -14,6 +14,10 @@
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part1/principles/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://example.com/courses/numericalmethods24/part1/linear-equations/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -42,6 +46,14 @@
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/</loc>
+    <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part1/iterative-methods/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://example.com/courses/numericalmethods24/assignments/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -54,12 +66,20 @@
     <lastmod>2023-02-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part2/interpolation/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://example.com/project/ehma/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/courses/math6502/</loc>
     <lastmod>2023-02-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part2/integration/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/project/comptop/</loc>
@@ -74,8 +94,24 @@
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part3/fdm/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/part3/fem/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://example.com/courses/numericalmethods24/notes/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/assignments/</loc>
+    <lastmod>2021-01-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notes/</loc>
+    <lastmod>2021-01-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/project/aegeus/</loc>
@@ -320,6 +356,30 @@
   </url><url>
     <loc>https://example.com/blog/stm/</loc>
     <lastmod>2022-06-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/lagrangeinterpolation/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/characteristicpolynomial/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/integrals/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/1dfem/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://example.com/courses/numericalanalysis22/notebooks/2dfem/</loc>
+    <lastmod>2022-06-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://example.com/tags/cosserat-theory/</loc>
