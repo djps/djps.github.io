@@ -23,7 +23,7 @@
 &lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
 &lt;a href=&#34;https://djps.github.io/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
 --&gt;
-&lt;p&gt;This page contains the talks given as part of the CIMPA Summer School on &lt;a href=&#34;https://www.cimpa.info/en/node/7226&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathematical Modelling and Numerical Simulation in Medicine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This page contains the talks given as part of the CIMPA Summer School on &lt;a href=&#34;https://www.cimpa.info/en/node/7226&#34;&gt;Mathematical Modelling and Numerical Simulation in Medicine&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The talks were given under the theme &lt;em&gt;&amp;ldquo;Examples and principles of mathematical modelling in medicine&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;microwave-ablation&#34;&gt;Microwave Ablation&lt;/h2&gt;
 &lt;p&gt;The first lecture introduces the basic principles of mathematical modelling in medicine and the typical clinical workflow for image-guided therapies.&lt;/p&gt;
@@ -51,17 +51,13 @@
     
     <item>
       <title>Annual Meeting of the Society for Thermal Medicine 2022</title>
-      <link>https://djps.github.io/blog/stm/</link>
+      <link>https://djps.github.io/post/stm/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/blog/stm/</guid>
+      <guid>https://djps.github.io/post/stm/</guid>
       <description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
-&lt;!--I hope to pad the reading time out more with this.
-
-There where some great talks though --&gt;
-&lt;p&gt;The conference site, with details on talks and schedules, can be found &lt;a href=&#34;https://virtual.oxfordabstracts.com/#/event/2827/program&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The conference homepage can be found &lt;a href=&#34;http://www.thermaltherapy.org/ebusSFTM/ANNUALMEETING/2022AnnualMeeting.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The presentation can be accessed from &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The abstract is below or &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The conference site, with details on talks and schedules, can be found &lt;a href=&#34;https://virtual.oxfordabstracts.com/#/event/2827/program&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The conference homepage can be found &lt;a href=&#34;http://www.thermaltherapy.org/ebusSFTM/ANNUALMEETING/2022AnnualMeeting.aspx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The presentation can be accessed from &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;patient-specific-modelling-of-microwave-ablation&#34;&gt;Patient-Specific Modelling of Microwave Ablation&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
 &lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
@@ -86,8 +82,10 @@ Franz Poch, Kai Lehmann, Tobias Preusser
 Society for Thermal Medicine 2022 Annual Meeting
 --&gt;
 &lt;p&gt;A recording of the talk can be found &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/stm.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;!--- 
+The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/stm.pdf&#34;&gt;[here]&lt;/a&gt;. 
+
+The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;. --&gt;
 </description>
     </item>
     

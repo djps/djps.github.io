@@ -5,35 +5,12 @@
     <link>https://djps.github.io/category/conference/</link>
       <atom:link href="https://djps.github.io/category/conference/index.xml" rel="self" type="application/rss+xml" />
     <description>Conference</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 Apr 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
       <title>Conference</title>
       <link>https://djps.github.io/category/conference/</link>
     </image>
-    
-    <item>
-      <title>Annual Meeting of the Society for Thermal Medicine 2022</title>
-      <link>https://djps.github.io/blog/stm/</link>
-      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/blog/stm/</guid>
-      <description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
-&lt;!--I hope to pad the reading time out more with this.
-
-There where some great talks though --&gt;
-&lt;p&gt;The conference site, with details on talks and schedules, can be found &lt;a href=&#34;https://virtual.oxfordabstracts.com/#/event/2827/program&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The conference homepage can be found &lt;a href=&#34;http://www.thermaltherapy.org/ebusSFTM/ANNUALMEETING/2022AnnualMeeting.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The presentation can be accessed from &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The abstract is below or &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;patient-specific-modelling-of-microwave-ablation&#34;&gt;Patient-Specific Modelling of Microwave Ablation&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
-&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
-&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays</title>
@@ -53,7 +30,7 @@ There where some great talks though --&gt;
 &lt;p&gt;The location of an optical tracker placed on the transducer head is calculated, so that the location of the treatment head location compared to the treatment plan can be verified. For ease of identifying the location of ablated regions, surface lesions can be generated automatically. From the computed position image planes which can be compared with ultrasound images are computed.&lt;/p&gt;
 &lt;p&gt;The appropriate phases can be calculated so that the acoustic intensity on the ribs is constrained using a boundary element method.  A Rayleigh integral method, is used where the acoustic window is sufficiently large, or the tolerances of the ray-tracing algorithm sufficiently strict . For a given exposure duration, the amplitudes of each element required to give either a user-defined focal peak temperature rise or a volumetric dose as a function of the full-width half maximum are calculated. Thermal calculations are performed using a parallelised alternating-direction implicit method on a structured rectilinear grid derived from the unstructured polydata sets of the surface meshes of the skin, ribs and liver.&lt;/p&gt;
 &lt;p&gt;Algorithms for motion compensation are introduced in order that motion can be exploited to enlarge the volume of the lesions treated, while still delivering a specified dose to the enlarged planning treatment volume.&lt;/p&gt;
-&lt;p&gt;The computation routines are written in python and fortran, with bindings performed with &lt;a href=&#34;https://numpy.org/doc/stable/f2py/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;f2py&lt;/code&gt;&lt;/a&gt;, graphical user interface from &lt;code&gt;wxpython&lt;/code&gt; and three-dimensional visualisation using &lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;mayavi&lt;/code&gt;&lt;/a&gt;. The &lt;code&gt;numpy&lt;/code&gt; and &lt;code&gt;mkl&lt;/code&gt; libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an &lt;code&gt;.stl&lt;/code&gt; or &lt;code&gt;.vtk&lt;/code&gt; dataset. Settings are outputted as &lt;code&gt;.xml&lt;/code&gt; data in &lt;code&gt;.html&lt;/code&gt; files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.&lt;/p&gt;
+&lt;p&gt;The computation routines are written in python and fortran, with bindings performed with &lt;a href=&#34;https://numpy.org/doc/stable/f2py/&#34;&gt;&lt;code&gt;f2py&lt;/code&gt;&lt;/a&gt;, graphical user interface from &lt;code&gt;wxpython&lt;/code&gt; and three-dimensional visualisation using &lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34;&gt;&lt;code&gt;mayavi&lt;/code&gt;&lt;/a&gt;. The &lt;code&gt;numpy&lt;/code&gt; and &lt;code&gt;mkl&lt;/code&gt; libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an &lt;code&gt;.stl&lt;/code&gt; or &lt;code&gt;.vtk&lt;/code&gt; dataset. Settings are outputted as &lt;code&gt;.xml&lt;/code&gt; data in &lt;code&gt;.html&lt;/code&gt; files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.&lt;/p&gt;
 </description>
     </item>
     
