@@ -28,13 +28,12 @@
 &lt;p&gt;Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.&lt;/p&gt;
 &lt;h2 id=&#34;well-posed-problems&#34;&gt;Well Posed Problems&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Well-Posed Problems&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Well-Posed Problems&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a solution exists,&lt;/li&gt;
 &lt;li&gt;the solution is unique,&lt;/li&gt;
@@ -42,17 +41,17 @@
 &lt;/ul&gt;
 &lt;p&gt;A problem which does not have these properties is said to be &lt;strong&gt;ill-posed&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;condition-number&#34;&gt;Condition Number&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Relative and Absolute Condition Numbers&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; of a problem is given by:
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Relative and Absolute Condition Numbers&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; of a problem is given by:
 \begin{equation}
 K ( d ) = \sup\limits_{\delta d \in \mathcal{D}} \dfrac{ \left\Vert \delta x \right\Vert / \left\Vert x \right\Vert}{\left\Vert \delta d \right\Vert / \left\Vert d \right\Vert}
 \end{equation}
@@ -60,32 +59,32 @@ if either $x=0$ or $d=0$, the &lt;strong&gt;absolute condition number&lt;/strong
 \begin{equation}
 K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Vert \delta x \right\Vert }{\left\Vert \delta d \right\Vert}
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;stability&#34;&gt;Stability&lt;/h2&gt;
 &lt;p&gt;Consider a well-posed problem, a construct a sequence of approximate solutions via a sequence of approximate solutions and data, i.e. $F_n (x_n, d_n)=0$&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Consistency&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is &lt;strong&gt;consistent&lt;/strong&gt; if
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Consistency&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is &lt;strong&gt;consistent&lt;/strong&gt; if
 \begin{equation}
 \lim\limits_{n\rightarrow\infty} F_n (x,d)  \rightarrow F(x,d).
 \end{equation}
 The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Asymptotic and Relative Condition Numbers&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Asymptotic and Relative Condition Numbers&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
 \begin{equation}
 K_n \left( d_n \right) = \sup\limits_{\delta d_n \in \mathcal{D}_n }  \dfrac{ \left\Vert \delta x_n \right\Vert /  \left\Vert x_n \right\Vert }{\left\Vert \delta d_n \right\Vert / \left\Vert d_n \right\Vert}
 \end{equation}
@@ -98,40 +97,40 @@ $$K^{\mathrm{num}} (d) = \lim \limits_{k\rightarrow \infty} \sup\limits_{n \le k
 K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \infty} \sup \limits_{n \le k} K_{n, \mathrm{abs}} \left( d_n \right).
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Convergence&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A method is &lt;strong&gt;convergent&lt;/strong&gt; if and only if:
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Convergence&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A method is &lt;strong&gt;convergent&lt;/strong&gt; if and only if:
 \begin{equation}
-\forall \varepsilon &amp;gt; 0, \quad \exists ,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
+\forall \varepsilon &amp;gt; 0, \quad \exists \,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Lax-Ritchmyer&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;A numerical algorithm converges if and only if it is consistent and stable.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Lax-Ritchmyer&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A numerical algorithm converges if and only if it is consistent and stable.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;matrix-analysis&#34;&gt;Matrix Analysis&lt;/h2&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $A \in \mathbb{R}^{n \times n}$, then&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $A \in \mathbb{R}^{n \times n}$, then&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;$\lim\limits_{k \rightarrow \infty}A^k =0 \Leftrightarrow \rho \left( A \right) &lt; 1$. Where $\rho\left(A \right)$ is the largest absolute value of the eigenvalues of $A$.  This is called the &lt;em&gt;spectral radius&lt;/em&gt;&lt;/p&gt;
@@ -151,16 +150,16 @@ where $\left\Vert \cdot \right\Vert$ is an &lt;em&gt;induced matrix norm&lt;/em&
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert &lt; 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert &lt; 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
 \begin{equation}
 \left( A + \delta A \right)\left( x + \delta x \right) = b + \delta b
 \end{equation}
@@ -168,16 +167,16 @@ for a $\delta b \in \mathbb{R}^n$, then
 \begin{equation}
 \left( A + \delta A \right)\left( x + \delta x \right) \le \dfrac{K(A)}{1- K(A) \left\Vert \delta A \right\Vert_2 / \left\Vert A \right\Vert_2} \left(\dfrac{\left\Vert \delta b \right\Vert_2}{\left\Vert b \right\Vert_2} + \dfrac{\left\Vert \delta A \right\Vert_2}{\left\Vert A \right\Vert_2} \right)
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
 \begin{equation}
 A \left( x + \delta x \right) = b + \delta b
 \end{equation}
@@ -185,16 +184,16 @@ then
 \begin{equation}
 \dfrac{1}{K(A)} \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert} \le \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le K(A) \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert}
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) &lt;1$, then the following holds
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) &lt;1$, then the following holds
 \begin{equation}
 \dfrac{\left\Vert x+ \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{1+\gamma K(A)}{1-\gamma K(A)}
 \end{equation}
@@ -202,16 +201,16 @@ and
 \begin{equation}
 \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{2\gamma K(A)}{1-\gamma K(A)}
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 &lt; 1$ and
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 &lt; 1$ and
 \begin{equation}
 \bigl\Vert A^{-1} \bigr\Vert \le \dfrac{\left\Vert C \right\Vert}{1 - \left\Vert R \right\Vert}
 \end{equation}
@@ -232,8 +231,9 @@ and, as a consequence, if $\left\Vert R \right\Vert &lt;1$ it turns out that
 \end{aligned}
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -264,43 +264,43 @@ r^{(k)} = b - A x^{(k)}
 \end{equation}
 is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Consistency&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;An iterative method is &lt;strong&gt;consistent&lt;/strong&gt; if $x=Bx +f$, or equivalently,
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Consistency&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;An iterative method is &lt;strong&gt;consistent&lt;/strong&gt; if $x=Bx +f$, or equivalently,
 \begin{equation}
 f = (I-B) A^{-1} b
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If an iterative scheme is consistent, then if and only if $\rho \left( B \right) &lt; 1$ the method will converge for any initial guess $x^{(0)}$.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If an iterative scheme is consistent, then if and only if $\rho \left( B \right) &lt; 1$ the method will converge for any initial guess $x^{(0)}$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Stationary Methods&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The formulation can be written as
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Stationary Methods&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The formulation can be written as
 \begin{equation}
 x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) .
 \end{equation}&lt;/p&gt;
 &lt;p&gt;If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be &lt;strong&gt;stationary&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;jacobi-method&#34;&gt;Jacobi Method&lt;/h2&gt;
 &lt;p&gt;The Jacobi method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
 \begin{equation}
@@ -331,56 +331,63 @@ x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1
 (D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| &gt; \sum_{j \ne i} |a_{ij}|$, the &lt;a href=&#34;#jacobi-method&#34;&gt;Jacobi&lt;/a&gt; and &lt;a href=&#34;#gauss-seidel&#34;&gt;Gauss-Seidel&lt;/a&gt; methods are convergent.&lt;/p&gt;
+&lt;p&gt;If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| &gt; \sum_{j \ne i} |a_{ij}|$, the 
+ and 
+ methods are convergent.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If $A$ and $2D-A$ are symmetric and positive definite, then the &lt;a href=&#34;#jacobi-method&#34;&gt;Jacobi method&lt;/a&gt; is convergent and the spectral radius of the iteration matrix $B$ is equal to
+&lt;p&gt;If $A$ and $2D-A$ are symmetric and positive definite, then the 
+ is convergent and the spectral radius of the iteration matrix $B$ is equal to
 \begin{equation}
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
 \end{equation}
 where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; which is induced by the vector norm $\left| x \right|_{A} = \sqrt{ x \cdot A x}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If and only if $A$ is symmetric and positive definite, the &lt;a href=&#34;#over-relaxation-of-jacobi-method&#34;&gt;Jacobi over-relaxation method&lt;/a&gt; is convergent if
+&lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
+ is convergent if
 \begin{equation}
 0 &amp;lt; \omega &amp;lt; \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
 \end{equation}&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If and only if $A$ is symmetric and positive definite, the &lt;a href=&#34;#gauss-seidel&#34;&gt;Gauss-Seidel&lt;/a&gt; method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/p&gt;
+&lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
+ method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; does not converge if either $\omega \le 0$ or $\omega \ge 2$.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, 
+ does not converge if either $\omega \le 0$ or $\omega \ge 2$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Ostrowski&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &lt; \omega &lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Ostrowski&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the 
+ method is convergent if and only if  $0 &lt; \omega &lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h2&gt;
 &lt;p&gt;Consider the function $\Phi \left( y \right) \\, : \\, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
 \begin{equation}
@@ -411,38 +418,38 @@ The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ 
 \alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} }
 \end{equation}&lt;/p&gt;
 &lt;p&gt;&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#gradient-descent&#34;&gt;gradient method&lt;/a&gt; method is convergent for any $x^{(0)}$ and
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the 
+ method is convergent for any $x^{(0)}$ and
 \begin{equation}
 \left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 If we apply a preconditioner, i.e. multiplying both sides of the linear system from the left by $P^{-1}$,&lt;/p&gt;
 &lt;h2 id=&#34;conjugate-gradient&#34;&gt;Conjugate Gradient&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Conjugate Vectors&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be &lt;strong&gt;$\mathbf{A}$-orthogonal&lt;/strong&gt; or &lt;strong&gt;conjugate&lt;/strong&gt; if $u \cdot Av=0$.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Conjugate Vectors&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be &lt;strong&gt;$\mathbf{A}$-orthogonal&lt;/strong&gt; or &lt;strong&gt;conjugate&lt;/strong&gt; if $u \cdot Av=0$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Lemma:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Choosing $p^{(k+1)}$ such that
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Lemma:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Choosing $p^{(k+1)}$ such that
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0
 \end{equation}
@@ -450,16 +457,16 @@ for $j=0, \ldots, k$ leads to
 \begin{equation}
 p^{(j)} \cdot r^{(k+1)} = 0.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Lemma:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Setting
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Lemma:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Setting
 \begin{equation}
 \beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} }
 \end{equation}
@@ -471,18 +478,20 @@ then, for $j=0, \ldots, k,$ yields
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the &lt;a href=&#34;#conjugate-gradient&#34;&gt;conjugate gradient method&lt;/a&gt; yields the exact solution of $Ax=b$ after $n$ steps.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the 
+ yields the exact solution of $Ax=b$ after $n$ steps.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -517,27 +526,26 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 &lt;li&gt;&lt;strong&gt;Spline interpolation&lt;/strong&gt;: using a set of piecewise polynomials over subintervals of the data.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a &lt;em&gt;unique&lt;/em&gt; polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a &lt;em&gt;unique&lt;/em&gt; polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
 \begin{equation}
 \Pi_n\left( x_i \right) = y_i.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;lagrange-interpolation&#34;&gt;Lagrange Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Lagrange Polynomials&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Lagrange Polynomials&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
 \begin{equation}
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
 \end{equation}&lt;/p&gt;
@@ -547,28 +555,32 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. &lt;br&gt;
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Example:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook illustrating the Lagrange polynomials can be accessed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/&#34;&gt;here&lt;/a&gt;. It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/characteristicPolynomial.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook illustrating Runge phenomenon can be accessed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/lagrangeinterpolation/&#34;&gt;here&lt;/a&gt;. It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/LagrangeInterpolation.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook illustrating the Lagrange polynomials can be accessed 
+. It can be downloaded from 
+.&lt;/p&gt;
+&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook illustrating Runge phenomenon can be accessed 
+. It can be downloaded from 
+.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.&lt;/p&gt;
 &lt;p&gt;Let $I_x$ be the smallest interval containing the nodes $x_0, x_1, \ldots x_n$ and $x$ and assume that $f \in C^{n+1}\left( I_x \right)$. Then the interpolation error at the point $x$ is defined and given by
 \begin{equation}
 \begin{aligned}
@@ -582,17 +594,17 @@ E_n(x) &amp;amp;= f(x) − \Pi_n f (x) \newline
 \omega_{n+1}(x) = \prod\limits_{i=0}^{n} \left(x - x_i \right).
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;piecewise-lagrange-interpolation&#34;&gt;Piecewise Lagrange Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;$\mathrm{L}^2$ Space&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Define the following space
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;$\mathrm{L}^2$ Space&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Define the following space
 \begin{equation}
 \mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x &amp;lt; \infty \bigr \rbrace
 \end{equation}&lt;/p&gt;
@@ -602,8 +614,9 @@ E_n(x) &amp;amp;= f(x) − \Pi_n f (x) \newline
 \end{equation}&lt;/p&gt;
 &lt;p&gt;This defines a &lt;em&gt;norm&lt;/em&gt; for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.&lt;/p&gt;
 &lt;p&gt;For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space&lt;/p&gt;
 &lt;p&gt;\begin{equation}
@@ -619,13 +632,12 @@ each interval the following error estimate holds
 \left\Vert f − \Pi_h^k f \right\Vert_\infty \leq C h^{k+1} \left\Vert f^{(k+1} \right\Vert_\infty .
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
 $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−1} h_j$, such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Now using Lagrange interpolation on each subinterval $I_j$ using $n + 1$ equally spaced nodes
 $\lbrace{ x^{(i)}_{j} , 0 \le i \le n \rbrace}$
 with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polynomial&lt;/em&gt;.&lt;/p&gt;
@@ -642,8 +654,9 @@ with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polyno
 \end{equation}&lt;/p&gt;
 &lt;p&gt;for two suitable positive constants $C_{1}$ and $C_{2}$.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -700,26 +713,25 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 \end{equation}&lt;/p&gt;
 &lt;!-- !!! warning &#34;Example:&#34; --&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Example:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, detailing examples of the &lt;a href=&#34;#midpoint-rule&#34;&gt;Midpoint rule&lt;/a&gt;, &lt;a href=&#34;#trapezoidal-rule&#34;&gt;Trapezoidal rule&lt;/a&gt;, &lt;a href=&#34;#simpsons-rule&#34;&gt;Simpson’s rule&lt;/a&gt; can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/&#34;&gt;here&lt;/a&gt;.  It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, detailing examples of the &lt;a href=&#34;#midpoint-rule&#34;&gt;Midpoint rule&lt;/a&gt;, &lt;a href=&#34;#trapezoidal-rule&#34;&gt;Trapezoidal rule&lt;/a&gt;, &lt;a href=&#34;#simpsons-rule&#34;&gt;Simpson&amp;rsquo;s rule&lt;/a&gt; can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/&#34;&gt;here&lt;/a&gt;.  It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;!-- Changed links to pages for notebook --&gt;
 &lt;h2 id=&#34;gaussian-integration&#34;&gt;Gaussian Integration&lt;/h2&gt;
 &lt;p&gt;Gaussian quadrature integrates a function by a suitable choice of &lt;em&gt;nodes&lt;/em&gt; and &lt;em&gt;weights&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;With the exact integral of $f$
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;With the exact integral of $f$
 \begin{equation}
 I_g (f) = \int\limits_{−1}^{1} f (x) g(x) \, \mathrm{d}x,
 \end{equation}
@@ -733,8 +745,9 @@ where $\alpha_i$ are to be determined.&lt;/p&gt;
 \int_{-1}^{1} \omega_{n+1}(x) p(x) g(x) \, \mathrm{d}x = 0, \quad \forall \, p \in \mathbb{P}_{m-1}.
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -792,13 +805,12 @@ Typically the Green&#39;s function has the following properties
 
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
 \begin{equation}
@@ -822,34 +834,34 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 \end{aligned}
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Errors for Finite-Difference Quotients&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The errors for the approximation of the derivatives are given by&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Errors for Finite-Difference Quotients&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The errors for the approximation of the derivatives are given by&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{+}u = -\dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_j, x_{j+1} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&#34;stability-analysis&#34;&gt;Stability Analysis&lt;/h3&gt;
 &lt;p&gt;Let $V_h$ be the set of discrete functions defined on the nodal points $x_j$ and $V_h^0 \subset V_h$ contain the discrete functions $v_h \in V_h$ which vanish at $x_0$ and $x_n$, i.e. $v_0 =0$ and $v_n=0$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Lemma:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the &lt;strong&gt;discrete inner product&lt;/strong&gt; for both $v_h$ and $w_h \in V_h$ is defined as&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Lemma:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the &lt;strong&gt;discrete inner product&lt;/strong&gt; for both $v_h$ and $w_h \in V_h$ is defined as&lt;/p&gt;
 &lt;p&gt;\begin{align}
 \left( v_h, w_h \right)_h^{} &amp;amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
 \end{align}&lt;/p&gt;
@@ -874,7 +886,8 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;This is just the &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/part-2/integration/#trapezoidal-rule&#34;&gt;composite trapezium rule&lt;/a&gt;, so that the discrete inner product is the discrete analogue to
+&lt;p&gt;This is just the 
+, so that the discrete inner product is the discrete analogue to
 \begin{equation}
 \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
 \end{equation}
@@ -883,21 +896,22 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Lemma:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;For any $v_h \in V_h$
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Lemma:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;For any $v_h \in V_h$
 \begin{equation}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
 &lt;p&gt;The finite difference solution $u_h$ can be characterised by a discrete Green&amp;rsquo;s function. Define $G^k\left(x\right)  \in V_h^0$ such that
 \begin{equation}
@@ -908,20 +922,20 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the &lt;em&gt;discrete maximum norm&lt;/em&gt;.&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the &lt;em&gt;discrete maximum norm&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
 \begin{equation}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;galerkin-method&#34;&gt;Galerkin Method&lt;/h2&gt;
 &lt;p&gt;Consider the elementary problem:
 \begin{equation}
@@ -941,55 +955,54 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 \mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
 &lt;li&gt;Let $u$ be a $C^2$ be a solution of the elementary problem, then $u \in H^1_0$ also solves the weak form problem.&lt;/li&gt;
 &lt;li&gt;Let $u \in H^1_0$ be a solution of the weak problem. If and only if $u \in C^2 \left( [ 0, 1 ] \right)$ then $u$ also solves the elementary problem.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Fundamental Theorem of the Calculus of Variations&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Suppose that $f(x)$ is integrable on $(0,1)$ and
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Fundamental Theorem of the Calculus of Variations&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Suppose that $f(x)$ is integrable on $(0,1)$ and
 \begin{equation}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation}&lt;/p&gt;
 &lt;p&gt;then $f(x)=0$.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Poincaré-Friedrich Inequality&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Poincaré-Friedrich Inequality&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
 \begin{equation}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;Let
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;Let
 \begin{equation}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
 \end{equation}
@@ -997,8 +1010,9 @@ then
 \begin{equation}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -1082,34 +1096,34 @@ a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime
 \mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
 \end{equation}&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The following hold:&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The following hold:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Let $u$ be a $C^2$ be a solution of the elementary problem, then ${u \in H^1_0}$ also solves the weak form&lt;/li&gt;
 &lt;li&gt;Let $u \in H^1_0$ be a solution of the weak problem. If and only if ${u \in C^2\left( \left[0,1 \right] \right)}$ then $u$ also solves the elementary problem.&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Fundamental Theorem of the Calculus of Variations&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Suppose that $f$ is integrable on $(0,1)$ and
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Fundamental Theorem of the Calculus of Variations&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Suppose that $f$ is integrable on $(0,1)$ and
 \begin{equation}
 \int_0^1 \phi f \, \mathrm{d}x = 0 \quad \forall \, \phi \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation}&lt;/p&gt;
 &lt;p&gt;then $f=0$.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Approximate $H_0^1$ by $V_h$. The &lt;strong&gt;discrete weak problem&lt;/strong&gt; is then:
 \begin{equation}
 \mbox{Find a} \quad u_h \in V_h \quad \mbox{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
@@ -1124,13 +1138,12 @@ u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
 \end{equation}&lt;/p&gt;
 &lt;p&gt;Denote ${a_{ij}=a\left( \varphi_j, \varphi_i \right)}$ as the elements of the matrix $A$, let ${u=\left(u_1, \ldots, u_N\right)}$ and ${f=\left(f_1, \ldots, f_N\right)}$ be vectors where each entry is given by ${f_i = f \varphi_i}$, so that the problem is equivalent to solving the linear problem ${Au=f}$&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Poincaré-Friedrich Inequality&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Poincaré-Friedrich Inequality&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
 \begin{equation}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation}&lt;/p&gt;
@@ -1139,16 +1152,16 @@ u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
 \int_{a}^b \left| v(x) \right|^2 \, \mathrm{d}x \leq C_p \int_a^b \bigl| v^\prime \left(x\right) \bigr|^2 \mathrm{d}x \quad \forall \, v \in V_0
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let&lt;/p&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let&lt;/p&gt;
 &lt;p&gt;\begin{align}
 C &amp;amp; = \dfrac{1}{\alpha_0} \Bigl( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \bigl\Vert \gamma \bigr\Vert_\infty \Bigr)
 \end{align}
@@ -1157,16 +1170,16 @@ $$
 \left| u - u_h \right|^{}\_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
 $$
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Definition:	&lt;em&gt;Coercivity and Continuity of Bilinear Forms&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A bilinear form $a\left(\cdot,\cdot\right)$ on $V$, with a norm $\bigl\Vert \cdot \bigr\Vert_V$, then a bilinear form is &lt;strong&gt;coercive&lt;/strong&gt; if there exists an ${\alpha_0 &gt; 0}$ such that
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Definition:	&lt;em&gt;Coercivity and Continuity of Bilinear Forms&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A bilinear form $a\left(\cdot,\cdot\right)$ on $V$, with a norm $\bigl\Vert \cdot \bigr\Vert_V$, then a bilinear form is &lt;strong&gt;coercive&lt;/strong&gt; if there exists an ${\alpha_0 &gt; 0}$ such that
 \begin{equation}
 a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 \end{equation}&lt;/p&gt;
@@ -1175,16 +1188,16 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 \left| a\left(u, v\right) \right| \leq M \bigl\Vert u \bigr\Vert_V  \bigl\Vert u \bigr\Vert_V \quad  \forall \, u, v \in V.
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Lax-Milgram&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If coercive and continuous, and the right hand side $(f, v)$ satisfies the following inequality
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Lax-Milgram&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If coercive and continuous, and the right hand side $(f, v)$ satisfies the following inequality
 \begin{equation}
 \left| \left( f, v \right) \right| \leq K \bigl\Vert v\bigr\Vert_V \quad \forall \, v \in V.
 \end{equation}&lt;/p&gt;
@@ -1193,21 +1206,22 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 \bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \mbox{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
 \end{equation}&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Lemma:	&lt;em&gt;Céa&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;It can be shown that
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-info fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Lemma:	&lt;em&gt;Céa&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;It can be shown that
 \begin{equation}
 \left\Vert u - u_h \right\Vert_V \le \dfrac{M}{\alpha_0} \min_{\substack{w_h \in V_h}} \left\Vert u - w_h \right\Vert_V . \tag{3}\label{eq:cea}
 \end{equation}&lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;finite-element-method&#34;&gt;Finite Element Method&lt;/h2&gt;
 &lt;p&gt;The finite element method (FEM) is a special technique for constructing a subspace $V_h$ based on piecewise polynomial interpolation.&lt;/p&gt;
 &lt;p&gt;Introduce a partition
@@ -1246,13 +1260,12 @@ $$
 
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Theorem:	&lt;em&gt;Lax-Milgram&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $u \in H_0^1\left( 0,1 \right)$ be the exact solution of
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Theorem:	&lt;em&gt;Lax-Milgram&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $u \in H_0^1\left( 0,1 \right)$ be the exact solution of
 \begin{equation}
 a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right)
 \end{equation}&lt;/p&gt;
@@ -1266,20 +1279,25 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 \end{equation}&lt;/p&gt;
 &lt;p&gt;The error estimate shows that the Galerkin method is convergent, that is the approximation error tends to zero as $h \rightarrow 0$. The order of convergence is $k$.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
     &lt;/div&gt;
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-        &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-            &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-			Example:	&lt;em&gt;&lt;/em&gt;
-			
-        &lt;/div&gt;
-        &lt;div class=&#34;details-content&#34;&gt;
-            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, with an example of the finite element method in one-dimension can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/1dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;An  example of the finite element method in two-dimensions can be viewed &lt;a href=&#34;https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/2dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-        &lt;/div&gt;
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook, with an example of the finite element method in one-dimension can be viewed 
+, or can be downloaded from 
+.&lt;/p&gt;
+&lt;p&gt;An  example of the finite element method in two-dimensions can be viewed 
+, or can be downloaded from 
+.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;!--
 In the space $H_0^1$ derivatives are used instead of functions $v \in L^2\left( 0,1 \right)$.
 

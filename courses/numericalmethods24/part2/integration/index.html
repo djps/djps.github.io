@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2023,13 +2023,12 @@
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <h2 id="numerical-differentiation">Numerical Differentiation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Finite-Difference Quotients</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Finite-Difference Quotients</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
 <ol>
 <li><strong>Forward Difference Quotient:</strong>
 \begin{equation}
@@ -2046,30 +2045,30 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 </ol>
 <p>The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Higher Order Derivatives</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Higher Order Derivatives</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
 </p>
 $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Richardson Extrapolation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Richardson Extrapolation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then</p>
 $$
 f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
 $$
@@ -2083,17 +2082,17 @@ f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{
 $$
 <p>The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h2 id="numerical-integration">Numerical Integration</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Riemann Sum</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 < x_1 < \ldots < x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Riemann Sum</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 < x_1 < \ldots < x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as</p>
 $$
 \int\limits_{a}^{b}f\left( x\right) \\, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
@@ -2120,16 +2119,16 @@ $$
 \end{align*}
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Trapezoidal Rule</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Trapezoidal Rule</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
@@ -2139,16 +2138,16 @@ $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Error for Trapezoidal Rule</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Error for Trapezoidal Rule</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
 <p>The error can be shown to have the form:
 </p>
 $$
@@ -2160,16 +2159,16 @@ $$
 $$
 <p>for some ${\xi \in \left(a, b\right)}$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Simpson&#39;s Rule</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The integral is approximated as
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Simpson&#39;s Rule</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The integral is approximated as
 </p>
 $$
 \int_a^b f\left( x\right) \\, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
@@ -2184,16 +2183,16 @@ $$
 <p>
 and is referred to as <strong>Simpson&rsquo;s 1/3 Rule</strong>. It uses quadratic interpolation of the function through the end and midpoints.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Algorithm open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
-			Algorithm:	<em>Romberg Algorithm</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Romberg&rsquo;s method uses the Trapezoidal Rule and then Richardson Extrapolation to estimate integrals.
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
+        Algorithm:	<em>Romberg Algorithm</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Romberg&rsquo;s method uses the Trapezoidal Rule and then Richardson Extrapolation to estimate integrals.
 First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
 ${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:</p>
 $$
@@ -2226,20 +2225,24 @@ $$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
 </div>
-        </div>
     </div>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of numerical integration using the Trapezium rule can be accessed online <a href="/courses/numericalmethods24/notebooks/integrals/">here</a>.</p>
-<p>It can be downloaded from <a href="/ipyth/integrals.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/integrals.ipynb">here</a>.</p>
 </div>
-        </div>
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of numerical integration using the Trapezium rule can be accessed online 
+.</p>
+<p>It can be downloaded from 
+ as a python file or downloaded as a notebook from 
+.</p>
+</div>
+    </div>
+</div>
+
 <h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
 <p>Generalise the quadrature formula so that an integral is approximated as
 \begin{equation}
@@ -2251,28 +2254,27 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 <li>Furthermore, can the nodes be chosen such that the integral can be further improved?</li>
 </ul>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Orthogonal functions</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Two real-valued functions $f(x)$ and $g(x)$ are said to be <strong>orthogonal</strong> if</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Orthogonal functions</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Two real-valued functions $f(x)$ and $g(x)$ are said to be <strong>orthogonal</strong> if</p>
 $$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$
 <p>where $\langle f, g \rangle$ satisfies the conditions to be an inner product.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Gaussian Quadrature</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Gaussian Quadrature</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
 <ol>
 <li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,</li>
 <li>the polynomial $q(x)$ satisfies
@@ -2287,20 +2289,21 @@ $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \\, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$
 <p>
-with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \\, \mathrm{d}x$, using <a href="/courses/numericalmethods24/part-2/interpolation/#interpolation">Lagrange interpolation</a> for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.</p>
+with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \\, \mathrm{d}x$, using 
+ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.</p>
 <p>Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>.</p>
 <p>It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Gauss-Legendre Quadrature</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Gauss-Legendre Quadrature</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
 </p>
 $$
 \int_{-1}^1 P_m(x) P_n(x) \\, \mathrm{d} x = 0 \quad \mbox{for} \quad n \ne m.
@@ -2325,8 +2328,9 @@ $$
 \int_a^b f(x) \\, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \\, \mathrm{d}t.
 $$
 </div>
-        </div>
     </div>
+</div>
+
 
       </div>
 

@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2041,27 +2041,26 @@
 <li><strong>Spline interpolation</strong>: using a set of piecewise polynomials over subintervals of the data.</li>
 </ul>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
 \begin{equation}
 \Pi_n\left( x_i \right) = y_i.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <h2 id="lagrange-interpolation">Lagrange Interpolation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Lagrange Polynomials</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Lagrange Polynomials</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
 \begin{equation}
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
 \end{equation}</p>
@@ -2071,28 +2070,32 @@
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. <br>
 \end{equation}</p>
 </div>
-        </div>
     </div>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook illustrating the Lagrange polynomials can be accessed <a href="/courses/numericalanalysis22/notebooks/characteristicpolynomial/">here</a>. It can be downloaded from <a href="/ipyth/characteristicPolynomial.ipynb">here</a>.</p>
-<p>An <code>.ipynb</code> notebook illustrating Runge phenomenon can be accessed <a href="/courses/numericalanalysis22/notebooks/lagrangeinterpolation/">here</a>. It can be downloaded from <a href="/ipyth/LagrangeInterpolation.ipynb">here</a>.</p>
 </div>
-        </div>
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook illustrating the Lagrange polynomials can be accessed 
+. It can be downloaded from 
+.</p>
+<p>An <code>.ipynb</code> notebook illustrating Runge phenomenon can be accessed 
+. It can be downloaded from 
+.</p>
+</div>
+    </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
 <p>Let $I_x$ be the smallest interval containing the nodes $x_0, x_1, \ldots x_n$ and $x$ and assume that $f \in C^{n+1}\left( I_x \right)$. Then the interpolation error at the point $x$ is defined and given by
 \begin{equation}
 \begin{aligned}
@@ -2106,17 +2109,17 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
 \omega_{n+1}(x) = \prod\limits_{i=0}^{n} \left(x - x_i \right).
 \end{equation}</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h2 id="piecewise-lagrange-interpolation">Piecewise Lagrange Interpolation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>$\mathrm{L}^2$ Space</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Define the following space
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>$\mathrm{L}^2$ Space</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Define the following space
 \begin{equation}
 \mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x &lt; \infty \bigr \rbrace
 \end{equation}</p>
@@ -2126,8 +2129,9 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
 \end{equation}</p>
 <p>This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.</p>
 <p>For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space</p>
 <p>\begin{equation}
@@ -2143,13 +2147,12 @@ each interval the following error estimate holds
 \left\Vert f − \Pi_h^k f \right\Vert_\infty \leq C h^{k+1} \left\Vert f^{(k+1} \right\Vert_\infty .
 \end{equation}</p>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
 $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−1} h_j$, such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Now using Lagrange interpolation on each subinterval $I_j$ using $n + 1$ equally spaced nodes
 $\lbrace{ x^{(i)}_{j} , 0 \le i \le n \rbrace}$
 with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</em>.</p>
@@ -2166,8 +2169,9 @@ with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</
 \end{equation}</p>
 <p>for two suitable positive constants $C_{1}$ and $C_{2}$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 
       </div>
 

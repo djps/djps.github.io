@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2079,13 +2079,12 @@ Typically the Green's function has the following properties
 
     </div>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Finite-Difference Quotients</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Finite-Difference Quotients</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
 <ol>
 <li><strong>Forward Difference Quotient:</strong>
 \begin{equation}
@@ -2109,34 +2108,34 @@ D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 \end{aligned}
 \end{equation}</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Errors for Finite-Difference Quotients</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The errors for the approximation of the derivatives are given by</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Errors for Finite-Difference Quotients</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The errors for the approximation of the derivatives are given by</p>
 <ol>
 <li>$u\left( x_j \right) - D_{j}^{+}u = -\dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_j, x_{j+1} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.</li>
 </ol></div>
-        </div>
     </div>
+</div>
+
 <h3 id="stability-analysis">Stability Analysis</h3>
 <p>Let $V_h$ be the set of discrete functions defined on the nodal points $x_j$ and $V_h^0 \subset V_h$ contain the discrete functions $v_h \in V_h$ which vanish at $x_0$ and $x_n$, i.e. $v_0 =0$ and $v_n=0$.</p>
 <div class="details admonition Lemma open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
-			Lemma:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
+        Lemma:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as</p>
 <p>\begin{align}
 \left( v_h, w_h \right)_h^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
 \end{align}</p>
@@ -2161,7 +2160,8 @@ D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 <hr>
 <ol>
 <li id="fn:1">
-<p>This is just the <a href="/courses/numericalanalysis22/part-2/integration/#trapezoidal-rule">composite trapezium rule</a>, so that the discrete inner product is the discrete analogue to
+<p>This is just the 
+, so that the discrete inner product is the discrete analogue to
 \begin{equation}
 \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
 \end{equation}
@@ -2170,21 +2170,22 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
 </ol>
 </div>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Lemma open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
-			Lemma:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">For any $v_h \in V_h$
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
+        Lemma:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">For any $v_h \in V_h$
 \begin{equation}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <h3 id="convergence">Convergence</h3>
 <p>The finite difference solution $u_h$ can be characterised by a discrete Green&rsquo;s function. Define $G^k\left(x\right)  \in V_h^0$ such that
 \begin{equation}
@@ -2195,20 +2196,20 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 \end{equation}</p>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
 <p>Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
 \begin{equation}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
 \end{equation}</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h2 id="galerkin-method">Galerkin Method</h2>
 <p>Consider the elementary problem:
 \begin{equation}
@@ -2228,55 +2229,54 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 \mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
 \end{equation}</p>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ol>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><ol>
 <li>Let $u$ be a $C^2$ be a solution of the elementary problem, then $u \in H^1_0$ also solves the weak form problem.</li>
 <li>Let $u \in H^1_0$ be a solution of the weak problem. If and only if $u \in C^2 \left( [ 0, 1 ] \right)$ then $u$ also solves the elementary problem.</li>
 </ol>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Fundamental Theorem of the Calculus of Variations</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Suppose that $f(x)$ is integrable on $(0,1)$ and
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Fundamental Theorem of the Calculus of Variations</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Suppose that $f(x)$ is integrable on $(0,1)$ and
 \begin{equation}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation}</p>
 <p>then $f(x)=0$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Poincaré-Friedrich Inequality</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Poincaré-Friedrich Inequality</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
 \begin{equation}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Let
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let
 \begin{equation}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
 \end{equation}
@@ -2284,8 +2284,9 @@ then
 \begin{equation}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 
       </div>
 

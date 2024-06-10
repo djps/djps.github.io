@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2040,37 +2040,36 @@ mjx-assistive-mml {
 <li>Truncation errors</li>
 </ul>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Absolute and Relative Errors</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $\tilde{a}$ be an approximation to $a$, then the <strong>absolute error</strong> is given by $\left| {\tilde{a}-a} \right|$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Absolute and Relative Errors</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $\tilde{a}$ be an approximation to $a$, then the <strong>absolute error</strong> is given by $\left| {\tilde{a}-a} \right|$.</p>
 <p>If ${\left| a \ne 0\right|}$, the <strong>relative error</strong> is given by $\left| \dfrac{\tilde{a}-a}{a} \right|$ and the error bound is the magnitude of the admissible error.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>For both addition and subtraction the bounds for the <em>absolute error</em> are added.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>For both addition and subtraction the bounds for the <em>absolute error</em> are added.</p>
 <p>In division and multiplication the bounds for the <em>relative errors</em> are added.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Linear Sensitivity to Uncertainties</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If $y(x)$ is a smooth function, i.e. is differentiable, then $\left\| y^{\prime} \right\|$ can be interpreted as the <strong>linear sensitivity</strong> of $y(x)$ to uncertainties in $x$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Linear Sensitivity to Uncertainties</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If $y(x)$ is a smooth function, i.e. is differentiable, then $\left\| y^{\prime} \right\|$ can be interpreted as the <strong>linear sensitivity</strong> of $y(x)$ to uncertainties in $x$.</p>
 <p>For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then
 </p>
 $$
@@ -2080,29 +2079,32 @@ $$
 where
 $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_i$, thus  ${\left\| \Delta y_i \right\| = \tilde{y}_i - y_i = f \left( \tilde{x}_i \right) - \left( x_i \right)}$.</p>
 </div>
-        </div>
     </div>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of errors and number representations can be accessed online <a href="/courses/numericalmethods24/notebooks/number_representations/">here</a>.</p>
-<p>It can be downloaded from <a href="/ipyth/number_representations.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/number_representations.ipynb">here</a>.</p>
 </div>
-        </div>
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of errors and number representations can be accessed online 
+.</p>
+<p>It can be downloaded from 
+ as a python file or downloaded as a notebook from 
+.</p>
+</div>
+    </div>
+</div>
+
 <h2 id="number-representations">Number Representations</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Base Representation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Base Representation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
 can be written as a unique expansion with respect to base $b$ as</p>
 <p>\begin{equation}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
@@ -2123,16 +2125,16 @@ x & = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i b^{-
 \end{align}
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Algorithm open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
-			Algorithm:	<em>Euclid</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Euclid&rsquo;s algorithm can convert number $x$ in base 10, i.e.
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
+        Algorithm:	<em>Euclid</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Euclid&rsquo;s algorithm can convert number $x$ in base 10, i.e.
 $\left(x \right)\_{10}$
 into another base, $b$, i.e. $\left(x \right)_{b}$.</p>
 <ol>
@@ -2148,16 +2150,16 @@ $$
 which at each steps provides an $a_i$ and updates $y$.</li>
 <li>Output as $\left(x \right)\_{b} = a_n a_{n-1} \cdots a_0$</li>
 </ol></div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Algorithm open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
-			Algorithm:	<em>Horner</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ol>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-laptop-code fa-fw" aria-hidden="true"></i>
+        Algorithm:	<em>Horner</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><ol>
 <li>Input $\left(x \right)_{10}$</li>
 <li>Set $i=0$</li>
 <li>Let $y=x$. Then while $y>0$
@@ -2172,16 +2174,16 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 <li>Output as $\left(x \right)\_{b} = a_n a_{n-1} \cdots a_0$</li>
 </ol>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Floating Point Representations</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A number may be represented as
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Floating Point Representations</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A number may be represented as
 </p>
 $$
 x = \sigma \times f \times b^{t-p}
@@ -2195,23 +2197,24 @@ $$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</p>
 <p>Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Let $x$ and $y$ be two normalized floating point numbers with ${x > y > 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $x$ and $y$ be two normalized floating point numbers with ${x > y > 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 </p>
 $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
 <p>
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.</p>
 </div>
-        </div>
     </div>
+</div>
+
 
       </div>
 

@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2047,25 +2047,24 @@ mjx-assistive-mml {
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <h2 id="interpolation">Interpolation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Interpolating Functions</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating function</strong>.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Interpolating Functions</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating function</strong>.</p>
 <p>This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Polynomial Interpolation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If the interpolating function is a polynomial, it can be written as
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Polynomial Interpolation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If the interpolating function is a polynomial, it can be written as
 </p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
@@ -2087,17 +2086,17 @@ $$
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
 <p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <!--
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If </p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If </p>
 $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
 <p>
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
@@ -2106,17 +2105,17 @@ $$\Phi \alpha = p$$
 <p>
 where $\Phi$ is the <strong>Vandermonde matrix</strong>.</p>
 </div>
-        </div>
     </div>
+</div>
+
 -->
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Lagrange Polynomials</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Lagrange Polynomials</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
 \begin{equation}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation}</p>
@@ -2126,16 +2125,16 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 \end{equation}</p>
 <p>By construction, <em>the collocation matrix is the identity matrix</em>. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Newton Interpolation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Newton Interpolation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
 </p>
 $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
@@ -2147,38 +2146,42 @@ $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
 </div>
-        </div>
     </div>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em>Lagrange Interpolation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">An <code>.ipynb</code> notebook with an example of interpolation using Lagrange polynomials can be accessed online <a href="/courses/numericalmethods24/notebooks/lagrange_polynomials/">here</a>.</div>
-        </div>
-    </div>
-<div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em>Runge&#39;s Phenomenon</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of Runge&rsquo;s phenomenon can be accessed online <a href="/courses/numericalmethods24/notebooks/runge/">here</a>.</p>
-<p>It can be downloaded from <a href="/ipyth/runge.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/runge.ipynb">here</a>.</p>
 </div>
-        </div>
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em>Lagrange Interpolation</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">An <code>.ipynb</code> notebook with an example of interpolation using Lagrange polynomials can be accessed online 
+.</div>
+    </div>
+</div>
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em>Runge&#39;s Phenomenon</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of Runge&rsquo;s phenomenon can be accessed online 
+.</p>
+<p>It can be downloaded from 
+ as a python file or downloaded as a notebook from 
+.</p>
+</div>
+    </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>Aitken&rsquo;s</strong> algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p><strong>Aitken&rsquo;s</strong> algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$</p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$
@@ -2203,39 +2206,39 @@ p\left( u_3 \right) = p_{3}^0 &                       &                        &
 $$
 <p>where the coefficients are evaluated from left to right.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <!-- <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">polynomial’s convergence.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">polynomial&rsquo;s convergence.</div>
+    </div>
+</div>
+
 -->
 <h2 id="piecewise-polynomial-interpolation">Piecewise Polynomial Interpolation</h2>
 <h2 id="spline-interpolation">Spline Interpolation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A function $s\left(u\right)$ is called a <strong>spline</strong> of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">A function $s\left(u\right)$ is called a <strong>spline</strong> of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.</div>
+    </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>B-Splines</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>B-Splines</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
 $$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}\_{i}^{n} \left(u \right)
 $$
@@ -2260,8 +2263,9 @@ $$
 <p>
 is a local parameter.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <p>Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving</p>
 $$
 \mbox{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \mbox{such that} \quad s\left(u_i \right) = p_i \quad \mbox{for} \quad i=0, \ldots, m
@@ -2279,13 +2283,12 @@ $$
 $$
 <h2 id="least-squares-approximation">Least-Squares Approximation</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Least-Squares Approximation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Least-Squares Approximation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
 </p>
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
@@ -2303,16 +2306,16 @@ $$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \mbox{for all } \quad j=1, \ldots m.
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Linear Least-Squares Approximation</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If the function $y(x)$ is a function of the form
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Linear Least-Squares Approximation</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If the function $y(x)$ is a function of the form
 </p>
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
@@ -2338,8 +2341,9 @@ $$
 <p>
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.</p>
 </div>
-        </div>
     </div>
+</div>
+
 
       </div>
 

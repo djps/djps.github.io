@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2073,43 +2073,43 @@ r^{(k)} = b - A x^{(k)}
 \end{equation}
 is the <em>residual</em>.</p>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Consistency</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Consistency</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
 \begin{equation}
 f = (I-B) A^{-1} b
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If an iterative scheme is consistent, then if and only if $\rho \left( B \right) < 1$ the method will converge for any initial guess $x^{(0)}$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">If an iterative scheme is consistent, then if and only if $\rho \left( B \right) < 1$ the method will converge for any initial guess $x^{(0)}$.</div>
+    </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Stationary Methods</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The formulation can be written as
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Stationary Methods</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The formulation can be written as
 \begin{equation}
 x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) .
 \end{equation}</p>
 <p>If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be <strong>stationary</strong>.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h2 id="jacobi-method">Jacobi Method</h2>
 <p>The Jacobi method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
 \begin{equation}
@@ -2140,56 +2140,63 @@ x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1
 (D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
 \end{equation}</p>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><ol>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><ol>
 <li>
-<p>If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| > \sum_{j \ne i} |a_{ij}|$, the <a href="#jacobi-method">Jacobi</a> and <a href="#gauss-seidel">Gauss-Seidel</a> methods are convergent.</p>
+<p>If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| > \sum_{j \ne i} |a_{ij}|$, the 
+ and 
+ methods are convergent.</p>
 </li>
 <li>
-<p>If $A$ and $2D-A$ are symmetric and positive definite, then the <a href="#jacobi-method">Jacobi method</a> is convergent and the spectral radius of the iteration matrix $B$ is equal to
+<p>If $A$ and $2D-A$ are symmetric and positive definite, then the 
+ is convergent and the spectral radius of the iteration matrix $B$ is equal to
 \begin{equation}
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
 \end{equation}
 where $\left\Vert \cdot \right\Vert_{A}$ is an <em>energy norm</em> which is induced by the vector norm $\left| x \right|_{A} = \sqrt{ x \cdot A x}$</p>
 </li>
 <li>
-<p>If and only if $A$ is symmetric and positive definite, the <a href="#over-relaxation-of-jacobi-method">Jacobi over-relaxation method</a> is convergent if
+<p>If and only if $A$ is symmetric and positive definite, the 
+ is convergent if
 \begin{equation}
 0 &lt; \omega &lt; \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
 \end{equation}</p>
 </li>
 <li>
-<p>If and only if $A$ is symmetric and positive definite, the <a href="#gauss-seidel">Gauss-Seidel</a> method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.</p>
+<p>If and only if $A$ is symmetric and positive definite, the 
+ method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.</p>
 </li>
 </ol>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, <a href="#successive-over-relaxation">SOR</a> does not converge if either $\omega \le 0$ or $\omega \ge 2$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, 
+ does not converge if either $\omega \le 0$ or $\omega \ge 2$.</div>
+    </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em>Ostrowski</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If $A$ is symmetric and positive definite, then the <a href="#successive-over-relaxation">SOR</a> method is convergent if and only if  $0 < \omega < 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em>Ostrowski</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">If $A$ is symmetric and positive definite, then the 
+ method is convergent if and only if  $0 < \omega < 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.</div>
+    </div>
+</div>
+
 <h2 id="gradient-descent">Gradient Descent</h2>
 <p>Consider the function $\Phi \left( y \right) \\, : \\, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
 \begin{equation}
@@ -2220,38 +2227,38 @@ The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ 
 \alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} }
 \end{equation}</p>
 <p><div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If $A$ is symmetric and positive definite, then the <a href="#gradient-descent">gradient method</a> method is convergent for any $x^{(0)}$ and
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">If $A$ is symmetric and positive definite, then the 
+ method is convergent for any $x^{(0)}$ and
 \begin{equation}
 \left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 If we apply a preconditioner, i.e. multiplying both sides of the linear system from the left by $P^{-1}$,</p>
 <h2 id="conjugate-gradient">Conjugate Gradient</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Conjugate Vectors</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be <strong>$\mathbf{A}$-orthogonal</strong> or <strong>conjugate</strong> if $u \cdot Av=0$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Conjugate Vectors</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be <strong>$\mathbf{A}$-orthogonal</strong> or <strong>conjugate</strong> if $u \cdot Av=0$.</div>
+    </div>
+</div>
+
 <div class="details admonition Lemma open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
-			Lemma:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Choosing $p^{(k+1)}$ such that
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
+        Lemma:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Choosing $p^{(k+1)}$ such that
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0
 \end{equation}
@@ -2259,16 +2266,16 @@ for $j=0, \ldots, k$ leads to
 \begin{equation}
 p^{(j)} \cdot r^{(k+1)} = 0.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Lemma open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
-			Lemma:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Setting
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info fa-fw" aria-hidden="true"></i>
+        Lemma:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Setting
 \begin{equation}
 \beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} }
 \end{equation}
@@ -2280,18 +2287,20 @@ then, for $j=0, \ldots, k,$ yields
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0.
 \end{equation}</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the <a href="#conjugate-gradient">conjugate gradient method</a> yields the exact solution of $Ax=b$ after $n$ steps.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the 
+ yields the exact solution of $Ax=b$ after $n$ steps.</div>
+    </div>
+</div>
+
 
       </div>
 

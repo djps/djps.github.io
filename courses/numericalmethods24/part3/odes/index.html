@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.369a987d1a902fd2a5387404ef6534ce353193c457d0e7b1883e1c1d18679558.css" rel="stylesheet" />
+    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
   
 
   <script>
@@ -2063,53 +2063,54 @@
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> May 15, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+-->
 <h2 id="finite-difference-methods-for-differential-equations">Finite Difference Methods for Differential Equations</h2>
 <p>Solutions are functions.</p>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Ordinary Differential Equations</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">An <strong>ordinary differential equation</strong> (ODE) is an equation that involves one of more derivatives of a function of a single variable.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Ordinary Differential Equations</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">An <strong>ordinary differential equation</strong> (ODE) is an equation that involves one of more derivatives of a function of a single variable.</div>
+    </div>
+</div>
+
 <!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  -->
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Initial Value Problems</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <strong>initial value problem</strong> (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Initial Value Problems</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <strong>initial value problem</strong> (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.</p>
 <p>Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>One step methods</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>One step methods</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">A numerical method for approximating the solution to a differential equation is called a <strong>one step method</strong> if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.</div>
+    </div>
+</div>
+
 <h3 id="forward-euler-method">Forward Euler Method</h3>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>Forward Euler</strong> approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p><strong>Forward Euler</strong> approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
 </p>
 $$
 u_{n+1} = u_n + h f_n
@@ -2117,17 +2118,17 @@ $$
 <p>
 where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h3 id="backward-euler-method">Backward Euler Method</h3>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>Backward Euler</strong> uses the backward finite difference approximation of the first-order derivative
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p><strong>Backward Euler</strong> uses the backward finite difference approximation of the first-order derivative
 </p>
 $$
 u_{n+1} = u_n + h f_{n+1}
@@ -2135,48 +2136,49 @@ $$
 <p>
 where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h3 id="crank-nicolson-method">Crank-Nicolson Method</h3>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The <strong>Crank-Nicolson method</strong> is given by
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The <strong>Crank-Nicolson method</strong> is given by
 </p>
 $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$</div>
-        </div>
     </div>
+</div>
+
 <h3 id="heuns-method">Heun&rsquo;s Method</h3>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>Heun&rsquo;s method</strong> is given by
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p><strong>Heun&rsquo;s method</strong> is given by
 </p>
 $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$</div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A numerical method is said to be <strong>explicit</strong> if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i < k}$. Otherwise, the method is said to be <strong>implicit</strong>.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">A numerical method is said to be <strong>explicit</strong> if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i < k}$. Otherwise, the method is said to be <strong>implicit</strong>.</div>
+    </div>
+</div>
+
 <p>Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
 <p>Both the Forward Euler and Heun&rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.</p>
 <p>Huen&rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.</p>
@@ -2188,13 +2190,12 @@ $$
 <p>Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.</p>
 <h2 id="analysis-of-one-step-methods">Analysis of One-Step Methods</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A function $f$ is <strong>Hölder continuous</strong> if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A function $f$ is <strong>Hölder continuous</strong> if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
 </p>
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
@@ -2202,16 +2203,16 @@ $$
 <p>
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz continuous</strong>.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Consistency Error</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Any explicit one-step method has the form
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Consistency Error</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Any explicit one-step method has the form
 </p>
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
@@ -2229,16 +2230,16 @@ $$
 <p>The <strong>consistency error</strong> is given by ${\tau = \max_n | \tau_n | }$.</p>
 <p>A method is said to be <strong>consistent</strong> if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Convergence</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The <strong>global truncation error</strong> is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Convergence</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The <strong>global truncation error</strong> is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
 </p>
 $$
 \tau_{g,n} = \left| y_n - u_n \right|
@@ -2253,26 +2254,26 @@ $$
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be <strong>locally convergent</strong>.</p>
 <p>The scheme is <strong>convergent</strong> if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Order</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left\[ 0, T \right\]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Order</em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left\[ 0, T \right\]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.</div>
+    </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Zero Stable Methods</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A method of the form
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Zero Stable Methods</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A method of the form
 </p>
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
@@ -2289,27 +2290,27 @@ $$
 \left\| z_n - u_n \right\| \le C \varepsilon \quad \mbox{for} \quad 0 \le n \le N.
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <p>If a method is zero-stable, then this means that small perturbations in the computations lead to small perturbations in the approximations.</p>
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.</div>
+    </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If the increment function $\Phi$ is</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If the increment function $\Phi$ is</p>
 <ul>
 <li>
 <p>Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,</p>
@@ -2330,51 +2331,52 @@ $$
 <p>
 Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em>Absolute Stability</em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em>Absolute Stability</em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
 <p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set</p>
 $$
 \lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
 $$
 </div>
-        </div>
     </div>
+</div>
+
 <p>Zero stability considers when ${h \rightarrow 0}$, whereas absolute stability concerns behaviour as ${t_n \rightarrow \infty}$.</p>
 <h2 id="lax-equivalence">Lax Equivalence</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
 <ul>
 <li>a unique solution exists for any initial conditions and</li>
 <li>the solution&rsquo;s behaviour changes continuously with the initial conditions.</li>
 </ul>
 <p>A problem which does not have these properties is said to be <strong>ill-posed</strong>.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <div class="details admonition Theorem open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
-			Theorem:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">fundamental theorem of numerical analysis</a> for differential equations, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        Theorem:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">fundamental theorem of numerical analysis</a> for differential equations, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
+    </div>
+</div>
+
 <!--
 https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
 https://people.maths.ox.ac.uk/trefethen/4all.pdf
@@ -2435,28 +2437,28 @@ k_4 & = f\left( u_n + h k_3, t_n + h \right).
 \end{align*}
 $$
 <div class="details admonition Example open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
-			Example:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/courses/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-calculator fa-fw" aria-hidden="true"></i>
+        Example:	<em></em>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/courses/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
 <p>It can be downloaded from <a href="/ipyth/ode_solvers.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/ode_solvers.ipynb">here</a>.</p>
 </div>
-        </div>
     </div>
+</div>
+
 <h2 id="partial-differential-equations">Partial Differential Equations</h2>
 <div class="details admonition Definition open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
-			Definition:	<em></em>
-			
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A <strong>partial differential equation</strong> is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.</div>
-        </div>
+    <div class="details-summary admonition-title">
+        <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>
+        Definition:	<em></em>
     </div>
+    <div class="details-content">
+        <div class="admonition-content">A <strong>partial differential equation</strong> is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.</div>
+    </div>
+</div>
+
 <p>A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$</p>
 $$
 a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
@@ -2486,102 +2488,6 @@ Heat Equation
 
 
   
-<section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
-  
-
-  
-  
-  
-  
-  
-  
-  <a
-    target="_blank" rel="noopener"
-    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdjps.github.io%2Fcourses%2Fnumericalmethods24%2Fpart3%2Fodes%2F&amp;text=Finite&#43;Difference&#43;Methods&#43;for&#43;Differential&#43;Equations"
-    title="X"
-    aria-label="X"
-    id="share-link-x"
-  >
-    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-  </a>
-  
-
-  
-  
-  
-  
-  
-  
-  <a
-    target="_blank" rel="noopener"
-    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdjps.github.io%2Fcourses%2Fnumericalmethods24%2Fpart3%2Fodes%2F&amp;t=Finite&#43;Difference&#43;Methods&#43;for&#43;Differential&#43;Equations"
-    title="Facebook"
-    aria-label="Facebook"
-    id="share-link-facebook"
-  >
-    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
-  </a>
-  
-
-  
-  
-  
-  
-  
-  
-    
-  
-  <a
-    target="_blank" rel="noopener"
-    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Finite%20Difference%20Methods%20for%20Differential%20Equations&amp;body=https%3A%2F%2Fdjps.github.io%2Fcourses%2Fnumericalmethods24%2Fpart3%2Fodes%2F"
-    title="Email"
-    aria-label="Email"
-    id="share-link-email"
-  >
-    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
-  </a>
-  
-
-  
-  
-  
-  
-  
-  
-  <a
-    target="_blank" rel="noopener"
-    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fdjps.github.io%2Fcourses%2Fnumericalmethods24%2Fpart3%2Fodes%2F&amp;title=Finite&#43;Difference&#43;Methods&#43;for&#43;Differential&#43;Equations"
-    title="LinkedIn"
-    aria-label="LinkedIn"
-    id="share-link-linkedin"
-  >
-    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-  </a>
-  
-
-  
-  
-  
-  
-  
-  
-  <a
-    target="_blank" rel="noopener"
-    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Finite&#43;Difference&#43;Methods&#43;for&#43;Differential&#43;Equations%20https%3A%2F%2Fdjps.github.io%2Fcourses%2Fnumericalmethods24%2Fpart3%2Fodes%2F"
-    title="WhatsApp"
-    aria-label="WhatsApp"
-    id="share-link-whatsapp"
-  >
-    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="m187.58 144.84-32-16a8 8 0 0 0-8 .5l-14.69 9.8a40.55 40.55 0 0 1-16-16l9.8-14.69a8 8 0 0 0 .5-8l-16-32A8 8 0 0 0 104 64a40 40 0 0 0-40 40 88.1 88.1 0 0 0 88 88 40 40 0 0 0 40-40 8 8 0 0 0-4.42-7.16ZM152 176a72.08 72.08 0 0 1-72-72 24 24 0 0 1 19.29-23.54l11.48 23L101 118a8 8 0 0 0-.73 7.51 56.47 56.47 0 0 0 30.15 30.15A8 8 0 0 0 138 155l14.61-9.74 23 11.48A24 24 0 0 1 152 176ZM128 24a104 104 0 0 0-91.82 152.88l-11.35 34.05a16 16 0 0 0 20.24 20.24l34.05-11.35A104 104 0 1 0 128 24Zm0 192a87.87 87.87 0 0 1-44.06-11.81 8 8 0 0 0-6.54-.67L40 216l12.47-37.4a8 8 0 0 0-.66-6.54A88 88 0 1 1 128 216Z"/></svg>
-  </a>
-  
-</section>
-
 
   
 
