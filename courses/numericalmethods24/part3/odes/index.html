@@ -1273,9 +1273,9 @@
   
     <ul class="hb-sidebar-mobile-toc"><li>
               <a
-                href="#finite-difference-methods-for-differential-equations"
+                href="#"
                 class="hb-docs-link"
-              >Finite Difference Methods for Differential Equations</a>
+              ></a>
             </li>
           <li>
               <a
@@ -1966,9 +1966,6 @@
 
   <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#finite-difference-methods-for-differential-equations">Finite Difference Methods for Differential Equations</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#forward-euler-method">Forward Euler Method</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
@@ -2063,12 +2060,23 @@
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <!--
+        <style>
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+</style>
+<!--
 <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> May 15, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+
+
+## Finite Difference Methods for Differential Equations
 -->
-<h2 id="finite-difference-methods-for-differential-equations">Finite Difference Methods for Differential Equations</h2>
 <p>Solutions are functions.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
@@ -2185,7 +2193,7 @@ $$</div>
 <p>Alternatively, the solution to the differential equation can be written as <a href="/courses/numericalmethods24/part-2/integration/#numerical-integration">quadrature</a>:
 </p>
 $$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \\, \mathrm{d}\tau.
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$
 <p>Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.</p>
 <h2 id="analysis-of-one-step-methods">Analysis of One-Step Methods</h2>
@@ -2263,7 +2271,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
         Definition:	<em>Order</em>
     </div>
     <div class="details-content">
-        <div class="admonition-content">A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left\[ 0, T \right\]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.</div>
+        <div class="admonition-content">A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.</div>
     </div>
 </div>
 
@@ -2343,7 +2351,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         <div class="admonition-content"><p>A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be <strong>absolutely stable</strong> if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.</p>
 <p>The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set</p>
 $$
-\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
+\lbrace h \lambda \in \mathbb{C} \quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
 $$
 </div>
     </div>
@@ -2404,9 +2412,9 @@ $$
 </p>
 $$
 \begin{array}{c|cccc}
-c_1    & a_{1,1} & \ldots & a_{1,s} \\\
-\vdots & \vdots  & \ddots & \vdots  \\\
-c_s    & a_{s,1} & \ldots & a_{s,s} \\\
+c_1    & a_{1,1} & \ldots & a_{1,s} \\
+\vdots & \vdots  & \ddots & \vdots  \\
+c_s    & a_{s,1} & \ldots & a_{s,s} \\
 \hline
        & b_1     & \ldots & b_s
 \end{array}

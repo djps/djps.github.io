@@ -1643,7 +1643,16 @@ i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collo
       <link>https://djps.github.io/courses/numericalmethods24/part2/integration/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part2/integration/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+      <description>&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 &lt;h2 id=&#34;numerical-differentiation&#34;&gt;Numerical Differentiation&lt;/h2&gt;
@@ -1964,12 +1973,23 @@ $$
       <link>https://djps.github.io/courses/numericalmethods24/part3/odes/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part3/odes/</guid>
-      <description>&lt;!--
+      <description>&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; May 15, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+
+
+## Finite Difference Methods for Differential Equations
 --&gt;
-&lt;h2 id=&#34;finite-difference-methods-for-differential-equations&#34;&gt;Finite Difference Methods for Differential Equations&lt;/h2&gt;
 &lt;p&gt;Solutions are functions.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -2086,7 +2106,7 @@ $$&lt;/div&gt;
 &lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
 &lt;/p&gt;
 $$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \\, \mathrm{d}\tau.
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$
 &lt;p&gt;Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
@@ -2164,7 +2184,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
         Definition:	&lt;em&gt;Order&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left\[ 0, T \right\]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2244,7 +2264,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
 &lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
 $$
-\lbrace h \lambda \in \mathbb{C}\quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
+\lbrace h \lambda \in \mathbb{C} \quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
 $$
 &lt;/div&gt;
     &lt;/div&gt;
@@ -2305,9 +2325,9 @@ $$
 &lt;/p&gt;
 $$
 \begin{array}{c|cccc}
-c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\\
-\vdots &amp; \vdots  &amp; \ddots &amp; \vdots  \\\
-c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\\
+c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\
+\vdots &amp; \vdots  &amp; \ddots &amp; \vdots  \\
+c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
 \hline
        &amp; b_1     &amp; \ldots &amp; b_s
 \end{array}
