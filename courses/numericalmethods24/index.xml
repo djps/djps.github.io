@@ -21,22 +21,27 @@
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
---&gt;
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; December 07, 2023 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 15 minute read &lt;/p&gt;
+--&gt;
 &lt;h2 id=&#34;taylor-series&#34;&gt;Taylor Series&lt;/h2&gt;
 &lt;p&gt;The Taylor series, or Taylor expansion of a function, is defined as&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Taylor Series&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
+&lt;/p&gt;
+$$
+\begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -47,14 +52,22 @@
         Theorem:	&lt;em&gt;Taylor&amp;#39;s Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
-\begin{equation}
-f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)&lt;sup&gt;{k} + \dfrac{f&lt;/sup&gt;{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)&lt;sup&gt;{n+1}
-\end{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
+&lt;/p&gt;
+$$
+\begin{equation*}
+f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
+\end{equation*}
+$$
+&lt;p&gt;
 for some value $\xi \in \left[ a, b \right]$ where
-\begin{equation}
-\lim\limits_{\xi \rightarrow c} \dfrac{ f&lt;/sup&gt;{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
-\end{equation}&lt;/div&gt;
+&lt;/p&gt;
+$$
+\begin{equation*}
+\lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -122,10 +135,12 @@ mjx-assistive-mml {
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
---&gt;
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 05, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 25 minute read &lt;/p&gt;
+--&gt;
 &lt;h2 id=&#34;errors&#34;&gt;Errors&lt;/h2&gt;
 &lt;p&gt;There are many different sources of errors which can affect numerical methods, such as&lt;/p&gt;
 &lt;ul&gt;
@@ -135,7 +150,7 @@ mjx-assistive-mml {
 &lt;/ul&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Absolute and Relative Errors&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -159,7 +174,7 @@ mjx-assistive-mml {
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Linear Sensitivity to Uncertainties&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -194,21 +209,21 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 &lt;h2 id=&#34;number-representations&#34;&gt;Number Representations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Base Representation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
 can be written as a unique expansion with respect to base $b$ as&lt;/p&gt;
-&lt;p&gt;\begin{equation}
+&lt;p&gt;\begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
-\end{equation}&lt;/p&gt;
+\end{equation*}&lt;/p&gt;
 &lt;p&gt;A number can be written in a nested form:&lt;/p&gt;
 $$
-\begin{align}
+\begin{align*}
 \left(x\right)\_b &amp; = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n \\\
  &amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
-\end{align}
+\end{align*}
 $$
 &lt;p&gt;with $a_i \in \mathbb{N}_0$ and $a_i &lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.&lt;/p&gt;
 &lt;p&gt;For a real number, ${x \in \mathbb{R}}$, write&lt;/p&gt;
@@ -229,7 +244,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e.
-$\left(x \right)\_{10}$
+$\left(x \right)_{10}$
 into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
@@ -265,7 +280,7 @@ $$
       \end{array}
       $$
 which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
-&lt;li&gt;Output as $\left(x \right)\_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
+&lt;li&gt;Output as $\left(x \right)_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
     &lt;/div&gt;
@@ -273,7 +288,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Floating Point Representations&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -332,7 +347,7 @@ mjx-assistive-mml {
 &lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Systems of Linear Equations&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -379,7 +394,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Banded Systems&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -389,7 +404,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Symmetric Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -401,7 +416,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Positive Definite Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -411,7 +426,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Nonsingular Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -421,7 +436,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Note open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-pencil-alt fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon pencil&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Note:	&lt;em&gt;Properties of Nonsingular Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -436,7 +451,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -503,7 +518,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Upper and Lower Triangular Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -534,7 +549,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Cholesky-Decomposition&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -583,7 +598,7 @@ x_{k +1} = \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
 $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Spectral Radius of a Matrix&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -609,7 +624,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Richardson Iteration&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -629,7 +644,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Jacobi Iteration&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -646,7 +661,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Diagonally Dominant Matrices&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -670,7 +685,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Gauss-Seidel Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -699,7 +714,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Successive Over Relaxation (SOR)&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -726,7 +741,7 @@ $$&lt;/div&gt;
 &lt;h3 id=&#34;fundamental-theorem-of-numerical-analysis&#34;&gt;Fundamental Theorem of Numerical Analysis&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Stable&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -738,7 +753,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Consistent&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -759,7 +774,7 @@ $$
 so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Convergent&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -807,7 +822,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;h3 id=&#34;bisection-method&#34;&gt;Bisection Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -839,7 +854,7 @@ $$&lt;/div&gt;
 &lt;h3 id=&#34;newtons-method&#34;&gt;Newton&amp;rsquo;s Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -910,7 +925,7 @@ $$
 &lt;h3 id=&#34;secant-methods&#34;&gt;Secant Methods&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -977,7 +992,7 @@ and&lt;/li&gt;
 &lt;h2 id=&#34;convergence&#34;&gt;Convergence&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1051,7 +1066,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;h2 id=&#34;systems-of-nonlinear-equation&#34;&gt;Systems of Nonlinear Equation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Multi-dimensional Newton Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1114,7 +1129,7 @@ mjx-assistive-mml {
 &lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Interpolating Functions&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1126,7 +1141,7 @@ mjx-assistive-mml {
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Polynomial Interpolation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1158,7 +1173,7 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1177,7 +1192,7 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
 --&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Lagrange Polynomials&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1196,7 +1211,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Newton Interpolation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1290,7 +1305,7 @@ $$
 &lt;h2 id=&#34;spline-interpolation&#34;&gt;Spline Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1300,7 +1315,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;B-Splines&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1350,7 +1365,7 @@ $$
 &lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Least-Squares Approximation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1377,7 +1392,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Linear Least-Squares Approximation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1433,7 +1448,7 @@ mjx-assistive-mml {
 &lt;h2 id=&#34;numerical-differentiation&#34;&gt;Numerical Differentiation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1459,7 +1474,7 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Higher Order Derivatives&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1473,7 +1488,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Richardson Extrapolation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1497,7 +1512,7 @@ $$
 &lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Riemann Sum&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1533,7 +1548,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Trapezoidal Rule&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1573,7 +1588,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Simpson&amp;#39;s Rule&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1664,7 +1679,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 &lt;/ul&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Orthogonal functions&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1708,7 +1723,7 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Gauss-Legendre Quadrature&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1768,7 +1783,7 @@ mjx-assistive-mml {
 &lt;p&gt;Solutions are functions.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Ordinary Differential Equations&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1779,7 +1794,7 @@ mjx-assistive-mml {
 &lt;!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  --&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Initial Value Problems&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1791,7 +1806,7 @@ mjx-assistive-mml {
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;One step methods&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1802,7 +1817,7 @@ mjx-assistive-mml {
 &lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1820,7 +1835,7 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
 &lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1838,7 +1853,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
 &lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1853,7 +1868,7 @@ $$&lt;/div&gt;
 &lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1867,7 +1882,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1887,7 +1902,7 @@ $$
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1904,7 +1919,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Consistency Error&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1931,7 +1946,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Convergence&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1955,7 +1970,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Order&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1965,7 +1980,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Zero Stable Methods&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1983,7 +1998,7 @@ z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \de
 $$
 &lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
 $$
-\left\| z_n - u_n \right\| \le C \varepsilon \quad \mbox{for} \quad 0 \le n \le N.
+\left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
 $$
 &lt;/div&gt;
     &lt;/div&gt;
@@ -2032,14 +2047,14 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Absolute Stability&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
 &lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
 $$
-\lbrace h \lambda \in \mathbb{C} \quad \mbox{such that} \quad  | u_n | \rightarrow 0 \quad \mbox{as} \quad t_n \rightarrow \infty \rbrace.
+\lbrace h \lambda \in \mathbb{C} \quad \text{such that} \quad  | u_n | \rightarrow 0 \quad \text{as} \quad t_n \rightarrow \infty \rbrace.
 $$
 &lt;/div&gt;
     &lt;/div&gt;
@@ -2049,7 +2064,7 @@ $$
 &lt;h2 id=&#34;lax-equivalence&#34;&gt;Lax Equivalence&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2147,7 +2162,7 @@ $$
 &lt;h2 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;

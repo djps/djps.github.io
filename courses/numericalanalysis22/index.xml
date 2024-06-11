@@ -29,7 +29,7 @@
 &lt;h2 id=&#34;well-posed-problems&#34;&gt;Well Posed Problems&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Well-Posed Problems&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -47,7 +47,7 @@
 &lt;h2 id=&#34;condition-number&#34;&gt;Condition Number&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Relative and Absolute Condition Numbers&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -66,7 +66,7 @@ K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Ve
 &lt;p&gt;Consider a well-posed problem, a construct a sequence of approximate solutions via a sequence of approximate solutions and data, i.e. $F_n (x_n, d_n)=0$&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Consistency&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -80,7 +80,7 @@ The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Asymptotic and Relative Condition Numbers&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -102,7 +102,7 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Convergence&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -265,7 +265,7 @@ r^{(k)} = b - A x^{(k)}
 is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Consistency&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -288,7 +288,7 @@ f = (I-B) A^{-1} b
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Stationary Methods&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -435,7 +435,7 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
 &lt;h2 id=&#34;conjugate-gradient&#34;&gt;Conjugate Gradient&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Conjugate Vectors&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -541,7 +541,7 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 &lt;h2 id=&#34;lagrange-interpolation&#34;&gt;Lagrange Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Lagrange Polynomials&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -600,7 +600,7 @@ E_n(x) &amp;amp;= f(x) − \Pi_n f (x) \newline
 &lt;h2 id=&#34;piecewise-lagrange-interpolation&#34;&gt;Piecewise Lagrange Interpolation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;$\mathrm{L}^2$ Space&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -806,7 +806,7 @@ Typically the Green&#39;s function has the following properties
     &lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1175,7 +1175,7 @@ $$
 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-info-circle fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon information-circle&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Definition:	&lt;em&gt;Coercivity and Continuity of Bilinear Forms&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
