@@ -344,9 +344,11 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
+&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
+--&gt;
 &lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -356,12 +358,12 @@ mjx-assistive-mml {
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for&lt;/p&gt;
 $$
-\begin{align}
-a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \\\
-a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\\
-\vdots &amp;  \\\
+\begin{align*}
+a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \\
+a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\
+\vdots &amp;  \\
 a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
-\end{align}
+\end{align*}
 $$
 &lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where
 &lt;/p&gt;
@@ -608,7 +610,7 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
 &lt;/p&gt;
 $$
-\rho \left( A \right) = \max \left\\{  \left\|  \lambda_1 \right\|,  \left\|  \lambda_2 \right\|, \ldots   \left\|  \lambda_n \right\| \right\\}
+\rho \left( A \right) = \max \left\{  \left\|  \lambda_1 \right\|,  \left\|  \lambda_2 \right\|, \ldots   \left\|  \lambda_n \right\| \right\}
 $$
 &lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 &lt;/div&gt;
@@ -671,7 +673,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 &lt;/p&gt;
 $$
-\left\| a_{i,i} \right\| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left\| a_{i,j} \right\| \quad \mbox{for all } i \in (1,n)
+\left\| a_{i,i} \right\| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left\| a_{i,j} \right\| \quad \text{for all } i \in (1,n)
 $$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -696,7 +698,7 @@ $$&lt;/div&gt;
 &lt;/p&gt;
 $$
 \begin{equation}
-(D + L) x_{k+1} = -U x_{k} + b. \label{eq:GS}
+(D + L) x_{k+1} = -U x_{k} + b
 \end{equation}
 $$
 &lt;p&gt;
@@ -818,9 +820,11 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
       <link>https://djps.github.io/courses/numericalmethods24/part1/nonlinear-equations/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/courses/numericalmethods24/part1/nonlinear-equations/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+      <description>&lt;!--
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+--&gt;
 &lt;h2 id=&#34;root-finding&#34;&gt;Root Finding&lt;/h2&gt;
 &lt;h3 id=&#34;bisection-method&#34;&gt;Bisection Method&lt;/h3&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -829,8 +833,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         Definition:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $\left\[a, b\right\]$ to a function $f \in C^0 \left( \left\[a, b\right\] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
-&lt;p&gt;Bisect the interval into two subintervals $\left\[a, c\right\]$ and $\left\[c, b\right\]$ such that ${a &lt; c &lt; b}$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $\left[a, b\right\$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
+&lt;p&gt;Bisect the interval into two subintervals $\left[a, c\right]$ and $\left[c, b\right]$ such that ${a &lt; c &lt; b}$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If $f(c) = 0$ or is sufficiently close, then $c$ is a root&lt;/li&gt;
 &lt;li&gt;Else, if $f(c)f(a) &lt; 0$ continue in the interval $[a, c]$&lt;/li&gt;
@@ -846,7 +850,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         Theorem:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left\[a, b\right\] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
 &lt;/p&gt;
 $$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
@@ -861,7 +865,7 @@ $$&lt;/div&gt;
         Definition:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let a function $f \in C^1 \left( \left\[a, b \right\] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
@@ -885,7 +889,7 @@ $$&lt;/div&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left\[ a, b\right\] \right)$, with&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$f(a)f(b) &lt; 0$&lt;/li&gt;
 &lt;li&gt;$f^\prime\left(x\right) \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
@@ -893,11 +897,11 @@ $$&lt;/div&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then $f(x)=0$ has exactly one root, $r$, in the interval and the sequence generated by Newton iterations converges to the root when the initial guess is chosen according to&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &lt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &gt; 0$ then $x \in \left\[ a, r \right\]$&lt;/li&gt;
+&lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &lt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &gt; 0$ then $x \in \left[ a, r \right]$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;or&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &gt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &lt; 0$ then $x \in \left\[ r, b \right\]$.&lt;/li&gt;
+&lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &gt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &lt; 0$ then $x \in \left[ r, b \right]$.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The iterate in the sequence satisfies
 &lt;/p&gt;
@@ -914,11 +918,11 @@ $$
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left\[ a, b\right\] \right)$, with&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$f(a)f(b) &lt; 0$&lt;/li&gt;
 &lt;li&gt;$f^\prime\left( x \right) \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
-&lt;li&gt;$f^{\prime\prime}\left( x \right)$ exists and is continuous, i.e. ${f\left( x \right) \in C^2\left( \left\[ a, b \right\]\right)}$&lt;/li&gt;
+&lt;li&gt;$f^{\prime\prime}\left( x \right)$ exists and is continuous, i.e. ${f\left( x \right) \in C^2\left( \left[ a, b \right]\right)}$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, if $x_0$ is close enough to the root $r$, Newton&amp;rsquo;s method converges quadratically.&lt;/p&gt;
 &lt;/div&gt;
@@ -946,7 +950,7 @@ $$&lt;/div&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^2\left( \left\[a, b\right\] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
@@ -1081,7 +1085,7 @@ $$
 &lt;p&gt;
 the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 J = \left(
   \begin{array}{cccc}
   \dfrac{\partial f_1 }{\partial x_1} &amp; \dfrac{\partial f_1 }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_1 }{\partial x_n} \\\
@@ -1090,7 +1094,7 @@ J = \left(
   \dfrac{\partial f_n }{\partial x_1} &amp; \dfrac{\partial f_n }{\partial x_2} &amp; \cdots &amp; \dfrac{\partial f_n }{\partial x_n}
   \end{array}
   \right) \in \mathbb{R}^{n \times n}.
-  \end{equation}
+  \end{equation*}
 $$
 &lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
 &lt;/p&gt;
