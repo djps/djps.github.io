@@ -1982,17 +1982,17 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
