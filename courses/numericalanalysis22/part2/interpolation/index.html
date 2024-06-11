@@ -2040,33 +2040,42 @@
 <li><strong>Trigonometric interpolation</strong>: using polynomials of trigonometric functions,</li>
 <li><strong>Spline interpolation</strong>: using a set of piecewise polynomials over subintervals of the data.</li>
 </ul>
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content">Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content">Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
 \begin{equation}
 \Pi_n\left( x_i \right) = y_i.
 \end{equation}</div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
 <h2 id="lagrange-interpolation">Lagrange Interpolation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Lagrange Polynomials</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Lagrange Polynomials</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
 \begin{equation}
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
 \end{equation}</p>
@@ -2076,40 +2085,50 @@
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. <br>
 \end{equation}</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Example open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg> Example:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>An <code>.ipynb</code> notebook illustrating the Lagrange polynomials can be accessed 
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Example open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Example: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>An <code>.ipynb</code> notebook illustrating the Lagrange polynomials can be accessed 
 . It can be downloaded from 
 .</p>
 <p>An <code>.ipynb</code> notebook illustrating Runge phenomenon can be accessed 
 . It can be downloaded from 
 .</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
 <p>Let $I_x$ be the smallest interval containing the nodes $x_0, x_1, \ldots x_n$ and $x$ and assume that $f \in C^{n+1}\left( I_x \right)$. Then the interpolation error at the point $x$ is defined and given by
 \begin{equation}
 \begin{aligned}
@@ -2123,21 +2142,26 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
 \omega_{n+1}(x) = \prod\limits_{i=0}^{n} \left(x - x_i \right).
 \end{equation}</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
 <h2 id="piecewise-lagrange-interpolation">Piecewise Lagrange Interpolation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>$\mathrm{L}^2$ Space</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Define the following space
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>$\mathrm{L}^2$ Space</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Define the following space
 \begin{equation}
 \mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x &lt; \infty \bigr \rbrace
 \end{equation}</p>
@@ -2147,7 +2171,8 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
 \end{equation}</p>
 <p>This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
@@ -2166,15 +2191,19 @@ each interval the following error estimate holds
 \begin{equation}
 \left\Vert f − \Pi_h^k f \right\Vert_\infty \leq C h^{k+1} \left\Vert f^{(k+1} \right\Vert_\infty .
 \end{equation}</p>
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
 $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−1} h_j$, such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Now using Lagrange interpolation on each subinterval $I_j$ using $n + 1$ equally spaced nodes
 $\lbrace{ x^{(i)}_{j} , 0 \le i \le n \rbrace}$
 with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</em>.</p>
@@ -2191,7 +2220,8 @@ with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</
 \end{equation}</p>
 <p>for two suitable positive constants $C_{1}$ and $C_{2}$.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 

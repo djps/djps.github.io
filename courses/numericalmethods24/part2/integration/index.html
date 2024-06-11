@@ -2045,15 +2045,19 @@ mjx-assistive-mml {
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <h2 id="numerical-differentiation">Numerical Differentiation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Finite-Difference Quotients</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Finite-Difference Quotients</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
 <ol>
 <li><strong>Forward Difference Quotient:</strong>
 $$
@@ -2075,38 +2079,48 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 $$
 The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.</li>
 </ol></div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Higher Order Derivatives</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Higher Order Derivatives</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
 </p>
 $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$</div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Richardson Extrapolation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Richardson Extrapolation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then</p>
 $$
 f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
 $$
@@ -2120,21 +2134,26 @@ f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{
 $$
 <p>The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
 <h2 id="numerical-integration">Numerical Integration</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Riemann Sum</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 < x_1 < \ldots < x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Riemann Sum</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 < x_1 < \ldots < x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as</p>
 $$
 \int\limits_{a}^{b}f\left( x\right) \\, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \mbox{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
@@ -2161,20 +2180,25 @@ $$
 \end{align*}
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Trapezoidal Rule</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Trapezoidal Rule</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
@@ -2184,20 +2208,25 @@ $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em>Error for Trapezoidal Rule</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em>Error for Trapezoidal Rule</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
 <p>The error can be shown to have the form:
 </p>
 $$
@@ -2209,20 +2238,25 @@ $$
 $$
 <p>for some ${\xi \in \left(a, b\right)}$.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Simpson&#39;s Rule</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>The integral is approximated as
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Simpson&#39;s Rule</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>The integral is approximated as
 </p>
 $$
 \int_a^b f\left( x\right) \\, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
@@ -2237,20 +2271,25 @@ $$
 <p>
 and is referred to as <strong>Simpson&rsquo;s 1/3 Rule</strong>. It uses quadratic interpolation of the function through the end and midpoints.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Algorithm open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg> Algorithm:	<em>Romberg Algorithm</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Romberg&rsquo;s method uses the Trapezoidal Rule and then Richardson Extrapolation to estimate integrals.
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Algorithm open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Algorithm: <em>Romberg Algorithm</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Romberg&rsquo;s method uses the Trapezoidal Rule and then Richardson Extrapolation to estimate integrals.
 First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
 ${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:</p>
 $$
@@ -2283,26 +2322,32 @@ $$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Example open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg> Example:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of numerical integration using the Trapezium rule can be accessed online 
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Example open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Example: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of numerical integration using the Trapezium rule can be accessed online 
 .</p>
 <p>It can be downloaded from 
  as a python file or downloaded as a notebook from 
 .</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
@@ -2317,34 +2362,43 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 <li>Can the weights be chosen such that the error in an integral is minimized?</li>
 <li>Furthermore, can the nodes be chosen such that the integral can be further improved?</li>
 </ul>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Orthogonal functions</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Two real-valued functions $f(x)$ and $g(x)$ are said to be <strong>orthogonal</strong> if</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Orthogonal functions</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Two real-valued functions $f(x)$ and $g(x)$ are said to be <strong>orthogonal</strong> if</p>
 $$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$
 <p>where $\langle f, g \rangle$ satisfies the conditions to be an inner product.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em>Gaussian Quadrature</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em>Gaussian Quadrature</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that</p>
 <ol>
 <li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,</li>
 <li>the polynomial $q(x)$ satisfies
@@ -2364,20 +2418,25 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
 <p>Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>.</p>
 <p>It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Gauss-Legendre Quadrature</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Gauss-Legendre Quadrature</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
 </p>
 $$
 \int_{-1}^1 P_m(x) P_n(x) \\, \mathrm{d} x = 0 \quad \mbox{for} \quad n \ne m.
@@ -2402,7 +2461,8 @@ $$
 \int_a^b f(x) \\, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \\, \mathrm{d}t.
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 

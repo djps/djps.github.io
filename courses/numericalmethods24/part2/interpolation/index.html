@@ -2046,31 +2046,40 @@ mjx-assistive-mml {
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <h2 id="interpolation">Interpolation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Interpolating Functions</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating function</strong>.</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Interpolating Functions</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an <strong>interpolating function</strong>.</p>
 <p>This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Polynomial Interpolation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>If the interpolating function is a polynomial, it can be written as
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Polynomial Interpolation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>If the interpolating function is a polynomial, it can be written as
 </p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
@@ -2092,21 +2101,26 @@ $$
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
 <p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
 <!--
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>If </p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>If </p>
 $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
 <p>
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
@@ -2115,21 +2129,26 @@ $$\Phi \alpha = p$$
 <p>
 where $\Phi$ is the <strong>Vandermonde matrix</strong>.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
 -->
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Lagrange Polynomials</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Lagrange Polynomials</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
 \begin{equation}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation}</p>
@@ -2139,20 +2158,25 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 \end{equation}</p>
 <p>By construction, <em>the collocation matrix is the identity matrix</em>. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Newton Interpolation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Newton Interpolation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
 </p>
 $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
@@ -2164,54 +2188,69 @@ $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Example open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg> Example:	<em>Lagrange Interpolation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content">An <code>.ipynb</code> notebook with an example of interpolation using Lagrange polynomials can be accessed online 
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Example open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Example: <em>Lagrange Interpolation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content">An <code>.ipynb</code> notebook with an example of interpolation using Lagrange polynomials can be accessed online 
 .</div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Example open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg> Example:	<em>Runge&#39;s Phenomenon</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of Runge&rsquo;s phenomenon can be accessed online 
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Example open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Example: <em>Runge&#39;s Phenomenon</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of Runge&rsquo;s phenomenon can be accessed online 
 .</p>
 <p>It can be downloaded from 
  as a python file or downloaded as a notebook from 
 .</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p><strong>Aitken&rsquo;s</strong> algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p><strong>Aitken&rsquo;s</strong> algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$</p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$
@@ -2236,21 +2275,27 @@ p\left( u_3 \right) = p_{3}^0 &                       &                        &
 $$
 <p>where the coefficients are evaluated from left to right.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<!-- <div class="details admonition Theorem open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg> Theorem:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content">polynomial&rsquo;s convergence.</div>
-    </div>
+<!-- <div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Theorem open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Theorem: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content">polynomial&rsquo;s convergence.</div>
+      </div>
+  </div>
 </div>
 
 
@@ -2258,29 +2303,38 @@ $$
 -->
 <h2 id="piecewise-polynomial-interpolation">Piecewise Polynomial Interpolation</h2>
 <h2 id="spline-interpolation">Spline Interpolation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em></em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content">A function $s\left(u\right)$ is called a <strong>spline</strong> of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.</div>
-    </div>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em></em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content">A function $s\left(u\right)$ is called a <strong>spline</strong> of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.</div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>B-Splines</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>B-Splines</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
 $$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}\_{i}^{n} \left(u \right)
 $$
@@ -2305,7 +2359,8 @@ $$
 <p>
 is a local parameter.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
@@ -2326,15 +2381,19 @@ $$
   \right).
 $$
 <h2 id="least-squares-approximation">Least-Squares Approximation</h2>
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Least-Squares Approximation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Least-Squares Approximation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
 </p>
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
@@ -2352,20 +2411,25 @@ $$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \mbox{for all } \quad j=1, \ldots m.
 $$
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
 
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg> Definition:	<em>Linear Least-Squares Approximation</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content"><p>If the function $y(x)$ is a function of the form
+<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+  <div class="details admonition Definition open">
+      <div class="details-summary admonition-title">
+          
+          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+          </span>
+          <span class="dark:text-neutral-300">
+            Definition: <em>Linear Least-Squares Approximation</em>
+          </span>
+      </div>
+      <div class="details-content">
+          <div class="admonition-content"><p>If the function $y(x)$ is a function of the form
 </p>
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
@@ -2391,7 +2455,8 @@ $$
 <p>
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.</p>
 </div>
-    </div>
+      </div>
+  </div>
 </div>
 
 
