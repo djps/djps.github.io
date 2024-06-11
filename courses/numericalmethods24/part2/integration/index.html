@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.059a27844519b6d467b005a401c9f1a256c3b1cb1f610696d1a04d85b10b9d91.css" rel="stylesheet" />
+    <link href="/css/custom.min.fbb349ac9318904a1588a2c30dcd72acac52a5dca108b5c7162700ef36ad98d9.css" rel="stylesheet" />
   
 
   <script>
@@ -2160,13 +2160,13 @@ $$
         <div class="admonition-content"><p>Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 < x_1 < \ldots < x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as</p>
 $$
-\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \text{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \textsf{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
 $$
 <p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>lower</strong> and <strong>upper Riemann sums</strong> are given by</p>
 $$
 \begin{align*}
-L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \text{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
-U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \text{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
+U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 <p>
@@ -2404,7 +2404,7 @@ $$
 <li>it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,</li>
 <li>the polynomial $q(x)$ satisfies
 $$
-  \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \text{for} \quad k=0,\ldots, n.
+  \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \textsf{for} \quad k=0,\ldots, n.
   $$
 i.e. $q(x)$ is orthogonal to $x^k$.</li>
 </ol>
@@ -2439,13 +2439,13 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
         <div class="admonition-content"><p>The Legendre polynomials are a set of orthogonal polynomials where
 </p>
 $$
-\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \text{for} \quad n \ne m.
+\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
 $$
 <p>
 and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
 </p>
 $$
-P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \text{for} \quad n \ge 2.
+P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
 $$
 <p>
 Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$</p>
