@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
+    <link href="/css/custom.min.21c05c570e37cdd5f942fbdb7d8dbf11f5e235ef3f7dfa904dfce8e352dea158.css" rel="stylesheet" />
   
 
   <script>
@@ -2043,19 +2043,18 @@
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 <p>Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.</p>
 <h2 id="well-posed-problems">Well Posed Problems</h2>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Well-Posed Problems</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Well-Posed Problems</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>A problem is said to be <strong>well-posed</strong> if</p>
 <ul>
 <li>a solution exists,</li>
 <li>the solution is unique,</li>
@@ -2063,26 +2062,25 @@
 </ul>
 <p>A problem which does not have these properties is said to be <strong>ill-posed</strong>.</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
+
 <h2 id="condition-number">Condition Number</h2>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Relative and Absolute Condition Numbers</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">The <strong>relative condition number</strong> of a problem is given by:
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Relative and Absolute Condition Numbers</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">The <strong>relative condition number</strong> of a problem is given by:
 \begin{equation}
 K ( d ) = \sup\limits_{\delta d \in \mathcal{D}} \dfrac{ \left\Vert \delta x \right\Vert / \left\Vert x \right\Vert}{\left\Vert \delta d \right\Vert / \left\Vert d \right\Vert}
 \end{equation}
@@ -2090,50 +2088,48 @@ if either $x=0$ or $d=0$, the <strong>absolute condition number</strong> is then
 \begin{equation}
 K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Vert \delta x \right\Vert }{\left\Vert \delta d \right\Vert}
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
 <h2 id="stability">Stability</h2>
 <p>Consider a well-posed problem, a construct a sequence of approximate solutions via a sequence of approximate solutions and data, i.e. $F_n (x_n, d_n)=0$</p>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Consistency</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is <strong>consistent</strong> if
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Consistency</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is <strong>consistent</strong> if
 \begin{equation}
 \lim\limits_{n\rightarrow\infty} F_n (x,d)  \rightarrow F(x,d).
 \end{equation}
 The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Asymptotic and Relative Condition Numbers</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Asymptotic and Relative Condition Numbers</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
 \begin{equation}
 K_n \left( d_n \right) = \sup\limits_{\delta d_n \in \mathcal{D}_n }  \dfrac{ \left\Vert \delta x_n \right\Vert /  \left\Vert x_n \right\Vert }{\left\Vert \delta d_n \right\Vert / \left\Vert d_n \right\Vert}
 \end{equation}
@@ -2146,67 +2142,64 @@ $$K^{\mathrm{num}} (d) = \lim \limits_{k\rightarrow \infty} \sup\limits_{n \le k
 K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \infty} \sup \limits_{n \le k} K_{n, \mathrm{abs}} \left( d_n \right).
 \end{equation}</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Convergence</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">A method is <strong>convergent</strong> if and only if:
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Convergence</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">A method is <strong>convergent</strong> if and only if:
 \begin{equation}
 \forall \varepsilon &gt; 0, \quad \exists \,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em>Lax-Ritchmyer</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">A numerical algorithm converges if and only if it is consistent and stable.</div>
-      </div>
-  </div>
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em>Lax-Ritchmyer</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">A numerical algorithm converges if and only if it is consistent and stable.</div>
+    </div>
 </div>
+
 
 
 
 <h2 id="matrix-analysis">Matrix Analysis</h2>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $A \in \mathbb{R}^{n \times n}$, then</p>
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $A \in \mathbb{R}^{n \times n}$, then</p>
 <ol>
 <li>
 <p>$\lim\limits_{k \rightarrow \infty}A^k =0 \Leftrightarrow \rho \left( A \right) < 1$. Where $\rho\left(A \right)$ is the largest absolute value of the eigenvalues of $A$.  This is called the <em>spectral radius</em></p>
@@ -2226,25 +2219,24 @@ where $\left\Vert \cdot \right\Vert$ is an <em>induced matrix norm</em> such tha
 </li>
 </ol>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert < 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert < 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
 \begin{equation}
 \left( A + \delta A \right)\left( x + \delta x \right) = b + \delta b
 \end{equation}
@@ -2252,25 +2244,24 @@ for a $\delta b \in \mathbb{R}^n$, then
 \begin{equation}
 \left( A + \delta A \right)\left( x + \delta x \right) \le \dfrac{K(A)}{1- K(A) \left\Vert \delta A \right\Vert_2 / \left\Vert A \right\Vert_2} \left(\dfrac{\left\Vert \delta b \right\Vert_2}{\left\Vert b \right\Vert_2} + \dfrac{\left\Vert \delta A \right\Vert_2}{\left\Vert A \right\Vert_2} \right)
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
 \begin{equation}
 A \left( x + \delta x \right) = b + \delta b
 \end{equation}
@@ -2278,25 +2269,24 @@ then
 \begin{equation}
 \dfrac{1}{K(A)} \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert} \le \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le K(A) \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert}
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) <1$, then the following holds
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) <1$, then the following holds
 \begin{equation}
 \dfrac{\left\Vert x+ \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{1+\gamma K(A)}{1-\gamma K(A)}
 \end{equation}
@@ -2304,25 +2294,24 @@ and
 \begin{equation}
 \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{2\gamma K(A)}{1-\gamma K(A)}
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 < 1$ and
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 < 1$ and
 \begin{equation}
 \bigl\Vert A^{-1} \bigr\Vert \le \dfrac{\left\Vert C \right\Vert}{1 - \left\Vert R \right\Vert}
 \end{equation}
@@ -2343,9 +2332,9 @@ and, as a consequence, if $\left\Vert R \right\Vert <1$ it turns out that
 \end{aligned}
 \end{equation}</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 

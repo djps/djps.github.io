@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
+    <link href="/css/custom.min.21c05c570e37cdd5f942fbdb7d8dbf11f5e235ef3f7dfa904dfce8e352dea158.css" rel="stylesheet" />
   
 
   <script>
@@ -2078,19 +2078,18 @@ Typically the Green's function has the following properties
         </div>
 
     </div>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Finite-Difference Quotients</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Finite-Difference Quotients</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
 <ol>
 <li><strong>Forward Difference Quotient:</strong>
 \begin{equation}
@@ -2114,52 +2113,50 @@ D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 \end{aligned}
 \end{equation}</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em>Errors for Finite-Difference Quotients</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>The errors for the approximation of the derivatives are given by</p>
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em>Errors for Finite-Difference Quotients</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The errors for the approximation of the derivatives are given by</p>
 <ol>
 <li>$u\left( x_j \right) - D_{j}^{+}u = -\dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_j, x_{j+1} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$</li>
 <li>$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.</li>
 </ol></div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
 <h3 id="stability-analysis">Stability Analysis</h3>
 <p>Let $V_h$ be the set of discrete functions defined on the nodal points $x_j$ and $V_h^0 \subset V_h$ contain the discrete functions $v_h \in V_h$ which vanish at $x_0$ and $x_n$, i.e. $v_0 =0$ and $v_n=0$.</p>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Lemma open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Lemma: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as</p>
+<div class="details admonition Lemma open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Lemma: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as</p>
 <p>\begin{align}
 \left( v_h, w_h \right)_h^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
 \end{align}</p>
@@ -2194,31 +2191,30 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
 </ol>
 </div>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Lemma open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Lemma: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">For any $v_h \in V_h$
+
+<div class="details admonition Lemma open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Lemma: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">For any $v_h \in V_h$
 \begin{equation}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
@@ -2231,27 +2227,26 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
 \begin{equation}
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 \end{equation}</p>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
 <p>Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
 \begin{equation}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
 \end{equation}</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
@@ -2273,88 +2268,84 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 \begin{equation}
 \mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
 \end{equation}</p>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><ol>
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><ol>
 <li>Let $u$ be a $C^2$ be a solution of the elementary problem, then $u \in H^1_0$ also solves the weak form problem.</li>
 <li>Let $u \in H^1_0$ be a solution of the weak problem. If and only if $u \in C^2 \left( [ 0, 1 ] \right)$ then $u$ also solves the elementary problem.</li>
 </ol>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em>Fundamental Theorem of the Calculus of Variations</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Suppose that $f(x)$ is integrable on $(0,1)$ and
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em>Fundamental Theorem of the Calculus of Variations</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Suppose that $f(x)$ is integrable on $(0,1)$ and
 \begin{equation}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation}</p>
 <p>then $f(x)=0$.</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em>Poincaré-Friedrich Inequality</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em>Poincaré-Friedrich Inequality</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
 \begin{equation}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">Let
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">Let
 \begin{equation}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
 \end{equation}
@@ -2362,9 +2353,9 @@ then
 \begin{equation}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
 \end{equation}</div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 

@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.bc20dbd5889a0a4434591285730356aa32062cd949f50c0668b16f483186a23f.css" rel="stylesheet" />
+    <link href="/css/custom.min.21c05c570e37cdd5f942fbdb7d8dbf11f5e235ef3f7dfa904dfce8e352dea158.css" rel="stylesheet" />
   
 
   <script>
@@ -2046,19 +2046,18 @@
 -->
 <h2 id="root-finding">Root Finding</h2>
 <h3 id="bisection-method">Bisection Method</h3>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Bisection Method</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>The bisection method, when applied in the interval $\left[a, b\right]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) < 0}$</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Bisection Method</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The bisection method, when applied in the interval $\left[a, b\right]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) < 0}$</p>
 <p>Bisect the interval into two subintervals $\left[a, c\right]$ and $\left[c, b\right]$ such that ${a < c < b}$.</p>
 <ul>
 <li>If $f(c) = 0$ or is sufficiently close, then $c$ is a root</li>
@@ -2066,91 +2065,87 @@
 <li>Else, if $f(c)f(b) < 0$ continue in the interval $[c, b]$</li>
 </ul>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em>Bisection Method</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) < 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em>Bisection Method</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) < 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
 </p>
 $$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
 $$</div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
 <h3 id="newtons-method">Newton&rsquo;s Method</h3>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&rsquo;s method is
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&rsquo;s method is
 </p>
 $$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
 $$</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content">When Newton&rsquo;s method converges, it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.</div>
-      </div>
-  </div>
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">When Newton&rsquo;s method converges, it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.</div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $f \in C^1\left( \left[ a, b\right] \right)$, with</p>
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $f \in C^1\left( \left[ a, b\right] \right)$, with</p>
 <ol>
 <li>$f(a)f(b) < 0$</li>
 <li>$f^\prime\left(x\right) \ne 0$ for all $x \in \left( a, b \right)$</li>
@@ -2170,25 +2165,24 @@ $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $f \in C^1\left( \left[ a, b\right] \right)$, with</p>
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $f \in C^1\left( \left[ a, b\right] \right)$, with</p>
 <ol>
 <li>$f(a)f(b) < 0$</li>
 <li>$f^\prime\left( x \right) \ne 0$ for all $x \in \left( a, b \right)$</li>
@@ -2196,49 +2190,47 @@ $$
 </ol>
 <p>Then, if $x_0$ is close enough to the root $r$, Newton&rsquo;s method converges quadratically.</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
 <h3 id="secant-methods">Secant Methods</h3>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>The secant method is defined as
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>The secant method is defined as
 </p>
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$</div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Theorem open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Theorem: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
+
+<div class="details admonition Theorem open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Theorem: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
 </p>
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
@@ -2251,74 +2243,71 @@ and</li>
 <li>$\left\|  r - x_{n+1} \right\| \le \mu \left\|  r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$</li>
 </ol>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Example open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Example: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of iterative solvers for nonlinear systems can be accessed online 
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Example: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of iterative solvers for nonlinear systems can be accessed online 
 .</p>
 <p>It can be downloaded from 
  as a python file or downloaded as a notebook from 
 .</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
 
 
 
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Example open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Example: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example using the secant method to find a local maxima can be accessed online 
+
+<div class="details admonition Example open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Example: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example using the secant method to find a local maxima can be accessed online 
 .</p>
 <p>It can be downloaded from 
  as a python file or downloaded as a notebook from 
 .</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
 <h2 id="convergence">Convergence</h2>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em></em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to <strong>converge linearly</strong> if there exists a $\mu \in \left( 0,1\right)$ such that
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to <strong>converge linearly</strong> if there exists a $\mu \in \left( 0,1\right)$ such that
 </p>
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
@@ -2344,9 +2333,9 @@ $$
 <p>
 Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
@@ -2389,19 +2378,18 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 </tbody>
 </table>
 <h2 id="systems-of-nonlinear-equation">Systems of Nonlinear Equation</h2>
-<div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
-  <div class="details admonition Definition open">
-      <div class="details-summary admonition-title">
-          
-          <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
-            <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-          </span>
-          <span class="dark:text-neutral-300">
-            Definition: <em>Multi-dimensional Newton Method</em>
-          </span>
-      </div>
-      <div class="details-content">
-          <div class="admonition-content"><p>For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Multi-dimensional Newton Method</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content"><p>For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
 </p>
 $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
@@ -2434,9 +2422,9 @@ $$
 <p>
 is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.</p>
 </div>
-      </div>
-  </div>
+    </div>
 </div>
+
 
 
 
