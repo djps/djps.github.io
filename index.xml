@@ -31,7 +31,7 @@
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -56,7 +56,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -89,7 +89,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -112,7 +112,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -134,7 +134,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -190,7 +190,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -210,7 +210,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -230,7 +230,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -257,7 +257,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -281,7 +281,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -323,7 +323,7 @@ $$
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -356,7 +356,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -388,7 +388,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -419,7 +419,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -460,7 +460,7 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -486,7 +486,7 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -513,7 +513,7 @@ K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Ve
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -535,7 +535,7 @@ The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -565,7 +565,7 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -586,7 +586,7 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -605,7 +605,7 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -642,7 +642,7 @@ where $\left\Vert \cdot \right\Vert$ is an &lt;em&gt;induced matrix norm&lt;/em&
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -667,7 +667,7 @@ for a $\delta b \in \mathbb{R}^n$, then
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -692,7 +692,7 @@ then
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -717,7 +717,7 @@ and
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -778,7 +778,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -833,7 +833,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -851,7 +851,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -871,7 +871,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -889,7 +889,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -907,7 +907,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Note open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -930,7 +930,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -950,7 +950,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -991,7 +991,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1021,7 +1021,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1039,7 +1039,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1068,7 +1068,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1086,7 +1086,7 @@ $$
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1133,7 +1133,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1157,7 +1157,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1175,7 +1175,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1203,7 +1203,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1228,7 +1228,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1250,7 +1250,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1268,7 +1268,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1295,7 +1295,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1313,7 +1313,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1337,7 +1337,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1356,7 +1356,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1376,7 +1376,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1405,7 +1405,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1423,7 +1423,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1441,7 +1441,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1479,7 +1479,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1504,7 +1504,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1527,7 +1527,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1549,7 +1549,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1567,7 +1567,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1604,7 +1604,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1630,7 +1630,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1652,7 +1652,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1682,7 +1682,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1705,7 +1705,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1729,7 +1729,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1811,7 +1811,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1882,7 +1882,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1902,7 +1902,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1942,7 +1942,7 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1969,7 +1969,7 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1996,7 +1996,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2025,7 +2025,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2044,7 +2044,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2067,7 +2067,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2109,7 +2109,7 @@ $$
 &lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2130,7 +2130,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2148,7 +2148,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2206,7 +2206,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2241,7 +2241,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2305,7 +2305,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2344,7 +2344,7 @@ The forward and backwards difference schemes are first order approximations to t
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2366,7 +2366,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2398,7 +2398,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2442,7 +2442,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2469,7 +2469,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2498,7 +2498,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2530,7 +2530,7 @@ and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;.
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2580,7 +2580,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2613,7 +2613,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2636,7 +2636,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2673,7 +2673,7 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2741,7 +2741,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2760,7 +2760,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2780,7 +2780,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2799,7 +2799,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2825,7 +2825,7 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2851,7 +2851,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2874,7 +2874,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2896,7 +2896,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2924,7 +2924,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2949,7 +2949,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2984,7 +2984,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3016,7 +3016,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3034,7 +3034,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3069,7 +3069,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3087,7 +3087,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3125,7 +3125,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3150,7 +3150,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3174,7 +3174,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3251,7 +3251,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3272,7 +3272,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3346,7 +3346,7 @@ is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3367,7 +3367,7 @@ f = (I-B) A^{-1} b
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3385,7 +3385,7 @@ f = (I-B) A^{-1} b
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3437,7 +3437,7 @@ x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3481,7 +3481,7 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3500,7 +3500,7 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3548,7 +3548,7 @@ The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ 
 &lt;p&gt;&lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3572,7 +3572,7 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3590,7 +3590,7 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3615,7 +3615,7 @@ p^{(j)} \cdot r^{(k+1)} = 0.
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3644,7 +3644,7 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3720,7 +3720,7 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3742,7 +3742,7 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3769,7 +3769,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3793,7 +3793,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3825,7 +3825,7 @@ E_n(x) &amp;amp;= f(x) − \Pi_n f (x) \newline
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3866,7 +3866,7 @@ each interval the following error estimate holds
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3978,7 +3978,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3999,7 +3999,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4130,7 +4130,7 @@ Typically the Green&#39;s function has the following properties
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4171,7 +4171,7 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4197,7 +4197,7 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4249,7 +4249,7 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4279,7 +4279,7 @@ G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4320,7 +4320,7 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4342,7 +4342,7 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4365,7 +4365,7 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4386,7 +4386,7 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4493,7 +4493,7 @@ a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4515,7 +4515,7 @@ a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4551,7 +4551,7 @@ u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4577,7 +4577,7 @@ u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4603,7 +4603,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4629,7 +4629,7 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4655,7 +4655,7 @@ a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 &lt;div class=&#34;details admonition Lemma open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4713,7 +4713,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -4744,7 +4744,7 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
           &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
