@@ -2115,8 +2115,8 @@ $$
 &lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
 $$
 \begin{align*}
-L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
-U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
+U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 &lt;p&gt;
@@ -2125,11 +2125,11 @@ so that
 $$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
 $$
-&lt;p&gt;Additionally, the &lt;strong&gt;left&lt;/strong&gt; and &lt;strong&gt;right Riemann sums&lt;/strong&gt; are given , respectively, by
+&lt;p&gt;Additionally, the &lt;strong&gt;left&lt;/strong&gt; and &lt;strong&gt;right Riemann sums&lt;/strong&gt; are given, respectively, by
 &lt;/p&gt;
 $$
 \begin{align*}
-&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\\
+&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
 \end{align*}
 $$
@@ -2151,11 +2151,11 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none;&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
-&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
+&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
 &lt;/p&gt;
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).

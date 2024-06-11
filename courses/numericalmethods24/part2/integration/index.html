@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.e4e893517403e4151bb7e3a33db13ca7a8fac0bbcaf7b8ff8b4ac833769c5d5d.css" rel="stylesheet" />
+    <link href="/css/custom.min.92281a76a978add2fcc37a799e721ad872512348b8b024f4eb5cf8efbb1936f3.css" rel="stylesheet" />
   
 
   <script>
@@ -2165,8 +2165,8 @@ $$
 <p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>lower</strong> and <strong>upper Riemann sums</strong> are given by</p>
 $$
 \begin{align*}
-L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
-U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
+U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
 <p>
@@ -2175,11 +2175,11 @@ so that
 $$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
 $$
-<p>Additionally, the <strong>left</strong> and <strong>right Riemann sums</strong> are given , respectively, by
+<p>Additionally, the <strong>left</strong> and <strong>right Riemann sums</strong> are given, respectively, by
 </p>
 $$
 \begin{align*}
-& \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\\
+& \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
 \end{align*}
 $$
@@ -2201,11 +2201,11 @@ $$
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content"><p><a id="trap">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
+        <div class="admonition-content"><p><a id="trap" style="font-weight:400; text-decoration:none;">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
-<p>If the nodes of the partition are equally spaced, so that ${h=x_{i+1}-x_i}$, then the formula is given by
+<p>If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
 </p>
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
