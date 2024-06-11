@@ -1984,7 +1984,18 @@
       <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Number Representations</h1>
 
       <div class="mt-4 mb-16">
-      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jun 1, 2021</span>
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jun 1, 2021</span><span class="mx-1">·</span>
+        
+          
+          
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            
+            <img src="/author/david-sinden/avatar_hub0f211d8a22400f9e60f1bc8c0ab6eca_14835_50x50_fill_q80_h2_lanczos_center.webp" alt="David Sinden" class="inline-block h-4 w-4 rounded-full border border-current" loading="lazy" />
+            
+            <div >David Sinden</div>
+          </div>
+          
         
 
         
@@ -2050,7 +2061,7 @@ mjx-assistive-mml {
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
         Theorem:	<em></em>
     </div>
     <div class="details-content">
@@ -2102,11 +2113,15 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
-can be written as a unique expansion with respect to base $b$ as</p>
-<p>\begin{equation*}
+can be written as a unique expansion with respect to base $b$ as
+</p>
+$$
+\begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
-\end{equation*}</p>
-<p>A number can be written in a nested form:</p>
+\end{equation*}
+$$
+<p>
+A number can be written in a nested form:</p>
 $$
 \begin{align*}
 \left(x\right)\_b & = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n \\\
@@ -2116,10 +2131,10 @@ $$
 <p>with $a_i \in \mathbb{N}_0$ and $a_i < b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.</p>
 <p>For a real number, ${x \in \mathbb{R}}$, write</p>
 $$
-\begin{align}
+\begin{align*}
 x & = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i b^{-i} \\\
  & = a_n  \ldots a_0 \cdot \alpha_1 \alpha_2 \ldots
-\end{align}
+\end{align*}
 $$
 </div>
     </div>
@@ -2140,8 +2155,8 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.</p>
 <li>Let $y=x$. Then for $i=n, \ldots, 0$
 $$
       \begin{array}{rcl}
-      a_i & = & y \mbox{ div } b^i \\\
-      y & = & y \mbox{ mod } b^i
+      a_i & = & y \text{ div } b^i \\\
+      y & = & y \text{ mod } b^i
       \end{array}
       $$
 which at each steps provides an $a_i$ and updates $y$.</li>
@@ -2162,8 +2177,8 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 <li>Let $y=x$. Then while $y>0$
 $$
       \begin{array}{rcl}
-      a_i & = & y \mbox{ mod } b \\\
-      y & = & y \mbox{ div } b \\\
+      a_i & = & y \text{ mod } b \\\
+      y & = & y \text{ div } b \\\
       i & = & i+1
       \end{array}
       $$
@@ -2199,7 +2214,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digi
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>
+        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
         Theorem:	<em></em>
     </div>
     <div class="details-content">
@@ -2237,6 +2252,55 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
 
 
   
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+        <a class="group flex no-underline" href="/courses/numericalmethods24/part1/taylor/">
+          <span
+            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Taylor Series</span>
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+        </a>
+      
+    </div>
+    <div class="">
+      
+        <a class="group flex text-right no-underline" href="/courses/numericalmethods24/part1/linear-equations/">
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Linear Equations</span
+            >
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+
 
   
 

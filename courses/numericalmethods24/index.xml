@@ -27,7 +27,6 @@
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; December 07, 2023 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 15 minute read &lt;/p&gt;
 --&gt;
-&lt;h2 id=&#34;taylor-series&#34;&gt;Taylor Series&lt;/h2&gt;
 &lt;p&gt;The Taylor series, or Taylor expansion of a function, is defined as&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -48,7 +47,7 @@ $$&lt;/div&gt;
 &lt;p&gt;This is a power series, which is convergent for some radius.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Taylor&amp;#39;s Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -88,7 +87,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Rolle&amp;#39;s Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -102,7 +101,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Mean Value Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -162,7 +161,7 @@ mjx-assistive-mml {
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -214,11 +213,15 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
-can be written as a unique expansion with respect to base $b$ as&lt;/p&gt;
-&lt;p&gt;\begin{equation*}
+can be written as a unique expansion with respect to base $b$ as
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
-\end{equation*}&lt;/p&gt;
-&lt;p&gt;A number can be written in a nested form:&lt;/p&gt;
+\end{equation*}
+$$
+&lt;p&gt;
+A number can be written in a nested form:&lt;/p&gt;
 $$
 \begin{align*}
 \left(x\right)\_b &amp; = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n \\\
@@ -228,10 +231,10 @@ $$
 &lt;p&gt;with $a_i \in \mathbb{N}_0$ and $a_i &lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.&lt;/p&gt;
 &lt;p&gt;For a real number, ${x \in \mathbb{R}}$, write&lt;/p&gt;
 $$
-\begin{align}
+\begin{align*}
 x &amp; = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i b^{-i} \\\
  &amp; = a_n  \ldots a_0 \cdot \alpha_1 \alpha_2 \ldots
-\end{align}
+\end{align*}
 $$
 &lt;/div&gt;
     &lt;/div&gt;
@@ -252,8 +255,8 @@ into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;li&gt;Let $y=x$. Then for $i=n, \ldots, 0$
 $$
       \begin{array}{rcl}
-      a_i &amp; = &amp; y \mbox{ div } b^i \\\
-      y &amp; = &amp; y \mbox{ mod } b^i
+      a_i &amp; = &amp; y \text{ div } b^i \\\
+      y &amp; = &amp; y \text{ mod } b^i
       \end{array}
       $$
 which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
@@ -274,8 +277,8 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;li&gt;Let $y=x$. Then while $y&gt;0$
 $$
       \begin{array}{rcl}
-      a_i &amp; = &amp; y \mbox{ mod } b \\\
-      y &amp; = &amp; y \mbox{ div } b \\\
+      a_i &amp; = &amp; y \text{ mod } b \\\
+      y &amp; = &amp; y \text{ div } b \\\
       i &amp; = &amp; i+1
       \end{array}
       $$
@@ -311,7 +314,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -528,7 +531,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;$LU$-Decomposition&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -614,7 +617,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -675,7 +678,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Jacobi Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -704,7 +707,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Gauss-Seidel Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -730,7 +733,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Successive Over Relaxation Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -784,7 +787,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Fundamental Theorem of Numerical Analysis&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -839,7 +842,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -868,7 +871,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -878,7 +881,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -907,7 +910,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -939,7 +942,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1258,7 +1261,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1292,7 +1295,7 @@ $$
 
 &lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1567,7 +1570,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Error for Trapezoidal Rule&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1694,7 +1697,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Gaussian Quadrature&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2007,7 +2010,7 @@ $$
 &lt;p&gt;If a method is zero-stable, then this means that small perturbations in the computations lead to small perturbations in the approximations.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2017,7 +2020,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2080,7 +2083,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-list-ul fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
