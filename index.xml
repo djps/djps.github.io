@@ -60,7 +60,7 @@ for some value $\xi \in \left[ a, b \right]$ where
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -178,7 +178,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1004,7 +1004,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1171,7 +1171,7 @@ and&lt;/li&gt;
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1186,7 +1186,7 @@ and&lt;/li&gt;
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1442,7 +1442,7 @@ $$
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;Lagrange Interpolation&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1453,7 +1453,7 @@ $$
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;Runge&amp;#39;s Phenomenon&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1864,7 +1864,7 @@ $$
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2359,7 +2359,7 @@ k_4 &amp; = f\left( u_n + h k_3, t_n + h \right).
 $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2757,7 +2757,7 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2934,7 +2934,7 @@ I_2 = \dfrac{b-a}{6} \left( f \left( a \right) + 4f\left(\dfrac{a+b}{2} \right)+
 &lt;!-- !!! warning &#34;Example:&#34; --&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -3548,7 +3548,7 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon fas fa-calculator fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon hb calculator hb-calculator&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Example:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
