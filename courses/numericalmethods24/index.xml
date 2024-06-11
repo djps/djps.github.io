@@ -47,7 +47,7 @@ $$&lt;/div&gt;
 &lt;p&gt;This is a power series, which is convergent for some radius.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Taylor&amp;#39;s Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -87,7 +87,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Rolle&amp;#39;s Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -101,7 +101,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Mean Value Theorem&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -161,7 +161,7 @@ mjx-assistive-mml {
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -314,7 +314,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -370,9 +370,9 @@ $$
 $$
 A = \left(
   \begin{array}{cccc}
-  a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\\
-  a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\\
-  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\\
+  a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\
+  a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\
+  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
   a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}
   \end{array}
   \right), \quad x = \left(
@@ -384,9 +384,9 @@ A = \left(
     \end{array}
     \right), \quad b = \left(
       \begin{array}{c}
-      b_1 \\\
-      b_2 \\\
-      \vdots \\\
+      b_1 \\
+      b_2 \\
+      \vdots \\
       b_m
       \end{array}
       \right),
@@ -533,7 +533,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;$LU$-Decomposition&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -619,7 +619,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -680,7 +680,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Jacobi Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -697,9 +697,9 @@ $$&lt;/div&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
@@ -709,7 +709,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Gauss-Seidel Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -726,16 +726,16 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
-\end{equation}
+\end{equation*}
 $$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Convergence of Successive Over Relaxation Scheme&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -789,7 +789,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Fundamental Theorem of Numerical Analysis&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -833,7 +833,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         Definition:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $\left[a, b\right\$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $\left[a, b\right]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
 &lt;p&gt;Bisect the interval into two subintervals $\left[a, c\right]$ and $\left[c, b\right]$ such that ${a &lt; c &lt; b}$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If $f(c) = 0$ or is sufficiently close, then $c$ is a root&lt;/li&gt;
@@ -846,7 +846,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Bisection Method&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -875,7 +875,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -885,7 +885,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -914,7 +914,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -946,7 +946,7 @@ $$&lt;/div&gt;
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1265,7 +1265,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1299,7 +1299,7 @@ $$
 
 &lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1574,7 +1574,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Error for Trapezoidal Rule&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -1701,7 +1701,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;Gaussian Quadrature&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2014,7 +2014,7 @@ $$
 &lt;p&gt;If a method is zero-stable, then this means that small perturbations in the computations lead to small perturbations in the approximations.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2024,7 +2024,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -2087,7 +2087,7 @@ $$
 
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        &lt;i class=&#34;icon heroicon/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+        &lt;i class=&#34;icon heroicons/list-bullet&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
         Theorem:	&lt;em&gt;&lt;/em&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;

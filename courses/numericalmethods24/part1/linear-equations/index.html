@@ -2056,9 +2056,9 @@ $$
 $$
 A = \left(
   \begin{array}{cccc}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\\
-  \vdots & \vdots & \ddots & \vdots \\\
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots & \vdots & \ddots & \vdots \\
   a_{m,1} & a_{m,2} & \cdots & a_{m,n}
   \end{array}
   \right), \quad x = \left(
@@ -2070,9 +2070,9 @@ A = \left(
     \end{array}
     \right), \quad b = \left(
       \begin{array}{c}
-      b_1 \\\
-      b_2 \\\
-      \vdots \\\
+      b_1 \\
+      b_2 \\
+      \vdots \\
       b_m
       \end{array}
       \right),
@@ -2219,7 +2219,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>$LU$-Decomposition</em>
     </div>
     <div class="details-content">
@@ -2305,7 +2305,7 @@ $$
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>Convergence</em>
     </div>
     <div class="details-content">
@@ -2366,7 +2366,7 @@ $$</div>
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>Convergence of Jacobi Scheme</em>
     </div>
     <div class="details-content">
@@ -2383,9 +2383,9 @@ $$</div>
         <div class="admonition-content"><p>Let $Q=L + D$, then the <a id="GS"><strong>Gauss-Seidel</strong></a> scheme is given by
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
-\end{equation}
+\end{equation*}
 $$
 <p>
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.</p>
@@ -2395,7 +2395,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>Convergence of Gauss-Seidel Scheme</em>
     </div>
     <div class="details-content">
@@ -2412,16 +2412,16 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
         <div class="admonition-content"><p>Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of <a id="SOR"><strong>successive over relaxation</strong></a> (SOR) is given by
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
-\end{equation}
+\end{equation*}
 $$</div>
     </div>
 </div>
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>Convergence of Successive Over Relaxation Scheme</em>
     </div>
     <div class="details-content">
@@ -2475,7 +2475,7 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
 
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
-        <i class="icon heroicon/list-bullet" aria-hidden="true"></i>
+        <i class="icon heroicons/list-bullet" aria-hidden="true"></i>
         Theorem:	<em>Fundamental Theorem of Numerical Analysis</em>
     </div>
     <div class="details-content">
