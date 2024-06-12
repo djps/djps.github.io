@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opensources | David Sinden</title>
+    <link>https://djps.github.io/opensource/</link>
+      <atom:link href="https://djps.github.io/opensource/index.xml" rel="self" type="application/rss+xml" />
+    <description>Opensources</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 09 Mar 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Opensources</title>
+      <link>https://djps.github.io/opensource/</link>
+    </image>
+    
+    <item>
+      <title>k-wave python</title>
+      <link>https://djps.github.io/opensource/kwavepython/</link>
+      <pubDate>Fri, 09 Mar 2012 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/opensource/kwavepython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pykzk</title>
+      <link>https://djps.github.io/opensource/pykzk/</link>
+      <pubDate>Fri, 09 Mar 2012 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/opensource/pykzk/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
