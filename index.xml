@@ -14,9 +14,9 @@
     
     <item>
       <title>Taylor Series</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part1/taylor/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part1/taylor/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part1/taylor/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part1/taylor/</guid>
       <description>&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
@@ -158,9 +158,9 @@ $$&lt;/div&gt;
     
     <item>
       <title>Number Representations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part1/number-representations/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part1/number-representations/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part1/number-representations/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part1/number-representations/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -446,9 +446,9 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
     
     <item>
       <title>Principles of Numerical Mathematics</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part1/principles/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part1/principles/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part1/principles/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part1/principles/</guid>
       <description>&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
@@ -759,9 +759,9 @@ and, as a consequence, if $\left\Vert R \right\Vert &lt;1$ it turns out that
     
     <item>
       <title>Linear Equations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part1/linear-equations/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part1/linear-equations/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -1471,9 +1471,9 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     
     <item>
       <title>Nonlinear Equations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part1/nonlinear-equations/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part1/nonlinear-equations/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/</guid>
       <description>&lt;!--
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
@@ -1868,9 +1868,9 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
     
     <item>
       <title>Interpolation</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part2/interpolation/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part2/interpolation/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -2303,9 +2303,9 @@ i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collo
     
     <item>
       <title>Integration</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part2/integration/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part2/integration/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part2/integration/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part2/integration/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -2741,9 +2741,9 @@ $$
     
     <item>
       <title>Finite Difference Methods for Differential Equations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/part3/odes/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/part3/odes/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/part3/odes/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/part3/odes/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -3343,9 +3343,9 @@ Heat Equation
     
     <item>
       <title>Iterative Methods</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part1/iterative-methods/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part1/iterative-methods/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part1/iterative-methods/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part1/iterative-methods/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -3691,9 +3691,9 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
     
     <item>
       <title>Interpolation</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part2/interpolation/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part2/interpolation/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part2/interpolation/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part2/interpolation/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -3915,9 +3915,9 @@ with a small $n$. Then $\Pi_n^k$ is the &lt;em&gt;piecewise interpolation polyno
     
     <item>
       <title>Integration</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part2/integration/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part2/integration/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part2/integration/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part2/integration/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -4066,9 +4066,9 @@ where $\alpha_i$ are to be determined.&lt;/p&gt;
     
     <item>
       <title>Finite Difference Methods</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part3/fdm/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part3/fdm/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part3/fdm/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part3/fdm/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -4405,9 +4405,9 @@ then
     
     <item>
       <title>Finite Element Methods</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/part3/fem/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/part3/fem/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/part3/fem/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/part3/fem/</guid>
       <description>&lt;style&gt;
 mjx-container {
   display: inline-block;
@@ -4882,9 +4882,9 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     
     <item>
       <title>Taylor Series</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/taylor_series/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/taylor_series/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/taylor_series/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/taylor_series/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -4972,9 +4972,9 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     
     <item>
       <title>Number Representations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/number_representations/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/number_representations/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/number_representations/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/number_representations/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 02, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5016,9 +5016,9 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     
     <item>
       <title>Linear Systems of Equations</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/linear_systems/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/linear_systems/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/linear_systems/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/linear_systems/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5137,9 +5137,9 @@ Matrix is diagonally dominant  True
     
     <item>
       <title>Iterative Linear Equation Solvers</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/iterative/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/iterative/</link>
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/iterative/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/iterative/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5315,9 +5315,9 @@ x = \left(
     
     <item>
       <title>Nonlinear Solvers</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/nonlinear/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/nonlinear/</link>
       <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/nonlinear/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/nonlinear/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5547,9 +5547,9 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
     
     <item>
       <title>Secant Method</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/max_finder/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/max_finder/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/max_finder/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 02, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5688,9 +5688,9 @@ Second maximum value:  0.004225969342977254
     
     <item>
       <title>Lagrange Polynomials</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/lagrange_polynomials/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/lagrange_polynomials/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/lagrange_polynomials/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/lagrange_polynomials/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
@@ -5772,9 +5772,9 @@ Second maximum value:  0.004225969342977254
     
     <item>
       <title>Quadrature and Trapezium Rule</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/integrals/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/integrals/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/integrals/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/integrals/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5878,9 +5878,9 @@ Second maximum value:  0.004225969342977254
     
     <item>
       <title>Runge Phenomena</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/runge/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/runge/</link>
       <pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/runge/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/runge/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -5927,9 +5927,9 @@ Second maximum value:  0.004225969342977254
     
     <item>
       <title>ODE Solvers</title>
-      <link>https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/</link>
+      <link>https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/</guid>
+      <guid>https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 10, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -6471,9 +6471,9 @@ license&lt;/a&gt;,
     
     <item>
       <title>Lagrange Interpolation</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/notebooks/lagrangeinterpolation/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/notebooks/lagrangeinterpolation/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/lagrangeinterpolation/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notebooks/lagrangeinterpolation/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -6573,9 +6573,9 @@ license&lt;/a&gt;,
     
     <item>
       <title>Lagrange Polynomials</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/characteristicpolynomial/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
@@ -6717,9 +6717,9 @@ license&lt;/a&gt;,
     
     <item>
       <title>Numerical Integration</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/integrals/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -6822,9 +6822,9 @@ license&lt;/a&gt;,
     
     <item>
       <title>One-Dimensional Finite Element Simulations</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/notebooks/1dfem/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notebooks/1dfem/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
@@ -7070,9 +7070,9 @@ u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
     
     <item>
       <title>Two-Dimensional Finite Element Simulations</title>
-      <link>https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem/</link>
+      <link>https://djps.github.io/docs/numericalanalysis22/notebooks/2dfem/</link>
       <pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/courses/numericalanalysis22/notebooks/2dfem/</guid>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notebooks/2dfem/</guid>
       <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 20 minute read &lt;/p&gt;
