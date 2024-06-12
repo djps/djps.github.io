@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cosserat | David Sinden</title>
+    <link>https://djps.github.io/tags/cosserat/</link>
+      <atom:link href="https://djps.github.io/tags/cosserat/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cosserat</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 09 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Cosserat</title>
+      <link>https://djps.github.io/tags/cosserat/</link>
+    </image>
+    
+    <item>
+      <title>Integrability, localisation and bifurcation of an elastic conducting rod in a magnetic field</title>
+      <link>https://djps.github.io/talks/hamburg/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/hamburg/</guid>
+      <description>&lt;!-- &lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; December 8 2020 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;a href=&#34;https://djps.github.io/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
+--&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/hamburg.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/hamburg/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;span style = &#34;font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;&#34;&gt;github&lt;/span&gt; repository for some of the content can be found &lt;a href=&#34;https://github.com/djps/extensibility&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Details of the workshop can be found &lt;a href=&#34;https://sites.google.com/view/handsdays7/home&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrability, localisation and bifurcation of an elastic conducting rod in a uniform magnetic field</title>
+      <link>https://djps.github.io/abstracts/hamburg/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/hamburg/</guid>
+      <description>&lt;p&gt;Motivated by the problem of electrodynamic space tethers, the equilibrium equations for an elastic conducting rod in a magnetic field are investigated. In body coordinates the equations are found to sit in a family of noncanonical Hamiltonian systems. These systems, which include the classical Euler and Kirchhoff rods, are shown to be completely integrable under certain material conditions. Mel’nikov method is then used to show that two integrable perturbations can in fact destroy the integrable structure, resulting in multimodal rod configurations. Such solutions are investigated numerically revealing a rich bifurcation structure.&lt;/p&gt;
+&lt;!--
+# bamc
+We consider the equilibrium equations of a conducting rod in a uniform magnetic field, motivated by the problem of elctrodynamic tethers. The equations sit in a hierarchy of non-canonical Hamiltonian systems and are integrable if the rod is transversely isotropic, giving a physical realisation to a previously proposed abstract system. The integrals are used to reduce the problem to a four-dimensional canonical system, allowing the geometry of the phase space to be investigated through Poincare sections. When the rod is initially aligned with the magnetic field the system is superintegrable: the phase space breaks down into periodic orbits, corresponding to helical configurations of the rod. --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The buckling of magneto-strictive Cosserat rods</title>
+      <link>https://djps.github.io/publication/sinden2011bmc/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/sinden2011bmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation</title>
+      <link>https://djps.github.io/publication/vanderheijden2011ltc/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/vanderheijden2011ltc/</guid>
+      <description>&lt;!--
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
+&lt;/div&gt;
+
+Supplementary notes can be added here.
+
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrability, Localisation and Bifurcation of an Elastic Conducting Rod in a Uniform Magnetic Field</title>
+      <link>https://djps.github.io/publication/thesis/</link>
+      <pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial chaos of an extensible conducting rod in a uniform magnetic field</title>
+      <link>https://djps.github.io/publication/sinden2009sce/</link>
+      <pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/sinden2009sce/</guid>
+      <description>&lt;p&gt;A preprint can be found on the &lt;a href=&#34;https://arxiv.org/abs/0905.1309&#34;&gt;arxiv&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Integrability of a conducting elastic rod in a magnetic field</title>
+      <link>https://djps.github.io/publication/sinden2008ice/</link>
+      <pubDate>Fri, 20 Jun 2008 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/sinden2008ice/</guid>
+      <description>&lt;p&gt;A preprint can be found on the &lt;a href=&#34;https://arxiv.org/abs/0708.1114&#34;&gt;arxiv&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

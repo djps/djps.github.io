@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Treatment Planning | David Sinden</title>
+    <link>https://djps.github.io/tags/treatment-planning/</link>
+      <atom:link href="https://djps.github.io/tags/treatment-planning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Treatment Planning</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Treatment Planning</title>
+      <link>https://djps.github.io/tags/treatment-planning/</link>
+    </image>
+    
+    <item>
+      <title>Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis</title>
+      <link>https://djps.github.io/publication/heimes2022set/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/heimes2022set/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transcostal High-Intensity Focused Ultrasound: Planning Treatment Delivery for Phased Arrays</title>
+      <link>https://djps.github.io/abstracts/vegas/</link>
+      <pubDate>Mon, 14 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/vegas/</guid>
+      <description>&lt;p&gt;In this presentation we describe a comprehensive package of computation procedures developed for treatment planning and treatment delivery for transcostal high-intensity focused ultrasound using a phased-array.&lt;/p&gt;
+&lt;p&gt;A number of robust computational routines designed to identify a target area, specify the position of the transducer, then perform parallelised ray-tracing from segmented CT data to ascertain the optimal position and angulation has been developed.  The aim is to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Minimize transmission losses through the skin/water interface arising from the angle of incidence between the field from each active element and the skin interface.&lt;/li&gt;
+&lt;li&gt;Minimize the propagation path in tissue.&lt;/li&gt;
+&lt;li&gt;Maximize the number of available elements which may be switched on if a isobaric beam corresponding to a given pressure value does not pass through the ribs.&lt;/li&gt;
+&lt;li&gt;Ensure that the transducer can be viewed by an optical tracking system, in order to register the position of the treatment head to the position defined by the treatment plan.&lt;/li&gt;
+&lt;li&gt;Ensure that an imaging probe located in the central aperture of the treatment head can image the target, for treatment monitoring.&lt;/li&gt;
+&lt;li&gt;Ensure that organs at risk such as lungs or bowel are not exposed to the field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The location of an optical tracker placed on the transducer head is calculated, so that the location of the treatment head location compared to the treatment plan can be verified. For ease of identifying the location of ablated regions, surface lesions can be generated automatically. From the computed position image planes which can be compared with ultrasound images are computed.&lt;/p&gt;
+&lt;p&gt;The appropriate phases can be calculated so that the acoustic intensity on the ribs is constrained using a boundary element method.  A Rayleigh integral method, is used where the acoustic window is sufficiently large, or the tolerances of the ray-tracing algorithm sufficiently strict . For a given exposure duration, the amplitudes of each element required to give either a user-defined focal peak temperature rise or a volumetric dose as a function of the full-width half maximum are calculated. Thermal calculations are performed using a parallelised alternating-direction implicit method on a structured rectilinear grid derived from the unstructured polydata sets of the surface meshes of the skin, ribs and liver.&lt;/p&gt;
+&lt;p&gt;Algorithms for motion compensation are introduced in order that motion can be exploited to enlarge the volume of the lesions treated, while still delivering a specified dose to the enlarged planning treatment volume.&lt;/p&gt;
+&lt;p&gt;The computation routines are written in python and fortran, with bindings performed with &lt;a href=&#34;https://numpy.org/doc/stable/f2py/&#34;&gt;&lt;code&gt;f2py&lt;/code&gt;&lt;/a&gt;, graphical user interface from &lt;code&gt;wxpython&lt;/code&gt; and three-dimensional visualisation using &lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34;&gt;&lt;code&gt;mayavi&lt;/code&gt;&lt;/a&gt;. The &lt;code&gt;numpy&lt;/code&gt; and &lt;code&gt;mkl&lt;/code&gt; libraries are used extensively. Patient data can be provided as DICOM images for target identification, while registered and segmented anatomical data can be provided as an &lt;code&gt;.stl&lt;/code&gt; or &lt;code&gt;.vtk&lt;/code&gt; dataset. Settings are outputted as &lt;code&gt;.xml&lt;/code&gt; data in &lt;code&gt;.html&lt;/code&gt; files for ease in a human readable format, as well as text files which can be passed directly to a phased-array drive system. The system has been designed and implemented on an in-house high-performance computing facility, and is designed to be flexible for a variety of transducer designs.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

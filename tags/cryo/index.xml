@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cryo | David Sinden</title>
+    <link>https://djps.github.io/tags/cryo/</link>
+      <atom:link href="https://djps.github.io/tags/cryo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cryo</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>Cryo</title>
+      <link>https://djps.github.io/tags/cryo/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical Modelling and Numerical Simulation in Medicine</title>
+      <link>https://djps.github.io/talks/cimpa/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/cimpa/</guid>
+      <description>&lt;!-- &lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; December 8 2020 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;a href=&#34;https://djps.github.io/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
+--&gt;
+&lt;p&gt;This page contains the talks given as part of the CIMPA Summer School on &lt;a href=&#34;https://www.cimpa.info/en/node/7226&#34;&gt;Mathematical Modelling and Numerical Simulation in Medicine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The talks were given under the theme &lt;em&gt;&amp;ldquo;Examples and principles of mathematical modelling in medicine&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;microwave-ablation&#34;&gt;Microwave Ablation&lt;/h2&gt;
+&lt;p&gt;The first lecture introduces the basic principles of mathematical modelling in medicine and the typical clinical workflow for image-guided therapies.&lt;/p&gt;
+&lt;p&gt;The curl-curl form of Maxwell&amp;rsquo;s equations are presented and the challenges in tractably computing the dose delivered in needle-based microwave ablation therapy presented.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/mwa.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cryoablation&#34;&gt;Cryoablation&lt;/h2&gt;
+&lt;p&gt;The second lecture presents cryoablation, and the requirements for computing the damage by cryotherapy. The challenges of model validation on clinical data are presented.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/cryo.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ultrasound&#34;&gt;Ultrasound&lt;/h2&gt;
+&lt;p&gt;The third lecture introduces the numerical challenges in modelling high-intensity focused ultrasound therapy, specifically focusing on the challenges posed by frequency-dependent powerlaw absorption for nonlinear wave propagation.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/ultrasound.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;Throughout the lectures a number of problems will be presented.&lt;/p&gt;
+&lt;p&gt;An set of collated problems can be found &lt;a href=&#34;https://djps.github.io/presentations/exercises.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

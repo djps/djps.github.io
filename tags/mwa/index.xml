@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MWA | David Sinden</title>
+    <link>https://djps.github.io/tags/mwa/</link>
+      <atom:link href="https://djps.github.io/tags/mwa/index.xml" rel="self" type="application/rss+xml" />
+    <description>MWA</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hud7cfbe45e4df55bd5c7c181ea654d8f2_56982_300x300_fit_lanczos_3.png</url>
+      <title>MWA</title>
+      <link>https://djps.github.io/tags/mwa/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical Modelling and Numerical Simulation in Medicine</title>
+      <link>https://djps.github.io/talks/cimpa/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/cimpa/</guid>
+      <description>&lt;!-- &lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; December 8 2020 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;a href=&#34;https://djps.github.io/category/acoustics-virtually-eveywhere-2020/&#34; style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt;Acoustics Virtually Eveywhere 2020&lt;/a&gt;
+--&gt;
+&lt;p&gt;This page contains the talks given as part of the CIMPA Summer School on &lt;a href=&#34;https://www.cimpa.info/en/node/7226&#34;&gt;Mathematical Modelling and Numerical Simulation in Medicine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The talks were given under the theme &lt;em&gt;&amp;ldquo;Examples and principles of mathematical modelling in medicine&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;microwave-ablation&#34;&gt;Microwave Ablation&lt;/h2&gt;
+&lt;p&gt;The first lecture introduces the basic principles of mathematical modelling in medicine and the typical clinical workflow for image-guided therapies.&lt;/p&gt;
+&lt;p&gt;The curl-curl form of Maxwell&amp;rsquo;s equations are presented and the challenges in tractably computing the dose delivered in needle-based microwave ablation therapy presented.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/mwa.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cryoablation&#34;&gt;Cryoablation&lt;/h2&gt;
+&lt;p&gt;The second lecture presents cryoablation, and the requirements for computing the damage by cryotherapy. The challenges of model validation on clinical data are presented.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/cryo.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ultrasound&#34;&gt;Ultrasound&lt;/h2&gt;
+&lt;p&gt;The third lecture introduces the numerical challenges in modelling high-intensity focused ultrasound therapy, specifically focusing on the challenges posed by frequency-dependent powerlaw absorption for nonlinear wave propagation.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/ultrasound.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;Throughout the lectures a number of problems will be presented.&lt;/p&gt;
+&lt;p&gt;An set of collated problems can be found &lt;a href=&#34;https://djps.github.io/presentations/exercises.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model</title>
+      <link>https://djps.github.io/publication/neizert2022tav/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/neizert2022tav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Annual Meeting of the Society for Thermal Medicine 2022</title>
+      <link>https://djps.github.io/post/stm/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/post/stm/</guid>
+      <description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
+&lt;p&gt;The conference site, with details on talks and schedules, can be found &lt;a href=&#34;https://virtual.oxfordabstracts.com/#/event/2827/program&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The conference homepage can be found &lt;a href=&#34;http://www.thermaltherapy.org/ebusSFTM/ANNUALMEETING/2022AnnualMeeting.aspx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The presentation can be accessed from &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;patient-specific-modelling-of-microwave-ablation&#34;&gt;Patient-Specific Modelling of Microwave Ablation&lt;/h3&gt;
+&lt;!-- &lt;span style=&#34;font-size:1.5em; font-weight=700; margin-top:1.6em; margin-bottom:0.6666667em; line-height:1.3333333;&#34;&gt;Patient-Specific Modelling of Microwave Ablation&lt;/span&gt; --&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
+&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
+&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Patient-Specific Modelling of Microwave Ablation</title>
+      <link>https://djps.github.io/talks/stm/</link>
+      <pubDate>Sun, 01 May 2022 14:20:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/stm/</guid>
+      <description>&lt;!--
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Christain Rieder, Miriam Zibell,
+Franz Poch, Kai Lehmann, Tobias Preusser
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);&#34;&gt; May 1 2022 &lt;/span&gt;
+&lt;span class=&#34;middot-divider&#34;&gt;&lt;/span&gt;
+Society for Thermal Medicine 2022 Annual Meeting
+--&gt;
+&lt;p&gt;A recording of the talk can be found &lt;a href=&#34;https://drive.google.com/file/d/14iCxWJDalBKcaAig3bISRLaq8vt7-Fn7/view&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/stm.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/stm/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Patient-Specific Modelling of Microwave Ablation</title>
+      <link>https://djps.github.io/abstracts/stm/</link>
+      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/stm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
+&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
+&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
