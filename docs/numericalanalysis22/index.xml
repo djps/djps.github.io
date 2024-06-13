@@ -1240,18 +1240,26 @@ $$
       <link>https://djps.github.io/docs/numericalanalysis22/part3/fdm/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalanalysis22/part3/fdm/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+      <description>&lt;!--
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+--&gt;
 &lt;h2 id=&#34;greens-functions&#34;&gt;Green&amp;rsquo;s functions&lt;/h2&gt;
 &lt;p&gt;For a linear differential operator acting on $u$, that is $\mathcal{L} \left[ u \left( x \right) \right]$, which has a differential equation of the form
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \mathcal{L}\left[ u \left( x \right) \right] = f \left(x \right),
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;then the &lt;strong&gt;Green&amp;rsquo;s function&lt;/strong&gt; for the operator $\mathcal{L}$, denoted by $G\left( x,s \right)$, can be used to solved the differential equation as
-\begin{equation}
-u(x) = \int^x G\left(x,s \right) f\left( s \right) \, \mathrm{d} s.
-\end{equation}&lt;/p&gt;
+&lt;/p&gt;
+$$
+\begin{equation*}
+u(x) = \int^x G\left(x,s \right) f\left( s \right) \, \mathrm{d}s.
+\end{equation*}
+$$
 &lt;!--
 ## Properties
 
@@ -1302,26 +1310,34 @@ Typically the Green&#39;s function has the following properties
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
-\end{equation}&lt;/li&gt;
+\end{equation*}
+$$&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Backwards Difference Quotient:&lt;/strong&gt;
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
-\end{equation}&lt;/li&gt;
+\end{equation*}
+$$&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Central Difference Quotient:&lt;/strong&gt;
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
-\end{equation}&lt;/li&gt;
+\end{equation*}
+$$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;With these, approximations to second-order derivatives can be constructed, for example:&lt;/p&gt;
-&lt;p&gt;\begin{equation}
+$$
+\begin{equation*}
 \begin{aligned}
-D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
-&amp;amp; = \dfrac{ \dfrac{u_{j+1} - u_j}{h} - \dfrac{u_j - u_{j-1}}{h} }{h} \newline
-&amp;amp; = \dfrac{ u_{j+1} - 2 u_j + u_{j-1}  }{h^2}.
+D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \\
+&amp; = \dfrac{ \dfrac{u_{j+1} - u_j}{h} - \dfrac{u_j - u_{j-1}}{h} }{h} \\
+&amp; = \dfrac{ u_{j+1} - 2 u_j + u_{j-1}  }{h^2}.
 \end{aligned}
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1367,36 +1383,53 @@ D_{j}^{\pm} u  &amp;amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the &lt;strong&gt;discrete inner product&lt;/strong&gt; for both $v_h$ and $w_h \in V_h$ is defined as&lt;/p&gt;
-&lt;p&gt;\begin{align}
-\left( v_h, w_h \right)_h^{} &amp;amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
-\end{align}&lt;/p&gt;
-&lt;p&gt;where &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; $c_j = 1$ for $j=1, \ldots n-1$ and $c_0 = c_n = \frac{1}{2}$ and a &lt;strong&gt;norm&lt;/strong&gt; is defined as&lt;/p&gt;
-&lt;p&gt;\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the &lt;strong&gt;discrete inner product&lt;/strong&gt; for both $v_h$ and $w_h \in V_h$ is defined as
+&lt;/p&gt;
+$$
+\begin{align*}
+\left( v_h, w_h \right)\_h^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
+\end{align*}
+$$
+&lt;p&gt;
+where &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; $c_j = 1$ for $j=1, \ldots n-1$ and $c_0 = c_n = \frac{1}{2}$ and a &lt;strong&gt;norm&lt;/strong&gt; is defined as&lt;/p&gt;
+$$
+\begin{equation*}
 \left\Vert v_h \right\Vert_h = \sqrt{ \left( v_h, v_h \right)_h }
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;for a $v_h \in V_h$.&lt;/p&gt;
 &lt;p&gt;Then the operator $\mathcal{L}_h$ is &lt;strong&gt;symmetric&lt;/strong&gt;, i.e.
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], w_h \right)_h = \left( v_h, \mathcal{L}_h \left[ w_h \right]\right)_h \quad \forall \, w_h , \, v_h \in V^0_h
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;and &lt;strong&gt;positive definite&lt;/strong&gt;, that is
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h \ge 0 \quad \forall \,  v_h \in V^0_h
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;and
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h = 0 \Longleftrightarrow v_h = 0 .
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;This is just the 
 , so that the discrete inner product is the discrete analogue to
-\begin{equation}
-\left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
-\end{equation}
+&lt;/p&gt;
+$$\begin{equation*}
+    \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
+    \end{equation*} $$
+&lt;p&gt;
 i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1420,10 +1453,13 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;For any $v_h \in V_h$
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For any $v_h \in V_h$
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1432,13 +1468,19 @@ i.e. it approximates an integral.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&
 
 &lt;h3 id=&#34;convergence&#34;&gt;Convergence&lt;/h3&gt;
 &lt;p&gt;The finite difference solution $u_h$ can be characterised by a discrete Green&amp;rsquo;s function. Define $G^k\left(x\right)  \in V_h^0$ such that
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \mathcal{L}_h \left[ G^k\left(x\right) \right] = e^k\left(x\right)
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;where $e^k \in V_h^0$ satisfies $e^k\left( x_j \right) = \delta_{kj}$. Then
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1452,9 +1494,12 @@ G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the &lt;em&gt;discrete maximum norm&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1464,22 +1509,34 @@ G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 
 &lt;h2 id=&#34;galerkin-method&#34;&gt;Galerkin Method&lt;/h2&gt;
 &lt;p&gt;Consider the elementary problem:
-\begin{equation}
-\left( \alpha u^{\prime} \right)&lt;sup&gt;{\prime} + \beta u&lt;/sup&gt;{\prime} + \gamma u = f\left( x \right) \quad \mbox{on} \quad (0,1) \quad \mbox{with}  \quad u(0) = u(1)=0
-\end{equation}&lt;/p&gt;
+&lt;/p&gt;
+$$
+\begin{equation*}
+\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \textsf{on} \quad (0,1) \quad \textsf{with}  \quad u(0) = u(1)=0
+\end{equation*}
+$$
 &lt;p&gt;where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 &gt;0$ for all $x \in  \left[ 0, 1 \right]$.&lt;/p&gt;
 &lt;p&gt;Next, on $L^2$, define the &lt;em&gt;scalar product&lt;/em&gt;
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( f, v \right) = \int \limits_0^1 f v \, \mathrm{d}x
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;and a &lt;em&gt;bilinear form&lt;/em&gt; $a : \left( \cdot, \cdot \right)$ which maps $H_0^1 \times H^1_0 \rightarrow \mathbb{R}$
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime v + \gamma u v \right) \, \mathrm{d}x
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;p&gt;and consider the &lt;strong&gt;weak form&lt;/strong&gt;
-\begin{equation}
-\mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
-\end{equation}&lt;/p&gt;
+&lt;/p&gt;
+$$
+\begin{equation*}
+\textsf{Find} \quad u \in H^1_0 \quad \textsf{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
+\end{equation*}
+ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1514,9 +1571,12 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Suppose that $f(x)$ is integrable on $(0,1)$ and
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
-\end{equation}&lt;/p&gt;
+\end{equation*}
+ $$
 &lt;p&gt;then $f(x)=0$.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
@@ -1536,10 +1596,13 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+&lt;/p&gt;
+$$
+\begin{equation*}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1557,14 +1620,22 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Let
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let
+&lt;/p&gt;
+$$
+\begin{equation*}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 then
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 

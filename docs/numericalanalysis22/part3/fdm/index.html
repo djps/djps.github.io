@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T10:16:10&#43;02:00">
   
 
   
@@ -2342,18 +2342,26 @@
 
       <div class="content text-base">
         <h1>Finite Difference Methods</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+-->
 <h2 id="greens-functions">Green&rsquo;s functions</h2>
 <p>For a linear differential operator acting on $u$, that is $\mathcal{L} \left[ u \left( x \right) \right]$, which has a differential equation of the form
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \mathcal{L}\left[ u \left( x \right) \right] = f \left(x \right),
-\end{equation}</p>
+\end{equation*}
+$$
 <p>then the <strong>Green&rsquo;s function</strong> for the operator $\mathcal{L}$, denoted by $G\left( x,s \right)$, can be used to solved the differential equation as
-\begin{equation}
-u(x) = \int^x G\left(x,s \right) f\left( s \right) \, \mathrm{d} s.
-\end{equation}</p>
+</p>
+$$
+\begin{equation*}
+u(x) = \int^x G\left(x,s \right) f\left( s \right) \, \mathrm{d}s.
+\end{equation*}
+$$
 <!--
 ## Properties
 
@@ -2404,26 +2412,34 @@ Typically the Green's function has the following properties
         <div class="admonition-content"><p>Consider the approximations to the first-order derivative:</p>
 <ol>
 <li><strong>Forward Difference Quotient:</strong>
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
-\end{equation}</li>
+\end{equation*}
+$$</li>
 <li><strong>Backwards Difference Quotient:</strong>
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
-\end{equation}</li>
+\end{equation*}
+$$</li>
 <li><strong>Central Difference Quotient:</strong>
-\begin{equation}
+$$
+\begin{equation*}
 D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
-\end{equation}</li>
+\end{equation*}
+$$</li>
 </ol>
 <p>With these, approximations to second-order derivatives can be constructed, for example:</p>
-<p>\begin{equation}
+$$
+\begin{equation*}
 \begin{aligned}
-D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
-&amp; = \dfrac{ \dfrac{u_{j+1} - u_j}{h} - \dfrac{u_j - u_{j-1}}{h} }{h} \newline
-&amp; = \dfrac{ u_{j+1} - 2 u_j + u_{j-1}  }{h^2}.
+D_{j}^{\pm} u  & = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \\
+& = \dfrac{ \dfrac{u_{j+1} - u_j}{h} - \dfrac{u_j - u_{j-1}}{h} }{h} \\
+& = \dfrac{ u_{j+1} - 2 u_j + u_{j-1}  }{h^2}.
 \end{aligned}
-\end{equation}</p>
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2469,36 +2485,53 @@ D_{j}^{\pm} u  &amp; = \dfrac{ D_j^{+} u - D_j^{-} u }{h} \newline
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as</p>
-<p>\begin{align}
-\left( v_h, w_h \right)_h^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
-\end{align}</p>
-<p>where <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> $c_j = 1$ for $j=1, \ldots n-1$ and $c_0 = c_n = \frac{1}{2}$ and a <strong>norm</strong> is defined as</p>
-<p>\begin{equation}
+        <div class="admonition-content"><p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as
+</p>
+$$
+\begin{align*}
+\left( v_h, w_h \right)\_h^{} & = h \sum\limits_{j=0}^{n} c_j v_j w_j
+\end{align*}
+$$
+<p>
+where <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> $c_j = 1$ for $j=1, \ldots n-1$ and $c_0 = c_n = \frac{1}{2}$ and a <strong>norm</strong> is defined as</p>
+$$
+\begin{equation*}
 \left\Vert v_h \right\Vert_h = \sqrt{ \left( v_h, v_h \right)_h }
-\end{equation}</p>
+\end{equation*}
+$$
 <p>for a $v_h \in V_h$.</p>
 <p>Then the operator $\mathcal{L}_h$ is <strong>symmetric</strong>, i.e.
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], w_h \right)_h = \left( v_h, \mathcal{L}_h \left[ w_h \right]\right)_h \quad \forall \, w_h , \, v_h \in V^0_h
-\end{equation}</p>
+\end{equation*}
+$$
 <p>and <strong>positive definite</strong>, that is
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h \ge 0 \quad \forall \,  v_h \in V^0_h
-\end{equation}</p>
+\end{equation*}
+$$
 <p>and
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h = 0 \Longleftrightarrow v_h = 0 .
-\end{equation}</p>
+\end{equation*}
+$$
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
 <p>This is just the 
 , so that the discrete inner product is the discrete analogue to
-\begin{equation}
-\left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
-\end{equation}
+</p>
+$$\begin{equation*}
+    \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
+    \end{equation*} $$
+<p>
 i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
@@ -2522,10 +2555,13 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">For any $v_h \in V_h$
-\begin{equation}
+        <div class="admonition-content"><p>For any $v_h \in V_h$
+</p>
+$$
+\begin{equation*}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
-\end{equation}</div>
+\end{equation*}
+$$</div>
     </div>
 </div>
 
@@ -2534,13 +2570,19 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
 
 <h3 id="convergence">Convergence</h3>
 <p>The finite difference solution $u_h$ can be characterised by a discrete Green&rsquo;s function. Define $G^k\left(x\right)  \in V_h^0$ such that
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \mathcal{L}_h \left[ G^k\left(x\right) \right] = e^k\left(x\right)
-\end{equation}</p>
+\end{equation*}
+$$
 <p>where $e^k \in V_h^0$ satisfies $e^k\left( x_j \right) = \delta_{kj}$. Then
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
-\end{equation}</p>
+\end{equation*}
+$$
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2554,9 +2596,12 @@ G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
     <div class="details-content">
         <div class="admonition-content"><p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
 <p>Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
-\end{equation}</p>
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2566,22 +2611,34 @@ G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 
 <h2 id="galerkin-method">Galerkin Method</h2>
 <p>Consider the elementary problem:
-\begin{equation}
-\left( \alpha u^{\prime} \right)<sup>{\prime} + \beta u</sup>{\prime} + \gamma u = f\left( x \right) \quad \mbox{on} \quad (0,1) \quad \mbox{with}  \quad u(0) = u(1)=0
-\end{equation}</p>
+</p>
+$$
+\begin{equation*}
+\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \textsf{on} \quad (0,1) \quad \textsf{with}  \quad u(0) = u(1)=0
+\end{equation*}
+$$
 <p>where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 >0$ for all $x \in  \left[ 0, 1 \right]$.</p>
 <p>Next, on $L^2$, define the <em>scalar product</em>
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left( f, v \right) = \int \limits_0^1 f v \, \mathrm{d}x
-\end{equation}</p>
+\end{equation*}
+$$
 <p>and a <em>bilinear form</em> $a : \left( \cdot, \cdot \right)$ which maps $H_0^1 \times H^1_0 \rightarrow \mathbb{R}$
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime v + \gamma u v \right) \, \mathrm{d}x
-\end{equation}</p>
+\end{equation*}
+$$
 <p>and consider the <strong>weak form</strong>
-\begin{equation}
-\mbox{Find} \quad u \in H^1_0 \quad \mbox{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
-\end{equation}</p>
+</p>
+$$
+\begin{equation*}
+\textsf{Find} \quad u \in H^1_0 \quad \textsf{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
+\end{equation*}
+ $$
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2616,9 +2673,12 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>Suppose that $f(x)$ is integrable on $(0,1)$ and
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
-\end{equation}</p>
+\end{equation*}
+ $$
 <p>then $f(x)=0$.</p>
 </div>
     </div>
@@ -2638,10 +2698,13 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
-\begin{equation}
+        <div class="admonition-content"><p>Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
+</p>
+$$
+\begin{equation*}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
-\end{equation}</div>
+\end{equation*}
+$$</div>
     </div>
 </div>
 
@@ -2659,14 +2722,22 @@ a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta 
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Let
-\begin{equation}
+        <div class="admonition-content"><p>Let
+</p>
+$$
+\begin{equation*}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
-\end{equation}
+\end{equation*}
+$$
+<p>
 then
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
-\end{equation}</div>
+\end{equation*}
+$$
+</div>
     </div>
 </div>
 
@@ -2677,9 +2748,9 @@ then
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T10:16:10.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
