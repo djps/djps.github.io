@@ -3924,8 +3924,8 @@ $$
 \end{equation*}
 $$
 &lt;p&gt;
-where  $l_{i} \in \mathbb{P}\_{n}$&lt;/p&gt;
-&lt;p&gt;such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}\_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
+where  $l_{i} \in \mathbb{P}\_{n}$
+is such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}\_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -3980,7 +3980,7 @@ $$
 $$
 \begin{equation*}
 \begin{aligned}
-E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
+E_n(x) &amp;= f(x) − \Pi_n f (x) \\
 &amp;= \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
 \end{aligned}
 \tag{1} \label{eq:basic_interpolation_error}
