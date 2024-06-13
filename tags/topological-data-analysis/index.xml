@@ -19,6 +19,21 @@
       <guid>https://djps.github.io/project/comptop/</guid>
       <description>&lt;h2 id=&#34;computational-topology&#34;&gt;Computational Topology&lt;/h2&gt;
 &lt;p&gt;&lt;mark&gt;More details to appear.&lt;/mark&gt;&lt;/p&gt;
+&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
+
+&lt;pre&gt;- Hugo Modules
+  - blox-tailwind
+  - blox-plugins-netlify
+  - blox-plugins-netlify-cms
+  - blox-plugins-reveal&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;mermaid&#34;&gt;graph TD;
+  A--&gt;B;
+  A--&gt;C;
+  B--&gt;D;
+  C--&gt;D;
+&lt;/div&gt;
 </description>
     </item>
     
