@@ -330,27 +330,42 @@ and, as a consequence, if $\left\Vert R \right\Vert &lt;1$ it turns out that
       <link>https://djps.github.io/docs/numericalanalysis22/part1/iterative-methods/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalanalysis22/part1/iterative-methods/</guid>
-      <description>&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+      <description>&lt;!--
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
-&lt;p&gt;Construct a scheme which solves the linear system $Ax=b$ by generating a sequence $\{ x^{(n)} \}$ which approximates the solution, $x$, that is
+--&gt;
+&lt;p&gt;Construct a scheme which solves the linear system $Ax=b$ by generating a sequence $\{ x^{(n)} \}$ which approximates the solution, $x$, that is&lt;/p&gt;
+$$
 \begin{equation}
 \lim_{n\rightarrow \infty} x^{(n)} = x. \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 So that $x = A^{-1} b$. Split the matrix $A=P-N$ and solve
+&lt;/p&gt;
+$$
 \begin{equation}
 P x^{(n+1)} = B x^{(n)} + f, \nonumber
-\end{equation}&lt;/p&gt;
-&lt;p&gt;where $P$ is called a &lt;em&gt;preconditioner&lt;/em&gt; and $B=P^{-1}N$ is the &lt;em&gt;iteration matrix&lt;/em&gt;.&lt;/p&gt;
+\end{equation}
+$$
+&lt;p&gt;
+where $P$ is called a &lt;em&gt;preconditioner&lt;/em&gt; and $B=P^{-1}N$ is the &lt;em&gt;iteration matrix&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;An equivalent way is to write
+&lt;/p&gt;
+$$
 \begin{equation}
 x^{(k+1)} = x^{(k)} + P^{-1}r^{(k)} \nonumber
 \end{equation}
-where
+$$
+&lt;p&gt;
+where&lt;/p&gt;
+$$
 \begin{equation}
-r^{(k)} = b - A x^{(k)}
+r^{(k)} = b - A x^{(k)} \nonumber
 \end{equation}
-is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
+$$
+&lt;p&gt;is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -362,10 +377,13 @@ is the &lt;em&gt;residual&lt;/em&gt;.&lt;/p&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;An iterative method is &lt;strong&gt;consistent&lt;/strong&gt; if $x=Bx +f$, or equivalently,
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An iterative method is &lt;strong&gt;consistent&lt;/strong&gt; if $x=Bx +f$, or equivalently,
+&lt;/p&gt;
+$$
 \begin{equation}
-f = (I-B) A^{-1} b
-\end{equation}&lt;/div&gt;
+f = (I-B) A^{-1} b. \nonumber
+\end{equation}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -402,10 +420,14 @@ f = (I-B) A^{-1} b
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The formulation can be written as
+&lt;/p&gt;
+$$
 \begin{equation}
-x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) .
-\end{equation}&lt;/p&gt;
-&lt;p&gt;If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be &lt;strong&gt;stationary&lt;/strong&gt;.&lt;/p&gt;
+x^{(0)} =  F^{(0)} \left( A, b \right) \quad \textsf{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) . \nonumber
+\end{equation}
+$$
+&lt;p&gt;
+If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be &lt;strong&gt;stationary&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -415,33 +437,54 @@ x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+
 
 &lt;h2 id=&#34;jacobi-method&#34;&gt;Jacobi Method&lt;/h2&gt;
 &lt;p&gt;The Jacobi method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
+&lt;/p&gt;
+$$
 \begin{equation}
 D x^{(n+1)} = -(L + U) x^{(n)} + b . \label{eq:jacobi_method}
-\end{equation}&lt;/p&gt;
-&lt;p&gt;Element-wise this is
+\end{equation}
+$$
+&lt;p&gt;
+Element-wise this is
+&lt;/p&gt;
+$$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{1}{a_{ii}} \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) . \nonumber
-\end{equation}&lt;/p&gt;
-&lt;p&gt;Thus, the iterative scheme is
+\end{equation}
+$$
+&lt;p&gt;
+Thus, the iterative scheme is
+&lt;/p&gt;
+$$
 \begin{equation}
 x^{(n+1)} = -D^{-1}(L + U) x^{(n)} + D^{-1} b. \nonumber
-\end{equation}&lt;/p&gt;
-&lt;p&gt;As $L+U = A-D$, so the iteration matrix can be written as $B=I - D^{-1}A$.&lt;/p&gt;
+\end{equation}
+$$
+&lt;p&gt;
+As $L+U = A-D$, so the iteration matrix can be written as $B=I - D^{-1}A$.&lt;/p&gt;
 &lt;h2 id=&#34;over-relaxation-of-jacobi-method&#34;&gt;Over-Relaxation of Jacobi Method&lt;/h2&gt;
 &lt;p&gt;Also called the weighted Jacobi method. Introduce $\omega$ to solve
+&lt;/p&gt;
+$$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) + \left( 1 - \omega \right) x^{(k)}. \label{eq:JOR}
-\end{equation}&lt;/p&gt;
+\end{equation}
+$$
 &lt;h2 id=&#34;successive-over-relaxation&#34;&gt;Successive Over-Relaxation&lt;/h2&gt;
 &lt;p&gt;Introduce $\omega$ to solve
+&lt;/p&gt;
+$$
 \begin{equation}
 \left(D + \omega L \right) x^{(n+1)} = -( (\omega-1)D + \omega U) x^{(n)} + \omega b. \label{eq:SOR}
-\end{equation}&lt;/p&gt;
+\end{equation}
+$$
 &lt;h2 id=&#34;gauss-seidel&#34;&gt;Gauss-Seidel&lt;/h2&gt;
 &lt;p&gt;The Gauss-Seidel method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
+&lt;/p&gt;
+$$
 \begin{equation}
 (D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
-\end{equation}&lt;/p&gt;
+\end{equation}
+$$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -462,17 +505,24 @@ x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1
 &lt;li&gt;
 &lt;p&gt;If $A$ and $2D-A$ are symmetric and positive definite, then the 
  is convergent and the spectral radius of the iteration matrix $B$ is equal to
+&lt;/p&gt;
+$$
 \begin{equation}
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; which is induced by the vector norm $\left| x \right|_{A} = \sqrt{ x \cdot A x}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
  is convergent if
+&lt;/p&gt;
+$$
 \begin{equation}
-0 &amp;lt; \omega &amp;lt; \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
-\end{equation}&lt;/p&gt;
+0 &lt; \omega &lt; \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
+\end{equation}
+$$
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
@@ -525,34 +575,52 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; 
 
 
 &lt;h2 id=&#34;gradient-descent&#34;&gt;Gradient Descent&lt;/h2&gt;
-&lt;p&gt;Consider the function $\Phi \left( y \right) \\, : \\, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
+&lt;p&gt;Consider the function $\Phi \left( y \right) \, : \, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
+&lt;/p&gt;
+$$
 \begin{equation}
-\Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b.
+\Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b. \nonumber
 \end{equation}
-It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.&lt;/p&gt;
+$$
+&lt;p&gt;It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.&lt;/p&gt;
 &lt;p&gt;If $x$ is a solution to the linear system and minimizes $\Phi(x)$ then $\nabla \Phi(x) = 0$, so that $Ax-b = \nabla \Phi(x) =0$.&lt;/p&gt;
 &lt;p&gt;Now
-\begin{align}
-\Phi(y) &amp;amp; = \Phi(x + (y-x) ) \newline
-&amp;amp; = \Phi(x) + \dfrac{1}{2} \left\Vert y - x\right\Vert_{A}^{2}.
-\end{align}&lt;/p&gt;
-&lt;p&gt;Gradient descent seeks to construct a scheme which updates the vector $x^{(k)}$ according to
+&lt;/p&gt;
+$$
+\begin{align*}
+\Phi(y) &amp; = \Phi(x + (y-x) ) \newline
+&amp; = \Phi(x) + \dfrac{1}{2} \left\Vert y - x\right\Vert_{A}^{2}.
+\end{align*}
+$$
+&lt;p&gt;
+Gradient descent seeks to construct a scheme which updates the vector $x^{(k)}$ according to
+&lt;/p&gt;
+$$
 \begin{equation}
-x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)}
+x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)} \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 where $d^{(k)}$ is the update direction and $\alpha^{(k)}$ is the step size at the $k$-th iterate.&lt;/p&gt;
 &lt;p&gt;Note that in contrast to the methods above, the gradient descent method is non-stationary as values $d$ and $\alpha$ change at every iterate.&lt;/p&gt;
 &lt;p&gt;The idea is to let the search direction be the gradient of the function $\Phi$
-\begin{align}
-d^{(k)} &amp;amp; = -\nabla \Phi \left( x^{(k)} \right) \newline
-&amp;amp; = - \left( A x^{(k)} - b \right) \newline
-&amp;amp; = b - A x^{(k)} \newline
-&amp;amp; = r^{(k)}
-\end{align}
+&lt;/p&gt;
+$$
+\begin{align*}
+d^{(k)} &amp; = -\nabla \Phi \left( x^{(k)} \right) \newline
+ &amp; = - \left( A x^{(k)} - b \right) \newline
+ &amp; = b - A x^{(k)} \newline
+ &amp; = r^{(k)}
+\end{align*}
+$$
+&lt;p&gt;
 The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ and setting this to zero, so that
+&lt;/p&gt;
+$$
 \begin{equation}
-\alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} }
-\end{equation}&lt;/p&gt;
+\alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} } \nonumber
+\end{equation}
+$$
 &lt;p&gt;&lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -564,11 +632,13 @@ The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ 
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If $A$ is symmetric and positive definite, then the 
- method is convergent for any $x^{(0)}$ and
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $A$ is symmetric and positive definite, then the 
+ method is convergent for any $x^{(0)}$ and&lt;/p&gt;
+$$
 \begin{equation}
-\left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.
-\end{equation}&lt;/div&gt;
+\left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.\nonumber
+\end{equation}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -607,14 +677,22 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Choosing $p^{(k+1)}$ such that
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Choosing $p^{(k+1)}$ such that
+&lt;/p&gt;
+$$
 \begin{equation}
-p^{(k+1)} \cdot A p^{(j)} = 0
+p^{(k+1)} \cdot A p^{(j)} = 0 \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 for $j=0, \ldots, k$ leads to
+&lt;/p&gt;
+$$
 \begin{equation}
-p^{(j)} \cdot r^{(k+1)} = 0.
-\end{equation}&lt;/div&gt;
+p^{(j)} \cdot r^{(k+1)} = 0.\nonumber
+\end{equation}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -633,18 +711,30 @@ p^{(j)} \cdot r^{(k+1)} = 0.
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Setting
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Setting
+&lt;/p&gt;
+$$
 \begin{equation}
-\beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} }
+\beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} } \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 and
+&lt;/p&gt;
+$$
 \begin{equation}
-p^{(k+1)} = r^{(k+1)} - \beta^{(k)} p^{(k)}
+p^{(k+1)} = r^{(k+1)} - \beta^{(k)} p^{(k)} \nonumber
 \end{equation}
+$$
+&lt;p&gt;
 then, for $j=0, \ldots, k,$ yields
+&lt;/p&gt;
+$$
 \begin{equation}
-p^{(k+1)} \cdot A p^{(j)} = 0.
-\end{equation}&lt;/div&gt;
+p^{(k+1)} \cdot A p^{(j)} = 0.\nonumber
+\end{equation}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 

@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:28:56&#43;02:00">
   
 
   
@@ -2363,27 +2363,42 @@
 
       <div class="content text-base">
         <h1>Iterative Methods</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
-<p>Construct a scheme which solves the linear system $Ax=b$ by generating a sequence $\{ x^{(n)} \}$ which approximates the solution, $x$, that is
+-->
+<p>Construct a scheme which solves the linear system $Ax=b$ by generating a sequence $\{ x^{(n)} \}$ which approximates the solution, $x$, that is</p>
+$$
 \begin{equation}
 \lim_{n\rightarrow \infty} x^{(n)} = x. \nonumber
 \end{equation}
+$$
+<p>
 So that $x = A^{-1} b$. Split the matrix $A=P-N$ and solve
+</p>
+$$
 \begin{equation}
 P x^{(n+1)} = B x^{(n)} + f, \nonumber
-\end{equation}</p>
-<p>where $P$ is called a <em>preconditioner</em> and $B=P^{-1}N$ is the <em>iteration matrix</em>.</p>
+\end{equation}
+$$
+<p>
+where $P$ is called a <em>preconditioner</em> and $B=P^{-1}N$ is the <em>iteration matrix</em>.</p>
 <p>An equivalent way is to write
+</p>
+$$
 \begin{equation}
 x^{(k+1)} = x^{(k)} + P^{-1}r^{(k)} \nonumber
 \end{equation}
-where
+$$
+<p>
+where</p>
+$$
 \begin{equation}
-r^{(k)} = b - A x^{(k)}
+r^{(k)} = b - A x^{(k)} \nonumber
 \end{equation}
-is the <em>residual</em>.</p>
+$$
+<p>is the <em>residual</em>.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2395,10 +2410,13 @@ is the <em>residual</em>.</p>
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
+        <div class="admonition-content"><p>An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
+</p>
+$$
 \begin{equation}
-f = (I-B) A^{-1} b
-\end{equation}</div>
+f = (I-B) A^{-1} b. \nonumber
+\end{equation}
+$$</div>
     </div>
 </div>
 
@@ -2435,10 +2453,14 @@ f = (I-B) A^{-1} b
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>The formulation can be written as
+</p>
+$$
 \begin{equation}
-x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) .
-\end{equation}</p>
-<p>If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be <strong>stationary</strong>.</p>
+x^{(0)} =  F^{(0)} \left( A, b \right) \quad \textsf{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) . \nonumber
+\end{equation}
+$$
+<p>
+If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be <strong>stationary</strong>.</p>
 </div>
     </div>
 </div>
@@ -2448,33 +2470,54 @@ x^{(0)} =  F^{(0)} \left( A, b \right) \quad \mbox{and} \quad x^{(k+1)} = F^{(k+
 
 <h2 id="jacobi-method">Jacobi Method</h2>
 <p>The Jacobi method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
+</p>
+$$
 \begin{equation}
 D x^{(n+1)} = -(L + U) x^{(n)} + b . \label{eq:jacobi_method}
-\end{equation}</p>
-<p>Element-wise this is
+\end{equation}
+$$
+<p>
+Element-wise this is
+</p>
+$$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{1}{a_{ii}} \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) . \nonumber
-\end{equation}</p>
-<p>Thus, the iterative scheme is
+\end{equation}
+$$
+<p>
+Thus, the iterative scheme is
+</p>
+$$
 \begin{equation}
 x^{(n+1)} = -D^{-1}(L + U) x^{(n)} + D^{-1} b. \nonumber
-\end{equation}</p>
-<p>As $L+U = A-D$, so the iteration matrix can be written as $B=I - D^{-1}A$.</p>
+\end{equation}
+$$
+<p>
+As $L+U = A-D$, so the iteration matrix can be written as $B=I - D^{-1}A$.</p>
 <h2 id="over-relaxation-of-jacobi-method">Over-Relaxation of Jacobi Method</h2>
 <p>Also called the weighted Jacobi method. Introduce $\omega$ to solve
+</p>
+$$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) + \left( 1 - \omega \right) x^{(k)}. \label{eq:JOR}
-\end{equation}</p>
+\end{equation}
+$$
 <h2 id="successive-over-relaxation">Successive Over-Relaxation</h2>
 <p>Introduce $\omega$ to solve
+</p>
+$$
 \begin{equation}
 \left(D + \omega L \right) x^{(n+1)} = -( (\omega-1)D + \omega U) x^{(n)} + \omega b. \label{eq:SOR}
-\end{equation}</p>
+\end{equation}
+$$
 <h2 id="gauss-seidel">Gauss-Seidel</h2>
 <p>The Gauss-Seidel method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
+</p>
+$$
 \begin{equation}
 (D + L) x^{(n+1)} = -U x^{(n)} + b \label{eq:GS}
-\end{equation}</p>
+\end{equation}
+$$
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2495,17 +2538,24 @@ x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1
 <li>
 <p>If $A$ and $2D-A$ are symmetric and positive definite, then the 
  is convergent and the spectral radius of the iteration matrix $B$ is equal to
+</p>
+$$
 \begin{equation}
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
 \end{equation}
+$$
+<p>
 where $\left\Vert \cdot \right\Vert_{A}$ is an <em>energy norm</em> which is induced by the vector norm $\left| x \right|_{A} = \sqrt{ x \cdot A x}$</p>
 </li>
 <li>
 <p>If and only if $A$ is symmetric and positive definite, the 
  is convergent if
+</p>
+$$
 \begin{equation}
-0 &lt; \omega &lt; \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
-\end{equation}</p>
+0 < \omega < \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
+\end{equation}
+$$
 </li>
 <li>
 <p>If and only if $A$ is symmetric and positive definite, the 
@@ -2558,34 +2608,52 @@ where $\left\Vert \cdot \right\Vert_{A}$ is an <em>energy norm</em> which is ind
 
 
 <h2 id="gradient-descent">Gradient Descent</h2>
-<p>Consider the function $\Phi \left( y \right) \\, : \\, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
+<p>Consider the function $\Phi \left( y \right) \, : \, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
+</p>
+$$
 \begin{equation}
-\Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b.
+\Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b. \nonumber
 \end{equation}
-It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.</p>
+$$
+<p>It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.</p>
 <p>If $x$ is a solution to the linear system and minimizes $\Phi(x)$ then $\nabla \Phi(x) = 0$, so that $Ax-b = \nabla \Phi(x) =0$.</p>
 <p>Now
-\begin{align}
-\Phi(y) &amp; = \Phi(x + (y-x) ) \newline
-&amp; = \Phi(x) + \dfrac{1}{2} \left\Vert y - x\right\Vert_{A}^{2}.
-\end{align}</p>
-<p>Gradient descent seeks to construct a scheme which updates the vector $x^{(k)}$ according to
+</p>
+$$
+\begin{align*}
+\Phi(y) & = \Phi(x + (y-x) ) \newline
+& = \Phi(x) + \dfrac{1}{2} \left\Vert y - x\right\Vert_{A}^{2}.
+\end{align*}
+$$
+<p>
+Gradient descent seeks to construct a scheme which updates the vector $x^{(k)}$ according to
+</p>
+$$
 \begin{equation}
-x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)}
+x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)} \nonumber
 \end{equation}
+$$
+<p>
 where $d^{(k)}$ is the update direction and $\alpha^{(k)}$ is the step size at the $k$-th iterate.</p>
 <p>Note that in contrast to the methods above, the gradient descent method is non-stationary as values $d$ and $\alpha$ change at every iterate.</p>
 <p>The idea is to let the search direction be the gradient of the function $\Phi$
-\begin{align}
-d^{(k)} &amp; = -\nabla \Phi \left( x^{(k)} \right) \newline
-&amp; = - \left( A x^{(k)} - b \right) \newline
-&amp; = b - A x^{(k)} \newline
-&amp; = r^{(k)}
-\end{align}
+</p>
+$$
+\begin{align*}
+d^{(k)} & = -\nabla \Phi \left( x^{(k)} \right) \newline
+ & = - \left( A x^{(k)} - b \right) \newline
+ & = b - A x^{(k)} \newline
+ & = r^{(k)}
+\end{align*}
+$$
+<p>
 The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ and setting this to zero, so that
+</p>
+$$
 \begin{equation}
-\alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} }
-\end{equation}</p>
+\alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} } \nonumber
+\end{equation}
+$$
 <p><div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2597,11 +2665,13 @@ The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ 
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">If $A$ is symmetric and positive definite, then the 
- method is convergent for any $x^{(0)}$ and
+        <div class="admonition-content"><p>If $A$ is symmetric and positive definite, then the 
+ method is convergent for any $x^{(0)}$ and</p>
+$$
 \begin{equation}
-\left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.
-\end{equation}</div>
+\left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.\nonumber
+\end{equation}
+$$</div>
     </div>
 </div>
 
@@ -2640,14 +2710,22 @@ If we apply a preconditioner, i.e. multiplying both sides of the linear system f
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Choosing $p^{(k+1)}$ such that
+        <div class="admonition-content"><p>Choosing $p^{(k+1)}$ such that
+</p>
+$$
 \begin{equation}
-p^{(k+1)} \cdot A p^{(j)} = 0
+p^{(k+1)} \cdot A p^{(j)} = 0 \nonumber
 \end{equation}
+$$
+<p>
 for $j=0, \ldots, k$ leads to
+</p>
+$$
 \begin{equation}
-p^{(j)} \cdot r^{(k+1)} = 0.
-\end{equation}</div>
+p^{(j)} \cdot r^{(k+1)} = 0.\nonumber
+\end{equation}
+$$
+</div>
     </div>
 </div>
 
@@ -2666,18 +2744,30 @@ p^{(j)} \cdot r^{(k+1)} = 0.
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Setting
+        <div class="admonition-content"><p>Setting
+</p>
+$$
 \begin{equation}
-\beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} }
+\beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} } \nonumber
 \end{equation}
+$$
+<p>
 and
+</p>
+$$
 \begin{equation}
-p^{(k+1)} = r^{(k+1)} - \beta^{(k)} p^{(k)}
+p^{(k+1)} = r^{(k+1)} - \beta^{(k)} p^{(k)} \nonumber
 \end{equation}
+$$
+<p>
 then, for $j=0, \ldots, k,$ yields
+</p>
+$$
 \begin{equation}
-p^{(k+1)} \cdot A p^{(j)} = 0.
-\end{equation}</div>
+p^{(k+1)} \cdot A p^{(j)} = 0.\nonumber
+\end{equation}
+$$
+</div>
     </div>
 </div>
 
@@ -2707,9 +2797,9 @@ p^{(k+1)} \cdot A p^{(j)} = 0.
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:28:56.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
