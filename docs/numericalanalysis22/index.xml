@@ -964,14 +964,14 @@ $$
 $$
 \begin{equation*}
 \begin{aligned}
-E_n(x) &amp;= f(x) − \Pi_n f (x) \\
-&amp;= \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
+E_n(x) &amp; = f(x) − \Pi_n f (x) \\
+&amp; = \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
 \end{aligned}
-\tag{1} \label{eq:basic_interpolation_error}
+\tag{1}
+\end{equation*}
 $$
 &lt;p&gt;
-\end{equation*}&lt;/p&gt;
-&lt;p&gt;where $\xi \in I_x$ and $\omega_{n+1}$ is the nodal polynomial of degree $n + 1$, which is defined as
+where $\xi \in I_x$ and $\omega_{n+1}$ is the nodal polynomial of degree $n + 1$, which is defined as
 &lt;/p&gt;
 $$
 \begin{equation*}
