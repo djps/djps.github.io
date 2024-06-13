@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T10:03:42&#43;02:00">
   
 
   
@@ -2327,9 +2327,11 @@
 
       <div class="content text-base">
         <h1>Interpolation</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+-->
 <p>Numerical treatment of problems often involves the process of <em>discretization</em> - i.e. going from a continuous function to set of discrete points.</p>
 <div class="details quotemonition MyQuote open">
         <div class="details-summary quotemonition-title">
@@ -2363,10 +2365,12 @@
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$
-\begin{equation}
+        <div class="admonition-content"><p>Given $n+1$ distinct points $x_0, x_1, \ldots, x_n$ and $n+1$ corresponding values $y_0, y_1, \ldots, y_n$ there exists a <em>unique</em> polynomial $\Pi_n \in \mathbb{P}_n$ such that for all $i=0, \ldots, n$</p>
+$$
+\begin{equation*}
 \Pi_n\left( x_i \right) = y_i.
-\end{equation}</div>
+\end{equation*}
+$$</div>
     </div>
 </div>
 
@@ -2386,14 +2390,21 @@
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
-\end{equation}</p>
-<p>where  $l_{i} \in \mathbb{P}\_{n}$</p>
+\end{equation*}
+$$
+<p>
+where  $l_{i} \in \mathbb{P}\_{n}$</p>
 <p>such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}\_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
-\begin{equation}
-l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}. <br>
-\end{equation}</p>
+</p>
+$$
+\begin{equation*}
+l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2438,17 +2449,24 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
     <div class="details-content">
         <div class="admonition-content"><p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
 <p>Let $I_x$ be the smallest interval containing the nodes $x_0, x_1, \ldots x_n$ and $x$ and assume that $f \in C^{n+1}\left( I_x \right)$. Then the interpolation error at the point $x$ is defined and given by
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \begin{aligned}
-E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
-&amp;= \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
+E_n(x) &= f(x) − \Pi_n f (x) \newline
+&= \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
 \end{aligned}
 \tag{1} \label{eq:basic_interpolation_error}
-\end{equation}</p>
+$$
+<p>
+\end{equation*}</p>
 <p>where $\xi \in I_x$ and $\omega_{n+1}$ is the nodal polynomial of degree $n + 1$, which is defined as
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \omega_{n+1}(x) = \prod\limits_{i=0}^{n} \left(x - x_i \right).
-\end{equation}</p>
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2469,14 +2487,22 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>Define the following space
-\begin{equation}
-\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x &lt; \infty \bigr \rbrace
-\end{equation}</p>
-<p>with</p>
-<p>\begin{equation}
-| f |<sup>{}_{\mathrm{L}</sup>{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \, \mathrm{d} x \right)^{1 / 2}.
-\end{equation}</p>
-<p>This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
+</p>
+$$
+\begin{equation*}
+\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \\, \mathrm{d}x < \infty \bigr \rbrace
+\end{equation*}
+$$
+<p>
+with
+</p>
+$$
+\begin{equation*}
+\| f \|^{}\_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \\, \mathrm{d} x \right)^{1 / 2}.
+\end{equation*}
+$$
+<p>
+This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
 </div>
     </div>
 </div>
@@ -2485,19 +2511,25 @@ E_n(x) &amp;= f(x) − \Pi_n f (x) \newline
 
 
 <p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.</p>
-<p>For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space</p>
-<p>\begin{equation}
-X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,   v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2} \label{eq:piecewise}
-\end{equation}</p>
+<p>For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space
+</p>
+$$
+\begin{equation*}
+X_h^k = \bigl\lbrace v \in C^0([a, b]) \\, : \\,   v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \\, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2} \label{eq:piecewise}
+\end{equation*}
+$$
 <p>which is the space of the continuous functions over the interval $[a, b]$ whose restrictions on each $I_j$ are polynomials of degree less than or equal to $k$.</p>
 <p>Then, for any continuous function $f$ in $[a, b]$, the piecewise interpolation polynomial $\Pi^k_h f$
 coincides on each $I_j$ with the interpolating polynomial of $\left. f \right|_{I_j}$ at the $n + 1$ nodes
 $\lbrace x_j^{(i)}, 0 \leq i \leq n \rbrace$.</p>
 <p>As a consequence, if $f \in C^{k+1}([a, b])$, then from \eqref{eq:basic_interpolation_error} within
 each interval the following error estimate holds
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left\Vert f − \Pi_h^k f \right\Vert_\infty \leq C h^{k+1} \left\Vert f^{(k+1} \right\Vert_\infty .
-\end{equation}</p>
+\end{equation*}
+$$
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2513,18 +2545,26 @@ each interval the following error estimate holds
 $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−1} h_j$, such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Now using Lagrange interpolation on each subinterval $I_j$ using $n + 1$ equally spaced nodes
 $\lbrace{ x^{(i)}_{j} , 0 \le i \le n \rbrace}$
 with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</em>.</p>
-<p>Let $0 \leq m \leq k+1$, with $k \geq 1$ and assume that $f^{(m)} \in$ $\mathrm{L}^{2}(a, b)$ for $0 \leq m \leq k+1$ then there exists a positive constant $C$, independent of $h$, such that</p>
-<p>\begin{equation}
-\left| \left( f - \Pi_{h}^{k} f\right)^{(m)} \right|_{\mathrm{L}^{2}(a, b)} \leq C h^{k+1-m} \left| f^{(k+1)} \right|_{\mathrm{L}^{2}(a, b)} .
-\end{equation}</p>
-<p>In particular, for $k=1$ and $m=0$, or $m=1$</p>
-<p>\begin{equation}
+<p>Let $0 \leq m \leq k+1$, with $k \geq 1$ and assume that $f^{(m)} \in$ $\mathrm{L}^{2}(a, b)$ for $0 \leq m \leq k+1$ then there exists a positive constant $C$, independent of $h$, such that
+</p>
+$$
+\begin{equation*}
+\left\| \left( f - \Pi_{h}^{k} f\right)^{(m)} \right\|\_{\mathrm{L}^{2}(a, b)} \leq C h^{k+1-m} \left\| f^{(k+1)} \right\|_{\mathrm{L}^{2}(a, b)} .
+\end{equation*}
+$$
+<p>
+In particular, for $k=1$ and $m=0$, or $m=1$
+</p>
+$$
+\begin{equation*}
 \begin{aligned}
-\left| f-\Pi_{h}^{1} f \right|_{\mathrm{L}^{2}(a, b)} &amp; \leq C_{1} h^{2} \left| f^{\prime \prime} \right|_{\mathrm{L}<sup>{2}(a, b)} \newline
-\left| \left( f - \Pi_{h}^{1} f \right)</sup>{\prime}\right|_{\mathrm{L}<sup>{2}(a, b)} &amp; \leq C_{2} h\left| f</sup>{\prime \prime} \right|_{\mathrm{L}^{2}(a, b)}<br>
+\left\| f-\Pi_{h}^{1} f \right\|\_{\mathrm{L}^{2}(a, b)} & \leq C_{1} h^{2} \left\| f^{\prime \prime} \right\|\_{\mathrm{L}^{2}(a, b)} \newline
+\left\| \left( f - \Pi_{h}^{1} f \right)^{\prime}\right\|\_{\mathrm{L}^{2}(a, b)} & \leq C_{2} h\left\| f^{\prime \prime} \right\|\_{\mathrm{L}^{2}(a, b)}  
 \end{aligned}
-\end{equation}</p>
-<p>for two suitable positive constants $C_{1}$ and $C_{2}$.</p>
+\end{equation*}
+$$
+<p>
+for two suitable positive constants $C_{1}$ and $C_{2}$.</p>
 </div>
     </div>
 </div>
@@ -2536,9 +2576,9 @@ with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T10:03:42.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
