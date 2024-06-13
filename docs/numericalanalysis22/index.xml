@@ -22,9 +22,12 @@
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
 --&gt;
+&lt;p&gt;&amp;lt;
+!&amp;ndash;&lt;/p&gt;
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+--&gt;
 &lt;p&gt;Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.&lt;/p&gt;
 &lt;h2 id=&#34;well-posed-problems&#34;&gt;Well Posed Problems&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -64,14 +67,22 @@
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; of a problem is given by:
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; of a problem is given by:
+&lt;/p&gt;
+$$
+\begin{equation*}
 K ( d ) = \sup\limits_{\delta d \in \mathcal{D}} \dfrac{ \left\Vert \delta x \right\Vert / \left\Vert x \right\Vert}{\left\Vert \delta d \right\Vert / \left\Vert d \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 if either $x=0$ or $d=0$, the &lt;strong&gt;absolute condition number&lt;/strong&gt; is then
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Vert \delta x \right\Vert }{\left\Vert \delta d \right\Vert}
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -91,11 +102,16 @@ K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Ve
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is &lt;strong&gt;consistent&lt;/strong&gt; if
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is &lt;strong&gt;consistent&lt;/strong&gt; if
+&lt;/p&gt;
+$$
+\begin{equation*}
 \lim\limits_{n\rightarrow\infty} F_n (x,d)  \rightarrow F(x,d).
-\end{equation}
-The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/div&gt;
+\end{equation*}
+$$
+&lt;p&gt;
+The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/p&gt;
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -114,17 +130,26 @@ The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 K_n \left( d_n \right) = \sup\limits_{\delta d_n \in \mathcal{D}_n }  \dfrac{ \left\Vert \delta x_n \right\Vert /  \left\Vert x_n \right\Vert }{\left\Vert \delta d_n \right\Vert / \left\Vert d_n \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 and&lt;/p&gt;
-$$K_{n,\mathrm{abs}} \left( d_n \right) = \sup \limits_{\delta d_n \in \mathcal{D}_n}  \dfrac{ \left\Vert \delta x_n \right\Vert }{ \left\Vert \delta d_n \right\Vert }$$
+$$
+K_{n,\mathrm{abs}} \left( d_n \right) = \sup \limits_{\delta d_n \in \mathcal{D}_n}  \dfrac{ \left\Vert \delta x_n \right\Vert }{ \left\Vert \delta d_n \right\Vert }
+$$
 &lt;p&gt;then the &lt;strong&gt;asymptotic condition number&lt;/strong&gt; is&lt;/p&gt;
 $$K^{\mathrm{num}} (d) = \lim \limits_{k\rightarrow \infty} \sup\limits_{n \le k} K_n \left( d_n \right).$$
-&lt;p&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; is:&lt;/p&gt;
-&lt;p&gt;\begin{equation}
+&lt;p&gt;The &lt;strong&gt;relative condition number&lt;/strong&gt; is:
+&lt;/p&gt;
+$$
+\begin{equation*}
 K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \infty} \sup \limits_{n \le k} K_{n, \mathrm{abs}} \left( d_n \right).
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -143,10 +168,13 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A method is &lt;strong&gt;convergent&lt;/strong&gt; if and only if:
-\begin{equation}
-\forall \varepsilon &amp;gt; 0, \quad \exists \,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
-\end{equation}&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A method is &lt;strong&gt;convergent&lt;/strong&gt; if and only if:
+&lt;/p&gt;
+$$
+\begin{equation*}
+\forall \varepsilon &gt; 0, \quad \exists \\,  n \quad \textsf{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
+\end{equation*}
+$$&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -189,18 +217,22 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 &lt;p&gt;$\lim\limits_{k \rightarrow \infty}A^k =0 \Leftrightarrow \rho \left( A \right) &lt; 1$. Where $\rho\left(A \right)$ is the largest absolute value of the eigenvalues of $A$.  This is called the &lt;em&gt;spectral radius&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The geometric series, $\sum\limits_{k=0}^{\infty}A^k$ is convergent if and only if $\rho \left( A \right) &lt; 1$. Then in this case, the sum is given by
-\begin{equation}
-\sum\limits_{k=0}&lt;sup&gt;{\infty}A&lt;/sup&gt;k = \left( I - A \right)^{-1}
-\end{equation}&lt;/p&gt;
+&lt;p&gt;The geometric series, $\sum\limits_{k=0}^{\infty}A^k$ is convergent if and only if $\rho \left( A \right) &lt; 1$. Then in this case, the sum is given by&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Thus, if $\rho \left( A \right) &lt; 1$, the matrix $I-A$ is invertible and
-\begin{equation}
+&lt;/ol&gt;
+$$
+\begin{equation*}
+\sum\limits_{k=0}^{\infty}A^k = \left( I - A \right)^{-1}
+\end{equation*}
+$$
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Thus, if $\rho \left( A \right) &lt; 1$, the matrix $I-A$ is invertible and
+$$
+\begin{equation*}
 \dfrac{1}{1+\left\Vert A \right\Vert} \le \left\Vert\left( I - A \right)^{-1}\right\Vert \le \dfrac{1}{1-\left\Vert A \right\Vert}
-\end{equation}
-where $\left\Vert \cdot \right\Vert$ is an &lt;em&gt;induced matrix norm&lt;/em&gt; such that $\left\Vert A \right\Vert &lt;1$.&lt;/p&gt;
-&lt;/li&gt;
+\end{equation*}
+$$
+where $\left\Vert \cdot \right\Vert$ is an &lt;em&gt;induced matrix norm&lt;/em&gt; such that $\left\Vert A \right\Vert &lt;1$.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
     &lt;/div&gt;
@@ -220,14 +252,22 @@ where $\left\Vert \cdot \right\Vert$ is an &lt;em&gt;induced matrix norm&lt;/em&
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert &lt; 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert &lt; 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( A + \delta A \right)\left( x + \delta x \right) = b + \delta b
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 for a $\delta b \in \mathbb{R}^n$, then
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \left( A + \delta A \right)\left( x + \delta x \right) \le \dfrac{K(A)}{1- K(A) \left\Vert \delta A \right\Vert_2 / \left\Vert A \right\Vert_2} \left(\dfrac{\left\Vert \delta b \right\Vert_2}{\left\Vert b \right\Vert_2} + \dfrac{\left\Vert \delta A \right\Vert_2}{\left\Vert A \right\Vert_2} \right)
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -245,14 +285,22 @@ for a $\delta b \in \mathbb{R}^n$, then
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+&lt;/p&gt;
+$$
+\begin{equation*}
 A \left( x + \delta x \right) = b + \delta b
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 then
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \dfrac{1}{K(A)} \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert} \le \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le K(A) \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert}
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -270,14 +318,22 @@ then
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) &lt;1$, then the following holds
-\begin{equation}
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) &lt;1$, then the following holds
+&lt;/p&gt;
+$$
+\begin{equation*}
 \dfrac{\left\Vert x+ \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{1+\gamma K(A)}{1-\gamma K(A)}
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 and
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{2\gamma K(A)}{1-\gamma K(A)}
-\end{equation}&lt;/div&gt;
+\end{equation*}
+$$
+&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -296,25 +352,40 @@ and
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 &lt; 1$ and
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \bigl\Vert A^{-1} \bigr\Vert \le \dfrac{\left\Vert C \right\Vert}{1 - \left\Vert R \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 and
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \dfrac{\left\Vert R \right\Vert}{\left\Vert A \right\Vert} \le {\left\Vert {C - A^{-1}} \right\Vert} \le \dfrac{\left\Vert C \right\Vert \left\Vert R \right\Vert }{1 - \left\Vert R \right\Vert}
-\end{equation}&lt;/p&gt;
-&lt;p&gt;In the frame of backwards a priori analysis we can interpret $C$ as being the inverse of $A + \delta A$ (for a suitable unknown $\delta A$). We are thus assuming that
+\end{equation*}
+$$
+&lt;p&gt;
+In the frame of backwards a priori analysis we can interpret $C$ as being the inverse of $A + \delta A$ (for a suitable unknown $\delta A$). We are thus assuming that
 $C(A + \delta A) = I$. This yields
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \delta A = C^{−1} − A = −(AC − I)C^{−1} = −R C^{−1}
-\end{equation}
+\end{equation*}
+$$
+&lt;p&gt;
 and, as a consequence, if $\left\Vert R \right\Vert &lt;1$ it turns out that
-\begin{equation}
+&lt;/p&gt;
+$$
+\begin{equation*}
 \begin{aligned}
-\left\Vert \delta A \right\Vert &amp;amp; \le  \left\Vert  R  \right\Vert  \left\Vert C^{-1} \right\Vert \newline
-&amp;amp; \le \dfrac{ \left\Vert R \right\Vert \left\Vert A \right\Vert }{1 - \left\Vert R \right\Vert}
+\left\Vert \delta A \right\Vert &amp; \le  \left\Vert  R  \right\Vert  \left\Vert C^{-1} \right\Vert \newline
+ &amp; \le \dfrac{ \left\Vert R \right\Vert \left\Vert A \right\Vert }{1 - \left\Vert R \right\Vert}
 \end{aligned}
-\end{equation}&lt;/p&gt;
+\end{equation*}
+$$
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

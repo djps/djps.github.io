@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:49:58&#43;02:00">
   
 
   
@@ -2350,9 +2350,12 @@
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 -->
+<p>&lt;
+!&ndash;</p>
 <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
+-->
 <p>Find $x$ such that $F(x,d)=0$ for a set of data, $d$ and $F$, a functional relationship between $x$ and $d$.</p>
 <h2 id="well-posed-problems">Well Posed Problems</h2>
 <div class="details admonition Definition open">
@@ -2392,14 +2395,22 @@
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">The <strong>relative condition number</strong> of a problem is given by:
-\begin{equation}
+        <div class="admonition-content"><p>The <strong>relative condition number</strong> of a problem is given by:
+</p>
+$$
+\begin{equation*}
 K ( d ) = \sup\limits_{\delta d \in \mathcal{D}} \dfrac{ \left\Vert \delta x \right\Vert / \left\Vert x \right\Vert}{\left\Vert \delta d \right\Vert / \left\Vert d \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+<p>
 if either $x=0$ or $d=0$, the <strong>absolute condition number</strong> is then
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Vert \delta x \right\Vert }{\left\Vert \delta d \right\Vert}
-\end{equation}</div>
+\end{equation*}
+$$
+</div>
     </div>
 </div>
 
@@ -2419,11 +2430,16 @@ K_{\mathrm{abs}} ( d ) = \sup\limits_{\delta d  \in \mathcal{D}}\dfrac{ \left\Ve
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is <strong>consistent</strong> if
-\begin{equation}
+        <div class="admonition-content"><p>If the $d$ is admissible for $F_n$ then a numerical method $F_n (x_n, d_n)=0$ is <strong>consistent</strong> if
+</p>
+$$
+\begin{equation*}
 \lim\limits_{n\rightarrow\infty} F_n (x,d)  \rightarrow F(x,d).
-\end{equation}
-The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.</div>
+\end{equation*}
+$$
+<p>
+The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.</p>
+</div>
     </div>
 </div>
 
@@ -2442,17 +2458,26 @@ The method is strongly consistent if $F_n(x,d)=0$ for all $n\ge0$.</div>
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>If the sets of functions for $F_n (x_n, d_n)=0$ and $F(x,d)=0$ coincide, that is
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 K_n \left( d_n \right) = \sup\limits_{\delta d_n \in \mathcal{D}_n }  \dfrac{ \left\Vert \delta x_n \right\Vert /  \left\Vert x_n \right\Vert }{\left\Vert \delta d_n \right\Vert / \left\Vert d_n \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+<p>
 and</p>
-$$K_{n,\mathrm{abs}} \left( d_n \right) = \sup \limits_{\delta d_n \in \mathcal{D}_n}  \dfrac{ \left\Vert \delta x_n \right\Vert }{ \left\Vert \delta d_n \right\Vert }$$
+$$
+K_{n,\mathrm{abs}} \left( d_n \right) = \sup \limits_{\delta d_n \in \mathcal{D}_n}  \dfrac{ \left\Vert \delta x_n \right\Vert }{ \left\Vert \delta d_n \right\Vert }
+$$
 <p>then the <strong>asymptotic condition number</strong> is</p>
 $$K^{\mathrm{num}} (d) = \lim \limits_{k\rightarrow \infty} \sup\limits_{n \le k} K_n \left( d_n \right).$$
-<p>The <strong>relative condition number</strong> is:</p>
-<p>\begin{equation}
+<p>The <strong>relative condition number</strong> is:
+</p>
+$$
+\begin{equation*}
 K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \infty} \sup \limits_{n \le k} K_{n, \mathrm{abs}} \left( d_n \right).
-\end{equation}</p>
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2471,10 +2496,13 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">A method is <strong>convergent</strong> if and only if:
-\begin{equation}
-\forall \varepsilon &gt; 0, \quad \exists \,  n \quad \mbox{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
-\end{equation}</div>
+        <div class="admonition-content"><p>A method is <strong>convergent</strong> if and only if:
+</p>
+$$
+\begin{equation*}
+\forall \varepsilon > 0, \quad \exists \\,  n \quad \textsf{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
+\end{equation*}
+$$</div>
     </div>
 </div>
 
@@ -2517,18 +2545,22 @@ K_{\mathrm{abs}}^{\mathrm{num}} \left( d \right) = \lim \limits_{k\rightarrow \i
 <p>$\lim\limits_{k \rightarrow \infty}A^k =0 \Leftrightarrow \rho \left( A \right) < 1$. Where $\rho\left(A \right)$ is the largest absolute value of the eigenvalues of $A$.  This is called the <em>spectral radius</em></p>
 </li>
 <li>
-<p>The geometric series, $\sum\limits_{k=0}^{\infty}A^k$ is convergent if and only if $\rho \left( A \right) < 1$. Then in this case, the sum is given by
-\begin{equation}
-\sum\limits_{k=0}<sup>{\infty}A</sup>k = \left( I - A \right)^{-1}
-\end{equation}</p>
+<p>The geometric series, $\sum\limits_{k=0}^{\infty}A^k$ is convergent if and only if $\rho \left( A \right) < 1$. Then in this case, the sum is given by</p>
 </li>
-<li>
-<p>Thus, if $\rho \left( A \right) < 1$, the matrix $I-A$ is invertible and
-\begin{equation}
+</ol>
+$$
+\begin{equation*}
+\sum\limits_{k=0}^{\infty}A^k = \left( I - A \right)^{-1}
+\end{equation*}
+$$
+<ol start="3">
+<li>Thus, if $\rho \left( A \right) < 1$, the matrix $I-A$ is invertible and
+$$
+\begin{equation*}
 \dfrac{1}{1+\left\Vert A \right\Vert} \le \left\Vert\left( I - A \right)^{-1}\right\Vert \le \dfrac{1}{1-\left\Vert A \right\Vert}
-\end{equation}
-where $\left\Vert \cdot \right\Vert$ is an <em>induced matrix norm</em> such that $\left\Vert A \right\Vert <1$.</p>
-</li>
+\end{equation*}
+$$
+where $\left\Vert \cdot \right\Vert$ is an <em>induced matrix norm</em> such that $\left\Vert A \right\Vert <1$.</li>
 </ol>
 </div>
     </div>
@@ -2548,14 +2580,22 @@ where $\left\Vert \cdot \right\Vert$ is an <em>induced matrix norm</em> such tha
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert < 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
-\begin{equation}
+        <div class="admonition-content"><p>Let $A \in \mathbb{R}^{n \times n}$ be non-singular and let $\delta A \in \mathbb{R}^{n \times n}$ be such that $\left\Vert A^{-1} \right\Vert \bigl\Vert \delta A \bigr\Vert < 1$. Furthermore, if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+</p>
+$$
+\begin{equation*}
 \left( A + \delta A \right)\left( x + \delta x \right) = b + \delta b
-\end{equation}
+\end{equation*}
+$$
+<p>
 for a $\delta b \in \mathbb{R}^n$, then
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \left( A + \delta A \right)\left( x + \delta x \right) \le \dfrac{K(A)}{1- K(A) \left\Vert \delta A \right\Vert_2 / \left\Vert A \right\Vert_2} \left(\dfrac{\left\Vert \delta b \right\Vert_2}{\left\Vert b \right\Vert_2} + \dfrac{\left\Vert \delta A \right\Vert_2}{\left\Vert A \right\Vert_2} \right)
-\end{equation}</div>
+\end{equation*}
+$$
+</div>
     </div>
 </div>
 
@@ -2573,14 +2613,22 @@ for a $\delta b \in \mathbb{R}^n$, then
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
-\begin{equation}
+        <div class="admonition-content"><p>Let $A \in \mathbb{R}^{n \times n}$ be non-singular and if $x \in \mathbb{R}^n$ is a solution to $Ax=b$, where $b \in \mathbb{R}^n$ and $b \neq 0$ and $\delta x$ is such that
+</p>
+$$
+\begin{equation*}
 A \left( x + \delta x \right) = b + \delta b
-\end{equation}
+\end{equation*}
+$$
+<p>
 then
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \dfrac{1}{K(A)} \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert} \le \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le K(A) \dfrac{\left\Vert \delta b \right\Vert}{\left\Vert b \right\Vert}
-\end{equation}</div>
+\end{equation*}
+$$
+</div>
     </div>
 </div>
 
@@ -2598,14 +2646,22 @@ then
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) <1$, then the following holds
-\begin{equation}
+        <div class="admonition-content"><p>For $A \in \mathbb{R}^{n \times n}$ and $b \in \mathbb{R}^{n}$, assume $\left\Vert \delta A \right\Vert \le \gamma \left\Vert A \right\Vert$ and $\left\Vert \delta b \right\Vert \le \gamma \left\Vert b \right\Vert$ for some $\gamma \in \mathbb{R}^{+}$. Then, if $\gamma K(A) <1$, then the following holds
+</p>
+$$
+\begin{equation*}
 \dfrac{\left\Vert x+ \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{1+\gamma K(A)}{1-\gamma K(A)}
-\end{equation}
+\end{equation*}
+$$
+<p>
 and
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \dfrac{\left\Vert \delta x \right\Vert}{\left\Vert x \right\Vert} \le \dfrac{2\gamma K(A)}{1-\gamma K(A)}
-\end{equation}</div>
+\end{equation*}
+$$
+</div>
     </div>
 </div>
 
@@ -2624,25 +2680,40 @@ and
     </div>
     <div class="details-content">
         <div class="admonition-content"><p>For $A, C \in \mathbb{R}^{n \times n}$, let $R = AC − I$.  If $\left\Vert R \right\Vert_2 < 1$ and
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \bigl\Vert A^{-1} \bigr\Vert \le \dfrac{\left\Vert C \right\Vert}{1 - \left\Vert R \right\Vert}
-\end{equation}
+\end{equation*}
+$$
+<p>
 and
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \dfrac{\left\Vert R \right\Vert}{\left\Vert A \right\Vert} \le {\left\Vert {C - A^{-1}} \right\Vert} \le \dfrac{\left\Vert C \right\Vert \left\Vert R \right\Vert }{1 - \left\Vert R \right\Vert}
-\end{equation}</p>
-<p>In the frame of backwards a priori analysis we can interpret $C$ as being the inverse of $A + \delta A$ (for a suitable unknown $\delta A$). We are thus assuming that
+\end{equation*}
+$$
+<p>
+In the frame of backwards a priori analysis we can interpret $C$ as being the inverse of $A + \delta A$ (for a suitable unknown $\delta A$). We are thus assuming that
 $C(A + \delta A) = I$. This yields
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \delta A = C^{−1} − A = −(AC − I)C^{−1} = −R C^{−1}
-\end{equation}
+\end{equation*}
+$$
+<p>
 and, as a consequence, if $\left\Vert R \right\Vert <1$ it turns out that
-\begin{equation}
+</p>
+$$
+\begin{equation*}
 \begin{aligned}
-\left\Vert \delta A \right\Vert &amp; \le  \left\Vert  R  \right\Vert  \left\Vert C^{-1} \right\Vert \newline
-&amp; \le \dfrac{ \left\Vert R \right\Vert \left\Vert A \right\Vert }{1 - \left\Vert R \right\Vert}
+\left\Vert \delta A \right\Vert & \le  \left\Vert  R  \right\Vert  \left\Vert C^{-1} \right\Vert \newline
+ & \le \dfrac{ \left\Vert R \right\Vert \left\Vert A \right\Vert }{1 - \left\Vert R \right\Vert}
 \end{aligned}
-\end{equation}</p>
+\end{equation*}
+$$
 </div>
     </div>
 </div>
@@ -2654,9 +2725,9 @@ and, as a consequence, if $\left\Vert R \right\Vert <1$ it turns out that
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:49:58.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
