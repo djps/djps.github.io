@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: June 12, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-03-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:52:49&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:04:02&#43;02:00">
   
 
   
@@ -2296,16 +2296,22 @@
 
       <div class="content text-base">
         <h1>ODE Solvers</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 10, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
+-->
 <h3 id="solving-ordinary-differential-equations">Solving ordinary differential equations</h3>
 <p>Here is a demonstration of stability/instability of different time-stepping (one-step) schemes for solving initial value problem ordinary differential equations.</p>
-<p>Here a simple damped system is used</p>
-<p>\begin{equation}
-y^{\prime}\left(t\right) = a y\left(t\right) \quad \mbox{with} \quad a=-2 \quad \mbox{and} \quad y\left(t=0\right) = y_0 = 1.
-\end{equation}</p>
-<p>The solution is given by $y\left(t\right) = y_0 e^{a t}$</p>
+<p>Here a simple damped system is used
+</p>
+$$
+\begin{equation}
+y^{\prime}\left(t\right) = a y\left(t\right) \quad \textsf{with} \quad a=-2 \quad \textsf{and} \quad y\left(t=0\right) = y_0 = 1.
+\end{equation}
+$$
+<p>
+The solution is given by $y\left(t\right) = y_0 e^{a t}$</p>
 <p>Explicit schemes have certain conditions on stability for these types of equations (and in general).</p>
 <p>Implicit schemes are unconditionally stable for this equation (and also in general are more stable), but are more computationally costly.</p>
 <p>The order of convergence is important if the scheme is stable. RK4 is has the highest convergence (fourth order Runge-Kutta scheme). If the timestep $h$ is sufficiently small, it will outperform all of the other methods used below.</p>
@@ -2391,9 +2397,9 @@ y^{\prime}\left(t\right) = a y\left(t\right) \quad \mbox{with} \quad a=-2 \quad 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:52:49.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:04:02.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
@@ -2417,8 +2423,6 @@ y^{\prime}\left(t\right) = a y\left(t\right) \quad \mbox{with} \quad a=-2 \quad 
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
             >Runge Phenomena</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Mar 3, 2024
               
             </span>
           </span>

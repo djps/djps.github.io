@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: June 12, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-03-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:04:02&#43;02:00">
   
 
   
@@ -2296,24 +2296,29 @@
 
       <div class="content text-base">
         <h1>Iterative Linear Equation Solvers</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> January 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
+-->
 <h2 id="eigenvectors-and-eigenvalues-of-matrices">Eigenvectors and Eigenvalues of Matrices</h2>
 <p>(assuming real numbers here) Eigenvectors give the direction of change (they are normalized to length 1).</p>
 <p>Eigenvalues give the amplitude of change in that direction.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">copy</span>
-</span></span></code></pre></div><p>Consider the matrix</p>
-<p>\begin{equation}
+</span></span></code></pre></div><p>Consider the matrix
+</p>
+$$
+\begin{equation}
 C = \left(
-\begin{array}{cc}
-2 &amp; 1.5 \\
-1.5 &amp; 2
-\end{array}
-\right)
-\end{equation}</p>
+  \begin{array}{cc}
+  2 & 1.5 \\\
+  1.5 & 2
+  \end{array}
+  \right)
+\end{equation}
+$$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">],[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Compute the eigenvalues and eigenvectors of the matrix (all real in this case), so that $C v = e v$</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">e</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
@@ -2370,12 +2375,15 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
   </div></figure>
 </p>
 <h3 id="iterative-solvers-for-linear-systems-of-equations">Iterative solvers for linear systems of equations:</h3>
-<p>To solve</p>
-<p>\begin{equation}
+<p>To solve
+</p>
+$$
+\begin{equation}
 A x = b
-\end{equation}</p>
-<p>for $x$.</p>
-<p>They are of general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.</p>
+\end{equation}
+$$
+<p>
+for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.</p>
 <ul>
 <li><strong>Jacobi</strong>: $Q$ is diagonal matrix of $A$.</li>
 <li><strong>Gauss-Seidel</strong>: $Q$ is lower triangular part of $A$.</li>
@@ -2383,37 +2391,44 @@ A x = b
 </ul>
 <p>In the example we will make use of a number of routines: <a href="https://numpy.org/doc/stable/reference/generated/numpy.tril.html" target="_blank" rel="noopener"><code>np.tril</code></a> as well as <a href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html" target="_blank" rel="noopener"><code>np.diag</code></a>,
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank" rel="noopener"><code>np.linalg.inv</code></a> and <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html" target="_blank" rel="noopener"><code>np.linalg.norm</code></a>.</p>
-<p>Let the matrix $A$ be given by</p>
-<p>\begin{equation}
+<p>Let the matrix $A$ be given by
+</p>
+$$
+\begin{equation}
 A = \left(
-\begin{array}{ccc}
-2 &amp; -1 &amp; 0 \\
--1 &amp; 3 &amp; -1 \\
-0 &amp; -1 &amp; 2
-\end{array}
-\right)
-\end{equation}</p>
+  \begin{array}{ccc}
+  2 & -1 & 0 \\\
+  -1 & 3 & -1 \\\
+  0 & -1 & 2
+  \end{array}
+  \right)
+\end{equation}
+$$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Right hand side vector $b=\left( 1, 8, -5 \right)^T$.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
-</span></span></code></pre></div><p>Note that the inverse $A^{-1}$ is given as</p>
-<p>\begin{equation}
+</span></span></code></pre></div><p>Note that the inverse $A^{-1}$ is given as
+</p>
+$$
+\begin{equation}
 A^{-1} = \dfrac{1}{8} \left(
-\begin{array}{ccc}
-5 &amp; 2 &amp; 1 \\
-2 &amp; 4 &amp; 2 \\
-1 &amp; 2 &amp; 5
-\end{array}
-\right) \quad \Rightarrow
+  \begin{array}{ccc}
+  5 & 2 & 1 \\\
+  2 & 4 & 2 \\\
+  1 & 2 & 5
+  \end{array}
+  \right) \quad \Rightarrow
 x = \left(
-\begin{array}{c}
-2 \\
-3 \\
--1 \end{array} \right).
-\end{equation}</p>
-<p>Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.</p>
+  \begin{array}{c}
+  2 \\\
+  3 \\\
+  -1 \end{array} \right).
+\end{equation}
+$$
+<p>
+Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.</p>
 <p>For the Jacobi method, $Q$ is the inverse of diagonal matrix</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
 </span></span></code></pre></div><p>For the Gauss-Seidel method, $Q$ is the inverse of lower triangular matrix of $A$</p>
@@ -2490,9 +2505,9 @@ x = \left(
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:04:02.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
@@ -2517,8 +2532,6 @@ x = \left(
             >Linear Systems of Equations</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Mar 8, 2024
-              
             </span>
           </span>
         </a>
@@ -2533,8 +2546,6 @@ x = \left(
             >Nonlinear Solvers</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Mar 6, 2024
               
             </span>
           </span>

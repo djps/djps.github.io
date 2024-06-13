@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: June 12, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-03-10T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:04:02&#43;02:00">
   
 
   
@@ -2296,20 +2296,30 @@
 
       <div class="content text-base">
         <h1>Taylor Series</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> January 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
+-->
 <h2 id="taylor-series-expansion">Taylor Series Expansion</h2>
 <p>This notebook presents the Taylor series expansion of the sine function, $\sin\left( x\right)$ close to zero for an increasing number of terms in the approximation.</p>
-<p>Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by</p>
-<p>\begin{equation}
+<p>Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
+</p>
+$$
+\begin{equation}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
-\end{equation}</p>
-<p>Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that</p>
-<p>\begin{equation}
+\end{equation}
+$$
+<p>
+Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that
+</p>
+$$
+\begin{equation}
 \sin \left( x \right) \approx x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \dfrac{x^7}{7!}  \ldots
-\end{equation}</p>
-<p>Note that in this example, only odd powers of $x$ contribute to the expansion.</p>
+\end{equation}
+$$
+<p>
+Note that in this example, only odd powers of $x$ contribute to the expansion.</p>
 <p>First import the tools needed</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
@@ -2382,9 +2392,9 @@
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:04:02.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
@@ -2409,8 +2419,6 @@
             >Number Representations</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Mar 9, 2024
               
             </span>
           </span>

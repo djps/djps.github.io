@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: June 12, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-03-08T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T09:04:02&#43;02:00">
   
 
   
@@ -2296,9 +2296,11 @@
 
       <div class="content text-base">
         <h1>Linear Systems of Equations</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> January 11, 2024 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
+-->
 <h2 id="linear-systems">Linear Systems</h2>
 <p>Tridiagonal solver (Thomas algorithm); input has to be a tridiagonal square matrix and a solution vector. If the matrix is singular (i.e. determinant = 0), the algorithm will break (division by zero).</p>
 <p>The algorithm is not generally stable (i.e. does not magnify small errors in the original matrix via, for example, rounding errors), but it is stable in special cases such as diagonally dominant matrices or symmetric positive definite matrices. In practice, one of the two is often the case.</p>
@@ -2329,21 +2331,24 @@
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span>
 </span></span></code></pre></div><p>We first check if potential conditions for termination of the algorithm hold. This step might be as costly as or even more costly than the algorithm itself, which is why one wouldn&rsquo;t do this in general. In many practical cases, there might be indications prior to using the algorithm that the conditions hold. Sometimes, one just simply applies the algorithm without checking at all and just checks if it fails. Below, we first apply the checks and then apply the algorithm.</p>
 <p>Consider a matrix $A$ and right-hand side $y$ for linear system $Ax=b$
+</p>
+$$
 \begin{equation}
 A = \left(
-\begin{array}{ccc}
-2 &amp; -1 &amp; 0 \\
-1 &amp; 3 &amp; 1 \\
-0 &amp; 1 &amp; 2
-\end{array}
-\right) \quad \mbox{and} \quad b = \left(
-\begin{array}{ccc}
-1 \\
-2 \\
-5
-\end{array}
-\right).
-\end{equation}</p>
+  \begin{array}{ccc}
+  2 & -1 & 0 \\\
+  1 & 3 & 1 \\\
+  0 & 1 & 2
+  \end{array}
+  \right) \quad \textsf{and} \quad b = \left(
+    \begin{array}{ccc}
+    1 \\\
+    2 \\\
+    5
+    \end{array}
+    \right).
+\end{equation}
+$$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">]])</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">])</span>
 </span></span></code></pre></div><p>Check for positive definiteness and symmetry</p>
@@ -2367,8 +2372,8 @@ Matrix is diagonally dominant  True
 <p>Cholesky decomposition of an input matrix $A$, which must be positive definite and symmetric. It returns the lower triangular matrix $L$. The upper one, $U$, is given by the transpose of $L$, i.e. $U=L^T$.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">cholesky</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    Performs a Cholesky decomposition of A, which must be a symmetric and positive definite matrix.
-</span></span></span><span class="line"><span class="cl"><span class="s2">    The function returns the lower triangular matrix, L.
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Performs a Cholesky decomposition of A, which must be a symmetric and positive
+</span></span></span><span class="line"><span class="cl"><span class="s2">    definite matrix. The function returns the lower triangular matrix, L.
 </span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1"># size</span>
@@ -2413,9 +2418,9 @@ Matrix is diagonally dominant  True
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:04:02.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
@@ -2440,8 +2445,6 @@ Matrix is diagonally dominant  True
             >Number Representations</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Mar 9, 2024
-              
             </span>
           </span>
         </a>
@@ -2456,8 +2459,6 @@ Matrix is diagonally dominant  True
             >Iterative Linear Equation Solvers</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Mar 7, 2024
               
             </span>
           </span>
