@@ -249,7 +249,7 @@
         content="2022-06-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T10:51:20&#43;02:00">
   
 
   
@@ -2344,9 +2344,11 @@
 
       <div class="content text-base">
         <h1>One-Dimensional Finite Element Simulations</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 20 minute read </p>
+-->
 <p>This notebook is based on an example from Chapter 2 of <a href="https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;isbn=9780521728522" target="_blank" rel="noopener">An Introduction to Computational Stochastic PDEs</a>.</p>
 <h2 id="construction-of-matrices">Construction of Matrices</h2>
 <p>The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this <a href="https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html" target="_blank" rel="noopener">compressed sparse column matrices</a> are used, but this is an implementational detail.</p>
@@ -2358,15 +2360,23 @@
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-poster&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>Now define the function which assembles and solves the boundary value problem:</p>
-<p>\begin{align}
--\dfrac{d}{dx} \left( \alpha(x) \dfrac{d u(x)}{dx} \right) + \gamma(x) u(x) = f(x) \quad a &lt; x &lt; b
-\end{align}</p>
-<p>with</p>
-<p>\begin{equation}
-u(a) = 0 \quad \mbox{and} \quad u(b) = 0.
-\end{equation}</p>
-<p>Note that the boundary value problem has a solution on (0,1) when $\alpha$, $\gamma$ and $f$ are constant, given by</p>
+</span></span></code></pre></div><p>Now define the function which assembles and solves the boundary value problem:
+</p>
+$$
+\begin{align*}
+-\dfrac{d}{dx} \left( \alpha(x) \dfrac{d u(x)}{dx} \right) + \gamma(x) u(x) = f(x) \quad a < x < b
+\end{align*}
+$$
+<p>
+with
+</p>
+$$
+\begin{equation*}
+u(a) = 0 \quad \textsf{and} \quad u(b) = 0.
+\end{equation*}
+$$
+<p>
+Note that the boundary value problem has a solution on (0,1) when $\alpha$, $\gamma$ and $f$ are constant, given by</p>
 <p>\begin{equation}
 u(x) = \dfrac{f}{\alpha} \left( 1 - \dfrac{ e^{\sqrt{s}x} + e^{\sqrt{s}(1-x)} }{ 1 + e^{\sqrt{s}} } \right) \quad \mbox{where} \quad s =\gamma / \alpha.
 \end{equation}</p>
@@ -2510,30 +2520,52 @@ u(x) = \dfrac{f}{\alpha} \left( 1 - \dfrac{ e^{\sqrt{s}x} + e^{\sqrt{s}(1-x)} }{
 </p>
 <h2 id="error-analysis">Error Analysis</h2>
 <p>Compute the error via a norm defined using the bilinear form</p>
-<p>\begin{equation}
+$$
+\begin{equation*}
 a(u,v) = \int_a^b \alpha u^{\prime}(x) v^{\prime}(x) + \gamma u(x) v(x) \mathrm{d}x
-\end{equation}</p>
-<p>that is</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+that is
+</p>
+$$
+\begin{equation*}
 \left\lVert u_{}^{} \right\Vert_V = \sqrt{a(u,u)}
-\end{equation}</p>
-<p>so that the error is given by</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+so that the error is given by
+</p>
+$$
+\begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2.
-\end{equation}</p>
-<p>When $\alpha=1$, $\gamma=0$ and $f=1$, the exact solution is given by $u=\frac{1}{2}x(1-x)$. Thus $u^{\prime}= \frac{1}{2}-x$. Evaluating the integral for the error then leads to</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+When $\alpha=1$, $\gamma=0$ and $f=1$, the exact solution is given by $u=\frac{1}{2}x(1-x)$. Thus $u^{\prime}= \frac{1}{2}-x$. Evaluating the integral for the error then leads to
+</p>
+$$
+\begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2 = \sum\limits_{i=1}^{N} \int_{x_{i-1}}^{x_{i}} \left( \dfrac{1}{2} -x - u_h^{\prime} \right)^2 \mathrm{d}x
-\end{equation}</p>
-<p>Now expanding $u_h$ in terms of the basis functions</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+Now expanding $u_h$ in terms of the basis functions
+</p>
+$$
+\begin{equation*}
 u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
-\end{equation}</p>
-<p>So that $u_h^{\prime} = \dfrac{u_1^k - u_2^k}{h}$.</p>
-<p>The square of the error in the $i^{\mathrm{th}}$-element $E_i^2$ can be evaluated using Simpson&rsquo;s rule, i.e.</p>
-<p>\begin{equation}
-\int_{x_{i-1}}^{x_i} g(x) , \mathrm{d}x \approx \dfrac{h}{6}\left( g\left( x_{i-1} \right) + 4 g\left( x_{i-1/2} \right) + g\left( x_{i} \right) \right).
-\end{equation}</p>
+\end{equation*}
+$$
+<p>
+So that $u_h^{\prime} = \dfrac{u_1^k - u_2^k}{h}$.</p>
+<p>The square of the error in the $i^{\mathrm{th}}$-element $E_i^2$ can be evaluated using Simpson&rsquo;s rule, i.e.
+</p>
+$$
+\begin{equation*}
+\int_{x_{i-1}}^{x_i} g(x) \, \mathrm{d}x \approx \dfrac{h}{6}\left( g\left( x_{i-1} \right) + 4 g\left( x_{i-1/2} \right) + g\left( x_{i} \right) \right).
+\end{equation*}
+$$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">FEM_error</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">uh</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">    Compute error with repect to the norm from the bilinear form
@@ -2608,9 +2640,9 @@ u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T10:51:20.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   

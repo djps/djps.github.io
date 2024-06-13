@@ -249,7 +249,7 @@
         content="2022-06-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-13T10:51:20&#43;02:00">
   
 
   
@@ -2288,9 +2288,11 @@
 
       <div class="content text-base">
         <h1>Two-Dimensional Finite Element Simulations</h1>
-        <p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
+        <!--
+<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
 <i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 20 minute read </p>
+-->
 <p>This notebook, like the <a href="https://djps.github.io/courses/numericalanalysis22/notebooks/1dfem/" target="_blank" rel="noopener">one-dimensional finite element</a> example is based on an example from Chapter 2 of <a href="https://www.cambridge.org/gb/academic/subjects/mathematics/differential-and-integral-equations-dynamical-systems-and-co/introduction-computational-stochastic-pdes?format=PB&amp;isbn=9780521728522" target="_blank" rel="noopener">An Introduction to Computational Stochastic PDEs</a>.</p>
 <p>The matrices assembled have few non-zero entries, so rather than store all entries in the matrix, only the non-zero values and there locations are stored. For this <a href="https://scipy-lectures.org/advanced/scipy_sparse/csc_matrix.html" target="_blank" rel="noopener">compressed sparse column matrices</a> are used, but this is an implementational detail.</p>
 <p>First import the necessary libraries</p>
@@ -2303,85 +2305,148 @@
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-poster&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><p>Consider the partial differential equation</p>
-<p>\begin{equation}
+$$
+\begin{equation*}
 -\nabla \cdot \left( a(x) \nabla u \left(x\right) \right) = f\left(x\right) \quad x \in \Omega
-\end{equation}</p>
+\end{equation*}
+$$
 <p>where $a(x) > 0$ for all $x \in \Omega$, and with boundary conditions</p>
-<p>\begin{equation}
+$$
+\begin{equation*}
 u = g(x) \quad x \in \partial\Omega.
-\end{equation}</p>
-<p>Label the boundary vertices <em>after</em> the interior vertices, thus construct a solution of the form</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+Label the boundary vertices <em>after</em> the interior vertices, thus construct a solution of the form
+</p>
+$$
+\begin{equation*}
 w(x) = \sum_{i=1}^{J} w_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
-\end{equation}</p>
-<p>so, by definition let the solution take the form,</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+so, by definition let the solution take the form,
+</p>
+$$
+\begin{equation*}
 w(x) = w_0(x) + w_g (x)
-\end{equation}</p>
-<p>as $w_0$ is zero on the boundary, the values on the boundary are determined by $w_g$.</p>
-<p>Fix the values as</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+as $w_0$ is zero on the boundary, the values on the boundary are determined by $w_g$.</p>
+<p>Fix the values as
+</p>
+$$
+\begin{equation*}
 w_B(x) = \left( w_{J+1}, \ldots, w_{J+J_b} \right)^T
-\end{equation}</p>
-<p>where the values of $w_B$ are interpolated as</p>
-<p>\begin{equation}
-w_i \left(x \right) = g \left( x_i \right) \quad \mbox{for} \quad i=J+1,\ldots,J+J_b.
-\end{equation}</p>
-<p>So the finite element approximation is given by</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+where the values of $w_B$ are interpolated as
+</p>
+$$
+\begin{equation*}
+w_i \left(x \right) = g \left( x_i \right) \quad \textsf{for} \quad i=J+1,\ldots,J+J_b.
+\end{equation*}
+$$
+<p>
+So the finite element approximation is given by
+</p>
+$$
+\begin{equation*}
 u_h(x) = \sum_{i=1}^{J}u_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
-\end{equation}</p>
-<p>Substituting this into the weak form equation yields</p>
-<p>\begin{equation}
-\sum_{i=1}^{J} u_i a\left( \phi_i, \phi_j \right) = \left(f,\phi_j \right) - \sum_{i=J+1}^{J+J_b} w_i a\left( \phi_i(x), \phi_j(x) \right) \quad \mbox{for} \quad j=1,\ldots,J.
-\end{equation}</p>
-<p>For a linear basis function, the linear system is sparse and can be partition into interior and boundary parts</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+Substituting this into the weak form equation yields
+</p>
+$$
+\begin{equation*}
+\sum_{i=1}^{J} u_i a\left( \phi_i, \phi_j \right) = \left(f,\phi_j \right) - \sum_{i=J+1}^{J+J_b} w_i a\left( \phi_i(x), \phi_j(x) \right) \quad \textsf{for} \quad j=1,\ldots,J.
+\end{equation*}
+$$
+<p>
+For a linear basis function, the linear system is sparse and can be partition into interior and boundary parts
+</p>
+$$
+\begin{equation*}
 A = \left(
 \begin{array}{cc}
-A_{II} &amp; A_{IB} \newline
-A_{BI} &amp; A_{BB} \end{array} \right) \quad \mbox{and} \quad b = \left( \begin{array}{c} b_I, &amp; b_B \end{array} \right)^T.
-\end{equation}</p>
-<p>So that the governing equation for the unknown interior values can be written as</p>
-<p>\begin{equation}
+A_{II} & A_{IB} \\
+A_{BI} & A_{BB} \end{array} \right) \quad \textsf{and} \quad b = \left( \begin{array}{c} b_I, & b_B \end{array} \right)^T.
+\end{equation*}
+$$
+<p>
+So that the governing equation for the unknown interior values can be written as
+</p>
+$$
+\begin{equation*}
 A_{II} u_I = b_I - A_{IB} w_B.
-\end{equation}</p>
-<p>Consider the local piecewise basis functions associated with the reference triangle as</p>
-<p>\begin{equation}
-\psi_1(x) = 1-s-t, \quad \psi_2(x) = s \quad \mbox{and} \quad \psi_3(x) = t. \label{eq:local}
-\end{equation}</p>
-<p>where
-\begin{equation}
+\end{equation*}
+$$
+<p>
+Consider the local piecewise basis functions associated with the reference triangle as
+</p>
+$$
+\begin{equation*}
+\psi_1(x) = 1-s-t, \quad \psi_2(x) = s \quad \textsf{and} \quad \psi_3(x) = t. \label{eq:local}
+\end{equation*}
+$$
+<p>
+where
+</p>
+$$
+\begin{equation*}
 \phi_p^k\left( x\left(s,t\right), y\left(s,t\right) \right) = \psi_p\left(s,t\right) \quad p=1,2,3.
-\end{equation}</p>
-<p>Then the solution takes the form</p>
-<p>\begin{align}
-x(s,t) &amp; = x_1^k \psi_1 + x_2^k \psi_2 + x_3^k \psi_3, \newline
-y(s,t) &amp; = y_1^k \psi_1 + y_2^k \psi_2 + y_3^k \psi_3.
-\end{align}</p>
-<p>The Jacobian between the two frames is given by</p>
-<p>\begin{equation}
+\end{equation*}
+$$
+<p>
+Then the solution takes the form</p>
+$$
+\begin{align*}
+x(s,t) & = x_1^k \psi_1 + x_2^k \psi_2 + x_3^k \psi_3, \\
+y(s,t) & = y_1^k \psi_1 + y_2^k \psi_2 + y_3^k \psi_3.
+\end{align*}
+$$
+<p>The Jacobian between the two frames is given by
+</p>
+$$
+\begin{equation*}
 J = \left( \begin{array}{cc}
-\dfrac{\partial x}{\partial s} &amp; \dfrac{\partial y}{\partial s} \newline
-\dfrac{\partial x}{\partial t} &amp; \dfrac{\partial y}{\partial t} \end{array} \right).
-\end{equation}</p>
-<p>Thus, for the local basis functions given above, the Jacobian and inverse are given by</p>
-<p>\begin{equation}
+\dfrac{\partial x}{\partial s} & \dfrac{\partial y}{\partial s} \\
+\dfrac{\partial x}{\partial t} & \dfrac{\partial y}{\partial t} \end{array} \right).
+\end{equation*}
+$$
+<p>
+Thus, for the local basis functions given above, the Jacobian and inverse are given by
+</p>
+$$
+\begin{equation*}
 J = \left( \begin{array}{cc}
-x_2 - x_1 &amp; y_2 - y_1 \newline
-x_3 - x_1 &amp; y_3 - y_1 \end{array} \right)
-\end{equation}</p>
-<p>and</p>
-<p>\begin{equation}
+x_2 - x_1 & y_2 - y_1 \\
+x_3 - x_1 & y_3 - y_1 \end{array} \right)
+\end{equation*}
+$$
+<p>
+and
+</p>
+$$
+\begin{equation*}
 J^{-1} = \dfrac{1}{|J|} \left( \begin{array}{cc}
-y_3 - y_1 &amp; y_1 - y_2 \newline
-x_1 - x_3 &amp; x_2 - x_1 \end{array} \right)
-\end{equation}</p>
-<p>where the determinant of the Jacobian is given by</p>
-<p>\begin{equation}
+y_3 - y_1 & y_1 - y_2 \\
+x_1 - x_3 & x_2 - x_1 \end{array} \right)
+\end{equation*}
+$$
+<p>
+where the determinant of the Jacobian is given by
+</p>
+$$
+\begin{equation*}
 |J| = \left( x_2 - x_1 \right)\left( y_3 - y_1 \right) - \left( y_2 - y_1 \right) \left( x_3 - x_1 \right).
-\end{equation}</p>
-<p>Next create a uniform mesh on a square domain between $(x_0,x_1)$ with $N$ elements on the line. Thus $N+1$ vertices on the line, so that there are $(N+1)^2$ vertices in the domain.</p>
+\end{equation*}
+$$
+<p>
+Next create a uniform mesh on a square domain between $(x_0,x_1)$ with $N$ elements on the line. Thus $N+1$ vertices on the line, so that there are $(N+1)^2$ vertices in the domain.</p>
 <ul>
 <li><code>uniform_mesh_info</code> : this creates the uniform mesh. It returns
 <ul>
@@ -2623,9 +2688,9 @@ x_1 - x_3 &amp; x_2 - x_1 \end{array} \right)
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T10:51:20.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 13, 2024</time>
       
       
   
