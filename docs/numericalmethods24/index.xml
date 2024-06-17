@@ -150,11 +150,6 @@
       * De Casteljau&#39;s algorithm --&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
-&lt;p&gt;{{ $mermaid_js := resources.Get &#34;dist/lib/mermaid/mermaid.min.js&#34; }}
-{{ $mermaid_config_js := resources.Get &amp;ldquo;js/hb-mermaid-config.js&amp;rdquo; }}
-{{ $mermaid_config_js = $mermaid_config_js | resources.Minify }}
-{{ $mermaid_bundle := slice $mermaid_js $mermaid_config_js | resources.Concat &amp;ldquo;js/mermaid.bundle.js&amp;rdquo; | resources.Fingerprint &amp;ldquo;sha256&amp;rdquo; }}&lt;/p&gt;
-&lt;script defer src=&#34;{{ $mermaid_bundle.RelPermalink }}&#34; integrity=&#34;{{ $mermaid_bundle.Data.Integrity }}&#34;&gt;&lt;/script&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gantt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dateFormat   MM-DD
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  axisFormat   %m-%d
