@@ -17,8 +17,8 @@
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
-      <description>&lt;p&gt;{{- partial &amp;ldquo;libraries.html&amp;rdquo; . -}}
-{{- .Store.Set &amp;ldquo;has_mermaid&amp;rdquo; &amp;ldquo;true&amp;rdquo; -}}&lt;/p&gt;
+      <description>&lt;p&gt;{{- .Store.Set &amp;ldquo;has_mermaid&amp;rdquo; &amp;ldquo;true&amp;rdquo; -}}
+{{- partial &amp;ldquo;libraries.html&amp;rdquo; . -}}&lt;/p&gt;
 &lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in spring 2024 on Wednesdays and Thursdays at 14:15 in RLH-172 Conrad Naber Lecture Hall.&lt;/p&gt;
