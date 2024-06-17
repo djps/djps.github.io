@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://djps.github.io/docs/numericalmethods24/intro/intro/</loc>
+    <lastmod>2024-06-17T10:18:10+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://djps.github.io/docs/numericalmethods24/part1/taylor/</loc>
     <lastmod>2024-06-12T16:44:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -12,10 +16,6 @@
   </url><url>
     <loc>https://djps.github.io/docs/numericalmethods24/part1/number-representations/</loc>
     <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part1/principles/</loc>
-    <lastmod>2024-06-13T10:03:42+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</loc>
@@ -47,11 +47,7 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/docs/numericalanalysis22/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part1/iterative-methods/</loc>
-    <lastmod>2024-06-13T09:28:56+02:00</lastmod>
+    <lastmod>2024-06-17T10:18:10+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/docs/numericalmethods24/assignments/</loc>
@@ -62,16 +58,8 @@
     <lastmod>2024-06-12T16:44:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part2/interpolation/</loc>
-    <lastmod>2024-06-13T10:22:33+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://djps.github.io/project/ehma/</loc>
     <lastmod>2024-06-10T15:45:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part2/integration/</loc>
-    <lastmod>2024-06-13T10:03:42+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/project/comptop/</loc>
@@ -86,19 +74,7 @@
     <lastmod>2024-06-10T15:45:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part3/fdm/</loc>
-    <lastmod>2024-06-13T10:16:10+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/part3/fem/</loc>
-    <lastmod>2024-06-13T10:37:32+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://djps.github.io/docs/numericalmethods24/notes/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notes/</loc>
     <lastmod>2024-06-12T16:44:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -334,30 +310,6 @@
     <lastmod>2024-06-10T15:35:03+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/lagrangeinterpolation/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/</loc>
-    <lastmod>2024-06-13T10:51:20+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/1dfem/</loc>
-    <lastmod>2024-06-13T10:51:20+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/notebooks/2dfem/</loc>
-    <lastmod>2024-06-13T10:51:20+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://djps.github.io/tags/cosserat-theory/</loc>
     <lastmod>2024-06-10T15:45:45+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -375,11 +327,11 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/docs/mech1010/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
+    <lastmod>2024-06-17T10:18:10+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/docs/math6502/</loc>
-    <lastmod>2024-06-12T16:44:45+02:00</lastmod>
+    <lastmod>2024-06-17T10:18:10+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/tags/directivity/</loc>
@@ -404,10 +356,6 @@
   </url><url>
     <loc>https://djps.github.io/tags/imaging/</loc>
     <lastmod>2023-11-09T12:43:13+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://djps.github.io/docs/numericalanalysis22/assignments/</loc>
-    <lastmod>2024-06-12T16:52:49+02:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://djps.github.io/tags/acoustic-holography/</loc>

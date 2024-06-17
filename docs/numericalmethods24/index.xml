@@ -13,6 +13,331 @@
     </image>
     
     <item>
+      <title>Course Details</title>
+      <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
+      <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;p&gt;Lectures will take place in spring 2024 on Wednesdays and Thursdays at 14:15 in RLH-172 Conrad Naber Lecture Hall.&lt;/p&gt;
+&lt;p&gt;The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.&lt;/p&gt;
+&lt;!-- 
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The lecture on Wednesday 8 May will instead take place on &lt;strong&gt;Friday 10 May at 14:15 at Student Activity Center - Hall 3&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt;
+--&gt;
+&lt;p&gt;All information regarding scheduling, as well as a link to this site, can be found on CampusNet.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A tutorial will be held on teams on Thursdays at 20:45.&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- The teaching associates  --&gt;
+&lt;p&gt;Course notes will be uploaded &lt;a href=&#34;notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
+&lt;p&gt;By the end of the module, students will be able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;describe the basic principles of discretization which are used in the numerical treatment of continuous problems;&lt;/li&gt;
+&lt;li&gt;command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;&lt;/li&gt;
+&lt;li&gt;recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;&lt;/li&gt;
+&lt;li&gt;implement simple numerical algorithms in a high level programming language;&lt;/li&gt;
+&lt;li&gt;understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;knowledge-abilities-or-skills&#34;&gt;Knowledge, Abilities, or Skills&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
+&lt;p&gt;Taking &amp;ldquo;&lt;em&gt;Calculus and Elements of Linear Algebra II&lt;/em&gt;&amp;rdquo; (CTMS-MAT-10) before taking this module is recommended, but not a pre-requisite. A thorough review of &amp;ldquo;&lt;em&gt;Calculus and Elements of Linear Algebra&lt;/em&gt;&amp;rdquo; (CTMS-MAT-09), with emphasis on the topics listed as &amp;ldquo;Content and Educational Aims&amp;rdquo; is recommended.&lt;/p&gt;
+&lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).&lt;/li&gt;
+&lt;li&gt;This module is a co-recommendation for the module &amp;ldquo;&lt;em&gt;Applied Dynamical Systems Lab&lt;/em&gt;&amp;rdquo; (CA-S-MAT-810) in which the actual implementation in a high level programming language of the learned methods will be covered.&lt;/li&gt;
+&lt;li&gt;The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).&lt;/li&gt;
+&lt;li&gt;Mandatory for ECE, IMS, MATH, PHY.&lt;/li&gt;
+&lt;li&gt;Elective for all other study programs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;text-books&#34;&gt;Text Books&lt;/h2&gt;
+&lt;p&gt;There is no primary or required book, but there are many suitable books, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;An Introduction to Numerical Methods and Analysis&lt;/em&gt;&amp;rdquo; - J. F. Epperson (2013) Wiley 2nd Edition.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Numerical Analysis&lt;/em&gt;&amp;rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
+&lt;p&gt;The following topics will be covered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Taylor series&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;number representations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gaussian elimination&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LU decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cholesky decomposition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iterative methods&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bisection method&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Newton&amp;rsquo;s method&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;secant method&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polynomial interpolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aitken&amp;rsquo;s algorithm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lagrange interpolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Newton interpolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;piecewise interpolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;spline interpolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$b$-splines&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;least squares approximation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;polynomial regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;difference schemes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Richardson extrapolation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;quadrature rules&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Monte Carlo integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;time stepping schemes for ordinary differential equations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Runge-Kutta schemes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;finite difference method for partial differential equations&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--  * Hermite interpolation
+      * Bezier curves
+      * De Casteljau&#39;s algorithm --&gt;
+&lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
+&lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gantt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dateFormat   MM-DD
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  axisFormat   %m-%d
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  todayMarker  display:none
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  title Provisional Schedule
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Errors
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Taylor Series                    :a1,  02-01, 1w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Number Representations           :a1b, 02-08, 1w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Equations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Linear Equations 1               :a2,  02-14, 3w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Nonlinear Equations              :a2b, 03-02, 1w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Linear Equations 2               :a5,  04-17, 3w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Approximations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Interpolation                    :a3,  03-07, 2w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Integration                      :a4,  04-03, 2w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Solutions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Ordinary Differential Equations  :a6,  05-02, 2w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Summary
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Summary                          :active, a7,  05-15, 1w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a1  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-1/taylor/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a1b href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-1/number-representations/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a2  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#direct-methods&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a2b href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a3  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-2/interpolation/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a4  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a5  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#indirect-methods&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a6  href &amp;#34;https://djps.github.io/courses/numericalmethods24/part-3/odes/&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- &lt;pre class=&#34;mermaid&#34;&gt;
+  gantt
+    dateFormat  YYYY-MM-DD
+
+    section Clickable
+    Visit mermaidjs         :active, cl1, 2014-01-07, 3d
+    Print arguments         :cl2, after cl1, 3d
+    Print task              :cl3, after cl2, 3d
+
+    click cl1 href &#34;https://mermaidjs.github.io/&#34;
+    click cl2 call printArguments(&#34;test1&#34;, &#34;test2&#34;, test3)
+    click cl3 call printTask()
+&lt;/pre&gt;
+
+&lt;script&gt;
+  const printArguments = function (arg1, arg2, arg3) {
+    alert(&#39;printArguments called with arguments: &#39; + arg1 + &#39;, &#39; + arg2 + &#39;, &#39; + arg3);
+  };
+  const printTask = function (taskId) {
+    alert(&#39;taskId: &#39; + taskId);
+  };
+  const config = {
+    startOnLoad: true,
+    securityLevel: &#39;loose&#39;,
+    theme: &#39;forest&#39;,
+  };
+  window.mermaid.initialize(config);
+&lt;/script&gt;
+--&gt;
+&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
+&lt;p&gt;The course content has the following structure:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; height=&#34;500px&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Numerical Methods
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Errors
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Taylor Series](/courses/numericalmethods24/part-1/taylor/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Number Representations](courses/numericalmethods24/part-1/number-representations/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Algebraic Equations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Linear Equations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - [Direct Methods](/courses/numericalmethods24/part-1/linear-equations/#direct-methods)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - Gaussian Elimination
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - Partial Pivoting
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - LU Decomposition
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - Cholesky Decomposition
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - [Iterative Methods](/courses/numericalmethods24/part-1/linear-equations/#indirect-methods)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - Jacobi
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - Gauss-Seidel
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - SOR
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Nonlinear Equations](/courses/numericalmethods24/part-1/nonlinear-equations/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Bisection Method
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Newton Method
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Secant Method
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Approximations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Interpolation](/courses/numericalmethods24/part-2/interpolation/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Polynomial
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Lagrange
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Newton
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - $b$-splines
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Integration](/courses/numericalmethods24/part-2/integration/#numerical-integration)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Simpson
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Trapezium
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Romberg Algorithm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - Gaussian Quadrature
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - [Differential Equations](/courses/numericalmethods24/part-3/odes/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Difference Schemes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Ordinary Differential Equations
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Partial Differential Equations
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Examination Type:&lt;/td&gt;
+&lt;td&gt;Module examination&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Assessment Type:&lt;/td&gt;
+&lt;td&gt;Written examination&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Scope:&lt;/td&gt;
+&lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Duration:&lt;/td&gt;
+&lt;td&gt;120 min&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Weight:&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Thursday 23 May between 12:30 and 14:30 in SCC - Hall 1-2 and 3-4&lt;/strong&gt;.&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;No&lt;/em&gt; supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
+&lt;p&gt;Sample questions and solutions can be found &lt;a href=&#34;exam&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By submitting homework assignments, via &lt;del&gt;Moodle&lt;/del&gt; &lt;em&gt;Teams&lt;/em&gt;, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
+&lt;p&gt;More details about assignments will be announced in class, but they will be posted &lt;a href=&#34;assignments&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Late submission will not be possible without a valid reason.&lt;/p&gt;
+&lt;!--
+1 Feb
+7, 8
+14, 15
+21, 22
+28, 29
+6, 7 March
+13, 14
+20, 21
+3, 4 April
+10, 11
+17, 18
+24, 25 - linear algebra
+29 - interpolation
+2 May - odes
+10 May - odes
+15 May  revision
+
+https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
+https://francisbach.com/richardson-extrapolation/
+https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
+--&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Taylor Series</title>
       <link>https://djps.github.io/docs/numericalmethods24/part1/taylor/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
