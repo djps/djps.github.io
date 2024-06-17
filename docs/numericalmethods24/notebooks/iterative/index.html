@@ -249,7 +249,7 @@
         content="2024-03-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-13T09:04:02&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-17T11:47:44&#43;02:00">
   
 
   
@@ -2069,14 +2069,14 @@
 </span></span></code></pre></div><p>Consider the matrix
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 C = \left(
   \begin{array}{cc}
   2 & 1.5 \\\
   1.5 & 2
   \end{array}
   \right)
-\end{equation}
+\end{equation*}
 $$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">],[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Compute the eigenvalues and eigenvectors of the matrix (all real in this case), so that $C v = e v$</p>
@@ -2137,9 +2137,9 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
 <p>To solve
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 A x = b
-\end{equation}
+\end{equation*}
 $$
 <p>
 for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.</p>
@@ -2153,7 +2153,7 @@ for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A
 <p>Let the matrix $A$ be given by
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 A = \left(
   \begin{array}{ccc}
   2 & -1 & 0 \\\
@@ -2161,7 +2161,7 @@ A = \left(
   0 & -1 & 2
   \end{array}
   \right)
-\end{equation}
+\end{equation*}
 $$
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">],</span>
@@ -2171,7 +2171,7 @@ $$
 </span></span></code></pre></div><p>Note that the inverse $A^{-1}$ is given as
 </p>
 $$
-\begin{equation}
+\begin{equation*}
 A^{-1} = \dfrac{1}{8} \left(
   \begin{array}{ccc}
   5 & 2 & 1 \\\
@@ -2184,7 +2184,7 @@ x = \left(
   2 \\\
   3 \\\
   -1 \end{array} \right).
-\end{equation}
+\end{equation*}
 $$
 <p>
 Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.</p>
@@ -2264,9 +2264,9 @@ Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-13T09:04:02.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-17T11:47:44.000Z">
     <span>Last updated on</span>
-    Jun 13, 2024</time>
+    Jun 17, 2024</time>
       
       
   

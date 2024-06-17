@@ -728,7 +728,9 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
       <link>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--
+
+&lt;style&gt;
 mjx-container {
   display: inline-block;
 }
@@ -737,7 +739,8 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
-&lt;!--
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
@@ -3570,17 +3573,17 @@ They serve as the core numerical building blocks for an introduction to the fini
 &lt;p&gt;Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 \sin \left( x \right) \approx x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \dfrac{x^7}{7!}  \ldots
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 Note that in this example, only odd powers of $x$ contribute to the expansion.&lt;/p&gt;
@@ -3743,7 +3746,7 @@ Note that in this example, only odd powers of $x$ contribute to the expansion.&l
 &lt;p&gt;Consider a matrix $A$ and right-hand side $y$ for linear system $Ax=b$
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 A = \left(
   \begin{array}{ccc}
   2 &amp; -1 &amp; 0 \\\
@@ -3757,7 +3760,7 @@ A = \left(
     5
     \end{array}
     \right).
-\end{equation}
+\end{equation*}
 $$
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
@@ -3846,14 +3849,14 @@ Matrix is diagonally dominant  True
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Consider the matrix
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 C = \left(
   \begin{array}{cc}
   2 &amp; 1.5 \\\
   1.5 &amp; 2
   \end{array}
   \right)
-\end{equation}
+\end{equation*}
 $$
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Compute the eigenvalues and eigenvectors of the matrix (all real in this case), so that $C v = e v$&lt;/p&gt;
@@ -3894,9 +3897,9 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues&
 &lt;p&gt;To solve
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 A x = b
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.&lt;/p&gt;
@@ -3910,7 +3913,7 @@ for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A
 &lt;p&gt;Let the matrix $A$ be given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 A = \left(
   \begin{array}{ccc}
   2 &amp; -1 &amp; 0 \\\
@@ -3918,7 +3921,7 @@ A = \left(
   0 &amp; -1 &amp; 2
   \end{array}
   \right)
-\end{equation}
+\end{equation*}
 $$
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
@@ -3928,7 +3931,7 @@ $$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note that the inverse $A^{-1}$ is given as
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 A^{-1} = \dfrac{1}{8} \left(
   \begin{array}{ccc}
   5 &amp; 2 &amp; 1 \\\
@@ -3941,7 +3944,7 @@ x = \left(
   2 \\\
   3 \\\
   -1 \end{array} \right).
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.&lt;/p&gt;
@@ -4270,9 +4273,9 @@ Here it is given analytically. Similar as for the one-dimensional case, it can a
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let $g(x)$ be a function given by
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a can define a function &lt;code&gt;gprime(x)&lt;/code&gt;&lt;/p&gt;
@@ -4671,9 +4674,9 @@ $$
 &lt;p&gt;Here a simple damped system is used
 &lt;/p&gt;
 $$
-\begin{equation}
+\begin{equation*}
 y^{\prime}\left(t\right) = a y\left(t\right) \quad \textsf{with} \quad a=-2 \quad \textsf{and} \quad y\left(t=0\right) = y_0 = 1.
-\end{equation}
+\end{equation*}
 $$
 &lt;p&gt;
 The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
