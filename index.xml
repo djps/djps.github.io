@@ -26,9 +26,9 @@
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A tutorial will be held on teams on Thursdays at 20:45.&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A tutorial will be held on Teams on Thursdays at 20:45.&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;Course notes will be uploaded &lt;a href=&#34;notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Course notes can be found &lt;a href=&#34;notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
 &lt;p&gt;By the end of the module, students will be able to:&lt;/p&gt;
 &lt;ul&gt;
@@ -47,7 +47,7 @@
 &lt;p&gt;Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
+&lt;p&gt;Some examples will be presented as &lt;a href=&#34;notebooks/&#34;&gt;python notebooks&lt;/a&gt;, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
@@ -366,11 +366,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/taylor_series/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -430,7 +427,8 @@ $$&lt;/div&gt;
       <link>https://djps.github.io/docs/numericalmethods24/part1/number-representations/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/part1/number-representations/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--
+&lt;style&gt;
 mjx-container {
   display: inline-block;
 }
@@ -439,7 +437,8 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
-&lt;!--
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54); border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 10px; border-bottom: 1px solid #e8e8e8; margin-bottom: 30px; padding-bottom: 10px;&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -534,11 +533,8 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of errors and number representations can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of errors and number representations can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/number_representations/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/number_representations.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/number_representations.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -735,44 +731,6 @@ mjx-assistive-mml {
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
 
-
-
-```mermaid
-gantt
-  dateFormat   MM-DD
-  axisFormat   %m-%d
-  todayMarker  display:none
-
-  title Provisional Schedule
-
-  section  Errors
-  Taylor Series                    :a1,  02-01, 1w
-  Number Representations           :a1b, 02-08, 1w
-
-  section  Equations
-  Linear Equations 1               :a2,  02-14, 3w
-  Nonlinear Equations              :a2b, 03-02, 1w
-  Linear Equations 2               :a5,  04-17, 3w
-
-  section  Approximations
-  Interpolation                    :a3,  03-07, 2w
-  Integration                      :a4,  04-03, 2w
-
-  section  Solutions
-  Ordinary Differential Equations  :a6,  05-02, 2w
-
-  section  Summary
-  Summary                          :active, a7,  05-15, 1w
-
-  click a1  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/taylor/&#34;
-  click a1b href &#34;https://djps.github.io/docs/numericalmethods24/part-1/number-representations/&#34;
-  click a2  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#direct-methods&#34;
-  click a2b href &#34;https://djps.github.io/docs/numericalmethods24/part-1/nonlinear-equations/&#34;
-  click a3  href &#34;https://djps.github.io/docs/numericalmethods24/part-2/interpolation/&#34;
-  click a4  href &#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/&#34;
-  click a5  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#indirect-methods&#34;
-  click a6  href &#34;https://djps.github.io/docs/numericalmethods24/part-3/odes/&#34;
-```
 --&gt;
 &lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
@@ -1451,11 +1409,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for linear systems can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1692,11 +1647,8 @@ and&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/nonlinear/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1715,11 +1667,8 @@ and&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example using the secant method to find a local maxima can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/max_finder/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2070,11 +2019,13 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;
+&lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
-&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
+&lt;p&gt;
+If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
 &lt;/p&gt;
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
@@ -2210,11 +2161,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/integrals/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2527,8 +2475,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online 
-.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/lagrange_polynomials/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;[here]&lt;/a&gt;. --&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2546,11 +2494,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/runge/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/runge.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/runge.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3326,8 +3271,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
