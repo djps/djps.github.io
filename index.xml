@@ -1952,7 +1952,7 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the interpolating function is a polynomial, it can be written as
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;interpolation&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
 &lt;/p&gt;
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
@@ -1960,7 +1960,9 @@ $$
 &lt;p&gt;
 so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 &lt;/p&gt;
-$$\Phi \alpha = p$$
+$$
+\Phi \alpha = p
+$$
 &lt;p&gt;
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
 &lt;/p&gt;
@@ -2428,7 +2430,7 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations. Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
 $$
 f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
 $$
@@ -2504,7 +2506,7 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body)&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$
@@ -2566,7 +2568,8 @@ $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
 $$
 &lt;p&gt;
-It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
+Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
 &lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as
 &lt;/p&gt;
 $$
@@ -2593,7 +2596,7 @@ and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;.
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Romberg&amp;rsquo;s method uses the Trapezoidal Rule and then Richardson Extrapolation to estimate integrals.
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Romberg&amp;rsquo;s method uses the &lt;a href=&#34;#trap&#34;&gt;Trapezoidal Rule&lt;/a&gt; and then Richardson Extrapolation to estimate integrals.
 First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
 ${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:&lt;/p&gt;
 $$
