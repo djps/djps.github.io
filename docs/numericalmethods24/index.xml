@@ -13,11 +13,12 @@
     </image>
     
     <item>
-      <title>Course Details</title>
+      <title>Course Details Numerical Methods JTMS-MAT-13</title>
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
+      <description>&lt;p&gt;{{ .Store.Set &amp;ldquo;has_mermaid&amp;rdquo; &amp;ldquo;true&amp;rdquo; }}&lt;/p&gt;
+&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in spring 2024 on Wednesdays and Thursdays at 14:15 in RLH-172 Conrad Naber Lecture Hall.&lt;/p&gt;
 &lt;p&gt;The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.&lt;/p&gt;
@@ -153,7 +154,6 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gantt
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dateFormat   MM-DD
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  axisFormat   %m-%d
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  todayMarker  display:none
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  title Provisional Schedule
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -175,15 +175,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Summary
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Summary                          :active, a7,  05-15, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a1  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part1/taylor/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a1b href &amp;#34;https://djps.github.io/docs/numericalmethods24/part1/number-representations/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a2  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#direct-methods&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a2b href &amp;#34;https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a3  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a4  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a5  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#indirect-methods&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  click a6  href &amp;#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Numerical Methods
