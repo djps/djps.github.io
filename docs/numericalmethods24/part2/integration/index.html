@@ -249,7 +249,7 @@
         content="2023-11-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-18T16:17:14&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-18T16:22:37&#43;02:00">
   
 
   
@@ -2266,7 +2266,7 @@ $$
 <p>If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the <strong>lower</strong> and <strong>upper Riemann sums</strong> are given by</p>
 $$
 \begin{align*}
-L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\\
+L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
 $$
@@ -2388,28 +2388,28 @@ and is referred to as <strong>Simpson&rsquo;s 1/3 Rule</strong>. It uses quadrat
 
         </span>
         <span class="dark:text-neutral-300">
-          Algorithm: <em>Romberg Algorithm</em>
+          Algorithm: <em>Romberg&#39;s Algorithm</em>
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content"><p>Romberg&rsquo;s method uses the <a href="#trap">Trapezoidal Rule</a> and then Richardson Extrapolation to estimate integrals.
+        <div class="admonition-content"><p>Romberg&rsquo;s method uses the <a href="#trap">Trapezoidal Rule</a> and then <a href="#richardson">Richardson Extrapolation</a> to estimate integrals.
 First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
 ${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:</p>
 $$
 \begin{array}{cc}
-R_0^0 &       \\\
-      & R_1^1 \\\
-R_1^0 &       \\\
-      & R_2^1 \\\
-R_2^0 &       \\\
-\vdots & \\\
+R_0^0 &       \\
+      & R_1^1 \\
+R_1^0 &       \\
+      & R_2^1 \\
+R_2^0 &       \\
+\vdots & \\
 R_n^0  &
 \end{array}
 $$
 <p>To evaluate the next set of values, consider the two integrals</p>
 $$
 \begin{align*}
-\int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\\
+\int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
 $$
@@ -2574,7 +2574,7 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-18T16:17:14.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-18T16:22:37.000Z">
     <span>Last updated on</span>
     Jun 18, 2024</time>
       
