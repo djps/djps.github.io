@@ -734,8 +734,11 @@ mjx-assistive-mml {
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
---&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
+
+
+
+```mermaid
+gantt
   dateFormat   MM-DD
   axisFormat   %m-%d
   todayMarker  display:none
@@ -761,15 +764,16 @@ mjx-assistive-mml {
   section  Summary
   Summary                          :active, a7,  05-15, 1w
 
-  click a1  href &#34;https://djps.github.io/courses/numericalmethods24/part-1/taylor/&#34;
-  click a1b href &#34;https://djps.github.io/courses/numericalmethods24/part-1/number-representations/&#34;
-  click a2  href &#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#direct-methods&#34;
-  click a2b href &#34;https://djps.github.io/courses/numericalmethods24/part-1/nonlinear-equations/&#34;
-  click a3  href &#34;https://djps.github.io/courses/numericalmethods24/part-2/interpolation/&#34;
-  click a4  href &#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/&#34;
-  click a5  href &#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#indirect-methods&#34;
-  click a6  href &#34;https://djps.github.io/courses/numericalmethods24/part-3/odes/&#34;
-&lt;/div&gt;
+  click a1  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/taylor/&#34;
+  click a1b href &#34;https://djps.github.io/docs/numericalmethods24/part-1/number-representations/&#34;
+  click a2  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#direct-methods&#34;
+  click a2b href &#34;https://djps.github.io/docs/numericalmethods24/part-1/nonlinear-equations/&#34;
+  click a3  href &#34;https://djps.github.io/docs/numericalmethods24/part-2/interpolation/&#34;
+  click a4  href &#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/&#34;
+  click a5  href &#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#indirect-methods&#34;
+  click a6  href &#34;https://djps.github.io/docs/numericalmethods24/part-3/odes/&#34;
+```
+--&gt;
 &lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -791,8 +795,7 @@ a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\
 a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
 \end{align*}
 $$
-&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where
-&lt;/p&gt;
+&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where&lt;/p&gt;
 $$
 A = \left(
   \begin{array}{cccc}
@@ -1857,9 +1860,9 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
 
 
 
-&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
-
-&lt;pre&gt;- Numerical Methods
+&lt;!--
+```markmap
+- Numerical Methods
   - Errors
     - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
     - [Number Representations](docs/numericalmethods24/part1/number-representations/)
@@ -1892,9 +1895,9 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
   - [Differential Equations](/docs/numericalmethods24/part3/odes/)
     - Difference Schemes
     - Ordinary Differential Equations
-    - Partial Differential Equations&lt;/pre&gt;
-&lt;/div&gt;
-
+    - Partial Differential Equations
+```
+--&gt;
 </description>
     </item>
     
@@ -2970,7 +2973,7 @@ $$&lt;/div&gt;
 &lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
 &lt;p&gt;Huen&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
-&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
+&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
 &lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
@@ -3157,7 +3160,7 @@ $$
 &lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
+&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and&lt;/p&gt;
@@ -3238,7 +3241,7 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3315,7 +3318,7 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
     &lt;/div&gt;
@@ -3348,7 +3351,7 @@ $$
 a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
 $$
 &lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/courses/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
 

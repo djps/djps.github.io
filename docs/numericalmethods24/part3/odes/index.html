@@ -249,7 +249,7 @@
         content="2024-05-14T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-18T12:54:04&#43;02:00">
   
 
   
@@ -1092,7 +1092,7 @@
             <a
               class="nav-dropdown-link "
               
-              href="/docs/numericalanalysis22">
+              href="/docs/numericalanalysis22/intro/intro/">
               Numerical Analysis
             </a>
           </li>
@@ -2125,6 +2125,20 @@
 
   
   
+  <div class="backlinks">
+    <div class="mb-1 font-semibold tracking-tight">
+      Backlinks
+    </div>
+    <ul>
+      
+      
+      <li>
+        <a href="/docs/numericalmethods24/notebooks/ode_solvers/" class="backlink">ODE Solvers</a>
+      </li>
+      
+    </ul>
+  </div>
+  
 
 
 
@@ -2355,7 +2369,7 @@ $$</div>
 <p>Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
 <p>Both the Forward Euler and Heun&rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.</p>
 <p>Huen&rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.</p>
-<p>Alternatively, the solution to the differential equation can be written as <a href="/courses/numericalmethods24/part2/integration/#numerical-integration">quadrature</a>:
+<p>Alternatively, the solution to the differential equation can be written as <a href="/docs/numericalmethods24/part2/integration/#numerical-integration">quadrature</a>:
 </p>
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
@@ -2542,7 +2556,7 @@ $$
 <p>Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,</p>
 </li>
 <li>
-<p>the method is <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">consistent</a>, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$</p>
+<p>the method is <a href="/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">consistent</a>, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$</p>
 </li>
 </ul>
 <p>and</p>
@@ -2623,7 +2637,7 @@ $$
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the <a href="/courses/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">fundamental theorem of numerical analysis</a> for differential equations, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
+        <div class="admonition-content">The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the <a href="/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis">fundamental theorem of numerical analysis</a> for differential equations, which states that a <em>consistent</em> finite difference method for a well-posed linear initial value problem, the method is <em>convergent</em> if and only if it is <em>stable</em>.</div>
     </div>
 </div>
 
@@ -2700,7 +2714,7 @@ $$
         </span>
     </div>
     <div class="details-content">
-        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/courses/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
+        <div class="admonition-content"><p>An <code>.ipynb</code> notebook with an example of solvers for odes can be accessed online <a href="/docs/numericalmethods24/notebooks/ode_solvers/">here</a>.</p>
 <p>It can be downloaded from <a href="/ipyth/ode_solvers.py">here</a> as a python file or downloaded as a notebook from <a href="/ipyth/ode_solvers.ipynb">here</a>.</p>
 </div>
     </div>
@@ -2733,7 +2747,7 @@ $$
 a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
 $$
 <p>where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.</p>
-<p>For finite-difference schemes, <em>all</em> partial derivatives must be approximated by <a href="/courses/numericalmethods24/part-2/integration/#numerical-differentiation">discretized differential operators</a>.</p>
+<p>For finite-difference schemes, <em>all</em> partial derivatives must be approximated by <a href="/docs/numericalmethods24/part-2/integration/#numerical-differentiation">discretized differential operators</a>.</p>
 <!--
 CFL.
 
@@ -2743,9 +2757,9 @@ Heat Equation
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-18T12:54:04.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 18, 2024</time>
       
       
   
