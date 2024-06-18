@@ -17,9 +17,7 @@
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
-      <description>&lt;p&gt;{{- .Store.Set &amp;ldquo;has_mermaid&amp;rdquo; &amp;ldquo;true&amp;rdquo; -}}
-{{- partial &amp;ldquo;libraries.html&amp;rdquo; . -}}&lt;/p&gt;
-&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
+      <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in spring 2024 on Wednesdays and Thursdays at 14:15 in RLH-172 Conrad Naber Lecture Hall.&lt;/p&gt;
 &lt;p&gt;The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.&lt;/p&gt;
@@ -1868,6 +1866,44 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
 
 
 
+
+&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
+
+&lt;pre&gt;- Numerical Methods
+  - Errors
+    - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
+    - [Number Representations](docs/numericalmethods24/part1/number-representations/)
+  - Algebraic Equations
+    - Linear Equations
+      - [Direct Methods](/docs/numericalmethods24/part1/linear-equations/#direct-methods)
+        - Gaussian Elimination
+        - Partial Pivoting
+        - LU Decomposition
+        - Cholesky Decomposition
+      - [Iterative Methods](/docs/numericalmethods24/part1/linear-equations/#indirect-methods)
+        - Jacobi
+        - Gauss-Seidel
+        - SOR
+    - [Nonlinear Equations](/docs/numericalmethods24/part1/nonlinear-equations/)
+      - Bisection Method
+      - Newton Method
+      - Secant Method
+  - Approximations
+    - [Interpolation](/docs/numericalmethods24/part2/interpolation/)
+      - Polynomial
+      - Lagrange
+      - Newton
+      - $b$-splines
+    - [Integration](/docs/numericalmethods24/part2/integration/#numerical-integration)
+      - Simpson
+      - Trapezium
+      - Romberg Algorithm
+      - Gaussian Quadrature
+  - [Differential Equations](/docs/numericalmethods24/part3/odes/)
+    - Difference Schemes
+    - Ordinary Differential Equations
+    - Partial Differential Equations&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
     </item>

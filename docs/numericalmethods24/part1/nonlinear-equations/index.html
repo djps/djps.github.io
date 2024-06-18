@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: June 17, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 18, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-12T16:44:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-06-18T09:37:59&#43;02:00">
   
 
   
@@ -731,6 +731,28 @@
 
 
 
+
+<style>
+  .markmap > svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<script>
+  window.markmap = {
+    autoLoader: {
+      manual: false,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+    },
+  };
+</script>
+
+
+<script defer src="/dist/lib/markmap/index.min.c9d7aae44c6040009be2304689eae39673e6614f1a92d8f4a69f581bed004b9b.js" integrity="sha256-ydeq5ExgQACb4jBGierjlnPmYU8aktj0pp9YG&#43;0AS5s="></script>
 
 
 
@@ -2529,13 +2551,51 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.</p
 
 
 
+<div class="markmap" style="height: 500px;">
+
+<pre>- Numerical Methods
+  - Errors
+    - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
+    - [Number Representations](docs/numericalmethods24/part1/number-representations/)
+  - Algebraic Equations
+    - Linear Equations
+      - [Direct Methods](/docs/numericalmethods24/part1/linear-equations/#direct-methods)
+        - Gaussian Elimination
+        - Partial Pivoting
+        - LU Decomposition
+        - Cholesky Decomposition
+      - [Iterative Methods](/docs/numericalmethods24/part1/linear-equations/#indirect-methods)
+        - Jacobi
+        - Gauss-Seidel
+        - SOR
+    - [Nonlinear Equations](/docs/numericalmethods24/part1/nonlinear-equations/)
+      - Bisection Method
+      - Newton Method
+      - Secant Method
+  - Approximations
+    - [Interpolation](/docs/numericalmethods24/part2/interpolation/)
+      - Polynomial
+      - Lagrange
+      - Newton
+      - $b$-splines
+    - [Integration](/docs/numericalmethods24/part2/integration/#numerical-integration)
+      - Simpson
+      - Trapezium
+      - Romberg Algorithm
+      - Gaussian Quadrature
+  - [Differential Equations](/docs/numericalmethods24/part3/odes/)
+    - Difference Schemes
+    - Ordinary Differential Equations
+    - Partial Differential Equations</pre>
+</div>
+
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-12T16:44:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-18T09:37:59.000Z">
     <span>Last updated on</span>
-    Jun 12, 2024</time>
+    Jun 18, 2024</time>
       
       
   
