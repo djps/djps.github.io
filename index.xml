@@ -1902,448 +1902,12 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
     </item>
     
     <item>
-      <title>Interpolation</title>
-      <link>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</link>
-      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</guid>
-      <description>&lt;style&gt;
-mjx-container {
-  display: inline-block;
-}
-mjx-assistive-mml {
-  right: 0px;
-  bottom: 0px;
-}
-&lt;/style&gt;
-&lt;!--
-&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
---&gt;
-&lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Interpolating Functions&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Polynomial Interpolation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
-&lt;/p&gt;
-$$
-p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$
-&lt;p&gt;
-so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
-&lt;/p&gt;
-$$
-\Phi \alpha = p
-$$
-&lt;p&gt;
-where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
-&lt;/p&gt;
-$$
-\Phi = \left( \begin{array}{cccc}
-  \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\\
-  \vdots &amp; &amp; &amp; \vdots \\\
-  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
-$$
-&lt;p&gt;
-Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
-&lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;!--
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If &lt;/p&gt;
-$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
-&lt;p&gt;
-So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
-&lt;/p&gt;
-$$\Phi \alpha = p$$
-&lt;p&gt;
-where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
---&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Lagrange Polynomials&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
-\begin{equation*}
-p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
-\end{equation*}
-$$
-&lt;p&gt;
-where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
-&lt;/p&gt;
-$$
-\begin{equation*}
-l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
-\end{equation*}
-$$
-&lt;p&gt;
-By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Newton Interpolation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
-&lt;/p&gt;
-$$
-n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$
-&lt;p&gt;
-By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
-&lt;/p&gt;
-$$
-\alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Example: &lt;em&gt;Lagrange Interpolation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online 
-.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Example: &lt;em&gt;Runge&amp;#39;s Phenomenon&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
-$$
-p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
-$$
-&lt;!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. --&gt;
-&lt;p&gt;The interpolation is achieved by constructing a series of polynomials, evaluated at the ${u=u^{*}}$, where $p_{i}^{k}\left( u \right)$ is given by&lt;/p&gt;
-$$
-p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
-$$
-&lt;p&gt;with initial values $p_i^0 = y_i^{\vphantom{0}}$.&lt;/p&gt;
-$$
-\begin{equation*}
-\begin{array}{lllll}
-p\left( u_0 \right) = p_{0}^0 &amp;                       &amp;                        &amp;  \\\
-                              &amp; p_0^1 &amp;                        &amp;  \\\
-p\left( u_1 \right) = p_{1}^0 &amp;                       &amp; p_0^2  &amp;  \\\
-                              &amp; p_1^1 &amp;                        &amp; p_0^3 \\\
-p\left( u_2 \right) = p_{2}^0 &amp;                       &amp; p_1^2  &amp;  \\\
-                              &amp; p_2^1 &amp;                        &amp;  \\\
-p\left( u_3 \right) = p_{3}^0 &amp;                       &amp;                        &amp;
-\end{array}
-\end{equation*}
-$$
-&lt;p&gt;where the coefficients are evaluated from left to right.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;polynomial&amp;rsquo;s convergence.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
---&gt;
-&lt;h2 id=&#34;piecewise-polynomial-interpolation&#34;&gt;Piecewise Polynomial Interpolation&lt;/h2&gt;
-&lt;h2 id=&#34;spline-interpolation&#34;&gt;Spline Interpolation&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;B-Splines&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A spline is said to be a &lt;strong&gt;b-spline&lt;/strong&gt; if it is of the form&lt;/p&gt;
-$$
-s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
-$$
-&lt;p&gt;where $\mathcal{N}^n$ are the &lt;strong&gt;basis spline functions&lt;/strong&gt; of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then&lt;/p&gt;
-$$
-\begin{equation*}
-\mathcal{N}_{i}^{0} \left(u \right) =
-\left\{
-\begin{array}{ll}
-1 &amp; \quad \text{for} \quad u_i \le u \le u_{i+1} \\
-0 &amp; \quad \text{else.}
-\end{array}
-\right.
-\end{equation*}
-$$
-&lt;p&gt;and&lt;/p&gt;
-$$
-\mathcal{N}_{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)  \mathcal{N}_{i}^{n-1} \left(u \right) + \left( 1 - \alpha_{i+1}^{n-1}\left(u \right)\right)  \mathcal{N}_{i+1}^{n-1} \left(u \right)
-$$
-&lt;p&gt;where&lt;/p&gt;
-$$
-\alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
-$$
-&lt;p&gt;
-is a local parameter.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving&lt;/p&gt;
-$$
-\text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$
-&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
-&lt;/p&gt;
-$$
-\Phi = \left(
-  \begin{array}{ccc}
-  \mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\\
-  \vdots &amp; &amp; \vdots \\\
-  \mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
-  \end{array}
-  \right).
-$$
-&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Least-Squares Approximation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
-&lt;/p&gt;
-$$
-E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$
-&lt;p&gt;
-The minimum is found when
-&lt;/p&gt;
-$$
-\dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$
-&lt;p&gt;
-i.e.
-&lt;/p&gt;
-$$
--2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Linear Least-Squares Approximation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the function $y(x)$ is a function of the form
-&lt;/p&gt;
-$$
-y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$
-&lt;p&gt;
-where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
-&lt;/p&gt;
-$$
-E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$
-&lt;p&gt;
-This has a minimum when
-&lt;/p&gt;
-$$
-\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$
-&lt;p&gt;
-Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,
-&lt;/p&gt;
-$$
-\Phi^T \Phi \beta = \Phi^T y,
-$$
-&lt;p&gt;
-i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-</description>
-    </item>
-    
-    <item>
       <title>Integration</title>
       <link>https://djps.github.io/docs/numericalmethods24/part2/integration/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/part2/integration/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--
+&lt;style&gt;
 mjx-container {
   display: inline-block;
 }
@@ -2352,7 +1916,7 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
-&lt;!--
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -2480,7 +2044,7 @@ so that
 $$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
 $$
-&lt;p&gt;Additionally, the &lt;strong&gt;left&lt;/strong&gt; and &lt;strong&gt;right Riemann sums&lt;/strong&gt; are given, respectively, by
+&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by
 &lt;/p&gt;
 $$
 \begin{align*}
@@ -2782,7 +2346,8 @@ $$
       <link>https://djps.github.io/docs/numericalmethods24/part3/odes/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/part3/odes/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--
+&lt;style&gt;
 mjx-container {
   display: inline-block;
 }
@@ -2791,7 +2356,8 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
-&lt;!--
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; May 15, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -2975,13 +2541,13 @@ $$&lt;/div&gt;
 
 &lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
-&lt;p&gt;Huen&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
+&lt;p&gt;Heun&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
 &lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
 &lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$
-&lt;p&gt;Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
+&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -3163,7 +2729,7 @@ $$
 &lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
+&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and&lt;/p&gt;
@@ -3244,7 +2810,7 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -4768,6 +4334,445 @@ The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;legend&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://djps.github.io/img/odes.png&#34; alt=&#34;accuracy of ode solvers&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interpolation</title>
+      <link>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</guid>
+      <description>&lt;!--
+&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+
+
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+--&gt;
+&lt;h2 id=&#34;interpolation&#34;&gt;Interpolation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Interpolating Functions&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Polynomial Interpolation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
+&lt;/p&gt;
+$$
+p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
+$$
+&lt;p&gt;
+so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
+&lt;/p&gt;
+$$
+\Phi \alpha = p
+$$
+&lt;p&gt;
+where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
+&lt;/p&gt;
+$$
+\Phi = \left( \begin{array}{cccc}
+  \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\\
+  \vdots &amp; &amp; &amp; \vdots \\\
+  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
+$$
+&lt;p&gt;
+Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
+&lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!--
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If &lt;/p&gt;
+$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
+&lt;p&gt;
+So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
+&lt;/p&gt;
+$$\Phi \alpha = p$$
+&lt;p&gt;
+where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+--&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Lagrange Polynomials&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
+&lt;/p&gt;
+$$
+\begin{equation*}
+p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
+\end{equation*}
+$$
+&lt;p&gt;
+where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
+&lt;/p&gt;
+$$
+\begin{equation*}
+l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
+\end{equation*}
+$$
+&lt;p&gt;
+By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Newton Interpolation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
+&lt;/p&gt;
+$$
+n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
+$$
+&lt;p&gt;
+By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
+&lt;/p&gt;
+$$
+\alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Example: &lt;em&gt;Lagrange Interpolation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online 
+.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Example: &lt;em&gt;Runge&amp;#39;s Phenomenon&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online 
+.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from 
+ as a python file or downloaded as a notebook from 
+.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
+$$
+p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
+$$
+&lt;!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. --&gt;
+&lt;p&gt;The interpolation is achieved by constructing a series of polynomials, evaluated at the ${u=u^{*}}$, where $p_{i}^{k}\left( u \right)$ is given by&lt;/p&gt;
+$$
+p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
+$$
+&lt;p&gt;with initial values $p_i^0 = y_i^{\vphantom{0}}$.&lt;/p&gt;
+$$
+\begin{equation*}
+\begin{array}{lllll}
+p\left( u_0 \right) = p_{0}^0 &amp;                       &amp;                        &amp;  \\\
+                              &amp; p_0^1 &amp;                        &amp;  \\\
+p\left( u_1 \right) = p_{1}^0 &amp;                       &amp; p_0^2  &amp;  \\\
+                              &amp; p_1^1 &amp;                        &amp; p_0^3 \\\
+p\left( u_2 \right) = p_{2}^0 &amp;                       &amp; p_1^2  &amp;  \\\
+                              &amp; p_2^1 &amp;                        &amp;  \\\
+p\left( u_3 \right) = p_{3}^0 &amp;                       &amp;                        &amp;
+\end{array}
+\end{equation*}
+$$
+&lt;p&gt;where the coefficients are evaluated from left to right.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;polynomial&amp;rsquo;s convergence.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+--&gt;
+&lt;h2 id=&#34;piecewise-polynomial-interpolation&#34;&gt;Piecewise Polynomial Interpolation&lt;/h2&gt;
+&lt;h2 id=&#34;spline-interpolation&#34;&gt;Spline Interpolation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;B-Splines&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A spline is said to be a &lt;strong&gt;b-spline&lt;/strong&gt; if it is of the form&lt;/p&gt;
+$$
+s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
+$$
+&lt;p&gt;where $\mathcal{N}^n$ are the &lt;strong&gt;basis spline functions&lt;/strong&gt; of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then&lt;/p&gt;
+$$
+\begin{equation*}
+\mathcal{N}_{i}^{0} \left(u \right) =
+\left\{
+\begin{array}{ll}
+1 &amp; \quad \text{for} \quad u_i \le u \le u_{i+1} \\
+0 &amp; \quad \text{else.}
+\end{array}
+\right.
+\end{equation*}
+$$
+&lt;p&gt;and&lt;/p&gt;
+$$
+\mathcal{N}_{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)  \mathcal{N}_{i}^{n-1} \left(u \right) + \left( 1 - \alpha_{i+1}^{n-1}\left(u \right)\right)  \mathcal{N}_{i+1}^{n-1} \left(u \right)
+$$
+&lt;p&gt;where&lt;/p&gt;
+$$
+\alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
+$$
+&lt;p&gt;
+is a local parameter.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving&lt;/p&gt;
+$$
+\text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
+$$
+&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+&lt;/p&gt;
+$$
+\Phi = \left(
+  \begin{array}{ccc}
+  \mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\\
+  \vdots &amp; &amp; \vdots \\\
+  \mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
+  \end{array}
+  \right).
+$$
+&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Least-Squares Approximation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+&lt;/p&gt;
+$$
+E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
+$$
+&lt;p&gt;
+The minimum is found when
+&lt;/p&gt;
+$$
+\dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
+$$
+&lt;p&gt;
+i.e.
+&lt;/p&gt;
+$$
+-2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Linear Least-Squares Approximation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the function $y(x)$ is a function of the form
+&lt;/p&gt;
+$$
+y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
+$$
+&lt;p&gt;
+where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
+&lt;/p&gt;
+$$
+E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
+$$
+&lt;p&gt;
+This has a minimum when
+&lt;/p&gt;
+$$
+\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
+$$
+&lt;p&gt;
+Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,
+&lt;/p&gt;
+$$
+\Phi^T \Phi \beta = \Phi^T y,
+$$
+&lt;p&gt;
+i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 </description>
     </item>
     

@@ -1902,11 +1902,12 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
     </item>
     
     <item>
-      <title>Interpolation</title>
-      <link>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</link>
+      <title>Integration</title>
+      <link>https://djps.github.io/docs/numericalmethods24/part2/integration/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</guid>
-      <description>&lt;style&gt;
+      <guid>https://djps.github.io/docs/numericalmethods24/part2/integration/</guid>
+      <description>&lt;!--
+&lt;style&gt;
 mjx-container {
   display: inline-block;
 }
@@ -1915,7 +1916,1036 @@ mjx-assistive-mml {
   bottom: 0px;
 }
 &lt;/style&gt;
+
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+--&gt;
+&lt;h2 id=&#34;numerical-differentiation&#34;&gt;Numerical Differentiation&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
+$$
+\begin{equation*}
+D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
+\end{equation*}
+$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backwards Difference Quotient:&lt;/strong&gt;
+$$
+\begin{equation*}
+D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
+\end{equation*}
+$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Central Difference Quotient:&lt;/strong&gt;
+$$
+\begin{equation*}
+D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
+\end{equation*}
+$$
+The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Higher Order Derivatives&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
+&lt;/p&gt;
+$$
+f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
+$$&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Richardson Extrapolation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
+$$
+f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
+$$
+&lt;p&gt;Now evaluate the derivative at ${h=h/2}$, so that&lt;/p&gt;
+$$
+f^{\prime}\left( x \right) = \varphi \left( h \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
+$$
+&lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
+$$
+f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
+$$
+&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Riemann Sum&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
+Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
+$$
+\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \textsf{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
+$$
+&lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
+$$
+\begin{align*}
+L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
+U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
+\end{align*}
+$$
+&lt;p&gt;
+so that
+&lt;/p&gt;
+$$
+L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
+$$
+&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by
+&lt;/p&gt;
+$$
+\begin{align*}
+&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
+&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
+\end{align*}
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Trapezoidal Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
+$$
+\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
+$$
+&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
+&lt;/p&gt;
+$$
+T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Error for Trapezoidal Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
+&lt;p&gt;The error can be shown to have the form:
+&lt;/p&gt;
+$$
+\left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
+$$
+&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
+$$
+\left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
+$$
+&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Simpson&amp;#39;s Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The integral is approximated as
+&lt;/p&gt;
+$$
+\int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
+$$
+&lt;p&gt;
+Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
+&lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as
+&lt;/p&gt;
+$$
+\int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
+$$
+&lt;p&gt;
+and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
+
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Algorithm: &lt;em&gt;Romberg&amp;#39;s Algorithm&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Romberg&amp;rsquo;s method uses the &lt;a href=&#34;#trap&#34;&gt;Trapezoidal Rule&lt;/a&gt; and then &lt;a href=&#34;#richardson&#34;&gt;Richardson Extrapolation&lt;/a&gt; to estimate integrals.
+First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
+${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:&lt;/p&gt;
+$$
+\begin{array}{cc}
+R_0^0 &amp;       \\
+      &amp; R_1^1 \\
+R_1^0 &amp;       \\
+      &amp; R_2^1 \\
+R_2^0 &amp;       \\
+\vdots &amp; \\
+R_n^0  &amp;
+\end{array}
+$$
+&lt;p&gt;To evaluate the next set of values, consider the two integrals&lt;/p&gt;
+$$
+\begin{align*}
+\int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
+\int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
+\end{align*}
+$$
+&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
+&lt;/p&gt;
+$$
+R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
+$$
+&lt;p&gt;
+which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&amp;rsquo;s rule. The recurrence formula can be derived
+&lt;/p&gt;
+$$
+R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Example: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online 
+.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from 
+ as a python file or downloaded as a notebook from 
+.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
+&lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
+&lt;/p&gt;
+$$
+\begin{equation*}
+I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
+\end{equation*}
+$$
+&lt;p&gt;
+The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can the weights be chosen such that the error in an integral is minimized?&lt;/li&gt;
+&lt;li&gt;Furthermore, can the nodes be chosen such that the integral can be further improved?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Orthogonal functions&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
+$$
+\langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
+$$
+&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Gaussian Quadrature&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,&lt;/li&gt;
+&lt;li&gt;the polynomial $q(x)$ satisfies
+$$
+  \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \textsf{for} \quad k=0,\ldots, n.
+  $$
+i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then, denote the integral as
+&lt;/p&gt;
+$$
+I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
+$$
+&lt;p&gt;
+with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using 
+ for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
+&lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Gauss-Legendre Quadrature&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
+&lt;/p&gt;
+$$
+\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
+$$
+&lt;p&gt;
+and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
+&lt;/p&gt;
+$$
+P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
+$$
+&lt;p&gt;
+Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
+&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
+&lt;/p&gt;
+$$
+x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
+$$
+&lt;p&gt;
+so that
+&lt;/p&gt;
+$$
+\int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Finite Difference Methods for Differential Equations</title>
+      <link>https://djps.github.io/docs/numericalmethods24/part3/odes/</link>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalmethods24/part3/odes/</guid>
+      <description>&lt;!--
+&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+
+
+&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
+&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; May 15, 2024 &amp;middot;
+&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
+
+
+## Finite Difference Methods for Differential Equations
+--&gt;
+&lt;p&gt;Solutions are functions.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Ordinary Differential Equations&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  --&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Initial Value Problems&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.&lt;/p&gt;
+&lt;p&gt;Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;One step methods&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + h f_n
+$$
+&lt;p&gt;
+where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + h f_{n+1}
+$$
+&lt;p&gt;
+where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
+$$&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
+$$&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
+&lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
+&lt;p&gt;Heun&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
+&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
+&lt;/p&gt;
+$$
+y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
+$$
+&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
+&lt;/p&gt;
+$$
+\left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
+$$
+&lt;p&gt;
+for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Consistency Error&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Any explicit one-step method has the form
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
+$$
+&lt;p&gt;
+with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
+$$
+y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n  
+$$
+&lt;p&gt;which can be written as&lt;/p&gt;
+$$
+\tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
+$$
+&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
+&lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Convergence&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
+&lt;/p&gt;
+$$
+\tau_{g,n} = \left| y_n - u_n \right|
+$$
+&lt;p&gt;
+which is given by
+&lt;/p&gt;
+$$
+\tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
+$$
+&lt;p&gt;
+If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Order&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Zero Stable Methods&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A method of the form
+&lt;/p&gt;
+$$
+u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
+$$
+&lt;p&gt;
+with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
+&lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by
+&lt;/p&gt;
+$$
+z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
+$$
+&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
+$$
+\left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;If a method is zero-stable, then this means that small perturbations in the computations lead to small perturbations in the approximations.&lt;/p&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if $\left| y_0 - u_0 \right| \rightarrow 0$ as $h \rightarrow 0$,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;then the global error has
+&lt;/p&gt;
+$$
+\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
+$$
+&lt;p&gt;
+Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Absolute Stability&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
+&lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
+$$
+\lbrace h \lambda \in \mathbb{C} \quad \text{such that} \quad  | u_n | \rightarrow 0 \quad \text{as} \quad t_n \rightarrow \infty \rbrace.
+$$
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Zero stability considers when ${h \rightarrow 0}$, whereas absolute stability concerns behaviour as ${t_n \rightarrow \infty}$.&lt;/p&gt;
+&lt;h2 id=&#34;lax-equivalence&#34;&gt;Lax Equivalence&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a unique solution exists for any initial conditions and&lt;/li&gt;
+&lt;li&gt;the solution&amp;rsquo;s behaviour changes continuously with the initial conditions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A problem which does not have these properties is said to be &lt;strong&gt;ill-posed&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 &lt;!--
+https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
+https://people.maths.ox.ac.uk/trefethen/4all.pdf
+For a _partial_ differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero, thus the error, i.e. the difference between the analytical solution and the computed solution tends to zero as the
+For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
+For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
+--&gt;
+&lt;h2 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h2&gt;
+&lt;p&gt;If an ordinary differential equation is given by ${\dot{y}= f\left( y, t \right)}$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
+$$
+u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
+$$
+&lt;p&gt;where $F$ is an increment function given by&lt;/p&gt;
+$$
+F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i
+$$
+&lt;p&gt;with $k_i$ defined as&lt;/p&gt;
+$$
+k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \ldots, s
+$$
+&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
+&lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
+&lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
+&lt;/p&gt;
+$$
+\begin{array}{c|cccc}
+c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\
+\vdots &amp; \vdots  &amp; \ddots &amp; \vdots  \\
+c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
+\hline
+       &amp; b_1     &amp; \ldots &amp; b_s
+\end{array}
+$$
+&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
+&lt;/p&gt;
+$$
+h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
+$$
+&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
+&lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
+&lt;p&gt;The order of an $s$-stage &lt;em&gt;explicit&lt;/em&gt; Runge-Kutta method cannot be greater than $s$. Additionally, there does not exist a $s$-stage explicit Runge-Kutta method with order $s$ if ${s \ge 5}$.&lt;/p&gt;
+&lt;p&gt;The order of an $s$-stage &lt;em&gt;implicit&lt;/em&gt; Runge-Kutta method cannot be greater than $2s$.&lt;/p&gt;
+&lt;h3 id=&#34;runge-kutta-4&#34;&gt;Runge-Kutta 4&lt;/h3&gt;
+&lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
+$$
+u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
+$$
+&lt;p&gt;
+where
+&lt;/p&gt;
+$$
+\begin{align*}
+k_1 &amp; = f\left( u_n, t_n \right), \\\
+k_2 &amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\
+k_3 &amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right), \\\
+k_4 &amp; = f\left( u_n + h k_3, t_n + h \right).
+\end{align*}
+$$
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Example: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h2 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$&lt;/p&gt;
+$$
+a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
+$$
+&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
+&lt;!--
+CFL.
+
+Heat Equation
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interpolation</title>
+      <link>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalmethods24/part2/interpolation/</guid>
+      <description>&lt;!--
+&lt;style&gt;
+mjx-container {
+  display: inline-block;
+}
+mjx-assistive-mml {
+  right: 0px;
+  bottom: 0px;
+}
+&lt;/style&gt;
+
+
 &lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
 &lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
@@ -2335,1031 +3365,6 @@ i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collo
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>Integration</title>
-      <link>https://djps.github.io/docs/numericalmethods24/part2/integration/</link>
-      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/numericalmethods24/part2/integration/</guid>
-      <description>&lt;style&gt;
-mjx-container {
-  display: inline-block;
-}
-mjx-assistive-mml {
-  right: 0px;
-  bottom: 0px;
-}
-&lt;/style&gt;
-&lt;!--
-&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; March 11, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
---&gt;
-&lt;h2 id=&#34;numerical-differentiation&#34;&gt;Numerical Differentiation&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Finite-Difference Quotients&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
-$$
-\begin{equation*}
-D_{j}^{+} u = \dfrac{u_{j+1} - u_j}{h}
-\end{equation*}
-$$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Backwards Difference Quotient:&lt;/strong&gt;
-$$
-\begin{equation*}
-D_{j}^{-} u = \dfrac{u_{j} - u_{j-1}}{h}
-\end{equation*}
-$$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Central Difference Quotient:&lt;/strong&gt;
-$$
-\begin{equation*}
-D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
-\end{equation*}
-$$
-The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Higher Order Derivatives&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
-&lt;/p&gt;
-$$
-f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
-$$&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Richardson Extrapolation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
-$$
-f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
-$$
-&lt;p&gt;Now evaluate the derivative at ${h=h/2}$, so that&lt;/p&gt;
-$$
-f^{\prime}\left( x \right) = \varphi \left( h \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
-$$
-&lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
-$$
-f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
-$$
-&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h2 id=&#34;numerical-integration&#34;&gt;Numerical Integration&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Riemann Sum&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
-Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
-$$
-\int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \textsf{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
-$$
-&lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
-$$
-\begin{align*}
-L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
-U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
-\end{align*}
-$$
-&lt;p&gt;
-so that
-&lt;/p&gt;
-$$
-L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$
-&lt;p&gt;Additionally, the &lt;strong&gt;left&lt;/strong&gt; and &lt;strong&gt;right Riemann sums&lt;/strong&gt; are given, respectively, by
-&lt;/p&gt;
-$$
-\begin{align*}
-&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
-&amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
-\end{align*}
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Trapezoidal Rule&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
-$$
-\int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$
-&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
-&lt;/p&gt;
-$$
-T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;Error for Trapezoidal Rule&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
-&lt;p&gt;The error can be shown to have the form:
-&lt;/p&gt;
-$$
-\left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
-$$
-&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
-$$
-\left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
-$$
-&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Simpson&amp;#39;s Rule&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The integral is approximated as
-&lt;/p&gt;
-$$
-\int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
-$$
-&lt;p&gt;
-Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
-&lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as
-&lt;/p&gt;
-$$
-\int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
-$$
-&lt;p&gt;
-and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
-
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Algorithm: &lt;em&gt;Romberg&amp;#39;s Algorithm&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Romberg&amp;rsquo;s method uses the &lt;a href=&#34;#trap&#34;&gt;Trapezoidal Rule&lt;/a&gt; and then &lt;a href=&#34;#richardson&#34;&gt;Richardson Extrapolation&lt;/a&gt; to estimate integrals.
-First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
-${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:&lt;/p&gt;
-$$
-\begin{array}{cc}
-R_0^0 &amp;       \\
-      &amp; R_1^1 \\
-R_1^0 &amp;       \\
-      &amp; R_2^1 \\
-R_2^0 &amp;       \\
-\vdots &amp; \\
-R_n^0  &amp;
-\end{array}
-$$
-&lt;p&gt;To evaluate the next set of values, consider the two integrals&lt;/p&gt;
-$$
-\begin{align*}
-\int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
-\int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
-\end{align*}
-$$
-&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
-&lt;/p&gt;
-$$
-R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$
-&lt;p&gt;
-which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&amp;rsquo;s rule. The recurrence formula can be derived
-&lt;/p&gt;
-$$
-R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Example: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online 
-.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
-&lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
-&lt;/p&gt;
-$$
-\begin{equation*}
-I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
-\end{equation*}
-$$
-&lt;p&gt;
-The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Can the weights be chosen such that the error in an integral is minimized?&lt;/li&gt;
-&lt;li&gt;Furthermore, can the nodes be chosen such that the integral can be further improved?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Orthogonal functions&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
-$$
-\langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
-$$
-&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;Gaussian Quadrature&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,&lt;/li&gt;
-&lt;li&gt;the polynomial $q(x)$ satisfies
-$$
-  \int_{a}^{b} x^k q\left(x\right) \, \mathrm{d}x = 0 \quad \textsf{for} \quad k=0,\ldots, n.
-  $$
-i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Then, denote the integral as
-&lt;/p&gt;
-$$
-I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
-$$
-&lt;p&gt;
-with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using 
- for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
-&lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Gauss-Legendre Quadrature&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
-&lt;/p&gt;
-$$
-\int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$
-&lt;p&gt;
-and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
-&lt;/p&gt;
-$$
-P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
-$$
-&lt;p&gt;
-Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
-&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
-&lt;/p&gt;
-$$
-x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$
-&lt;p&gt;
-so that
-&lt;/p&gt;
-$$
-\int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-</description>
-    </item>
-    
-    <item>
-      <title>Finite Difference Methods for Differential Equations</title>
-      <link>https://djps.github.io/docs/numericalmethods24/part3/odes/</link>
-      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/numericalmethods24/part3/odes/</guid>
-      <description>&lt;style&gt;
-mjx-container {
-  display: inline-block;
-}
-mjx-assistive-mml {
-  right: 0px;
-  bottom: 0px;
-}
-&lt;/style&gt;
-&lt;!--
-&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; May 15, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
-
-
-## Finite Difference Methods for Differential Equations
---&gt;
-&lt;p&gt;Solutions are functions.&lt;/p&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Ordinary Differential Equations&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;!-- For example, with only the first derivative $y^{\prime} \left(t\right) = f\left( y\left(t\right), t)$  --&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Initial Value Problems&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.&lt;/p&gt;
-&lt;p&gt;Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;One step methods&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h3 id=&#34;forward-euler-method&#34;&gt;Forward Euler Method&lt;/h3&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + h f_n
-$$
-&lt;p&gt;
-where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h3 id=&#34;backward-euler-method&#34;&gt;Backward Euler Method&lt;/h3&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + h f_{n+1}
-$$
-&lt;p&gt;
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h3 id=&#34;crank-nicolson-method&#34;&gt;Crank-Nicolson Method&lt;/h3&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
-$$&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h3 id=&#34;heuns-method&#34;&gt;Heun&amp;rsquo;s Method&lt;/h3&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
-$$&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
-&lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
-&lt;p&gt;Huen&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
-&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
-&lt;/p&gt;
-$$
-y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
-$$
-&lt;p&gt;Thus, the Forward Euler method is the left Riemann sum, Backward Euler is the right Riemann sum and the Crank-Nicolson is the trapezoidal rule.&lt;/p&gt;
-&lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
-&lt;/p&gt;
-$$
-\left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
-$$
-&lt;p&gt;
-for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Consistency Error&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Any explicit one-step method has the form
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
-$$
-&lt;p&gt;
-with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
-$$
-y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n  
-$$
-&lt;p&gt;which can be written as&lt;/p&gt;
-$$
-\tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
-$$
-&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
-&lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Convergence&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
-&lt;/p&gt;
-$$
-\tau_{g,n} = \left| y_n - u_n \right|
-$$
-&lt;p&gt;
-which is given by
-&lt;/p&gt;
-$$
-\tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
-$$
-&lt;p&gt;
-If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Order&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Zero Stable Methods&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A method of the form
-&lt;/p&gt;
-$$
-u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
-$$
-&lt;p&gt;
-with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
-&lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by
-&lt;/p&gt;
-$$
-z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
-$$
-&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
-$$
-\left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;If a method is zero-stable, then this means that small perturbations in the computations lead to small perturbations in the approximations.&lt;/p&gt;
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;if $\left| y_0 - u_0 \right| \rightarrow 0$ as $h \rightarrow 0$,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;then the global error has
-&lt;/p&gt;
-$$
-\lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
-$$
-&lt;p&gt;
-Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Absolute Stability&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
-&lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
-$$
-\lbrace h \lambda \in \mathbb{C} \quad \text{such that} \quad  | u_n | \rightarrow 0 \quad \text{as} \quad t_n \rightarrow \infty \rbrace.
-$$
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;Zero stability considers when ${h \rightarrow 0}$, whereas absolute stability concerns behaviour as ${t_n \rightarrow \infty}$.&lt;/p&gt;
-&lt;h2 id=&#34;lax-equivalence&#34;&gt;Lax Equivalence&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a unique solution exists for any initial conditions and&lt;/li&gt;
-&lt;li&gt;the solution&amp;rsquo;s behaviour changes continuously with the initial conditions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A problem which does not have these properties is said to be &lt;strong&gt;ill-posed&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;!--
-https://www.danlj.org/eaj/math/summaries/ftna/ftna.pdf
-https://people.maths.ox.ac.uk/trefethen/4all.pdf
-For a _partial_ differential equation, consistency means that a solution to the initial value problem approximately satisfies the discretized equation as the mesh size goes to zero, thus the error, i.e. the difference between the analytical solution and the computed solution tends to zero as the
-For an initial value problem, consistency means that the error committed by the numerical algorithm over a single time step is small.
-For an initial value problem, the fundamental theorem simply says that if the error committed on each time step is small enough, and if the rate of error growth is bounded, than the error in the solution will remain small.
---&gt;
-&lt;h2 id=&#34;runge-kutta-and-multi-step-schemes&#34;&gt;Runge-Kutta And Multi-Step Schemes&lt;/h2&gt;
-&lt;p&gt;If an ordinary differential equation is given by ${\dot{y}= f\left( y, t \right)}$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
-$$
-u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
-$$
-&lt;p&gt;where $F$ is an increment function given by&lt;/p&gt;
-$$
-F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i
-$$
-&lt;p&gt;with $k_i$ defined as&lt;/p&gt;
-$$
-k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \ldots, s
-$$
-&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
-&lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
-&lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
-&lt;/p&gt;
-$$
-\begin{array}{c|cccc}
-c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\
-\vdots &amp; \vdots  &amp; \ddots &amp; \vdots  \\
-c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
-\hline
-       &amp; b_1     &amp; \ldots &amp; b_s
-\end{array}
-$$
-&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
-&lt;/p&gt;
-$$
-h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
-$$
-&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
-&lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
-&lt;p&gt;The order of an $s$-stage &lt;em&gt;explicit&lt;/em&gt; Runge-Kutta method cannot be greater than $s$. Additionally, there does not exist a $s$-stage explicit Runge-Kutta method with order $s$ if ${s \ge 5}$.&lt;/p&gt;
-&lt;p&gt;The order of an $s$-stage &lt;em&gt;implicit&lt;/em&gt; Runge-Kutta method cannot be greater than $2s$.&lt;/p&gt;
-&lt;h3 id=&#34;runge-kutta-4&#34;&gt;Runge-Kutta 4&lt;/h3&gt;
-&lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
-$$
-u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
-$$
-&lt;p&gt;
-where
-&lt;/p&gt;
-$$
-\begin{align*}
-k_1 &amp; = f\left( u_n, t_n \right), \\\
-k_2 &amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\
-k_3 &amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right), \\\
-k_4 &amp; = f\left( u_n + h k_3, t_n + h \right).
-\end{align*}
-$$
-&lt;div class=&#34;details admonition Example open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Example: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;code&gt;.ipynb&lt;/code&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h2 id=&#34;partial-differential-equations&#34;&gt;Partial Differential Equations&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$&lt;/p&gt;
-$$
-a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
-$$
-&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
-&lt;!--
-CFL.
-
-Heat Equation
---&gt;
 </description>
     </item>
     
