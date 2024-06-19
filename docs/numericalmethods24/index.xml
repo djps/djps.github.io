@@ -300,7 +300,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -308,13 +308,15 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
 \end{equation*}
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -325,7 +327,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -333,7 +335,8 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -348,7 +351,8 @@ $$
 \lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation*}
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -358,7 +362,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -366,9 +370,11 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/taylor_series/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/taylor_series/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/taylor_series.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -378,7 +384,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -386,11 +392,13 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that
 &lt;/p&gt;
 $$
 f^\prime (c) = 0.
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -400,7 +408,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -408,11 +416,13 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
 &lt;/p&gt;
 $$
 f^\prime (c) = \dfrac{f(b) - f(a)}{b - a}.
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -458,7 +468,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -466,9 +476,11 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $\tilde{a}$ be an approximation to $a$, then the &lt;strong&gt;absolute error&lt;/strong&gt; is given by $\left| {\tilde{a}-a} \right|$.&lt;/p&gt;
 &lt;p&gt;If ${\left| a \ne 0\right|}$, the &lt;strong&gt;relative error&lt;/strong&gt; is given by $\left| \dfrac{\tilde{a}-a}{a} \right|$ and the error bound is the magnitude of the admissible error.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -478,7 +490,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -486,9 +498,11 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For both addition and subtraction the bounds for the &lt;em&gt;absolute error&lt;/em&gt; are added.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For both addition and subtraction the bounds for the &lt;em&gt;absolute error&lt;/em&gt; are added.&lt;/p&gt;
 &lt;p&gt;In division and multiplication the bounds for the &lt;em&gt;relative errors&lt;/em&gt; are added.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -498,7 +512,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -506,7 +520,8 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $y(x)$ is a smooth function, i.e. is differentiable, then $\left\| y^{\prime} \right\|$ can be interpreted as the &lt;strong&gt;linear sensitivity&lt;/strong&gt; of $y(x)$ to uncertainties in $x$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If $y(x)$ is a smooth function, i.e. is differentiable, then $\left\| y^{\prime} \right\|$ can be interpreted as the &lt;strong&gt;linear sensitivity&lt;/strong&gt; of $y(x)$ to uncertainties in $x$.&lt;/p&gt;
 &lt;p&gt;For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then
 &lt;/p&gt;
 $$
@@ -515,7 +530,8 @@ $$
 &lt;p&gt;
 where
 $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_i$, thus  ${\left\| \Delta y_i \right\| = \tilde{y}_i - y_i = f \left( \tilde{x}_i \right) - \left( x_i \right)}$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -525,7 +541,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -533,9 +549,11 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/number_representations/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/number_representations/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/number_representations.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/number_representations.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -546,7 +564,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -554,7 +572,8 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
 can be written as a unique expansion with respect to base $b$ as
 &lt;/p&gt;
 $$
@@ -578,7 +597,8 @@ x &amp; = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i 
  &amp; = a_n  \ldots a_0 \cdot \alpha_1 \alpha_2 \ldots
 \end{align*}
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -588,7 +608,7 @@ $$
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -597,7 +617,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e.
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Euclid&amp;rsquo;s algorithm can convert number $x$ in base 10, i.e.
 $\left(x \right)_{10}$
 into another base, $b$, i.e. $\left(x \right)_{b}$.&lt;/p&gt;
 &lt;ol&gt;
@@ -612,7 +633,8 @@ $$
       $$
 which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;li&gt;Output as $\left(x \right)\_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
+&lt;/ol&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -622,7 +644,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -631,7 +653,8 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;ol&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;ol&gt;
 &lt;li&gt;Input $\left(x \right)_{10}$&lt;/li&gt;
 &lt;li&gt;Set $i=0$&lt;/li&gt;
 &lt;li&gt;Let $y=x$. Then while $y&gt;0$
@@ -645,7 +668,8 @@ $$
 which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;li&gt;Output as $\left(x \right)_{b} = a_n a_{n-1} \cdots a_0$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -655,7 +679,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -663,7 +687,8 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A number may be represented as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A number may be represented as
 &lt;/p&gt;
 $$
 x = \sigma \times f \times b^{t-p}
@@ -676,7 +701,8 @@ $$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$
 &lt;p&gt;
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
 &lt;p&gt;Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -686,7 +712,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -694,12 +720,14 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 &lt;/p&gt;
 $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
 &lt;p&gt;
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -736,7 +764,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -744,7 +772,8 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for&lt;/p&gt;
 $$
 \begin{align*}
 a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \\
@@ -780,7 +809,8 @@ A = \left(
 $$
 &lt;p&gt;
 so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -790,7 +820,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -798,7 +828,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;banded&lt;/strong&gt; matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A &lt;strong&gt;banded&lt;/strong&gt; matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -808,7 +840,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -816,9 +848,11 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
 &lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -828,7 +862,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -836,7 +870,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A matrix, $M$, is said to be &lt;strong&gt;positive definite&lt;/strong&gt; if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A matrix, $M$, is said to be &lt;strong&gt;positive definite&lt;/strong&gt; if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -846,7 +882,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -854,7 +890,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -864,7 +902,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Note open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -872,12 +910,14 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nonsingular matrix has full rank&lt;/li&gt;
 &lt;li&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/li&gt;
 &lt;li&gt;If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
+&lt;/ul&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -887,7 +927,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -895,8 +935,10 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.&lt;/p&gt;
-&lt;!-- If $\left| r \right|$ is large due to rounding, the matrix is said to be **ill-conditioned**. --&gt;&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.&lt;/p&gt;
+&lt;!-- If $\left| r \right|$ is large due to rounding, the matrix is said to be **ill-conditioned**. --&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -907,7 +949,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -916,7 +958,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back substitution to solve the system. The row operations are:&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back substitution to solve the system. The row operations are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;row swapping&lt;/li&gt;
 &lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
@@ -939,7 +982,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;14&lt;/small&gt; $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;
 &lt;small&gt;15&lt;/small&gt; End&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -949,7 +993,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -958,7 +1002,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
@@ -970,7 +1015,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -980,7 +1026,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -988,7 +1034,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -998,7 +1046,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1006,7 +1054,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
 &lt;/p&gt;
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
@@ -1017,7 +1066,8 @@ where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in 
 $$
 U = U_{n-1} \cdots U_2 U_1 A.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1027,7 +1077,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1035,7 +1085,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has elements $\sqrt{d_i}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has elements $\sqrt{d_i}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1045,7 +1097,7 @@ $$
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -1054,7 +1106,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $i=1$ to $n$: &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ Set $y = a_{i,j}$ &lt;br&gt;
@@ -1073,7 +1126,8 @@ $$
 &lt;small&gt;16&lt;/small&gt; $\hspace{4cm}$ $l_{i,i} = \sqrt{y}$ &lt;br&gt;
 &lt;small&gt;12&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;17&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1093,7 +1147,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1101,13 +1155,15 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
 &lt;/p&gt;
 $$
 \rho \left( A \right) = \max \left\{  \left\|  \lambda_1 \right\|,  \left\|  \lambda_2 \right\|, \ldots   \left\|  \lambda_n \right\| \right\}
 $$
 &lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1117,7 +1173,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1125,7 +1181,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The iterative scheme converges if and only if the spectral radius of the matrix ${I - Q^{-1} A}$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The iterative scheme converges if and only if the spectral radius of the matrix ${I - Q^{-1} A}$ is less than one, i.e. ${\rho\left( I - Q^{-1} A \right) \lt 1}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1135,7 +1193,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1143,7 +1201,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
 $$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$
@@ -1153,7 +1212,8 @@ $$
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1163,7 +1223,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1171,14 +1231,16 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The  &lt;a id=&#34;Jacobi&#34;&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The  &lt;a id=&#34;Jacobi&#34;&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so
 &lt;/p&gt;
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$
 &lt;p&gt;
 where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1188,7 +1250,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1196,11 +1258,13 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 &lt;/p&gt;
 $$
 \left\| a_{i,i} \right\| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left\| a_{i,j} \right\| \quad \text{for all } i \in (1,n)
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1210,7 +1274,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1218,7 +1282,9 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If the matrix $A$ is diagonally dominant, then the Jacobi scheme converges for any initial guess $x_0$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If the matrix $A$ is diagonally dominant, then the Jacobi scheme converges for any initial guess $x_0$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1228,7 +1294,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1236,7 +1302,8 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -1245,7 +1312,8 @@ $$
 $$
 &lt;p&gt;
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1255,7 +1323,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1263,7 +1331,9 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If the matrix $A$ is diagonally dominant, then the Gauss-Seidel scheme converges for any initial guess $x_0$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If the matrix $A$ is diagonally dominant, then the Gauss-Seidel scheme converges for any initial guess $x_0$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1273,7 +1343,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1281,13 +1351,15 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation*}
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1297,7 +1369,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1305,7 +1377,9 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of &lt;a href=&#34;#SOR&#34;&gt;successive over relaxation&lt;/a&gt; converge.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            Let $A$ be a symmetric matrix with positive entries on the diagonal and let ${\omega \in \left(0,2\right)}$. Then, if and only if $A$ is positive definite will the method of &lt;a href=&#34;#SOR&#34;&gt;successive over relaxation&lt;/a&gt; converge.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1316,7 +1390,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1324,9 +1398,11 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left\| e_k \right\| &lt; \left\| e_0 \right\| }$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left\| e_k \right\| &lt; \left\| e_0 \right\| }$.&lt;/p&gt;
 &lt;p&gt;Note that $\Vert x \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert x \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots x_n^2} }$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1336,7 +1412,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1344,7 +1420,9 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1365,7 +1443,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1373,7 +1451,9 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${x_k \rightarrow x^{\ast}}$ as ${k \rightarrow \infty}$ where $x^{\ast}$ is the exact solution.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${x_k \rightarrow x^{\ast}}$ as ${k \rightarrow \infty}$ where $x^{\ast}$ is the exact solution.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1383,7 +1463,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1391,7 +1471,9 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is convergent if and only if it is consistent and stable.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is convergent if and only if it is consistent and stable.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1401,7 +1483,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1409,9 +1491,11 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1436,7 +1520,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1444,14 +1528,16 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $\left[a, b\right]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The bisection method, when applied in the interval $\left[a, b\right]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$&lt;/p&gt;
 &lt;p&gt;Bisect the interval into two subintervals $\left[a, c\right]$ and $\left[c, b\right]$ such that ${a &lt; c &lt; b}$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If $f(c) = 0$ or is sufficiently close, then $c$ is a root&lt;/li&gt;
 &lt;li&gt;Else, if $f(c)f(a) &lt; 0$ continue in the interval $[a, c]$&lt;/li&gt;
 &lt;li&gt;Else, if $f(c)f(b) &lt; 0$ continue in the interval $[c, b]$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1461,7 +1547,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1469,11 +1555,13 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
 &lt;/p&gt;
 $$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1484,7 +1572,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1492,11 +1580,13 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1506,7 +1596,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1514,7 +1604,9 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;When Newton&amp;rsquo;s method converges, it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            When Newton&amp;rsquo;s method converges, it converges to a root, $r$, of $f$, i.e. ${f\left(r\right)=0}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1524,7 +1616,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1532,7 +1624,8 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$f(a)f(b) &lt; 0$&lt;/li&gt;
 &lt;li&gt;$f^\prime\left(x\right) \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
@@ -1551,7 +1644,8 @@ $$&lt;/div&gt;
 $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1561,7 +1655,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1569,14 +1663,16 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $f \in C^1\left( \left[ a, b\right] \right)$, with&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$f(a)f(b) &lt; 0$&lt;/li&gt;
 &lt;li&gt;$f^\prime\left( x \right) \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
 &lt;li&gt;$f^{\prime\prime}\left( x \right)$ exists and is continuous, i.e. ${f\left( x \right) \in C^2\left( \left[ a, b \right]\right)}$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, if $x_0$ is close enough to the root $r$, Newton&amp;rsquo;s method converges quadratically.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1587,7 +1683,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1595,11 +1691,13 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The secant method is defined as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The secant method is defined as
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1609,7 +1707,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1617,7 +1715,8 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
@@ -1629,7 +1728,8 @@ Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &
 and&lt;/li&gt;
 &lt;li&gt;$\left\|  r - x_{n+1} \right\| \le \mu \left\|  r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1639,7 +1739,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1647,9 +1747,11 @@ and&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/nonlinear/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/nonlinear/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/nonlinear.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1659,7 +1761,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1667,9 +1769,11 @@ and&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/max_finder/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/max_finder/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/max_finder.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1680,7 +1784,7 @@ and&lt;/li&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1688,7 +1792,8 @@ and&lt;/li&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that
 &lt;/p&gt;
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
@@ -1713,7 +1818,8 @@ $$
 $$
 &lt;p&gt;
 Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1762,7 +1868,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1770,7 +1876,8 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
 &lt;/p&gt;
 $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
@@ -1802,7 +1909,8 @@ J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$
 &lt;p&gt;
 is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1874,7 +1982,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1882,7 +1990,8 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Consider the approximations to the first-order derivative:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Forward Difference Quotient:&lt;/strong&gt;
 $$
@@ -1903,7 +2012,8 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 \end{equation*}
 $$
 The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
+&lt;/ol&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1913,7 +2023,7 @@ The forward and backwards difference schemes are first order approximations to t
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1921,11 +2031,13 @@ The forward and backwards difference schemes are first order approximations to t
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
 &lt;/p&gt;
 $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1935,7 +2047,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1943,7 +2055,8 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
 $$
 f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
 $$
@@ -1956,7 +2069,8 @@ $$
 f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
 $$
 &lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1967,7 +2081,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -1975,7 +2089,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Create a partition, $p$, of the domain of integration: define $n+1$ nodes ${a = x_0 &lt; x_1 &lt; \ldots &lt; x_n =b}$, so that there are $n$ sub-intervals $\left[x_i, x_{i+1} \right]$.
 Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \textsf{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
@@ -2001,7 +2116,8 @@ $$
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
 \end{align*}
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2011,7 +2127,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2019,7 +2135,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;
 &lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
@@ -2030,7 +2147,8 @@ If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, t
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2040,7 +2158,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2048,7 +2166,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
 &lt;p&gt;The error can be shown to have the form:
 &lt;/p&gt;
 $$
@@ -2059,7 +2178,8 @@ $$
 \left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
 $$
 &lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2069,7 +2189,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2077,7 +2197,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The integral is approximated as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The integral is approximated as
 &lt;/p&gt;
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
@@ -2092,7 +2213,8 @@ $$
 $$
 &lt;p&gt;
 and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2102,7 +2224,7 @@ and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;.
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
 
         &lt;/span&gt;
@@ -2111,7 +2233,8 @@ and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;.
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Romberg&amp;rsquo;s method uses the &lt;a href=&#34;#trap&#34;&gt;Trapezoidal Rule&lt;/a&gt; and then &lt;a href=&#34;#richardson&#34;&gt;Richardson Extrapolation&lt;/a&gt; to estimate integrals.
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Romberg&amp;rsquo;s method uses the &lt;a href=&#34;#trap&#34;&gt;Trapezoidal Rule&lt;/a&gt; and then &lt;a href=&#34;#richardson&#34;&gt;Richardson Extrapolation&lt;/a&gt; to estimate integrals.
 First consider a sequence of partitions, $p_i$, for ${i=0, \ldots, n}$, of equal spacing given by ${h_i = \dfrac{b-a}{2^i}}$ which yield a sequence of integrals
 ${R_i^0 = T_i \left( f, p_i \right)}$. Refinements of the integrals can then be produced by Richardson Extrapolation:&lt;/p&gt;
 $$
@@ -2143,7 +2266,8 @@ which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are eq
 $$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2153,7 +2277,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2161,9 +2285,11 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/integrals/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/integrals/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2187,7 +2313,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2195,12 +2321,14 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
 $$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
 $$
 &lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2210,7 +2338,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2218,7 +2346,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $q\left(x\right)$ be a non-trivial polynomial of degree ${n+1}$ such that&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;it has $n+1$ distinct roots, denoted as $x_i$, in $\left[ a, b \right]$,&lt;/li&gt;
 &lt;li&gt;the polynomial $q(x)$ satisfies
@@ -2237,7 +2366,8 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
  for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
 &lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2247,7 +2377,7 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2255,7 +2385,8 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
 &lt;/p&gt;
 $$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
@@ -2279,7 +2410,8 @@ so that
 $$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2314,7 +2446,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2322,9 +2454,11 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2334,7 +2468,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2342,7 +2476,8 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
 &lt;/p&gt;
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
@@ -2365,7 +2500,8 @@ $$
 &lt;p&gt;
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2376,7 +2512,7 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2384,7 +2520,8 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If &lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If &lt;/p&gt;
 $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
 &lt;p&gt;
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
@@ -2392,7 +2529,8 @@ So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \va
 $$\Phi \alpha = p$$
 &lt;p&gt;
 where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2403,7 +2541,7 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2411,7 +2549,8 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -2428,7 +2567,8 @@ l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} 
 $$
 &lt;p&gt;
 By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2438,7 +2578,7 @@ By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2446,7 +2586,8 @@ By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
 &lt;/p&gt;
 $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
@@ -2457,7 +2598,8 @@ By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluati
 $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2467,7 +2609,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2475,8 +2617,10 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/lagrange_polynomials/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;[here]&lt;/a&gt;. --&gt;&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of interpolation using Lagrange polynomials can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/lagrange_polynomials/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;[here]&lt;/a&gt;. --&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2486,7 +2630,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2494,9 +2638,11 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/runge/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of Runge&amp;rsquo;s phenomenon can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/runge/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/runge.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/runge.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2506,7 +2652,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2514,7 +2660,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
 $$
@@ -2538,7 +2685,8 @@ p\left( u_3 \right) = p_{3}^0 &amp;                       &amp;                 
 \end{equation*}
 $$
 &lt;p&gt;where the coefficients are evaluated from left to right.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2548,7 +2696,7 @@ $$
 &lt;!-- &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2556,7 +2704,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;polynomial&amp;rsquo;s convergence.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            polynomial&amp;rsquo;s convergence.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2569,7 +2719,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2577,7 +2727,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A function $s\left(u\right)$ is called a &lt;strong&gt;spline&lt;/strong&gt; of degree $k$ on the domain ${[a, b]}$ if ${s \in C^{k-1}\left( [a, b] \right)}$ and there exists nodes ${a = u_0 \lt u_1 \lt \ldots \lt u_m = b}$ such that $s$ is a polynomial of degree $k$ for ${i = 0, \ldots m-1}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2587,7 +2739,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2595,7 +2747,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A spline is said to be a &lt;strong&gt;b-spline&lt;/strong&gt; if it is of the form&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A spline is said to be a &lt;strong&gt;b-spline&lt;/strong&gt; if it is of the form&lt;/p&gt;
 $$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
 $$
@@ -2621,7 +2774,8 @@ $$
 $$
 &lt;p&gt;
 is a local parameter.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2647,7 +2801,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2655,7 +2809,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
 &lt;/p&gt;
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
@@ -2672,7 +2827,8 @@ i.e.
 $$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2682,7 +2838,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2690,7 +2846,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the function $y(x)$ is a function of the form
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If the function $y(x)$ is a function of the form
 &lt;/p&gt;
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
@@ -2715,7 +2872,8 @@ $$
 $$
 &lt;p&gt;
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2753,7 +2911,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2761,7 +2919,9 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2772,7 +2932,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2780,9 +2940,11 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;strong&gt;initial value problem&lt;/strong&gt; (IVP) is given by an ordinary differential equation of the form ${y^{\prime} \left(t\right) = f\left( y\left(t\right), t\right)}$ and initial value ${y\left(a\right)=y_a}$ for the unknown function $y\left(t\right)$.&lt;/p&gt;
 &lt;p&gt;Often ${a=0}$, so the initial condition reads ${y(0)=y_0}$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2792,7 +2954,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2800,7 +2962,9 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method for approximating the solution to a differential equation is called a &lt;strong&gt;one step method&lt;/strong&gt; if the computed solution at time step $t_{n+1}$, denoted by $u_{n+1}$, only depends on the previous one, $t_i$, where $t_{n+1} = t_n + h$, for some small increment ${h=\Delta t}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2811,7 +2975,7 @@ mjx-assistive-mml {
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2819,14 +2983,16 @@ mjx-assistive-mml {
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_n
 $$
 &lt;p&gt;
 where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2837,7 +3003,7 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2845,14 +3011,16 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_{n+1}
 $$
 &lt;p&gt;
 where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2863,7 +3031,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2871,11 +3039,13 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2886,7 +3056,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2894,11 +3064,13 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
-$$&lt;/div&gt;
+$$
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2908,7 +3080,7 @@ $$&lt;/div&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2916,7 +3088,9 @@ $$&lt;/div&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is said to be &lt;strong&gt;explicit&lt;/strong&gt; if an approximation $u_{k+1}$ can be calculated directly from already computed values $u_i$ for ${i &lt; k}$. Otherwise, the method is said to be &lt;strong&gt;implicit&lt;/strong&gt;.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2936,7 +3110,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2944,14 +3118,16 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
 &lt;/p&gt;
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$
 &lt;p&gt;
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2961,7 +3137,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -2969,7 +3145,8 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Any explicit one-step method has the form
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Any explicit one-step method has the form
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
@@ -2986,7 +3163,8 @@ $$
 &lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
 &lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2996,7 +3174,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3004,7 +3182,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
 &lt;/p&gt;
 $$
 \tau_{g,n} = \left| y_n - u_n \right|
@@ -3018,7 +3197,8 @@ $$
 &lt;p&gt;
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3028,7 +3208,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3036,7 +3216,9 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A one-step method is of order $p \in \mathbb{N}$, if for all ${t \in \left[ 0, T \right]}$, the solution satisfies the condition that ${\tau\left(h\right) = \mathcal{O}\left( h^p \right) }$ as ${h \rightarrow 0}$.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3046,7 +3228,7 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3054,7 +3236,8 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A method of the form
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A method of the form
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
@@ -3070,7 +3253,8 @@ $$
 $$
 \left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3081,7 +3265,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3089,7 +3273,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3099,7 +3285,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3107,7 +3293,8 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
@@ -3127,7 +3314,8 @@ $$
 $$
 &lt;p&gt;
 Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3137,7 +3325,7 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3145,12 +3333,14 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A numerical scheme for approximating the solution to the linear differential equation ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ with ${\lambda \in \mathbb{C}}$ and initial condition ${y_0}$ is said to be &lt;strong&gt;absolutely stable&lt;/strong&gt; if ${\left|u_n\right| \rightarrow 0}$ as ${n \rightarrow \infty}$, when ${\operatorname{Re}\left(\lambda\right) \lt 0}$ for a fixed value of $h$.&lt;/p&gt;
 &lt;p&gt;The region of absolute stability of a numerical method for ${y^{\prime}\left(t\right) = \lambda y\left(t\right)}$ is the set&lt;/p&gt;
 $$
 \lbrace h \lambda \in \mathbb{C} \quad \text{such that} \quad  | u_n | \rightarrow 0 \quad \text{as} \quad t_n \rightarrow \infty \rbrace.
 $$
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3162,7 +3352,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3170,13 +3360,15 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A problem is said to be &lt;strong&gt;well-posed&lt;/strong&gt; if&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a unique solution exists for any initial conditions and&lt;/li&gt;
 &lt;li&gt;the solution&amp;rsquo;s behaviour changes continuously with the initial conditions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A problem which does not have these properties is said to be &lt;strong&gt;ill-posed&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3186,7 +3378,7 @@ $$
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3194,7 +3386,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3263,7 +3457,7 @@ $$
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3271,9 +3465,11 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of solvers for odes can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/ode_solvers/&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.py/&#34;&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/ode_solvers.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
+
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -3284,7 +3480,7 @@ $$
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
-        &lt;span class=&#34;flex pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
@@ -3292,7 +3488,9 @@ $$
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.&lt;/div&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involving a unknown function of several free variables and partial derivatives with respect to these variables.
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
