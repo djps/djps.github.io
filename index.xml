@@ -785,6 +785,7 @@ a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
 $$
 &lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where&lt;/p&gt;
 $$
+\begin{align*}
 A = \left(
   \begin{array}{cccc}
   a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\
@@ -807,6 +808,7 @@ A = \left(
       b_m
       \end{array}
       \right),
+\end{align*}
 $$
 &lt;p&gt;
 so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
@@ -2492,10 +2494,12 @@ $$
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
 &lt;/p&gt;
 $$
+\begin{equation*}
 \Phi = \left( \begin{array}{cccc}
   \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\\
   \vdots &amp; &amp; &amp; \vdots \\\
   \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
+\end{equation*}
 $$
 &lt;p&gt;
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
