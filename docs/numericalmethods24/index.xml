@@ -1449,8 +1449,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34; class=&#34;hover:deep-purple-400-accent&#34; style=&#34;text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.py/&#34; &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a class=&#34;hover:red&#34; href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34; style=&#34;text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a class=&#34;hover:red-600&#34; href=&#34;https://djps.github.io/ipyth/iterative.py/&#34; &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
