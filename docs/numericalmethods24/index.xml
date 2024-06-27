@@ -713,25 +713,7 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
       <link>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/part1/linear-equations/</guid>
-      <description>&lt;!--
-
-&lt;style&gt;
-mjx-container {
-  display: inline-block;
-}
-mjx-assistive-mml {
-  right: 0px;
-  bottom: 0px;
-}
-&lt;/style&gt;
-
-
-&lt;p style=&#34;font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);&#34;&gt; &lt;span style=&#34;font-weight: 700;&#34;&gt; David Sinden &lt;/span&gt; &amp;middot;
-&lt;i class=&#34;far fa-calendar&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; April 45, 2024 &amp;middot;
-&lt;i class=&#34;far fa-clock&#34; aria-hidden=&#34;true&#34; style=&#34;color: rgb(0,0,0,0.54);&#34;&gt;&lt;/i&gt; 60 minute read &lt;/p&gt;
-
---&gt;
-&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -823,7 +805,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A^H$.&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its conjugate transpose, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -909,8 +891,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.&lt;/p&gt;
-&lt;!-- If $\left| r \right|$ is large due to rounding, the matrix is said to be **ill-conditioned**. --&gt;
+            If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1059,7 +1040,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has elements $\sqrt{d_i}$.
+            A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has diagonal elements $\sqrt{d_i}$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1132,9 +1113,10 @@ $$
             &lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
 &lt;/p&gt;
 $$
-\rho \left( A \right) = \max \left\{  \left\|  \lambda_1 \right\|,  \left\|  \lambda_2 \right\|, \ldots   \left\|  \lambda_n \right\| \right\}
+\rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
 $$
-&lt;p&gt;where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
+&lt;p&gt;
+where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1175,11 +1157,13 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
+            &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors
+&lt;/p&gt;
 $$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$
-&lt;p&gt;This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
+&lt;p&gt;
+This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that
 &lt;/p&gt;
 $$
@@ -1235,7 +1219,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
             &lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
 &lt;/p&gt;
 $$
-\left\| a_{i,i} \right\| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left\| a_{i,j} \right\| \quad \text{for all } i \in (1,n)
+\left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \text{for all } i \in (1,n)
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1412,7 +1396,7 @@ $$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
 $$
 &lt;p&gt;
-so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$.&lt;/p&gt;
+so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert &lt; 1}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
