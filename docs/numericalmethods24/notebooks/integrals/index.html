@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 6, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: August 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -286,6 +286,9 @@
   
 
 
+  
+  
+  
   
   
   
@@ -1070,6 +1073,10 @@
                 
                 
                 
+              
+                
+                
+                
                inline-flex items-center">
               Teaching
               <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
@@ -1099,6 +1106,17 @@
               
               href="/docs/numericalanalysis22/intro/intro/">
               Numerical Analysis
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-dropdown-item">
+            <a
+              class="nav-dropdown-link "
+              
+              href="/docs/GradCalcLinAlg24/intro/intro/">
+              Calculus &amp; Linear Algebra
             </a>
           </li>
           
@@ -2144,8 +2162,7 @@ $$
 \begin{align}
 \int_0^1 e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}. \nonumber
 \end{align}
-$$
-<p>
+$$<p>
 First import the tools needed</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -2167,8 +2184,7 @@ $$
 \begin{align}
 \int_a^b f(x) \, \mathrm{d}x \approx \sum\limits_{k=1}^{M} \dfrac{f\left( x_{k-1}\right) + f\left(x_{k}\right)}{2} \Delta x_{k} \quad \textsf{where} \quad x_0 = a \quad \textsf{and} \quad x_M = b. \nonumber
 \end{align}
-$$
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+$$<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.99</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,))</span>

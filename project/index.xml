@@ -25,6 +25,7 @@
 &lt;p&gt;In addition, this project will combine the data acquired during regeneration to descriptive computational model of the recovery of physiological and metabolic parameters over time, to be combined with the models of test compound metabolization. Predictions obtained from simulations using the computational models will be used in QuaLiPerF to investigate biological and clinical questions driven by the clinical and experimental partners. Ultimately, a better prediction of the recovery of liver function developed in QuaLiPerF will help improve planning of individual surgery.&lt;/p&gt;
 &lt;h2 id=&#34;project-homepage&#34;&gt;Project Homepage&lt;/h2&gt;
 &lt;p&gt;The project homepage can be accessed &lt;a href=&#34;https://qualiperf.de/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- This work was supported by the German Research Foundation (DFG) within the Research Unit Programme FOR 5151 QuaLiPerF by grant number 436883643.--&gt;
 </description>
     </item>
     
@@ -46,21 +47,7 @@
       <guid>https://djps.github.io/project/comptop/</guid>
       <description>&lt;h2 id=&#34;computational-topology&#34;&gt;Computational Topology&lt;/h2&gt;
 &lt;p&gt;&lt;mark&gt;More details to appear.&lt;/mark&gt;&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
-
-&lt;pre&gt;- Hugo Modules
-  - blox-tailwind
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;mermaid&#34;&gt;graph TD;
-  A--&gt;B;
-  A--&gt;C;
-  B--&gt;D;
-  C--&gt;D;
-&lt;/div&gt;
+&lt;!-- Funded by Fraunhofer DISCOVER grant. --&gt;
 </description>
     </item>
     
@@ -78,6 +65,7 @@
 &lt;p&gt;The project homepage can be found &lt;a href=&#34;https://www.maibaiproject.eu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- The project 22HLT05 MAIBAI, started in September 2023, has received funding from the European Partnership on Metrology, co-financed from the European Union’s Horizon Europe Research and Innovation Programme and by the Participating States. Funding for the UK partners is provided by Innovate UK under the Horizon Europe Guarantee Extension. --&gt;
 </description>
     </item>
     
@@ -95,6 +83,7 @@
 &lt;p&gt;Award is &lt;a href=&#34;uploads/Challenge-mevis-team.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;This work was supported by Fraunhofer funding Discover 600725 UltraDeep and Prepare 601100 Theranus.&lt;/p&gt;
 </description>
     </item>
     
@@ -103,7 +92,8 @@
       <link>https://djps.github.io/project/aegeus/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/project/aegeus/</guid>
-      <description></description>
+      <description>&lt;!-- This project is funded by the EU Pathfinder grant agreement no. 101099210 --&gt;
+</description>
     </item>
     
     <item>
@@ -112,11 +102,11 @@
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/project/cosserat/</guid>
       <description>&lt;h2 id=&#34;deformation-of-an-elastic-rod-in-a-magnetic-field&#34;&gt;Deformation of an elastic rod in a magnetic field&lt;/h2&gt;
-&lt;p&gt;This was my PhD which was undertaken at &lt;a href=&#34;https://ucl.ac.uk&#34;&gt;UCL&lt;/a&gt; with &lt;a href=&#34;https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/people/prof-gert-van-der-heijden&#34;&gt;Prof. Gert van der Heijden&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was my PhD which was undertaken at &lt;a href=&#34;https://ucl.ac.uk&#34;&gt;UCL&lt;/a&gt; with &lt;a href=&#34;https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/people/prof-gert-van-der-heijden&#34;&gt;Prof. Gert van der Heijden&lt;/a&gt;. It was funded the EPSRC.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Thesis can be found online &lt;a href=&#34;https://discovery.ucl.ac.uk/id/eprint/15832/&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;https://djps.github.io/publication/thesis/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Journal publications can be found&lt;/p&gt;
+&lt;p&gt;Journal publications can be found here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2008ice/&#34;&gt;Integrability of a conducting elastic rod in a magnetic field&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2009sce/&#34;&gt;Spatial chaos of an extensible conducting rod in a uniform magnetic field&lt;/a&gt;&lt;/li&gt;

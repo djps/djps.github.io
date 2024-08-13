@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 6, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: August 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -286,6 +286,9 @@
   
 
 
+  
+  
+  
   
   
   
@@ -1070,6 +1073,10 @@
                 
                 
                 
+              
+                
+                
+                
                inline-flex items-center">
               Teaching
               <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
@@ -1099,6 +1106,17 @@
               
               href="/docs/numericalanalysis22/intro/intro/">
               Numerical Analysis
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-dropdown-item">
+            <a
+              class="nav-dropdown-link "
+              
+              href="/docs/GradCalcLinAlg24/intro/intro/">
+              Calculus &amp; Linear Algebra
             </a>
           </li>
           
@@ -2260,8 +2278,7 @@ mjx-assistive-mml {
 </p>
 $$
 \left\| \Delta y \right\| \le \sum\limits_{i=1}^{n}\left\| \dfrac{\partial y}{\partial x_i} \right\|\left\| \Delta x_i \right\|
-$$
-<p>
+$$<p>
 where
 $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_i$, thus  ${\left\| \Delta y_i \right\| = \tilde{y}_i - y_i = f \left( \tilde{x}_i \right) - \left( x_i \right)}$.</p>
 
@@ -2314,16 +2331,14 @@ $$
 \begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation*}
-$$
-<p>
+$$<p>
 A number can be written in a nested form:</p>
 $$
 \begin{align*}
 \left(x\right)\_b & = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n \\\
  & = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
 \end{align*}
-$$
-<p>with $a_i \in \mathbb{N}_0$ and $a_i < b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.</p>
+$$<p>with $a_i \in \mathbb{N}_0$ and $a_i < b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.</p>
 <p>For a real number, ${x \in \mathbb{R}}$, write</p>
 $$
 \begin{align*}
@@ -2331,7 +2346,6 @@ x & = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i b^{-
  & = a_n  \ldots a_0 \cdot \alpha_1 \alpha_2 \ldots
 \end{align*}
 $$
-
         </div>
     </div>
 </div>
@@ -2426,13 +2440,11 @@ which at each steps provides an $a_i$ and updates $y$.</li>
 </p>
 $$
 x = \sigma \times f \times b^{t-p}
-$$
-<p>
+$$<p>
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)</p>
 <p><em>Normalized</em> floating point representations with respect to some base $b$, may store a number $x$ as
 </p>
-$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$
-<p>
+$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$<p>
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</p>
 <p>Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.</p>
 
@@ -2457,8 +2469,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digi
         <div class="admonition-content">
             <p>Let $x$ and $y$ be two normalized floating point numbers with ${x > y > 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 </p>
-$$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
-<p>
+$$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$<p>
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.</p>
 
         </div>

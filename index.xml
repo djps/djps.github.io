@@ -224,6 +224,7 @@
 &lt;/div&gt;
 &lt;p&gt;&lt;em&gt;No&lt;/em&gt; supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;Sample questions and solutions can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The pass mark is 45%.&lt;/p&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;del&gt;Moodle&lt;/del&gt; &lt;em&gt;Teams&lt;/em&gt;, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;More details about assignments will be announced in class, but they will be posted &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Late submission will not be possible without a valid reason.&lt;/p&gt;
@@ -313,8 +314,7 @@ $$
 \begin{equation*}
 f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 for some value $\xi \in \left[ a, b \right]$ where
 &lt;/p&gt;
 $$
@@ -322,7 +322,6 @@ $$
 \lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation*}
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -497,8 +496,7 @@ mjx-assistive-mml {
 &lt;/p&gt;
 $$
 \left\| \Delta y \right\| \le \sum\limits_{i=1}^{n}\left\| \dfrac{\partial y}{\partial x_i} \right\|\left\| \Delta x_i \right\|
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where
 $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x}_i$, thus  ${\left\| \Delta y_i \right\| = \tilde{y}_i - y_i = f \left( \tilde{x}_i \right) - \left( x_i \right)}$.&lt;/p&gt;
 
@@ -551,16 +549,14 @@ $$
 \begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 A number can be written in a nested form:&lt;/p&gt;
 $$
 \begin{align*}
 \left(x\right)\_b &amp; = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n \\\
  &amp; = a_0 + b\left( a_1 + b\left( a_2 + b\left( a_3 + \ldots + b a_n\right) \right. \ldots  \right)
 \end{align*}
-$$
-&lt;p&gt;with $a_i \in \mathbb{N}_0$ and $a_i &lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.&lt;/p&gt;
+$$&lt;p&gt;with $a_i \in \mathbb{N}_0$ and $a_i &lt; b$, i.e. ${a_i \in \lbrace 0, \ldots, b-1 \rbrace }$.&lt;/p&gt;
 &lt;p&gt;For a real number, ${x \in \mathbb{R}}$, write&lt;/p&gt;
 $$
 \begin{align*}
@@ -568,7 +564,6 @@ x &amp; = \sum \limits_{i=0}^{n} a_i b^i + \sum \limits_{i=1}^{\infty} \alpha_i 
  &amp; = a_n  \ldots a_0 \cdot \alpha_1 \alpha_2 \ldots
 \end{align*}
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -663,13 +658,11 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;/p&gt;
 $$
 x = \sigma \times f \times b^{t-p}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, may store a number $x$ as
 &lt;/p&gt;
-$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$
-&lt;p&gt;
+$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$&lt;p&gt;
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
 &lt;p&gt;Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.&lt;/p&gt;
 
@@ -694,8 +687,7 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
 &lt;/p&gt;
-$$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$
-&lt;p&gt;
+$$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$&lt;p&gt;
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -734,8 +726,7 @@ a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\
 \vdots &amp;  \\
 a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
 \end{align*}
-$$
-&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where&lt;/p&gt;
+$$&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where&lt;/p&gt;
 $$
 \begin{align*}
 A = \left(
@@ -761,8 +752,7 @@ A = \left(
       \end{array}
       \right),
 \end{align*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1013,14 +1003,12 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;/p&gt;
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
 &lt;/p&gt;
 $$
 U = U_{n-1} \cdots U_2 U_1 A.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1093,12 +1081,10 @@ $$
 &lt;/p&gt;
 $$
 Q x_{k +1}= \left( Q - A \right) x_{k} + b.
-$$
-&lt;p&gt;This is equivalent to&lt;/p&gt;
+$$&lt;p&gt;This is equivalent to&lt;/p&gt;
 $$
 x_{k +1} = \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
-$$
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
+$$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
         &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
@@ -1114,8 +1100,7 @@ $$
 &lt;/p&gt;
 $$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1161,15 +1146,13 @@ where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
 &lt;/p&gt;
 $$
 x_{k +1} = \left(I - A \right) x_{k} + b.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that
 &lt;/p&gt;
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1193,8 +1176,7 @@ $$
 &lt;/p&gt;
 $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1266,8 +1248,7 @@ $$
 \begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1390,12 +1371,10 @@ $$
 &lt;/p&gt;
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
-$$
-&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
+$$&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
 $$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -1601,7 +1580,6 @@ $$
 $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1677,8 +1655,7 @@ $$
 &lt;/p&gt;
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &lt; \delta}$ and ${\left\|  r - x_1 \right\| &lt; \delta}$, then the following holds:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$\lim\limits_{n\rightarrow\infty} \left\|  r - x_n \right\| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$,
@@ -1754,26 +1731,22 @@ and&lt;/li&gt;
 &lt;/p&gt;
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 The sequences converges &lt;strong&gt;super-linearly&lt;/strong&gt; if
 &lt;/p&gt;
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 0
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 and &lt;strong&gt;sub-linearly&lt;/strong&gt; if
 &lt;/p&gt;
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 1.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that
 &lt;/p&gt;
 $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|^q } = \mu
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1838,8 +1811,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;/p&gt;
 $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 $$
 \begin{equation*}
@@ -1852,19 +1824,16 @@ J = \left(
   \end{array}
   \right) \in \mathbb{R}^{n \times n}.
   \end{equation*}
-$$
-&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
+$$&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
 &lt;/p&gt;
 $$
 x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
-$$
-&lt;p&gt;
-where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$&lt;sub&gt;th&lt;/sub&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
+$$&lt;p&gt;
+where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$&lt;sup&gt;th&lt;/sup&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
 &lt;/p&gt;
 $$
 J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2016,16 +1985,13 @@ $$
             &lt;p&gt;&lt;a id=&#34;richardson&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;This is a method for deriving higher order approximations for derivatives from lower order approximations.&lt;/a&gt; Consider a first-order approximation to the derivative, $\varphi\left(h\right)$, such as backwards or forwards differencing, then&lt;/p&gt;
 $$
 f^{\prime}\left( x \right) = \varphi\left(h\right) + a_2 h^2 + a_3 h^3 + \ldots
-$$
-&lt;p&gt;Now evaluate the derivative at ${h=h/2}$, so that&lt;/p&gt;
+$$&lt;p&gt;Now evaluate the derivative at ${h=h/2}$, so that&lt;/p&gt;
 $$
 f^{\prime}\left( x \right) = \varphi \left( h \right) + a_2 \left( \dfrac{h}{2} \right)^2 + a_3 \left( \dfrac{h}{2} \right)^3 + \ldots
-$$
-&lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
+$$&lt;p&gt;Combining the two terms so that the low order term cancel, i.e. via ${f^{\prime}\left( x \right) - 4 f^{\prime}\left( x \right)}$, then a better approximation can be found as&lt;/p&gt;
 $$
 f^{\prime}\left( x \right) = \varphi \left( h \right) - 4 \varphi \left( \dfrac{h}{2} \right) + \mathcal{O}\left(h^3\right).
-$$
-&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
+$$&lt;p&gt;The process can also be applied to second order accurate schemes, such as central differencing, to produce more accurate approximations. The method can also be applied to higher order derivatives.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2051,21 +2017,18 @@ $$
 Then approximate the area under the curve by summing the areas in each subinterval defined as&lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \, \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left( x^{\ast} \right) \quad \textsf{where} \quad x^{\ast} \in \left[x_i, x_{i+1} \right].
-$$
-&lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
+$$&lt;p&gt;If $f$ is continuous, the value of $x_{i}^{\ast}$ may be chosen arbitrarily in the interval $\left[ x_i, x_{i+1} \right]$. Then the &lt;strong&gt;lower&lt;/strong&gt; and &lt;strong&gt;upper Riemann sums&lt;/strong&gt; are given by&lt;/p&gt;
 $$
 \begin{align*}
 L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 so that
 &lt;/p&gt;
 $$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$
-&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by
+$$&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by
 &lt;/p&gt;
 $$
 \begin{align*}
@@ -2073,7 +2036,6 @@ $$
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
 \end{align*}
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2097,14 +2059,12 @@ $$
 &lt;/p&gt;
 $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
 &lt;/p&gt;
 $$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2129,12 +2089,10 @@ $$
 &lt;/p&gt;
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
-$$
-&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
+$$&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
 $$
 \left| \int_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = \dfrac{1}{12} \left| \left(b - a\right) h^2 f^{\prime\prime}\left( \xi \right) \right|
-$$
-&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
+$$&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2159,16 +2117,14 @@ $$
 &lt;/p&gt;
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
 &lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as
 &lt;/p&gt;
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2204,26 +2160,22 @@ R_2^0 &amp;       \\
 \vdots &amp; \\
 R_n^0  &amp;
 \end{array}
-$$
-&lt;p&gt;To evaluate the next set of values, consider the two integrals&lt;/p&gt;
+$$&lt;p&gt;To evaluate the next set of values, consider the two integrals&lt;/p&gt;
 $$
 \begin{align*}
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
-$$
-&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
+$$&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
 &lt;/p&gt;
 $$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&amp;rsquo;s rule. The recurrence formula can be derived
 &lt;/p&gt;
 $$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2260,8 +2212,7 @@ $$
 \begin{equation*}
 I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Can the weights be chosen such that the error in an integral is minimized?&lt;/li&gt;
@@ -2282,8 +2233,7 @@ The above equation is a weighted sum of the values of $f$ at the points $x_{i}$,
             &lt;p&gt;Two real-valued functions $f(x)$ and $g(x)$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; if&lt;/p&gt;
 $$
 \langle f, g \rangle = \int_a^b f(x) g(x) \mathrm{d} x = 0.
-$$
-&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
+$$&lt;p&gt;where $\langle f, g \rangle$ satisfies the conditions to be an inner product.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2317,8 +2267,7 @@ i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 &lt;/p&gt;
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
 &lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
@@ -2346,27 +2295,23 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
 &lt;/p&gt;
 $$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
 &lt;/p&gt;
 $$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
 &lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
 &lt;/p&gt;
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 so that
 &lt;/p&gt;
 $$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2437,14 +2382,12 @@ mjx-assistive-mml {
 &lt;/p&gt;
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 &lt;/p&gt;
 $$
 \Phi \alpha = p
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
 &lt;/p&gt;
 $$
@@ -2454,8 +2397,7 @@ $$
   \vdots &amp; &amp; &amp; \vdots \\\
   \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 
@@ -2480,12 +2422,10 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;If &lt;/p&gt;
-$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
-&lt;p&gt;
+$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$&lt;p&gt;
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 &lt;/p&gt;
-$$\Phi \alpha = p$$
-&lt;p&gt;
+$$\Phi \alpha = p$$&lt;p&gt;
 where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2514,16 +2454,14 @@ $$
 \begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
 &lt;/p&gt;
 $$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2549,14 +2487,12 @@ By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&
 &lt;/p&gt;
 $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
 &lt;/p&gt;
 $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2622,13 +2558,11 @@ $$
             &lt;p&gt;&lt;strong&gt;Aitken&amp;rsquo;s&lt;/strong&gt; algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$&lt;/p&gt;
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
-$$
-&lt;!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. --&gt;
+$$&lt;!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. --&gt;
 &lt;p&gt;The interpolation is achieved by constructing a series of polynomials, evaluated at the ${u=u^{*}}$, where $p_{i}^{k}\left( u \right)$ is given by&lt;/p&gt;
 $$
 p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
-$$
-&lt;p&gt;with initial values $p_i^0 = y_i^{\vphantom{0}}$.&lt;/p&gt;
+$$&lt;p&gt;with initial values $p_i^0 = y_i^{\vphantom{0}}$.&lt;/p&gt;
 $$
 \begin{equation*}
 \begin{array}{lllll}
@@ -2641,8 +2575,7 @@ p\left( u_2 \right) = p_{2}^0 &amp;                       &amp; p_1^2  &amp;  \\
 p\left( u_3 \right) = p_{3}^0 &amp;                       &amp;                        &amp;
 \end{array}
 \end{equation*}
-$$
-&lt;p&gt;where the coefficients are evaluated from left to right.&lt;/p&gt;
+$$&lt;p&gt;where the coefficients are evaluated from left to right.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2709,8 +2642,7 @@ $$
             &lt;p&gt;A spline is said to be a &lt;strong&gt;b-spline&lt;/strong&gt; if it is of the form&lt;/p&gt;
 $$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
-$$
-&lt;p&gt;where $\mathcal{N}^n$ are the &lt;strong&gt;basis spline functions&lt;/strong&gt; of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then&lt;/p&gt;
+$$&lt;p&gt;where $\mathcal{N}^n$ are the &lt;strong&gt;basis spline functions&lt;/strong&gt; of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then&lt;/p&gt;
 $$
 \begin{equation*}
 \mathcal{N}_{i}^{0} \left(u \right) =
@@ -2721,16 +2653,13 @@ $$
 \end{array}
 \right.
 \end{equation*}
-$$
-&lt;p&gt;and&lt;/p&gt;
+$$&lt;p&gt;and&lt;/p&gt;
 $$
 \mathcal{N}_{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)  \mathcal{N}_{i}^{n-1} \left(u \right) + \left( 1 - \alpha_{i+1}^{n-1}\left(u \right)\right)  \mathcal{N}_{i+1}^{n-1} \left(u \right)
-$$
-&lt;p&gt;where&lt;/p&gt;
+$$&lt;p&gt;where&lt;/p&gt;
 $$
 \alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 is a local parameter.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2743,8 +2672,7 @@ is a local parameter.&lt;/p&gt;
 &lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving&lt;/p&gt;
 $$
 \text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$
-&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+$$&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
 &lt;/p&gt;
 $$
 \Phi = \left(
@@ -2754,8 +2682,7 @@ $$
   \mathcal{N}_{0}^{n} \left(u_m\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_m\right)
   \end{array}
   \right).
-$$
-&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
+$$&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -2772,20 +2699,17 @@ $$
 &lt;/p&gt;
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 The minimum is found when
 &lt;/p&gt;
 $$
 \dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 i.e.
 &lt;/p&gt;
 $$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2809,26 +2733,22 @@ $$
 &lt;/p&gt;
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
 &lt;/p&gt;
 $$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 This has a minimum when
 &lt;/p&gt;
 $$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,
 &lt;/p&gt;
 $$
 \Phi^T \Phi \beta = \Phi^T y,
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2946,8 +2866,7 @@ mjx-assistive-mml {
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_n
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -2974,8 +2893,7 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_{n+1}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -3062,8 +2980,7 @@ $$
 &lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
-$$
-&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
+$$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -3081,8 +2998,7 @@ $$
 &lt;/p&gt;
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -3108,17 +3024,14 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
 $$
 y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n  
-$$
-&lt;p&gt;which can be written as&lt;/p&gt;
+$$&lt;p&gt;which can be written as&lt;/p&gt;
 $$
 \tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
-$$
-&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
+$$&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ defined as the &lt;strong&gt;local truncation error&lt;/strong&gt; at step $n$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;consistency error&lt;/strong&gt; is given by ${\tau = \max_n | \tau_n | }$.&lt;/p&gt;
 &lt;p&gt;A method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if $\lim\limits_{h \to 0} \Phi = f$. This means the increment function is a good approximation to the differential equation as the step size tends to zero.&lt;/p&gt;
 
@@ -3145,14 +3058,12 @@ $$
 &lt;/p&gt;
 $$
 \tau_{g,n} = \left| y_n - u_n \right|
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 which is given by
 &lt;/p&gt;
 $$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
 
@@ -3199,19 +3110,16 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
 &lt;/p&gt;
 $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
 &lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by
 &lt;/p&gt;
 $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
-$$
-&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
+$$&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
 $$
 \left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3269,8 +3177,7 @@ $$
 &lt;/p&gt;
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -3297,7 +3204,6 @@ Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal
 $$
 \lbrace h \lambda \in \mathbb{C} \quad \text{such that} \quad  | u_n | \rightarrow 0 \quad \text{as} \quad t_n \rightarrow \infty \rbrace.
 $$
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3364,16 +3270,13 @@ For an initial value problem, the fundamental theorem simply says that if the er
 &lt;p&gt;If an ordinary differential equation is given by ${\dot{y}= f\left( y, t \right)}$, then a Runge-Kutta scheme takes the form&lt;/p&gt;
 $$
 u_{n+1} = u_n + h F\left( t_n, u_n, h; f \right)
-$$
-&lt;p&gt;where $F$ is an increment function given by&lt;/p&gt;
+$$&lt;p&gt;where $F$ is an increment function given by&lt;/p&gt;
 $$
 F\left( t_n, u_n, h; f \right) = \sum\limits_{i=1}^s b_i k_i
-$$
-&lt;p&gt;with $k_i$ defined as&lt;/p&gt;
+$$&lt;p&gt;with $k_i$ defined as&lt;/p&gt;
 $$
 k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \ldots, s
-$$
-&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
+$$&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
 &lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
@@ -3386,13 +3289,11 @@ c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
 \hline
        &amp; b_1     &amp; \ldots &amp; b_s
 \end{array}
-$$
-&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
+$$&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
 &lt;/p&gt;
 $$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
-$$
-&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
+$$&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
 &lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
 &lt;p&gt;The order of an $s$-stage &lt;em&gt;explicit&lt;/em&gt; Runge-Kutta method cannot be greater than $s$. Additionally, there does not exist a $s$-stage explicit Runge-Kutta method with order $s$ if ${s \ge 5}$.&lt;/p&gt;
 &lt;p&gt;The order of an $s$-stage &lt;em&gt;implicit&lt;/em&gt; Runge-Kutta method cannot be greater than $2s$.&lt;/p&gt;
@@ -3400,8 +3301,7 @@ $$
 &lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
 $$
 u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 where
 &lt;/p&gt;
 $$
@@ -3411,8 +3311,7 @@ k_2 &amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\
 k_3 &amp; = f\left( u_n + \dfrac{h}{2} k_2, t_n + \dfrac{h}{2} \right), \\\
 k_4 &amp; = f\left( u_n + h k_3, t_n + h \right).
 \end{align*}
-$$
-&lt;div class=&#34;details admonition Example open&#34;&gt;
+$$&lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
         &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
@@ -3458,8 +3357,7 @@ $$
 &lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$&lt;/p&gt;
 $$
 a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
-$$
-&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
+$$&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
 &lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
@@ -3482,6 +3380,7 @@ Heat Equation
 &lt;p&gt;In addition, this project will combine the data acquired during regeneration to descriptive computational model of the recovery of physiological and metabolic parameters over time, to be combined with the models of test compound metabolization. Predictions obtained from simulations using the computational models will be used in QuaLiPerF to investigate biological and clinical questions driven by the clinical and experimental partners. Ultimately, a better prediction of the recovery of liver function developed in QuaLiPerF will help improve planning of individual surgery.&lt;/p&gt;
 &lt;h2 id=&#34;project-homepage&#34;&gt;Project Homepage&lt;/h2&gt;
 &lt;p&gt;The project homepage can be accessed &lt;a href=&#34;https://qualiperf.de/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- This work was supported by the German Research Foundation (DFG) within the Research Unit Programme FOR 5151 QuaLiPerF by grant number 436883643.--&gt;
 </description>
     </item>
     
@@ -3587,21 +3486,7 @@ They serve as the core numerical building blocks for an introduction to the fini
       <guid>https://djps.github.io/project/comptop/</guid>
       <description>&lt;h2 id=&#34;computational-topology&#34;&gt;Computational Topology&lt;/h2&gt;
 &lt;p&gt;&lt;mark&gt;More details to appear.&lt;/mark&gt;&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
-
-&lt;pre&gt;- Hugo Modules
-  - blox-tailwind
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;mermaid&#34;&gt;graph TD;
-  A--&gt;B;
-  A--&gt;C;
-  B--&gt;D;
-  C--&gt;D;
-&lt;/div&gt;
+&lt;!-- Funded by Fraunhofer DISCOVER grant. --&gt;
 </description>
     </item>
     
@@ -3619,6 +3504,7 @@ They serve as the core numerical building blocks for an introduction to the fini
 &lt;p&gt;The project homepage can be found &lt;a href=&#34;https://www.maibaiproject.eu/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;!-- The project 22HLT05 MAIBAI, started in September 2023, has received funding from the European Partnership on Metrology, co-financed from the European Union’s Horizon Europe Research and Innovation Programme and by the Participating States. Funding for the UK partners is provided by Innovate UK under the Horizon Europe Guarantee Extension. --&gt;
 </description>
     </item>
     
@@ -3636,6 +3522,7 @@ They serve as the core numerical building blocks for an introduction to the fini
 &lt;p&gt;Award is &lt;a href=&#34;uploads/Challenge-mevis-team.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;This work was supported by Fraunhofer funding Discover 600725 UltraDeep and Prepare 601100 Theranus.&lt;/p&gt;
 </description>
     </item>
     
@@ -3644,7 +3531,8 @@ They serve as the core numerical building blocks for an introduction to the fini
       <link>https://djps.github.io/project/aegeus/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/project/aegeus/</guid>
-      <description></description>
+      <description>&lt;!-- This project is funded by the EU Pathfinder grant agreement no. 101099210 --&gt;
+</description>
     </item>
     
     <item>
@@ -3653,11 +3541,11 @@ They serve as the core numerical building blocks for an introduction to the fini
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/project/cosserat/</guid>
       <description>&lt;h2 id=&#34;deformation-of-an-elastic-rod-in-a-magnetic-field&#34;&gt;Deformation of an elastic rod in a magnetic field&lt;/h2&gt;
-&lt;p&gt;This was my PhD which was undertaken at &lt;a href=&#34;https://ucl.ac.uk&#34;&gt;UCL&lt;/a&gt; with &lt;a href=&#34;https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/people/prof-gert-van-der-heijden&#34;&gt;Prof. Gert van der Heijden&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was my PhD which was undertaken at &lt;a href=&#34;https://ucl.ac.uk&#34;&gt;UCL&lt;/a&gt; with &lt;a href=&#34;https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/people/prof-gert-van-der-heijden&#34;&gt;Prof. Gert van der Heijden&lt;/a&gt;. It was funded the EPSRC.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Thesis can be found online &lt;a href=&#34;https://discovery.ucl.ac.uk/id/eprint/15832/&#34;&gt;here&lt;/a&gt; or &lt;a href=&#34;https://djps.github.io/publication/thesis/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Journal publications can be found&lt;/p&gt;
+&lt;p&gt;Journal publications can be found here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2008ice/&#34;&gt;Integrability of a conducting elastic rod in a magnetic field&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2009sce/&#34;&gt;Spatial chaos of an extensible conducting rod in a uniform magnetic field&lt;/a&gt;&lt;/li&gt;
@@ -3724,16 +3612,14 @@ $$
 \begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that
 &lt;/p&gt;
 $$
 \begin{equation*}
 \sin \left( x \right) \approx x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \dfrac{x^7}{7!}  \ldots
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Note that in this example, only odd powers of $x$ contribute to the expansion.&lt;/p&gt;
 &lt;p&gt;First import the tools needed&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
@@ -3909,8 +3795,7 @@ A = \left(
     \end{array}
     \right).
 \end{equation*}
-$$
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
+$$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;5.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Check for positive definiteness and symmetry&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Matrix is pos. def. &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linalg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eigvals&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
@@ -4005,8 +3890,7 @@ C = \left(
   \end{array}
   \right)
 \end{equation*}
-$$
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
+$$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Compute the eigenvalues and eigenvectors of the matrix (all real in this case), so that $C v = e v$&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linalg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Eigenvalues are&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
@@ -4048,8 +3932,7 @@ $$
 \begin{equation*}
 A x = b
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A \right) x_k + Q^{-1}b$, where you have to choose an appropriate $Q$ that is easy to invert and close to the matrix $A$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Jacobi&lt;/strong&gt;: $Q$ is diagonal matrix of $A$.&lt;/li&gt;
@@ -4070,8 +3953,7 @@ A = \left(
   \end{array}
   \right)
 \end{equation*}
-$$
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+$$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;3.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;2.&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]])&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Right hand side vector $b=\left( 1, 8, -5 \right)^T$.&lt;/p&gt;
@@ -4093,8 +3975,7 @@ x = \left(
   3 \\\
   -1 \end{array} \right).
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 Also note that the matrix is diagonally dominant. It has eigenvalues $\lambda = 1$, $\frac{1}{2}$ and $\frac{1}{4}$.&lt;/p&gt;
 &lt;p&gt;For the Jacobi method, $Q$ is the inverse of diagonal matrix&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Q1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;diag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;diag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
@@ -4424,8 +4305,7 @@ $$
 \begin{equation*}
 e^{x^2 + 1} - 2.718 + 0.16969 x - 4.07799 x^2 + 3.3653 x^3 - 4.1279 x^4
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a can define a function &lt;code&gt;gprime(x)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To find roots and confirm if it is a maxima, we need &lt;code&gt;gdoubleprime(x)&lt;/code&gt;, as $g(x)$ is at maximum if $g^{\prime\prime}(x)$ is negative&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
@@ -4658,8 +4538,7 @@ $$
 \begin{align}
 \int_0^1 e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}. \nonumber
 \end{align}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 First import the tools needed&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
@@ -4681,8 +4560,7 @@ $$
 \begin{align}
 \int_a^b f(x) \, \mathrm{d}x \approx \sum\limits_{k=1}^{M} \dfrac{f\left( x_{k-1}\right) + f\left(x_{k}\right)}{2} \Delta x_{k} \quad \textsf{where} \quad x_0 = a \quad \textsf{and} \quad x_M = b. \nonumber
 \end{align}
-$$
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;fig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplots&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+$$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;fig&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ax&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplots&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;fig&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tight_layout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;fig&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subplots_adjust&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.99&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zeros&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,))&lt;/span&gt;
@@ -4818,8 +4696,7 @@ $$
 \begin{equation*}
 y^{\prime}\left(t\right) = a y\left(t\right) \quad \textsf{with} \quad a=-2 \quad \textsf{and} \quad y\left(t=0\right) = y_0 = 1.
 \end{equation*}
-$$
-&lt;p&gt;
+$$&lt;p&gt;
 The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
 &lt;p&gt;Explicit schemes have certain conditions on stability for these types of equations (and in general).&lt;/p&gt;
 &lt;p&gt;Implicit schemes are unconditionally stable for this equation (and also in general are more stable), but are more computationally costly.&lt;/p&gt;

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 6, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: August 13, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -286,6 +286,9 @@
   
 
 
+  
+  
+  
   
   
   
@@ -1070,6 +1073,10 @@
                 
                 
                 
+              
+                
+                
+                
                inline-flex items-center">
               Teaching
               <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
@@ -1099,6 +1106,17 @@
               
               href="/docs/numericalanalysis22/intro/intro/">
               Numerical Analysis
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-dropdown-item">
+            <a
+              class="nav-dropdown-link "
+              
+              href="/docs/GradCalcLinAlg24/intro/intro/">
+              Calculus &amp; Linear Algebra
             </a>
           </li>
           
@@ -2241,14 +2259,12 @@ mjx-assistive-mml {
 </p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$
-<p>
+$$<p>
 so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
 </p>
 $$
 \Phi \alpha = p
-$$
-<p>
+$$<p>
 where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the <strong>collocation matrix</strong>, whose entries are given by the polynomials evaluated at the node points
 </p>
 $$
@@ -2258,8 +2274,7 @@ $$
   \vdots & & & \vdots \\\
   \varphi_0 (u_n) & \cdots & \cdots & \varphi_n (u_n) \end{array} \right).
 \end{equation*}
-$$
-<p>
+$$<p>
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
 <p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 
@@ -2284,12 +2299,10 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
     <div class="details-content">
         <div class="admonition-content">
             <p>If </p>
-$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$
-<p>
+$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$<p>
 So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
 </p>
-$$\Phi \alpha = p$$
-<p>
+$$\Phi \alpha = p$$<p>
 where $\Phi$ is the <strong>Vandermonde matrix</strong>.</p>
 
         </div>
@@ -2318,16 +2331,14 @@ $$
 \begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation*}
-$$
-<p>
+$$<p>
 where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
 </p>
 $$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
-$$
-<p>
+$$<p>
 By construction, <em>the collocation matrix is the identity matrix</em>. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.</p>
 
         </div>
@@ -2353,14 +2364,12 @@ By construction, <em>the collocation matrix is the identity matrix</em>. Thus, t
 </p>
 $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$
-<p>
+$$<p>
 By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
 </p>
 $$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
-
         </div>
     </div>
 </div>
@@ -2426,13 +2435,11 @@ $$
             <p><strong>Aitken&rsquo;s</strong> algorithm is an iterative process for evaluating Lagrange interpolation polynomials at an arbitrary point, $u^*$, without explicitly constructing them. If the interpolating polynomial is given by $p$, and is derived from $n$ data points $(u_i, y_i)$ for $i=0,\ldots,n$</p>
 $$
 p\left( u \right) = \sum\limits_{i=0}^{n} p_{i}^{n} l_i^{n}\left( u \right)
-$$
-<!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. -->
+$$<!-- Let $p_{i,j}$ be polynomials of degree $j − i$ which pass through the points $\left(u_k, y_k\right)$ for $k = i, i + 1, \ldots, j$. -->
 <p>The interpolation is achieved by constructing a series of polynomials, evaluated at the ${u=u^{*}}$, where $p_{i}^{k}\left( u \right)$ is given by</p>
 $$
 p_i^{k+1}\left(u\right) = p_i^k\left(u\right) \left( \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right) + p_{n-k}^k\left(u\right) \left( 1- \dfrac{u - u_{n-k}}{u_i - u_{n-k}} \right)
-$$
-<p>with initial values $p_i^0 = y_i^{\vphantom{0}}$.</p>
+$$<p>with initial values $p_i^0 = y_i^{\vphantom{0}}$.</p>
 $$
 \begin{equation*}
 \begin{array}{lllll}
@@ -2445,8 +2452,7 @@ p\left( u_2 \right) = p_{2}^0 &                       & p_1^2  &  \\\
 p\left( u_3 \right) = p_{3}^0 &                       &                        &
 \end{array}
 \end{equation*}
-$$
-<p>where the coefficients are evaluated from left to right.</p>
+$$<p>where the coefficients are evaluated from left to right.</p>
 
         </div>
     </div>
@@ -2513,8 +2519,7 @@ $$
             <p>A spline is said to be a <strong>b-spline</strong> if it is of the form</p>
 $$
 s\left(u\right) = \sum\limits_{i=0}^{m} \alpha_{i} \mathcal{N}_{i}^{n} \left(u \right)
-$$
-<p>where $\mathcal{N}^n$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then</p>
+$$<p>where $\mathcal{N}^n$ are the <strong>basis spline functions</strong> of degree $n$ with minimal support. (That is they are positive in the domain and zero outside). The functions are defined recursively. Let $u_i$ be the set of nodes ${u_0, u_1, \ldots, u_m}$, then</p>
 $$
 \begin{equation*}
 \mathcal{N}_{i}^{0} \left(u \right) =
@@ -2525,16 +2530,13 @@ $$
 \end{array}
 \right.
 \end{equation*}
-$$
-<p>and</p>
+$$<p>and</p>
 $$
 \mathcal{N}_{i}^{n} \left(u \right) = \alpha_i^{n-1}\left(u \right)  \mathcal{N}_{i}^{n-1} \left(u \right) + \left( 1 - \alpha_{i+1}^{n-1}\left(u \right)\right)  \mathcal{N}_{i+1}^{n-1} \left(u \right)
-$$
-<p>where</p>
+$$<p>where</p>
 $$
 \alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
-$$
-<p>
+$$<p>
 is a local parameter.</p>
 
         </div>
@@ -2547,8 +2549,7 @@ is a local parameter.</p>
 <p>Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving</p>
 $$
 \text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$
-<p>which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
+$$<p>which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
 </p>
 $$
 \Phi = \left(
@@ -2558,8 +2559,7 @@ $$
   \mathcal{N}_{0}^{n} \left(u_m\right) & \cdots & \mathcal{N}_{m}^{n} \left(u_m\right)
   \end{array}
   \right).
-$$
-<h2 id="least-squares-approximation">Least-Squares Approximation</h2>
+$$<h2 id="least-squares-approximation">Least-Squares Approximation</h2>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2576,20 +2576,17 @@ $$
 </p>
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$
-<p>
+$$<p>
 The minimum is found when
 </p>
 $$
 \dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$
-<p>
+$$<p>
 i.e.
 </p>
 $$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
-
         </div>
     </div>
 </div>
@@ -2613,26 +2610,22 @@ $$
 </p>
 $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$
-<p>
+$$<p>
 where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
 </p>
 $$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$
-<p>
+$$<p>
 This has a minimum when
 </p>
 $$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$
-<p>
+$$<p>
 Thus, the weights $\beta$ can be determined by solving the <strong>normal equations</strong>,
 </p>
 $$
 \Phi^T \Phi \beta = \Phi^T y,
-$$
-<p>
+$$<p>
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.</p>
 
         </div>
