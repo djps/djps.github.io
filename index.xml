@@ -13,6 +13,267 @@
     </image>
     
     <item>
+      <title>Course Details Calculus and Linear Algebra for Graduate Students MDE-MET-01</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
+      <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;p&gt;Lectures will take place in autumn 2024&lt;/p&gt;
+&lt;!-- The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.
+
+All information regarding scheduling, as well as a link to this site, can be found on CampusNet.
+
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A tutorial will be held on Teams on Thursdays at 20:45.&lt;/span&gt;
+&lt;/div&gt;
+
+Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
+&lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
+&lt;p&gt;Read the syllabus.&lt;/p&gt;
+&lt;h2 id=&#34;content-and-educational-aims&#34;&gt;Content and Educational Aims&lt;/h2&gt;
+&lt;p&gt;This module offers a highly structured introduction to the fundamentals of two major pillars of mathematical modelling and analysis: single and multivariable calculus on the one hand and linear algebra on the other.&lt;/p&gt;
+&lt;p&gt;It is a gateway for graduate students who have not been exposed to the topics so far, or who would benefit from a refresher.&lt;/p&gt;
+&lt;p&gt;Topics from calculus include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sequences&lt;/li&gt;
+&lt;li&gt;series&lt;/li&gt;
+&lt;li&gt;limits&lt;/li&gt;
+&lt;li&gt;derivatives&lt;/li&gt;
+&lt;li&gt;Taylor series&lt;/li&gt;
+&lt;li&gt;integrals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;as well as topics in linear algebra&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vectors&lt;/li&gt;
+&lt;li&gt;matrices&lt;/li&gt;
+&lt;li&gt;determinants&lt;/li&gt;
+&lt;li&gt;eigenvalues&lt;/li&gt;
+&lt;li&gt;eigenvectors&lt;/li&gt;
+&lt;li&gt;scalar products&lt;/li&gt;
+&lt;li&gt;norms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This course will focus on practical experience rather than on mathematical rigor.&lt;/p&gt;
+&lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
+&lt;p&gt;Upon completion of this module, students will be able to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;apply the fundamental concepts of calculus and linear algebra in structured situations&lt;/li&gt;
+&lt;li&gt;understand and use vectors and matrices, calculate determinants, eigenvalues and eigenvectors in simple cases&lt;/li&gt;
+&lt;li&gt;calculate derivatives and simple integrals&lt;/li&gt;
+&lt;li&gt;explain the importance of the methods of calculus and linear algebra in problems arising from applications&lt;/li&gt;
+&lt;li&gt;understand the methods of calculus and linear algebra used in more advanced modules as well as in scientific literature.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;indicative-literature&#34;&gt;Indicative Literature&lt;/h2&gt;
+&lt;p&gt;There is no primary or required book, but there are many suitable books, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Linear Algebra&lt;/em&gt;&amp;rdquo;, G. Strang (2016) Wellesley-Cambridge Press, 5&lt;sup&gt;th&lt;/sup&gt; edition ISBN: 978-09802327-7-6.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+## Knowledge, Abilities, or Skills
+
+  * Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations
+
+  * Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations
+
+  * Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.
+
+  * Some examples will be presented as [python notebooks](/docs/numericalmethods24/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
+--&gt;
+&lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The module is a mandatory elective module of the Data Engineering MSc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This module introduces and refreshes the essential calculus and linear algebra required in most of the modules of the data engineering program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is a placement test offered in the orientation week before the start of the first semester to help all students to find out if they need to take this remedial course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
+&lt;p&gt;The following topics will be covered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vectors. Addition of vectors and multiplication by a scalar. Linear combinations. Lengths and dot products.&lt;/li&gt;
+&lt;li&gt;Matrices. Gaussian elimination&lt;/li&gt;
+&lt;li&gt;Vector spaces, subspaces, column space, span, linear independence, basis. The nullspace of a matrix.&lt;/li&gt;
+&lt;li&gt;Basis of the nullspace and the column space via Gaussian elimination. Free columns and pivot columns. All solutions of a system of linear equations.&lt;/li&gt;
+&lt;li&gt;Rank of a matrix. Sum of the dimensions of the nullspace and the column space. Multiplication of matrices. Inverse of a matrix. Finding the inverse using Gaussian elimination.&lt;/li&gt;
+&lt;li&gt;Orthogonality. Orthonormal Bases and Gram-Schmidt&lt;/li&gt;
+&lt;li&gt;Projections. Determinants.&lt;/li&gt;
+&lt;li&gt;Eigenvalues and eigenvectors. Diagonalization of a matrix&lt;/li&gt;
+&lt;li&gt;Symmetric matrices. Applications: Graphs and Internet search engines&lt;/li&gt;
+&lt;li&gt;Principal Component Analysis. Derivatives, tangent lines, optimization problems&lt;/li&gt;
+&lt;li&gt;Higher order derivatives, graph sketching. Taylor series&lt;/li&gt;
+&lt;li&gt;Functions of several variables. Partial derivatives. Taylor series. Optimization problems. Positive/negative definite matrices.&lt;/li&gt;
+&lt;li&gt;Integrals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
+&lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;gantt
+  dateFormat   MM-DD
+  axisFormat   %m-%d
+
+  title Provisional Schedule
+
+  section  Linear Algebra
+  Vectors                          :a1,  09-01, 1w
+  Matrices                         :a1b, 09-08, 1w
+
+  section  Equations
+  Linear Equations 1               :a2,  09-14, 3w
+  Nonlinear Equations              :a2b, 10-02, 1w
+  Linear Equations 2               :a5,  10-17, 3w
+
+  section  Approximations
+  Interpolation                    :a3,  11-07, 2w
+  Integration                      :a4,  12-03, 2w
+
+  section  Integrals
+  Ordinary Differential Equations  :a6,  01-02, 2w
+
+  section  Summary
+  Summary                          :active, a7,  01-15, 1w
+&lt;/div&gt;
+&lt;!--
+### Structure
+
+The course content has the following structure:
+
+```markmap
+- Linear Algebra
+  - Vectors
+    - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
+    - [Number Representations](docs/numericalmethods24/part1/number-representations/)
+  - Algebraic Equations
+    - Linear Equations
+      - [Direct Methods](/docs/numericalmethods24/part1/linear-equations/#direct-methods)
+        - Gaussian Elimination
+        - Partial Pivoting
+        - LU Decomposition
+        - Cholesky Decomposition
+      - [Iterative Methods](/docs/numericalmethods24/part1/linear-equations/#indirect-methods)
+        - Jacobi
+        - Gauss-Seidel
+        - SOR
+    - [Nonlinear Equations](/docs/numericalmethods24/part1/nonlinear-equations/)
+      - Bisection Method
+      - Newton Method
+      - Secant Method
+  - Approximations
+    - [Interpolation](/docs/numericalmethods24/part2/interpolation/)
+      - Polynomial
+      - Lagrange
+      - Newton
+      - $b$-splines
+    - [Integration](/docs/numericalmethods24/part2/integration/#numerical-integration)
+      - Simpson
+      - Trapezium
+      - Romberg Algorithm
+      - Gaussian Quadrature
+  - [Differential Equations](/docs/numericalmethods24/part3/odes/)
+    - Difference Schemes
+    - Ordinary Differential Equations
+    - Partial Differential Equations
+```
+
+--&gt;
+&lt;h2 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Examination Type:&lt;/td&gt;
+&lt;td&gt;Module examination&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Assessment Type:&lt;/td&gt;
+&lt;td&gt;Written examination&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Scope:&lt;/td&gt;
+&lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Duration:&lt;/td&gt;
+&lt;td&gt;120 min&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Weight:&lt;/td&gt;
+&lt;td&gt;100%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--
+
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Thursday 23 May between 12:30 and 14:30 in SCC - Hall 1-2 and 3-4&lt;/strong&gt;.&lt;/span&gt;
+&lt;/div&gt;
+--&gt;
+&lt;p&gt;&lt;em&gt;No&lt;/em&gt; supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
+&lt;p&gt;Sample questions and solutions will be uploaded on this site.&lt;/p&gt;
+&lt;p&gt;The pass mark is 45%.&lt;/p&gt;
+&lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt;, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
+&lt;p&gt;More details about assignments will be announced in class, but they will be posted on this site.&lt;/p&gt;
+&lt;p&gt;Late submission will not be possible without a valid reason.&lt;/p&gt;
+&lt;!--
+1 Feb
+7, 8
+14, 15
+21, 22
+28, 29
+6, 7 March
+13, 14
+20, 21
+3, 4 April
+10, 11
+17, 18
+24, 25 - linear algebra
+29 - interpolation
+2 May - odes
+10 May - odes
+15 May  revision
+
+https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
+https://francisbach.com/richardson-extrapolation/
+https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
+--&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Course Details Numerical Methods JTMS-MAT-13</title>
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
