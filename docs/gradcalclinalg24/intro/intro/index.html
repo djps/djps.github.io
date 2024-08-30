@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: August 28, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: August 30, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-08-08T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-08-28T11:53:31&#43;02:00">
+    <meta property="article:modified_time" content="2024-08-30T21:40:43&#43;02:00">
   
 
   
@@ -756,6 +756,34 @@
 
 
 
+
+
+<script defer src="/js/mermaid.bundle.addbbabb71331768410cfb03a610179690ff1dfd413519d34219c06a8fd39202.js" integrity="sha256-rdu6u3EzF2hBDPsDphAXlpD/Hf1BNRnTQhnAao/TkgI="></script>
+
+
+
+
+<style>
+  .markmap > svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<script>
+  window.markmap = {
+    autoLoader: {
+      manual: false,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+    },
+  };
+</script>
+
+
+<script defer src="/dist/lib/markmap/index.min.c9d7aae44c6040009be2304689eae39673e6614f1a92d8f4a69f581bed004b9b.js" integrity="sha256-ydeq5ExgQACb4jBGierjlnPmYU8aktj0pp9YG&#43;0AS5s="></script>
 
 
 
@@ -2580,6 +2608,12 @@
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#course-outline">Course Outline</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#itinerary">Itinerary</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#structure">Structure</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#assessment">Assessment</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
@@ -2635,7 +2669,7 @@
         <h1>Course Details: Calculus and Linear Algebra for Graduate Students MDE-MET-01</h1>
         <p>This site will be the primary source of course information.</p>
 <h2 id="lectures">Lectures</h2>
-<p>Lectures will take place in autumn 2024</p>
+<p>Lectures will take place in autumn 2024, the lectures will take place on Wednesday mornings 9:45-11:00 and 11:15-12:30 at EH-4 Seminar (East Hall 4 Seminar Room)</p>
 <!-- The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.
 
 All information regarding scheduling, as well as a link to this site, can be found on CampusNet.
@@ -2722,22 +2756,27 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). -->
 <li>Optimization problems. Positive/negative definite matrices</li>
 <li>Integrals</li>
 </ul>
-<!--
-### Itinerary
-
-Provisionally, the course will run as follows
-
-```mermaid
-gantt
+<h3 id="itinerary">Itinerary</h3>
+<p>Provisionally, the course will run as follows</p>
+<div class="mermaid">gantt
   dateFormat   MM-DD
   axisFormat   %m-%d
 
   title Provisional Schedule
 
   section  Linear Algebra
-  Vectors                          :a1,  09-01, 1w
-  Matrices                         :a1b, 09-08, 1w
+  Vectors                          :a1a,  09-04, 1w
+  Matrices                         :a1b,  09-11, 1w
+  Linear equations                 :a1c,  10-18, 2w
+  Vector Spaces                    :a1d,  11-02, 1w
+  Eigenvalues                      :a1e,  11-09, 2w
 
+  section  Calculus
+  Single Variables                 :a2a, 11-15, 1w
+  Taylor Series                    :a2b, 11-22, 1w
+  Multiple Variables               :a2c, 11-29, 1w
+</div>
+<!--
   section  Equations
   Linear Equations 1               :a2,  09-14, 3w
   Nonlinear Equations              :a2b, 10-02, 1w
@@ -2752,33 +2791,25 @@ gantt
 
   section  Summary
   Summary                          :active, a7,  01-15, 1w
-```
+
 -->
+<h3 id="structure">Structure</h3>
+<p>The course content has the following structure:</p>
+<div class="markmap" style="height: 500px;">
+
+<pre>- Linear Algebra
+  - [Vectors](docs/gradcalcalg24/part1/vectors/)
+  - [Matrices](docs/gradcalcalg24/part1/matrices/)
+  - [Linear Equations](/docs/gradcalcalg24/part1/linear-equations)
+  - [Vector Spaces](/docs/gradcalcalg24/part1/spaces)
+  - [Eigenvalues & Eigenvectors](/docs/gradcalcalg24/part1/eigen)
+- Calculus
+  - [Single variables](/docs/gradcalcalg24/part2/one-variable)
+  - [Taylor Series](/docs/gradcalcalg24/part2/taylor)
+  - [Single variables](/docs/gradcalcalg24/part2/many-variables)</pre>
+</div>
+
 <!--
-### Structure
-
-The course content has the following structure:
-
-```markmap
-- Linear Algebra
-  - Vectors
-    - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
-    - [Number Representations](docs/numericalmethods24/part1/number-representations/)
-  - Algebraic Equations
-    - Linear Equations
-      - [Direct Methods](/docs/numericalmethods24/part1/linear-equations/#direct-methods)
-        - Gaussian Elimination
-        - Partial Pivoting
-        - LU Decomposition
-        - Cholesky Decomposition
-      - [Iterative Methods](/docs/numericalmethods24/part1/linear-equations/#indirect-methods)
-        - Jacobi
-        - Gauss-Seidel
-        - SOR
-    - [Nonlinear Equations](/docs/numericalmethods24/part1/nonlinear-equations/)
-      - Bisection Method
-      - Newton Method
-      - Secant Method
   - Approximations
     - [Interpolation](/docs/numericalmethods24/part2/interpolation/)
       - Polynomial
@@ -2794,8 +2825,6 @@ The course content has the following structure:
     - Difference Schemes
     - Ordinary Differential Equations
     - Partial Differential Equations
-```
-
 -->
 <h2 id="assessment">Assessment</h2>
 <h3 id="examination-type">Examination Type</h3>
@@ -2900,9 +2929,9 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-08-28T11:53:31.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-08-30T21:40:43.000Z">
     <span>Last updated on</span>
-    Aug 28, 2024</time>
+    Aug 30, 2024</time>
       
       
   
