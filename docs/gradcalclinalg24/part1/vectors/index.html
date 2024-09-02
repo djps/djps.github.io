@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-02T12:24:38&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-02T12:46:10&#43;02:00">
   
 
   
@@ -286,6 +286,7 @@
   
 
 
+  
   
   
   
@@ -1531,6 +1532,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part1/matrices/"
+    
+  >Matrices
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/notebooks/"
     
   >Notebooks
@@ -2133,6 +2142,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part1/matrices/"
+    
+  >Matrices
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/notebooks/"
     
   >Notebooks
@@ -2555,11 +2572,15 @@
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            Given some $k$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their <strong>linear combination</strong> is an expression of the form
+            <p>Given some $n$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their <strong>linear combination</strong> is an expression of the form
+</p>
+$$
 \begin{equation*}
 a_1 \vec{v}_1 + a_2 \vec{v}_2 + \ldots + a_k \vec{v}_k
 \end{equation*}
-where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.
+$$<p>
+where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.</p>
+
         </div>
     </div>
 </div>
@@ -2596,17 +2617,22 @@ The result is a scalar.</p>
 
 
 <p>The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.</p>
-<p>A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \slash \left| \vec{v} \right|$.</p>
+<p>A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$.</p>
 <p>One can show that, for vectors $\vec{a}, \vec{b} \in\mathbb{R}^2$, then
+</p>
+$$
 \begin{equation*}
 \vec{a} \cdot \vec{b} = \left| \vec{a} \right|  \left| \vec{b} \right|  \cos\theta
 \end{equation*}
+$$<p>
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.</p>
 <p>The angle between two vectors is given by
+</p>
+$$
 \begin{equation*}
-\cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
-\end{equation*}</p>
-<div class="details admonition Definition open">
+ \cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
+\end{equation*}
+$$<div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
         <span class="flex pr-3 pt-1">
@@ -2621,10 +2647,8 @@ Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or per
             <p>The Cauchy-Schwarz inequality states that the magnitude of the between two vectors is always less than or equal to the product of the magnitudes of the two vectors, i.e.
 </p>
 $$
-\left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|
-$$<p>
-This</p>
-
+\left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|.
+$$
         </div>
     </div>
 </div>
@@ -2662,7 +2686,7 @@ It can be derived from the Cauchy-Schwarz inequality.</p>
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-02T12:24:38.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-02T12:46:10.000Z">
     <span>Last updated on</span>
     Sep 2, 2024</time>
       
@@ -2695,6 +2719,21 @@ It can be derived from the Cauchy-Schwarz inequality.</p>
       
     </div>
     <div class="">
+      
+        <a class="group flex text-right no-underline" href="/docs/gradcalclinalg24/part1/matrices/">
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Matrices</span
+            >
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+            </span>
+          </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
+        </a>
       
     </div>
   </div>

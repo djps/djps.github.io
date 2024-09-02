@@ -740,11 +740,15 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            Given some $k$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their &lt;strong&gt;linear combination&lt;/strong&gt; is an expression of the form
+            &lt;p&gt;Given some $n$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their &lt;strong&gt;linear combination&lt;/strong&gt; is an expression of the form
+&lt;/p&gt;
+$$
 \begin{equation*}
 a_1 \vec{v}_1 + a_2 \vec{v}_2 + \ldots + a_k \vec{v}_k
 \end{equation*}
-where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.
+$$&lt;p&gt;
+where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -781,17 +785,22 @@ The result is a scalar.&lt;/p&gt;
 
 
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
-&lt;p&gt;A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \slash \left| \vec{v} \right|$.&lt;/p&gt;
+&lt;p&gt;A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$.&lt;/p&gt;
 &lt;p&gt;One can show that, for vectors $\vec{a}, \vec{b} \in\mathbb{R}^2$, then
+&lt;/p&gt;
+$$
 \begin{equation*}
 \vec{a} \cdot \vec{b} = \left| \vec{a} \right|  \left| \vec{b} \right|  \cos\theta
 \end{equation*}
+$$&lt;p&gt;
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
 &lt;p&gt;The angle between two vectors is given by
+&lt;/p&gt;
+$$
 \begin{equation*}
-\cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
-\end{equation*}&lt;/p&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
+ \cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
+\end{equation*}
+$$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
         &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
@@ -806,10 +815,8 @@ Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or per
             &lt;p&gt;The Cauchy-Schwarz inequality states that the magnitude of the between two vectors is always less than or equal to the product of the magnitudes of the two vectors, i.e.
 &lt;/p&gt;
 $$
-\left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|
-$$&lt;p&gt;
-This&lt;/p&gt;
-
+\left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|.
+$$
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -844,6 +851,27 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
 
 
 </description>
+    </item>
+    
+    <item>
+      <title>Matrices</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</guid>
+      <description>&lt;p&gt;A matrix is a rectangular array of numbers. A matrix, $A$, with $m$ rows and ${n}$ columns is called an ${m\times n}$ matrix. If all the entries are real numbers, the matrix is said to $A \in\mathbb{R}^{n \times m}$.&lt;/p&gt;
+&lt;p&gt;The entry in the $i^{\text{th}}$ row and $j^{\text{th}}$ column of the matrix $A$ is denoted by $a_{ij}$ or $a_{i,j}$, so the matrix is written as&lt;/p&gt;
+$$
+\begin{align*}
+A = \left(
+  \begin{array}{cccc}
+  a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\
+  a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\
+  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+  a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}
+  \end{array}
+  \right)
+\end{align*}
+$$</description>
     </item>
     
     <item>
