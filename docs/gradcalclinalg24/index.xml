@@ -121,7 +121,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Vector Spaces                    :a1d,  09-30, 1w
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Break                            :crit, 10-07, 1w
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Vector Spaces                    :a1e,  10-14, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Eigenvalues                      :a1f,  10-21, 2w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Matrices &amp;amp; Eigenvalues           :a1f,  10-21, 3w
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Calculus
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Single Variables                 :a2c,  11-11, 1w
@@ -241,6 +241,134 @@ https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002
 https://francisbach.com/richardson-extrapolation/
 https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
 --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vectors</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part1/vectors/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part1/vectors/</guid>
+      <description>&lt;h2 id=&#34;notation&#34;&gt;Notation&lt;/h2&gt;
+&lt;p&gt;Denote $\mathbb{R}$ as the set of all real numbers and $\mathbb{R}^N$ as the set of all vectors with $N$ coordinates, whose entries are real numbers.&lt;/p&gt;
+&lt;p&gt;Vectors are denoted by $\boldsymbol{v}$ or $\vec{v}$.&lt;/p&gt;
+&lt;p&gt;The vector whose every entry is zero is called the zero vector.&lt;/p&gt;
+&lt;p&gt;But note that if $\vec{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\vec{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\vec{v} \neq \vec{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Linear Combinations&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            Given some $k$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their &lt;strong&gt;linear combination&lt;/strong&gt; is an expression of the form
+\begin{equation*}
+a_1 \vec{v}_1 + a_2 \vec{v}_2 + \ldots + a_k \vec{v}_k
+\end{equation*}
+where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Dot Product&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For two vectors $\vec{a}$, $\vec{b} \in \mathbb{R}^{n}$, where $\vec{a}= \left(a_1, a_2, \ldots, a_n \right)$, the &lt;strong&gt;dot product&lt;/strong&gt; of the two vectors is given by
+&lt;/p&gt;
+$$
+\begin{equation*}
+\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + \ldots a_n b_n.
+\end{equation*}
+$$&lt;p&gt;
+The result is a scalar.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
+&lt;p&gt;A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \slash \left| \vec{v} \right|$.&lt;/p&gt;
+&lt;p&gt;One can show that, for vectors $\vec{a}, \vec{b} \in\mathbb{R}^2$, then
+\begin{equation*}
+\vec{a} \cdot \vec{b} = \left| \vec{a} \right|  \left| \vec{b} \right|  \cos\theta
+\end{equation*}
+Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
+&lt;p&gt;The angle between two vectors is given by
+\begin{equation*}
+\cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
+\end{equation*}&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Cauchy Schwarz Inequality&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The Cauchy-Schwarz inequality states that the magnitude of the between two vectors is always less than or equal to the product of the magnitudes of the two vectors, i.e.
+&lt;/p&gt;
+$$
+\left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|
+$$&lt;p&gt;
+This&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Triangle Inequality&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The triangle inequality states that the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side. Formally, this is expressed as
+&lt;/p&gt;
+$$
+\left| \vec{v} + \vec{w} \right| \leq \left| \vec{v} \right| + \left| \vec{w} \right|.
+$$&lt;p&gt;
+It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 </description>
     </item>
     
