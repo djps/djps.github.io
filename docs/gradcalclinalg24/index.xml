@@ -133,8 +133,8 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Linear Algebra
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - [Vectors](/docs/gradcalcalg24/part1/vectors)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - [Matrices](/docs/gradcalcalg24/part1/matrices)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - [Vectors](/docs/gradcalcalg24/part1/vectors/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - [Matrices](/docs/gradcalcalg24/part1/matrices/)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Linear Equations
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Vector Spaces
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Matrices &amp;amp; Eigenvalues
@@ -253,7 +253,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 &lt;p&gt;Denote $\mathbb{R}$ as the set of all real numbers and $\mathbb{R}^N$ as the set of all vectors with $N$ coordinates, whose entries are real numbers.&lt;/p&gt;
 &lt;p&gt;Vectors are denoted by $\boldsymbol{v}$ or $\vec{v}$.&lt;/p&gt;
 &lt;p&gt;The vector whose every entry is zero is called the zero vector.&lt;/p&gt;
-&lt;p&gt;But note that if $\vec{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\vec{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\vec{v} \neq \vec{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
+&lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -294,11 +294,11 @@ where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For two vectors $\vec{a}$, $\vec{b} \in \mathbb{R}^{n}$, where $\vec{a}= \left(a_1, a_2, \ldots, a_n \right)$, the &lt;strong&gt;dot product&lt;/strong&gt; of the two vectors is given by
+            &lt;p&gt;For two vectors $\boldsymbol{a}$, $\boldsymbol{b} \in \mathbb{R}^{n}$, where $\boldsymbol{a}= \left(a_1, a_2, \ldots, a_n \right)$, the &lt;strong&gt;dot product&lt;/strong&gt; of the two vectors is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
-\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + \ldots a_n b_n.
+\boldsymbol{a} \cdot \boldsymbol{b} = a_1 b_1 + a_2 b_2 + \ldots a_n b_n.
 \end{equation*}
 $$&lt;p&gt;
 The result is a scalar.&lt;/p&gt;
@@ -312,11 +312,11 @@ The result is a scalar.&lt;/p&gt;
 
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
 &lt;p&gt;A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$.&lt;/p&gt;
-&lt;p&gt;One can show that, for vectors $\vec{a}, \vec{b} \in\mathbb{R}^2$, then
+&lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
 &lt;/p&gt;
 $$
 \begin{equation*}
-\vec{a} \cdot \vec{b} = \left| \vec{a} \right|  \left| \vec{b} \right|  \cos\theta
+\boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \\boldsymbol{b} \right|  \cos\theta.
 \end{equation*}
 $$&lt;p&gt;
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
@@ -324,7 +324,7 @@ Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or per
 &lt;/p&gt;
 $$
 \begin{equation*}
- \cos\theta = \dfrac{\vec{a} \cdot \vec{b}}{\left| \vec{a} \right|  \left| \vec{b} \right|}
+ \cos\theta = \dfrac{\boldsymbol{a} \cdot \boldsymbol{b}}{\left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|}.
 \end{equation*}
 $$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -395,7 +395,7 @@ A = \left(
   \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
   a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}
   \end{array}
-  \right)
+  \right).
 \end{align*}
 $$</description>
     </item>
