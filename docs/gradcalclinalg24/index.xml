@@ -316,7 +316,7 @@ The result is a scalar.&lt;/p&gt;
 &lt;/p&gt;
 $$
 \begin{equation*}
-\boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \\boldsymbol{b} \right|  \cos\theta.
+\boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|  \cos\theta.
 \end{equation*}
 $$&lt;p&gt;
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
