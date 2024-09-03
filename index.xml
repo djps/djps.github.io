@@ -4814,7 +4814,7 @@ This form can be understood as stating that if a function $f$ is written in term
 
 
 
-&lt;p&gt;For example, the function could be $\sin\left( x^2 )$, then write the function as $h(x) = f(g(x))$, where $f(x)=sin(y(x))$ and $y(x)=x^2$, then the derivative is&lt;/p&gt;
+&lt;p&gt;For example, the function could be $\sin\left( x^2 \right)$, then write the function as $h(x) = f(g(x))$, where $f(x)=sin(y(x))$ and $y(x)=x^2$, then the derivative is&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
