@@ -108,77 +108,83 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gantt
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  dateFormat   MM-DD
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  axisFormat   %m-%d
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  title Provisional Schedule
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Linear Algebra
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Vectors                          :a1a,  09-02, 2w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Matrices                         :a1b,  09-16, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Linear equations                 :a1c,  09-23, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Vector Spaces                    :a1d,  09-30, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Break                            :crit, 10-07, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Vector Spaces                    :a1e,  10-14, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Matrices &amp;amp; Eigenvalues           :a1f,  10-21, 3w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Calculus
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Single Variables                 :a2c,  11-11, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Taylor Series                    :a2d,  11-18, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Multiple Variables               :a2e,  11-25, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  section  Summary
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Summary                          :a3a,  12-02, 1w
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
+&lt;div class=&#34;mermaid&#34;&gt;gantt
+  dateFormat   MM-DD
+  axisFormat   %m-%d
+
+  title Provisional Schedule
+
+  section  Linear Algebra
+  Vectors                          :a1a,  09-02, 2w
+  Matrices                         :a1b,  09-16, 1w
+  Linear equations                 :a1c,  09-23, 1w
+  Vector Spaces                    :a1d,  09-30, 1w
+  Break                            :crit, 10-07, 1w
+  Vector Spaces                    :a1e,  10-14, 1w
+  Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
+
+  section  Calculus
+  Single Variables                 :a2c,  11-11, 1w
+  Taylor Series                    :a2d,  11-18, 1w
+  Multiple Variables               :a2e,  11-25, 1w
+
+  section  Summary
+  Summary                          :a3a,  12-02, 1w
+&lt;/div&gt;
+&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Linear&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Algebra&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Vectors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;docs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gradcalclinalg24&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;part1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vectors&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Matrices&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;docs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gradcalclinalg24&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;part1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;matrices&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Linear&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Equations&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Vector&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Spaces&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Matrices&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Eigenvalues&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Calculus&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Single&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Variable&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Calculus&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;docs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gradcalclinalg24&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;part2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;one&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variable&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Taylor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Series&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Many&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Variables&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
+&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
+
+&lt;pre&gt;- Linear Algebra
+  - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
+  - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
+  - Linear Equations
+  - Vector Spaces
+  - Matrices &amp; Eigenvalues
+- Calculus
+  - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
+  - Taylor Series
+  - Many Variables&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
 &lt;h3 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h3&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Examination Type:&lt;/td&gt;
-&lt;td&gt;Module examination&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Assessment Type:&lt;/td&gt;
-&lt;td&gt;Written examination&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Scope:&lt;/td&gt;
-&lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Duration:&lt;/td&gt;
-&lt;td&gt;120 min&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Weight:&lt;/td&gt;
-&lt;td&gt;100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
+&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See 
+ for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
 &lt;!--
 
 
@@ -207,7 +213,8 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. By doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
-&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
+&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the 
+. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
 &lt;h2 id=&#34;artifical-intelligence-ai-use-policy&#34;&gt;Artifical Intelligence (AI) Use Policy&lt;/h2&gt;
 &lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
 &lt;ol&gt;
@@ -310,8 +317,9 @@ The result is a scalar.&lt;/p&gt;
 
 
 
+&lt;p&gt;The dot product can be generalised for more general vectors, called an inner product, written as $\langle \cdot, \cdot \rangle$.&lt;/p&gt;
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
-&lt;p&gt;A unit vector has length one. A non-zero vector can be made into a unit vector by $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$.&lt;/p&gt;
+&lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by, $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is defined as $\langle \vec{v}, \vec{v}, \rangle$.&lt;/p&gt;
 &lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
 &lt;/p&gt;
 $$
@@ -384,7 +392,10 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
       <link>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</guid>
-      <description>&lt;p&gt;A matrix is a rectangular array of numbers. A matrix, $A$, with $m$ rows and ${n}$ columns is called an ${m\times n}$ matrix. If all the entries are real numbers, the matrix is said to $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
+      <description>&lt;p&gt;A matrix is a rectangular array of numbers.&lt;/p&gt;
+&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns is called an ${m\times n}$ matrix.&lt;/p&gt;
+&lt;p&gt;If all the entries are real numbers, the matrix is said to $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
+&lt;p&gt;Matrices are usually denoted by uppercase letters.&lt;/p&gt;
 &lt;p&gt;The entry in the $i^{\text{th}}$ row and $j^{\text{th}}$ column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$, so the matrix is written as&lt;/p&gt;
 $$
 \begin{align*}
@@ -524,10 +535,10 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions. For a function which is of the from $f = g \left( h\left(x\right) \right)$
+            &lt;p&gt;The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions. Thus, for a function which is of the from $f = g \left( h\left(x\right) \right)$
 &lt;/p&gt;
 $$
-\dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = g^{\prime}h\left(x\right) h^{\prime}\left(x\right)
+\dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = g^{\prime}\left( h \right) h^{\prime}\left(x\right).
 $$&lt;p&gt;
 Another expression is
 &lt;/p&gt;
@@ -543,7 +554,7 @@ This form can be understood as stating that if a function $f$ is written in term
 
 
 
-&lt;p&gt;For example, the function could be $\sin\left( x^2 \right)$, then write the function as $h(x) = f(g(x))$, where $f(x)=sin(y(x))$ and $y(x)=x^2$, then the derivative is&lt;/p&gt;
+&lt;p&gt;For example, the function could be $\sin\left( x^2 \right)$, then write the function as $h(x) = f(g(x))$, where $f(x)=\sin(y(x))$ and $y(x)=x^2$, then the derivative is $f^{\prime} = 2x \cos\left( x^2\right)$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -573,7 +584,7 @@ This form can be understood as stating that if a function $f$ is written in term
 $$
 y = f\left(x_0 \right) + f^{\prime} \left(x_0 \right) \left( x - x_0 \right).
 $$&lt;p&gt;
-This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.&lt;/p&gt;
+This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is given by $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.&lt;/p&gt;
 &lt;h2 id=&#34;newton-methods&#34;&gt;Newton Methods&lt;/h2&gt;
 &lt;h2 id=&#34;second-derivatives&#34;&gt;Second Derivatives&lt;/h2&gt;
 &lt;p&gt;If $x_0$ is a critical point for $f(x)$, then&lt;/p&gt;
