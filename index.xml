@@ -877,10 +877,10 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</guid>
       <description>&lt;p&gt;A matrix is a rectangular array of numbers.&lt;/p&gt;
-&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns is called an ${m\times n}$ matrix.&lt;/p&gt;
-&lt;p&gt;If all the entries are real numbers, the matrix is said to $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
 &lt;p&gt;Matrices are usually denoted by uppercase letters.&lt;/p&gt;
-&lt;p&gt;The entry in the $i^{\text{th}}$ row and $j^{\text{th}}$ column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$, so the matrix is written as&lt;/p&gt;
+&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns, is called an ${m\times n}$ matrix.&lt;/p&gt;
+&lt;p&gt;If all the entries are real numbers, the matrix is a member of the set of all real matrices with  $m$ rows and ${n}$ columns, i.e. $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
+&lt;p&gt;The entry in the $i^{\text{th}}$ row and $j^{\text{th}}$ column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$. Hence, the matrix is written as&lt;/p&gt;
 $$
 \begin{align*}
 A = \left(
