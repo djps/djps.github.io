@@ -803,7 +803,7 @@ The result is a scalar.&lt;/p&gt;
 
 &lt;p&gt;The dot product can be generalised for more general vectors, called an inner product, written as $\langle \cdot, \cdot \rangle$.&lt;/p&gt;
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
-&lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by, $\vec{v}  \mapsto \vec{v} \ \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is defined as $\langle \vec{v}, \vec{v}, \rangle$.&lt;/p&gt;
+&lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by, $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is defined as $\langle \vec{v}, \vec{v} \rangle$.&lt;/p&gt;
 &lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
 &lt;/p&gt;
 $$
@@ -812,7 +812,7 @@ $$
 \end{equation*}
 $$&lt;p&gt;
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
-&lt;p&gt;The angle between two vectors is given by
+&lt;p&gt;Thus, the angle between two vectors is given by
 &lt;/p&gt;
 $$
 \begin{equation*}
