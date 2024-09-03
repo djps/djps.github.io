@@ -400,5 +400,190 @@ A = \left(
 $$</description>
     </item>
     
+    <item>
+      <title>Calculus of a Single Variable</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part2/one-variable/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part2/one-variable/</guid>
+      <description>&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Derivative of a function&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The derivative of a function $f(x)$ is given by
+&lt;/p&gt;
+$$
+f^{\prime}\left( x \right) = \lim_{h \rightarrow 0} \dfrac{f\left( x+ h \right) - f\left(x\right)}{h}.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Note the following&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f\left(x\right) = c \quad \Rightarrow f^{\prime}\left( x \right)  = 0$&lt;/li&gt;
+&lt;li&gt;$f\left(x\right) = x^a \quad \Rightarrow f^{\prime}\left( x \right)  = a x^{a-1}$&lt;/li&gt;
+&lt;li&gt;$f\left(x\right) = a^x \quad \Rightarrow f^{\prime}\left( x \right)  = a^x \ln a$&lt;/li&gt;
+&lt;li&gt;$f\left(x\right) = \log_{b}x \quad \Rightarrow f^{\prime}\left( x \right)  = \dfrac{1}{x \log_e b}$&lt;/li&gt;
+&lt;li&gt;$f\left(x\right) = \sin\left(x\right) \quad \Rightarrow f^{\prime}\left( x \right)  = \cos\left(x\right)$&lt;/li&gt;
+&lt;li&gt;$f\left(x\right) = \cos\left(x\right) \quad \Rightarrow f^{\prime}\left( x \right)  = -\sin\left(x\right)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus for $f(x)=a^x$, when $a=e$ then, $f=e^x$ and $f^{\prime}\left( x \right) = f\left( x \right) = e^x$.&lt;/p&gt;
+&lt;p&gt;Similarly, for $f\left(x\right) = \log_{b}x$ when $b=e$, i.e. $f\left(x\right) = \log_e x = \ln x$, so $f^{\prime}\left( x \right) = \dfrac{1}{x}$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Summation Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function of the form $f = g+h$,
+&lt;/p&gt;
+$$
+\dfrac{\mathrm{d}\left(h+g\right)}{\mathrm{d} x} = h^{\prime}\left( x \right) + g^{\prime}\left( x \right).
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Product Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function which is of the form $f = g h$
+&lt;/p&gt;
+$$
+\dfrac{\mathrm{d}\left(hg\right)}{\mathrm{d} x} = h^{\prime}\left( x \right)g\left(x\right) + h\left(x\right)g^{\prime}\left( x \right).
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Quotient Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function which is of the form $f = g /h$
+&lt;/p&gt;
+$$
+\dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = \dfrac{h\left(x\right)g^{\prime}\left( x \right) - h^{\prime}\left( x \right)g\left(x\right)}{ \left( h^\prime \left(x\right) \right)^2 }.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Chain Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions. For a function which is of the from $f = g \left( h\left(x\right) \right)$
+&lt;/p&gt;
+$$
+\dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = g^{\prime}h\left(x\right) h^{\prime}\left(x\right)
+$$&lt;p&gt;
+Another expression is
+&lt;/p&gt;
+$$
+\dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = \dfrac{\mathrm{d}g}{\mathrm{d} h} \dfrac{\mathrm{d}h}{\mathrm{d}x}.
+$$&lt;p&gt;
+This form can be understood as stating that if a function $f$ is written in terms of $g$, which itself depends on the variable $x$ (that is both $f$ and $g$ are dependent variables), then $f$ depends on $x$ as well, via the intermediate variable $g$.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;For example, the function could be $\sin\left( x^2 )$, then write the function as $h(x) = f(g(x))$, where $f(x)=sin(y(x))$ and $y(x)=x^2$, then the derivative is&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Critical Point of a Function&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If $f^{\prime} \left( x_0 \right) = 0$ for some $x_0$, then this point is called a critical point of $f$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Critical points are candidates for being local maxima or minima for the function.&lt;/p&gt;
+&lt;h2 id=&#34;global-maximum&#34;&gt;Global Maximum&lt;/h2&gt;
+&lt;p&gt;If $f(x)$ is a continuous function of a closed, bounded interval, then it always attains a global maximum and global minimum on that interval.&lt;/p&gt;
+&lt;h2 id=&#34;linear-approximations&#34;&gt;Linear Approximations&lt;/h2&gt;
+&lt;p&gt;The tangent line at a point $x_0$ is the linear approximation of $f(x)$ at the point $x_0$, that is
+&lt;/p&gt;
+$$
+y = f\left(x_0 \right) + f^{\prime} \left(x_0 \right) \left( x - x_0 \right).
+$$&lt;p&gt;
+This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.&lt;/p&gt;
+&lt;h2 id=&#34;newton-methods&#34;&gt;Newton Methods&lt;/h2&gt;
+&lt;h2 id=&#34;second-derivatives&#34;&gt;Second Derivatives&lt;/h2&gt;
+&lt;p&gt;If $x_0$ is a critical point for $f(x)$, then&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) &lt; 0$, then $x_0$ is a local maxima&lt;/li&gt;
+&lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) &gt; 0$, then $x_0$ is a local minima&lt;/li&gt;
+&lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) = 0$, then the test fails.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
