@@ -249,7 +249,7 @@
         content="2022-01-16T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-05T21:36:19&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-05T21:38:54&#43;02:00">
   
 
   
@@ -899,10 +899,6 @@
 
 
 
-
-  
-  
-  <script defer src="/dist/lib/plotly/plotly.min.7f4930eba8f8541dbec28dca5bd5f787f8eef1cde0369ac9657b70bed230b3e0.js" integrity="sha256-f0kw66j4VB2&#43;wo3KW9X3h/ju8c3gNprJZXtwvtIws&#43;A="></script>
 
 
 
@@ -2599,35 +2595,7 @@
 
 
 
-<div id="chart-712548639" class="chart"></div>
-<script>
-  async function fetchChartJSON() {
-    console.debug('Hugo Blox fetching chart JSON...')
-    const response = await fetch('.\/charts\/figure.json');
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === 'undefined' ) {
-        console.debug('Plotly not loaded yet...')
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart => {
-        console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-712548639', chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-</script>
-
-
-
-
-
-<div id="chart-894651273" class="chart"></div>
+<div id="chart-973142865" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -2645,7 +2613,7 @@
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-894651273', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-973142865', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2655,7 +2623,7 @@
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-05T21:36:19.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-05T21:38:54.000Z">
     <span>Last updated on</span>
     Sep 5, 2024</time>
       
