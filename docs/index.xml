@@ -46,11 +46,12 @@
 &lt;li&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;!--
 
 
 
 
-&lt;div id=&#34;chart-194356728&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-627354189&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -68,18 +69,18 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-194356728&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-627354189&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 &lt;/script&gt;
 
-&lt;!--
 
 
 
 
-&lt;div id=&#34;chart-296753184&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+
+&lt;div id=&#34;chart-862179453&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -97,7 +98,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-296753184&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-862179453&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -110,7 +111,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-931528647&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-532176849&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -128,7 +129,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-931528647&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-532176849&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
