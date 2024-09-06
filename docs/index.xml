@@ -50,7 +50,7 @@
 
 
 
-&lt;div id=&#34;chart-367142958&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-463972815&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -68,7 +68,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-367142958&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-463972815&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -79,11 +79,11 @@
 
 
 
-&lt;div id=&#34;chart-539462871&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-861597324&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;.\/\/plot_name.json&#39;);
+    const response = await fetch(&#39;.\/charts\/plot_name.json&#39;);
     return await response.json();
   }
 
@@ -97,7 +97,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-539462871&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-861597324&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
