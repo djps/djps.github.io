@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 5, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 6, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2022-01-16T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-05T22:03:00&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-06T10:48:16&#43;02:00">
   
 
   
@@ -2599,7 +2599,7 @@
 
 
 
-<div id="chart-479265138" class="chart"></div>
+<div id="chart-342951867" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -2617,7 +2617,36 @@
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-479265138', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-342951867', chart.data, chart.layout, {responsive: true});
+      });
+    }, 500 );
+  })();
+</script>
+
+<p>This should be from the static folder:</p>
+
+
+
+
+<div id="chart-867491352" class="chart"></div>
+<script>
+  async function fetchChartJSON() {
+    console.debug('Hugo Blox fetching chart JSON...')
+    const response = await fetch('.\/\/plot_name.json');
+    return await response.json();
+  }
+
+  (function() {
+    let a = setInterval( function() {
+      if ( typeof window.Plotly === 'undefined' ) {
+        console.debug('Plotly not loaded yet...')
+        return;
+      }
+      clearInterval( a );
+
+      fetchChartJSON().then(chart => {
+        console.debug('Plotting chart...')
+        window.Plotly.newPlot('chart-867491352', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2627,9 +2656,9 @@
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-05T22:03:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-06T10:48:16.000Z">
     <span>Last updated on</span>
-    Sep 5, 2024</time>
+    Sep 6, 2024</time>
       
       
   
