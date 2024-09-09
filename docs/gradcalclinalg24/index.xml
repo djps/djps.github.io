@@ -265,11 +265,11 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-623974158&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-916375842&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;plotly\/plot_name.json&#39;);
+    const response = await fetch(&#39;\/plotly\/test.json&#39;);
     return await response.json();
   }
 
@@ -283,35 +283,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-623974158&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-&lt;/script&gt;
-
-
-
-
-
-&lt;div id=&#34;chart-536498127&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;\/plotly\/vector_addition.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-536498127&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-916375842&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -375,7 +347,7 @@ The result is a scalar.&lt;/p&gt;
 
 &lt;p&gt;The dot product can be generalised for more general vectors, called an inner product, written as $\langle \cdot, \cdot \rangle$.&lt;/p&gt;
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
-&lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by, $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is defined as $\langle \vec{v}, \vec{v} \rangle$.&lt;/p&gt;
+&lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by the transformation $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is defined as $\langle \vec{v}, \vec{v} \rangle$.&lt;/p&gt;
 &lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
 &lt;/p&gt;
 $$
