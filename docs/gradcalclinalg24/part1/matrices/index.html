@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-12T13:54:53&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-12T14:00:19&#43;02:00">
   
 
   
@@ -2596,7 +2596,7 @@ $$<p>A matrix is said to be a <strong>square matrix</strong> if the number of ro
             <p>For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries as given by
 </p>
 $$
-c_{ij} =
+c_{ij} = \sum a_{ik} b_{kj}.
 $$
         </div>
     </div>
@@ -2605,7 +2605,7 @@ $$
 
 
 
-<p>If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows &ndash; $n$. Thus, each entry $c_{ij}$ is the dot product of the $i^\text{th}$ row of $A$ with the $j^{\text{th}}$ column of $B$.</p>
+<p>If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows, i.e. $n$. Thus, each entry $c_{ij}$ is the dot product of the $i$<sup>th</sup> row of $A$ with the $j^{\text{th}}$ column of $B$.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2621,7 +2621,7 @@ $$
             <p>For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $Ax=y$ is a $m \times l$ vector whose entries as given by
 </p>
 $$
-y_{j} = \sum_{i=1}^{n} x_i a_{ij}
+y_{j} = \sum_{i=1}^{n} a_{ij} x_i .
 $$
         </div>
     </div>
@@ -2670,8 +2670,8 @@ $$
 
 
 
-<p>Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$</p>
-<p>The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$</p>
+<p>Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$.</p>
+<p>The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$.</p>
 <p>The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.</p>
 <p>An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
 <div class="details admonition Proposition open">
@@ -2701,7 +2701,7 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-12T13:54:53.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-12T14:00:19.000Z">
     <span>Last updated on</span>
     Sep 12, 2024</time>
       

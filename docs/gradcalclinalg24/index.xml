@@ -266,7 +266,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-974216358&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-472391586&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -284,7 +284,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-974216358&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-472391586&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -479,7 +479,7 @@ $$&lt;p&gt;A matrix is said to be a &lt;strong&gt;square matrix&lt;/strong&gt; i
             &lt;p&gt;For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries as given by
 &lt;/p&gt;
 $$
-c_{ij} =
+c_{ij} = \sum a_{ik} b_{kj}.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -488,7 +488,7 @@ $$
 
 
 
-&lt;p&gt;If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows &amp;ndash; $n$. Thus, each entry $c_{ij}$ is the dot product of the $i^\text{th}$ row of $A$ with the $j^{\text{th}}$ column of $B$.&lt;/p&gt;
+&lt;p&gt;If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows, i.e. $n$. Thus, each entry $c_{ij}$ is the dot product of the $i$&lt;sup&gt;th&lt;/sup&gt; row of $A$ with the $j^{\text{th}}$ column of $B$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -504,7 +504,7 @@ $$
             &lt;p&gt;For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $Ax=y$ is a $m \times l$ vector whose entries as given by
 &lt;/p&gt;
 $$
-y_{j} = \sum_{i=1}^{n} x_i a_{ij}
+y_{j} = \sum_{i=1}^{n} a_{ij} x_i .
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -553,8 +553,8 @@ $$
 
 
 
-&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$&lt;/p&gt;
-&lt;p&gt;The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$&lt;/p&gt;
+&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$.&lt;/p&gt;
+&lt;p&gt;The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$.&lt;/p&gt;
 &lt;p&gt;The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
 &lt;p&gt;An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Proposition open&#34;&gt;
