@@ -750,7 +750,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-354681729&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-395482167&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -768,7 +768,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-354681729&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-395482167&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -856,7 +856,7 @@ The result is a scalar.&lt;/p&gt;
 
 
 
-&lt;p&gt;The dot product can be generalised for more general vectors, called an inner product, written as $\langle \cdot, \cdot \rangle$.&lt;/p&gt;
+&lt;p&gt;The dot product can be generalised for more general vectors, called an &lt;strong&gt;inner product&lt;/strong&gt;, written as $\langle \cdot, \cdot \rangle=c$, where $c$ is scalar.&lt;/p&gt;
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
 &lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by the transformation $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is often defined as $\sqrt{\langle \vec{v}, \vec{v} \rangle}$.&lt;/p&gt;
 &lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
@@ -866,7 +866,7 @@ $$
 \boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|  \cos\theta.
 \end{equation*}
 $$&lt;p&gt;
-Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be orthogonal (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
+Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
 &lt;p&gt;Thus, the angle between two vectors is given by
 &lt;/p&gt;
 $$
@@ -933,7 +933,7 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</guid>
       <description>&lt;p&gt;A matrix is a rectangular array of numbers.&lt;/p&gt;
 &lt;p&gt;Matrices are usually denoted by uppercase letters.&lt;/p&gt;
-&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns, is called an ${m\times n}$ matrix.&lt;/p&gt;
+&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns, is refered to as an ${m\times n}$ matrix.&lt;/p&gt;
 &lt;p&gt;If all the entries are real numbers, the matrix is a member of the set of all real matrices with  $m$ rows and ${n}$ columns, i.e. $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
 &lt;p&gt;The entry in the $i$&lt;sup&gt;th&lt;/sup&gt; row and $j$&lt;sup&gt;th&lt;/sup&gt; column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$. Hence, the matrix is written as&lt;/p&gt;
 $$
@@ -1041,10 +1041,21 @@ $$
 
 
 &lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$.&lt;/p&gt;
-&lt;h2 id=&#34;types-of-matrices&#34;&gt;Types of Matrices&lt;/h2&gt;
-&lt;p&gt;The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$.&lt;/p&gt;
-&lt;p&gt;The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
-&lt;p&gt;An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
+&lt;h2 id=&#34;useful-types-of-matrices&#34;&gt;Useful Types of Matrices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;identity matrix&lt;/strong&gt; is the square matrix $I$ such that $AI=A$ and $IA=A$, all entries on the main diagonal are one, all others are zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;strong&gt;diagonal matrix&lt;/strong&gt; is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;details admonition Proposition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1057,7 +1068,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A  matrix $Q$ is said to be orthogonal matrix if its inverse is equal to its transpose, i.e. $Q^{-1} = Q^T$.
+            The inverse of an orthogonal matrix $Q$ is equal to its transpose, i.e. $Q^{-1} = Q^T$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1065,9 +1076,20 @@ $$
 
 
 
-&lt;p&gt;Permutation Matrices: a permutation matrix is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.&lt;/p&gt;
-&lt;p&gt;Rotation Matrices: rotation matrices describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.&lt;/p&gt;
-&lt;p&gt;Reflection Matrices: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;strong&gt;permutation matrix&lt;/strong&gt; is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rotation matrices&lt;/strong&gt; describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Reflection Matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i&lt;j$ and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero,&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -9728,7 +9750,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-981523476&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-431752896&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9746,7 +9768,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-981523476&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-431752896&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9757,7 +9779,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-392568471&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-568249317&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9775,7 +9797,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-392568471&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-568249317&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9788,7 +9810,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-846193257&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-982714653&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9806,7 +9828,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-846193257&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-982714653&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

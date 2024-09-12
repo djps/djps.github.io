@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-12T14:14:30&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-12T14:45:59&#43;02:00">
   
 
   
@@ -1537,9 +1537,9 @@
             </li>
           <li>
               <a
-                href="#types-of-matrices"
+                href="#useful-types-of-matrices"
                 class="hb-docs-link"
-              >Types of Matrices</a>
+              >Useful Types of Matrices</a>
             </li>
           </ul>
   
@@ -2580,7 +2580,7 @@
         <h1>Matrices</h1>
         <p>A matrix is a rectangular array of numbers.</p>
 <p>Matrices are usually denoted by uppercase letters.</p>
-<p>A matrix, $A$, with $m$ rows and ${n}$ columns, is called an ${m\times n}$ matrix.</p>
+<p>A matrix, $A$, with $m$ rows and ${n}$ columns, is refered to as an ${m\times n}$ matrix.</p>
 <p>If all the entries are real numbers, the matrix is a member of the set of all real matrices with  $m$ rows and ${n}$ columns, i.e. $A \in\mathbb{R}^{m \times n}$.</p>
 <p>The entry in the $i$<sup>th</sup> row and $j$<sup>th</sup> column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$. Hence, the matrix is written as</p>
 $$
@@ -2688,10 +2688,21 @@ $$
 
 
 <p>Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$.</p>
-<h2 id="types-of-matrices">Types of Matrices</h2>
-<p>The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$.</p>
-<p>The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.</p>
-<p>An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
+<h2 id="useful-types-of-matrices">Useful Types of Matrices</h2>
+<ul>
+<li>
+<p>The <strong>identity matrix</strong> is the square matrix $I$ such that $AI=A$ and $IA=A$, all entries on the main diagonal are one, all others are zero.</p>
+</li>
+<li>
+<p>A <strong>diagonal matrix</strong> is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.</p>
+</li>
+<li>
+<p>The <strong>inverse matrix</strong> of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.</p>
+</li>
+<li>
+<p>An <strong>orthogonal matrix</strong> $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
+</li>
+</ul>
 <div class="details admonition Proposition open">
     <div class="details-summary admonition-title">
         
@@ -2704,7 +2715,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            A  matrix $Q$ is said to be orthogonal matrix if its inverse is equal to its transpose, i.e. $Q^{-1} = Q^T$.
+            The inverse of an orthogonal matrix $Q$ is equal to its transpose, i.e. $Q^{-1} = Q^T$.
         </div>
     </div>
 </div>
@@ -2712,14 +2723,25 @@ $$
 
 
 
-<p>Permutation Matrices: a permutation matrix is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.</p>
-<p>Rotation Matrices: rotation matrices describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.</p>
-<p>Reflection Matrices: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.</p>
+<ul>
+<li>
+<p>A <strong>permutation matrix</strong> is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.</p>
+</li>
+<li>
+<p><strong>Rotation matrices</strong> describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.</p>
+</li>
+<li>
+<p><strong>Reflection Matrices</strong>: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.</p>
+</li>
+<li>
+<p>A square matrix is said to be <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i<j$ and <strong>upper triangular</strong> if all the entries below the main diagonal are zero,</p>
+</li>
+</ul>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-12T14:14:30.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-12T14:45:59.000Z">
     <span>Last updated on</span>
     Sep 12, 2024</time>
       
