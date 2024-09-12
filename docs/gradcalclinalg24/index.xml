@@ -266,7 +266,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-285476193&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-974216358&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -284,7 +284,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-285476193&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-974216358&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -553,10 +553,10 @@ $$
 
 
 
-&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, but note that $x^T A \neq y$.&lt;/p&gt;
+&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$&lt;/p&gt;
 &lt;p&gt;The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$&lt;/p&gt;
 &lt;p&gt;The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
-&lt;p&gt;An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
+&lt;p&gt;An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
 &lt;div class=&#34;details admonition Proposition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -569,7 +569,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            If $Q$ is an orthogonal matrix, then the inverse is each to the transpose, i.e. $Q^{-1} = Q^T$.
+            If $Q$ is an orthogonal matrix such that its inverse is equal to its transpose, i.e. $Q^{-1} = Q^T$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
