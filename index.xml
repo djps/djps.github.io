@@ -750,7 +750,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-854379162&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-172489356&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -768,7 +768,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-854379162&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-172489356&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -947,7 +947,124 @@ A = \left(
   \end{array}
   \right).
 \end{align*}
-$$</description>
+$$&lt;p&gt;A matrix is said to be a &lt;strong&gt;square matrix&lt;/strong&gt; if the number of rows is equal to the number of columns, i.e. $n=m$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Matrix Matrix Multiplication&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries as given by
+&lt;/p&gt;
+$$
+c_{ij} =
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows &amp;ndash; $n$. Thus, each entry $c_{ij}$ is the dot product of the $i^\text{th}$ row of $A$ with the $j^{\text{th}}$ column of $B$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Matrix Vector Multiplication&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $Ax=y$ is a $m \times l$ vector whose entries as given by
+&lt;/p&gt;
+$$
+y_{j} = \sum_{i=1}^{n} x_i a_{ij}
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Row and Column Vectors&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            For a matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, and is called a column vector. Similarly, a $1 \times n$ matrix has a single row with $n$ entries.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Transpose&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            For a matrix $A \in \mathbb{R}^{m \times n}$, the transpose of the matrix $A^T \in \mathbb{R}^{n \times m}$ where all elements are mapped to $a_{ij} = a_{ji}$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, but note that $x^T A \neq y$.&lt;/p&gt;
+&lt;p&gt;The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$&lt;/p&gt;
+&lt;p&gt;The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
+&lt;p&gt;An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
+&lt;div class=&#34;details admonition Proposition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; viewBox=&#34;0 0 370 391&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;g clip-rule=&#34;evenodd&#34; fill-rule=&#34;evenodd&#34;&gt;&lt;path d=&#34;m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z&#34; fill=&#34;#ff4088&#34; stroke=&#34;#c9177e&#34; stroke-width=&#34;27&#34; /&gt;&lt;path d=&#34;m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z&#34; fill=&#34;#fff&#34; /&gt;&lt;/g&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Proposition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If $Q$ is an orthogonal matrix, then the inverse is each to the transpose, i.e. $Q^{-1} = Q^T$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;Permutation Matrices: a permutation matrix is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.&lt;/p&gt;
+&lt;p&gt;Rotation Matrices: rotation matrices describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.&lt;/p&gt;
+&lt;p&gt;Reflection Matrices: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -9607,7 +9724,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-246137895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-536279418&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9625,7 +9742,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-246137895&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-536279418&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9636,7 +9753,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-295167834&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-648953127&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9654,7 +9771,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-295167834&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-648953127&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9667,7 +9784,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-164582973&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-762894135&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9685,7 +9802,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-164582973&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-762894135&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

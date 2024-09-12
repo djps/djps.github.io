@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 9, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 12, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-03T16:23:30&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-12T13:08:08&#43;02:00">
   
 
   
@@ -2580,13 +2580,130 @@ A = \left(
   \end{array}
   \right).
 \end{align*}
+$$<p>A matrix is said to be a <strong>square matrix</strong> if the number of rows is equal to the number of columns, i.e. $n=m$.</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Matrix Matrix Multiplication</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries as given by
+</p>
 $$
+c_{ij} =
+$$
+        </div>
+    </div>
+</div>
+
+
+
+
+<p>If $A$ is an $m\times n$ matrix and $B$ is a $n\times l$ matrix, then $A$ has the same number of columns as $B$ has rows &ndash; $n$. Thus, each entry $c_{ij}$ is the dot product of the $i^\text{th}$ row of $A$ with the $j^{\text{th}}$ column of $B$.</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Matrix Vector Multiplication</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $Ax=y$ is a $m \times l$ vector whose entries as given by
+</p>
+$$
+y_{j} = \sum_{i=1}^{n} x_i a_{ij}
+$$
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Row and Column Vectors</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            For a matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, and is called a column vector. Similarly, a $1 \times n$ matrix has a single row with $n$ entries.
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Transpose</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            For a matrix $A \in \mathbb{R}^{m \times n}$, the transpose of the matrix $A^T \in \mathbb{R}^{n \times m}$ where all elements are mapped to $a_{ij} = a_{ji}$.
+        </div>
+    </div>
+</div>
+
+
+
+
+<p>Thus, if $x$ is a column vector it is possible to perform $Ax=y$, but note that $x^T A \neq y$.</p>
+<p>The identity matrix is the square matrix $I$ such that $AI=A$ and $IA=A$</p>
+<p>The inverse of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.</p>
+<p>An orthogonal matrix $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
+<div class="details admonition Proposition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" viewBox="0 0 370 391" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m207.5 22.4 114.4 66.6c13.5 7.9 21.9 22.4 21.9 38v136.4c0 17.3-9.3 33.3-24.5 41.8l-113.5 63.9a49.06 49.06 0 0 1 -48.5-.2l-104.5-60.1c-16.4-9.5-26.6-27-26.6-45.9v-129.5c0-19.1 9.9-36.8 26.1-46.8l102.8-63.5c16-9.9 36.2-10.1 52.4-.7z" fill="#ff4088" stroke="#c9177e" stroke-width="27" /><path d="m105.6 298.2v-207.2h43.4v75.5h71.9v-75.5h43.5v207.2h-43.5v-90.6h-71.9v90.6z" fill="#fff" /></g></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Proposition: <em></em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            If $Q$ is an orthogonal matrix, then the inverse is each to the transpose, i.e. $Q^{-1} = Q^T$.
+        </div>
+    </div>
+</div>
+
+
+
+
+<p>Permutation Matrices: a permutation matrix is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.</p>
+<p>Rotation Matrices: rotation matrices describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.</p>
+<p>Reflection Matrices: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.</p>
+
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-03T16:23:30.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-12T13:08:08.000Z">
     <span>Last updated on</span>
-    Sep 3, 2024</time>
+    Sep 12, 2024</time>
       
       
   
