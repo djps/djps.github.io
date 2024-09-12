@@ -266,7 +266,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-395482167&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-671592834&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -284,7 +284,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-395482167&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-671592834&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -566,7 +566,7 @@ $$
 &lt;p&gt;A &lt;strong&gt;diagonal matrix&lt;/strong&gt; is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I.$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
@@ -603,7 +603,7 @@ $$
 &lt;p&gt;&lt;strong&gt;Reflection Matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i&lt;j$ and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero,&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i&lt;j$. Similarly, a matrix is said to be and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero,&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
