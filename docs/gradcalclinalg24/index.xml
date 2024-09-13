@@ -266,7 +266,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-826431597&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-516428973&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -284,7 +284,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-826431597&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-516428973&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -528,7 +528,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            For a matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, and is called a column vector. Similarly, a $1 \times n$ matrix has a single row with $n$ entries.
+            When matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, and is called a column vector. Similarly, a $1 \times n$ matrix with a single row of $n$ entries is called a row vector.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -556,7 +556,7 @@ $$
 
 
 
-&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then $x^T A^T = y^T$.&lt;/p&gt;
+&lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then the equivalent multiplication by a row vector is $x^T A^T = y^T$.&lt;/p&gt;
 &lt;h2 id=&#34;useful-types-of-matrices&#34;&gt;Useful Types of Matrices&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
