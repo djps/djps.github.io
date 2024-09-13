@@ -750,7 +750,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-762814359&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-153497862&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -768,7 +768,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-762814359&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-153497862&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7812,10 +7812,71 @@ The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
 &lt;!--
 [![Documentation Status](https://readthedocs.org/projects/k-wave-python/badge/?version=latest)](https://k-wave-python.readthedocs.io/en/latest/?badge=latest)[![codecov](https://codecov.io/gh/waltsims/k-wave-python/graph/badge.svg?token=6ofwtPiDNG)](https://codecov.io/gh/waltsims/k-wave-python)
 --&gt;
-&lt;!-- Place this tag where you want the button to render. --&gt;
-&lt;p&gt;&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-size=&#34;large&#34; aria-label=&#34;Follow @djps on GitHub&#34;&gt;Follow @djps&lt;/a&gt;
+&lt;!-- Place this tag where you want the button to render.
+&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-size=&#34;large&#34; aria-label=&#34;Follow @djps on GitHub&#34;&gt;Follow @djps&lt;/a&gt;
 &lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps/k-wave-python&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star djps/k-wave-python on GitHub&#34;&gt;Star&lt;/a&gt;
-&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps/k-wave-python/subscription&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-icon=&#34;octicon-eye&#34; data-size=&#34;large&#34; aria-label=&#34;Watch djps/k-wave-python on GitHub&#34;&gt;Watch&lt;/a&gt;&lt;/p&gt;
+&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps/k-wave-python/subscription&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-icon=&#34;octicon-eye&#34; data-size=&#34;large&#34; aria-label=&#34;Watch djps/k-wave-python on GitHub&#34;&gt;Watch&lt;/a&gt;--&gt;
+&lt;p&gt;
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+&lt;a
+class=&#34;github-button&#34;
+href=&#34;https://github.com/djps&#34;
+data-icon=&#34;octicon-mark-github&#34;
+aria-label=&#34;Follow @djps on GitHub&#34;
+ data-show-count=&#34;true&#34;
+data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
+data-size=&#34;large&#34;
+&gt;
+Follow @djps
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+&lt;a
+class=&#34;github-button&#34;
+href=&#34;https://github.com/djps/k-wave-python/&#34;
+data-icon=&#34;octicon-star&#34;
+aria-label=&#34;Star djps/k-wave-python on GitHub&#34;
+ data-show-count=&#34;true&#34;
+data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
+data-size=&#34;large&#34;
+&gt;
+Star
+&lt;/a&gt;
+
 
 
 
@@ -7842,13 +7903,13 @@ data-icon=&#34;octicon-eye&#34;
 aria-label=&#34;Watch djps/k-wave-python on GitHub&#34;
  data-show-count=&#34;true&#34;
 data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
-
+data-size=&#34;large&#34;
 &gt;
 Watch
 &lt;/a&gt;
-
-&lt;!-- Place this tag in your head or just before your close body tag. --&gt;
-&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;!-- Place this tag in your head or just before your close body tag.
+&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt; --&gt;
 </description>
     </item>
     
@@ -9797,7 +9858,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-842361759&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-961427853&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9815,7 +9876,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-842361759&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-961427853&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9826,7 +9887,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-825943716&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-416538792&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9844,7 +9905,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-825943716&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-416538792&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9857,7 +9918,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-382946751&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-376152948&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9875,7 +9936,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-382946751&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-376152948&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
