@@ -750,7 +750,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-293485671&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-851732946&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -768,7 +768,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-293485671&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-851732946&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7802,9 +7802,8 @@ The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
       <link>https://djps.github.io/opensource/kwavepython/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/opensource/kwavepython/</guid>
-      <description>&lt;myImg&gt;
-&lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/test_pages.yml/badge.svg&#34; alt=&#34;docs passing&#34; display=&#34;inline-block&#34; /&gt; &lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg&#34; alt=&#34;tests passing&#34; display=&#34;inline&#34; /&gt;
-&lt;/myImg&gt;
+      <description>&lt;p&gt;&amp;lt;img src=&amp;ldquo;
+ alt=&amp;ldquo;docs passing&amp;rdquo; class=&amp;ldquo;myImg&amp;rdquo;&amp;rdquo; /&amp;gt; &lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg&#34; alt=&#34;tests passing&#34; class=&#34;myImg&#34; /&gt;&lt;/p&gt;
 &lt;myImg&gt;
 &lt;img src=&#34;https://camo.githubusercontent.com/e7fcc2969828d2e81fee861de39ed434efd12fd07664df38bccb389b0a1020df/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6b2d776176652d707974686f6e2f62616467652f3f76657273696f6e3d6c6174657374&#34; /&gt;
 &lt;/myImg&gt;
@@ -9769,7 +9768,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-954231867&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-375684921&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9787,7 +9786,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-954231867&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-375684921&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9798,7 +9797,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-489312765&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-562849173&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9816,7 +9815,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-489312765&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-562849173&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9829,7 +9828,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-813297564&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-916743825&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -9847,7 +9846,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-813297564&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-916743825&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
