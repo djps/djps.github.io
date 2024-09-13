@@ -20,6 +20,8 @@
       <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in autumn 2024, the lectures will take place on Wednesday mornings 9:45-11:00 and 11:15-12:30 at EH-4 (East Hall 4 Classroom)&lt;/p&gt;
+&lt;p&gt;Note that there will be no lecture on Wednesday 9 October.&lt;/p&gt;
+&lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
 &lt;!-- The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.
 
 All information regarding scheduling, as well as a link to this site, can be found on CampusNet.
@@ -266,7 +268,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-784219365&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-651784392&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -284,7 +286,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-784219365&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-651784392&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
