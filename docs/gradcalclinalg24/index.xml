@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-172938546&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-542689713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-172938546&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-542689713&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -610,7 +610,7 @@ $$
 &lt;p&gt;&lt;strong&gt;Reflection Matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i&lt;j$. Similarly, a matrix is said to be and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero,&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i&lt;j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i&gt;j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
