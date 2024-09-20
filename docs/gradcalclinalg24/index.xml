@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-693712845&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-652187439&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-693712845&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-652187439&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -607,7 +607,7 @@ $$
 &lt;p&gt;&lt;strong&gt;Rotation matrices&lt;/strong&gt; describe rotations by an angle about the axes of a coordinate system. They can be denoted by $R_x ( \alpha )$, i.e. rotation by angle $\theta$ about the $x$ axis. The product of two rotation matrices is also a rotation matrix. Note that in general $R_x\left( \theta \right) R_y \left( \beta \right) \neq R_x\left( \theta \right) R_y \left( \beta \right)$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Reflection Matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reflection matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i &lt; j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i&gt;j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
@@ -660,7 +660,7 @@ $$
             &lt;p&gt;A vector space is a set $V$ with two operations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Addition of the elements of $V$, i.e. if $\vec{v}$, $\vec{u} \in V$, then $\vec{v} + \vec{u} \in V$&lt;/li&gt;
-&lt;li&gt;Multiplication of the elements of $V$ by a scalar, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in\nobreakspaceV$,&lt;/li&gt;
+&lt;li&gt;Multiplication of the elements of $V$ by a scalar, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha\vec{v}~\in~V$,&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;which satisfies the following conditions:&lt;/p&gt;
 &lt;ol&gt;
