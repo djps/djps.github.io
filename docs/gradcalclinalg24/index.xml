@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-913547628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-657812394&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-913547628&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-657812394&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -644,7 +644,7 @@ $$
 
 
 &lt;p&gt;Thus a matrix $A$ has linearly independent columns if and only if the equation $A\vec{x} = \vec{0}$ has exactly one solution.&lt;/p&gt;
-&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec[{}} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
+&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec{x} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         

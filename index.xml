@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-913547628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-657812394&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-913547628&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-657812394&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2554,7 +2554,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 &lt;p&gt;Thus a matrix $A$ has linearly independent columns if and only if the equation $A\vec{x} = \vec{0}$ has exactly one solution.&lt;/p&gt;
-&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec[{}} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
+&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec{x} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -10095,7 +10095,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-459761823&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-357268149&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10113,7 +10113,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-459761823&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-357268149&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10124,7 +10124,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-679352418&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-741928536&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10142,7 +10142,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-679352418&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-741928536&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10155,7 +10155,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-943857621&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-152963487&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10173,7 +10173,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-943857621&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-152963487&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
