@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-657812394&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-693712845&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-657812394&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-693712845&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -573,7 +573,7 @@ $$
 &lt;p&gt;A &lt;strong&gt;diagonal matrix&lt;/strong&gt; is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A = I.$&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
@@ -634,7 +634,7 @@ $$
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A set of vectors, $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n$ are linearly independent if none of the vectors can be expressed as a linear combination of the remaining $n-1$ vectors.&lt;/p&gt;
-&lt;p&gt;An alternative definition is that if $c_1 \vec{v}_1 + c_2 \vec{v}_2  + \ldots c_n \vec{v}_n = \vec{0}$, then the only set of values for $c_i$ which satisfies this, are $c_1 = c_2 = \ldots = c_n =0$. That is, if the column vectors of $a$ are linearly independent, then the only solution to $A\vec{x}=\vec{0}$ is $\vec{x} =\vec{0}$.&lt;/p&gt;
+&lt;p&gt;An alternative definition is that if $c_1 \vec{v}_1 + c_2 \vec{v}_2  + \ldots c_n \vec{v}_n = \vec{0}$, then the only set of values for $c_i$ which satisfies this, are $c_1 = c_2 = \ldots = c_n =0$. That is, if the column vectors of $A$ are linearly independent, then the only solution to $A\vec{x}=\vec{0}$ is $\vec{x} =\vec{0}$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -660,7 +660,7 @@ $$
             &lt;p&gt;A vector space is a set $V$ with two operations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Addition of the elements of $V$, i.e. if $\vec{v}$, $\vec{u} \in V$, then $\vec{v} + \vec{u} \in V$&lt;/li&gt;
-&lt;li&gt;Multiplication of the elements of $V$ by a scalar, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in V$,&lt;/li&gt;
+&lt;li&gt;Multiplication of the elements of $V$ by a scalar, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in\nobreakspaceV$,&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;which satisfies the following conditions:&lt;/p&gt;
 &lt;ol&gt;
@@ -669,7 +669,7 @@ $$
 &lt;li&gt;There exists a vector $\vec{0} \in V$ such that $ \vec{u} + \vec{0} = \vec{u}$ for all $\vec{u} \in V$&lt;/li&gt;
 &lt;li&gt;There exists a vector $\vec{1} \in V$ such that $ \vec{u}\vec{1} = \vec{u}$ for all $\vec{u} \in V$&lt;/li&gt;
 &lt;li&gt;For any vector $\vec{v} \in V$, there exists a vector $\vec{u} \in V$ such that $\vec{v} + \vec{u} = \vec{0}$, which is denoted as $\vec{u} = - \vec{v}$&lt;/li&gt;
-&lt;li&gt;For any $a$, $b \in \mathbb{R}$ and $\vec{v} \in V$, a $\left(b \vec{v} \right) = \left( a b\right)\vec{v}$&lt;/li&gt;
+&lt;li&gt;For any $a$, $b \in \mathbb{R}$ and $\vec{v} \in V$,  then $a\left(b \vec{v} \right) = \left( a b\right)\vec{v}$&lt;/li&gt;
 &lt;li&gt;$a\left( \vec{v} + \vec{u} \right) = a \vec{v} + a \vec{u}$&lt;/li&gt;
 &lt;li&gt;$\left( a + b \right)\vec{v} = a \vec{v} + b \vec{v}$&lt;/li&gt;
 &lt;/ol&gt;
