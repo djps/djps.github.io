@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-698415723&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-913547628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-698415723&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-913547628&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2544,7 +2544,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A set of vectors, $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n$ are linearly independent if none of the vectors can be expressed as a linear combination of the remaining $n-1$ vectors.&lt;/p&gt;
-&lt;p&gt;An alternative definition is that if $c_1 \vec{v}_1 + c_2 \vec{v}_2  + \ldots c_n \vec{v}_n = \vec{0}$, then the only set of values for $c_i$ which satisfies this, are $c_1 = c_2 = \ldots = c_n =0$.&lt;/p&gt;
+&lt;p&gt;An alternative definition is that if $c_1 \vec{v}_1 + c_2 \vec{v}_2  + \ldots c_n \vec{v}_n = \vec{0}$, then the only set of values for $c_i$ which satisfies this, are $c_1 = c_2 = \ldots = c_n =0$. That is, if the column vectors of $a$ are linearly independent, then the only solution to $A\vec{x}=\vec{0}$ is $\vec{x} =\vec{0}$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2554,7 +2554,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 &lt;p&gt;Thus a matrix $A$ has linearly independent columns if and only if the equation $A\vec{x} = \vec{0}$ has exactly one solution.&lt;/p&gt;
-&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec[x} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
+&lt;p&gt;If the columns of $A$ are not linearly independent, then $A\vec[{}} =\vec{0}$ will have infinitely many solutions.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -2568,19 +2568,22 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A vector space is a set $V$ with two operations:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Addition of the elements of $V$, i.e. if $\vec{v}$, $\vec{u} \in V$, then $\vec{v} + \vec{u} \in V$&lt;/li&gt;
-&lt;li&gt;Multiplication of the elements of $V by a scalar$, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in V$,
-which satisfies the following conditions&lt;/li&gt;
+&lt;li&gt;Multiplication of the elements of $V$ by a scalar, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in V$,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;which satisfies the following conditions:&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;$\vec{v} + \vec{u} = \vec{u} + \vec{v}$&lt;/li&gt;
 &lt;li&gt;$\vec{u} + \left(\vec{v} +  \vec{w} \right) =\left(\vec{u} + \vec{v}\right) + \vec{w}$&lt;/li&gt;
 &lt;li&gt;There exists a vector $\vec{0} \in V$ such that $ \vec{u} + \vec{0} = \vec{u}$ for all $\vec{u} \in V$&lt;/li&gt;
 &lt;li&gt;There exists a vector $\vec{1} \in V$ such that $ \vec{u}\vec{1} = \vec{u}$ for all $\vec{u} \in V$&lt;/li&gt;
 &lt;li&gt;For any vector $\vec{v} \in V$, there exists a vector $\vec{u} \in V$ such that $\vec{v} + \vec{u} = \vec{0}$, which is denoted as $\vec{u} = - \vec{v}$&lt;/li&gt;
-&lt;li&gt;For any $a$, $b \in \mathbb{R}$ and $\vec{v} \in V$, a \left(b \vec{v} \right) = \left( a b\right)\vec{v}$&lt;/li&gt;
+&lt;li&gt;For any $a$, $b \in \mathbb{R}$ and $\vec{v} \in V$, a $\left(b \vec{v} \right) = \left( a b\right)\vec{v}$&lt;/li&gt;
 &lt;li&gt;$a\left( \vec{v} + \vec{u} \right) = a \vec{v} + a \vec{u}$&lt;/li&gt;
 &lt;li&gt;$\left( a + b \right)\vec{v} = a \vec{v} + b \vec{v}$&lt;/li&gt;
 &lt;/ol&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -10092,7 +10095,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-792134658&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-459761823&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10110,7 +10113,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-792134658&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-459761823&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10121,7 +10124,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-861359724&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-679352418&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10139,7 +10142,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-861359724&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-679352418&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10152,7 +10155,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-843692175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-943857621&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10170,7 +10173,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-843692175&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-943857621&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
