@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-19T10:06:22&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-20T16:15:46&#43;02:00">
   
 
   
@@ -2660,7 +2660,7 @@ $$<p>Let
 </p>
 $$
 \begin{align*}
-C_0^\infty & = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \textsf{such that} \quad \varphi(x)=0 \quad \textsf{for} \quad 0 \leq x < a \quad \textsf{or} \quad b < x \leq 1 \rbrace .
+C_0^\infty & = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \text{such that} \quad \varphi(x)=0 \quad \text{for} \quad 0 \leq x < a \quad \text{or} \quad b < x \leq 1 \rbrace .
 \end{align*}
 $$<p>
 Then for a function $v \in \mathrm{L}^2(0,1)$ we say $v^\prime$ is the <strong>weak derivative</strong> (or <strong>distributional derivative</strong>) if
@@ -2689,7 +2689,7 @@ $$<p>To see that it is a semi-norm and not a norm, consider $v$ a constant, so $
 <p>Consider the elementary problem:</p>
 $$
 \begin{equation*}
- -\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \textsf{on} \quad (0,1) \quad \textsf{with} \quad u(0) = u(1) = 0
+ -\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \text{on} \quad (0,1) \quad \text{with} \quad u(0) = u(1) = 0
 \end{equation*}
 $$<p>where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 >0$ for all $x \in  \left[ 0, 1 \right]$.</p>
 <p>Next, on $\mathrm{L}^2(0,1)$, define the <strong>scalar product</strong>
@@ -2708,7 +2708,7 @@ $$<p>and consider the <strong>weak form</strong>
 </p>
 $$
 \begin{equation*}
-\textsf{Find} \quad u \in H^1_0 \quad \textsf{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
+\text{Find} \quad u \in H^1_0 \quad \text{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
 \end{equation*}
 $$<div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
@@ -2765,9 +2765,9 @@ $$<p>then $f=0$.</p>
 </p>
 $$
 \begin{equation*}
-\textsf{Find a} \quad u_h \in V_h \quad \textsf{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
+\text{Find a} \quad u_h \in V_h \quad \text{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
 \end{equation*}
-$$<p>Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\textsf{dim}V_h$, so that
+$$<p>Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\text{dim}V_h$, so that
 </p>
 $$
 \begin{equation*}
@@ -2833,7 +2833,7 @@ C & = \dfrac{1}{\alpha_0} \Bigl( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \bi
 $$<p>
 then</p>
 $$
-\left| u - u_h \right|^{}\_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
+\left| u - u_h \right|^{}_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
 $$
         </div>
     </div>
@@ -2896,7 +2896,7 @@ $$<p>Then the weak and discrete weak form problems admit unique solutions which 
 </p>
 $$
 \begin{equation*}
-\bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \textsf{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
+\bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \text{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
 \end{equation*}
 $$
         </div>
@@ -2938,7 +2938,7 @@ $$
 <p>Introduce a partition
  $\mathcal{T}_h$ 
 
-of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width $h_j = x_{j+1} − x_j$, $j = 0, \ldots, n − 1$, with $0 = x_0 < x_1 < \ldots < x_{n−1} < x_n = 1$ and let  $h=\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$ 
+of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width ${h_j~=~x_{j+1}~-~x_j}$, $j = 0, \ldots, n − 1$, with $0 = x_0 < x_1 < \ldots < x_{n−1} < x_n = 1$ and let  $h~=~\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$ 
  .</p>
 <p>Since functions in  $\mathrm{H}_{0}^{1}(0,1)$ 
  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in <a href="/docs/numericalanalysis22/part2/interpolation/#piecewise-lagrange-interpolation">$(2)$</a>, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.</p>
@@ -2997,12 +2997,12 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 $$<p>and let $u_h \in V_h$ be it finite element approximation using a continuous piecewise polynomial of degree less than or equal to $k$, where $k \ge 1$. Furthermore, assume that $u \in \mathrm{H}^{s}(0,1)$ for some $s \geq 2$. Then the error is bounded as</p>
 $$
 \begin{equation*}
-\bigl\Vert u - u_{h}\bigr\Vert\_{\mathrm{H}\_{0}^{1}(0,1)} \le \dfrac{M}{\alpha_0} C h^l \bigl\Vert u \bigr\Vert_{H^{l+1}(0,1)}
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{H}_{0}^{1}(0,1)} \le \dfrac{M}{\alpha_0} C h^l \bigl\Vert u \bigr\Vert_{H^{l+1}(0,1)}
 \end{equation*}
 $$<p>where $l = \min\left( k, s-1 \right)$. Additionally, under the same assumptions it is possible to show that</p>
 $$
 \begin{equation*}
-\bigl\Vert u - u_{h}\bigr\Vert\_{\mathrm{L}^{2}(0,1)} \leq C h^{l+1} \bigl\Vert u \bigr\Vert_{\mathrm{H}^{l+1}(0,1)} .
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{L}^{2}(0,1)} \leq C h^{l+1} \bigl\Vert u \bigr\Vert_{\mathrm{H}^{l+1}(0,1)} .
 \end{equation*}
 $$<p>The error estimate shows that the Galerkin method is convergent, that is the approximation error tends to zero as $h \rightarrow 0$. The order of convergence is $k$.</p>
 
@@ -3099,9 +3099,9 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-19T10:06:22.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-20T16:15:46.000Z">
     <span>Last updated on</span>
-    Jun 19, 2024</time>
+    Sep 20, 2024</time>
       
       
   

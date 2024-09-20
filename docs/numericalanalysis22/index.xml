@@ -258,7 +258,7 @@ $$
 &lt;/p&gt;
 $$
 \begin{equation*}
-\forall \varepsilon &gt; 0, \quad \exists \\,  n \quad \textsf{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
+\forall \varepsilon &gt; 0, \quad \exists \\,  n \quad \text{such that} \quad \left\Vert x(d) - x_n\left( d+ \delta d_n \right) \right\Vert \le \varepsilon
 \end{equation*}
 $$
         &lt;/div&gt;
@@ -600,7 +600,7 @@ If the functions $F^{(k)}$ are independent of the number of iterations, then it 
 &lt;/p&gt;
 $$
 \begin{equation}
-D x^{(n+1)} = -(L + U) x^{(n)} + b . \tag{eq:jacobi_method}
+D x^{(n+1)} = -(L + U) x^{(n)} + b . \tag{eq:JAC}
 \end{equation}
 $$&lt;p&gt;
 Element-wise this is
@@ -666,7 +666,7 @@ $$
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
 \end{equation}
 $$&lt;p&gt;
-where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; which is induced by the vector norm $\left| x \right|_{A} = \sqrt{ x \cdot A x}$&lt;/p&gt;
+where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; which is induced by the vector norm $\left| x \right|_{A}~=~\sqrt{ x \cdot A x}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
@@ -740,7 +740,7 @@ $$
 \Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b. \nonumber
 \end{equation}
 $$&lt;p&gt;It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.&lt;/p&gt;
-&lt;p&gt;If $x$ is a solution to the linear system and minimizes $\Phi(x)$ then $\nabla \Phi(x) = 0$, so that $Ax-b = \nabla \Phi(x) =0$.&lt;/p&gt;
+&lt;p&gt;If $x$ is a solution to the linear system and minimizes $\Phi(x)$ then $\nabla \Phi(x) = 0$, so that $Ax~-~b~ =~\nabla\Phi(x)~=0$.&lt;/p&gt;
 &lt;p&gt;Now
 &lt;/p&gt;
 $$
@@ -998,8 +998,7 @@ $$
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
 \end{equation*}
 $$&lt;p&gt;
-where  $l_{i} \in \mathbb{P}\_{n}$
-is such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}\_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
+where $l_{i} \in \mathbb{P}_{n}$ is such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i~=~0,\ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -1054,7 +1053,7 @@ $$
 &lt;/p&gt;
 $$
 \begin{equation*}
-\label{eq:basic_interpolation_error}
+\tag{eq:BIE}
 \begin{aligned}
 E_n(x) &amp; = f(x) − \Pi_n f (x) \\
 &amp; = \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
@@ -1093,14 +1092,14 @@ $$
 &lt;/p&gt;
 $$
 \begin{equation*}
-\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \\, \mathrm{d}x &lt; \infty \bigr \rbrace
+\mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x &lt; \infty \bigr \rbrace
 \end{equation*}
 $$&lt;p&gt;
 with
 &lt;/p&gt;
 $$
 \begin{equation*}
-\| f \|^{}\_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \\, \mathrm{d} x \right)^{1 / 2}.
+\| f \|^{}_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \, \mathrm{d} x \right)^{1 / 2}.
 \end{equation*}
 $$&lt;p&gt;
 This defines a &lt;em&gt;norm&lt;/em&gt; for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.&lt;/p&gt;
@@ -1112,12 +1111,16 @@ This defines a &lt;em&gt;norm&lt;/em&gt; for $\mathrm{L}^{2}(a, b)$.  Note that 
 
 
 
-&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.&lt;/p&gt;
+&lt;p&gt;Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that
+&lt;/p&gt;
+$$
+[a, b] = \bigcup\limits_{j=0}^{K−1}I_j.$$&lt;p&gt;
+Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.&lt;/p&gt;
 &lt;p&gt;For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space
 &lt;/p&gt;
 $$
 \begin{equation*}
-X_h^k = \bigl\lbrace v \in C^0([a, b]) \\, : \\,   v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \\, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2}
+X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,  v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2}
 \end{equation*}
 $$&lt;p&gt;which is the space of the continuous functions over the interval $[a, b]$ whose restrictions on each $I_j$ are polynomials of degree less than or equal to $k$.&lt;/p&gt;
 &lt;p&gt;Then, for any continuous function $f$ in $[a, b]$, the piecewise interpolation polynomial $\Pi^k_h f$ coincides on each $I_j$ with the interpolating polynomial of $\left. f \right|_{I_j}$ at the $n + 1$ nodes
@@ -1146,7 +1149,7 @@ $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−
 &lt;/p&gt;
 $$
 \begin{equation*}
-\left\| \left( f - \Pi_{h}^{k} f\right)^{(m)} \right\|\_{\mathrm{L}^{2}(a, b)} \leq C h^{k+1-m} \left\| f^{(k+1)} \right\|_{\mathrm{L}^{2}(a, b)} .
+\left\| \left( f - \Pi_{h}^{k} f\right)^{(m)} \right\|_{\mathrm{L}^{2}(a, b)} \leq C h^{k+1-m} \left\| f^{(k+1)} \right\|_{\mathrm{L}^{2}(a, b)} .
 \end{equation*}
 $$&lt;p&gt;
 In particular, for $k=1$ and $m=0$, or $m=1$
@@ -1154,8 +1157,8 @@ In particular, for $k=1$ and $m=0$, or $m=1$
 $$
 \begin{equation*}
 \begin{aligned}
-\left\| f-\Pi_{h}^{1} f \right\|\_{\mathrm{L}^{2}(a, b)} &amp; \leq C_{1} h^{2} \left\| f^{\prime \prime} \right\|\_{\mathrm{L}^{2}(a, b)} \newline
-\left\| \left( f - \Pi_{h}^{1} f \right)^{\prime}\right\|\_{\mathrm{L}^{2}(a, b)} &amp; \leq C_{2} h\left\| f^{\prime \prime} \right\|\_{\mathrm{L}^{2}(a, b)}  
+\left\| f-\Pi_{h}^{1} f \right\|_{\mathrm{L}^{2}(a, b)} &amp; \leq C_{1} h^{2} \left\| f^{\prime \prime} \right\|_{\mathrm{L}^{2}(a, b)} \newline
+\left\| \left( f - \Pi_{h}^{1} f \right)^{\prime}\right\|_{\mathrm{L}^{2}(a, b)} &amp; \leq C_{2} h\left\| f^{\prime \prime} \right\|_{\mathrm{L}^{2}(a, b)}  
 \end{aligned}
 \end{equation*}
 $$&lt;p&gt;
@@ -1445,7 +1448,7 @@ $$
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{+}u = -\dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_j, x_{j+1} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{-}u = \dfrac{h}{2} u^{\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j} \right)$&lt;/li&gt;
 &lt;li&gt;$u\left( x_j \right) - D_{j}^{0}u = -\dfrac{h^2}{6} u^{\prime\prime\prime}\left( \xi\right)$ where $\xi \in \left( x_{j-1}, x_{j+1} \right)$&lt;/li&gt;
-&lt;li&gt;$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2 \in \left( x_{j}, x_{j+1} \right)$.&lt;/li&gt;
+&lt;li&gt;$u\left( x_j \right) - D_{j}^{\pm}u = -\dfrac{h^2}{24}\left( u^{(4)}\left( \xi_1\right) + u^{(4)}\left( \xi_2\right) \right)$ where $\xi_1 \in \left( x_{j-1}, x_{j} \right)$ and $\xi_2~\in~\left( x_{j}, x_{j+1} \right)$.&lt;/li&gt;
 &lt;/ol&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1473,7 +1476,7 @@ $$
 &lt;/p&gt;
 $$
 \begin{align*}
-\left( v_h, w_h \right)\_h^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
+\left( v_h, w_h \right)_{h}^{} &amp; = h \sum\limits_{j=0}^{n} c_j v_j w_j
 \end{align*}
 $$&lt;p&gt;
 where &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; $c_j = 1$ for $j=1, \ldots n-1$ and $c_0 = c_n = \frac{1}{2}$ and a &lt;strong&gt;norm&lt;/strong&gt; is defined as&lt;/p&gt;
@@ -1759,7 +1762,7 @@ $$&lt;p&gt;Let
 &lt;/p&gt;
 $$
 \begin{align*}
-C_0^\infty &amp; = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \textsf{such that} \quad \varphi(x)=0 \quad \textsf{for} \quad 0 \leq x &lt; a \quad \textsf{or} \quad b &lt; x \leq 1 \rbrace .
+C_0^\infty &amp; = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \text{such that} \quad \varphi(x)=0 \quad \text{for} \quad 0 \leq x &lt; a \quad \text{or} \quad b &lt; x \leq 1 \rbrace .
 \end{align*}
 $$&lt;p&gt;
 Then for a function $v \in \mathrm{L}^2(0,1)$ we say $v^\prime$ is the &lt;strong&gt;weak derivative&lt;/strong&gt; (or &lt;strong&gt;distributional derivative&lt;/strong&gt;) if
@@ -1788,7 +1791,7 @@ $$&lt;p&gt;To see that it is a semi-norm and not a norm, consider $v$ a constant
 &lt;p&gt;Consider the elementary problem:&lt;/p&gt;
 $$
 \begin{equation*}
- -\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \textsf{on} \quad (0,1) \quad \textsf{with} \quad u(0) = u(1) = 0
+ -\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \text{on} \quad (0,1) \quad \text{with} \quad u(0) = u(1) = 0
 \end{equation*}
 $$&lt;p&gt;where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 &gt;0$ for all $x \in  \left[ 0, 1 \right]$.&lt;/p&gt;
 &lt;p&gt;Next, on $\mathrm{L}^2(0,1)$, define the &lt;strong&gt;scalar product&lt;/strong&gt;
@@ -1807,7 +1810,7 @@ $$&lt;p&gt;and consider the &lt;strong&gt;weak form&lt;/strong&gt;
 &lt;/p&gt;
 $$
 \begin{equation*}
-\textsf{Find} \quad u \in H^1_0 \quad \textsf{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
+\text{Find} \quad u \in H^1_0 \quad \text{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
 \end{equation*}
 $$&lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -1864,9 +1867,9 @@ $$&lt;p&gt;then $f=0$.&lt;/p&gt;
 &lt;/p&gt;
 $$
 \begin{equation*}
-\textsf{Find a} \quad u_h \in V_h \quad \textsf{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
+\text{Find a} \quad u_h \in V_h \quad \text{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
 \end{equation*}
-$$&lt;p&gt;Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\textsf{dim}V_h$, so that
+$$&lt;p&gt;Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\text{dim}V_h$, so that
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -1932,7 +1935,7 @@ C &amp; = \dfrac{1}{\alpha_0} \Bigl( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2
 $$&lt;p&gt;
 then&lt;/p&gt;
 $$
-\left| u - u_h \right|^{}\_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
+\left| u - u_h \right|^{}_{H^1\left(0,1\right)} \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H^1\left(0,1\right)}.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1995,7 +1998,7 @@ $$&lt;p&gt;Then the weak and discrete weak form problems admit unique solutions 
 &lt;/p&gt;
 $$
 \begin{equation*}
-\bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \textsf{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
+\bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \text{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
 \end{equation*}
 $$
         &lt;/div&gt;
@@ -2037,7 +2040,7 @@ $$
 &lt;p&gt;Introduce a partition
  $\mathcal{T}_h$ 
 
-of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width $h_j = x_{j+1} − x_j$, $j = 0, \ldots, n − 1$, with $0 = x_0 &lt; x_1 &lt; \ldots &lt; x_{n−1} &lt; x_n = 1$ and let  $h=\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$ 
+of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width ${h_j~=~x_{j+1}~-~x_j}$, $j = 0, \ldots, n − 1$, with $0 = x_0 &lt; x_1 &lt; \ldots &lt; x_{n−1} &lt; x_n = 1$ and let  $h~=~\max\limits_{\mathcal{T}_{h}}\left(h_{j}\right)$ 
  .&lt;/p&gt;
 &lt;p&gt;Since functions in  $\mathrm{H}_{0}^{1}(0,1)$ 
  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/part2/interpolation/#piecewise-lagrange-interpolation&#34;&gt;$(2)$&lt;/a&gt;, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.&lt;/p&gt;
@@ -2096,12 +2099,12 @@ a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right
 $$&lt;p&gt;and let $u_h \in V_h$ be it finite element approximation using a continuous piecewise polynomial of degree less than or equal to $k$, where $k \ge 1$. Furthermore, assume that $u \in \mathrm{H}^{s}(0,1)$ for some $s \geq 2$. Then the error is bounded as&lt;/p&gt;
 $$
 \begin{equation*}
-\bigl\Vert u - u_{h}\bigr\Vert\_{\mathrm{H}\_{0}^{1}(0,1)} \le \dfrac{M}{\alpha_0} C h^l \bigl\Vert u \bigr\Vert_{H^{l+1}(0,1)}
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{H}_{0}^{1}(0,1)} \le \dfrac{M}{\alpha_0} C h^l \bigl\Vert u \bigr\Vert_{H^{l+1}(0,1)}
 \end{equation*}
 $$&lt;p&gt;where $l = \min\left( k, s-1 \right)$. Additionally, under the same assumptions it is possible to show that&lt;/p&gt;
 $$
 \begin{equation*}
-\bigl\Vert u - u_{h}\bigr\Vert\_{\mathrm{L}^{2}(0,1)} \leq C h^{l+1} \bigl\Vert u \bigr\Vert_{\mathrm{H}^{l+1}(0,1)} .
+\bigl\Vert u - u_{h}\bigr\Vert_{\mathrm{L}^{2}(0,1)} \leq C h^{l+1} \bigl\Vert u \bigr\Vert_{\mathrm{H}^{l+1}(0,1)} .
 \end{equation*}
 $$&lt;p&gt;The error estimate shows that the Galerkin method is convergent, that is the approximation error tends to zero as $h \rightarrow 0$. The order of convergence is $k$.&lt;/p&gt;
 

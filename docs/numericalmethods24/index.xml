@@ -1013,7 +1013,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$&lt;p&gt;
-where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
+where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
 &lt;/p&gt;
 $$
 U = U_{n-1} \cdots U_2 U_1 A.
