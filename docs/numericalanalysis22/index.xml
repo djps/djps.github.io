@@ -1053,7 +1053,6 @@ $$
 &lt;/p&gt;
 $$
 \begin{equation*}
-\tag{eq:BIE}
 \begin{aligned}
 E_n(x) &amp; = f(x) − \Pi_n f (x) \\
 &amp; = \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)

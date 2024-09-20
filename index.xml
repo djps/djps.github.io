@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-689725143&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-126837459&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-689725143&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-126837459&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1027,6 +1027,7 @@ $$
 
 
 
+&lt;p&gt;Thus $\boldsymbol{v}^T \boldsymbol{v}$ is a $1 \times 1$ matrix&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1048,6 +1049,36 @@ $$
 
 
 &lt;p&gt;Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then the equivalent multiplication by a row vector is $x^T A^T = y^T$.&lt;/p&gt;
+&lt;h3 id=&#34;properties-of-matrix-operations&#34;&gt;Properties of Matrix Operations&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;$A+B = B+A$&lt;/li&gt;
+&lt;li&gt;$c\left(A + B\right) = cA + cB$&lt;/li&gt;
+&lt;li&gt;$C\left(A + B\right) = CA + CB$&lt;/li&gt;
+&lt;li&gt;$\left(A + B\right)C = AC + BC$&lt;/li&gt;
+&lt;li&gt;$AB \neq BA$&lt;/li&gt;
+&lt;li&gt;$A + \left(B + C\right) = \left(A+ B\right) + C$&lt;/li&gt;
+&lt;li&gt;$A\left( BC \right) = \left(AB\right)C$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;details admonition Proposition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Proposition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            $\left( A B \right)^T = B^T A^T$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 &lt;h2 id=&#34;useful-types-of-matrices&#34;&gt;Useful Types of Matrices&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1059,9 +1090,10 @@ $$
 &lt;li&gt;
 &lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A square matrix has an inverse if and only if the rank of the matrix is equal to the number of columns (or rows), equivalently, the columns are linearly independent. Such matrices are said to have full rank.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;details admonition Proposition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -2603,7 +2635,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            If $V$ is a vector space and $W \cup V$ and $W$ is also a vector space, then it is called a subspace of $V$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2623,7 +2655,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            If $\mathcal{A} = \left\{ \boldsymbol{v}_1, \ldots, \boldsymbol{v}_k \right\}$ where each vector $\boldsymbol{v}_i \in\mathbb{R}^n$, then the span of $\mathcal{A}$ is the set of all possible linear combinations of the vectors in $\mathcal{A}$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2643,7 +2675,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            A basis of a vectors span is the maximal collection of linearly independent vectors from that vector space.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2651,26 +2683,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Rank&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
+&lt;p&gt;Thus, if you add another vector from the vectors space to the basis set, it will be a linear combination of the vectors from the basis.&lt;/p&gt;
+&lt;p&gt;The number of vectors in the basis is the &lt;strong&gt;dimension of the vector space&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -2683,7 +2697,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            The column space of a matrix $A$ is the span of all columns of $A$. Similarly, the row space is the span of the rows of $A$ or the column space of $A^T$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2703,7 +2717,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            The null space of a matrix $A$ is the collection of all solutions to $A \boldsymbol{x} = \boldsymbol{0}$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2711,6 +2725,28 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Rank&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The rank of a matrix $A$ is the dimension of the column space of $A$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;The rank is also the number of pivots in $A$.&lt;/p&gt;
+&lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -2727,6 +2763,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+
+
 
 
 
@@ -2751,6 +2789,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 
+--&gt;
 </description>
     </item>
     
@@ -5460,7 +5499,6 @@ $$
 &lt;/p&gt;
 $$
 \begin{equation*}
-\tag{eq:BIE}
 \begin{aligned}
 E_n(x) &amp; = f(x) − \Pi_n f (x) \\
 &amp; = \dfrac{f^{(n+1)}( \xi ) }{ (n + 1)!} \omega_{n+1}(x)
@@ -10098,7 +10136,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-925478316&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-376895214&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10116,7 +10154,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-925478316&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-376895214&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10127,7 +10165,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-814579623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-376482519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10145,7 +10183,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-814579623&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-376482519&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10158,7 +10196,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-815469732&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-795461382&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10176,7 +10214,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-815469732&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-795461382&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
