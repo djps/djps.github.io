@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Examples of Lagrange polynomials to interpolate and integrate" />
+  <meta name="description" content="An overview of vector spaces" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/" />
+  <link rel="alternate" hreflang="en-us" href="https://djps.github.io/docs/gradcalclinalg24/part1/spaces/" />
 
   
   
@@ -211,7 +211,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu3343892375259912463.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu2787719156241684871.png" />
 
-  <link rel="canonical" href="https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/" />
+  <link rel="canonical" href="https://djps.github.io/docs/gradcalclinalg24/part1/spaces/" />
 
   
   
@@ -238,18 +238,18 @@
     <meta property="twitter:creator" content="@david_sinden" />
   
   <meta property="og:site_name" content="David Sinden" />
-  <meta property="og:url" content="https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/" />
-  <meta property="og:title" content="Lagrange Polynomials | David Sinden" />
-  <meta property="og:description" content="Examples of Lagrange polynomials to interpolate and integrate" /><meta property="og:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" />
+  <meta property="og:url" content="https://djps.github.io/docs/gradcalclinalg24/part1/spaces/" />
+  <meta property="og:title" content="Vector Spaces | David Sinden" />
+  <meta property="og:description" content="An overview of vector spaces" /><meta property="og:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-06-17T00:00:00&#43;00:00"
+        content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-06-18T13:10:59&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-20T09:18:57&#43;02:00">
   
 
   
@@ -259,7 +259,7 @@
   
 
 
-  <title>Lagrange Polynomials | David Sinden</title>
+  <title>Vector Spaces | David Sinden</title>
 
   
   
@@ -1497,7 +1497,7 @@
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/"
@@ -1532,13 +1532,14 @@
   >Matrices
     </a>
               
-            </li><li class="flex flex-col "><a
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part1/spaces/"
     
   >Vector Spaces
     </a>
+  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -1768,7 +1769,7 @@
               
             </li></ul>
       </div>
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/"
@@ -1843,7 +1844,7 @@
   >Course Notes
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/notebooks/"
@@ -1862,14 +1863,13 @@
   >Lagrange Interpolation
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/notebooks/characteristicpolynomial/"
     
   >Lagrange Polynomials
     </a>
-  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -2125,7 +2125,7 @@
 
     <ul class="flex flex-col gap-1 max-lg:hidden">
         
-        <li class=""><a
+        <li class="open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/"
@@ -2159,9 +2159,9 @@
   >Matrices
     </a>
               
-            </li><li class="flex flex-col "><a
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part1/spaces/"
     
   >Vector Spaces
@@ -2394,7 +2394,7 @@
               
             </li></ul>
       </div></li>
-        <li class="open"><a
+        <li class=""><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/"
@@ -2468,7 +2468,7 @@
   >Course Notes
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/notebooks/"
@@ -2487,9 +2487,9 @@
   >Lagrange Interpolation
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalanalysis22/notebooks/characteristicpolynomial/"
     
   >Lagrange Polynomials
@@ -2575,242 +2575,238 @@
         <a href="https://djps.github.io/docs/">Courses</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://djps.github.io/docs/numericalanalysis22/">CA-S-MATH-804: Numerical Analysis</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
-      <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://djps.github.io/docs/numericalanalysis22/notebooks/">Notebooks</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Lagrange Polynomials</div>
+        <a href="https://djps.github.io/docs/gradcalclinalg24/">MDE-MET-01 Calculus and Linear Algebra for Graduate Students</a>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Vector Spaces</div>
 </div>
 
       </div>
 
       <div class="content text-base">
-        <h1>Lagrange Polynomials</h1>
-        <!--
-<p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"> <span style="font-weight: 700;"> David Sinden </span> &middot;
-<i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> March 11, 2022 &middot;
-<i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 20 minute read </p>
--->
-<p>This notebook uses the scipy <a href="https://docs.scipy.org/doc/scipy-1.8.0/html-scipyorg/reference/generated/scipy.interpolate.lagrange.html" target="_blank" rel="noopener"><code>lagrange</code></a> function to compute the Lagrange polynomial.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">numpy.polynomial.polynomial</span> <span class="kn">import</span> <span class="n">Polynomial</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">lagrange</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-poster&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>For some points $x$, define some data $y$ and create the Lagrange polynomial $f$, which has coefficients $p$</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">f</span> <span class="o">=</span> <span class="n">lagrange</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="n">Polynomial</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">coef</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">coef</span>
-</span></span><span class="line"><span class="cl">    <span class="n">z</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span> <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;x&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;x^</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">))]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">string</span><span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">))]</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">md</span><span class="p">(</span><span class="s2">&#34;Coefficients of the interpolating polynomial: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
-</span></span></code></pre></div><pre><code>['1.0', '3.5x', '-1.5x^2']
-</code></pre>
-<p>Coefficients of the interpolating polynomial: [ 1.0, 3.5, -1.5]</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">lagrange_basis</span><span class="p">(</span><span class="n">x_int</span><span class="p">,</span> <span class="n">y_int</span><span class="p">,</span> <span class="n">x_new</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    This function takes pairs of points (x_int, y_int) and, from a set of points x_new
-</span></span></span><span class="line"><span class="cl"><span class="s2">    computes the Lagrange polynomial to return the interpolated values y_new
-</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">l</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x_int</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x_new</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">xi</span><span class="p">,</span> <span class="n">yi</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_int</span><span class="p">,</span> <span class="n">y_int</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span> <span class="p">[(</span><span class="n">x_new</span> <span class="o">-</span> <span class="n">xj</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">xi</span> <span class="o">-</span> <span class="n">xj</span><span class="p">)</span> <span class="k">for</span> <span class="n">xj</span> <span class="ow">in</span> <span class="n">x_int</span> <span class="k">if</span> <span class="n">xi</span> <span class="o">!=</span> <span class="n">xj</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">l</span>
-</span></span></code></pre></div><p>Plot the data and the individual components of the polynomial</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">x_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">test</span> <span class="o">=</span> <span class="n">lagrange_basis</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_new</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;grey&#34;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.75</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">x_new</span><span class="p">),</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Lagrange Interpolation&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;grey&#34;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.75</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;grey&#34;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.75</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span> <span class="s1">&#39;tab:orange&#39;</span><span class="p">,</span> <span class="s1">&#39;tab:green&#39;</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$l_0(x)$&#39;</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:orange&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$l_1(x)$&#39;</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">test</span><span class="p">[</span><span class="mi">2</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:green&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$l_2(x)$&#39;</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Lagrange Basis Functions&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;grey&#34;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.75</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;grey&#34;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&#34;-&#34;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.75</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span> <span class="s1">&#39;tab:orange&#39;</span><span class="p">,</span> <span class="s1">&#39;tab:green&#39;</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y_0 l_0(x)$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:orange&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y_1 l_1(x)$&#39;</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">test</span><span class="p">[</span><span class="mi">2</span><span class="p">,:],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:green&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$y_2 l_2(x)$&#39;</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Scaled Lagrange Basis Functions&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></span></code></pre></div><p>
+        <h1>Vector Spaces</h1>
+        <div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Linear Independence</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>A set of vectors, $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n$ are linearly independent if none of the vectors can be expressed as a linear combination of the remaining $n-1$ vectors.</p>
+<p>An alternative definition is that if $c_1 \vec{v}_1 + c_2 \vec{v}_2  + \ldots c_n \vec{v}_n = \vec{0}$, then the only set of values for $c_i$ which satisfies this, are $c_1 = c_2 = \ldots = c_n =0$.</p>
+
+        </div>
+    </div>
+</div>
 
 
 
 
+<p>Thus a matrix $A$ has linearly independent columns if and only if the equation $A\vec{x} = \vec{0}$ has exactly one solution.</p>
+<p>If the columns of $A$ are not linearly independent, then $A\vec[x} =\vec{0}$ will have infinitely many solutions.</p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Vector Spaces</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>A vector space is a set $V$ with two operations:</p>
+<ol>
+<li>Addition of the elements of $V$, i.e. if $\vec{v}$, $\vec{u} \in V$, then $\vec{v} + \vec{u} \in V$</li>
+<li>Multiplication of the elements of $V by a scalar$, i.e. if $\vec{v} \in V$, and $\alpha \in \mathbb{R}$ then $\alpha \vec{v} \in V$,
+which satisfies the following conditions</li>
+<li>$\vec{v} + \vec{u} = \vec{u} + \vec{v}$</li>
+<li>$\vec{u} + \left(\vec{v} +  \vec{w} \right) =\left(\vec{u} + \vec{v}\right) + \vec{w}$</li>
+<li>There exists a vector $\vec{0} \in V$ such that $ \vec{u} + \vec{0} = \vec{u}$ for all $\vec{u} \in V$</li>
+<li>There exists a vector $\vec{1} \in V$ such that $ \vec{u}\vec{1} = \vec{u}$ for all $\vec{u} \in V$</li>
+<li>For any vector $\vec{v} \in V$, there exists a vector $\vec{u} \in V$ such that $\vec{v} + \vec{u} = \vec{0}$, which is denoted as $\vec{u} = - \vec{v}$</li>
+<li>For any $a$, $b \in \mathbb{R}$ and $\vec{v} \in V$, a \left(b \vec{v} \right) = \left( a b\right)\vec{v}$</li>
+<li>$a\left( \vec{v} + \vec{u} \right) = a \vec{v} + a \vec{u}$</li>
+<li>$\left( a + b \right)\vec{v} = a \vec{v} + b \vec{v}$</li>
+</ol>
+        </div>
+    </div>
+</div>
 
 
 
 
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Subspaces</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img src="/img/characteristicPolynomial_7_0.png" alt="Cubic Lagrange basis functions" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>Now use a different set of points, defined by a function $x \log(x)$.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span></code></pre></div><p>We can compute the polynomials of different orders and the errors.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x0</span> <span class="o">=</span> <span class="mf">0.1</span>
-</span></span><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="mf">2.0</span>
-</span></span><span class="line"><span class="cl"><span class="n">dx</span> <span class="o">=</span> <span class="mf">0.01</span>
-</span></span><span class="line"><span class="cl"><span class="n">x_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">err</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">x_new</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">y_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">x_new</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">fig1</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">f</span> <span class="o">=</span> <span class="n">lagrange</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="n">Polynomial</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">coef</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">coef</span>
-</span></span><span class="line"><span class="cl">    <span class="n">err</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">md</span><span class="p">(</span><span class="s2">&#34;Coefficients of the interpolating polynomial: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">=</span><span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">clrs</span> <span class="o">=</span> <span class="s1">&#39;tab:orange&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;tab:green&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">x_new</span><span class="p">),</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">clrs</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&#34;interpolation&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&#34;data&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_new</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&#34;function&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Lagrange Interpolation of order </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></span></code></pre></div><p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Span</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Basis</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Rank</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img src="/img/characteristicPolynomial_12_0.png" alt="png" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>Plot the errors</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig2</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">=</span><span class="n">fig2</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">clrs</span> <span class="o">=</span> <span class="s1">&#39;tab:orange&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;tab:green&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">err</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">clrs</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&#34;Error Order </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></span></code></pre></div><p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Column and Row Spaces</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Null spaces</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Projections</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img src="/img/characteristicPolynomial_14_0.png" alt="png" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<p>Compute the bounds on the errors.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig3</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="n">bounds1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span> <span class="p">[(</span><span class="n">x_new</span> <span class="o">-</span> <span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">bounds2</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">x_new</span><span class="o">**</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">=</span><span class="n">fig3</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">b</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">bounds1</span> <span class="o">*</span> <span class="n">bounds2</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_new</span><span class="p">,</span> <span class="n">err</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">clrs</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&#34;Error Order </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">b</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=-</span><span class="n">b</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></span></code></pre></div><p>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Gram-Schmidt</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            
+        </div>
+    </div>
+</div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img src="/img/characteristicPolynomial_16_0.png" alt="png" loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-06-18T13:10:59.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-20T09:18:57.000Z">
     <span>Last updated on</span>
-    Jun 18, 2024</time>
+    Sep 20, 2024</time>
       
       
   
@@ -2825,14 +2821,14 @@
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/docs/numericalanalysis22/notebooks/lagrangeinterpolation/">
+        <a class="group flex no-underline" href="/docs/gradcalclinalg24/part1/matrices/">
           <span
             class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
           ><span class="ltr:inline rtl:hidden">&larr;</span></span>
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Lagrange Interpolation</span>
+            >Matrices</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
             </span>
@@ -2842,11 +2838,11 @@
     </div>
     <div class="">
       
-        <a class="group flex text-right no-underline" href="/docs/numericalanalysis22/notebooks/integrals/">
+        <a class="group flex text-right no-underline" href="/docs/gradcalclinalg24/part2/one-variable/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Numerical Integration</span
+            >Calculus of a Single Variable</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
