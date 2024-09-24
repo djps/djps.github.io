@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 20, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 24, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-20T22:27:50&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T09:15:23&#43;02:00">
   
 
   
@@ -286,6 +286,7 @@
   
 
 
+  
   
   
   
@@ -1550,6 +1551,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part1/linear-equations/"
+    
+  >Linear Equations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/part1/spaces/"
     
   >Vector Spaces
@@ -2176,6 +2185,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part1/linear-equations/"
+    
+  >Linear Equations
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/part1/spaces/"
     
   >Vector Spaces
@@ -2778,12 +2795,23 @@ $$
 <p>A <strong>diagonal matrix</strong> is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.</p>
 </li>
 <li>
-<p>The <strong>inverse matrix</strong> of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$</p>
+<p>A <strong>banded</strong> matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.</p>
+</li>
+<li>
+<p>The <strong>inverse matrix</strong> of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$  A matrix is <strong>non-singular</strong> or <strong>invertible</strong> if there exists an inverse matrix exists.</p>
 </li>
 </ul>
 <p>A square matrix has an inverse if and only if the rank of the matrix is equal to the number of columns (or rows), equivalently, the columns are linearly independent. Such matrices are said to have full rank.</p>
 <ul>
-<li>An <strong>orthogonal matrix</strong> $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</li>
+<li>
+<p>A square matrix $A$ is <strong>symmetric</strong> if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.</p>
+</li>
+<li>
+<p>A square matrix is said to be <strong>Hermitian</strong> if the matrix is equal to its <em>conjugate transpose</em>, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.</p>
+</li>
+<li>
+<p>An <strong>orthogonal matrix</strong> $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
+</li>
 </ul>
 <div class="details admonition Proposition open">
     <div class="details-summary admonition-title">
@@ -2823,9 +2851,9 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-20T22:27:50.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:15:23.000Z">
     <span>Last updated on</span>
-    Sep 20, 2024</time>
+    Sep 24, 2024</time>
       
       
   
@@ -2857,11 +2885,11 @@ $$
     </div>
     <div class="">
       
-        <a class="group flex text-right no-underline" href="/docs/gradcalclinalg24/part1/spaces/">
+        <a class="group flex text-right no-underline" href="/docs/gradcalclinalg24/part1/linear-equations/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Vector Spaces</span
+            >Linear Equations</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               

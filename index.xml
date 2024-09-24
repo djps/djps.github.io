@@ -145,7 +145,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;pre&gt;- Linear Algebra
   - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
   - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
-  - Linear Equations
+  - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
   - [Vector Spaces](/docs/gradcalclinalg24/part1/spaces/)
   - Matrices &amp; Eigenvalues
 - Calculus
@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-824135796&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-624317958&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-824135796&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-624317958&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1088,12 +1088,23 @@ $$
 &lt;p&gt;A &lt;strong&gt;diagonal matrix&lt;/strong&gt; is a matrix where all entries outside the main diagonal are all zero, i.e. $a_{ij} =0$ when $i \neq j$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;banded&lt;/strong&gt; matrix is a matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and zero or more diagonals on either side.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;inverse matrix&lt;/strong&gt; of a square matrix is the matrix $A^{-1}$ such that $AA^{-1}~=~A^{-1}A~=~I.$  A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists an inverse matrix exists.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A square matrix has an inverse if and only if the rank of the matrix is equal to the number of columns (or rows), equivalently, the columns are linearly independent. Such matrices are said to have full rank.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its &lt;em&gt;conjugate transpose&lt;/em&gt;, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;details admonition Proposition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -1814,6 +1825,364 @@ $$
 
 
 
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Equations</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part1/linear-equations/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part1/linear-equations/</guid>
+      <description>&lt;h2 id=&#34;linear-equations&#34;&gt;Linear Equations&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Systems of Linear Equations&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A system of linear equations (or linear system) is a collection of one or more linear equations involving the same variables. If there are $m$ equations with $n$ unknown variables to solve for&lt;/p&gt;
+$$
+\begin{align*}
+a_{1,1} x_1 + a_{1,2} x_2 + \ldots + a_{1,n} x_n &amp; = b_1 \\
+a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n &amp; = b_2 \\
+\vdots &amp;  \\
+a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n &amp; = b_m.
+\end{align*}
+$$&lt;p&gt;The system of linear equations can be written in matrix form ${Ax=b}$, where&lt;/p&gt;
+$$
+\begin{align*}
+A = \left(
+  \begin{array}{cccc}
+  a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1,n} \\
+  a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2,n} \\
+  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+  a_{m,1} &amp; a_{m,2} &amp; \cdots &amp; a_{m,n}
+  \end{array}
+  \right), \quad x = \left(
+    \begin{array}{c}
+    x_1 \\\
+    x_2 \\\
+    \vdots \\\
+    x_n
+    \end{array}
+    \right), \quad b = \left(
+      \begin{array}{c}
+      b_1 \\
+      b_2 \\
+      \vdots \\
+      b_m
+      \end{array}
+      \right),
+\end{align*}
+$$&lt;p&gt;
+so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Note open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Note: &lt;em&gt;Properties of Nonsingular Matrices&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nonsingular matrix has full rank&lt;/li&gt;
+&lt;li&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/li&gt;
+&lt;li&gt;If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/li&gt;
+&lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h3 id=&#34;direct-methods&#34;&gt;Direct Methods&lt;/h3&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
+
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Gaussian elimination is a method to solve systems of linear equations based on forward elimination (a series of row-wise operations) to convert the matrix, $A$, to upper triangular form (echelon form), and then back substitution to solve the system. The row operations are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;row swapping&lt;/li&gt;
+&lt;li&gt;row scaling, i.e. multiplying by a non-zero scalar&lt;/li&gt;
+&lt;li&gt;row addition, i.e. adding a multiple of one row to another&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Forward elimination is written as&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $i = k + 1$ to $n$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ For $j = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; $\hspace{2cm} y = b_i$ &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{2cm}$ For $j = n$ to $i+1$: &lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; $\hspace{4cm} y = y - a_{i,j} x_j$ &lt;br&gt;
+&lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
+&lt;small&gt;14&lt;/small&gt; $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;
+&lt;small&gt;15&lt;/small&gt; End&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
+
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;| &lt;small&gt;1 &lt;/small&gt; | Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ |    |      |
+| &lt;small&gt;2 &lt;/small&gt; | For $k=1$ to $n-1$: |                     |                                                |
+| &lt;small&gt;3 &lt;/small&gt; |                     | For $i = k$ to $n$: |                                                |
+| &lt;small&gt;3 &lt;/small&gt; |                     |                     | Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$  |
+| &lt;small&gt;4 &lt;/small&gt; |                     | End                                                                  | |
+| &lt;small&gt;5 &lt;/small&gt; |                     | Find row with largest relative pivot element, denote this as row $j$ | |
+| &lt;small&gt;6 &lt;/small&gt; |                     | Swap rows $k$ and $j$                                                | |
+| &lt;small&gt;7 &lt;/small&gt; |                     | Swap entries $k$ and $j$ in vector $s$                               | |
+| &lt;small&gt;8 &lt;/small&gt; |                     | Do forward elimination on row $k$                                    | |
+| &lt;small&gt;9 &lt;/small&gt; | End                 |                                                                      | |&lt;/p&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;$LU$-Decomposition&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
+&lt;/p&gt;
+$$
+L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
+$$&lt;p&gt;
+where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
+&lt;/p&gt;
+$$
+U = U_{n-1} \cdots U_2 U_1 A.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!--
+
+### Fundamental Theorem of Numerical Analysis
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Stable&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left\| e_k \right\| &lt; \left\| e_0 \right\| }$.&lt;/p&gt;
+&lt;p&gt;Note that $\Vert x \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert x \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_n^2} }$.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Consistent&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+For linear systems, a fixed point, $x^{\ast}$, fulfils
+$$
+x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
+$$
+
+If the iterative method for a linear system is stable then
+
+$$
+e_k = \left( I - Q^{-1} A \right)^k e_0,
+$$
+so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a _matrix norm_.
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Convergent&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${x_k \rightarrow x^{\ast}}$ as ${k \rightarrow \infty}$ where $x^{\ast}$ is the exact solution.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Fundamental Theorem of Numerical Analysis&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            A numerical method is convergent if and only if it is consistent and stable.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+&lt;div class=&#34;details admonition Example open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M15.75 15.75V18m-7.5-6.75h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm0 2.25h.008v.008H8.25zm2.498-6.75h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm0 2.25h.007v.008h-.007zm2.504-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm0 2.25h.008v.008h-.008zm2.498-6.75h.008v.008h-.008zm0 2.25h.008v.008h-.008zM8.25 6h7.5v2.25h-7.5zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Example: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a class=&#34;hover:red&#34; href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34; style=&#34;text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a class=&#34;underline text-red-600 hover:text-red-800 visited:text-red-600 dark:text-red-300 dark:hover:text-red-200&#34; href=&#34;https://djps.github.io/ipyth/iterative.py/&#34; &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+--&gt;
 </description>
     </item>
     
@@ -2675,7 +3044,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A basis of a vectors span is the maximal collection of linearly independent vectors from that vector space.
+            A basis of a vectors space is the maximal collection of linearly independent vectors from that vector space.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -10136,7 +10505,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-985142367&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-362158479&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10154,7 +10523,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-985142367&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-362158479&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10165,7 +10534,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-386791245&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-159364278&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10183,7 +10552,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-386791245&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-159364278&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10196,7 +10565,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-726415389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-429658713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10214,7 +10583,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-726415389&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-429658713&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
