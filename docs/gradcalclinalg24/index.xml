@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-417826395&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-183245769&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-417826395&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-183245769&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -965,7 +965,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$&lt;p&gt;
-where each matrix $U_i$ is a matrix which describes the $i^{\text{th}}$ step in forward elimination. The upper triangular matrix $U$ is given by
+where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
 &lt;/p&gt;
 $$
 U = U_{n-1} \cdots U_2 U_1 A.
@@ -1128,7 +1128,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 &lt;small&gt;4 &lt;/small&gt; &lt;span class=doubleWidener&gt;&lt;/span&gt; Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
 &lt;small&gt;5 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt; End &lt;br&gt;
 &lt;small&gt;6 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt; Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt;Swap rows $k$ and $j$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt; Swap rows $k$ and $j$ &lt;br&gt;
 &lt;small&gt;8 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt; Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; &lt;span class=widener&gt;&lt;/span&gt; Do forward elimination on row $k$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
