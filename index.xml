@@ -19,7 +19,7 @@
       <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
       <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
-&lt;p&gt;Lectures will take place in autumn 2024, the lectures will take place on Wednesday mornings 9:45-11:00 and 11:15-12:30 at EH-4 (East Hall 4 Classroom)&lt;/p&gt;
+&lt;p&gt;Lectures will take place in autumn 2024, the lectures will take place on Wednesday mornings 9:45-11:00 and 11:15-12:30 at EH-4 (East Hall Classroom 4)&lt;/p&gt;
 &lt;p&gt;Note that there will be no lecture on Wednesday 9 October.&lt;/p&gt;
 &lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
 &lt;!-- The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.
@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-564392187&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-752346198&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-564392187&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-752346198&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1100,7 +1100,7 @@ $$
 &lt;p&gt;A square matrix $A$ is &lt;strong&gt;symmetric&lt;/strong&gt; if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its &lt;em&gt;conjugate transpose&lt;/em&gt;, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.&lt;/p&gt;
+&lt;p&gt;A square matrix, with complex elements, is said to be &lt;strong&gt;Hermitian&lt;/strong&gt; if the matrix is equal to its &lt;em&gt;conjugate transpose&lt;/em&gt;, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;An &lt;strong&gt;orthogonal matrix&lt;/strong&gt; $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.&lt;/p&gt;
@@ -1137,20 +1137,20 @@ $$
 &lt;p&gt;&lt;strong&gt;Reflection matrices&lt;/strong&gt;: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i &lt; j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i&gt;j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
+&lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i &lt; j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i~&gt;~j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;properties-of-nonsingular-matrices&#34;&gt;Properties of Nonsingular Matrices&lt;/h2&gt;
 &lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Nonsingular matrix has full rank&lt;/p&gt;
+&lt;p&gt;Nonsingular matrices have full rank.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error.&lt;/p&gt;
+&lt;p&gt;If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error. Another way to understand this is that the number of pivots is equal to the rank, so if the matrix does not have full rank, so there will not be enough pivots in order to transform the matrix in to row-echelon form.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -3094,7 +3094,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 
-&lt;p&gt;The rank is also the number of pivots in $A$.&lt;/p&gt;
+&lt;p&gt;The rank is also the number of pivots in $A$ when performing Gaussian elimination.&lt;/p&gt;
 &lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -5748,7 +5748,7 @@ $$
 
 
 
-&lt;p&gt;This is a infinite series of powers of the variable $x$, which is convergent for some values of $x$, such that $\left| x - c \right| &lt; r $ where $r$ is the radius of convergence.&lt;/p&gt;
+&lt;p&gt;This is a infinite series of powers of the variable $x$, which is convergent for some values of $x$ such that $\left| x - c \right| &lt; r $ where $r$ is the radius of convergence.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -10624,7 +10624,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-769135482&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-851739624&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10642,7 +10642,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-769135482&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-851739624&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10653,7 +10653,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-957816423&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-358276914&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10671,7 +10671,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-957816423&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-358276914&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10684,7 +10684,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-596321847&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-536412789&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10702,7 +10702,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-596321847&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-536412789&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

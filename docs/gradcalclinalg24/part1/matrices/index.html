@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T10:52:55&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T12:14:07&#43;02:00">
   
 
   
@@ -2833,7 +2833,7 @@ $$
 <p>A square matrix $A$ is <strong>symmetric</strong> if ${A=A^T}$, that is, $a_{i,j}=a_{j,i}$ for all indices $i$ and $j$.</p>
 </li>
 <li>
-<p>A square matrix is said to be <strong>Hermitian</strong> if the matrix is equal to its <em>conjugate transpose</em>, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.</p>
+<p>A square matrix, with complex elements, is said to be <strong>Hermitian</strong> if the matrix is equal to its <em>conjugate transpose</em>, i.e. $a_{i,j}=\overline{a_{j,i}}$ for all indices $i$ and $j$. A Hermitian matrix is written as $A=A^H$.</p>
 </li>
 <li>
 <p>An <strong>orthogonal matrix</strong> $Q$ is a matrix whose columns $\vec{q}_i$ are orthogonal to one another, that is $\vec{q}_i \cdot \vec{q}_j = 0$ for $i \neq j$ and have unit length, i.e. $\left\| \vec{q}_i \right\| = 1$.</p>
@@ -2870,27 +2870,27 @@ $$
 <p><strong>Reflection matrices</strong>: $R = I - 2 \boldsymbol{u} \boldsymbol{u}^T$.</p>
 </li>
 <li>
-<p>A square matrix is said to be <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i < j$. Similarly, a matrix is said to be <strong>upper triangular</strong> if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i>j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.</p>
+<p>A square matrix is said to be <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i < j$. Similarly, a matrix is said to be <strong>upper triangular</strong> if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i~>~j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.</p>
 </li>
 </ul>
 <h2 id="properties-of-nonsingular-matrices">Properties of Nonsingular Matrices</h2>
 <p>For a nonsingular matrix, the following all hold:</p>
 <ul>
 <li>
-<p>Nonsingular matrix has full rank</p>
+<p>Nonsingular matrices have full rank.</p>
 </li>
 <li>
 <p>A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.</p>
 </li>
 <li>
-<p>If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error.</p>
+<p>If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error. Another way to understand this is that the number of pivots is equal to the rank, so if the matrix does not have full rank, so there will not be enough pivots in order to transform the matrix in to row-echelon form.</p>
 </li>
 </ul>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:52:55.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T12:14:07.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
