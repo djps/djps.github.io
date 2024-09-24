@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-681924375&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-234869751&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-681924375&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-234869751&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -656,6 +656,19 @@ $$
 &lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i &lt; j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i&gt;j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;properties-of-nonsingular-matrices&#34;&gt;Properties of Nonsingular Matrices&lt;/h2&gt;
+&lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Nonsingular matrix has full rank&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -721,31 +734,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
-&lt;div class=&#34;details admonition Note open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Note: &lt;em&gt;Properties of Nonsingular Matrices&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nonsingular matrix has full rank&lt;/li&gt;
-&lt;li&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/li&gt;
-&lt;li&gt;If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/li&gt;
-&lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
+&lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -766,6 +755,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
+--&gt;
 &lt;h3 id=&#34;direct-methods&#34;&gt;Direct Methods&lt;/h3&gt;
 &lt;div class=&#34;details admonition Algorithm open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -788,20 +778,20 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;/ul&gt;
 &lt;p&gt;Forward elimination is written as&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $i = k + 1$ to $n$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ For $j = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{6cm}  a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $i = k + 1$ to $n$: &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; For $j = k$ to $n$: &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 30%;&#34;&gt; a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;5&amp;ensp;&lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; End &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;6&amp;ensp;&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; $\hspace{2cm} y = b_i$ &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\hspace{2cm}$ For $j = n$ to $i+1$: &lt;br&gt;
-&lt;small&gt;12&lt;/small&gt; $\hspace{4cm} y = y - a_{i,j} x_j$ &lt;br&gt;
-&lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;14&lt;/small&gt; $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; y = b_i$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $j = n$ to $i+1$: &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; y = y - a_{i,j} x_j$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;13&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; End &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;14&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; x_i = \dfrac{y}{a_{i,i}}$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;15&lt;/small&gt; End&lt;/p&gt;
 
         &lt;/div&gt;
@@ -827,15 +817,15 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
             &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $i = k$ to $n$: &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; Compute $\left| a_{i,k} \ s_i \right|$ &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; End &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Find the row with the largest relative pivot element and denote this as row $j$ &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Swap rows $k$ and $j$ &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Swap entries $k$ and $j$ in vector $s$ &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Do forward elimination on row $k$ &lt;/span&gt; &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
+&lt;p&gt;The matrix will now be in row-echelon form, so that back substitution can be performed.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -844,110 +834,6 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;1 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;a_{i,j} \right&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;2 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;For $k=1$ to $n-1$:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;3 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;For $i = k$ to $n$:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;3 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Compute $\left&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;4 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;End&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;5 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Find row with largest relative pivot element, denote this as row $j$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;6 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Swap rows $k$ and $j$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;7 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Swap entries $k$ and $j$ in vector $s$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;8 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Do forward elimination on row $k$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;small&gt;9 &lt;/small&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;End&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table style=&#34;width:100%&#34;&gt;
-  &lt;tr&gt;
-    &lt;td style=&#34;width:5% &#34;border-right: 1px dotted #ddd;&#34;&#34;&gt; &lt;small&gt;1&lt;/small&gt; &lt;/td&gt;
-    &lt;td&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt; &lt;small&gt;2&lt;/small&gt;    &lt;/td&gt;
-    &lt;td&gt; For $k=1$ to $n-1$: &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt; &lt;small&gt;3&lt;/small&gt; &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-    &lt;td&gt; For $i=k$ to $n$: &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt; &lt;small&gt;3&lt;/small&gt; &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-    &lt;td&gt; For $i=k$ to $n$: &lt;/td&gt;
-    &lt;td&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1108,39 +994,6 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 --&gt;
-&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
-
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $i = k$ to $n$: &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; Compute $\left| a_{i,k} \slash s_i \right|$ &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; End &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Find the row with the largest relative pivot element and denote this as row $j$ &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Swap rows $k$ and $j$ &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Swap entries $k$ and $j$ in vector $s$ &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Do forward elimination on row $k$ &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;The matrix will now be in row-echelon form, so that back substitution can be performed.&lt;/p&gt;
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
 </description>
     </item>
     

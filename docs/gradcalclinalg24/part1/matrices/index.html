@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T09:15:23&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T10:52:55&#43;02:00">
   
 
   
@@ -1546,6 +1546,12 @@
                 class="hb-docs-link"
               >Useful Types of Matrices</a>
             </li>
+          <li>
+              <a
+                href="#properties-of-nonsingular-matrices"
+                class="hb-docs-link"
+              >Properties of Nonsingular Matrices</a>
+            </li>
           </ul>
   
               
@@ -2622,6 +2628,9 @@
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#useful-types-of-matrices">Useful Types of Matrices</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#properties-of-nonsingular-matrices">Properties of Nonsingular Matrices</a>
       </li></ul>
 
   
@@ -2864,11 +2873,24 @@ $$
 <p>A square matrix is said to be <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i < j$. Similarly, a matrix is said to be <strong>upper triangular</strong> if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i>j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.</p>
 </li>
 </ul>
+<h2 id="properties-of-nonsingular-matrices">Properties of Nonsingular Matrices</h2>
+<p>For a nonsingular matrix, the following all hold:</p>
+<ul>
+<li>
+<p>Nonsingular matrix has full rank</p>
+</li>
+<li>
+<p>A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.</p>
+</li>
+<li>
+<p>If a matrix is singular, both versions of Gaussian elimination (with and without pivoting) will fail due to division by zero, yielding a floating exception error.</p>
+</li>
+</ul>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:15:23.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:52:55.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
