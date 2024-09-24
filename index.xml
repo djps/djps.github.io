@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-689231457&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-564392187&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-689231457&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-564392187&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5748,7 +5748,7 @@ $$
 
 
 
-&lt;p&gt;This is a infinite series of powers of the variable $x$, which is convergent for some values of $x$, such that $\left| x - c \right| &lt;r$ where $r$ is the radius of convergence.&lt;/p&gt;
+&lt;p&gt;This is a infinite series of powers of the variable $x$, which is convergent for some values of $x$, such that $\left| x - c \right| &lt; r $ where $r$ is the radius of convergence.&lt;/p&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -10624,7 +10624,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-896354721&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-769135482&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10642,7 +10642,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-896354721&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-769135482&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10653,7 +10653,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-356847219&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-957816423&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10671,7 +10671,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-356847219&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-957816423&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10684,7 +10684,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-123657489&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-596321847&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10702,7 +10702,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-123657489&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-596321847&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
