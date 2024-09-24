@@ -150,7 +150,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
   - Matrices &amp; Eigenvalues
 - Calculus
   - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
-  - Taylor Series
+  - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
   - Many Variables&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-234869751&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-689231457&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-234869751&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-689231457&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1949,18 +1949,18 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $i = k + 1$ to $n$: &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; For $j = k$ to $n$: &lt;/span&gt;&lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 30%;&#34;&gt; a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;/span&gt;&lt;br&gt;
-&lt;small&gt;5&amp;ensp;&lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; End &lt;/span&gt;&lt;br&gt;
-&lt;small&gt;6&amp;ensp;&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 30%;&#34;&gt; $a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; End &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; $b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; y = b_i$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; $y = b_i$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;11&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $j = n$ to $i+1$: &lt;/span&gt;&lt;br&gt;
-&lt;small&gt;12&lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; y = y - a_{i,j} x_j$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; $y = y - a_{i,j} x_j$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;13&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; End &lt;/span&gt;&lt;br&gt;
-&lt;small&gt;14&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; x_i = \dfrac{y}{a_{i,i}}$ &lt;/span&gt;&lt;br&gt;
+&lt;small&gt;14&lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; $x_i = \dfrac{y}{a_{i,i}}$ &lt;/span&gt;&lt;br&gt;
 &lt;small&gt;15&lt;/small&gt; End&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1987,7 +1987,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; For $i = k$ to $n$: &lt;/span&gt; &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; Compute $\left| a_{i,k} \ s_i \right|$ &lt;/span&gt; &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; &lt;span style=&#34;margin-left: 20%;&#34;&gt; Compute $\left| a_{i,k} / s_i \right|$ &lt;/span&gt; &lt;br&gt;
 &lt;small&gt;5 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; End &lt;/span&gt; &lt;br&gt;
 &lt;small&gt;6 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Find the row with the largest relative pivot element and denote this as row $j$ &lt;/span&gt; &lt;br&gt;
 &lt;small&gt;7 &lt;/small&gt; &lt;span style=&#34;margin-left: 10%;&#34;&gt; Swap rows $k$ and $j$ &lt;/span&gt; &lt;br&gt;
@@ -10624,7 +10624,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-196573428&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-896354721&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10642,7 +10642,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-196573428&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-896354721&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10653,7 +10653,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-863971452&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-356847219&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10671,7 +10671,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-863971452&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-356847219&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10684,7 +10684,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-847563291&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-123657489&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10702,7 +10702,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-847563291&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-123657489&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

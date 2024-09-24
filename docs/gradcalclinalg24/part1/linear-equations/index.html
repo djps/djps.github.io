@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T10:52:55&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T10:56:32&#43;02:00">
   
 
   
@@ -2753,18 +2753,18 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <p><small>1 </small> For $k=1$ to $n-1$: <br>
 <small>2 </small> <span style="margin-left: 10%;"> For $i = k + 1$ to $n$: </span><br>
 <small>3 </small> <span style="margin-left: 20%;"> For $j = k$ to $n$: </span><br>
-<small>4 </small> <span style="margin-left: 30%;"> a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ </span><br>
-<small>5&ensp;</small> <span style="margin-left: 20%;"> End </span><br>
-<small>6&ensp;</small> <span style="margin-left: 10%;"> b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ </span><br>
+<small>4 </small> <span style="margin-left: 30%;"> $a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ </span><br>
+<small>5 </small> <span style="margin-left: 20%;"> End </span><br>
+<small>6 </small> <span style="margin-left: 10%;"> $b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ </span><br>
 <small>7 </small> End <br></p>
 <p>Then back substitute, starting with the last unknown first:</p>
 <p><small>8 </small> Set $x_n = \dfrac{b_n}{a_{n,n}}$ <br>
 <small>9 </small> For $i$ =$n-1$ to $1$: <br>
-<small>10</small> <span style="margin-left: 10%;"> y = b_i$ </span><br>
+<small>10</small> <span style="margin-left: 10%;"> $y = b_i$ </span><br>
 <small>11</small> <span style="margin-left: 10%;"> For $j = n$ to $i+1$: </span><br>
-<small>12</small> <span style="margin-left: 20%;"> y = y - a_{i,j} x_j$ </span><br>
+<small>12</small> <span style="margin-left: 20%;"> $y = y - a_{i,j} x_j$ </span><br>
 <small>13</small> <span style="margin-left: 10%;"> End </span><br>
-<small>14</small> <span style="margin-left: 10%;"> x_i = \dfrac{y}{a_{i,i}}$ </span><br>
+<small>14</small> <span style="margin-left: 10%;"> $x_i = \dfrac{y}{a_{i,i}}$ </span><br>
 <small>15</small> End</p>
 
         </div>
@@ -2791,7 +2791,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 <p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ <br>
 <small>2 </small> For $k=1$ to $n-1$: <br>
 <small>3 </small> <span style="margin-left: 10%;"> For $i = k$ to $n$: </span> <br>
-<small>4 </small> <span style="margin-left: 20%;"> Compute $\left| a_{i,k} \ s_i \right|$ </span> <br>
+<small>4 </small> <span style="margin-left: 20%;"> Compute $\left| a_{i,k} / s_i \right|$ </span> <br>
 <small>5 </small> <span style="margin-left: 10%;"> End </span> <br>
 <small>6 </small> <span style="margin-left: 10%;"> Find the row with the largest relative pivot element and denote this as row $j$ </span> <br>
 <small>7 </small> <span style="margin-left: 10%;"> Swap rows $k$ and $j$ </span> <br>
@@ -2971,7 +2971,7 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:52:55.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:56:32.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
