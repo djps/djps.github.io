@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T10:27:32&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T10:40:39&#43;02:00">
   
 
   
@@ -3110,15 +3110,15 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
             <p>A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.</p>
 <p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ <br>
 <small>2 </small> For $k=1$ to $n-1$: <br>
-<small>3 </small> <span class=widener></span> For $i = k$ to $n$: <br>
-<small>4 </small> <span class=doubleWidener></span> Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
+<small>3 </small> <span style="margin-left: 10%;"> For $i = k$ to $n$: </span> <br>
+<small>4 </small> <span style="margin-left: 20%;"> Compute $\left| a_{i,k} \slash s_i \right|$ </span> <br>
 <small>5 </small> <span style="margin-left: 10%;"> End </span> <br>
-<small>6 </small> <div class="widener" style="width:10%"> Find row with largest relative pivot element, denote this as row $j$ <br>
-<small>7 </small> <span class=widener style="width:10%"></span> Swap rows $k$ and $j$ <br>
-<small>8 </small> <span class=widener style="width:10%"></span> Swap entries $k$ and $j$ in vector $s$ <br>
-<small>9 </small> <span class=widener style="width:10%"></span> Do forward elimination on row $k$ <br>
+<small>6 </small> <span style="margin-left: 10%;"> Find the row with the largest relative pivot element and denote this as row $j$ </span> <br>
+<small>7 </small> <span style="margin-left: 10%;"> Swap rows $k$ and $j$ </span> <br>
+<small>8 </small> <span style="margin-left: 10%;"> Swap entries $k$ and $j$ in vector $s$ </span> <br>
+<small>9 </small> <span style="margin-left: 10%;"> Do forward elimination on row $k$ </span> <br>
 <small>10</small> End <br></p>
-<p>The matrix will be in row-echelon form, so that back substitution can now be performed.</p>
+<p>The matrix will now be in row-echelon form, so that back substitution can be performed.</p>
 
         </div>
     </div>
@@ -3131,7 +3131,7 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:27:32.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:40:39.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
