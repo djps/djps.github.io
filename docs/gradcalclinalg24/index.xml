@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-546873291&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-312579468&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-546873291&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-312579468&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -924,7 +924,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 &lt;/table&gt;
 &lt;table style=&#34;width:100%&#34;&gt;
   &lt;tr&gt;
-    &lt;td style=&#34;width:10% &#34;border-right: 1px dotted #ddd;&#34;&#34;&gt; &lt;small&gt;1&lt;/small&gt; &lt;/td&gt;
+    &lt;td style=&#34;width:5% &#34;border-right: 1px dotted #ddd;&#34;&#34;&gt; &lt;small&gt;1&lt;/small&gt; &lt;/td&gt;
     &lt;td&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;/td&gt;
     &lt;td&gt; &lt;/td&gt;
     &lt;td&gt; &lt;/td&gt;
@@ -1108,6 +1108,39 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 --&gt;
+&lt;div class=&#34;details admonition Algorithm open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 640 512&#34;&gt;&lt;path stroke=&#34;currentColor&#34; d=&#34;M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z&#34;/&gt;&lt;/svg&gt;
+
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt; For $i = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; &lt;p class=doubleWidener&gt;&lt;/p&gt; Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt;End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt; Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt;Swap rows $k$ and $j$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt; Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; &lt;p class=widener&gt;&lt;/p&gt; Do forward elimination on row $k$ &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 </description>
     </item>
     

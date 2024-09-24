@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.9b66ca40d17228cf4a8dd37467fe9c3d4567c0ee6384459849ed158b56d6eb16.css" rel="stylesheet" />
+    <link href="/css/custom.min.e6fc489f07bf9e7713603bf538d1197c2385fbb788d79c2e6f4cb2f5ce7073df.css" rel="stylesheet" />
   
 
   <script>
@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T09:43:59&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T10:00:00&#43;02:00">
   
 
   
@@ -2910,7 +2910,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 </table>
 <table style="width:100%">
   <tr>
-    <td style="width:10% "border-right: 1px dotted #ddd;""> <small>1</small> </td>
+    <td style="width:5% "border-right: 1px dotted #ddd;""> <small>1</small> </td>
     <td> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ </td>
     <td> </td>
     <td> </td>
@@ -3094,11 +3094,44 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
 
 
 -->
+<div class="details admonition Algorithm open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+
+        </span>
+        <span class="dark:text-neutral-300">
+          Algorithm: <em>Gaussian Elimination with Scaled Partial Pivoting</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.</p>
+<p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ <br>
+<small>2 </small> For $k=1$ to $n-1$: <br>
+<small>3 </small> <p class=widener></p> For $i = k$ to $n$: <br>
+<small>4 </small> <p class=doubleWidener></p> Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ <br>
+<small>5 </small> <p class=widener></p>End <br>
+<small>6 </small> <p class=widener></p> Find row with largest relative pivot element, denote this as row $j$ <br>
+<small>7 </small> <p class=widener></p>Swap rows $k$ and $j$ <br>
+<small>8 </small> <p class=widener></p> Swap entries $k$ and $j$ in vector $s$ <br>
+<small>9 </small> <p class=widener></p> Do forward elimination on row $k$ <br>
+<small>10</small> End <br></p>
+<p>The matrix will be in row-echelon form, so that back substitution can now be performed.</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:43:59.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T10:00:00.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
