@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T09:15:23&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-24T09:43:59&#43;02:00">
   
 
   
@@ -286,6 +286,7 @@
   
 
 
+  
   
   
   
@@ -1569,6 +1570,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part2/taylor/"
+    
+  >Taylor Series
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/notebooks/"
     
   >Notebooks
@@ -2203,6 +2212,14 @@
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/docs/gradcalclinalg24/part2/taylor/"
+    
+  >Taylor Series
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/notebooks/"
     
   >Notebooks
@@ -2813,16 +2830,110 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
-<p>| <small>1 </small> | Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ |    |      |
-| <small>2 </small> | For $k=1$ to $n-1$: |                     |                                                |
-| <small>3 </small> |                     | For $i = k$ to $n$: |                                                |
-| <small>3 </small> |                     |                     | Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$  |
-| <small>4 </small> |                     | End                                                                  | |
-| <small>5 </small> |                     | Find row with largest relative pivot element, denote this as row $j$ | |
-| <small>6 </small> |                     | Swap rows $k$ and $j$                                                | |
-| <small>7 </small> |                     | Swap entries $k$ and $j$ in vector $s$                               | |
-| <small>8 </small> |                     | Do forward elimination on row $k$                                    | |
-| <small>9 </small> | End                 |                                                                      | |</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>1 </small></td>
+          <td style="text-align: left">Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left</td>
+          <td style="text-align: left">a_{i,j} \right</td>
+          <td style="text-align: left">$</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>2 </small></td>
+          <td style="text-align: left">For $k=1$ to $n-1$:</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>3 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">For $i = k$ to $n$:</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>3 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Compute $\left</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>4 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">End</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>5 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Find row with largest relative pivot element, denote this as row $j$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>6 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Swap rows $k$ and $j$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>7 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Swap entries $k$ and $j$ in vector $s$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>8 </small></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">Do forward elimination on row $k$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><small>9 </small></td>
+          <td style="text-align: left">End</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table style="width:100%">
+  <tr>
+    <td style="width:10% "border-right: 1px dotted #ddd;""> <small>1</small> </td>
+    <td> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> <small>2</small>    </td>
+    <td> For $k=1$ to $n-1$: </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> <small>3</small> </td>
+    <td> </td>
+    <td> For $i=k$ to $n$: </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> <small>3</small> </td>
+    <td> </td>
+    <td> For $i=k$ to $n$: </td>
+    <td> </td>
+  </tr>
+</table>
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -2987,7 +3098,7 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:15:23.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:43:59.000Z">
     <span>Last updated on</span>
     Sep 24, 2024</time>
       
