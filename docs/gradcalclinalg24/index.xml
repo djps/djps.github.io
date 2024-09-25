@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-752346198&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-641329758&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-752346198&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-641329758&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -446,6 +446,8 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
 
 
 
+&lt;p&gt;For the Cauchy-Schwarz inequality, when the vectors $\vec{v}$ and $\vec{w}$ lie on the same line, then $\left| \vec{v} \cdot \vec{w} \right| = \left| \vec{v} \right| \left| \vec{w} \right|$.&lt;/p&gt;
+&lt;p&gt;For the triangle inequality, when the vectors point in the same direction, then the $\left| \vec{v} + \vec{w} \right| = \left| \vec{v} \right| + \left| \vec{w} \right|$.&lt;/p&gt;
 </description>
     </item>
     
