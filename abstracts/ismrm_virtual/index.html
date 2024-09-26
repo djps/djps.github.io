@@ -249,7 +249,7 @@
         content="2020-08-10T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T09:01:45&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T09:15:15&#43;02:00">
   
 
   
@@ -2395,8 +2395,7 @@
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <p>The abstract can be found on the ISMRM website <a href="https://cds.ismrm.org/protected/20MProceedings/PDFfiles/3655.html" target="_blank" rel="noopener">here</a></p>
-<p>While the poster can be found <a href="/posters/ISMRM2020.pdf">here</a></p>
+        <p>The abstract can be found on the ISMRM website <a href="https://cds.ismrm.org/protected/20MProceedings/PDFfiles/3655.html" target="_blank" rel="noopener">here</a>. The poster can be found <a href="/posters/ISMRM2020.pdf">here</a></p>
 <!-- Assessing generalized multi-pool exchange tissue model MRI simulations for the modelling of an ultra-low field scanner
 Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neha Koonjoo3, Sheng Shen3, David Sinden1, Matthew Rosen3, and Matt G. Hall1,4
 1National Physical Laboratory, Teddington, United Kingdom, 2Durham University, Durham, United Kingdom, 3Harvard, Boston, MA, United States, 4University College London, London, United Kingdom
@@ -2404,21 +2403,18 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 <h2 id="synopsis">Synopsis</h2>
 <p>The large expense and running costs of traditional 1.5T scanners have meant that as demand for scans has grown supply has not been able to keep up. Novel, ultra-low field systems aim to address this problem by producing images with some resolution losses as a trade-off for reduced costs. However, access to such devices is currently restricted, limiting the possible research output. In this work we develop and test a simulation model of 6.5 mT b-SSFP acquisitions, which we compare to actual scanner acquisitions. We find that such simulations produce qualitatively and quantitatively similar images to real scans.</p>
 <h2 id="introduction">Introduction</h2>
-<p>There is a newly emergent interest in ultra-low field (ULF) MRI, driven by recent successes in the field and cost-cutting pressures in healthcare. In particular, scanners with a cost of less than $50 000 have been reported [^1], which is within the reach of consortia of general practitioners. This means that such devices could potentially be used as a decision tool for the triage of patients, identifying those which might need higher resolution scans and those for which no follow-up is necessary. This would reduce some of the throughput pressures currently faced by hospitals. Simulations of ULF MRI scanners would be useful in helping to determine whether they can provide the information necessary for this and permit multiple researchers to carry out research at once, without needing access to the highly specialized equipment. In this work we have developed and tested software for creating such simulations and found them to be representative of ultra-low field acquisitions.</p>
+<p>There is a newly emergent interest in ultra-low field (ULF) MRI, driven by recent successes in the field and cost-cutting pressures in healthcare. In particular, scanners with a cost of less than $50,000 have been reported <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which is within the reach of consortia of general practitioners. This means that such devices could potentially be used as a decision tool for the triage of patients, identifying those which might need higher resolution scans and those for which no follow-up is necessary. This would reduce some of the throughput pressures currently faced by hospitals. Simulations of ULF MRI scanners would be useful in helping to determine whether they can provide the information necessary for this and permit multiple researchers to carry out research at once, without needing access to the highly specialized equipment. In this work we have developed and tested software for creating such simulations and found them to be representative of ultra-low field acquisitions.</p>
 <h2 id="methods">Methods</h2>
-<p>The ULF scanner described by Sarracanie [^1] was chosen as the basis of this simulation, which was implemented using MRiLab [^2]. The b-SSFP sequence described within was replicated by adapting the FIESTA sequence within the software to have a TR of 22.5 ms as described in the paper, with a voxel size of 2.5×3.5×11.5 mm<sup>3</sup> . The MRiLab GUI was bypassed, with changes made directly to the gradient codes to avoid some undesired default assumptions, such as identical rise times for all pulses within a gradient sequence. Additionally, the ULF scanner uses a bespoke wound Litz coil to improve signal. This atypical coil presents several advantages in the ULF environment and was modelled by coding in an Archimedean spiral coil element for MRiLab. The ULF k-space acquisition scheme, with Gaussian sampling of half of the k-space, zero padded to be a 96×96 matrix, was also simulated, though the Gaussian sampling was applied post-simulation. The reconstructed simulation image was filtered using anisotropic diffusion through the Perona-Malik filter as implemented in MATLAB, with a gradient threshold of 10% and only two iterations. The change of spin values at ULF was also considered, and values were adjusted using extrapolation based on historical MR data [^3], though it is unsure that these rules hold at ultra-low fields, as there are limited reports of T1 and T2 measurements at this field strength. An acquisition of a resolution phantom on the ULF MRI scanner was used for qualitative and quantitative comparison. The latter was performed using the signal-to-noise ratio (SNR), defined as mean over the phantom area vs. standard deviation of the background.</p>
+<p>The ULF scanner described by Sarracanie <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> was chosen as the basis of this simulation, which was implemented using MRiLab <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The b-SSFP sequence described within was replicated by adapting the FIESTA sequence within the software to have a TR of 22.5 ms as described in the paper, with a voxel size of 2.5×3.5×11.5 mm<sup>3</sup> . The MRiLab GUI was bypassed, with changes made directly to the gradient codes to avoid some undesired default assumptions, such as identical rise times for all pulses within a gradient sequence. Additionally, the ULF scanner uses a bespoke wound Litz coil to improve signal. This atypical coil presents several advantages in the ULF environment and was modelled by coding in an Archimedean spiral coil element for MRiLab. The ULF k-space acquisition scheme, with Gaussian sampling of half of the k-space, zero padded to be a 96×96 matrix, was also simulated, though the Gaussian sampling was applied post-simulation. The reconstructed simulation image was filtered using anisotropic diffusion through the Perona-Malik filter as implemented in MATLAB, with a gradient threshold of 10% and only two iterations. The change of spin values at ULF was also considered, and values were adjusted using extrapolation based on historical MR data <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, though it is unsure that these rules hold at ultra-low fields, as there are limited reports of T1 and T2 measurements at this field strength. An acquisition of a resolution phantom on the ULF MRI scanner was used for qualitative and quantitative comparison. The latter was performed using the signal-to-noise ratio (SNR), defined as mean over the phantom area vs. standard deviation of the background.</p>
 <h2 id="results">Results</h2>
 <p>A slice of the ULF acquisition of the resolution phantom may be seen in figure 1, and a slice of the simulated brain phantom is shown in figure 2. Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.</p>
 <h2 id="discussion">Discussion</h2>
-<p>MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2<sup>*</sup> are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.</p>
+<p>MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2* are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Simulations using MRiLab appear to provide value even for ultra-low field investigations. This can be used for the testing of hypotheses in less time and more cheaply than for physical investigations and provide access to ULF testing to researchers without their own ULF scanner. Further validation work involving the simulation of various objects will provide more detail on the limitations and advantages of this method of investigation.
 Acknowledgements</p>
 <p>This work was funded by CRUK grant C69862/A29020</p>
 <h2 id="references">References</h2>
-<p>[^1] M. Sarracanie, C. LaPierre, N. Salameh et al. Low-Cost High-Performance MRI. <a href="https://doi.org/10.1038/srep15177" target="_blank" rel="noopener"><em>Sci. Rep.</em></a> <strong>5</strong>, 15177 (2015)</p>
-<p>[^2] F. Liu, J. V. Velikina, W. F. Block, R. Kijowski &amp; A. A. Samsonov, Fast Realistic MRI Simulations Based on Generalized Multi-Pool Exchange Tissue Model. <a href="https://doi.org/10.1109/TMI.2016.2620961" target="_blank" rel="noopener"><em>IEEE Trans. Med. Imaging</em></a> <strong>36</strong>, 527–537 (2017)</p>
-<p>[^3] W. D. Rooney et al. Magnetic field and tissue dependencies of human brain longitudinal <sup>1</sup>H<sub>2</sub>O relaxation in vivo. <a href="https://doi.org/10.1002/mrm.21122" target="_blank" rel="noopener"><em>Magn. Reson. Med.</em></a> <strong>57</strong>, 308–318 (2007)</p>
 <!-- Figures
 
 Figure 1: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner
@@ -2427,11 +2423,25 @@ Figure 2: Simulated 6.5 mT b-SSFP acquisition of the brain phantom
 
 -->
 <p>Proc. Intl. Soc. Mag. Reson. Med. 28 (2020)</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>M. Sarracanie, C. LaPierre, N. Salameh et al. Low-Cost High-Performance MRI. <a href="https://doi.org/10.1038/srep15177" target="_blank" rel="noopener"><em>Sci. Rep.</em></a> <strong>5</strong>, 15177 (2015).&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>F. Liu, J. V. Velikina, W. F. Block, R. Kijowski &amp; A. A. Samsonov, Fast Realistic MRI Simulations Based on Generalized Multi-Pool Exchange Tissue Model. <a href="https://doi.org/10.1109/TMI.2016.2620961" target="_blank" rel="noopener"><em>IEEE Trans. Med. Imaging</em></a> <strong>36</strong>, 527–537 (2017).&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>W. D. Rooney et al. Magnetic field and tissue dependencies of human brain longitudinal <sup>1</sup>H<sub>2</sub>O relaxation in vivo. <a href="https://doi.org/10.1002/mrm.21122" target="_blank" rel="noopener"><em>Magn. Reson. Med.</em></a> <strong>57</strong>, 308–318 (2007).&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T09:01:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T09:15:15.000Z">
     <span>Last updated on</span>
     Sep 26, 2024</time>
 

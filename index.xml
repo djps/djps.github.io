@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-938547216&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-625417938&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-938547216&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-625417938&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2022,7 +2022,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$&lt;p&gt;
-where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
+where each matrix $U_i$ is a matrix which describes the $i$&lt;sup&gt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
 &lt;/p&gt;
 $$
 U = U_{n-1} \cdots U_2 U_1 A.
@@ -10626,7 +10626,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-458276319&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-681279534&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10644,7 +10644,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-458276319&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-681279534&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10655,7 +10655,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-679321584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-721938654&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10673,7 +10673,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-679321584&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-721938654&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10686,7 +10686,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-637815249&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-376912584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10704,7 +10704,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-637815249&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-376912584&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10794,8 +10794,7 @@ This should be from the static folder:
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/abstracts/ismrm_virtual/</guid>
       <description>&lt;p&gt;The abstract can be found on the ISMRM website 
-&lt;/p&gt;
-&lt;p&gt;While the poster can be found 
+. The poster can be found 
 &lt;/p&gt;
 &lt;!-- Assessing generalized multi-pool exchange tissue model MRI simulations for the modelling of an ultra-low field scanner
 Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neha Koonjoo3, Sheng Shen3, David Sinden1, Matthew Rosen3, and Matt G. Hall1,4
@@ -10804,24 +10803,18 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 &lt;h2 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h2&gt;
 &lt;p&gt;The large expense and running costs of traditional 1.5T scanners have meant that as demand for scans has grown supply has not been able to keep up. Novel, ultra-low field systems aim to address this problem by producing images with some resolution losses as a trade-off for reduced costs. However, access to such devices is currently restricted, limiting the possible research output. In this work we develop and test a simulation model of 6.5 mT b-SSFP acquisitions, which we compare to actual scanner acquisitions. We find that such simulations produce qualitatively and quantitatively similar images to real scans.&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;There is a newly emergent interest in ultra-low field (ULF) MRI, driven by recent successes in the field and cost-cutting pressures in healthcare. In particular, scanners with a cost of less than $50 000 have been reported [^1], which is within the reach of consortia of general practitioners. This means that such devices could potentially be used as a decision tool for the triage of patients, identifying those which might need higher resolution scans and those for which no follow-up is necessary. This would reduce some of the throughput pressures currently faced by hospitals. Simulations of ULF MRI scanners would be useful in helping to determine whether they can provide the information necessary for this and permit multiple researchers to carry out research at once, without needing access to the highly specialized equipment. In this work we have developed and tested software for creating such simulations and found them to be representative of ultra-low field acquisitions.&lt;/p&gt;
+&lt;p&gt;There is a newly emergent interest in ultra-low field (ULF) MRI, driven by recent successes in the field and cost-cutting pressures in healthcare. In particular, scanners with a cost of less than $50,000 have been reported &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, which is within the reach of consortia of general practitioners. This means that such devices could potentially be used as a decision tool for the triage of patients, identifying those which might need higher resolution scans and those for which no follow-up is necessary. This would reduce some of the throughput pressures currently faced by hospitals. Simulations of ULF MRI scanners would be useful in helping to determine whether they can provide the information necessary for this and permit multiple researchers to carry out research at once, without needing access to the highly specialized equipment. In this work we have developed and tested software for creating such simulations and found them to be representative of ultra-low field acquisitions.&lt;/p&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
-&lt;p&gt;The ULF scanner described by Sarracanie [^1] was chosen as the basis of this simulation, which was implemented using MRiLab [^2]. The b-SSFP sequence described within was replicated by adapting the FIESTA sequence within the software to have a TR of 22.5 ms as described in the paper, with a voxel size of 2.5×3.5×11.5 mm&lt;sup&gt;3&lt;/sup&gt; . The MRiLab GUI was bypassed, with changes made directly to the gradient codes to avoid some undesired default assumptions, such as identical rise times for all pulses within a gradient sequence. Additionally, the ULF scanner uses a bespoke wound Litz coil to improve signal. This atypical coil presents several advantages in the ULF environment and was modelled by coding in an Archimedean spiral coil element for MRiLab. The ULF k-space acquisition scheme, with Gaussian sampling of half of the k-space, zero padded to be a 96×96 matrix, was also simulated, though the Gaussian sampling was applied post-simulation. The reconstructed simulation image was filtered using anisotropic diffusion through the Perona-Malik filter as implemented in MATLAB, with a gradient threshold of 10% and only two iterations. The change of spin values at ULF was also considered, and values were adjusted using extrapolation based on historical MR data [^3], though it is unsure that these rules hold at ultra-low fields, as there are limited reports of T1 and T2 measurements at this field strength. An acquisition of a resolution phantom on the ULF MRI scanner was used for qualitative and quantitative comparison. The latter was performed using the signal-to-noise ratio (SNR), defined as mean over the phantom area vs. standard deviation of the background.&lt;/p&gt;
+&lt;p&gt;The ULF scanner described by Sarracanie &lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; was chosen as the basis of this simulation, which was implemented using MRiLab &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The b-SSFP sequence described within was replicated by adapting the FIESTA sequence within the software to have a TR of 22.5 ms as described in the paper, with a voxel size of 2.5×3.5×11.5 mm&lt;sup&gt;3&lt;/sup&gt; . The MRiLab GUI was bypassed, with changes made directly to the gradient codes to avoid some undesired default assumptions, such as identical rise times for all pulses within a gradient sequence. Additionally, the ULF scanner uses a bespoke wound Litz coil to improve signal. This atypical coil presents several advantages in the ULF environment and was modelled by coding in an Archimedean spiral coil element for MRiLab. The ULF k-space acquisition scheme, with Gaussian sampling of half of the k-space, zero padded to be a 96×96 matrix, was also simulated, though the Gaussian sampling was applied post-simulation. The reconstructed simulation image was filtered using anisotropic diffusion through the Perona-Malik filter as implemented in MATLAB, with a gradient threshold of 10% and only two iterations. The change of spin values at ULF was also considered, and values were adjusted using extrapolation based on historical MR data &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, though it is unsure that these rules hold at ultra-low fields, as there are limited reports of T1 and T2 measurements at this field strength. An acquisition of a resolution phantom on the ULF MRI scanner was used for qualitative and quantitative comparison. The latter was performed using the signal-to-noise ratio (SNR), defined as mean over the phantom area vs. standard deviation of the background.&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;p&gt;A slice of the ULF acquisition of the resolution phantom may be seen in figure 1, and a slice of the simulated brain phantom is shown in figure 2. Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.&lt;/p&gt;
 &lt;h2 id=&#34;discussion&#34;&gt;Discussion&lt;/h2&gt;
-&lt;p&gt;MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2&lt;sup&gt;*&lt;/sup&gt; are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.&lt;/p&gt;
+&lt;p&gt;MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2* are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Simulations using MRiLab appear to provide value even for ultra-low field investigations. This can be used for the testing of hypotheses in less time and more cheaply than for physical investigations and provide access to ULF testing to researchers without their own ULF scanner. Further validation work involving the simulation of various objects will provide more detail on the limitations and advantages of this method of investigation.
 Acknowledgements&lt;/p&gt;
 &lt;p&gt;This work was funded by CRUK grant C69862/A29020&lt;/p&gt;
 &lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;p&gt;[^1] M. Sarracanie, C. LaPierre, N. Salameh et al. Low-Cost High-Performance MRI. 
- &lt;strong&gt;5&lt;/strong&gt;, 15177 (2015)&lt;/p&gt;
-&lt;p&gt;[^2] F. Liu, J. V. Velikina, W. F. Block, R. Kijowski &amp;amp; A. A. Samsonov, Fast Realistic MRI Simulations Based on Generalized Multi-Pool Exchange Tissue Model. 
- &lt;strong&gt;36&lt;/strong&gt;, 527–537 (2017)&lt;/p&gt;
-&lt;p&gt;[^3] W. D. Rooney et al. Magnetic field and tissue dependencies of human brain longitudinal &lt;sup&gt;1&lt;/sup&gt;H&lt;sub&gt;2&lt;/sub&gt;O relaxation in vivo. 
- &lt;strong&gt;57&lt;/strong&gt;, 308–318 (2007)&lt;/p&gt;
 &lt;!-- Figures
 
 Figure 1: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner
@@ -10830,6 +10823,23 @@ Figure 2: Simulated 6.5 mT b-SSFP acquisition of the brain phantom
 
 --&gt;
 &lt;p&gt;Proc. Intl. Soc. Mag. Reson. Med. 28 (2020)&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;M. Sarracanie, C. LaPierre, N. Salameh et al. Low-Cost High-Performance MRI. 
+ &lt;strong&gt;5&lt;/strong&gt;, 15177 (2015).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;F. Liu, J. V. Velikina, W. F. Block, R. Kijowski &amp;amp; A. A. Samsonov, Fast Realistic MRI Simulations Based on Generalized Multi-Pool Exchange Tissue Model. 
+ &lt;strong&gt;36&lt;/strong&gt;, 527–537 (2017).&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;W. D. Rooney et al. Magnetic field and tissue dependencies of human brain longitudinal &lt;sup&gt;1&lt;/sup&gt;H&lt;sub&gt;2&lt;/sub&gt;O relaxation in vivo. 
+ &lt;strong&gt;57&lt;/strong&gt;, 308–318 (2007).&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
