@@ -63,8 +63,10 @@ We consider the equilibrium equations of a conducting rod in a uniform magnetic 
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/abstracts/ismrm_virtual/</guid>
       <description>&lt;p&gt;The abstract can be found on the ISMRM website 
-. The poster can be found 
 .&lt;/p&gt;
+&lt;p&gt;The poster can be found 
+.&lt;/p&gt;
+&lt;!-- Proc. Intl. Soc. Mag. Reson. Med. 28 (2020) Abstract &amp;#35;3655 --&gt;
 &lt;!-- Assessing generalized multi-pool exchange tissue model MRI simulations for the modelling of an ultra-low field scanner
 Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neha Koonjoo3, Sheng Shen3, David Sinden1, Matthew Rosen3, and Matt G. Hall1,4
 1National Physical Laboratory, Teddington, United Kingdom, 2Durham University, Durham, United Kingdom, 3Harvard, Boston, MA, United States, 4University College London, London, United Kingdom
@@ -81,13 +83,13 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 . Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.&lt;/p&gt;
 &lt;table&gt;
   &lt;tr&gt;
-    &lt;td style=&#34;width:50%; display:block;&#34;&gt;
+    &lt;td style=&#34;width:50%; display:table-cell;&#34;&gt;
       &lt;figure&gt;
         &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig1.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
         &lt;figcaption&gt;&lt;a name=&#34;fig1&#34;&gt;Figure 1&lt;/a&gt;: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner&lt;/figcaption&gt;
       &lt;/figure&gt;
     &lt;/td&gt;
-    &lt;td style=&#34;width:50%; display:block&#34;&gt;
+    &lt;td style=&#34;width:50%; display:table-cell;&#34;&gt;
       &lt;figure&gt;
         &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig2.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
         &lt;figcaption&gt;&lt;a name=&#34;fig2&#34;&gt;Figure 2&lt;/a&gt;: Simulated 6.5 mT b-SSFP acquisition of the brain phantom&lt;/figcaption&gt;
@@ -101,14 +103,6 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 &lt;p&gt;Simulations using MRiLab appear to provide value even for ultra-low field investigations. This can be used for the testing of hypotheses in less time and more cheaply than for physical investigations and provide access to ULF testing to researchers without their own ULF scanner. Further validation work involving the simulation of various objects will provide more detail on the limitations and advantages of this method of investigation.&lt;/p&gt;
 &lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
 &lt;p&gt;This work was funded by CRUK grant C69862/A29020&lt;/p&gt;
-&lt;!-- Figures
-
-Figure 1: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner
-
-Figure 2: Simulated 6.5 mT b-SSFP acquisition of the brain phantom
-
---&gt;
-&lt;p&gt;Proc. Intl. Soc. Mag. Reson. Med. 28 (2020) Abstract #3655&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
