@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-567894123&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-958342176&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-567894123&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-958342176&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1230,6 +1230,7 @@ $$
 \boldsymbol{u_1} &amp; = \boldsymbol{v_1} \\
  &amp; \vdots \\
 \boldsymbol{u_k} &amp; = \boldsymbol{v_k} - \sum_{j=1}^{k-1} \textrm{proj}_{\boldsymbol{u_j}} \left(\boldsymbol{v_j} \right).
+\end{align*}
 $$
         &lt;/div&gt;
     &lt;/div&gt;
