@@ -249,7 +249,7 @@
         content="2020-08-10T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T10:01:07&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T10:08:31&#43;02:00">
   
 
   
@@ -2401,12 +2401,16 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 <h2 id="methods">Methods</h2>
 <p>The ULF scanner described by Sarracanie <sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> was chosen as the basis of this simulation, which was implemented using MRiLab <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The b-SSFP sequence described within was replicated by adapting the FIESTA sequence within the software to have a TR of 22.5 ms as described in the paper, with a voxel size of 2.5×3.5×11.5 mm<sup>3</sup> . The MRiLab GUI was bypassed, with changes made directly to the gradient codes to avoid some undesired default assumptions, such as identical rise times for all pulses within a gradient sequence. Additionally, the ULF scanner uses a bespoke wound Litz coil to improve signal. This atypical coil presents several advantages in the ULF environment and was modelled by coding in an Archimedean spiral coil element for MRiLab. The ULF k-space acquisition scheme, with Gaussian sampling of half of the k-space, zero padded to be a 96×96 matrix, was also simulated, though the Gaussian sampling was applied post-simulation. The reconstructed simulation image was filtered using anisotropic diffusion through the Perona-Malik filter as implemented in MATLAB, with a gradient threshold of 10% and only two iterations. The change of spin values at ULF was also considered, and values were adjusted using extrapolation based on historical MR data <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, though it is unsure that these rules hold at ultra-low fields, as there are limited reports of T1 and T2 measurements at this field strength. An acquisition of a resolution phantom on the ULF MRI scanner was used for qualitative and quantitative comparison. The latter was performed using the signal-to-noise ratio (SNR), defined as mean over the phantom area vs. standard deviation of the background.</p>
 <h2 id="results">Results</h2>
-<p>A slice of the ULF acquisition of the resolution phantom may be seen in <a href="#fig1">figure 1</a>, and a slice of the simulated brain phantom is shown in figure 2. Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.</p>
+<p>A slice of the ULF acquisition of the resolution phantom may be seen in <a href="#fig1">figure 1</a>, and a slice of the simulated brain phantom is shown in <a href="#fig2">figure 2</a>. Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.</p>
 <figure>
-  <a name="fig1">
-    <img src="ISMRM2020-004304_Fig1.png" alt="Acquisition of phantom">
+    <img src="/img/ISMRM2020-004304_Fig1.png" alt="Acquisition of phantom">
+    <figcaption><a name="fig1">Figure 1</a>: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner</figcaption>
+</figure>
+<figure>
+  <a name="fig2">
+    <img src="/img/ISMRM2020-004304_Fig2.png" alt="Acquisition of phantom">
   </a>
-    <figcaption>Figure 1: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner</figcaption>
+    <figcaption>Figure 1: Simulated 6.5 mT b-SSFP acquisition of the brain phantom</figcaption>
 </figure>
 <h2 id="discussion">Discussion</h2>
 <p>MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2* are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.</p>
@@ -2440,7 +2444,7 @@ Figure 2: Simulated 6.5 mT b-SSFP acquisition of the brain phantom
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T10:01:07.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T10:08:31.000Z">
     <span>Last updated on</span>
     Sep 26, 2024</time>
 
