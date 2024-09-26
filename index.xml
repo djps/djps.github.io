@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-192784536&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-275914836&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-192784536&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-275914836&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10626,7 +10626,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-426173859&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-324156987&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10644,7 +10644,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-426173859&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-324156987&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10655,7 +10655,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-489376251&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-548921637&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10673,7 +10673,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-489376251&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-548921637&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10686,7 +10686,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-954763182&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-396857241&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10704,7 +10704,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-954763182&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-396857241&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10810,16 +10810,22 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 &lt;p&gt;A slice of the ULF acquisition of the resolution phantom may be seen in 
 , and a slice of the simulated brain phantom is shown in 
 . Qualitative inspection of these shows similar intensity and noise properties, though some of the finer structures normally visible in the brain phantom have been blurred. The SNR of the brain phantom is 21.9, which is slightly higher than the value calculated for the resolution phantom, which is 19.2.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig1.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
-    &lt;figcaption&gt;&lt;a name=&#34;fig1&#34;&gt;Figure 1&lt;/a&gt;: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;a name=&#34;fig2&#34;&gt;
-    &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig2.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
-  &lt;/a&gt;
-    &lt;figcaption&gt;Figure 1: Simulated 6.5 mT b-SSFP acquisition of the brain phantom&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td style=&#34;width:50%; display:block;&#34;&gt;
+      &lt;figure&gt;
+        &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig1.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
+        &lt;figcaption&gt;&lt;a name=&#34;fig1&#34;&gt;Figure 1&lt;/a&gt;: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/td&gt;
+    &lt;td style=&#34;width:50%; display:block&#34;&gt;
+      &lt;figure&gt;
+        &lt;img src=&#34;https://djps.github.io/img/ISMRM2020-004304_Fig2.png&#34; alt=&#34;Acquisition of phantom&#34;&gt;
+        &lt;figcaption&gt;&lt;a name=&#34;fig2&#34;&gt;Figure 2&lt;/a&gt;: Simulated 6.5 mT b-SSFP acquisition of the brain phantom&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 &lt;h2 id=&#34;discussion&#34;&gt;Discussion&lt;/h2&gt;
 &lt;p&gt;MRiLab is capable of simulating ULF MRI acquisitions accurately, though care is required to ensure that physical parameters such as T1, T2 and T2* are still representative. Though visual inspection and SNR values suggest that the simulation is accurate, further validation is needed by simulating and measuring known quantitative objects or simulating and measuring the same standard object. The slight difference in SNR could be due to either a lower noise contribution in the simulation than could be expected, or differences in the implementation of the filtering process such as in the gradient threshold or the number of iterations. A next step in the validation of the model would be to use simulations and acquisitions of the same known object to investigate both SNR and contrast-to-noise metrics, in order to ensure that the information content is similar and that the simulations do not lose or gain contrast from discretisation effects.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
