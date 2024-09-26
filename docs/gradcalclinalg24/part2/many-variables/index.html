@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T17:20:32&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T21:00:07&#43;02:00">
   
 
   
@@ -2658,12 +2658,12 @@
           <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
         </span>
         <span class="dark:text-neutral-300">
-          Definition: <em>Partial derivatives</em>
+          Definition: <em>Partial Derivatives</em>
         </span>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For a function $z = f\left(x,y\right)$, the partial derivative with respect to $x$ can be expressed as
+            <p>For a function with multiple input arguments, $z = f\left(x,y\right)$, the partial derivative of $f$ with respect to $x$ can be expressed as
 </p>
 $$
 \dfrac{\partial f}{\partial x} = \lim_{h \rightarrow 0} \dfrac{f\left(x+h,y\right) - f\left(x,y\right) }{h}
@@ -2671,28 +2671,10 @@ $$<p>
 similarly, the partial derivative with respect to $y$ can be expressed as
 </p>
 $$
-\dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}
-$$
-        </div>
-    </div>
-</div>
+\dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}.
+$$<p>
+Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f_x$.</p>
 
-
-
-
-<div class="details admonition Definition open">
-    <div class="details-summary admonition-title">
-        
-        <span class="flex pr-3 pt-1">
-          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
-        </span>
-        <span class="dark:text-neutral-300">
-          Definition: <em>Chain Rule</em>
-        </span>
-    </div>
-    <div class="details-content">
-        <div class="admonition-content">
-            The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions.
         </div>
     </div>
 </div>
@@ -2712,12 +2694,12 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The gradient of a function $f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
+            <p>The gradient of a function $z=f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
 </p>
 $$
-\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dfrac{\partial f}{\partial x_n},)
+\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right)
 $$<p>
-As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots x_n \right)$.</p>
+As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.</p>
 
         </div>
     </div>
@@ -2761,17 +2743,17 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
             <p>Each partial derivative can be differentiated again to yield a second-order partial derivative,
 </p>
 $$
-\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( )}{h}.
+\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( \right)}{h}.
 $$<p>
 Thus, all second derivatives can be expressed using the <strong>Hessian matrix</strong>
 </p>
 $$
 Hf\left( \vec{x} \right) = \left(
 \begin{array}{cccc}
-f_{x_1 x_1} & f_{x_1 x_2} & \mdots & f_{x_1 x_n} \\
-f_{x_1 x_1} & f_{x_2 x_2} & \mdots & f_{x_2 x_n} \\
-\vdots      & \vdots  & \ddots &  \\
-f_{x_n x_1} & f_{x_n x_2} & \mdots & f_{x_1 x_n}
+f_{x_1 x_1} & f_{x_1 x_2} & \cdots & f_{x_1 x_n} \\
+f_{x_1 x_1} & f_{x_2 x_2} & \cdots & f_{x_2 x_n} \\
+\vdots      & \vdots  & \ddots &  \vdots \\
+f_{x_n x_1} & f_{x_n x_2} & \cdots & f_{x_1 x_n}
 \end{array}
 \right)
 $$
@@ -2789,7 +2771,7 @@ $$
 $$
 H = Q D Q^{-1}
 $$<p>
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i<sup>th&lt;\sup&gt; column of the matrix $Q$.
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i<sup>th</sup> column of the matrix $Q$.
 As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$.</p>
 <p>The Taylor expansion
 </p>
@@ -2808,12 +2790,33 @@ f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left
 $$<p>
 So:</p>
 <ol>
-<li>If all $\lambda_1$, $\lambda_2, \ldots \lambda_n > 0$, then the critical point is a local minima.</li>
-<li>If all $\lambda_1$, $\lambda_2, \ldots \lambda_n < 0$, then the critical point is a local maxima.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n > 0$, then the critical point is a local minima.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n < 0$, then the critical point is a local maxima.</li>
 <li>If some $\lambda_j < 0$, and some $\lambda_i > 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.</li>
-<li>If all $\lambda_1$, $\lambda_2, \ldots \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n \leq 0$ and at least one is zero then the test is inconclusive.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive.</li>
 </ol>
 <!-- Jacobi Matrix
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Chain Rule</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions.
+        </div>
+    </div>
+</div>
+
+
+
+
 
 Global Maximina
 
@@ -2823,7 +2826,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T17:20:32.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T21:00:07.000Z">
     <span>Last updated on</span>
     Sep 26, 2024</time>
       

@@ -151,7 +151,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 - Calculus
   - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
   - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
-  - [Many Variable sCalculus](/docs/gradcalclinalg24/part2/many-variables/)&lt;/pre&gt;
+  - [Many Variable Calculus](/docs/gradcalclinalg24/part2/many-variables/)&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-584729631&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-521497836&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-584729631&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-521497836&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5879,12 +5879,12 @@ $$
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Partial derivatives&lt;/em&gt;
+          Definition: &lt;em&gt;Partial Derivatives&lt;/em&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $z = f\left(x,y\right)$, the partial derivative with respect to $x$ can be expressed as
+            &lt;p&gt;For a function with multiple input arguments, $z = f\left(x,y\right)$, the partial derivative of $f$ with respect to $x$ can be expressed as
 &lt;/p&gt;
 $$
 \dfrac{\partial f}{\partial x} = \lim_{h \rightarrow 0} \dfrac{f\left(x+h,y\right) - f\left(x,y\right) }{h}
@@ -5892,28 +5892,10 @@ $$&lt;p&gt;
 similarly, the partial derivative with respect to $y$ can be expressed as
 &lt;/p&gt;
 $$
-\dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+\dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}.
+$$&lt;p&gt;
+Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f_x$.&lt;/p&gt;
 
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Chain Rule&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -5933,12 +5915,12 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The gradient of a function $f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
+            &lt;p&gt;The gradient of a function $z=f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
 &lt;/p&gt;
 $$
-\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dfrac{\partial f}{\partial x_n},)
+\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right)
 $$&lt;p&gt;
-As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots x_n \right)$.&lt;/p&gt;
+As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -5982,17 +5964,17 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
             &lt;p&gt;Each partial derivative can be differentiated again to yield a second-order partial derivative,
 &lt;/p&gt;
 $$
-\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( )}{h}.
+\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( \right)}{h}.
 $$&lt;p&gt;
 Thus, all second derivatives can be expressed using the &lt;strong&gt;Hessian matrix&lt;/strong&gt;
 &lt;/p&gt;
 $$
 Hf\left( \vec{x} \right) = \left(
 \begin{array}{cccc}
-f_{x_1 x_1} &amp; f_{x_1 x_2} &amp; \mdots &amp; f_{x_1 x_n} \\
-f_{x_1 x_1} &amp; f_{x_2 x_2} &amp; \mdots &amp; f_{x_2 x_n} \\
-\vdots      &amp; \vdots  &amp; \ddots &amp;  \\
-f_{x_n x_1} &amp; f_{x_n x_2} &amp; \mdots &amp; f_{x_1 x_n}
+f_{x_1 x_1} &amp; f_{x_1 x_2} &amp; \cdots &amp; f_{x_1 x_n} \\
+f_{x_1 x_1} &amp; f_{x_2 x_2} &amp; \cdots &amp; f_{x_2 x_n} \\
+\vdots      &amp; \vdots  &amp; \ddots &amp;  \vdots \\
+f_{x_n x_1} &amp; f_{x_n x_2} &amp; \cdots &amp; f_{x_1 x_n}
 \end{array}
 \right)
 $$
@@ -6010,7 +5992,7 @@ $$
 $$
 H = Q D Q^{-1}
 $$&lt;p&gt;
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i&lt;sup&gt;th&amp;lt;\sup&amp;gt; column of the matrix $Q$.
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i&lt;sup&gt;th&lt;/sup&gt; column of the matrix $Q$.
 As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$.&lt;/p&gt;
 &lt;p&gt;The Taylor expansion
 &lt;/p&gt;
@@ -6029,12 +6011,33 @@ f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left
 $$&lt;p&gt;
 So:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n &gt; 0$, then the critical point is a local minima.&lt;/li&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n &lt; 0$, then the critical point is a local maxima.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &gt; 0$, then the critical point is a local minima.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &lt; 0$, then the critical point is a local maxima.&lt;/li&gt;
 &lt;li&gt;If some $\lambda_j &lt; 0$, and some $\lambda_i &gt; 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.&lt;/li&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n \leq 0$ and at least one is zero then the test is inconclusive.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;!-- Jacobi Matrix
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Chain Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 
 Global Maximina
 
@@ -10812,7 +10815,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-138674925&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-928736451&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10830,7 +10833,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-138674925&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-928736451&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10841,7 +10844,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-174529386&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-415368972&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10859,7 +10862,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-174529386&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-415368972&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10872,7 +10875,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-287415396&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-347561928&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10890,7 +10893,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-287415396&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-347561928&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
