@@ -239,7 +239,7 @@
   
   <meta property="og:site_name" content="David Sinden" />
   <meta property="og:url" content="https://djps.github.io/docs/gradcalclinalg24/part2/many-variables/" />
-  <meta property="og:title" content="Calculus of a Single Variable | David Sinden" />
+  <meta property="og:title" content="Calculus of a Function of Several Variables | David Sinden" />
   <meta property="og:description" content="Calculus of a function of several variables" /><meta property="og:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" /><meta property="og:locale" content="en-us" />
   
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T21:07:56&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T23:42:07&#43;02:00">
   
 
   
@@ -259,7 +259,7 @@
   
 
 
-  <title>Calculus of a Single Variable | David Sinden</title>
+  <title>Calculus of a Function of Several Variables | David Sinden</title>
 
   
   
@@ -1589,7 +1589,7 @@
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part2/many-variables/"
     
-  >Calculus
+  >Multi-variate Calculus
     </a>
   
               
@@ -2240,7 +2240,7 @@
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part2/many-variables/"
     
-  >Calculus
+  >Multi-variate Calculus
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2644,13 +2644,13 @@
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
         <a href="https://djps.github.io/docs/gradcalclinalg24/">MDE-MET-01 Calculus and Linear Algebra for Graduate Students</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Calculus</div>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Multi-variate Calculus</div>
 </div>
 
       </div>
 
       <div class="content text-base">
-        <h1>Calculus of a Single Variable</h1>
+        <h1>Calculus of a Function of Several Variables</h1>
         <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2708,6 +2708,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
+<p>The gradient is the analogue to the derivative, but has a direction.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2791,7 +2792,7 @@ So:</p>
 <li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n > 0$, then the critical point is a local minima.</li>
 <li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n < 0$, then the critical point is a local maxima.</li>
 <li>If some $\lambda_j < 0$, and some $\lambda_i > 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.</li>
-<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive, as the classification of the point depends on higher derivatives.</li>
 </ol>
 <!-- Jacobi Matrix
 
@@ -2824,7 +2825,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T21:07:56.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T23:42:07.000Z">
     <span>Last updated on</span>
     Sep 26, 2024</time>
       

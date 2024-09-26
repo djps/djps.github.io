@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-24T09:43:59&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T23:42:07&#43;02:00">
   
 
   
@@ -1616,7 +1616,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/part2/many-variables/"
     
-  >Calculus
+  >Multi-variate Calculus
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2266,7 +2266,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/part2/many-variables/"
     
-  >Calculus
+  >Multi-variate Calculus
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2882,7 +2882,10 @@ $$<p>
 This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is given by $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.</p>
 <h2 id="newton-methods">Newton Methods</h2>
 <h2 id="second-derivatives">Second Derivatives</h2>
-<p>If $x_0$ is a critical point for $f(x)$, then</p>
+<p>Assuming $x_0$ is a critical point of $f(x)$ then $f^{\prime}\left( x_0 \right)=0$, so the Taylor expansion about $x_0$ is</p>
+$$
+f\left(x_0 + x \right) \approx f\left(x_0\right) + \dfrac{1}{2!} f^{\pprime}\left(x_0 \right) x^2 + \ldots
+$$<p>Then</p>
 <ul>
 <li>If $f^{\prime\prime}\left(x_0 \right) < 0$, then $x_0$ is a local maxima</li>
 <li>If $f^{\prime\prime}\left(x_0 \right) > 0$, then $x_0$ is a local minima</li>
@@ -2892,9 +2895,9 @@ This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ an
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-24T09:43:59.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T23:42:07.000Z">
     <span>Last updated on</span>
-    Sep 24, 2024</time>
+    Sep 26, 2024</time>
       
       
   

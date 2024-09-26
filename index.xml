@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-632814579&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-853749216&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-632814579&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-853749216&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5719,7 +5719,10 @@ $$&lt;p&gt;
 This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is given by $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.&lt;/p&gt;
 &lt;h2 id=&#34;newton-methods&#34;&gt;Newton Methods&lt;/h2&gt;
 &lt;h2 id=&#34;second-derivatives&#34;&gt;Second Derivatives&lt;/h2&gt;
-&lt;p&gt;If $x_0$ is a critical point for $f(x)$, then&lt;/p&gt;
+&lt;p&gt;Assuming $x_0$ is a critical point of $f(x)$ then $f^{\prime}\left( x_0 \right)=0$, so the Taylor expansion about $x_0$ is&lt;/p&gt;
+$$
+f\left(x_0 + x \right) \approx f\left(x_0\right) + \dfrac{1}{2!} f^{\pprime}\left(x_0 \right) x^2 + \ldots
+$$&lt;p&gt;Then&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) &lt; 0$, then $x_0$ is a local maxima&lt;/li&gt;
 &lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) &gt; 0$, then $x_0$ is a local minima&lt;/li&gt;
@@ -5864,11 +5867,35 @@ $$
 
 
 
+&lt;!--
+Note that differentiating a vector function which is a matrix vector product means $D(x^TAx) = D(A)x + A D(x)
+
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Taylor&amp;#39;s Theorem for Functions of Multiple Variables&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            Key
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+--&gt;
 </description>
     </item>
     
     <item>
-      <title>Calculus of a Single Variable</title>
+      <title>Calculus of a Function of Several Variables</title>
       <link>https://djps.github.io/docs/gradcalclinalg24/part2/many-variables/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/part2/many-variables/</guid>
@@ -5929,6 +5956,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
+&lt;p&gt;The gradient is the analogue to the derivative, but has a direction.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -6012,7 +6040,7 @@ So:&lt;/p&gt;
 &lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &gt; 0$, then the critical point is a local minima.&lt;/li&gt;
 &lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &lt; 0$, then the critical point is a local maxima.&lt;/li&gt;
 &lt;li&gt;If some $\lambda_j &lt; 0$, and some $\lambda_i &gt; 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.&lt;/li&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive, as the classification of the point depends on higher derivatives.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;!-- Jacobi Matrix
 
@@ -10813,7 +10841,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-523796841&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-493675182&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10831,7 +10859,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-523796841&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-493675182&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10842,7 +10870,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-217965348&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-238476159&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10860,7 +10888,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-217965348&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-238476159&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10873,7 +10901,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-425176893&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-631547298&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10891,7 +10919,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-425176893&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-631547298&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
