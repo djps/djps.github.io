@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-625417938&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-865479213&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-625417938&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-865479213&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10626,7 +10626,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-681279534&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-862714539&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10644,7 +10644,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-681279534&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-862714539&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10655,7 +10655,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-721938654&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-947536812&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10673,7 +10673,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-721938654&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-947536812&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10686,7 +10686,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-376912584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-213698457&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10704,7 +10704,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-376912584&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-213698457&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10795,7 +10795,7 @@ This should be from the static folder:
       <guid>https://djps.github.io/abstracts/ismrm_virtual/</guid>
       <description>&lt;p&gt;The abstract can be found on the ISMRM website 
 . The poster can be found 
-&lt;/p&gt;
+.&lt;/p&gt;
 &lt;!-- Assessing generalized multi-pool exchange tissue model MRI simulations for the modelling of an ultra-low field scanner
 Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neha Koonjoo3, Sheng Shen3, David Sinden1, Matthew Rosen3, and Matt G. Hall1,4
 1National Physical Laboratory, Teddington, United Kingdom, 2Durham University, Durham, United Kingdom, 3Harvard, Boston, MA, United States, 4University College London, London, United Kingdom
@@ -10822,7 +10822,7 @@ Figure 1: b-SSFP acquisition of a resolution phantom on a 6.5 mT scanner
 Figure 2: Simulated 6.5 mT b-SSFP acquisition of the brain phantom
 
 --&gt;
-&lt;p&gt;Proc. Intl. Soc. Mag. Reson. Med. 28 (2020)&lt;/p&gt;
+&lt;p&gt;Proc. Intl. Soc. Mag. Reson. Med. 28 (2020) Abstract #3655&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
