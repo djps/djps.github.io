@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T21:00:07&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-26T21:07:56&#43;02:00">
   
 
   
@@ -2697,7 +2697,7 @@ Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f
             <p>The gradient of a function $z=f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
 </p>
 $$
-\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right)
+\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right).
 $$<p>
 As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.</p>
 
@@ -2743,7 +2743,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
             <p>Each partial derivative can be differentiated again to yield a second-order partial derivative,
 </p>
 $$
-\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( \right)}{h}.
+\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i} \left(x_1, \ldots,  x_j + h, \ldots, x_n \right) - f_{x_i}\left( x_1, \ldots,  x_n \right)}{h}.
 $$<p>
 Thus, all second derivatives can be expressed using the <strong>Hessian matrix</strong>
 </p>
@@ -2755,7 +2755,7 @@ f_{x_1 x_1} & f_{x_2 x_2} & \cdots & f_{x_2 x_n} \\
 \vdots      & \vdots  & \ddots &  \vdots \\
 f_{x_n x_1} & f_{x_n x_2} & \cdots & f_{x_1 x_n}
 \end{array}
-\right)
+\right).
 $$
         </div>
     </div>
@@ -2764,26 +2764,24 @@ $$
 
 
 
-<p>If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric.</p>
-<p>Then, if symmetric all eigenvalues are real.</p>
-<p>Also, the matrix can be decomposed as
-</p>
-$$
-H = Q D Q^{-1}
-$$<p>
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i<sup>th</sup> column of the matrix $Q$.
-As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$.</p>
+<p>If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric. Then, if symmetric all eigenvalues are real.</p>
 <p>The Taylor expansion
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T Hf\left( \vec{a} \right) \vec{x} + \ldots
 $$<p>
-Thus,
+Note that the matrix can be expressed as
+</p>
+$$
+H = Q D Q^{-1}
+$$<p>
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i<sup>th</sup> column of the matrix $Q$.
+As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Thus,
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
 $$<p>
-with $y=Q^T x$, then
+letting $y=Q^T x$, then
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 +  \ldots \lambda_n^{} y_n^2 \right)
@@ -2826,7 +2824,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T21:00:07.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T21:07:56.000Z">
     <span>Last updated on</span>
     Sep 26, 2024</time>
       

@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-521497836&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-632814579&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-521497836&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-632814579&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5918,7 +5918,7 @@ Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f
             &lt;p&gt;The gradient of a function $z=f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
 &lt;/p&gt;
 $$
-\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right)
+\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right).
 $$&lt;p&gt;
 As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.&lt;/p&gt;
 
@@ -5964,7 +5964,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
             &lt;p&gt;Each partial derivative can be differentiated again to yield a second-order partial derivative,
 &lt;/p&gt;
 $$
-\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( \right)}{h}.
+\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i} \left(x_1, \ldots,  x_j + h, \ldots, x_n \right) - f_{x_i}\left( x_1, \ldots,  x_n \right)}{h}.
 $$&lt;p&gt;
 Thus, all second derivatives can be expressed using the &lt;strong&gt;Hessian matrix&lt;/strong&gt;
 &lt;/p&gt;
@@ -5976,7 +5976,7 @@ f_{x_1 x_1} &amp; f_{x_2 x_2} &amp; \cdots &amp; f_{x_2 x_n} \\
 \vdots      &amp; \vdots  &amp; \ddots &amp;  \vdots \\
 f_{x_n x_1} &amp; f_{x_n x_2} &amp; \cdots &amp; f_{x_1 x_n}
 \end{array}
-\right)
+\right).
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -5985,26 +5985,24 @@ $$
 
 
 
-&lt;p&gt;If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric.&lt;/p&gt;
-&lt;p&gt;Then, if symmetric all eigenvalues are real.&lt;/p&gt;
-&lt;p&gt;Also, the matrix can be decomposed as
-&lt;/p&gt;
-$$
-H = Q D Q^{-1}
-$$&lt;p&gt;
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i&lt;sup&gt;th&lt;/sup&gt; column of the matrix $Q$.
-As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$.&lt;/p&gt;
+&lt;p&gt;If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric. Then, if symmetric all eigenvalues are real.&lt;/p&gt;
 &lt;p&gt;The Taylor expansion
 &lt;/p&gt;
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T Hf\left( \vec{a} \right) \vec{x} + \ldots
 $$&lt;p&gt;
-Thus,
+Note that the matrix can be expressed as
+&lt;/p&gt;
+$$
+H = Q D Q^{-1}
+$$&lt;p&gt;
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i&lt;sup&gt;th&lt;/sup&gt; column of the matrix $Q$.
+As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Thus,
 &lt;/p&gt;
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
 $$&lt;p&gt;
-with $y=Q^T x$, then
+letting $y=Q^T x$, then
 &lt;/p&gt;
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 +  \ldots \lambda_n^{} y_n^2 \right)
@@ -10815,7 +10813,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-928736451&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-523796841&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10833,7 +10831,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-928736451&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-523796841&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10844,7 +10842,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-415368972&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-217965348&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10862,7 +10860,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-415368972&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-217965348&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10875,7 +10873,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-347561928&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-425176893&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10893,7 +10891,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-347561928&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-425176893&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
