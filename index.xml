@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-638492175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-567894123&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-638492175&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-567894123&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3097,7 +3097,6 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 &lt;p&gt;The rank is also the number of pivots in $A$ when performing Gaussian elimination.&lt;/p&gt;
-&lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -3110,12 +3109,14 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            &lt;p&gt;The projection of a vector $\boldsymbol{v}$ onto a nonzero vector $\boldsymbol{u}$ is given by
+&lt;/p&gt;
+$$
+\textrm{proj}_{\boldsymbol{u}} \left(\boldsymbol{v} \right) = \dfrac{\boldsymbol{v} \cdot \boldsymbol{u} }{\boldsymbol{u} \cdot \boldsymbol{u} }\boldsymbol{u}.
+$$
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-
-
 
 
 
@@ -3132,7 +3133,14 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            
+            &lt;p&gt;Given $k$ vectors $\boldsymbol{v_1}, \ldots, \boldsymbol{v_k}$ the Gram–Schmidt process defines the vectors $\boldsymbol{u_1}, \ldots, \boldsymbol{u_k}$ as follows:
+&lt;/p&gt;
+$$
+\begin{align*}
+\boldsymbol{u_1} &amp; = \boldsymbol{v_1} \\
+ &amp; \vdots \\
+\boldsymbol{u_k} &amp; = \boldsymbol{v_k} - \sum_{j=1}^{k-1} \textrm{proj}_{\boldsymbol{u_j}} \left(\boldsymbol{v_j} \right).
+$$
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3140,7 +3148,6 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
 
 
 
---&gt;
 </description>
     </item>
     
@@ -10626,7 +10633,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-462891753&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-248971563&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10644,7 +10651,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-462891753&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-248971563&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10655,7 +10662,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-935126784&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-925673148&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10673,7 +10680,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-935126784&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-925673148&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10686,7 +10693,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-627918453&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-629534178&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10704,7 +10711,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-627918453&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-629534178&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
