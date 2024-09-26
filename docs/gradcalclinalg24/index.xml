@@ -151,7 +151,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 - Calculus
   - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
   - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
-  - Many Variables&lt;/pre&gt;
+  - [Many Variable sCalculus](/docs/gradcalclinalg24/part2/many-variables/)&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
@@ -273,7 +273,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-958342176&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-584729631&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -291,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-958342176&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-584729631&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1231,7 +1231,9 @@ $$
  &amp; \vdots \\
 \boldsymbol{u_k} &amp; = \boldsymbol{v_k} - \sum_{j=1}^{k-1} \textrm{proj}_{\boldsymbol{u_j}} \left(\boldsymbol{v_j} \right).
 \end{align*}
-$$
+$$&lt;p&gt;
+The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as $\boldsymbol{e_j} = \dfrac{\boldsymbol{u_j}}{ \left\| \boldsymbol{u_j} \right\|}$ is a set of orthornormal vectors.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1563,6 +1565,182 @@ $$
 
 
 
+</description>
+    </item>
+    
+    <item>
+      <title>Calculus of a Single Variable</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part2/many-variables/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part2/many-variables/</guid>
+      <description>&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Partial derivatives&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function $z = f\left(x,y\right)$, the partial derivative with respect to $x$ can be expressed as
+&lt;/p&gt;
+$$
+\dfrac{\partial f}{\partial x} = \lim_{h \rightarrow 0} \dfrac{f\left(x+h,y\right) - f\left(x,y\right) }{h}
+$$&lt;p&gt;
+similarly, the partial derivative with respect to $y$ can be expressed as
+&lt;/p&gt;
+$$
+\dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Chain Rule&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Gradient of a Function&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The gradient of a function $f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
+&lt;/p&gt;
+$$
+\nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \dfrac{\partial f}{\partial x_n},)
+$$&lt;p&gt;
+As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots x_n \right)$.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Critical Point of a Function&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            If $f\left(x, y\right)$ has a local minima or maxima at $\left( x_0, y_0 \right)$, then $\nabla f\left( x_0, y_0 \right) = \vec{0}$. Such points are called &lt;strong&gt;critical points&lt;/strong&gt;.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Second Derivatives&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Each partial derivative can be differentiated again to yield a second-order partial derivative,
+&lt;/p&gt;
+$$
+\dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i}\left( x_j +h,  \right) - f_{x_i}}\left( )}{h}.
+$$&lt;p&gt;
+Thus, all second derivatives can be expressed using the &lt;strong&gt;Hessian matrix&lt;/strong&gt;
+&lt;/p&gt;
+$$
+Hf\left( \vec{x} \right) = \left(
+\begin{array}{cccc}
+f_{x_1 x_1} &amp; f_{x_1 x_2} &amp; \mdots &amp; f_{x_1 x_n} \\
+f_{x_1 x_1} &amp; f_{x_2 x_2} &amp; \mdots &amp; f_{x_2 x_n} \\
+\vdots      &amp; \vdots  &amp; \ddots &amp;  \\
+f_{x_n x_1} &amp; f_{x_n x_2} &amp; \mdots &amp; f_{x_1 x_n}
+\end{array}
+\right)
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric.&lt;/p&gt;
+&lt;p&gt;Then, if symmetric all eigenvalues are real.&lt;/p&gt;
+&lt;p&gt;Also, the matrix can be decomposed as
+&lt;/p&gt;
+$$
+H = Q D Q^{-1}
+$$&lt;p&gt;
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$, where $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i&lt;sup&gt;th&amp;lt;\sup&amp;gt; column of the matrix $Q$.
+As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$.&lt;/p&gt;
+&lt;p&gt;The Taylor expansion
+&lt;/p&gt;
+$$
+f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T Hf\left( \vec{a} \right) \vec{x} + \ldots
+$$&lt;p&gt;
+Thus,
+&lt;/p&gt;
+$$
+f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
+$$&lt;p&gt;
+with $y=Q^T x$, then
+&lt;/p&gt;
+$$
+f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 +  \ldots \lambda_n^{} y_n^2 \right)
+$$&lt;p&gt;
+So:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n &gt; 0$, then the critical point is a local minima.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n &lt; 0$, then the critical point is a local maxima.&lt;/li&gt;
+&lt;li&gt;If some $\lambda_j &lt; 0$, and some $\lambda_i &gt; 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n \leq 0$ and at least one is zero then the test is inconclusive.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- Jacobi Matrix
+
+Global Maximina
+
+Newton Methods
+--&gt;
 </description>
     </item>
     
