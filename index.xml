@@ -757,7 +757,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-982413756&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-462783519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +775,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-982413756&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-462783519&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5980,7 +5980,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
-&lt;p&gt;Note that not all critical points are either maxima or minima.&lt;/p&gt;
+&lt;p&gt;Note that not all critical points are either maxima or minima. The classification of the critical points high-order derivatives.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -6037,20 +6037,20 @@ Letting $\vec{y}=Q^T \vec{x}$, then
 &lt;/p&gt;
 $$
 \begin{align*}
-f\left(\vec{x} + \vec{a} \right) &amp;  = f\left( \vec{a} \right)  + dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
+f\left(\vec{x} + \vec{a} \right) &amp;  = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
  &amp;  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
 \end{align*}
 $$&lt;p&gt;
 So:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &gt; 0$, then the critical point is a local minima.&lt;/li&gt;
-&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &lt; 0$, then the critical point is a local maxima.&lt;/li&gt;
-&lt;li&gt;If some $\lambda_j &lt; 0$, and some $\lambda_i &gt; 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &gt; 0$, then the critical point is a &lt;em&gt;local minima&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n &lt; 0$, then the critical point is a &lt;em&gt;local maxima&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;If some $\lambda_j &lt; 0$, and some $\lambda_i &gt; 0$, then the critical point is neither a local minima nor maxima. If none of the eigenvalues are equal to zero, then the critical point is called a &lt;em&gt;saddle point&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive, as the classification of the point depends on higher derivatives.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;jacobians&#34;&gt;Jacobians&lt;/h2&gt;
-&lt;p&gt;If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_n \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) =\vec{0}$.&lt;/p&gt;
-&lt;p&gt;or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f(g(x),h(x))$. Apply the chain rule to compute the gradient
+&lt;p&gt;If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_m \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) = \vec{0}$.&lt;/p&gt;
+&lt;p&gt;or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f\left( g(x),h(x) \right)$. Apply the chain rule to compute the gradient
 &lt;/p&gt;
 $$
 \nabla F = \nabla \left( f (g(x)), f(h(x)) \right) = \nabla f \dfrac{\partial (g,h)}{\partial x}
@@ -10871,7 +10871,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-923867154&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-278465391&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10889,7 +10889,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-923867154&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-278465391&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10900,7 +10900,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-349765128&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-842631597&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10918,7 +10918,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-349765128&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-842631597&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10931,7 +10931,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-742136895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-746932815&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10949,7 +10949,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-742136895&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-746932815&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

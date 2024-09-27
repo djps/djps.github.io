@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-27T15:27:42&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-27T15:37:38&#43;02:00">
   
 
   
@@ -2740,7 +2740,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
-<p>Note that not all critical points are either maxima or minima.</p>
+<p>Note that not all critical points are either maxima or minima. The classification of the critical points high-order derivatives.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2797,20 +2797,20 @@ Letting $\vec{y}=Q^T \vec{x}$, then
 </p>
 $$
 \begin{align*}
-f\left(\vec{x} + \vec{a} \right) &  = f\left( \vec{a} \right)  + dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
+f\left(\vec{x} + \vec{a} \right) &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
  &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
 \end{align*}
 $$<p>
 So:</p>
 <ol>
-<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n > 0$, then the critical point is a local minima.</li>
-<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n < 0$, then the critical point is a local maxima.</li>
-<li>If some $\lambda_j < 0$, and some $\lambda_i > 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n > 0$, then the critical point is a <em>local minima</em>.</li>
+<li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n < 0$, then the critical point is a <em>local maxima</em>.</li>
+<li>If some $\lambda_j < 0$, and some $\lambda_i > 0$, then the critical point is neither a local minima nor maxima. If none of the eigenvalues are equal to zero, then the critical point is called a <em>saddle point</em>.</li>
 <li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive, as the classification of the point depends on higher derivatives.</li>
 </ol>
 <h2 id="jacobians">Jacobians</h2>
-<p>If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_n \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) =\vec{0}$.</p>
-<p>or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f(g(x),h(x))$. Apply the chain rule to compute the gradient
+<p>If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_m \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) = \vec{0}$.</p>
+<p>or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f\left( g(x),h(x) \right)$. Apply the chain rule to compute the gradient
 </p>
 $$
 \nabla F = \nabla \left( f (g(x)), f(h(x)) \right) = \nabla f \dfrac{\partial (g,h)}{\partial x}
@@ -2863,7 +2863,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T15:27:42.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T15:37:38.000Z">
     <span>Last updated on</span>
     Sep 27, 2024</time>
       
