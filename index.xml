@@ -64,9 +64,10 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Linear Algebra&lt;/em&gt;&amp;rdquo; - G. Strang (2016) Wellesley-Cambridge Press, 5&lt;sup&gt;th&lt;/sup&gt; edition ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-09802327-7-6&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Another useful resource is&lt;/p&gt;
+&lt;p&gt;Other useful resources are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;ldquo;&lt;em&gt;Linear Algebra and Learning from Data&lt;/em&gt;&amp;rdquo; - G. Strang (2019) Wellesley-Cambridge Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-06921963-8-0&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares&lt;/em&gt;&amp;rdquo; - S. Boyd and L. Vandenberghe (2018) Cambridge University Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-1316518960&lt;/span&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
 ## Knowledge, Abilities, or Skills
@@ -757,7 +758,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-574823916&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-214539786&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -775,7 +776,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-574823916&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-214539786&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10895,7 +10896,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-283965147&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-523469187&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10913,7 +10914,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-283965147&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-523469187&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10924,7 +10925,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-481753269&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-675213948&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10942,7 +10943,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-481753269&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-675213948&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10955,7 +10956,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-386541729&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-548397126&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10973,7 +10974,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-386541729&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-548397126&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
