@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-27T14:59:58&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-27T15:27:42&#43;02:00">
   
 
   
@@ -2682,7 +2682,7 @@ similarly, the partial derivative with respect to $y$ can be expressed as
 $$
 \dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}.
 $$<p>
-Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f_x$.</p>
+Note that the partial derivative is often denoted as $\dfrac{\partial f}{\partial x} = f_x$.</p>
 
         </div>
     </div>
@@ -2703,7 +2703,7 @@ Note that the partial derivative is often as $\dfrac{\partial f}{\partial x} = f
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The gradient of a function $z=f\left(x_1, x_2, \ldots x_n \right)$ is the row vector
+            <p>The gradient of a function $z=f\left(x_1, x_2, \ldots, x_n \right)$ is the row vector
 </p>
 $$
 \nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right).
@@ -2730,7 +2730,9 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            If $f\left(x, y\right)$ has a local minima or maxima at $\left( x_0, y_0 \right)$, then $\nabla f\left( x_0, y_0 \right) = \vec{0}$. Such points are called <strong>critical points</strong>.
+            <p>If $f\left(x, y\right)$ has a local minima or maxima at $\left( x_0, y_0 \right)$, then $\nabla f\left( x_0, y_0 \right) = \vec{0}$.</p>
+<p>Such points are called <strong>critical points</strong>.</p>
+
         </div>
     </div>
 </div>
@@ -2786,7 +2788,7 @@ Note that the Hessian matrix can be factorized as
 $$
 H = Q D Q^{-1}
 $$<p>
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$ of the Hessian matrix. The eigenvector  $\boldsymbol{q_i}$ is the i<sup>th</sup> column of the matrix $Q$. As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Hence,
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$ of the Hessian matrix. The eigenvector  $\boldsymbol{q_i}$ is the $i$<sup>th</sup> column of the matrix $Q$. As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Hence,
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
@@ -2797,6 +2799,7 @@ $$
 \begin{align*}
 f\left(\vec{x} + \vec{a} \right) &  = f\left( \vec{a} \right)  + dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
  &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
+\end{align*}
 $$<p>
 So:</p>
 <ol>
@@ -2807,27 +2810,28 @@ So:</p>
 </ol>
 <h2 id="jacobians">Jacobians</h2>
 <p>If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_n \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) =\vec{0}$.</p>
-<p>or $f(u,v), let u=g(x), v=h(x)$ then the function is a composition $F(x) = f(g(x),h(x))$. Apply the chain rule to compute the gradient
+<p>or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f(g(x),h(x))$. Apply the chain rule to compute the gradient
 </p>
 $$
-\nabla F = \nabla \left( f (g(x)), f(h(x)) ) = \nabla f \dfrac{\partial (g,h)}[\partial x}
+\nabla F = \nabla \left( f (g(x)), f(h(x)) \right) = \nabla f \dfrac{\partial (g,h)}{\partial x}
 $$<p><br>
 where
 </p>
 $$
-\nabla f \dfrac{\partial (g,h)}[\partial x} = \left(
+\nabla f \dfrac{\partial (g,h)}{\partial x} = \left(
 \begin{array}{c}
 \nabla g \\
 \nabla h
 \end{array} \right)
 $$<p>
-is the Jacobi matrix. Each row of the Jacobi matrix is a gradient of $g$ or $h$.</p>
+is the <strong>Jacobi matrix</strong>. Each row of the Jacobi matrix is a gradient of $g$ or $h$.</p>
 <p>For a vector $\boldsymbol{w}$, the directional derivative of $f(x,y)$ in the direction of $\boldsymbol{w}$ is given by
 </p>
 $$
 \left( \nabla f \right)^T \cdot \boldsymbol{w}
 $$<p>
 By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.</p>
+<!--
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2848,7 +2852,7 @@ By the Cauchy-Schwarz inequality, the largest value of the directional derivativ
 
 
 
-<!--
+
 Jacobi Matrix
 
 Global Maximina
@@ -2859,7 +2863,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T14:59:58.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T15:27:42.000Z">
     <span>Last updated on</span>
     Sep 27, 2024</time>
       
