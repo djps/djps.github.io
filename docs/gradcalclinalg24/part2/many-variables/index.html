@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 26, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 27, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-27T00:04:00&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-27T14:59:58&#43;02:00">
   
 
   
@@ -1592,6 +1592,14 @@
   >Multivariate Calculus
     </a>
   
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#jacobians"
+                class="hb-docs-link"
+              >Jacobians</a>
+            </li>
+          </ul>
+  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -2651,7 +2659,7 @@
 
       <div class="content text-base">
         <h1>Calculus of a Function of Several Variables</h1>
-        <!-- Consider functions either $f \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$  -->
+        <!-- Consider functions which take multiple input arguments, and can either output a scalar value or a vector, i.e. $f \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$  -->
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2709,7 +2717,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
-<p>The gradient is the analogue to the derivative, but has a direction.</p>
+<p>The gradient is the analogue to the derivative, but, as a vector, has a direction.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2730,6 +2738,7 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
 
 
 
+<p>Note that not all critical points are either maxima or minima.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2750,7 +2759,7 @@ $$<p>
 Thus, all second derivatives can be expressed using the <strong>Hessian matrix</strong>
 </p>
 $$
-Hf\left( \vec{x} \right) = \left(
+H\left( \vec{x} \right) = \left(
 \begin{array}{cccc}
 f_{x_1 x_1} & f_{x_1 x_2} & \cdots & f_{x_1 x_n} \\
 f_{x_1 x_1} & f_{x_2 x_2} & \cdots & f_{x_2 x_n} \\
@@ -2766,27 +2775,28 @@ $$
 
 
 
-<p>If the second-order partial derivatives are continuous, then the Hessian matrix $Hf$ is symmetric. Then, if symmetric all eigenvalues are real.</p>
-<p>The Taylor expansion
+<p>If the second-order partial derivatives are continuous, then the Hessian matrix $H$ is symmetric. Then, if symmetric all eigenvalues are real-valued.</p>
+<p>The Taylor expansion of a function of more than one variable is given by
 </p>
 $$
-f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T Hf\left( \vec{a} \right) \vec{x} + \ldots
+f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T H\left( \vec{a} \right) \vec{x} + \ldots
 $$<p>
-Note that the matrix can be expressed as
+Note that the Hessian matrix can be factorized as
 </p>
 $$
 H = Q D Q^{-1}
 $$<p>
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$, which is the i<sup>th</sup> column of the matrix $Q$.
-As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Thus,
+where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$ of the Hessian matrix. The eigenvector  $\boldsymbol{q_i}$ is the i<sup>th</sup> column of the matrix $Q$. As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Hence,
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
 $$<p>
-letting $y=Q^T x$, then
+Letting $\vec{y}=Q^T \vec{x}$, then
 </p>
 $$
-f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 +  \ldots \lambda_n^{} y_n^2 \right)
+\begin{align*}
+f\left(\vec{x} + \vec{a} \right) &  = f\left( \vec{a} \right)  + dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
+ &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
 $$<p>
 So:</p>
 <ol>
@@ -2795,8 +2805,29 @@ So:</p>
 <li>If some $\lambda_j < 0$, and some $\lambda_i > 0$, then the critical point is neither a local minima nor maxima. If no eigenvalues are equal to zero, then the critical point is called a saddle point.</li>
 <li>If all $\lambda_1$, $\lambda_2, \ldots, \lambda_n \geq 0$ and at least is zero, or $\lambda_1$, $\lambda_2, \ldots \lambda_n, \leq 0$ and at least one is zero then the test is inconclusive, as the classification of the point depends on higher derivatives.</li>
 </ol>
-<!-- Jacobi Matrix
-
+<h2 id="jacobians">Jacobians</h2>
+<p>If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R^m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_n \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) =\vec{0}$.</p>
+<p>or $f(u,v), let u=g(x), v=h(x)$ then the function is a composition $F(x) = f(g(x),h(x))$. Apply the chain rule to compute the gradient
+</p>
+$$
+\nabla F = \nabla \left( f (g(x)), f(h(x)) ) = \nabla f \dfrac{\partial (g,h)}[\partial x}
+$$<p><br>
+where
+</p>
+$$
+\nabla f \dfrac{\partial (g,h)}[\partial x} = \left(
+\begin{array}{c}
+\nabla g \\
+\nabla h
+\end{array} \right)
+$$<p>
+is the Jacobi matrix. Each row of the Jacobi matrix is a gradient of $g$ or $h$.</p>
+<p>For a vector $\boldsymbol{w}$, the directional derivative of $f(x,y)$ in the direction of $\boldsymbol{w}$ is given by
+</p>
+$$
+\left( \nabla f \right)^T \cdot \boldsymbol{w}
+$$<p>
+By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2817,6 +2848,8 @@ So:</p>
 
 
 
+<!--
+Jacobi Matrix
 
 Global Maximina
 
@@ -2826,7 +2859,7 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T00:04:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T14:59:58.000Z">
     <span>Last updated on</span>
     Sep 27, 2024</time>
       
