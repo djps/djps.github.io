@@ -270,16 +270,16 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/vectors/</guid>
       <description>&lt;h2 id=&#34;notation&#34;&gt;Notation&lt;/h2&gt;
-&lt;p&gt;Denote $\mathbb{R}$ as the set of all real numbers and $\mathbb{R}^N$ as the set of all vectors with $N$ coordinates, whose entries are real numbers.&lt;/p&gt;
-&lt;p&gt;Vectors are denoted by $\boldsymbol{v}$ or $\vec{v}$.&lt;/p&gt;
-&lt;p&gt;The vector whose every entry is zero is called the zero vector.&lt;/p&gt;
+&lt;p&gt;The set of all real numbers is denoted as $\mathbb{R}$ and the set of all vectors with $N$ coordinates, whose entries are real numbers, is denoted by $\mathbb{R}^N$.&lt;/p&gt;
+&lt;p&gt;Vectors are written as by $\boldsymbol{v}$ or $\vec{v}$.&lt;/p&gt;
+&lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
 
 
 
 
-&lt;div id=&#34;chart-943657182&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-534216978&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -297,7 +297,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-943657182&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-534216978&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1259,7 +1259,7 @@ $$
 \begin{align*}
 \boldsymbol{u_1} &amp; = \boldsymbol{v_1} \\
  &amp; \vdots \\
-\boldsymbol{u_k} &amp; = \boldsymbol{v_k} - \sum_{j=1}^{k-1} \textrm{proj}_{\boldsymbol{u_j}} \left(\boldsymbol{v_j} \right).
+\boldsymbol{u_k} &amp; = \boldsymbol{v_k} - \sum_{j=1}^{k-1} \textrm{proj}_{\boldsymbol{u_j}} \left(\boldsymbol{v_k} \right).
 \end{align*}
 $$&lt;p&gt;
 The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as $\boldsymbol{e_j} = \dfrac{\boldsymbol{u_j}}{ \left\| \boldsymbol{u_j} \right\|}$ is a set of orthornormal vectors.&lt;/p&gt;
