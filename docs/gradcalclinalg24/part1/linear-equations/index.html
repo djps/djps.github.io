@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-26T09:15:15&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-30T13:01:11&#43;02:00">
   
 
   
@@ -2705,7 +2705,7 @@ a_{2,1} x_1 + a_{2,2} x_2 + \cdots + a_{2,n} x_n & = b_2 \\
 \vdots &  \\
 a_{m,1} x_1 + a_{m,2} x_2 + \cdots + a_{m,n} x_n & = b_m.
 \end{align*}
-$$<p>The system of linear equations can be written in matrix form ${Ax=b}$, where</p>
+$$<p>The system of linear equations can be written in matrix form ${A\boldsymbol{x}=\boldsymbol{b}}$, where</p>
 $$
 \begin{align*}
 A = \left(
@@ -2732,7 +2732,7 @@ A = \left(
       \right),
 \end{align*}
 $$<p>
-so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.</p>
+so that $A \in \mathbb{R}^{m \times n}$, $\boldsymbol{x}= \in \mathbb{R}^n$ and $\boldsymbol{b}= \in \mathbb{R}^m$.</p>
 
         </div>
     </div>
@@ -2822,14 +2822,14 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     <div class="details-content">
         <div class="admonition-content">
             <p>A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.</p>
-<p><small>1 </small> Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ <br>
+<p><small>1 </small> Find maximal absolute values vector $\boldsymbol{s}$ with entries $s_i= \max_{j=1, \ldots, n} \left| a_{i,j} \right|$ <br>
 <small>2 </small> For $k=1$ to $n-1$: <br>
 <small>3 </small> <span style="margin-left: 10%;"> For $i = k$ to $n$: </span> <br>
 <small>4 </small> <span style="margin-left: 20%;"> Compute $\left| a_{i,k} / s_i \right|$ </span> <br>
 <small>5 </small> <span style="margin-left: 10%;"> End </span> <br>
 <small>6 </small> <span style="margin-left: 10%;"> Find the row with the largest relative pivot element and denote this as row $j$ </span> <br>
 <small>7 </small> <span style="margin-left: 10%;"> Swap rows $k$ and $j$ </span> <br>
-<small>8 </small> <span style="margin-left: 10%;"> Swap entries $k$ and $j$ in vector $s$ </span> <br>
+<small>8 </small> <span style="margin-left: 10%;"> Swap entries $k$ and $j$ in vector $\boldsymbol{s}$ </span> <br>
 <small>9 </small> <span style="margin-left: 10%;"> Do forward elimination on row $k$ </span> <br>
 <small>10</small> End <br></p>
 <p>The matrix will now be in row-echelon form, so that back substitution can be performed.</p>
@@ -3005,9 +3005,9 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-26T09:15:15.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-30T13:01:11.000Z">
     <span>Last updated on</span>
-    Sep 26, 2024</time>
+    Sep 30, 2024</time>
       
       
   

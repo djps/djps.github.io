@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-27T16:15:56&#43;02:00">
+    <meta property="article:modified_time" content="2024-09-30T13:01:11&#43;02:00">
   
 
   
@@ -2735,7 +2735,7 @@ $$<p>A matrix is said to be a <strong>square matrix</strong> if the number of ro
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries as given by
+            <p>For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries are given by
 </p>
 $$
 c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}
@@ -2762,7 +2762,7 @@ for any $i=1, \ldots, m$ and $j =1, \ldots, l$.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $Ax=y$ is a $m \times l$ vector whose entries as given by
+            <p>For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $A\boldsymbol{x} =\boldsymbol{y}$ is an $m \times l$ vector whose entries are given by
 </p>
 $$
 y_{j} = \sum_{i=1}^{n} a_{ij} x_i .
@@ -2786,7 +2786,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            When matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, and is called a column vector. Similarly, a $1 \times n$ matrix with a single row of $n$ entries is called a row vector.
+            When matrix $A \in \mathbb{R}^{m \times 1}$ is comprised of a single column of $m$ entries, it is called a column vector. Similarly, a $1 \times n$ matrix, i.e. a single row of $n$ entries is called a row vector.
         </div>
     </div>
 </div>
@@ -2794,7 +2794,7 @@ $$
 
 
 
-<p>Thus $\boldsymbol{v}^T \boldsymbol{v}$ is a $1 \times 1$ matrix</p>
+<p>Thus $\boldsymbol{v}^T \boldsymbol{v}$ is a $1 \times 1$ matrix, and $\boldsymbol{v} \boldsymbol{v}^T$ is a $n \times n$ matrix.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2815,7 +2815,7 @@ $$
 
 
 
-<p>Thus, if $x$ is a column vector it is possible to perform $Ax=y$, then the equivalent multiplication by a row vector is $x^T A^T = y^T$.</p>
+<p>Thus, if $\boldsymbol{x}$ is a column vector it is possible to perform $A\boldsymbol{x}=\boldsymbol{y}$, then the equivalent multiplication by a row vector is $\boldsymbol{x}^T A^T = \boldsymbol{y}^T$.</p>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
         
@@ -2932,10 +2932,10 @@ $$
 </li>
 </ul>
 <h2 id="properties-of-nonsingular-matrices">Properties of Nonsingular Matrices</h2>
-<p>For a nonsingular matrix, the following all hold:</p>
+<p>For a nonsingular matrix, the following <em>all</em> hold:</p>
 <ul>
 <li>
-<p>Nonsingular matrices have full rank.</p>
+<p>A nonsingular matrices has full rank, i.e. the rank is equal to the number of rows or columns</p>
 </li>
 <li>
 <p>A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.</p>
@@ -2948,9 +2948,9 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-27T16:15:56.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-30T13:01:11.000Z">
     <span>Last updated on</span>
-    Sep 27, 2024</time>
+    Sep 30, 2024</time>
       
       
   
