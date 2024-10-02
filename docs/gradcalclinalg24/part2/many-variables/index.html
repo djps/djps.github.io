@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 30, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: October 2, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-09-29T20:22:59&#43;02:00">
+    <meta property="article:modified_time" content="2024-10-02T08:39:54&#43;02:00">
   
 
   
@@ -2778,7 +2778,7 @@ $$
 
 
 <p>If the second-order partial derivatives are continuous, then the Hessian matrix $H$ is symmetric. Then, if symmetric all eigenvalues are real-valued.</p>
-<p>The Taylor expansion of a function of more than one variable is given by
+<p>The Taylor expansion of a function of more than one variable about a critical point is given by
 </p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T H\left( \vec{a} \right) \vec{x} + \ldots
@@ -2825,12 +2825,19 @@ $$
 \end{array} \right)
 $$<p>
 is the <strong>Jacobi matrix</strong>. Each row of the Jacobi matrix is a gradient of $g$ or $h$.</p>
-<p>For a vector $\boldsymbol{w}$, the directional derivative of $f(x,y)$ in the direction of $\boldsymbol{w}$ is given by
+<p>For a vector $\boldsymbol{w}$, the <strong>directional derivative</strong> of $f(\boldsymbol{x})$ in the direction of $\boldsymbol{w}$ is given by
 </p>
 $$
-\left( \nabla f \right)^T \cdot \boldsymbol{w}
+\nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \lim_{h \rightarrow 0} \dfrac{f(\boldsymbol{x} + h\boldsymbol{v}) - f(\boldsymbol{x})}{h}
 $$<p>
-By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.</p>
+If the function is differentiable, then
+</p>
+$$
+\nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \nabla f \left(\boldsymbol{x}\right) \cdot  \boldsymbol{w}
+$$<p>
+As, by convention, $\nabla f \left(\boldsymbol{x}\right)$ is a column vector.</p>
+<p>The directional derivative can then be expressed as a matrix-vector product, specifically a Jacobian-vector product.</p>
+<p>By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.</p>
 <!--
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
@@ -2863,9 +2870,9 @@ Newton Methods
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-09-29T20:22:59.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-02T08:39:54.000Z">
     <span>Last updated on</span>
-    Sep 29, 2024</time>
+    Oct 2, 2024</time>
       
       
   

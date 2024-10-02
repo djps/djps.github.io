@@ -279,7 +279,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-845136972&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-745162893&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -297,7 +297,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-845136972&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-745162893&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1528,6 +1528,34 @@ $$
 
 
 
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Taylor&amp;#39;s Theorem for Multivariate Functions&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;For a function $f \, : \, \mathbb{R}^n \mapsto \mathbb{R}$ which is differentiable around $\boldsymbol{a}$, then the Taylor expansion can be generalised as
+&lt;/p&gt;
+$$
+\begin{equation*}
+f\left( \boldsymbol{x} + \boldsymbol{a} \right) = f\left( \boldsymbol{x} \right)  + \boldsymbol{a}\cdot J + \dfrac{1}{2} \boldsymbol{a}^T H \boldsymbol{a} + \ldots
+\end{equation*}
+$$&lt;p&gt;
+where $J$ is the Jacobian and $H$ is the Hessian.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1600,25 +1628,6 @@ $$
 
 &lt;!--
 Note that differentiating a vector function which is a matrix vector product means $D(x^TAx) = D(A)x + A D(x)
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;Taylor&amp;#39;s Theorem for Functions of Multiple Variables&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            Key
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
 
 
 --&gt;
@@ -1749,7 +1758,7 @@ $$
 
 
 &lt;p&gt;If the second-order partial derivatives are continuous, then the Hessian matrix $H$ is symmetric. Then, if symmetric all eigenvalues are real-valued.&lt;/p&gt;
-&lt;p&gt;The Taylor expansion of a function of more than one variable is given by
+&lt;p&gt;The Taylor expansion of a function of more than one variable about a critical point is given by
 &lt;/p&gt;
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T H\left( \vec{a} \right) \vec{x} + \ldots
@@ -1796,12 +1805,19 @@ $$
 \end{array} \right)
 $$&lt;p&gt;
 is the &lt;strong&gt;Jacobi matrix&lt;/strong&gt;. Each row of the Jacobi matrix is a gradient of $g$ or $h$.&lt;/p&gt;
-&lt;p&gt;For a vector $\boldsymbol{w}$, the directional derivative of $f(x,y)$ in the direction of $\boldsymbol{w}$ is given by
+&lt;p&gt;For a vector $\boldsymbol{w}$, the &lt;strong&gt;directional derivative&lt;/strong&gt; of $f(\boldsymbol{x})$ in the direction of $\boldsymbol{w}$ is given by
 &lt;/p&gt;
 $$
-\left( \nabla f \right)^T \cdot \boldsymbol{w}
+\nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \lim_{h \rightarrow 0} \dfrac{f(\boldsymbol{x} + h\boldsymbol{v}) - f(\boldsymbol{x})}{h}
 $$&lt;p&gt;
-By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.&lt;/p&gt;
+If the function is differentiable, then
+&lt;/p&gt;
+$$
+\nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \nabla f \left(\boldsymbol{x}\right) \cdot  \boldsymbol{w}
+$$&lt;p&gt;
+As, by convention, $\nabla f \left(\boldsymbol{x}\right)$ is a column vector.&lt;/p&gt;
+&lt;p&gt;The directional derivative can then be expressed as a matrix-vector product, specifically a Jacobian-vector product.&lt;/p&gt;
+&lt;p&gt;By the Cauchy-Schwarz inequality, the largest value of the directional derivative is when $\nabla f$ and $\boldsymbol{w}$ are pointing in the same direction.&lt;/p&gt;
 &lt;!--
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
