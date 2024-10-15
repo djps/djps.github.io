@@ -152,7 +152,12 @@
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
 
-&lt;pre&gt;- Numerical Methods
+&lt;pre&gt;---
+markmap:
+  zoom: false
+  pan: false
+---
+- Numerical Methods
   - Errors
     - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
     - [Number Representations](docs/numericalmethods24/part1/number-representations/)
@@ -192,34 +197,34 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1768,38 +1773,38 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Method&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Regularity&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Proximity to $r$&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Initial points&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Function calls&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Convergence&lt;/th&gt;
+          &lt;th&gt;Method&lt;/th&gt;
+          &lt;th&gt;Regularity&lt;/th&gt;
+          &lt;th&gt;Proximity to $r$&lt;/th&gt;
+          &lt;th&gt;Initial points&lt;/th&gt;
+          &lt;th&gt;Function calls&lt;/th&gt;
+          &lt;th&gt;Convergence&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Bisection&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{0}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;No&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Linear&lt;/td&gt;
+          &lt;td&gt;Bisection&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{0}$&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Linear&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Newton&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{2}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Yes&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Quadratic&lt;/td&gt;
+          &lt;td&gt;Newton&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{2}$&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;Quadratic&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Secant&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{2}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Yes&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Superlinear&lt;/td&gt;
+          &lt;td&gt;Secant&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{2}$&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Superlinear&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;

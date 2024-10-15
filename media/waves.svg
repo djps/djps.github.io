@@ -3,7 +3,7 @@
   <style>
     :root { --color: #00FF00; }
     @media (prefers-color-scheme: light) { :root { --color: #e5e7eb; } }
-    @media (prefers-color-scheme: dark) { :root { --color: #b7280; } }
+    @media (prefers-color-scheme: dark) { :root { --color: #6b7280; } }
     path {
       fill: none;
       stroke: var(--color);

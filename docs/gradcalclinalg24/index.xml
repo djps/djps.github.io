@@ -148,7 +148,12 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
 
-&lt;pre&gt;- Linear Algebra
+&lt;pre&gt;---
+markmap:
+  zoom: false
+  pan: false
+---
+- Linear Algebra
   - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
   - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
   - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
@@ -165,34 +170,34 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -279,7 +284,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-437512968&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-742896315&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -297,7 +302,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-437512968&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-742896315&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

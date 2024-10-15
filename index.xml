@@ -148,7 +148,12 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
 
-&lt;pre&gt;- Linear Algebra
+&lt;pre&gt;---
+markmap:
+  zoom: false
+  pan: false
+---
+- Linear Algebra
   - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
   - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
   - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
@@ -165,34 +170,34 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -404,7 +409,12 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
 
-&lt;pre&gt;- Numerical Methods
+&lt;pre&gt;---
+markmap:
+  zoom: false
+  pan: false
+---
+- Numerical Methods
   - Errors
     - [Taylor Series](/docs/numericalmethods24/part1/taylor/)
     - [Number Representations](docs/numericalmethods24/part1/number-representations/)
@@ -444,34 +454,34 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -568,30 +578,30 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Examination Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Module examination&lt;/td&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Assessment Type:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Written examination&lt;/td&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Scope:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;All intended learning outcomes of this module&lt;/td&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Duration:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;120 min&lt;/td&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Weight:&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;100%&lt;/td&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -763,7 +773,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-437512968&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-742896315&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -781,7 +791,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-437512968&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-742896315&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3502,38 +3512,38 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Method&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Regularity&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Proximity to $r$&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Initial points&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Function calls&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Convergence&lt;/th&gt;
+          &lt;th&gt;Method&lt;/th&gt;
+          &lt;th&gt;Regularity&lt;/th&gt;
+          &lt;th&gt;Proximity to $r$&lt;/th&gt;
+          &lt;th&gt;Initial points&lt;/th&gt;
+          &lt;th&gt;Function calls&lt;/th&gt;
+          &lt;th&gt;Convergence&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Bisection&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{0}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;No&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Linear&lt;/td&gt;
+          &lt;td&gt;Bisection&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{0}$&lt;/td&gt;
+          &lt;td&gt;No&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Linear&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Newton&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{2}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Yes&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Quadratic&lt;/td&gt;
+          &lt;td&gt;Newton&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{2}$&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;Quadratic&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Secant&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;$\mathcal{C}^{2}$&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Yes&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Superlinear&lt;/td&gt;
+          &lt;td&gt;Secant&lt;/td&gt;
+          &lt;td&gt;$\mathcal{C}^{2}$&lt;/td&gt;
+          &lt;td&gt;Yes&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Superlinear&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -10917,7 +10927,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-864172593&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-395618247&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10935,7 +10945,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-864172593&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-395618247&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10946,7 +10956,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-689354217&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-954832671&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10964,7 +10974,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-689354217&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-954832671&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10977,7 +10987,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-915687234&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-813745269&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10995,7 +11005,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-915687234&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-813745269&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
