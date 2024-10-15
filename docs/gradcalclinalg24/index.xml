@@ -24,7 +24,13 @@
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Note that there will be no lecture on Wednesday 9 October.&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Note that there will be &lt;strong&gt;no&lt;/strong&gt; lecture on Wednesday 9 October.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Note that the lecture for Wednesday 16 October will instead take place on &lt;strong&gt;Thursday 17 October in IRC-Seminar Room II&lt;/strong&gt;.&lt;/span&gt;
 &lt;/div&gt;
 &lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
 &lt;!-- The first lecture will be on Thursday 1 February, the last on Wednesday 15 May.
@@ -226,7 +232,8 @@ markmap:
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
-&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on here and on Teams approximately one week before the due date.&lt;/p&gt;
+&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on 
+ and on Teams approximately one week before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. By doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
@@ -284,7 +291,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-742896315&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-168935742&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -302,7 +309,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-742896315&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-168935742&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
