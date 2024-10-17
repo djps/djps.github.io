@@ -239,7 +239,7 @@
   
   <meta property="og:site_name" content="David Sinden" />
   <meta property="og:url" content="https://djps.github.io/docs/gradcalclinalg24/part1/eigen/" />
-  <meta property="og:title" content="Matrices &amp; Eigenvalues | David Sinden" />
+  <meta property="og:title" content="Eigenvalues &amp; Principal Component Analysis | David Sinden" />
   <meta property="og:description" content="Eigenvalues and Eigenvectors, PCA" /><meta property="og:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" />
     <meta property="twitter:image" content="https://djps.github.io/media/logo_hu1617270246782058896.png" /><meta property="og:locale" content="en-us" />
   
@@ -249,7 +249,7 @@
         content="2023-12-07T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-10-17T16:58:21&#43;02:00">
+    <meta property="article:modified_time" content="2024-10-17T17:05:20&#43;02:00">
   
 
   
@@ -259,7 +259,7 @@
   
 
 
-  <title>Matrices &amp; Eigenvalues | David Sinden</title>
+  <title>Eigenvalues &amp; Principal Component Analysis | David Sinden</title>
 
   
   
@@ -1574,7 +1574,7 @@
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part1/eigen/"
     
-  >Matrices &amp; Eigenvalues
+  >Eigenvalues and PCA
     </a>
   
     <ul class="hb-sidebar-mobile-toc"><li>
@@ -2247,7 +2247,7 @@
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/docs/gradcalclinalg24/part1/eigen/"
     
-  >Matrices &amp; Eigenvalues
+  >Eigenvalues and PCA
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2675,13 +2675,13 @@
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
         <a href="https://djps.github.io/docs/gradcalclinalg24/">MDE-MET-01 Calculus and Linear Algebra for Graduate Students</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Matrices &amp; Eigenvalues</div>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Eigenvalues and PCA</div>
 </div>
 
       </div>
 
       <div class="content text-base">
-        <h1>Matrices &amp; Eigenvalues</h1>
+        <h1>Eigenvalues &amp; Principal Component Analysis</h1>
         <h2 id="eigenvalues--eigenvectors">Eigenvalues &amp; Eigenvectors</h2>
 <div class="details admonition Definition open">
     <div class="details-summary admonition-title">
@@ -2751,31 +2751,35 @@ $$<p>Thus powers of matrices, such as $A^k$ can be easily computed for any $k$.<
 <p>Shift so that the mean of each column is zero, i.e. subtract the mean of each column of $Z$ from itself, yielding a new matrix $X$.</p>
 <p>$X\boldsymbol{w}$ is the projection of each data row on the direction $w$.</p>
 <p>Given the mean of each column is zero, so the variance of the set of column vectors is given by
+</p>
+$$
 \begin{align*}
-\newcommand{\var}{\operatorname{var}}
-\newcommand{\diag}{\operatorname{diag}}
-\var X &amp; = \dfrac{1}{n-1} \left( x_1<sup>2 + \ldots + x_n</sup>2 \right) \
-&amp; = \dfrac{1}{n-1} \left( X \boldsymbol{w} \right)^T \left( X \boldsymbol{w} \right) \
-&amp; = \dfrac{1}{n-1}  \boldsymbol{w}<sup>T X</sup>T X \boldsymbol{w}.
-\end{align*}</p>
-<p>Find the vector $\boldsymbol{w}$ so that variance is maximal.</p>
-<p>Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}{D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus</p>
+\text{var} \, X & = \dfrac{1}{n-1} \left( x_{1}^{2} + \ldots + x_n^2 \right) \\
+& = \dfrac{1}{n-1} \left( X \boldsymbol{w} \right)^T \left( X \boldsymbol{w} \right) \\
+& = \dfrac{1}{n-1}  \boldsymbol{w}^T X^T X \boldsymbol{w}.
+\end{align*}
+$$<p>
+Find the vector $\boldsymbol{w}$ so that variance is maximal.</p>
+<p>Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}\, {D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus</p>
 $$
 X^T X = A = Q D Q^T .
-$$<p>Then, the expression for the variance is given by</p>
-<p>\begin{align*}
-\boldsymbol{w}<sup>T X</sup>T X \boldsymbol{w} &amp; = \boldsymbol{w}<sup>T A \boldsymbol{w} \
-&amp; = \boldsymbol{w}<sup>T Q D Q</sup>T \boldsymbol{w} \
-&amp; = \left( \boldsymbol{w}<sup>T Q \right) D \left( Q</sup>T \boldsymbol{w} \right)  \
-&amp; = \left( Q</sup>T \boldsymbol{w} \right)<sup>T D \left( Q</sup>T \boldsymbol{w} \right), \quad \text{let} \quad \boldsymbol{y} = Q^T \boldsymbol{w} \
-&amp; = \boldsymbol{y}^T D \boldsymbol{y}.
-\end{align*}</p>
-<p>Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y}$ is also a unit vector. It can easily be shown that the vector ${\boldsymbol{y} = \left(1, 0 \ldots 0 \right)^T}$ maximizes the variance. Thus, the corresponding principal component $\boldsymbol{w}$ is recovered from ${\boldsymbol{y} = Q^T \boldsymbol{w}}$, i.e. ${\boldsymbol{w} =  \left( Q^T\right)^{-1} \boldsymbol{y} = Q\boldsymbol{y}}$.</p>
+$$<p>Then, the expression for the variance is given by
+</p>
+$$
+\begin{align*}
+\boldsymbol{w}^T X^T X \boldsymbol{w} & = \boldsymbol{w}^T A \boldsymbol{w} \\
+& = \boldsymbol{w}^T Q D Q^T \boldsymbol{w} \\
+& = \left( \boldsymbol{w}^T Q \right) D \left( Q^T \boldsymbol{w} \right)  \\
+& = \left( Q^T \boldsymbol{w} \right)^T D \left( Q^T \boldsymbol{w} \right), \quad \text{let} \quad \boldsymbol{y} = Q^T \boldsymbol{w} \\
+& = \boldsymbol{y}^T D \boldsymbol{y}.
+\end{align*}
+$$<p>
+Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y}$ is also a unit vector. It can easily be shown that the vector ${\boldsymbol{y} = \left(1, 0 \ldots 0 \right)^T}$ maximizes the variance. Thus, the corresponding principal component $\boldsymbol{w}$ is recovered from ${\boldsymbol{y} = Q^T \boldsymbol{w}}$, i.e. ${\boldsymbol{w} =  \left( Q^T\right)^{-1} \boldsymbol{y} = Q\boldsymbol{y}}$.</p>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-17T16:58:21.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-17T17:05:20.000Z">
     <span>Last updated on</span>
     Oct 17, 2024</time>
       

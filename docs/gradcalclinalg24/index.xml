@@ -269,7 +269,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-125397864&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-732469815&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -287,7 +287,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-125397864&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-732469815&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1292,7 +1292,7 @@ The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as
     </item>
     
     <item>
-      <title>Matrices &amp; Eigenvalues</title>
+      <title>Eigenvalues &amp; Principal Component Analysis</title>
       <link>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</guid>
@@ -1365,26 +1365,30 @@ $$&lt;p&gt;Thus powers of matrices, such as $A^k$ can be easily computed for any
 &lt;p&gt;Shift so that the mean of each column is zero, i.e. subtract the mean of each column of $Z$ from itself, yielding a new matrix $X$.&lt;/p&gt;
 &lt;p&gt;$X\boldsymbol{w}$ is the projection of each data row on the direction $w$.&lt;/p&gt;
 &lt;p&gt;Given the mean of each column is zero, so the variance of the set of column vectors is given by
+&lt;/p&gt;
+$$
 \begin{align*}
-\newcommand{\var}{\operatorname{var}}
-\newcommand{\diag}{\operatorname{diag}}
-\var X &amp;amp; = \dfrac{1}{n-1} \left( x_1&lt;sup&gt;2 + \ldots + x_n&lt;/sup&gt;2 \right) \
-&amp;amp; = \dfrac{1}{n-1} \left( X \boldsymbol{w} \right)^T \left( X \boldsymbol{w} \right) \
-&amp;amp; = \dfrac{1}{n-1}  \boldsymbol{w}&lt;sup&gt;T X&lt;/sup&gt;T X \boldsymbol{w}.
-\end{align*}&lt;/p&gt;
-&lt;p&gt;Find the vector $\boldsymbol{w}$ so that variance is maximal.&lt;/p&gt;
-&lt;p&gt;Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}{D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus&lt;/p&gt;
+\text{var} \, X &amp; = \dfrac{1}{n-1} \left( x_{1}^{2} + \ldots + x_n^2 \right) \\
+&amp; = \dfrac{1}{n-1} \left( X \boldsymbol{w} \right)^T \left( X \boldsymbol{w} \right) \\
+&amp; = \dfrac{1}{n-1}  \boldsymbol{w}^T X^T X \boldsymbol{w}.
+\end{align*}
+$$&lt;p&gt;
+Find the vector $\boldsymbol{w}$ so that variance is maximal.&lt;/p&gt;
+&lt;p&gt;Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}\, {D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus&lt;/p&gt;
 $$
 X^T X = A = Q D Q^T .
-$$&lt;p&gt;Then, the expression for the variance is given by&lt;/p&gt;
-&lt;p&gt;\begin{align*}
-\boldsymbol{w}&lt;sup&gt;T X&lt;/sup&gt;T X \boldsymbol{w} &amp;amp; = \boldsymbol{w}&lt;sup&gt;T A \boldsymbol{w} \
-&amp;amp; = \boldsymbol{w}&lt;sup&gt;T Q D Q&lt;/sup&gt;T \boldsymbol{w} \
-&amp;amp; = \left( \boldsymbol{w}&lt;sup&gt;T Q \right) D \left( Q&lt;/sup&gt;T \boldsymbol{w} \right)  \
-&amp;amp; = \left( Q&lt;/sup&gt;T \boldsymbol{w} \right)&lt;sup&gt;T D \left( Q&lt;/sup&gt;T \boldsymbol{w} \right), \quad \text{let} \quad \boldsymbol{y} = Q^T \boldsymbol{w} \
-&amp;amp; = \boldsymbol{y}^T D \boldsymbol{y}.
-\end{align*}&lt;/p&gt;
-&lt;p&gt;Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y}$ is also a unit vector. It can easily be shown that the vector ${\boldsymbol{y} = \left(1, 0 \ldots 0 \right)^T}$ maximizes the variance. Thus, the corresponding principal component $\boldsymbol{w}$ is recovered from ${\boldsymbol{y} = Q^T \boldsymbol{w}}$, i.e. ${\boldsymbol{w} =  \left( Q^T\right)^{-1} \boldsymbol{y} = Q\boldsymbol{y}}$.&lt;/p&gt;
+$$&lt;p&gt;Then, the expression for the variance is given by
+&lt;/p&gt;
+$$
+\begin{align*}
+\boldsymbol{w}^T X^T X \boldsymbol{w} &amp; = \boldsymbol{w}^T A \boldsymbol{w} \\
+&amp; = \boldsymbol{w}^T Q D Q^T \boldsymbol{w} \\
+&amp; = \left( \boldsymbol{w}^T Q \right) D \left( Q^T \boldsymbol{w} \right)  \\
+&amp; = \left( Q^T \boldsymbol{w} \right)^T D \left( Q^T \boldsymbol{w} \right), \quad \text{let} \quad \boldsymbol{y} = Q^T \boldsymbol{w} \\
+&amp; = \boldsymbol{y}^T D \boldsymbol{y}.
+\end{align*}
+$$&lt;p&gt;
+Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y}$ is also a unit vector. It can easily be shown that the vector ${\boldsymbol{y} = \left(1, 0 \ldots 0 \right)^T}$ maximizes the variance. Thus, the corresponding principal component $\boldsymbol{w}$ is recovered from ${\boldsymbol{y} = Q^T \boldsymbol{w}}$, i.e. ${\boldsymbol{w} =  \left( Q^T\right)^{-1} \boldsymbol{y} = Q\boldsymbol{y}}$.&lt;/p&gt;
 </description>
     </item>
     
