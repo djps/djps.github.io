@@ -164,7 +164,7 @@ markmap:
   - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
   - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
   - [Vector Spaces](/docs/gradcalclinalg24/part1/spaces/)
-  - Matrices &amp; Eigenvalues
+  - [Matrices &amp; Eigenvalues](/docs/gradcalclinalg24/part1/eigen/)
 - Calculus
   - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
   - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
@@ -251,28 +251,6 @@ markmap:
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If any part of this AI policy is confusing or uncertain, please reach out to your instructor for a conversation before submitting your work.&lt;/p&gt;
-&lt;!--
-1 Feb
-7, 8
-14, 15
-21, 22
-28, 29
-6, 7 March
-13, 14
-20, 21
-3, 4 April
-10, 11
-17, 18
-24, 25 - linear algebra
-29 - interpolation
-2 May - odes
-10 May - odes
-15 May  revision
-
-https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
-https://francisbach.com/richardson-extrapolation/
-https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
---&gt;
 </description>
     </item>
     
@@ -291,7 +269,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
 
 
-&lt;div id=&#34;chart-164793852&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-125397864&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -309,7 +287,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-164793852&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-125397864&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -700,7 +678,34 @@ $$
 &lt;p&gt;A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero, i.e. $a_{ij}=0$ when $i &lt; j$. Similarly, a matrix is said to be &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero, that is $a_{ij}=0$ when $i~&gt;~j$. A matrix is said to be strictly upper triangular (or strictly lower triangle) if the main diagonal is also zero.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;properties-of-nonsingular-matrices&#34;&gt;Properties of Nonsingular Matrices&lt;/h2&gt;
+&lt;h2 id=&#34;determinant-of-a-matrix&#34;&gt;Determinant of a Matrix&lt;/h2&gt;
+&lt;p&gt;For a 2$\times$2 matrix &lt;/p&gt;
+$$A= \left( \begin{array}{cc} a &amp; b \\ c &amp; d \end{array} \right)$$&lt;p&gt;, the determinant, denoted by $\left| A \right|$ or det$A$ is given by ${ad-bc}$.&lt;/p&gt;
+&lt;p&gt;There are many methods to compute the determinant. the&lt;/p&gt;
+&lt;p&gt;Liebniz Method: Consider all possible choices of $n$ elements from a matrix such that there is precisely one element chosen from each row and column. Let such a choice be denoted by $\sigma$ and let sgn$\sigma$ be $-1$ to the power of the number of row swaps required to turn the choice $\sigma$ into the diagonal. Then det$\sigma$ is the sum of the products of each $\sigma$ multiplied by its sign.&lt;/p&gt;
+&lt;p&gt;Laplace expansion: delete the $i$&lt;sup&gt;th&lt;/sup&gt; row and the $j$&lt;sup&gt;th&lt;/sup&gt; column from a matrix to yield a $(n-1)\times(n-1)$ matrix, called a minor, denoted by $M_{ij}$, then the cofactor is
+&lt;/p&gt;
+$$
+C_{ij} = \left( -1 \right)^{i+j} \text{det} M_{ij}
+$$&lt;p&gt;&lt;br&gt;
+and the determinant is given by
+&lt;/p&gt;
+$$
+\text{det}{A} = a_{i1}C_{i1} + a_{i2}C_{i2} + \ldots + a_{in}C_{in}
+$$&lt;p&gt;
+which is the cofactor expansion along row $i$. The computation of the determinant can be performed for any row. The cofactor expansion can also be performed along any column, i.e.
+&lt;/p&gt;
+$$
+\text{det}{A} = a_{1j}C_{1j} + a_{2j}C_{2j} + \ldots + a_{nj}C_{nj}.
+$$&lt;p&gt;Cramers Rule: for $A\boldsymbol{x}=\boldsymbol{b}$, define the matrix $B_j$ as the matrix $A$ with the $j$&lt;sup&gt;th&lt;/sup&gt; column replaced by $\boldsymbol{b}$, then, if det$A \neq 0$,
+&lt;/p&gt;
+$$
+x_j = \dfrac{\text{det} B_j}{\text{det} A}.
+$$&lt;p&gt;The inverse of a matrix can be found via
+&lt;/p&gt;
+$$
+\left( A^{-1} \right)_{ij} = \dfrac{ C_{ji} }{\text{det} A}.
+$$&lt;h2 id=&#34;properties-of-nonsingular-matrices&#34;&gt;Properties of Nonsingular Matrices&lt;/h2&gt;
 &lt;p&gt;For a nonsingular matrix, the following &lt;em&gt;all&lt;/em&gt; hold:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1283,6 +1288,103 @@ The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as
 
 
 
+</description>
+    </item>
+    
+    <item>
+      <title>Matrices &amp; Eigenvalues</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</guid>
+      <description>&lt;h2 id=&#34;eigenvalues--eigenvectors&#34;&gt;Eigenvalues &amp;amp; Eigenvectors&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Eigenvalues and Eigenvectors&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;In linear algebra, an eigenvector is a non-zero vector that has its direction unchanged by a given linear transformation. More precisely, an eigenvector, $\boldsymbol{v}$, of a linear transformation,  $A$, is scaled by a constant factor, $\lambda$, when the linear transformation is applied to it:
+&lt;/p&gt;
+$$
+A \boldsymbol {v} = \lambda \boldsymbol {v}.
+$$&lt;p&gt;
+then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the corresponding eigenvalue. Thus $A\boldsymbol{v}$ and $\boldsymbol{v}$ are &lt;em&gt;collinear&lt;/em&gt;.&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+$$
+A \boldsymbol {v} = \lambda \boldsymbol {v} \Rightarrow A \boldsymbol {v} - \lambda \boldsymbol {v} = \boldsymbol{0}
+$$&lt;p&gt;
+i.e.
+&lt;/p&gt;
+$$
+B \boldsymbol {v} = \boldsymbol{0} \quad \text{where} \quad B = A - \lambda I.
+$$&lt;p&gt;
+As $\boldsymbol{v}$ is not a zero vector and $B \boldsymbol{v} = \boldsymbol{0}$ then the determinant of $B$ is zero. Finding the roots to $\left| A- \lambda I \right|$ yields the eigenvalues, whose eigenvectors are in the span of the nullspace of $B=A-\lambda I$.&lt;/p&gt;
+$$
+A \boldsymbol {v} = X^{-1} D X \boldsymbol {v}
+$$&lt;p&gt;Thus powers of matrices, such as $A^k$ can be easily computed for any $k$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $A$ is triangular, its eigenvalues are the entries on the diagonal.&lt;/li&gt;
+&lt;li&gt;For an arbitrary $n$ by $n$ matrix $A$, the product of the $n$ eigenvalues is equal to the determinant of $A$.&lt;/li&gt;
+&lt;li&gt;The sum of the $n$ eigenvalues is equal to the trace of $A$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;details admonition Theorem open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Theorem: &lt;em&gt;Eigenvalues and Eigenvectors of Symmetric Matrices&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            All eigenvalues of a symmetric matrix are real and positive. Furthermore, the eigenvectors can be chosen to be pairwise orthogonal.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h2 id=&#34;principal-component-analysis&#34;&gt;Principal Component Analysis&lt;/h2&gt;
+&lt;p&gt;Principal Component Analysis is a linear transformation of a dataset, $Z$ onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data.&lt;/p&gt;
+&lt;p&gt;Shift so that the mean of each column is zero, i.e. subtract the mean of each column of $Z$ from itself, yielding a new matrix $X$.&lt;/p&gt;
+&lt;p&gt;$X\boldsymbol{w}$ is the projection of each data row on the direction $w$.&lt;/p&gt;
+&lt;p&gt;Given the mean of each column is zero, so the variance of the set of column vectors is given by
+\begin{align*}
+\newcommand{\var}{\operatorname{var}}
+\newcommand{\diag}{\operatorname{diag}}
+\var X &amp;amp; = \dfrac{1}{n-1} \left( x_1&lt;sup&gt;2 + \ldots + x_n&lt;/sup&gt;2 \right) \
+&amp;amp; = \dfrac{1}{n-1} \left( X \boldsymbol{w} \right)^T \left( X \boldsymbol{w} \right) \
+&amp;amp; = \dfrac{1}{n-1}  \boldsymbol{w}&lt;sup&gt;T X&lt;/sup&gt;T X \boldsymbol{w}.
+\end{align*}&lt;/p&gt;
+&lt;p&gt;Find the vector $\boldsymbol{w}$ so that variance is maximal.&lt;/p&gt;
+&lt;p&gt;Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}{D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus&lt;/p&gt;
+$$
+X^T X = A = Q D Q^T .
+$$&lt;p&gt;Then, the expression for the variance is given by&lt;/p&gt;
+&lt;p&gt;\begin{align*}
+\boldsymbol{w}&lt;sup&gt;T X&lt;/sup&gt;T X \boldsymbol{w} &amp;amp; = \boldsymbol{w}&lt;sup&gt;T A \boldsymbol{w} \
+&amp;amp; = \boldsymbol{w}&lt;sup&gt;T Q D Q&lt;/sup&gt;T \boldsymbol{w} \
+&amp;amp; = \left( \boldsymbol{w}&lt;sup&gt;T Q \right) D \left( Q&lt;/sup&gt;T \boldsymbol{w} \right)  \
+&amp;amp; = \left( Q&lt;/sup&gt;T \boldsymbol{w} \right)&lt;sup&gt;T D \left( Q&lt;/sup&gt;T \boldsymbol{w} \right), \quad \text{let} \quad \boldsymbol{y} = Q^T \boldsymbol{w} \
+&amp;amp; = \boldsymbol{y}^T D \boldsymbol{y}.
+\end{align*}&lt;/p&gt;
+&lt;p&gt;Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y}$ is also a unit vector. It can easily be shown that the vector ${\boldsymbol{y} = \left(1, 0 \ldots 0 \right)^T}$ maximizes the variance. Thus, the corresponding principal component $\boldsymbol{w}$ is recovered from ${\boldsymbol{y} = Q^T \boldsymbol{w}}$, i.e. ${\boldsymbol{w} =  \left( Q^T\right)^{-1} \boldsymbol{y} = Q\boldsymbol{y}}$.&lt;/p&gt;
 </description>
     </item>
     
