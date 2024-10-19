@@ -290,7 +290,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-658142739&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-758216439&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -308,7 +308,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-658142739&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-758216439&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1591,7 +1591,7 @@ This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ an
 &lt;h2 id=&#34;second-derivatives&#34;&gt;Second Derivatives&lt;/h2&gt;
 &lt;p&gt;Assuming $x_0$ is a critical point of $f(x)$ then $f^{\prime}\left( x_0 \right)=0$, so the Taylor expansion about $x_0$ is&lt;/p&gt;
 $$
-f\left(x_0 + x \right) \approx f\left(x_0\right) + \dfrac{1}{2!} f^{\pprime}\left(x_0 \right) x^2 + \ldots
+f\left(x_0 + x \right) \approx f\left(x_0\right) + \dfrac{1}{2!} f^{\prime\prime}\left(x_0 \right) x^2 + \ldots
 $$&lt;p&gt;Then&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If $f^{\prime\prime}\left(x_0 \right) &lt; 0$, then $x_0$ is a local maxima&lt;/li&gt;
