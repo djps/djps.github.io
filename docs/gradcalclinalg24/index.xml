@@ -166,7 +166,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
   Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
   Assignment 4 : milestone, m4, 11-01, 0d
   Assignment 5 : milestone, m5, 11-12, 0w
-  
+
   section  Calculus
   Single Variables                 :a2c,  11-11, 1w
   Taylor Series                    :a2d,  11-18, 1w
@@ -174,7 +174,7 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
   Assignment 6 : milestone, m6, 11-23, 0w
 
   section  Summary
-  Summary                          :a3a,  12-02, 1w
+  Summary                          :active, a3a,  12-02, 1w
 &lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
@@ -295,7 +295,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-547692138&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-364197285&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -313,7 +313,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-547692138&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-364197285&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
