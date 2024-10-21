@@ -133,12 +133,11 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 &lt;li&gt;Basis of the nullspace and the column space via Gaussian elimination. Free columns and pivot columns. Solutions of systems of linear equations&lt;/li&gt;
 &lt;li&gt;Rank of a matrix. Sum of the dimensions of the nullspace and the column space. Multiplication of matrices&lt;/li&gt;
 &lt;li&gt;Inverse of a matrix. Finding the inverse using Gaussian elimination&lt;/li&gt;
-&lt;li&gt;Orthogonality. Orthonormal bases and Gram-Schmidt&lt;/li&gt;
-&lt;li&gt;Projections&lt;/li&gt;
+&lt;li&gt;Orthogonality. Orthonormal bases, projections, and Gram-Schmidt&lt;/li&gt;
 &lt;li&gt;Determinants&lt;/li&gt;
 &lt;li&gt;Eigenvalues and eigenvectors&lt;/li&gt;
 &lt;li&gt;Diagonalization of a matrix&lt;/li&gt;
-&lt;li&gt;Symmetric matrices. Applications: Graphs and Internet search engines&lt;/li&gt;
+&lt;li&gt;Symmetric matrices.&lt;/li&gt;
 &lt;li&gt;Principal Component Analysis&lt;/li&gt;
 &lt;li&gt;Derivatives, tangent lines, higher order derivatives, curve sketching.&lt;/li&gt;
 &lt;li&gt;Taylor series&lt;/li&gt;
@@ -779,7 +778,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-923746185&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-723916584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -797,7 +796,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-923746185&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-723916584&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11061,7 +11060,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-348715692&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-852413769&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11079,7 +11078,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-348715692&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-852413769&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11090,7 +11089,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-896214573&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-836159742&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11108,7 +11107,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-896214573&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-836159742&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11121,7 +11120,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-692318745&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-312467895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11139,7 +11138,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-692318745&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-312467895&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
