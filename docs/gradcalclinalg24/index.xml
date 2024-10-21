@@ -155,23 +155,23 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
 
   section  Linear Algebra
   Vectors                          :a1a,  09-02, 2w
-  Assignment 1 : milestone, m1, 09-18, 0w
+  Assignment 1 : milestone, done, m1, 09-18, 0w
   Matrices                         :a1b,  09-16, 1w
   Linear equations                 :a1c,  09-23, 1w
-  Assignment 2 : milestone, m2, 10-02, 0w
+  Assignment 2 : milestone, done, m2, 10-02, 0w
   Vector Spaces                    :a1d,  09-30, 1w
   Break                            :crit, 10-07, 1w
   Vector Spaces                    :a1e,  10-14, 1w
   Assignment 3 : milestone, m3, 10-21, 1d
   Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
-  Assignment 4 : milestone, m4, 11-01, 0d
-  Assignment 5 : milestone, m5, 11-12, 0w
+  Assignment 4 : milestone, active, m4, 11-01, 0d
+  Assignment 5 : milestone, active, m5, 11-12, 0w
 
   section  Calculus
   Single Variables                 :a2c,  11-11, 1w
   Taylor Series                    :a2d,  11-18, 1w
   Multiple Variables               :a2e,  11-25, 1w
-  Assignment 6 : milestone, m6, 11-23, 0w
+  &lt;!-- Assignment 6 : milestone, m6, 11-23, 0w --&gt;
 
   section  Summary
   Summary                          :active, a3a,  12-02, 1w
@@ -295,7 +295,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-364197285&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-247916853&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -313,7 +313,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-364197285&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-247916853&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
