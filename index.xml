@@ -19,7 +19,7 @@
       <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
       <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
-&lt;p&gt;Lectures will take place in autumn 2024, the lectures will take place on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
+&lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
 &lt;!--
 
 
@@ -785,7 +785,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-672453198&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-825697431&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -803,7 +803,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-672453198&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-825697431&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -5897,7 +5897,6 @@ $$
 y = f\left(x_0 \right) + f^{\prime} \left(x_0 \right) \left( x - x_0 \right).
 $$&lt;p&gt;
 This is of the form  $y = mx + b$ where the gradient is $m=\left(x_0 \right)$ and the intercept is given by $b= f\left(x_0 \right) -  x_0 f^{\prime} \left(x_0 \right)$.&lt;/p&gt;
-&lt;h2 id=&#34;newton-methods&#34;&gt;Newton Methods&lt;/h2&gt;
 &lt;h2 id=&#34;second-derivatives&#34;&gt;Second Derivatives&lt;/h2&gt;
 &lt;p&gt;Assuming $x_0$ is a critical point of $f(x)$ then $f^{\prime}\left( x_0 \right)=0$, so the Taylor expansion about $x_0$ is&lt;/p&gt;
 $$
@@ -11067,7 +11066,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-716249358&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-619275843&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11085,7 +11084,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-716249358&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-619275843&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11096,7 +11095,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-298316574&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-693245817&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11114,7 +11113,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-298316574&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-693245817&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11127,7 +11126,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-237859641&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-428536917&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11145,7 +11144,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-237859641&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-428536917&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
