@@ -162,6 +162,8 @@ Course notes can be found [here](/docs/numericalmethods24/notes/). --&gt;
   Vector Spaces                    :a1e,  10-14, 1w
   Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
 
+  Assignment 3 : milestone, m1, 10-21, 0w
+
   section  Calculus
   Single Variables                 :a2c,  11-11, 1w
   Taylor Series                    :a2d,  11-18, 1w
@@ -289,7 +291,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-723916584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-891542736&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -307,7 +309,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-723916584&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-891542736&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
