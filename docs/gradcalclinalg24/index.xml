@@ -254,7 +254,7 @@ markmap:
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
 &lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on 
- and on Teams approximately one week before the due date.&lt;/p&gt;
+ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. By doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
@@ -290,7 +290,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-345629178&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-946513287&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -308,7 +308,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-345629178&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-946513287&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
