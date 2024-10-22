@@ -17,11 +17,11 @@
       <link>https://djps.github.io/docs/gradcalclinalg24/notebooks/pca/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/pca/</guid>
-      <description>&lt;a target=&#34;_blank&#34; href=&#34;https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/pca.ipynb&#34;&gt;
+      <description>&lt;!-- &lt;a target=&#34;_blank&#34; href=&#34;https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/pca.ipynb&#34;&gt;
   &lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;
-&lt;/a&gt;
+&lt;/a&gt; --&gt;
 &lt;p&gt;This notebook is based upon the data presented 
-.&lt;/p&gt;
+ which is worth reading.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scipy.linalg&lt;/span&gt;
@@ -121,9 +121,10 @@
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</guid>
       <description>&lt;h2 id=&#34;taylor-series-expansion&#34;&gt;Taylor Series Expansion&lt;/h2&gt;
-&lt;a target=&#34;_blank&#34; href=&#34;https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/taylor_series.ipynb&#34;&gt;
+&lt;!-- &lt;a target=&#34;_blank&#34; href=&#34;https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/taylor_series.ipynb&#34;&gt;
   &lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;
 &lt;/a&gt;
+--&gt;
 &lt;p&gt;This notebook presents the Taylor series expansion of the sine function, $\sin\left( x\right)$ close to zero for an increasing number of terms in the approximation.&lt;/p&gt;
 &lt;p&gt;Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
 &lt;/p&gt;
