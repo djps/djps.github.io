@@ -249,7 +249,7 @@
         content="2024-10-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-10-22T11:26:59&#43;02:00">
+    <meta property="article:modified_time" content="2024-10-22T11:36:48&#43;02:00">
   
 
   
@@ -2736,10 +2736,6 @@
 </span></span><span class="line"><span class="cl"><span class="n">n_features</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">n_features</span><span class="p">,</span> <span class="n">n_features</span><span class="p">),</span> <span class="n">rng</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_features</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
-</span></span></code></pre></div><p>plot data</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig0</span><span class="p">,</span> <span class="n">ax0</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">ax0</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">ax0</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><p>Perform PCA extracting all the components, i.e. <code>n_components = n_features</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -2750,7 +2746,28 @@
 </span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">vector</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">draw_vector</span><span class="p">(</span><span class="n">pca</span><span class="o">.</span><span class="n">mean_</span><span class="p">,</span> <span class="n">pca</span><span class="o">.</span><span class="n">mean_</span> <span class="o">+</span> <span class="n">v</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>It is possible to unpack the steps performed by scipy. First centre the data</p>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="/img/pca_scipy.png" alt="PCA by scipy" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>It is possible to unpack the steps performed by scipy. First centre the data</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">mean_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Z</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">mean_</span><span class="p">)</span>
 </span></span></code></pre></div><p>Perform the singular value decomposition</p>
@@ -2769,14 +2786,34 @@
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">length</span><span class="p">,</span> <span class="n">vector</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">explained_variance_</span><span class="p">,</span> <span class="n">components_</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">vector</span> <span class="o">*</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">draw_vector</span><span class="p">(</span><span class="n">mean_</span><span class="p">,</span> <span class="n">mean_</span> <span class="o">+</span> <span class="n">v</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">mean_</span><span class="p">,</span> <span class="n">mean_</span> <span class="o">+</span> <span class="n">v</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="/img/pca_manual.png" alt="PCA performed manually" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-22T11:26:59.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-22T11:36:48.000Z">
     <span>Last updated on</span>
     Oct 22, 2024</time>
       
