@@ -249,7 +249,7 @@
         content="2024-10-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-10-22T11:36:48&#43;02:00">
+    <meta property="article:modified_time" content="2024-10-22T11:43:21&#43;02:00">
   
 
   
@@ -2782,7 +2782,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">components:&#34;</span><span class="p">,</span> <span class="n">components_</span><span class="p">,</span> <span class="n">pca</span><span class="o">.</span><span class="n">components_</span><span class="p">)</span>
 </span></span></code></pre></div><p>plot results</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig2</span><span class="p">,</span> <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">Z</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">Z</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;tab:green&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">length</span><span class="p">,</span> <span class="n">vector</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">explained_variance_</span><span class="p">,</span> <span class="n">components_</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">v</span> <span class="o">=</span> <span class="n">vector</span> <span class="o">*</span> <span class="mf">3.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">draw_vector</span><span class="p">(</span><span class="n">mean_</span><span class="p">,</span> <span class="n">mean_</span> <span class="o">+</span> <span class="n">v</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
@@ -2813,7 +2813,7 @@
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-22T11:36:48.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-22T11:43:21.000Z">
     <span>Last updated on</span>
     Oct 22, 2024</time>
       

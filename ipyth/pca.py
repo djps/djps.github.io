@@ -58,7 +58,7 @@ print("\nvariance:", explained_variance_, pca.explained_variance_)
 print("\ncomponents:", components_, pca.components_)
 
 fig2, ax2 = plt.subplots(1, 1)
-ax2.scatter(Z[:, 0], Z[:, 1], alpha=0.2)
+ax2.scatter(Z[:, 0], Z[:, 1], alpha=0.2, c='tab:green')
 for length, vector in zip(explained_variance_, components_):
     v = vector * 3.0 * np.sqrt(length)
     draw_vector(mean_, mean_ + v, ax=ax2)
