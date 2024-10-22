@@ -296,7 +296,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-715864923&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-457639812&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -314,7 +314,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-715864923&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-457639812&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1315,7 +1315,6 @@ The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as
 
 
 
-&lt;!--
 &lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1338,7 +1337,6 @@ The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as
 
 
 
---&gt;
 </description>
     </item>
     
