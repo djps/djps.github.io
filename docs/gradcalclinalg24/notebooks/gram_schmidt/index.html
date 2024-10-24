@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: October 22, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: October 24, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2024-10-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-10-22T22:34:26&#43;02:00">
+    <meta property="article:modified_time" content="2024-10-24T10:08:04&#43;02:00">
   
 
   
@@ -1527,7 +1527,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/"
     
-  >MDE-MET-01 Calculus and Linear Algebra for Graduate Students
+  >MDE-MET-01; Calculus and Linear Algebra for Graduate Students
         <span data-hb-sidebar-toggle>
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
@@ -2224,7 +2224,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradcalclinalg24/"
     
-  >MDE-MET-01 Calculus and Linear Algebra for Graduate Students
+  >MDE-MET-01; Calculus and Linear Algebra for Graduate Students
         <span data-hb-sidebar-toggle>
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
@@ -2738,7 +2738,7 @@
         <a href="https://djps.github.io/docs/">Courses</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
-        <a href="https://djps.github.io/docs/gradcalclinalg24/">MDE-MET-01 Calculus and Linear Algebra for Graduate Students</a>
+        <a href="https://djps.github.io/docs/gradcalclinalg24/">MDE-MET-01; Calculus and Linear Algebra for Graduate Students</a>
       </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg>
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
         <a href="https://djps.github.io/docs/gradcalclinalg24/notebooks/">Notebooks</a>
@@ -2750,19 +2750,19 @@
       <div class="content text-base">
         <h1>The Gram-Schmidt Process</h1>
         <p>This notebook is based upon the data presented <a href="https://cocalc.com/github/weijie-chen/Linear-Algebra-With-Python/blob/master/notebooks/Chapter%2016%20-%20Gram-Schmidt%20Process%20and%20QR%20Decomposition.ipynb" target="_blank" rel="noopener"><code>here</code></a> which is worth reading.</p>
-<p>Import modules required</p>
+<p>Begin by importing modules required</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">scipy.linalg</span> <span class="kn">import</span> <span class="n">norm</span>
-</span></span></code></pre></div><p>set grid for visualisation</p>
+</span></span></code></pre></div><p>Setup grid for visualisation</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">S</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
-</span></span></code></pre></div><p>define vectors</p>
+</span></span></code></pre></div><p>Define vectors the vectors</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">x3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span></code></pre></div><p>reshape data for plotting</p>
+</span></span></code></pre></div><p>Reshape data for visualisation</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">x1</span> <span class="o">=</span> <span class="n">x1</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">x2</span> <span class="o">=</span> <span class="n">x2</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">x3</span> <span class="o">=</span> <span class="n">x3</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
@@ -2776,7 +2776,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">S</span> <span class="o">+</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">T</span>
 </span></span><span class="line"><span class="cl"><span class="n">Y</span> <span class="o">=</span> <span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">*</span> <span class="n">S</span> <span class="o">+</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">*</span> <span class="n">T</span>
 </span></span><span class="line"><span class="cl"><span class="n">Z</span> <span class="o">=</span> <span class="n">vec</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">*</span> <span class="n">S</span> <span class="o">+</span> <span class="n">vec</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">*</span> <span class="n">T</span>
-</span></span></code></pre></div><p>set up plotting scheme</p>
+</span></span></code></pre></div><p>Set up plotting</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">plot_wireframe</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
@@ -2793,14 +2793,15 @@
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;$z$&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>Gram-Schmidt process</p>
+</span></span></code></pre></div><p>Now perform the Gram-Schmidt process for vectors $v_1=x_1$, $v_2$ and $v_3$</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">v1</span> <span class="o">=</span> <span class="n">x1</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">v2</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">-</span> <span class="p">(</span><span class="n">x2</span><span class="nd">@x1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">x1</span><span class="nd">@x1</span><span class="p">)</span> <span class="o">*</span> <span class="n">x1</span>
+</span></span><span class="line"><span class="cl"><span class="n">proj_x2</span> <span class="o">=</span> <span class="p">(</span><span class="n">x2</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v1</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">*</span> <span class="n">v1</span>
+</span></span><span class="line"><span class="cl"><span class="n">v2</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">-</span> <span class="n">proj_x2</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">projW_x3</span> <span class="o">=</span> <span class="p">(</span><span class="n">x3</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v1</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">*</span> <span class="n">v1</span> <span class="o">+</span> <span class="p">(</span><span class="n">x3</span><span class="nd">@v2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v2</span><span class="nd">@v2</span><span class="p">)</span> <span class="o">*</span> <span class="n">v2</span>
-</span></span><span class="line"><span class="cl"><span class="n">v3</span> <span class="o">=</span> <span class="n">x3</span> <span class="o">-</span> <span class="n">projW_x3</span>
-</span></span></code></pre></div><p>reshape data for plotting</p>
+</span></span><span class="line"><span class="cl"><span class="n">proj_x3</span> <span class="o">=</span> <span class="p">(</span><span class="n">x3</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v1</span><span class="nd">@v1</span><span class="p">)</span> <span class="o">*</span> <span class="n">v1</span> <span class="o">+</span> <span class="p">(</span><span class="n">x3</span><span class="nd">@v2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">v2</span><span class="nd">@v2</span><span class="p">)</span> <span class="o">*</span> <span class="n">v2</span>
+</span></span><span class="line"><span class="cl"><span class="n">v3</span> <span class="o">=</span> <span class="n">x3</span> <span class="o">-</span> <span class="n">proj_x3</span>
+</span></span></code></pre></div><p>Reshape for plotting</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">v1</span> <span class="o">=</span> <span class="n">v1</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">v2</span> <span class="o">=</span> <span class="n">v2</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">v3</span> <span class="o">=</span> <span class="n">v3</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
@@ -2845,19 +2846,19 @@
     <div class="w-100" ><img src="/img/gram_schmidt.png" alt="gram_schmidt" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Normalize</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">u1</span> <span class="o">=</span> <span class="n">v1</span> <span class="o">/</span> <span class="n">scipy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">u2</span> <span class="o">=</span> <span class="n">v2</span> <span class="o">/</span> <span class="n">sp</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">u3</span> <span class="o">=</span> <span class="n">v3</span> <span class="o">/</span> <span class="n">sp</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v3</span><span class="p">)</span>
+<p>Normalize the orthogonal vectors</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">u1</span> <span class="o">=</span> <span class="n">v1</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">u2</span> <span class="o">=</span> <span class="n">v2</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">u3</span> <span class="o">=</span> <span class="n">v3</span> <span class="o">/</span> <span class="n">norm</span><span class="p">(</span><span class="n">v3</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">U1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 </span></span></code></pre></div>
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-22T22:34:26.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-24T10:08:04.000Z">
     <span>Last updated on</span>
-    Oct 22, 2024</time>
+    Oct 24, 2024</time>
       
       
   
