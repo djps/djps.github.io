@@ -13,6 +13,15 @@
     </image>
     
     <item>
+      <title>CA-MATH-804: Numerical Land Analysis</title>
+      <link>https://djps.github.io/docs/numericalanalysis22/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalanalysis22/</guid>
+      <description>&lt;p&gt;landing page&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>MECH1010: Modelling and Analysis in Engineering I</title>
       <link>https://djps.github.io/docs/mech1010/</link>
       <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
@@ -51,7 +60,7 @@
 
 
 
-&lt;div id=&#34;chart-348291576&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-723645981&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -69,7 +78,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-348291576&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-723645981&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -80,7 +89,7 @@
 
 
 
-&lt;div id=&#34;chart-561784329&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-794152836&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -98,7 +107,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-561784329&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-794152836&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -111,7 +120,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-145978263&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-458926317&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -129,7 +138,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-145978263&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-458926317&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
