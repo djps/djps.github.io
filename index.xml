@@ -785,7 +785,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-194537628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-593671284&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -803,7 +803,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-194537628&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-593671284&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7688,6 +7688,54 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     </item>
     
     <item>
+      <title>Assignments</title>
+      <link>https://djps.github.io/docs/numericalanalysis22/assignments/assignments/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalanalysis22/assignments/assignments/</guid>
+      <description>&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Numerical Analysis: Exam</title>
+      <link>https://djps.github.io/docs/numericalanalysis22/exam/exam/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalanalysis22/exam/exam/</guid>
+      <description>&lt;h2 id=&#34;exams&#34;&gt;Exams&lt;/h2&gt;
+&lt;p&gt;The exams can be found here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Course Notes</title>
+      <link>https://djps.github.io/docs/numericalanalysis22/notes/notes/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalanalysis22/notes/notes/</guid>
+      <description>&lt;h2 id=&#34;course-notes&#34;&gt;Course Notes&lt;/h2&gt;
+&lt;p&gt;The course notes can be found 
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>AEGEUS</title>
       <link>https://djps.github.io/project/aegeus/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
@@ -11422,7 +11470,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-928351647&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-348291576&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11440,7 +11488,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-928351647&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-348291576&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11451,7 +11499,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-568932174&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-561784329&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11469,7 +11517,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-568932174&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-561784329&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11482,7 +11530,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-927831564&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-145978263&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11500,7 +11548,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-927831564&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-145978263&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
