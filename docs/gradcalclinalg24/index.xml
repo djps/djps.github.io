@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Course Details: Calculus and Linear Algebra for Graduate Students MDE-MET-01</title>
+      <title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title>
       <link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
@@ -296,7 +296,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-782516439&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-874621359&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -314,7 +314,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-782516439&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-874621359&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
