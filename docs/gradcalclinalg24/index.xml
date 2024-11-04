@@ -17,7 +17,7 @@
       <link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link>
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of course information.&lt;/p&gt;
+      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
 &lt;!--
@@ -285,7 +285,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-546983217&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-463817529&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -303,7 +303,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-546983217&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-463817529&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
