@@ -235,23 +235,12 @@ markmap:
 &lt;/table&gt;
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See 
  for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
-&lt;!--
-
-
-
-
-
-  
-    
-  
-
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Thursday 23 May between 12:30 and 14:30 in SCC - Hall 1-2 and 3-4&lt;/strong&gt;.&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Wednesday 11 December between 12:30 and 14:30. The location will be announced shortly.&lt;/strong&gt;&lt;/span&gt;
 &lt;/div&gt;
---&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;Sample questions and solutions will be uploaded on this site.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
@@ -296,7 +285,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-874621359&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-476891532&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -314,7 +303,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-874621359&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-476891532&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
