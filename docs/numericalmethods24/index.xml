@@ -20,8 +20,7 @@
       <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
-&lt;p&gt;Course notes can be found 
-.&lt;/p&gt;
+&lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
 &lt;p&gt;By the end of the module, students will be able to:&lt;/p&gt;
 &lt;ul&gt;
@@ -50,8 +49,7 @@
 &lt;p&gt;Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Some examples will be presented as 
-, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
+&lt;p&gt;Some examples will be presented as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/&#34;&gt;python notebooks&lt;/a&gt;, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
@@ -221,24 +219,20 @@ markmap:
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See 
- for more details.) The exams in this course are offered twice per year: in May and a resit in August.&lt;/p&gt;
+&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in May and a resit in August.&lt;/p&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;p&gt;Previous exams, as well as sample questions and solutions can be found 
-.&lt;/p&gt;
+&lt;p&gt;Previous exams, as well as sample questions and solutions can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
-&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on 
- and on Teams approximately ten days before the due date.&lt;/p&gt;
+&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
-&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the 
-. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
+&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
 &lt;h2 id=&#34;artifical-intelligence-ai-use-policy&#34;&gt;Artifical Intelligence (AI) Use Policy&lt;/h2&gt;
 &lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
 &lt;ol&gt;
@@ -2290,8 +2284,7 @@ i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$&lt;p&gt;
-with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using 
- for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
+with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
 &lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
 
@@ -2999,15 +2992,11 @@ $$
 &lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
 &lt;p&gt;Heun&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
-&lt;p&gt;Alternatively, the solution to the differential equation can be written as 
-:
+&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
 &lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
-$$&lt;p&gt;Thus, the Forward Euler method is the 
-, Backward Euler is the 
- and the Crank-Nicolson is the 
-.&lt;/p&gt;
+$$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;analysis-of-one-step-methods&#34;&gt;Analysis of One-Step Methods&lt;/h2&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
@@ -3193,8 +3182,7 @@ $$
 &lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the method is 
-, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
+&lt;p&gt;the method is &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;consistent&lt;/a&gt;, i.e. $\lim\limits_{h \rightarrow 0} \tau \left(h \right) = 0$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;and&lt;/p&gt;
@@ -3279,8 +3267,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the 
- for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.
+            The Lax Equivalence theorem or Lax–Richtmyer theorem is the equivalent form of the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#fundamental-theorem-of-numerical-analysis&#34;&gt;fundamental theorem of numerical analysis&lt;/a&gt; for differential equations, which states that a &lt;em&gt;consistent&lt;/em&gt; finite difference method for a well-posed linear initial value problem, the method is &lt;em&gt;convergent&lt;/em&gt; if and only if it is &lt;em&gt;stable&lt;/em&gt;.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3387,8 +3374,7 @@ $$&lt;div class=&#34;details admonition Example open&#34;&gt;
 $$
 a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
 $$&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
-&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by 
-.&lt;/p&gt;
+&lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part-2/integration/#numerical-differentiation&#34;&gt;discretized differential operators&lt;/a&gt;.&lt;/p&gt;
 &lt;!--
 CFL.
 

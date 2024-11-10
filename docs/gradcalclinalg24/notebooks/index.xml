@@ -17,8 +17,7 @@
       <link>https://djps.github.io/docs/gradcalclinalg24/notebooks/gram_schmidt/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/gram_schmidt/</guid>
-      <description>&lt;p&gt;This notebook is based upon the data presented 
- which is worth reading.&lt;/p&gt;
+      <description>&lt;p&gt;This notebook is based upon the data presented &lt;a href=&#34;https://cocalc.com/github/weijie-chen/Linear-Algebra-With-Python/blob/master/notebooks/Chapter%2016%20-%20Gram-Schmidt%20Process%20and%20QR%20Decomposition.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;here&lt;/code&gt;&lt;/a&gt; which is worth reading.&lt;/p&gt;
 &lt;p&gt;Begin by importing modules required&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
@@ -132,8 +131,7 @@
       <description>&lt;!-- &lt;a target=&#34;_blank&#34; href=&#34;https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/pca.ipynb&#34;&gt;
   &lt;img src=&#34;https://colab.research.google.com/assets/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;/&gt;
 &lt;/a&gt; --&gt;
-&lt;p&gt;This notebook is based upon the data presented 
- which is worth reading.&lt;/p&gt;
+&lt;p&gt;This notebook is based upon the data presented &lt;a href=&#34;https://jakevdp.github.io/PythonDataScienceHandbook/05.09-principal-component-analysis.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;here&lt;/code&gt;&lt;/a&gt; which is worth reading.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scipy.linalg&lt;/span&gt;

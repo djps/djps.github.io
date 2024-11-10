@@ -31,8 +31,7 @@
 &lt;/ul&gt;
 &lt;p&gt;The following are also useful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;An Introduction to the Conjugate Gradient Method Without the Agonizing Pain&lt;/em&gt;&amp;rdquo; - Shewchuk (1994). Also see 
-&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;An Introduction to the Conjugate Gradient Method Without the Agonizing Pain&lt;/em&gt;&amp;rdquo; - Shewchuk (1994). Also see &lt;a href=&#34;https://github.com/vschaik/Conjugate-Gradient&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;&lt;em&gt;An Introduction to Computational Stochastic PDEs&lt;/em&gt;&amp;rdquo; - Lord, Powell and Shardlow (2014). [Chapters 1 &amp;amp; 2]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
@@ -653,13 +652,10 @@ $$&lt;div class=&#34;details admonition Theorem open&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| &gt; \sum_{j \ne i} |a_{ij}|$, the 
- and 
- methods are convergent.&lt;/p&gt;
+&lt;p&gt;If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| &gt; \sum_{j \ne i} |a_{ij}|$, the &lt;a href=&#34;#jacobi-method&#34;&gt;Jacobi&lt;/a&gt; and &lt;a href=&#34;#gauss-seidel&#34;&gt;Gauss-Seidel&lt;/a&gt; methods are convergent.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If $A$ and $2D-A$ are symmetric and positive definite, then the 
- is convergent and the spectral radius of the iteration matrix $B$ is equal to
+&lt;p&gt;If $A$ and $2D-A$ are symmetric and positive definite, then the &lt;a href=&#34;#jacobi-method&#34;&gt;Jacobi method&lt;/a&gt; is convergent and the spectral radius of the iteration matrix $B$ is equal to
 &lt;/p&gt;
 $$
 \begin{equation}
@@ -669,8 +665,7 @@ $$&lt;p&gt;
 where $\left\Vert \cdot \right\Vert_{A}$ is an &lt;em&gt;energy norm&lt;/em&gt; which is induced by the vector norm $\left| x \right|_{A}~=~\sqrt{ x \cdot A x}$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
- is convergent if
+&lt;p&gt;If and only if $A$ is symmetric and positive definite, the &lt;a href=&#34;#over-relaxation-of-jacobi-method&#34;&gt;Jacobi over-relaxation method&lt;/a&gt; is convergent if
 &lt;/p&gt;
 $$
 \begin{equation}
@@ -678,8 +673,7 @@ $$
 \end{equation}
 $$&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If and only if $A$ is symmetric and positive definite, the 
- method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/p&gt;
+&lt;p&gt;If and only if $A$ is symmetric and positive definite, the &lt;a href=&#34;#gauss-seidel&#34;&gt;Gauss-Seidel&lt;/a&gt; method is monotonically convergent with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -702,8 +696,7 @@ $$&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, 
- does not converge if either $\omega \le 0$ or $\omega \ge 2$.
+            For any $\omega \in \mathbb{R}$ we have $\rho \left( B \left( \omega \right) \right) \ge |\omega - 1|$. Thus, &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; does not converge if either $\omega \le 0$ or $\omega \ge 2$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -723,8 +716,7 @@ $$&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            If $A$ is symmetric and positive definite, then the 
- method is convergent if and only if  $0 &lt; \omega &lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.
+            If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#successive-over-relaxation&#34;&gt;SOR&lt;/a&gt; method is convergent if and only if  $0 &lt; \omega &lt; 2$. Furthermore, the convergence is monotonic with respect to the energy norm $\left\Vert \cdot \right\Vert_{A}$.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -786,8 +778,7 @@ $$&lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If $A$ is symmetric and positive definite, then the 
- method is convergent for any $x^{(0)}$ and&lt;/p&gt;
+            &lt;p&gt;If $A$ is symmetric and positive definite, then the &lt;a href=&#34;#gradient-descent&#34;&gt;gradient method&lt;/a&gt; method is convergent for any $x^{(0)}$ and&lt;/p&gt;
 $$
 \begin{equation}
 \left\Vert e^{(k+1)} \right\Vert_A \le \dfrac{K(A)-1}{K(A)+1} \left\Vert e^{(k)} \right\Vert_A.\nonumber
@@ -909,8 +900,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the 
- yields the exact solution of $Ax=b$ after $n$ steps.
+            If $A \in \mathbb{R}^{n \times n}$ is a symmetric and positive definite matrix, and $b \in \mathbb{R}^{n}$, then the &lt;a href=&#34;#conjugate-gradient&#34;&gt;conjugate gradient method&lt;/a&gt; yields the exact solution of $Ax=b$ after $n$ steps.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1024,9 +1014,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook illustrating the Lagrange polynomials can be accessed 
-. It can be downloaded from 
-.&lt;/p&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook illustrating the Lagrange polynomials can be accessed &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/&#34;&gt;here&lt;/a&gt;. It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/characteristicPolynomial.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook illustrating Runge phenomenon can be accessed &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/notebooks/lagrangeinterpolation/&#34;&gt;[here]&lt;/a&gt;. It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/LagrangeInterpolation.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -1193,16 +1181,14 @@ $$&lt;p&gt;
 Therefore, if for some $n$,  $\left\| f - f_{n}\right\|_{\infty} &lt; \varepsilon$ 
 , then $\left|E_{n}(f)\right| \leq \varepsilon(b-a)$.&lt;/p&gt;
 &lt;p&gt;The approximation of the function $f_{n}$ must be easily integrable, which is the case if, for example, $f_{n} \in \mathbb{P}_{n}$.&lt;/p&gt;
-&lt;p&gt;In this respect, a natural approach consists of using $f_{n}=\Pi_{n} f$, the interpolating 
- of $f$ over a set of $n+1$ distinct nodes $\lbrace x_{i} \rbrace$, with $i=0, \ldots, n$. It follows that the approximation to the integral is
+&lt;p&gt;In this respect, a natural approach consists of using $f_{n}=\Pi_{n} f$, the interpolating &lt;a href=&#34;https://djps.github.io/doc/numericalanalysis22/part2/interpolation/#lagrange-interpolation&#34;&gt;Lagrange polynomial&lt;/a&gt; of $f$ over a set of $n+1$ distinct nodes $\lbrace x_{i} \rbrace$, with $i=0, \ldots, n$. It follows that the approximation to the integral is
 &lt;/p&gt;
 $$
 \begin{equation*}
 I_{n}(f) = \sum_{i=0}^{n} f \left( x_{i} \right) \int_{a}^{b} l_{i}(x) \,  \mathrm{d} x
 \end{equation*}
 $$&lt;p&gt;
-where $l_{i}$ is the characteristic 
- of degree $n$ associated with node $x_{i}$. It is called the &lt;strong&gt;Lagrange quadrature formula&lt;/strong&gt;, and is a special instance of the following, generalised, quadrature formula
+where $l_{i}$ is the characteristic &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/part2/interpolation/#lagrange-interpolation&#34;&gt;Lagrange polynomial&lt;/a&gt; of degree $n$ associated with node $x_{i}$. It is called the &lt;strong&gt;Lagrange quadrature formula&lt;/strong&gt;, and is a special instance of the following, generalised, quadrature formula
 &lt;/p&gt;
 $$
 \begin{equation*}
@@ -1261,13 +1247,7 @@ $$&lt;div class=&#34;details admonition Example open&#34;&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook, detailing examples of the 
-, 
-, 
- can be accessed online 
-.  It can be downloaded from 
- as a python file or downloaded as a notebook from 
-.
+            An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook, detailing examples of the &lt;a href=&#34;#midpoint-rule&#34;&gt;Midpoint rule&lt;/a&gt;, &lt;a href=&#34;#trapezoidal-rule&#34;&gt;Trapezoidal rule&lt;/a&gt;, &lt;a href=&#34;#simpsons-rule&#34;&gt;Simpson&amp;rsquo;s rule&lt;/a&gt; can be accessed online &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/&#34;&gt;here&lt;/a&gt;.  It can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.py&#34;&gt;here&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/integrals.ipynb&#34;&gt;here&lt;/a&gt;.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1506,8 +1486,7 @@ $$&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;This is just the 
-, so that the discrete inner product is the discrete analogue to
+&lt;p&gt;This is just the &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/part2/integration/#trapezoidal-rule&#34;&gt;composite trapezium rule&lt;/a&gt;, so that the discrete inner product is the discrete analogue to
 &lt;/p&gt;
 $$\begin{equation*}
     \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
@@ -2126,12 +2105,8 @@ $$&lt;p&gt;The error estimate shows that the Galerkin method is convergent, that
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook, with an example of the finite element method in one-dimension can be viewed 
-, or can be downloaded from 
-.&lt;/p&gt;
-&lt;p&gt;An example of the finite element method in two-dimensions can be viewed 
-, or can be downloaded from 
-.&lt;/p&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook, with an example of the finite element method in one-dimension can be viewed &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/notebooks/1dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/1dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An example of the finite element method in two-dimensions can be viewed &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/notebooks/2dfem/&#34;&gt;here&lt;/a&gt;, or can be downloaded from &lt;a href=&#34;https://djps.github.io/ipyth/2dfem.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -2210,18 +2185,12 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <guid>https://djps.github.io/docs/numericalanalysis22/assignments/assignments/</guid>
       <description>&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/1/assignment1.pdf&#34;&gt;Assignment 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/2/assignment2.pdf&#34;&gt;Assignment 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/3/assignment3.pdf&#34;&gt;Assignment 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/4/assignment4.pdf&#34;&gt;Assignment 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/5/assignment5.pdf&#34;&gt;Assignment 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/6/assignment6.pdf&#34;&gt;Assignment 6&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -2234,8 +2203,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <description>&lt;h2 id=&#34;exams&#34;&gt;Exams&lt;/h2&gt;
 &lt;p&gt;The exams can be found here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/exam/final2022.pdf&#34;&gt;May 2022&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -2246,8 +2214,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalanalysis22/notes/notes/</guid>
       <description>&lt;h2 id=&#34;course-notes&#34;&gt;Course Notes&lt;/h2&gt;
-&lt;p&gt;The course notes can be found 
-.&lt;/p&gt;
+&lt;p&gt;The course notes can be found &lt;a href=&#34;https://djps.github.io/teaching/numerical_analysis_2022.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
