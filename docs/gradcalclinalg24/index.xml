@@ -283,7 +283,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-639715482&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-183745926&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -301,7 +301,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-639715482&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-183745926&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -468,7 +468,7 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
       <guid>https://djps.github.io/docs/gradcalclinalg24/part1/matrices/</guid>
       <description>&lt;p&gt;A matrix is a rectangular array of numbers.&lt;/p&gt;
 &lt;p&gt;Matrices are usually denoted by uppercase letters.&lt;/p&gt;
-&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns, is refered to as an ${m\times n}$ matrix.&lt;/p&gt;
+&lt;p&gt;A matrix, $A$, with $m$ rows and ${n}$ columns, is referred to as an ${m\times n}$ matrix.&lt;/p&gt;
 &lt;p&gt;If all the entries are real numbers, the matrix is a member of the set of all real matrices with  $m$ rows and ${n}$ columns, i.e. $A \in\mathbb{R}^{m \times n}$.&lt;/p&gt;
 &lt;p&gt;The entry in the $i$&lt;sup&gt;th&lt;/sup&gt; row and $j$&lt;sup&gt;th&lt;/sup&gt; column of the matrix $A \in \mathrm{R}^{m \times n}$ is denoted by $a_{ij}$ or $a_{i,j}$. Hence, the matrix is written as&lt;/p&gt;
 $$
@@ -679,6 +679,29 @@ $$
 
 
 &lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;Markov&lt;/strong&gt; matrix has positive entries and every column sums to one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;details admonition Proposition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Proposition: &lt;em&gt;&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            The largest &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/part1/eigen/#eigenvalues--eigenvectors)&#34;&gt;eigenvalue&lt;/a&gt; of a Markov matrix is one.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;A &lt;strong&gt;permutation matrix&lt;/strong&gt; is a square matrix that has exactly one entry of $1$ in each row and each column and all other entries $0$.&lt;/p&gt;
 &lt;/li&gt;
@@ -696,7 +719,7 @@ $$
 &lt;p&gt;For a 2$\times$2 matrix &lt;/p&gt;
 $$A= \left( \begin{array}{cc} a &amp; b \\ c &amp; d \end{array} \right)$$&lt;p&gt;, the determinant, denoted by $\left| A \right|$ or det$A$ is given by ${ad-bc}$.&lt;/p&gt;
 &lt;p&gt;There are many methods to compute the determinant. the&lt;/p&gt;
-&lt;p&gt;Liebniz Method: Consider all possible choices of $n$ elements from a matrix such that there is precisely one element chosen from each row and column. Let such a choice be denoted by $\sigma$ and let sgn$\sigma$ be $-1$ to the power of the number of row swaps required to turn the choice $\sigma$ into the diagonal. Then det$\sigma$ is the sum of the products of each $\sigma$ multiplied by its sign.&lt;/p&gt;
+&lt;p&gt;Leibniz Method: Consider all possible choices of $n$ elements from a matrix such that there is precisely one element chosen from each row and column. Let such a choice be denoted by $\sigma$ and let sgn$\sigma$ be $-1$ to the power of the number of row swaps required to turn the choice $\sigma$ into the diagonal. Then det$\sigma$ is the sum of the products of each $\sigma$ multiplied by its sign.&lt;/p&gt;
 &lt;p&gt;Laplace expansion: delete the $i$&lt;sup&gt;th&lt;/sup&gt; row and the $j$&lt;sup&gt;th&lt;/sup&gt; column from a matrix to yield a $(n-1)\times(n-1)$ matrix, called a minor, denoted by $M_{ij}$, then the cofactor is
 &lt;/p&gt;
 $$
