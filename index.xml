@@ -773,7 +773,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-149236875&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-819735246&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -791,7 +791,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-149236875&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-819735246&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7727,7 +7727,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
 &lt;/ul&gt;
 &lt;p&gt;Conference proceeding can be found here:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2011bmc/&#34;&gt;The Buckling of Magneto-Strictive Cosserat Rods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/sinden2011bmc/&#34;&gt;The buckling of magneto-strictive Ccsserat rods&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/publication/vanderheijden2011ltc/&#34;&gt;Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A presentation can be found here:&lt;/p&gt;
@@ -11128,7 +11128,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-634798215&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-863791452&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11146,7 +11146,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-634798215&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-863791452&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11157,7 +11157,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-149527368&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-561872394&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11175,7 +11175,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-149527368&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-561872394&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11188,7 +11188,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-613798524&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-815934267&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11206,7 +11206,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-613798524&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-815934267&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

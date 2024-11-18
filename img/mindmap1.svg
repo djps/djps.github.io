@@ -7,6 +7,7 @@
    width="598.98535"
    height="531.56403"
    viewBox="0 0 598.98535 531.56403"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    sodipodi:docname="mindmap (1).pdf"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -615,7 +616,9 @@
        d="m 150.80788,-134.79836 c 0,13.69875 -11.10471,24.80347 -24.80345,24.80347 -13.69875,0 -24.80347,-11.10472 -24.80347,-24.80347 0,-13.69874 11.10472,-24.80344 24.80347,-24.80344 13.69874,0 24.80345,11.1047 24.80345,24.80344 z"
        style="fill:#10b981;fill-opacity:1;fill-rule:nonzero;stroke:#10b981;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
-    <text
+    
+	<a xlink:href="https://djps.github.io/tags/ultrasound/" target="_blank"> 
+	<text
        id="text9"
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,470.54267,406.6)"><tspan
@@ -623,7 +626,7 @@
          x="0 5.9775825 8.1454525 10.815439 13.557158 17.900867 21.78231 26.524527 31.258772 35.905346"
          y="0"
          sodipodi:role="line"
-         id="tspan9">Ultrasound</tspan></text>
+         id="tspan9">Ultrasound</tspan></text> </a>
     <path
        id="path10"
        d="M 0.99628,31.89432 H -31.89015 V -31.89432 H 0.99628 Z"
@@ -1045,7 +1048,9 @@
        d="m 126.72847,105.32736 c 0,17.61267 -14.27748,31.89015 -31.89017,31.89015 -17.61267,0 -31.89015,-14.27748 -31.89015,-31.89015 0,-17.61268 14.27748,-31.89016 31.89015,-31.89016 17.61269,0 31.89017,14.27748 31.89017,31.89016 z"
        style="fill:#ecc94b;fill-opacity:1;fill-rule:nonzero;stroke:#ecc94b;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
-    <text
+    
+	<a xlink:href="https://djps.github.io/project/cosserat/" target="_blank">
+	<text
        id="text87"
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,431.94933,86.818667)"><tspan
@@ -1053,7 +1058,7 @@
          x="0 6.1509366 11.485932 15.85256 20.219187 25.482452 28.566887 33.417698"
          y="0"
          sodipodi:role="line"
-         id="tspan87">Cosserat</tspan></text>
+         id="tspan87">Cosserat</tspan></text> </a>
     <path
        id="path88"
        d="M -41.46877,38.6795 -80.06984,-4.19089 4.20094,-80.06923 42.80202,-37.1988 Z"
