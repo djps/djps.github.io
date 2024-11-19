@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2875,9 +2875,7 @@ The forward and backwards difference schemes are first order approximations to t
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
-</p>
-$$
+            $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$
         </div>
@@ -2940,14 +2938,9 @@ $$
 L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
-$$<p>
-so that
-</p>
-$$
+$$$$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$<p>Additionally, the <a id="left" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);"><strong>left</strong></a> and <a id="right" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);"><strong>right Riemann sums</strong></a> are given, respectively, by
-</p>
-$$
+$$$$
 \begin{align*}
 & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
@@ -2972,14 +2965,9 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p><a id="trap" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a>
-</p>
-$$
+            $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$<p>
-If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
-</p>
-$$
+$$$$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
         </div>
@@ -3002,8 +2990,6 @@ $$
     <div class="details-content">
         <div class="admonition-content">
             <p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
-<p>The error can be shown to have the form:
-</p>
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$<p>that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as</p>
@@ -3030,15 +3016,11 @@ $$<p>for some ${\xi \in \left(a, b\right)}$.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The integral is approximated as
-</p>
-$$
+            $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
 $$<p>
 Simpson&rsquo;s rule uses interpolation with <a href="/docs/numericalmethods24/part2/interpolation/#polyinterp">quadratic polynomials</a>.</p>
 <p>It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.</p>
-<p>Let ${h=\dfrac{b-a}{2}}$, then Simpson&rsquo;s Rule is written as
-</p>
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
 $$<p>
@@ -3083,14 +3065,9 @@ $$
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
-$$<p>Note that there no odd terms in the error. Then, define the next approximation as
-</p>
-$$
+$$$$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$<p>
-which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&rsquo;s rule. The recurrence formula can be derived
-</p>
-$$
+$$$$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
         </div>
@@ -3123,8 +3100,6 @@ $$
 
 
 <h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
-<p>Generalise the quadrature formula so that an integral is approximated as
-</p>
 $$
 \begin{equation*}
 I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
@@ -3180,8 +3155,6 @@ $$
   $$
 i.e. $q(x)$ is orthogonal to $x^k$.</li>
 </ol>
-<p>Then, denote the integral as
-</p>
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$<p>
@@ -3208,25 +3181,15 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The Legendre polynomials are a set of orthogonal polynomials where
-</p>
-$$
+            $$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$<p>
-and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
-</p>
-$$
+$$$$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
 $$<p>
 Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$</p>
-<p>The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
-</p>
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$<p>
-so that
-</p>
-$$
+$$$$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
         </div>

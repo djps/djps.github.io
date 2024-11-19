@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2834,34 +2834,23 @@
 
     </div>
 <h2 id="distributions">Distributions</h2>
-<p>Denote by $\mathrm{H}^s(a, b)$, for $s \geq 1$, the space of the functions $f \in C^{s-1}(a, b)$ such that $f^{(s-1)}$ is continuous and piecewise differentiable, so that $f^{(s)}$ exists unless for a finite number of points and belongs to $\mathrm{L}^2(a, b)$. The space $\mathrm{H}^s(a, b)$ is known as the Sobolev function space of order $s$ and is endowed with the norm $\left\Vert \cdot \right\Vert_{H^s(a,b)}$ defined as
-</p>
 $$
 \begin{equation*}
 \left\Vert f \right\Vert_s = \left( \sum_{k=0}^s \left\Vert f^{\left(k\right)} \right\Vert_{\mathrm{L}^2\left(a,b\right)}^2 \right)^{1/2}.
 \end{equation*}
-$$<p>Let
-</p>
-$$
+$$$$
 \begin{align*}
 C_0^\infty & = \lbrace \varphi \in C^\infty \, | \, \exists \, a, b \in (0,1) \quad \text{such that} \quad \varphi(x)=0 \quad \text{for} \quad 0 \leq x < a \quad \text{or} \quad b < x \leq 1 \rbrace .
 \end{align*}
-$$<p>
-Then for a function $v \in \mathrm{L}^2(0,1)$ we say $v^\prime$ is the <strong>weak derivative</strong> (or <strong>distributional derivative</strong>) if
-</p>
-$$
+$$$$
 \begin{equation*}
 \int \limits_0^1 v^\prime \varphi \, \mathrm{d}x = - \int \limits_0^1 v \varphi^\prime \, \mathrm{d}x \quad \forall \, \varphi \in C^\infty_0 \left(0,1\right).
 \end{equation*}
-$$<p>Of interest is
-</p>
-$$
+$$$$
 \begin{equation*}
 H^1 (0, 1) = \lbrace v \in \mathrm{L}^2(0, 1) \, : \, v^\prime \in \mathrm{L}^2(0, 1) \rbrace
 \end{equation*}
-$$<p>where $v^\prime$ is the distributional derivative of $v$, and
-</p>
-$$
+$$$$
 \begin{equation*}
 H^1_0 (0, 1) = \lbrace v \in \mathrm{L}^2(0, 1) \, : \, v^\prime \in \mathrm{L}^2(0, 1), \, v(0) = v(1) = 0 \rbrace
 \end{equation*}
@@ -2876,21 +2865,15 @@ $$
  -\left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \text{on} \quad (0,1) \quad \text{with} \quad u(0) = u(1) = 0
 \end{equation*}
 $$<p>where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 >0$ for all $x \in  \left[ 0, 1 \right]$.</p>
-<p>Next, on $\mathrm{L}^2(0,1)$, define the <strong>scalar product</strong>
-</p>
 $$
 \begin{equation*}
 \left( f, v \right) = \int \limits_0^1 f v \, \mathrm{d}x
 \end{equation*}
-$$<p>and a <strong>bilinear form</strong> $a : \left( \cdot, \cdot \right)$ which maps $H_0^1 \times H^1_0 \rightarrow \mathbb{R}$
-</p>
-$$
+$$$$
 \begin{equation*}
 a\left( u, v \right) = \int_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime v + \gamma u v \right) \, \mathrm{d}x
 \end{equation*}
-$$<p>and consider the <strong>weak form</strong>
-</p>
-$$
+$$$$
 \begin{equation*}
 \text{Find} \quad u \in H^1_0 \quad \text{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0\left(0,1\right).
 \end{equation*}
@@ -2930,14 +2913,11 @@ $$<div class="details admonition Theorem open">
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Suppose that $f$ is integrable on $(0,1)$ and
-</p>
-$$
+            $$
 \begin{equation*}
 \int_0^1 \phi f \, \mathrm{d}x = 0 \quad \forall \, \phi \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation*}
 $$<p>then $f=0$.</p>
-
         </div>
     </div>
 </div>
@@ -2945,21 +2925,15 @@ $$<p>then $f=0$.</p>
 
 
 
-<p>Approximate $H_0^1$ by $V_h$. The <strong>discrete weak problem</strong> is then:
-</p>
 $$
 \begin{equation*}
 \text{Find a} \quad u_h \in V_h \quad \text{such that} \quad a\left(u_h, v_h\right) = \left(f, v_h \right) \quad \forall \, v_h \in V_h
 \end{equation*}
-$$<p>Let $\lbrace \varphi_1, \varphi_2, \ldots, \varphi_N \rbrace$ be a basis of $V_h$, then, with $N=\text{dim}V_h$, so that
-</p>
-$$
+$$$$
 \begin{equation*}
 u_h \left(x \right) = \sum\limits_{j=1}^N u_j \varphi_j\left(x\right).
 \end{equation*}
-$$<p>So the problem can be written as: Find ${\left(u_1, \ldots u_N \right) \in \mathbb{R}^N}$ such that
-</p>
-$$
+$$$$
 \begin{equation*}
 \sum\limits_{j=1}^N u_j a\left( \varphi_j, \varphi_i \right) = \left( f, \varphi_i \right) \quad i=1, \ldots, N.
 \end{equation*}
@@ -2976,15 +2950,11 @@ $$<p>Denote ${a_{ij}=a\left( \varphi_j, \varphi_i \right)}$ as the elements of t
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
-</p>
-$$
+            $$
 \begin{equation*}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation*}
-$$<p>For functions which are zero on the boundary a simplified form is
-</p>
-$$
+$$$$
 \begin{equation*}
 \int_{a}^b \left| v(x) \right|^2 \, \mathrm{d}x \leq C_p \int_a^b \bigl\| v^\prime \left(x\right) \bigr\|^2 \mathrm{d}x \quad \forall \, v \in V_0
 \end{equation*}
@@ -3008,9 +2978,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let
-</p>
-$$
+            $$
 \begin{align*}
 C & = \dfrac{1}{\alpha_0} \Bigl( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \bigl\Vert \gamma \bigr\Vert_\infty \Bigr)
 \end{align*}
@@ -3038,15 +3006,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>A bilinear form $a\left(\cdot,\cdot\right)$ on $V$, with a norm $\bigl\Vert \cdot \bigr\Vert_V$, then a bilinear form is <strong>coercive</strong> if there exists an ${\alpha_0 > 0}$ such that
-</p>
-$$
+            $$
 \begin{equation*}
 a(v, v) \geq \alpha_0	\bigl\Vert v \bigr\Vert^2 \quad \forall \, v \in V.
 \end{equation*}
-$$<p>A bilinear form is said to be <strong>continuous</strong> if there exists an ${M > 0}$ such that
-</p>
-$$
+$$$$
 \begin{equation*}
 \left| a\left(u, v\right) \right| \leq M \bigl\Vert u \bigr\Vert_V  \bigl\Vert u \bigr\Vert_V \quad  \forall \, u, v \in V.
 \end{equation*}
@@ -3070,15 +3034,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>If coercive and continuous, and the right hand side $(f, v)$ satisfies the following inequality
-</p>
-$$
+            $$
 \begin{equation*}
 \left| \left( f, v \right) \right| \leq K \bigl\Vert v\bigr\Vert_V \quad \forall \, v \in V.
 \end{equation*}
-$$<p>Then the weak and discrete weak form problems admit unique solutions which satisfy
-</p>
-$$
+$$$$
 \begin{equation*}
 \bigl\Vert u \bigr\Vert_V  \leq \dfrac{K}{\alpha_0} \quad \text{and} \quad  \bigl\Vert u_h \bigr\Vert_V \leq \dfrac{K}{\alpha_0}.
 \end{equation*}
@@ -3103,9 +3063,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>It can be shown that
-</p>
-$$
+            $$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_V \le \dfrac{M}{\alpha_0} \min_{\substack{w_h \in V_h}} \left\Vert u - w_h \right\Vert_V . \tag{3}
 \end{equation*}
@@ -3126,8 +3084,6 @@ of $[0,1]$ into $n$ subintervals $I_j = [x_j, x_{j+1}]$, $n \geq 2$, of width ${
  .</p>
 <p>Since functions in  $\mathrm{H}_{0}^{1}(0,1)$ 
  are continuous it makes sense to consider for ${k \geq 1}$ the family of piecewise polynomials $X_{h}^{k}$ introduced in <a href="/docs/numericalanalysis22/part2/interpolation/#piecewise-lagrange-interpolation">$(2)$</a>, but where now $[a, b]$ must be replaced by $[0,1]$. Any function $v_{h} \in X_{h}^{k}$ is a continuous piecewise polynomial over $[0,1]$ and its restriction over each interval $I_{j} \in \mathcal{T}_{h}$ is a polynomial of degree less than or equal to $k$.</p>
-<p>Considering the cases $k=1$ and $k=2$, set
-</p>
 $$
 \begin{equation*}
 V_{h} = X_{h}^{k, 0}=\lbrace v_{h} \in X_{h}^{k} \, : \, v_{h}(0) = v_{h}(1) = 0 \rbrace .
@@ -3172,9 +3128,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let $u \in H_0^1\left( 0,1 \right)$ be the exact solution of
-</p>
-$$
+            $$
 \begin{equation*}
 a\left( u, v \right) = f\left(v\right) \quad \forall \, v \in H_0^1\left(0\right)
 \end{equation*}

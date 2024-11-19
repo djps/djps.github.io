@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2855,17 +2855,12 @@ $$
 \begin{equation}
 \lim_{n\rightarrow \infty} x^{(n)} = x. \nonumber
 \end{equation}
-$$<p>
-So that $x = A^{-1} b$. Split the matrix $A=P-N$ and solve
-</p>
-$$
+$$$$
 \begin{equation}
 P x^{(n+1)} = B x^{(n)} + f, \nonumber
 \end{equation}
 $$<p>
 where $P$ is called a <em>preconditioner</em> and $B=P^{-1}N$ is the <em>iteration matrix</em>.</p>
-<p>An equivalent way is to write
-</p>
 $$
 \begin{equation}
 x^{(k+1)} = x^{(k)} + P^{-1}r^{(k)} \nonumber
@@ -2889,9 +2884,7 @@ $$<p>is the <em>residual</em>.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>An iterative method is <strong>consistent</strong> if $x=Bx +f$, or equivalently,
-</p>
-$$
+            $$
 \begin{equation}
 f = (I-B) A^{-1} b. \nonumber
 \end{equation}
@@ -2935,15 +2928,12 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The formulation can be written as
-</p>
-$$
+            $$
 \begin{equation}
 x^{(0)} =  F^{(0)} \left( A, b \right) \quad \textsf{and} \quad x^{(k+1)} = F^{(k+1)} \left( x^{(k)}, x^{(k-1)}, \ldots, x^{(0)}, A, b \right) . \nonumber
 \end{equation}
 $$<p>
 If the functions $F^{(k)}$ are independent of the number of iterations, then it is said to be <strong>stationary</strong>.</p>
-
         </div>
     </div>
 </div>
@@ -2952,45 +2942,31 @@ If the functions $F^{(k)}$ are independent of the number of iterations, then it 
 
 
 <h2 id="jacobi-method">Jacobi Method</h2>
-<p>The Jacobi method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
-</p>
 $$
 \begin{equation}
 D x^{(n+1)} = -(L + U) x^{(n)} + b . \tag{eq:JAC}
 \end{equation}
-$$<p>
-Element-wise this is
-</p>
-$$
+$$$$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{1}{a_{ii}} \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) . \nonumber
 \end{equation}
-$$<p>
-Thus, the iterative scheme is
-</p>
-$$
+$$$$
 \begin{equation}
 x^{(n+1)} = -D^{-1}(L + U) x^{(n)} + D^{-1} b. \nonumber
 \end{equation}
 $$<p>
 As $L+U = A-D$, so the iteration matrix can be written as $B=I - D^{-1}A$.</p>
 <h2 id="over-relaxation-of-jacobi-method">Over-Relaxation of Jacobi Method</h2>
-<p>Also called the weighted Jacobi method. Introduce $\omega$ to solve
-</p>
 $$
 \begin{equation}
 x_i^{(k+1)} = \dfrac{ \omega }{ a_{ii} } \left( b_i - \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n a_{ij} x_{j}^{(k)} \right) + \left( 1 - \omega \right) x^{(k)}. \tag{eq:JOR}
 \end{equation}
 $$<h2 id="successive-over-relaxation">Successive Over-Relaxation</h2>
-<p>Introduce $\omega$ to solve
-</p>
 $$
 \begin{equation}
 \left(D + \omega L \right) x^{(n+1)} = -( (\omega-1)D + \omega U) x^{(n)} + \omega b. \tag{eq:SOR}
 \end{equation}
 $$<h2 id="gauss-seidel">Gauss-Seidel</h2>
-<p>The Gauss-Seidel method decomposes the matrix $A$ into diagonal, lower and upper triangular matrices $A=D+L+U$, and solves
-</p>
 $$
 \begin{equation}
 (D + L) x^{(n+1)} = -U x^{(n)} + b \tag{eq:GS}
@@ -3012,8 +2988,6 @@ $$<div class="details admonition Theorem open">
 <p>If $A$ is strictly diagonally dominant by rows, i.e. $|a_{ii}| > \sum_{j \ne i} |a_{ij}|$, the <a href="#jacobi-method">Jacobi</a> and <a href="#gauss-seidel">Gauss-Seidel</a> methods are convergent.</p>
 </li>
 <li>
-<p>If $A$ and $2D-A$ are symmetric and positive definite, then the <a href="#jacobi-method">Jacobi method</a> is convergent and the spectral radius of the iteration matrix $B$ is equal to
-</p>
 $$
 \begin{equation}
 \rho \left( B \right) = \left\Vert B \right\Vert_{A} = \left\Vert B \right\Vert_{D} \nonumber
@@ -3022,8 +2996,6 @@ $$<p>
 where $\left\Vert \cdot \right\Vert_{A}$ is an <em>energy norm</em> which is induced by the vector norm $\left| x \right|_{A}~=~\sqrt{ x \cdot A x}$</p>
 </li>
 <li>
-<p>If and only if $A$ is symmetric and positive definite, the <a href="#over-relaxation-of-jacobi-method">Jacobi over-relaxation method</a> is convergent if
-</p>
 $$
 \begin{equation}
 0 < \omega < \dfrac{2}{\rho\left( D^{-1}A \right) }. \nonumber
@@ -3082,33 +3054,24 @@ $$</li>
 
 
 <h2 id="gradient-descent">Gradient Descent</h2>
-<p>Consider the function $\Phi \left( y \right) \, : \, \mathbb{R}^{n} \mapsto \mathbb{R}$ which takes the form:
-</p>
 $$
 \begin{equation}
 \Phi \left( y\right) = \dfrac{1}{2} y \cdot A y - y \cdot b. \nonumber
 \end{equation}
 $$<p>It can be shown that solving $Ax=b$ is equivalent to minimizing $\Phi$.</p>
 <p>If $x$ is a solution to the linear system and minimizes $\Phi(x)$ then $\nabla \Phi(x) = 0$, so that $Ax~-~b~ =~\nabla\Phi(x)~=0$.</p>
-<p>Now
-</p>
 $$
 \begin{align*}
 \Phi(y) & = \Phi(x + (y-x) ) \newline
 & = \Phi(x) + \dfrac{1}{2} \left\Vert y - x\right\Vert_{A}^{2}.
 \end{align*}
-$$<p>
-Gradient descent seeks to construct a scheme which updates the vector $x^{(k)}$ according to
-</p>
-$$
+$$$$
 \begin{equation}
 x^{(k+1)} = x^{(k)} + \alpha^{(k)} d^{(k)} \nonumber
 \end{equation}
 $$<p>
 where $d^{(k)}$ is the update direction and $\alpha^{(k)}$ is the step size at the $k$-th iterate.</p>
 <p>Note that in contrast to the methods above, the gradient descent method is non-stationary as values $d$ and $\alpha$ change at every iterate.</p>
-<p>The idea is to let the search direction be the gradient of the function $\Phi$
-</p>
 $$
 \begin{align*}
 d^{(k)} & = -\nabla \Phi \left( x^{(k)} \right) \newline
@@ -3116,10 +3079,7 @@ d^{(k)} & = -\nabla \Phi \left( x^{(k)} \right) \newline
  & = b - A x^{(k)} \newline
  & = r^{(k)}
 \end{align*}
-$$<p>
-The ideal step size is found by differentiating $\Phi$ with respect to $\alpha$ and setting this to zero, so that
-</p>
-$$
+$$$$
 \begin{equation}
 \alpha^{(k)} = \dfrac{ r^{(k)} \cdot r^{(k)} }{ r^{(k)} \cdot A r^{(k)} } \nonumber
 \end{equation}
@@ -3183,16 +3143,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Choosing $p^{(k+1)}$ such that
-</p>
-$$
+            $$
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0 \nonumber
 \end{equation}
-$$<p>
-for $j=0, \ldots, k$ leads to
-</p>
-$$
+$$$$
 \begin{equation}
 p^{(j)} \cdot r^{(k+1)} = 0.\nonumber
 \end{equation}
@@ -3217,23 +3172,15 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Setting
-</p>
-$$
+            $$
 \begin{equation}
 \beta^{(k)} = \dfrac{r^{(k+1)} \cdot A p^{(k)} }{ p^{(k)} \cdot A p^{(k)} } \nonumber
 \end{equation}
-$$<p>
-and
-</p>
-$$
+$$$$
 \begin{equation}
 p^{(k+1)} = r^{(k+1)} - \beta^{(k)} p^{(k)} \nonumber
 \end{equation}
-$$<p>
-then, for $j=0, \ldots, k,$ yields
-</p>
-$$
+$$$$
 \begin{equation}
 p^{(k+1)} \cdot A p^{(j)} = 0.\nonumber
 \end{equation}

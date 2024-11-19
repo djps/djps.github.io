@@ -297,9 +297,7 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
 \end{equation*}
@@ -324,16 +322,11 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation*}
-$$&lt;p&gt;
-for some value $\xi \in \left[ a, b \right]$ where
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation*}
@@ -379,9 +372,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that
-&lt;/p&gt;
-$$
+            $$
 f^\prime (c) = 0.
 $$
         &lt;/div&gt;
@@ -403,9 +394,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
-&lt;/p&gt;
-$$
+            $$
 f^\prime (c) = \dfrac{f(b) - f(a)}{b - a}.
 $$
         &lt;/div&gt;
@@ -508,8 +497,6 @@ mjx-assistive-mml {
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;If $y(x)$ is a smooth function, i.e. is differentiable, then $\left\| y^{\prime} \right\|$ can be interpreted as the &lt;strong&gt;linear sensitivity&lt;/strong&gt; of $y(x)$ to uncertainties in $x$.&lt;/p&gt;
-&lt;p&gt;For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then
-&lt;/p&gt;
 $$
 \left\| \Delta y \right\| \le \sum\limits_{i=1}^{n}\left\| \dfrac{\partial y}{\partial x_i} \right\|\left\| \Delta x_i \right\|
 $$&lt;p&gt;
@@ -558,10 +545,7 @@ $\left\| \Delta x_i \right\| = \tilde{x}_i - x_i$ for an approximation $\tilde{x
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$
-can be written as a unique expansion with respect to base $b$ as
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation*}
@@ -670,14 +654,10 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A number may be represented as
-&lt;/p&gt;
-$$
+            $$
 x = \sigma \times f \times b^{t-p}
 $$&lt;p&gt;
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, may store a number $x$ as
-&lt;/p&gt;
 $$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$&lt;p&gt;
 where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
 &lt;p&gt;Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.&lt;/p&gt;
@@ -701,11 +681,8 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that
-&lt;/p&gt;
-$$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$&lt;p&gt;
+            $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$&lt;p&gt;
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1015,14 +992,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
-&lt;/p&gt;
-$$
+            $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$&lt;p&gt;
-where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
-&lt;/p&gt;
-$$
+$$$$
 U = U_{n-1} \cdots U_2 U_1 A.
 $$
         &lt;/div&gt;
@@ -1093,8 +1065,6 @@ $$
 
 
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
-&lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme
-&lt;/p&gt;
 $$
 Q x_{k +1}= \left( Q - A \right) x_{k} + b.
 $$&lt;p&gt;This is equivalent to&lt;/p&gt;
@@ -1112,13 +1082,10 @@ $$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as
-&lt;/p&gt;
-$$
+            $$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
 $$&lt;p&gt;
 where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1158,14 +1125,10 @@ where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors
-&lt;/p&gt;
-$$
+            $$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$&lt;p&gt;
 This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that
-&lt;/p&gt;
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$
@@ -1188,13 +1151,10 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The  &lt;a id=&#34;Jacobi&#34;&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so
-&lt;/p&gt;
-$$
+            $$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
 $$&lt;p&gt;
 where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1214,9 +1174,7 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.
-&lt;/p&gt;
-$$
+            $$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \text{for all } i \in (1,n)
 $$
         &lt;/div&gt;
@@ -1258,15 +1216,12 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
 \end{equation*}
 $$&lt;p&gt;
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1306,9 +1261,7 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation*}
@@ -1383,8 +1336,6 @@ $$
 
 
 
-&lt;p&gt;For linear systems, a fixed point, $x^{\ast}$, fulfils
-&lt;/p&gt;
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
@@ -1508,9 +1459,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
-&lt;/p&gt;
-$$
+            $$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
 $$
         &lt;/div&gt;
@@ -1533,9 +1482,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is
-&lt;/p&gt;
-$$
+            $$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
 $$
         &lt;/div&gt;
@@ -1591,8 +1538,6 @@ $$
 &lt;ul&gt;
 &lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &gt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &lt; 0$ then $x \in \left[ r, b \right]$.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The iterate in the sequence satisfies
-&lt;/p&gt;
 $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
@@ -1643,9 +1588,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The secant method is defined as
-&lt;/p&gt;
-$$
+            $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$
         &lt;/div&gt;
@@ -1667,9 +1610,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
-&lt;/p&gt;
-$$
+            $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$&lt;p&gt;
 Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &lt; \delta}$ and ${\left\|  r - x_1 \right\| &lt; \delta}$, then the following holds:&lt;/p&gt;
@@ -1678,7 +1619,6 @@ Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &
 and&lt;/li&gt;
 &lt;li&gt;$\left\|  r - x_{n+1} \right\| \le \mu \left\|  r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$&lt;/li&gt;
 &lt;/ol&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1743,28 +1683,16 @@ and&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that
-&lt;/p&gt;
-$$
+            $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
-$$&lt;p&gt;
-The sequences converges &lt;strong&gt;super-linearly&lt;/strong&gt; if
-&lt;/p&gt;
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 0
-$$&lt;p&gt;
-and &lt;strong&gt;sub-linearly&lt;/strong&gt; if
-&lt;/p&gt;
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 1.
-$$&lt;p&gt;
-More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that
-&lt;/p&gt;
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|^q } = \mu
 $$&lt;p&gt;
 Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1823,9 +1751,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
-&lt;/p&gt;
-$$
+            $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
 $$&lt;p&gt;
 the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
@@ -1840,14 +1766,9 @@ J = \left(
   \end{array}
   \right) \in \mathbb{R}^{n \times n}.
   \end{equation*}
-$$&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as
-&lt;/p&gt;
-$$
+$$$$
 x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
-$$&lt;p&gt;
-where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$&lt;sup&gt;th&lt;/sup&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
-&lt;/p&gt;
-$$
+$$$$
 J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$&lt;p&gt;
 is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
@@ -1974,9 +1895,7 @@ The forward and backwards difference schemes are first order approximations to t
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be
-&lt;/p&gt;
-$$
+            $$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$
         &lt;/div&gt;
@@ -2039,14 +1958,9 @@ $$
 L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
-$$&lt;p&gt;
-so that
-&lt;/p&gt;
-$$
+$$$$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by
-&lt;/p&gt;
-$$
+$$$$
 \begin{align*}
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
@@ -2071,14 +1985,9 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;
-&lt;/p&gt;
-$$
+            $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$&lt;p&gt;
-If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by
-&lt;/p&gt;
-$$
+$$$$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
         &lt;/div&gt;
@@ -2101,8 +2010,6 @@ $$
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
-&lt;p&gt;The error can be shown to have the form:
-&lt;/p&gt;
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
@@ -2129,15 +2036,11 @@ $$&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The integral is approximated as
-&lt;/p&gt;
-$$
+            $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
 $$&lt;p&gt;
 Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
-&lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as
-&lt;/p&gt;
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
 $$&lt;p&gt;
@@ -2182,14 +2085,9 @@ $$
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
-$$&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as
-&lt;/p&gt;
-$$
+$$$$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$&lt;p&gt;
-which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&amp;rsquo;s rule. The recurrence formula can be derived
-&lt;/p&gt;
-$$
+$$$$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
         &lt;/div&gt;
@@ -2222,8 +2120,6 @@ $$
 
 
 &lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
-&lt;p&gt;Generalise the quadrature formula so that an integral is approximated as
-&lt;/p&gt;
 $$
 \begin{equation*}
 I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
@@ -2279,8 +2175,6 @@ $$
   $$
 i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Then, denote the integral as
-&lt;/p&gt;
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
 $$&lt;p&gt;
@@ -2307,25 +2201,15 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where
-&lt;/p&gt;
-$$
+            $$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$&lt;p&gt;
-and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:
-&lt;/p&gt;
-$$
+$$$$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
 $$&lt;p&gt;
 Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
-&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation
-&lt;/p&gt;
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$&lt;p&gt;
-so that
-&lt;/p&gt;
-$$
+$$$$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
         &lt;/div&gt;
@@ -2394,19 +2278,11 @@ mjx-assistive-mml {
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as
-&lt;/p&gt;
-$$
+            $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$&lt;p&gt;
-so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
-&lt;/p&gt;
-$$
+$$$$
 \Phi \alpha = p
-$$&lt;p&gt;
-where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \Phi = \left( \begin{array}{cccc}
   \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\\
@@ -2437,13 +2313,8 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If &lt;/p&gt;
-$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$&lt;p&gt;
-So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
-&lt;/p&gt;
-$$\Phi \alpha = p$$&lt;p&gt;
+            $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$$$\Phi \alpha = p$$&lt;p&gt;
 where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2464,22 +2335,16 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation*}
-$$&lt;p&gt;
-where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
 $$&lt;p&gt;
 By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2499,14 +2364,9 @@ By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
-&lt;/p&gt;
-$$
+            $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$&lt;p&gt;
-By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
-&lt;/p&gt;
-$$
+$$$$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
         &lt;/div&gt;
@@ -2688,9 +2548,7 @@ is a local parameter.&lt;/p&gt;
 &lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving&lt;/p&gt;
 $$
 \text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
-&lt;/p&gt;
-$$
+$$$$
 \Phi = \left(
   \begin{array}{ccc}
   \mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\\
@@ -2711,19 +2569,11 @@ $$&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
-&lt;/p&gt;
-$$
+            $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$&lt;p&gt;
-The minimum is found when
-&lt;/p&gt;
-$$
+$$$$
 \dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$&lt;p&gt;
-i.e.
-&lt;/p&gt;
-$$
+$$$$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
         &lt;/div&gt;
@@ -2745,28 +2595,16 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If the function $y(x)$ is a function of the form
-&lt;/p&gt;
-$$
+            $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$&lt;p&gt;
-where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
-&lt;/p&gt;
-$$
+$$$$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$&lt;p&gt;
-This has a minimum when
-&lt;/p&gt;
-$$
+$$$$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$&lt;p&gt;
-Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,
-&lt;/p&gt;
-$$
+$$$$
 \Phi^T \Phi \beta = \Phi^T y,
 $$&lt;p&gt;
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2878,13 +2716,10 @@ mjx-assistive-mml {
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + h f_n
 $$&lt;p&gt;
 where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2905,13 +2740,10 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + h f_{n+1}
 $$&lt;p&gt;
 where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2932,9 +2764,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$
         &lt;/div&gt;
@@ -2957,9 +2787,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$
         &lt;/div&gt;
@@ -2992,8 +2820,6 @@ $$
 &lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
 &lt;p&gt;Heun&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
-&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:
-&lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
@@ -3010,13 +2836,10 @@ $$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.gi
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
-&lt;/p&gt;
-$$
+            $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$&lt;p&gt;
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3036,9 +2859,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Any explicit one-step method has the form
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$&lt;p&gt;
 with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
@@ -3070,14 +2891,9 @@ $$&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
-&lt;/p&gt;
-$$
+            $$
 \tau_{g,n} = \left| y_n - u_n \right|
-$$&lt;p&gt;
-which is given by
-&lt;/p&gt;
-$$
+$$$$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
 $$&lt;p&gt;
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
@@ -3122,14 +2938,10 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A method of the form
-&lt;/p&gt;
-$$
+            $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$&lt;p&gt;
 with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
-&lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by
-&lt;/p&gt;
 $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
 $$&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
@@ -3189,8 +3001,6 @@ $$
 &lt;ul&gt;
 &lt;li&gt;if $\left| y_0 - u_0 \right| \rightarrow 0$ as $h \rightarrow 0$,&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;then the global error has
-&lt;/p&gt;
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
 $$&lt;p&gt;
@@ -3295,8 +3105,6 @@ k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \
 $$&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
 &lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array
-&lt;/p&gt;
 $$
 \begin{array}{c|cccc}
 c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\
@@ -3305,9 +3113,7 @@ c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
 \hline
        &amp; b_1     &amp; \ldots &amp; b_s
 \end{array}
-$$&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as
-&lt;/p&gt;
-$$
+$$$$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
 &lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
@@ -3317,10 +3123,7 @@ $$&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\lef
 &lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
 $$
 u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
-$$&lt;p&gt;
-where
-&lt;/p&gt;
-$$
+$$$$
 \begin{align*}
 k_1 &amp; = f\left( u_n, t_n \right), \\\
 k_2 &amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\

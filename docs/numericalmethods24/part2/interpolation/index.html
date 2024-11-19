@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2872,19 +2872,11 @@ mjx-assistive-mml {
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p><a id="polyinterp" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);">If the interpolating function is a polynomial</a>, it can be written as
-</p>
-$$
+            $$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$<p>
-so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form
-</p>
-$$
+$$$$
 \Phi \alpha = p
-$$<p>
-where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the <strong>collocation matrix</strong>, whose entries are given by the polynomials evaluated at the node points
-</p>
-$$
+$$$$
 \begin{equation*}
 \Phi = \left( \begin{array}{cccc}
   \varphi_0 (u_0) & \varphi_1 (u_0) & \cdots & \varphi_n (u_0) \\\
@@ -2915,13 +2907,8 @@ Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>If </p>
-$$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$<p>
-So that for every $j$, $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$, thus the $\alpha_i$ lead to a linear system of the form
-</p>
-$$\Phi \alpha = p$$<p>
+            $$p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)$$$$\Phi \alpha = p$$<p>
 where $\Phi$ is the <strong>Vandermonde matrix</strong>.</p>
-
         </div>
     </div>
 </div>
@@ -2942,22 +2929,16 @@ where $\Phi$ is the <strong>Vandermonde matrix</strong>.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
-</p>
-$$
+            $$
 \begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation*}
-$$<p>
-where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
-</p>
-$$
+$$$$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
 $$<p>
 By construction, <em>the collocation matrix is the identity matrix</em>. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.</p>
-
         </div>
     </div>
 </div>
@@ -2977,14 +2958,9 @@ By construction, <em>the collocation matrix is the identity matrix</em>. Thus, t
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as
-</p>
-$$
+            $$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$<p>
-By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula
-</p>
-$$
+$$$$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
         </div>
@@ -3166,9 +3142,7 @@ is a local parameter.</p>
 <p>Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving</p>
 $$
 \text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$<p>which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by
-</p>
-$$
+$$$$
 \Phi = \left(
   \begin{array}{ccc}
   \mathcal{N}_{0}^{n} \left(u_0\right) & \cdots & \mathcal{N}_{m}^{n} \left(u_0\right) \\\
@@ -3189,19 +3163,11 @@ $$<h2 id="least-squares-approximation">Least-Squares Approximation</h2>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares
-</p>
-$$
+            $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$<p>
-The minimum is found when
-</p>
-$$
+$$$$
 \dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$<p>
-i.e.
-</p>
-$$
+$$$$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
         </div>
@@ -3223,28 +3189,16 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>If the function $y(x)$ is a function of the form
-</p>
-$$
+            $$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$<p>
-where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as
-</p>
-$$
+$$$$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$<p>
-This has a minimum when
-</p>
-$$
+$$$$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$<p>
-Thus, the weights $\beta$ can be determined by solving the <strong>normal equations</strong>,
-</p>
-$$
+$$$$
 \Phi^T \Phi \beta = \Phi^T y,
 $$<p>
 i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.</p>
-
         </div>
     </div>
 </div>

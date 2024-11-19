@@ -492,23 +492,15 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;c
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;plt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;seaborn-poster&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now define the function which assembles and solves the boundary value problem:
-&lt;/p&gt;
-$$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;$$
 \begin{align*}
 -\dfrac{d}{dx} \left( \alpha(x) \dfrac{d u(x)}{dx} \right) + \gamma(x) u(x) = f(x) \quad a &lt; x &lt; b
 \end{align*}
-$$&lt;p&gt;
-with
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 u(a) = 0 \quad \textsf{and} \quad u(b) = 0.
 \end{equation*}
-$$&lt;p&gt;
-Note that the boundary value problem has a solution on (0,1) when $\alpha$, $\gamma$ and $f$ are constant, given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation}
 u(x) = \dfrac{f}{\alpha} \left( 1 - \dfrac{ e^{\sqrt{s}x} + e^{\sqrt{s}(1-x)} }{ 1 + e^{\sqrt{s}} } \right) \quad \textsf{where} \quad s =\gamma / \alpha.
 \end{equation}
@@ -657,38 +649,24 @@ $$
 \begin{equation*}
 a(u,v) = \int_a^b \alpha u^{\prime}(x) v^{\prime}(x) + \gamma u(x) v(x) \mathrm{d}x
 \end{equation*}
-$$&lt;p&gt;
-that is
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \left\lVert u_{}^{} \right\Vert_V = \sqrt{a(u,u)}
 \end{equation*}
-$$&lt;p&gt;
-so that the error is given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2.
 \end{equation*}
-$$&lt;p&gt;
-When $\alpha=1$, $\gamma=0$ and $f=1$, the exact solution is given by $u=\frac{1}{2}x(1-x)$. Thus $u^{\prime}= \frac{1}{2}-x$. Evaluating the integral for the error then leads to
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2 = \sum\limits_{i=1}^{N} \int_{x_{i-1}}^{x_{i}} \left( \dfrac{1}{2} -x - u_h^{\prime} \right)^2 \mathrm{d}x
 \end{equation*}
-$$&lt;p&gt;
-Now expanding $u_h$ in terms of the basis functions
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
 \end{equation*}
 $$&lt;p&gt;
 So that $u_h^{\prime} = \dfrac{u_1^k - u_2^k}{h}$.&lt;/p&gt;
-&lt;p&gt;The square of the error in the $i^{\mathrm{th}}$-element $E_i^2$ can be evaluated using Simpson&amp;rsquo;s rule, i.e.
-&lt;/p&gt;
 $$
 \begin{equation*}
 \int_{x_{i-1}}^{x_i} g(x) \, \mathrm{d}x \approx \dfrac{h}{6}\left( g\left( x_{i-1} \right) + 4 g\left( x_{i-1/2} \right) + g\left( x_{i} \right) \right).
@@ -797,77 +775,48 @@ $$
 \begin{equation*}
 u = g(x) \quad x \in \partial\Omega.
 \end{equation*}
-$$&lt;p&gt;
-Label the boundary vertices &lt;em&gt;after&lt;/em&gt; the interior vertices, thus construct a solution of the form
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 w(x) = \sum_{i=1}^{J} w_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
 \end{equation*}
-$$&lt;p&gt;
-so, by definition let the solution take the form,
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 w(x) = w_0(x) + w_g (x)
 \end{equation*}
 $$&lt;p&gt;
 as $w_0$ is zero on the boundary, the values on the boundary are determined by $w_g$.&lt;/p&gt;
-&lt;p&gt;Fix the values as
-&lt;/p&gt;
 $$
 \begin{equation*}
 w_B(x) = \left( w_{J+1}, \ldots, w_{J+J_b} \right)^T
 \end{equation*}
-$$&lt;p&gt;
-where the values of $w_B$ are interpolated as
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 w_i \left(x \right) = g \left( x_i \right) \quad \textsf{for} \quad i=J+1,\ldots,J+J_b.
 \end{equation*}
-$$&lt;p&gt;
-So the finite element approximation is given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 u_h(x) = \sum_{i=1}^{J}u_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
 \end{equation*}
-$$&lt;p&gt;
-Substituting this into the weak form equation yields
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \sum_{i=1}^{J} u_i a\left( \phi_i, \phi_j \right) = \left(f,\phi_j \right) - \sum_{i=J+1}^{J+J_b} w_i a\left( \phi_i(x), \phi_j(x) \right) \quad \textsf{for} \quad j=1,\ldots,J.
 \end{equation*}
-$$&lt;p&gt;
-For a linear basis function, the linear system is sparse and can be partition into interior and boundary parts
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 A = \left(
 \begin{array}{cc}
 A_{II} &amp; A_{IB} \\
 A_{BI} &amp; A_{BB} \end{array} \right) \quad \textsf{and} \quad b = \left( \begin{array}{c} b_I, &amp; b_B \end{array} \right)^T.
 \end{equation*}
-$$&lt;p&gt;
-So that the governing equation for the unknown interior values can be written as
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 A_{II} u_I = b_I - A_{IB} w_B.
 \end{equation*}
-$$&lt;p&gt;
-Consider the local piecewise basis functions associated with the reference triangle as
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \psi_1(x) = 1-s-t, \quad \psi_2(x) = s \quad \textsf{and} \quad \psi_3(x) = t.
 \end{equation*}
-$$&lt;p&gt;
-where
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \phi_p^k\left( x\left(s,t\right), y\left(s,t\right) \right) = \psi_p\left(s,t\right) \quad p=1,2,3.
 \end{equation*}
@@ -878,36 +827,25 @@ $$
 x(s,t) &amp; = x_1^k \psi_1 + x_2^k \psi_2 + x_3^k \psi_3, \\
 y(s,t) &amp; = y_1^k \psi_1 + y_2^k \psi_2 + y_3^k \psi_3.
 \end{align*}
-$$&lt;p&gt;The Jacobian between the two frames is given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 J = \left( \begin{array}{cc}
 \dfrac{\partial x}{\partial s} &amp; \dfrac{\partial y}{\partial s} \\
 \dfrac{\partial x}{\partial t} &amp; \dfrac{\partial y}{\partial t} \end{array} \right).
 \end{equation*}
-$$&lt;p&gt;
-Thus, for the local basis functions given above, the Jacobian and inverse are given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 J = \left( \begin{array}{cc}
 x_2 - x_1 &amp; y_2 - y_1 \\
 x_3 - x_1 &amp; y_3 - y_1 \end{array} \right)
 \end{equation*}
-$$&lt;p&gt;
-and
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 J^{-1} = \dfrac{1}{|J|} \left( \begin{array}{cc}
 y_3 - y_1 &amp; y_1 - y_2 \\
 x_1 - x_3 &amp; x_2 - x_1 \end{array} \right)
 \end{equation*}
-$$&lt;p&gt;
-where the determinant of the Jacobian is given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 |J| = \left( x_2 - x_1 \right)\left( y_3 - y_1 \right) - \left( y_2 - y_1 \right) \left( x_3 - x_1 \right).
 \end{equation*}

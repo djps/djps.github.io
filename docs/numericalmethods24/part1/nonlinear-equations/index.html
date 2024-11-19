@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2873,9 +2873,7 @@
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) < 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error
-</p>
-$$
+            $$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
 $$
         </div>
@@ -2898,9 +2896,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&rsquo;s method is
-</p>
-$$
+            $$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
 $$
         </div>
@@ -2956,8 +2952,6 @@ $$
 <ul>
 <li>if $f(a) < 0$ and $f^{\prime\prime}(a) > 0$ <em>or</em> $f(a) > 0$ and $f^{\prime\prime}(a) < 0$ then $x \in \left[ r, b \right]$.</li>
 </ul>
-<p>The iterate in the sequence satisfies
-</p>
 $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
@@ -3008,9 +3002,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The secant method is defined as
-</p>
-$$
+            $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$
         </div>
@@ -3032,9 +3024,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let
-</p>
-$$
+            $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$<p>
 Then there exists a $\delta > 0$ such that when ${\left\|  r - x_0 \right\| < \delta}$ and ${\left\|  r - x_1 \right\| < \delta}$, then the following holds:</p>
@@ -3043,7 +3033,6 @@ Then there exists a $\delta > 0$ such that when ${\left\|  r - x_0 \right\| < \d
 and</li>
 <li>$\left\|  r - x_{n+1} \right\| \le \mu \left\|  r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$</li>
 </ol>
-
         </div>
     </div>
 </div>
@@ -3108,28 +3097,16 @@ and</li>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to <strong>converge linearly</strong> if there exists a $\mu \in \left( 0,1\right)$ such that
-</p>
-$$
+            $$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
-$$<p>
-The sequences converges <strong>super-linearly</strong> if
-</p>
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 0
-$$<p>
-and <strong>sub-linearly</strong> if
-</p>
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 1.
-$$<p>
-More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that
-</p>
-$$
+$$$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|^q } = \mu
 $$<p>
 Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.</p>
-
         </div>
     </div>
 </div>
@@ -3188,9 +3165,7 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector
-</p>
-$$
+            $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
 $$<p>
 the <strong>Jacobian</strong> matrix is defined as</p>
@@ -3205,14 +3180,9 @@ J = \left(
   \end{array}
   \right) \in \mathbb{R}^{n \times n}.
   \end{equation*}
-$$<p>If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&rsquo;s method can be written as
-</p>
-$$
+$$$$
 x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
-$$<p>
-where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$<sup>th</sup> iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system
-</p>
-$$
+$$$$
 J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
 $$<p>
 is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.</p>

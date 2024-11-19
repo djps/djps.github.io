@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2938,13 +2938,10 @@ mjx-assistive-mml {
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p><strong>Forward Euler</strong> approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives
-</p>
-$$
+            $$
 u_{n+1} = u_n + h f_n
 $$<p>
 where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.</p>
-
         </div>
     </div>
 </div>
@@ -2965,13 +2962,10 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p><strong>Backward Euler</strong> uses the backward finite difference approximation of the first-order derivative
-</p>
-$$
+            $$
 u_{n+1} = u_n + h f_{n+1}
 $$<p>
 where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.</p>
-
         </div>
     </div>
 </div>
@@ -2992,9 +2986,7 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The <strong>Crank-Nicolson method</strong> is given by
-</p>
-$$
+            $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$
         </div>
@@ -3017,9 +3009,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p><strong>Heun&rsquo;s method</strong> is given by
-</p>
-$$
+            $$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$
         </div>
@@ -3052,8 +3042,6 @@ $$
 <p>Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.</p>
 <p>Both the Forward Euler and Heun&rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.</p>
 <p>Heun&rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.</p>
-<p>Alternatively, the solution to the differential equation can be written as <a href="/docs/numericalmethods24/part2/integration/#numerical-integration">quadrature</a>:
-</p>
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$<p>Thus, the Forward Euler method is the <a href="/docs/numericalmethods24/part2/integration/#left">left Riemann sum</a>, Backward Euler is the <a href="/docs/numericalmethods24/part2/integration/#right">right Riemann sum</a> and the Crank-Nicolson is the <a href="/docs/numericalmethods24/part2/integration/#trap">trapezoidal rule</a>.</p>
@@ -3070,13 +3058,10 @@ $$<p>Thus, the Forward Euler method is the <a href="/docs/numericalmethods24/par
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>A function $f$ is <strong>Hölder continuous</strong> if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that
-</p>
-$$
+            $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$<p>
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz continuous</strong>.</p>
-
         </div>
     </div>
 </div>
@@ -3096,9 +3081,7 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be <strong>Lipshitz
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Any explicit one-step method has the form
-</p>
-$$
+            $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$<p>
 with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is</p>
@@ -3130,14 +3113,9 @@ $$<p>where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right)}$ de
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The <strong>global truncation error</strong> is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,
-</p>
-$$
+            $$
 \tau_{g,n} = \left| y_n - u_n \right|
-$$<p>
-which is given by
-</p>
-$$
+$$$$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
 $$<p>
 If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be <strong>locally convergent</strong>.</p>
@@ -3182,14 +3160,10 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>A method of the form
-</p>
-$$
+            $$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$<p>
 with $\Phi$ the increment function, is called <strong>zero-stable</strong> if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:</p>
-<p>If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by
-</p>
 $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
 $$<p>with $z_0 = {y_0 +\delta_0}$, then</p>
@@ -3249,8 +3223,6 @@ $$
 <ul>
 <li>if $\left| y_0 - u_0 \right| \rightarrow 0$ as $h \rightarrow 0$,</li>
 </ul>
-<p>then the global error has
-</p>
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
 $$<p>
@@ -3355,8 +3327,6 @@ k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \
 $$<p>where $s$ is referred to as the number of stages of the method.</p>
 <p>Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$</p>
 <p>If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are <strong>explicit</strong>, otherwise they are said to be <strong>implicit</strong>.</p>
-<p>The components of a Runge-Kutta scheme are expressed in a Butcher array
-</p>
 $$
 \begin{array}{c|cccc}
 c_1    & a_{1,1} & \ldots & a_{1,s} \\
@@ -3365,9 +3335,7 @@ c_s    & a_{s,1} & \ldots & a_{s,s} \\
 \hline
        & b_1     & \ldots & b_s
 \end{array}
-$$<p>The <strong>local truncation error</strong>, which characterises the error induced at each step of the method, is defined as
-</p>
-$$
+$$$$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$<p>It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.</p>
 <p>A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.</p>
@@ -3377,10 +3345,7 @@ $$<p>It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\ri
 <p>The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:</p>
 $$
 u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
-$$<p>
-where
-</p>
-$$
+$$$$
 \begin{align*}
 k_1 & = f\left( u_n, t_n \right), \\\
 k_2 & = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\

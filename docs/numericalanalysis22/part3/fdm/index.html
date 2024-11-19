@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2830,15 +2830,11 @@
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 45 minute read </p>
 -->
 <h2 id="greens-functions">Green&rsquo;s functions</h2>
-<p>For a linear differential operator acting on $u$, that is $\mathcal{L} \left[ u \left( x \right) \right]$, which has a differential equation of the form
-</p>
 $$
 \begin{equation*}
 \mathcal{L}\left[ u \left( x \right) \right] = f \left(x \right),
 \end{equation*}
-$$<p>then the <strong>Green&rsquo;s function</strong> for the operator $\mathcal{L}$, denoted by $G\left( x,s \right)$, can be used to solved the differential equation as
-</p>
-$$
+$$$$
 \begin{equation*}
 u(x) = \int^x G\left(x,s \right) f\left( s \right) \, \mathrm{d}s.
 \end{equation*}
@@ -2969,9 +2965,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let $\mathcal{L}_h$ be the discretization of a linear differential operator which acts on $u_h \in V_h$, i.e. $\mathcal{L}_h \left[ u_h \right]$.  If the <strong>discrete inner product</strong> for both $v_h$ and $w_h \in V_h$ is defined as
-</p>
-$$
+            $$
 \begin{align*}
 \left( v_h, w_h \right)_{h}^{} & = h \sum\limits_{j=0}^{n} c_j v_j w_j
 \end{align*}
@@ -2982,21 +2976,15 @@ $$
 \left\Vert v_h \right\Vert_h = \sqrt{ \left( v_h, v_h \right)_h }
 \end{equation*}
 $$<p>for a $v_h \in V_h$.</p>
-<p>Then the operator $\mathcal{L}_h$ is <strong>symmetric</strong>, i.e.
-</p>
 $$
 \begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], w_h \right)_h = \left( v_h, \mathcal{L}_h \left[ w_h \right]\right)_h \quad \forall \, w_h , \, v_h \in V^0_h
 \end{equation*}
-$$<p>and <strong>positive definite</strong>, that is
-</p>
-$$
+$$$$
 \begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h \ge 0 \quad \forall \,  v_h \in V^0_h
 \end{equation*}
-$$<p>and
-</p>
-$$
+$$$$
 \begin{equation*}
 \left( \mathcal{L}_h \left[ v_h \right], v_h \right)_h = 0 \Longleftrightarrow v_h = 0 .
 \end{equation*}
@@ -3004,8 +2992,6 @@ $$<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p>This is just the <a href="/docs/numericalanalysis22/part2/integration/#trapezoidal-rule">composite trapezium rule</a>, so that the discrete inner product is the discrete analogue to
-</p>
 $$\begin{equation*}
     \left( w, v \right) = \int w(x) v(x) \, \mathrm{d}x
     \end{equation*} $$<p>
@@ -3034,9 +3020,7 @@ i.e. it approximates an integral.&#160;<a href="#fnref:1" class="footnote-backre
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For any $v_h \in V_h$
-</p>
-$$
+            $$
 \begin{equation*}
 \left\Vert v_h \right\Vert_h \le \dfrac{1}{\sqrt{2}} \Bigg( h \sum \limits_{j=0}^{n-1} \left( \dfrac{v_{j+1} - v_j}{h} \right)^2 \Bigg)^{1/2}.
 \end{equation*}
@@ -3049,15 +3033,11 @@ $$
 
 
 <h3 id="convergence">Convergence</h3>
-<p>The finite difference solution $u_h$ can be characterised by a discrete Green&rsquo;s function. Define $G^k\left(x\right)  \in V_h^0$ such that
-</p>
 $$
 \begin{equation*}
 \mathcal{L}_h \left[ G^k\left(x\right) \right] = e^k\left(x\right)
 \end{equation*}
-$$<p>where $e^k \in V_h^0$ satisfies $e^k\left( x_j \right) = \delta_{kj}$. Then
-</p>
-$$
+$$$$
 \begin{equation*}
 G^k \left( x_j \right) = h G\left( x_j, x_k \right) .
 \end{equation*}
@@ -3074,8 +3054,6 @@ $$<div class="details admonition Theorem open">
     <div class="details-content">
         <div class="admonition-content">
             <p>Let $\left\Vert v_h	\right\Vert_{h,\infty} = \max \limits_{0 \le j \le n}\left| v_h\left( x_j \right) \right|$ be the <em>discrete maximum norm</em>.</p>
-<p>Assume that $f \in C^2 \left( \left[ 0,1 \right] \right)$, then the nodal error, given by $e\left( x_j \right) = u\left(x_j\right) - u_h\left(x_j\right)$ satisfies:
-</p>
 $$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_{h,\infty} \le \dfrac{h^2}{96}  \left\Vert f^{\prime\prime} \right\Vert_\infty .
@@ -3089,28 +3067,20 @@ $$
 
 
 <h2 id="galerkin-method">Galerkin Method</h2>
-<p>Consider the elementary problem:
-</p>
 $$
 \begin{equation*}
 \left( \alpha u^{\prime} \right)^{\prime} + \beta u^{\prime} + \gamma u = f\left( x \right) \quad \textsf{on} \quad (0,1) \quad \textsf{with}  \quad u(0) = u(1)=0
 \end{equation*}
 $$<p>where $\alpha$, $\beta$, $\gamma \in C^0 \left( \left[ 0, 1 \right] \right)$ and $\alpha(x) \ge \alpha_0 >0$ for all $x \in  \left[ 0, 1 \right]$.</p>
-<p>Next, on $L^2$, define the <em>scalar product</em>
-</p>
 $$
 \begin{equation*}
 \left( f, v \right) = \int \limits_0^1 f v \, \mathrm{d}x
 \end{equation*}
-$$<p>and a <em>bilinear form</em> $a : \left( \cdot, \cdot \right)$ which maps $H_0^1 \times H^1_0 \rightarrow \mathbb{R}$
-</p>
-$$
+$$$$
 \begin{equation*}
 a\left( u, v \right) = \int \limits_0^1 \left( \alpha u^\prime v^\prime + \beta u^\prime v + \gamma u v \right) \, \mathrm{d}x
 \end{equation*}
-$$<p>and consider the <strong>weak form</strong>
-</p>
-$$
+$$$$
 \begin{equation*}
 \textsf{Find} \quad u \in H^1_0 \quad \textsf{such that} \quad a\left(u,v \right) =\left( f, v\right) \quad \forall \, v \in H^1_0 \left(0, 1 \right).
 \end{equation*}
@@ -3150,14 +3120,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Suppose that $f(x)$ is integrable on $(0,1)$ and
-</p>
-$$
+            $$
 \begin{equation*}
 \int \limits_0^1 \phi(x) f(x) \, \mathrm{d}x = 0 \quad \forall \, \phi(x) \in C^\infty_0\left(\left[ 0,1 \right]\right)
 \end{equation*}
  $$<p>then $f(x)=0$.</p>
-
         </div>
     </div>
 </div>
@@ -3177,9 +3144,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let $\Omega \subset \mathbb{R}^n$ be contained in $n$-dimensional cube of length $s$, then
-</p>
-$$
+            $$
 \begin{equation*}
 \bigl\Vert v \bigr\Vert_{L^2\left(\Omega\right)} \le s \left| v \right|_{H_0^1\left( \Omega \right)}.
 \end{equation*}
@@ -3203,16 +3168,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let
-</p>
-$$
+            $$
 \begin{equation*}
 C = \dfrac{1}{\alpha_0} \left( \bigl\Vert \alpha \bigr\Vert_\infty + C_p^2 \left\Vert \gamma \right\Vert_\infty \right)
 \end{equation*}
-$$<p>
-then
-</p>
-$$
+$$$$
 \begin{equation*}
 \left| u - u_h \right| \le C \min\limits_{ w_h \in V_h} \left| u - w_h \right|_{H_0^1\left(0,1\right)}.
 \end{equation*}

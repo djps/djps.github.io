@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2786,9 +2786,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">copy</span>
-</span></span></code></pre></div><p>Consider the matrix
-</p>
-$$
+</span></span></code></pre></div>$$
 \begin{equation*}
 C = \left(
   \begin{array}{cc}
@@ -2853,8 +2851,6 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues<
   </div></figure>
 </p>
 <h3 id="iterative-solvers-for-linear-systems-of-equations">Iterative solvers for linear systems of equations:</h3>
-<p>To solve
-</p>
 $$
 \begin{equation*}
 A x = b
@@ -2868,8 +2864,6 @@ for $x$ there are many schemes in the general form $x_{k+1} = \left( I - Q^{-1}A
 </ul>
 <p>In the example we will make use of a number of routines: <a href="https://numpy.org/doc/stable/reference/generated/numpy.tril.html" target="_blank" rel="noopener"><code>np.tril</code></a> as well as <a href="https://numpy.org/doc/stable/reference/generated/numpy.diag.html" target="_blank" rel="noopener"><code>np.diag</code></a>,
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html" target="_blank" rel="noopener"><code>np.linalg.inv</code></a> and <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html" target="_blank" rel="noopener"><code>np.linalg.norm</code></a>.</p>
-<p>Let the matrix $A$ be given by
-</p>
 $$
 \begin{equation*}
 A = \left(
@@ -2885,9 +2879,7 @@ $$<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-
 </span></span><span class="line"><span class="cl">              <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]])</span>
 </span></span></code></pre></div><p>Right hand side vector $b=\left( 1, 8, -5 \right)^T$.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.</span><span class="p">])</span>
-</span></span></code></pre></div><p>Note that the inverse $A^{-1}$ is given as
-</p>
-$$
+</span></span></code></pre></div>$$
 \begin{equation*}
 A^{-1} = \dfrac{1}{8} \left(
   \begin{array}{ccc}

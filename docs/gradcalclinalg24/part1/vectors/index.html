@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2814,7 +2814,7 @@
 
 
 
-<div id="chart-749185623" class="chart"></div>
+<div id="chart-621849735" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -2832,7 +2832,7 @@
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-749185623', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-621849735', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2876,15 +2876,12 @@
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Given some $k$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their <strong>linear combination</strong> is an expression of the form
-</p>
-$$
+            $$
 \begin{equation*}
 a_1 \vec{v}_1 + a_2 \vec{v}_2 + \ldots + a_k \vec{v}_k
 \end{equation*}
 $$<p>
 where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.</p>
-
         </div>
     </div>
 </div>
@@ -2904,15 +2901,12 @@ where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For two vectors $\boldsymbol{a}$, $\boldsymbol{b} \in \mathbb{R}^{n}$, where $\boldsymbol{a}= \left(a_1, a_2, \ldots, a_n \right)$, the <strong>dot product</strong> of the two vectors is given by
-</p>
-$$
+            $$
 \begin{equation*}
 \boldsymbol{a} \cdot \boldsymbol{b} = a_1 b_1 + a_2 b_2 + \ldots a_n b_n.
 \end{equation*}
 $$<p>
 The result is a scalar.</p>
-
         </div>
     </div>
 </div>
@@ -2923,16 +2917,12 @@ The result is a scalar.</p>
 <p>The dot product can be generalised for more general vectors, called an <strong>inner product</strong>, written as $\langle \cdot, \cdot \rangle=c$, where $c$ is scalar.</p>
 <p>The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.</p>
 <p>A unit vector has length one. A non-zero vector can be transformed into a unit vector by the transformation $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is often defined as $\sqrt{\langle \vec{v}, \vec{v} \rangle}$.</p>
-<p>One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
-</p>
 $$
 \begin{equation*}
 \boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|  \cos\theta.
 \end{equation*}
 $$<p>
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be <strong>orthogonal</strong> (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.</p>
-<p>Thus, the angle between two vectors is given by
-</p>
 $$
 \begin{equation*}
  \cos\theta = \dfrac{\boldsymbol{a} \cdot \boldsymbol{b}}{\left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|}.
@@ -2949,9 +2939,7 @@ $$<div class="details admonition Definition open">
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The Cauchy-Schwarz inequality states that the magnitude of the between two vectors is always less than or equal to the product of the magnitudes of the two vectors, i.e.
-</p>
-$$
+            $$
 \left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|.
 $$
         </div>
@@ -2973,13 +2961,10 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The triangle inequality states that the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side. Formally, this is expressed as
-</p>
-$$
+            $$
 \left| \vec{v} + \vec{w} \right| \leq \left| \vec{v} \right| + \left| \vec{w} \right|.
 $$<p>
 It can be derived from the Cauchy-Schwarz inequality.</p>
-
         </div>
     </div>
 </div>

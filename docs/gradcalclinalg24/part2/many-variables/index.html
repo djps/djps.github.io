@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2785,18 +2785,12 @@
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For a function with multiple input arguments, $z = f\left(x,y\right)$, the partial derivative of $f$ with respect to $x$ can be expressed as
-</p>
-$$
+            $$
 \dfrac{\partial f}{\partial x} = \lim_{h \rightarrow 0} \dfrac{f\left(x+h,y\right) - f\left(x,y\right) }{h}
-$$<p>
-similarly, the partial derivative with respect to $y$ can be expressed as
-</p>
-$$
+$$$$
 \dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}.
 $$<p>
 Note that the partial derivative is often denoted as $\dfrac{\partial f}{\partial x} = f_x$.</p>
-
         </div>
     </div>
 </div>
@@ -2816,13 +2810,10 @@ Note that the partial derivative is often denoted as $\dfrac{\partial f}{\partia
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The gradient of a function $z=f\left(x_1, x_2, \ldots, x_n \right)$ is the row vector
-</p>
-$$
+            $$
 \nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right).
 $$<p>
 As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.</p>
-
         </div>
     </div>
 </div>
@@ -2866,14 +2857,9 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Each partial derivative can be differentiated again to yield a second-order partial derivative,
-</p>
-$$
+            $$
 \dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i} \left(x_1, \ldots,  x_j + h, \ldots, x_n \right) - f_{x_i}\left( x_1, \ldots,  x_n \right)}{h}.
-$$<p>
-Thus, all second derivatives can be expressed using the <strong>Hessian matrix</strong>
-</p>
-$$
+$$$$
 H\left( \vec{x} \right) = \left(
 \begin{array}{cccc}
 f_{x_1 x_1} & f_{x_1 x_2} & \cdots & f_{x_1 x_n} \\
@@ -2891,24 +2877,13 @@ $$
 
 
 <p>If the second-order partial derivatives are continuous, then the Hessian matrix $H$ is symmetric. Then, if symmetric all eigenvalues are real-valued.</p>
-<p>The Taylor expansion of a function of more than one variable about a critical point is given by
-</p>
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T H\left( \vec{a} \right) \vec{x} + \ldots
-$$<p>
-Note that the Hessian matrix can be factorized as
-</p>
-$$
+$$$$
 H = Q D Q^{-1}
-$$<p>
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$ of the Hessian matrix. The eigenvector  $\boldsymbol{q_i}$ is the $i$<sup>th</sup> column of the matrix $Q$. As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Hence,
-</p>
-$$
+$$$$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
-$$<p>
-Letting $\vec{y}=Q^T \vec{x}$, then
-</p>
-$$
+$$$$
 \begin{align*}
 f\left(\vec{x} + \vec{a} \right) &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
  &  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
@@ -2923,14 +2898,9 @@ So:</p>
 </ol>
 <h2 id="jacobians">Jacobians</h2>
 <p>If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R}^{m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_m \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) = \vec{0}$.</p>
-<p>or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f\left( g(x),h(x) \right)$. Apply the chain rule to compute the gradient
-</p>
 $$
 \nabla F = \nabla \left( f (g(x)), f(h(x)) \right) = \nabla f \dfrac{\partial (g,h)}{\partial x}
-$$<p><br>
-where
-</p>
-$$
+$$$$
 \nabla f \dfrac{\partial (g,h)}{\partial x} = \left(
 \begin{array}{c}
 \nabla g \\
@@ -2938,14 +2908,9 @@ $$
 \end{array} \right)
 $$<p>
 is the <strong>Jacobi matrix</strong>. Each row of the Jacobi matrix is a gradient of $g$ or $h$.</p>
-<p>For a vector $\boldsymbol{w}$, the <strong>directional derivative</strong> of $f(\boldsymbol{x})$ in the direction of $\boldsymbol{w}$ is given by
-</p>
 $$
 \nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \lim_{h \rightarrow 0} \dfrac{f(\boldsymbol{x} + h\boldsymbol{v}) - f(\boldsymbol{x})}{h}
-$$<p>
-If the function is differentiable, then
-</p>
-$$
+$$$$
 \nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \nabla f \left(\boldsymbol{x}\right) \cdot  \boldsymbol{w}
 $$<p>
 As, by convention, $\nabla f \left(\boldsymbol{x}\right)$ is a column vector.</p>

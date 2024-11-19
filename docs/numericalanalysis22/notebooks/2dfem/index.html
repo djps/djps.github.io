@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2793,77 +2793,48 @@ $$
 \begin{equation*}
 u = g(x) \quad x \in \partial\Omega.
 \end{equation*}
-$$<p>
-Label the boundary vertices <em>after</em> the interior vertices, thus construct a solution of the form
-</p>
-$$
+$$$$
 \begin{equation*}
 w(x) = \sum_{i=1}^{J} w_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
 \end{equation*}
-$$<p>
-so, by definition let the solution take the form,
-</p>
-$$
+$$$$
 \begin{equation*}
 w(x) = w_0(x) + w_g (x)
 \end{equation*}
 $$<p>
 as $w_0$ is zero on the boundary, the values on the boundary are determined by $w_g$.</p>
-<p>Fix the values as
-</p>
 $$
 \begin{equation*}
 w_B(x) = \left( w_{J+1}, \ldots, w_{J+J_b} \right)^T
 \end{equation*}
-$$<p>
-where the values of $w_B$ are interpolated as
-</p>
-$$
+$$$$
 \begin{equation*}
 w_i \left(x \right) = g \left( x_i \right) \quad \textsf{for} \quad i=J+1,\ldots,J+J_b.
 \end{equation*}
-$$<p>
-So the finite element approximation is given by
-</p>
-$$
+$$$$
 \begin{equation*}
 u_h(x) = \sum_{i=1}^{J}u_i \phi_i(x) + \sum_{i=J+1}^{J+J_b} w_i \phi_i(x)
 \end{equation*}
-$$<p>
-Substituting this into the weak form equation yields
-</p>
-$$
+$$$$
 \begin{equation*}
 \sum_{i=1}^{J} u_i a\left( \phi_i, \phi_j \right) = \left(f,\phi_j \right) - \sum_{i=J+1}^{J+J_b} w_i a\left( \phi_i(x), \phi_j(x) \right) \quad \textsf{for} \quad j=1,\ldots,J.
 \end{equation*}
-$$<p>
-For a linear basis function, the linear system is sparse and can be partition into interior and boundary parts
-</p>
-$$
+$$$$
 \begin{equation*}
 A = \left(
 \begin{array}{cc}
 A_{II} & A_{IB} \\
 A_{BI} & A_{BB} \end{array} \right) \quad \textsf{and} \quad b = \left( \begin{array}{c} b_I, & b_B \end{array} \right)^T.
 \end{equation*}
-$$<p>
-So that the governing equation for the unknown interior values can be written as
-</p>
-$$
+$$$$
 \begin{equation*}
 A_{II} u_I = b_I - A_{IB} w_B.
 \end{equation*}
-$$<p>
-Consider the local piecewise basis functions associated with the reference triangle as
-</p>
-$$
+$$$$
 \begin{equation*}
 \psi_1(x) = 1-s-t, \quad \psi_2(x) = s \quad \textsf{and} \quad \psi_3(x) = t.
 \end{equation*}
-$$<p>
-where
-</p>
-$$
+$$$$
 \begin{equation*}
 \phi_p^k\left( x\left(s,t\right), y\left(s,t\right) \right) = \psi_p\left(s,t\right) \quad p=1,2,3.
 \end{equation*}
@@ -2874,36 +2845,25 @@ $$
 x(s,t) & = x_1^k \psi_1 + x_2^k \psi_2 + x_3^k \psi_3, \\
 y(s,t) & = y_1^k \psi_1 + y_2^k \psi_2 + y_3^k \psi_3.
 \end{align*}
-$$<p>The Jacobian between the two frames is given by
-</p>
-$$
+$$$$
 \begin{equation*}
 J = \left( \begin{array}{cc}
 \dfrac{\partial x}{\partial s} & \dfrac{\partial y}{\partial s} \\
 \dfrac{\partial x}{\partial t} & \dfrac{\partial y}{\partial t} \end{array} \right).
 \end{equation*}
-$$<p>
-Thus, for the local basis functions given above, the Jacobian and inverse are given by
-</p>
-$$
+$$$$
 \begin{equation*}
 J = \left( \begin{array}{cc}
 x_2 - x_1 & y_2 - y_1 \\
 x_3 - x_1 & y_3 - y_1 \end{array} \right)
 \end{equation*}
-$$<p>
-and
-</p>
-$$
+$$$$
 \begin{equation*}
 J^{-1} = \dfrac{1}{|J|} \left( \begin{array}{cc}
 y_3 - y_1 & y_1 - y_2 \\
 x_1 - x_3 & x_2 - x_1 \end{array} \right)
 \end{equation*}
-$$<p>
-where the determinant of the Jacobian is given by
-</p>
-$$
+$$$$
 \begin{equation*}
 |J| = \left( x_2 - x_1 \right)\left( y_3 - y_1 \right) - \left( y_2 - y_1 \right) \left( x_3 - x_1 \right).
 \end{equation*}

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2773,8 +2773,6 @@
 <i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"></i> 10 minute read </p>
 -->
 <p>Consider the integration of the function $f(x) = \exp \left( -x^2 \right)$ between $[0,1]$.</p>
-<p>It can easily be shown that
-</p>
 $$
 \begin{align}
 \int_0^1 e^{-x^2} \mathrm{d}x = \dfrac{\sqrt{\pi}}{2}. \nonumber
@@ -2795,8 +2793,6 @@ First import the tools needed</p>
 </span></span></code></pre></div><p>Let $m$ be vector whose elements are the number of evaluations of the integral.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
 </span></span></code></pre></div><p>Compute and plot the successive approximations for the integral, as well as keeping track of the errors.</p>
-<p>We will use the scipy function <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.trapezoid.html#scipy.integrate.trapezoid" target="_blank" rel="noopener">trapezoid</a> to compute the integral according to
-</p>
 $$
 \begin{align}
 \int_a^b f(x) \, \mathrm{d}x \approx \sum\limits_{k=1}^{M} \dfrac{f\left( x_{k-1}\right) + f\left(x_{k}\right)}{2} \Delta x_{k} \quad \textsf{where} \quad x_0 = a \quad \textsf{and} \quad x_M = b. \nonumber

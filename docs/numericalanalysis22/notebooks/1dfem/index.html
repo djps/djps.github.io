@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2797,23 +2797,15 @@
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-poster&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>Now define the function which assembles and solves the boundary value problem:
-</p>
-$$
+</span></span></code></pre></div>$$
 \begin{align*}
 -\dfrac{d}{dx} \left( \alpha(x) \dfrac{d u(x)}{dx} \right) + \gamma(x) u(x) = f(x) \quad a < x < b
 \end{align*}
-$$<p>
-with
-</p>
-$$
+$$$$
 \begin{equation*}
 u(a) = 0 \quad \textsf{and} \quad u(b) = 0.
 \end{equation*}
-$$<p>
-Note that the boundary value problem has a solution on (0,1) when $\alpha$, $\gamma$ and $f$ are constant, given by
-</p>
-$$
+$$$$
 \begin{equation}
 u(x) = \dfrac{f}{\alpha} \left( 1 - \dfrac{ e^{\sqrt{s}x} + e^{\sqrt{s}(1-x)} }{ 1 + e^{\sqrt{s}} } \right) \quad \textsf{where} \quad s =\gamma / \alpha.
 \end{equation}
@@ -2962,38 +2954,24 @@ $$
 \begin{equation*}
 a(u,v) = \int_a^b \alpha u^{\prime}(x) v^{\prime}(x) + \gamma u(x) v(x) \mathrm{d}x
 \end{equation*}
-$$<p>
-that is
-</p>
-$$
+$$$$
 \begin{equation*}
 \left\lVert u_{}^{} \right\Vert_V = \sqrt{a(u,u)}
 \end{equation*}
-$$<p>
-so that the error is given by
-</p>
-$$
+$$$$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2.
 \end{equation*}
-$$<p>
-When $\alpha=1$, $\gamma=0$ and $f=1$, the exact solution is given by $u=\frac{1}{2}x(1-x)$. Thus $u^{\prime}= \frac{1}{2}-x$. Evaluating the integral for the error then leads to
-</p>
-$$
+$$$$
 \begin{equation*}
 \left\Vert u - u_h \right\Vert_V^2 = \sum\limits_{i=1}^{N} \int_{x_{i-1}}^{x_{i}} \left( \dfrac{1}{2} -x - u_h^{\prime} \right)^2 \mathrm{d}x
 \end{equation*}
-$$<p>
-Now expanding $u_h$ in terms of the basis functions
-</p>
-$$
+$$$$
 \begin{equation*}
 u_h = u^k_1 \varphi_1^k + u^k_2 \varphi_2^k
 \end{equation*}
 $$<p>
 So that $u_h^{\prime} = \dfrac{u_1^k - u_2^k}{h}$.</p>
-<p>The square of the error in the $i^{\mathrm{th}}$-element $E_i^2$ can be evaluated using Simpson&rsquo;s rule, i.e.
-</p>
 $$
 \begin{equation*}
 \int_{x_{i-1}}^{x_i} g(x) \, \mathrm{d}x \approx \dfrac{h}{6}\left( g\left( x_{i-1} \right) + 4 g\left( x_{i-1/2} \right) + g\left( x_{i} \right) \right).

@@ -283,7 +283,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-749185623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-621849735&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -301,7 +301,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-749185623&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-621849735&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -345,15 +345,12 @@ markmap:
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Given some $k$ vectors $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_k \in \mathbb{R}^{n}$, then their &lt;strong&gt;linear combination&lt;/strong&gt; is an expression of the form
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 a_1 \vec{v}_1 + a_2 \vec{v}_2 + \ldots + a_k \vec{v}_k
 \end{equation*}
 $$&lt;p&gt;
 where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -373,15 +370,12 @@ where $a_1, a_2, \ldots, a_k \in \mathbb{R}$, i.e. are scalars.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For two vectors $\boldsymbol{a}$, $\boldsymbol{b} \in \mathbb{R}^{n}$, where $\boldsymbol{a}= \left(a_1, a_2, \ldots, a_n \right)$, the &lt;strong&gt;dot product&lt;/strong&gt; of the two vectors is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 \boldsymbol{a} \cdot \boldsymbol{b} = a_1 b_1 + a_2 b_2 + \ldots a_n b_n.
 \end{equation*}
 $$&lt;p&gt;
 The result is a scalar.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -392,16 +386,12 @@ The result is a scalar.&lt;/p&gt;
 &lt;p&gt;The dot product can be generalised for more general vectors, called an &lt;strong&gt;inner product&lt;/strong&gt;, written as $\langle \cdot, \cdot \rangle=c$, where $c$ is scalar.&lt;/p&gt;
 &lt;p&gt;The length of a vector is denoted by $\left| \vec{v} \right| = \sqrt{\vec{v} \cdot \vec{v}}$.&lt;/p&gt;
 &lt;p&gt;A unit vector has length one. A non-zero vector can be transformed into a unit vector by the transformation $\vec{v}  \mapsto \vec{v} / \left| \vec{v} \right|$. This process is often called normalization, as the norm of a vector is often defined as $\sqrt{\langle \vec{v}, \vec{v} \rangle}$.&lt;/p&gt;
-&lt;p&gt;One can show that, for vectors $\boldsymbol{a}, \boldsymbol{b} \in\mathbb{R}^2$, then
-&lt;/p&gt;
 $$
 \begin{equation*}
 \boldsymbol{a} \cdot \boldsymbol{b} = \left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|  \cos\theta.
 \end{equation*}
 $$&lt;p&gt;
 Thus, any two vectors, $\vec{v}$ and $\vec{u}$ are said to be &lt;strong&gt;orthogonal&lt;/strong&gt; (or perpendicular) if $\vec{v} \cdot \vec{u}=0$.&lt;/p&gt;
-&lt;p&gt;Thus, the angle between two vectors is given by
-&lt;/p&gt;
 $$
 \begin{equation*}
  \cos\theta = \dfrac{\boldsymbol{a} \cdot \boldsymbol{b}}{\left| \boldsymbol{a} \right|  \left| \boldsymbol{b} \right|}.
@@ -418,9 +408,7 @@ $$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The Cauchy-Schwarz inequality states that the magnitude of the between two vectors is always less than or equal to the product of the magnitudes of the two vectors, i.e.
-&lt;/p&gt;
-$$
+            $$
 \left| \vec{v} \cdot \vec{w} \right| \leq \left| \vec{v} \right| \left| \vec{w} \right|.
 $$
         &lt;/div&gt;
@@ -442,13 +430,10 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The triangle inequality states that the sum of the lengths of any two sides must be greater than or equal to the length of the remaining side. Formally, this is expressed as
-&lt;/p&gt;
-$$
+            $$
 \left| \vec{v} + \vec{w} \right| \leq \left| \vec{v} \right| + \left| \vec{w} \right|.
 $$&lt;p&gt;
 It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -496,13 +481,10 @@ $$&lt;p&gt;A matrix is said to be a &lt;strong&gt;square matrix&lt;/strong&gt; i
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For two matrices $A \in \mathbb{R}^{m \times n}$ and $B \in \mathbb{R}^{n \times l}$, the matrix product $C=AB$ is a $m \times l$ matrix whose entries are given by
-&lt;/p&gt;
-$$
+            $$
 c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}
 $$&lt;p&gt;
 for any $i=1, \ldots, m$ and $j =1, \ldots, l$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -523,9 +505,7 @@ for any $i=1, \ldots, m$ and $j =1, \ldots, l$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a matrix $A \in \mathbb{R}^{m \times n}$ and vector $\boldsymbol{x} \in \mathbb{R}^{n}$, the matrix-vector product $A\boldsymbol{x} =\boldsymbol{y}$ is an $m \times l$ vector whose entries are given by
-&lt;/p&gt;
-$$
+            $$
 y_{j} = \sum_{i=1}^{n} a_{ij} x_i .
 $$
         &lt;/div&gt;
@@ -589,9 +569,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a square matrix $A \in \mathbb{R}^{n \times n}$, the trace is defined as the sum of the elements on the main diagonal.
-&lt;/p&gt;
-$$
+            $$
 \text{tr}\left(A \right) = \sum_{i=0}^{n} a_{ii}.
 $$
         &lt;/div&gt;
@@ -716,31 +694,18 @@ $$
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;determinant-of-a-matrix&#34;&gt;Determinant of a Matrix&lt;/h2&gt;
-&lt;p&gt;For a 2$\times$2 matrix &lt;/p&gt;
 $$A= \left( \begin{array}{cc} a &amp; b \\ c &amp; d \end{array} \right)$$&lt;p&gt;, the determinant, denoted by $\left| A \right|$ or det$A$ is given by ${ad-bc}$.&lt;/p&gt;
 &lt;p&gt;There are many methods to compute the determinant. the&lt;/p&gt;
 &lt;p&gt;Leibniz Method: Consider all possible choices of $n$ elements from a matrix such that there is precisely one element chosen from each row and column. Let such a choice be denoted by $\sigma$ and let sgn$\sigma$ be $-1$ to the power of the number of row swaps required to turn the choice $\sigma$ into the diagonal. Then det$\sigma$ is the sum of the products of each $\sigma$ multiplied by its sign.&lt;/p&gt;
-&lt;p&gt;Laplace expansion: delete the $i$&lt;sup&gt;th&lt;/sup&gt; row and the $j$&lt;sup&gt;th&lt;/sup&gt; column from a matrix to yield a $(n-1)\times(n-1)$ matrix, called a minor, denoted by $M_{ij}$, then the cofactor is
-&lt;/p&gt;
 $$
 C_{ij} = \left( -1 \right)^{i+j} \text{det} M_{ij}
-$$&lt;p&gt;&lt;br&gt;
-and the determinant is given by
-&lt;/p&gt;
-$$
+$$$$
 \text{det}{A} = a_{i1}C_{i1} + a_{i2}C_{i2} + \ldots + a_{in}C_{in}
-$$&lt;p&gt;
-which is the cofactor expansion along row $i$. The computation of the determinant can be performed for any row. The cofactor expansion can also be performed along any column, i.e.
-&lt;/p&gt;
-$$
+$$$$
 \text{det}{A} = a_{1j}C_{1j} + a_{2j}C_{2j} + \ldots + a_{nj}C_{nj}.
-$$&lt;p&gt;Cramers Rule: for $A\boldsymbol{x}=\boldsymbol{b}$, define the matrix $B_j$ as the matrix $A$ with the $j$&lt;sup&gt;th&lt;/sup&gt; column replaced by $\boldsymbol{b}$, then, if det$A \neq 0$,
-&lt;/p&gt;
-$$
+$$$$
 x_j = \dfrac{\text{det} B_j}{\text{det} A}.
-$$&lt;p&gt;The inverse of a matrix can be found via
-&lt;/p&gt;
-$$
+$$$$
 \left( A^{-1} \right)_{ij} = \dfrac{ C_{ji} }{\text{det} A}.
 $$&lt;h2 id=&#34;properties-of-nonsingular-matrices&#34;&gt;Properties of Nonsingular Matrices&lt;/h2&gt;
 &lt;p&gt;For a nonsingular matrix, the following &lt;em&gt;all&lt;/em&gt; hold:&lt;/p&gt;
@@ -932,14 +897,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $\boldsymbol{x}= \in \mathbb{R}^n$ and 
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And
-&lt;/p&gt;
-$$
+            $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$&lt;p&gt;
-where each matrix $U_i$ is a matrix which describes the $i$&lt;sup&gt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by
-&lt;/p&gt;
-$$
+$$$$
 U = U_{n-1} \cdots U_2 U_1 A.
 $$
         &lt;/div&gt;
@@ -1283,9 +1243,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The projection of a vector $\boldsymbol{v}$ onto a nonzero vector $\boldsymbol{u}$ is given by
-&lt;/p&gt;
-$$
+            $$
 \textrm{proj}_{\boldsymbol{u}} \left(\boldsymbol{v} \right) = \dfrac{\boldsymbol{v} \cdot \boldsymbol{u} }{\boldsymbol{u} \cdot \boldsymbol{u} }\boldsymbol{u}.
 $$
         &lt;/div&gt;
@@ -1307,9 +1265,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Given $k$ vectors $\boldsymbol{v_1}, \ldots, \boldsymbol{v_k}$ the Gram–Schmidt process defines the vectors $\boldsymbol{u_1}, \ldots, \boldsymbol{u_k}$ as follows:
-&lt;/p&gt;
-$$
+            $$
 \begin{align*}
 \boldsymbol{u_1} &amp; = \boldsymbol{v_1} \\
  &amp; \vdots \\
@@ -1317,7 +1273,6 @@ $$
 \end{align*}
 $$&lt;p&gt;
 The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as $\boldsymbol{e_j} = \dfrac{\boldsymbol{u_j}}{ \left\| \boldsymbol{u_j} \right\|}$ is a set of orthornormal vectors.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1368,13 +1323,10 @@ The set of vectors $\boldsymbol{u_k}$ are orthogonal. Normalizing the vectors as
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;In linear algebra, an eigenvector is a non-zero vector that has its direction unchanged by a given linear transformation. More precisely, an eigenvector, $\boldsymbol{v}$, of a linear transformation,  $A$, is scaled by a constant factor, $\lambda$, when the linear transformation is applied to it:
-&lt;/p&gt;
-$$
+            $$
 A \boldsymbol {v} = \lambda \boldsymbol {v}.
 $$&lt;p&gt;
 then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the corresponding eigenvalue. Thus $A\boldsymbol{v}$ and $\boldsymbol{v}$ are &lt;em&gt;collinear&lt;/em&gt;.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1384,10 +1336,7 @@ then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the cor
 
 $$
 A \boldsymbol {v} = \lambda \boldsymbol {v} \Rightarrow A \boldsymbol {v} - \lambda \boldsymbol {v} = \boldsymbol{0}
-$$&lt;p&gt;
-i.e.
-&lt;/p&gt;
-$$
+$$$$
 B \boldsymbol {v} = \boldsymbol{0} \quad \text{where} \quad B = A - \lambda I.
 $$&lt;p&gt;
 As $\boldsymbol{v}$ is not a zero vector and $B \boldsymbol{v} = \boldsymbol{0}$ then the determinant of $B$ is zero. Finding the roots to $\left| A- \lambda I \right|$ yields the eigenvalues, whose eigenvectors are in the span of the nullspace of $B=A-\lambda I$.&lt;/p&gt;
@@ -1423,8 +1372,6 @@ $$&lt;p&gt;Thus powers of matrices, such as $A^k$ can be easily computed for any
 &lt;p&gt;Principal Component Analysis is a linear transformation of a dataset, $Z$ onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data.&lt;/p&gt;
 &lt;p&gt;Shift so that the mean of each column is zero, i.e. subtract the mean of each column of $Z$ from itself, yielding a new matrix $X$.&lt;/p&gt;
 &lt;p&gt;$X\boldsymbol{w}$ is the projection of each data row on the direction $w$.&lt;/p&gt;
-&lt;p&gt;Given the mean of each column is zero, so the variance of the set of column vectors is given by
-&lt;/p&gt;
 $$
 \begin{align*}
 \text{var} \, X &amp; = \dfrac{1}{n-1} \left( x_{1}^{2} + \ldots + x_n^2 \right) \\
@@ -1436,9 +1383,7 @@ Find the vector $\boldsymbol{w}$ so that variance is maximal.&lt;/p&gt;
 &lt;p&gt;Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}\, {D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus&lt;/p&gt;
 $$
 X^T X = A = Q D Q^T .
-$$&lt;p&gt;Then, the expression for the variance is given by
-&lt;/p&gt;
-$$
+$$$$
 \begin{align*}
 \boldsymbol{w}^T X^T X \boldsymbol{w} &amp; = \boldsymbol{w}^T A \boldsymbol{w} \\
 &amp; = \boldsymbol{w}^T Q D Q^T \boldsymbol{w} \\
@@ -1490,9 +1435,7 @@ Since $\boldsymbol{w}$ is a unit vector and $Q$ is orthogonal, so $\boldsymbol{y
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The derivative of a function $f(x)$ is given by
-&lt;/p&gt;
-$$
+            $$
 f^{\prime}\left( x \right) = \lim_{h \rightarrow 0} \dfrac{f\left( x + h \right) - f\left(x\right)}{h}.
 $$
         &lt;/div&gt;
@@ -1525,9 +1468,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function of the form $f = g+h$,
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\mathrm{d}\left(h+g\right)}{\mathrm{d} x} = h^{\prime}\left( x \right) + g^{\prime}\left( x \right).
 $$
         &lt;/div&gt;
@@ -1549,9 +1490,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function which is of the form $f = g h$
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\mathrm{d}\left(hg\right)}{\mathrm{d} x} = h^{\prime}\left( x \right)g\left(x\right) + h\left(x\right)g^{\prime}\left( x \right).
 $$
         &lt;/div&gt;
@@ -1573,9 +1512,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function which is of the form $f = g /h$
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = \dfrac{h\left(x\right)g^{\prime}\left( x \right) - h^{\prime}\left( x \right)g\left(x\right)}{ \left( h^\prime \left(x\right) \right)^2 }.
 $$
         &lt;/div&gt;
@@ -1597,18 +1534,12 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The chain rule enables the derivative of a function which can be expressed as a composition of two differentiable functions. Thus, for a function which is of the from $f = g \left( h\left(x\right) \right)$
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = g^{\prime}\left( h \right) h^{\prime}\left(x\right).
-$$&lt;p&gt;
-Another expression is
-&lt;/p&gt;
-$$
+$$$$
 \dfrac{\mathrm{d}f\left(x\right)}{\mathrm{d} x} = \dfrac{\mathrm{d}g}{\mathrm{d} h} \dfrac{\mathrm{d}h}{\mathrm{d}x}.
 $$&lt;p&gt;
 This form can be understood as stating that if a function $f$ is written in terms of $g$, which itself depends on the variable $x$ (that is both $f$ and $g$ are dependent variables), then $f$ depends on $x$ as well, via the intermediate variable $g$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1641,8 +1572,6 @@ This form can be understood as stating that if a function $f$ is written in term
 &lt;h2 id=&#34;global-maximum&#34;&gt;Global Maximum&lt;/h2&gt;
 &lt;p&gt;If $f(x)$ is a continuous function of a closed, bounded interval, then it always attains a global maximum and global minimum on that interval.&lt;/p&gt;
 &lt;h2 id=&#34;linear-approximations&#34;&gt;Linear Approximations&lt;/h2&gt;
-&lt;p&gt;The tangent line at a point $x_0$ is the linear approximation of $f(x)$ at the point $x_0$, that is
-&lt;/p&gt;
 $$
 y = f\left(x_0 \right) + f^{\prime} \left(x_0 \right) \left( x - x_0 \right).
 $$&lt;p&gt;
@@ -1678,9 +1607,7 @@ $$&lt;p&gt;Then&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
 \end{equation*}
@@ -1705,16 +1632,11 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $f \in C^{n+1}\left([a, b]\right)$, i.e. $f$ is $(n+1)$-times continuously differentiable in the interval $[a, b]$, then for some $c$ in the interval, the function can be written as
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation*}
-$$&lt;p&gt;
-for some value $\xi \in \left[ a, b \right]$ where
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation*}
@@ -1738,15 +1660,12 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function $f \, : \, \mathbb{R}^n \mapsto \mathbb{R}$ which is differentiable around $\boldsymbol{a}$, then the Taylor expansion can be generalised as
-&lt;/p&gt;
-$$
+            $$
 \begin{equation*}
 f\left( \boldsymbol{x} + \boldsymbol{a} \right) = f\left( \boldsymbol{x} \right)  + \boldsymbol{a}\cdot J + \dfrac{1}{2} \boldsymbol{a}^T H \boldsymbol{a} + \ldots
 \end{equation*}
 $$&lt;p&gt;
 where $J$ is the Jacobian and $H$ is the Hessian.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1788,9 +1707,7 @@ where $J$ is the Jacobian and $H$ is the Hessian.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that
-&lt;/p&gt;
-$$
+            $$
 f^\prime (c) = 0.
 $$
         &lt;/div&gt;
@@ -1812,9 +1729,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The theorem states that if $f$ is a continuous function on the closed interval $[a ,b]$ and differentiable on the open interval $(a, b)$, then there exists a point ${c \in (a, b)}$ such that the tangent at $c$ is parallel to the secant line through the endpoints ${\big(a, f(a) \big)}$ and ${\big(b, f(b) \big)}$, that is,
-&lt;/p&gt;
-$$
+            $$
 f^\prime (c) = \dfrac{f(b) - f(a)}{b - a}.
 $$
         &lt;/div&gt;
@@ -1850,18 +1765,12 @@ Note that differentiating a vector function which is a matrix vector product mea
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;For a function with multiple input arguments, $z = f\left(x,y\right)$, the partial derivative of $f$ with respect to $x$ can be expressed as
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\partial f}{\partial x} = \lim_{h \rightarrow 0} \dfrac{f\left(x+h,y\right) - f\left(x,y\right) }{h}
-$$&lt;p&gt;
-similarly, the partial derivative with respect to $y$ can be expressed as
-&lt;/p&gt;
-$$
+$$$$
 \dfrac{\partial f}{\partial y} = \lim_{h \rightarrow 0} \dfrac{f\left(x,y+h\right) - f\left(x,y\right) }{h}.
 $$&lt;p&gt;
 Note that the partial derivative is often denoted as $\dfrac{\partial f}{\partial x} = f_x$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1881,13 +1790,10 @@ Note that the partial derivative is often denoted as $\dfrac{\partial f}{\partia
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The gradient of a function $z=f\left(x_1, x_2, \ldots, x_n \right)$ is the row vector
-&lt;/p&gt;
-$$
+            $$
 \nabla f = \left( \dfrac{\partial f}{\partial x_1}, \dfrac{\partial f}{\partial x_2}, \ldots, \dfrac{\partial f}{\partial x_n} \right).
 $$&lt;p&gt;
 As the gradient $\nabla f$ depends on the point at which it is evaluated, it is denoted by $\nabla f \left(x_1, x_2, \ldots, x_n \right)$.&lt;/p&gt;
-
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1931,14 +1837,9 @@ As the gradient $\nabla f$ depends on the point at which it is evaluated, it is 
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Each partial derivative can be differentiated again to yield a second-order partial derivative,
-&lt;/p&gt;
-$$
+            $$
 \dfrac{\partial^2 f}{\partial x_i \partial x_j} = \lim_{h \rightarrow 0} \dfrac{f_{x_i} \left(x_1, \ldots,  x_j + h, \ldots, x_n \right) - f_{x_i}\left( x_1, \ldots,  x_n \right)}{h}.
-$$&lt;p&gt;
-Thus, all second derivatives can be expressed using the &lt;strong&gt;Hessian matrix&lt;/strong&gt;
-&lt;/p&gt;
-$$
+$$$$
 H\left( \vec{x} \right) = \left(
 \begin{array}{cccc}
 f_{x_1 x_1} &amp; f_{x_1 x_2} &amp; \cdots &amp; f_{x_1 x_n} \\
@@ -1956,24 +1857,13 @@ $$
 
 
 &lt;p&gt;If the second-order partial derivatives are continuous, then the Hessian matrix $H$ is symmetric. Then, if symmetric all eigenvalues are real-valued.&lt;/p&gt;
-&lt;p&gt;The Taylor expansion of a function of more than one variable about a critical point is given by
-&lt;/p&gt;
 $$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T H\left( \vec{a} \right) \vec{x} + \ldots
-$$&lt;p&gt;
-Note that the Hessian matrix can be factorized as
-&lt;/p&gt;
-$$
+$$$$
 H = Q D Q^{-1}
-$$&lt;p&gt;
-where $D$ is the diagonal matrix $\mathrm{diag}\left( \lambda_1, \ldots, \lambda_n \right)$ and $\lambda_i$ are the eigenvalues associated with eigenvector $\boldsymbol{q_i}$ of the Hessian matrix. The eigenvector  $\boldsymbol{q_i}$ is the $i$&lt;sup&gt;th&lt;/sup&gt; column of the matrix $Q$. As the eigenvectors are orthogonal, so $Q$ is an orthogonal matrix, thus $Q^{-1} = Q^T$. Hence,
-&lt;/p&gt;
-$$
+$$$$
 f\left(\vec{x} + \vec{a} \right) = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{x}^T  Q D Q^{T} \vec{x} + \ldots
-$$&lt;p&gt;
-Letting $\vec{y}=Q^T \vec{x}$, then
-&lt;/p&gt;
-$$
+$$$$
 \begin{align*}
 f\left(\vec{x} + \vec{a} \right) &amp;  = f\left( \vec{a} \right)  + \dfrac{1}{2} \vec{y}^T D \vec{y} + \ldots \\
  &amp;  = f\left( \vec{a} \right)  + \dfrac{1}{2} \left( \lambda_1^{} y_1^2 + \ldots \lambda_n^{} y_n^2 \right) + \ldots
@@ -1988,14 +1878,9 @@ So:&lt;/p&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;jacobians&#34;&gt;Jacobians&lt;/h2&gt;
 &lt;p&gt;If the function outputs a vector, i.e. $\vec{f} \, : \, \mathbb{R}^n \mapsto \mathbb{R}^{m}$, write each component of $\vec{f}=\left( f_1, \ldots, f_m \right)$ and the same procedures can be performed on each component of the vector-valued function. Thus, a gradient can be computed for each component $\nabla f_i$, critical points must satisfy the vector equation $\vec{f}\left(\vec{x}^{*} \right) = \vec{0}$.&lt;/p&gt;
-&lt;p&gt;or for $f(u,v)$, let $u=g(x), v=h(x)$ then the function is a composition $F(x) = f\left( g(x),h(x) \right)$. Apply the chain rule to compute the gradient
-&lt;/p&gt;
 $$
 \nabla F = \nabla \left( f (g(x)), f(h(x)) \right) = \nabla f \dfrac{\partial (g,h)}{\partial x}
-$$&lt;p&gt;&lt;br&gt;
-where
-&lt;/p&gt;
-$$
+$$$$
 \nabla f \dfrac{\partial (g,h)}{\partial x} = \left(
 \begin{array}{c}
 \nabla g \\
@@ -2003,14 +1888,9 @@ $$
 \end{array} \right)
 $$&lt;p&gt;
 is the &lt;strong&gt;Jacobi matrix&lt;/strong&gt;. Each row of the Jacobi matrix is a gradient of $g$ or $h$.&lt;/p&gt;
-&lt;p&gt;For a vector $\boldsymbol{w}$, the &lt;strong&gt;directional derivative&lt;/strong&gt; of $f(\boldsymbol{x})$ in the direction of $\boldsymbol{w}$ is given by
-&lt;/p&gt;
 $$
 \nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \lim_{h \rightarrow 0} \dfrac{f(\boldsymbol{x} + h\boldsymbol{v}) - f(\boldsymbol{x})}{h}
-$$&lt;p&gt;
-If the function is differentiable, then
-&lt;/p&gt;
-$$
+$$$$
 \nabla_{\boldsymbol{w}} f \left(\boldsymbol{x}\right) = \nabla f \left(\boldsymbol{x}\right) \cdot  \boldsymbol{w}
 $$&lt;p&gt;
 As, by convention, $\nabla f \left(\boldsymbol{x}\right)$ is a column vector.&lt;/p&gt;

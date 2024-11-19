@@ -236,16 +236,11 @@
 &lt;/a&gt;
 --&gt;
 &lt;p&gt;This notebook presents the Taylor series expansion of the sine function, $\sin\left( x\right)$ close to zero for an increasing number of terms in the approximation.&lt;/p&gt;
-&lt;p&gt;Given a function $f : \mathbb{R} \mapsto \mathbb{R}$ which is infinitely differentiable at a point $c$, the Taylor series of $f(c)$ is given by
-&lt;/p&gt;
 $$
 \begin{equation*}
 \sum\limits_{k=0}^{\infty} \dfrac{ f^{(k)} \left( c \right) }{k!} \left( x - c \right)^{k}.
 \end{equation*}
-$$&lt;p&gt;
-Thus, as $f^{\prime} = \cos\left(x\right)$, it can be shown that
-&lt;/p&gt;
-$$
+$$$$
 \begin{equation*}
 \sin \left( x \right) \approx x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \dfrac{x^7}{7!}  \ldots
 \end{equation*}

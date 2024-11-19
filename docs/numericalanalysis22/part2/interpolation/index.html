@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2874,16 +2874,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>The <strong>Lagrange form of an interpolating polynomial</strong> is given by
-</p>
-$$
+            $$
 \begin{equation*}
 \Pi_n \left( x\right) = \sum\limits_{i=0}^{n} y_i l_i\left(x\right)
 \end{equation*}
-$$<p>
-where $l_{i} \in \mathbb{P}_{n}$ is such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i~=~0,\ldots, n$, are called <strong>characteristic polynomials</strong> and are given by
-</p>
-$$
+$$$$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
@@ -2930,8 +2925,6 @@ $$
     <div class="details-content">
         <div class="admonition-content">
             <p>Let $x_0, x_1, \ldots x_n$ be $n+1$ distinct nodes and let $x$ be a point belonging to the domain of a given function $f$.</p>
-<p>Let $I_x$ be the smallest interval containing the nodes $x_0, x_1, \ldots x_n$ and $x$ and assume that $f \in C^{n+1}\left( I_x \right)$. Then the interpolation error at the point $x$ is defined and given by
-</p>
 $$
 \begin{equation*}
 \begin{aligned}
@@ -2940,10 +2933,7 @@ E_n(x) & = f(x) − \Pi_n f (x) \\
 \end{aligned}
 \tag{1}
 \end{equation*}
-$$<p>
-where $\xi \in I_x$ and $\omega_{n+1}$ is the nodal polynomial of degree $n + 1$, which is defined as
-</p>
-$$
+$$$$
 \begin{equation*}
 \omega_{n+1}(x) = \prod\limits_{i=0}^{n} \left(x - x_i \right).
 \end{equation*}
@@ -2968,22 +2958,16 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Define the following space
-</p>
-$$
+            $$
 \begin{equation*}
 \mathrm{L}^{2}(a, b) = \bigl \lbrace f : (a, b) \rightarrow \mathbb{R}, \int_{a}^{b} | f(x) |^{2} \, \mathrm{d}x < \infty \bigr \rbrace
 \end{equation*}
-$$<p>
-with
-</p>
-$$
+$$$$
 \begin{equation*}
 \| f \|^{}_{\mathrm{L}^{2}(a, b)} = \left( \int_{a}^{b} | f(x) |^{2} \, \mathrm{d} x \right)^{1 / 2}.
 \end{equation*}
 $$<p>
 This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of the function $|f|^{2}$ is in the Lebesgue sense - in particular, $f$ needs not be continuous everywhere.</p>
-
         </div>
     </div>
 </div>
@@ -2991,13 +2975,9 @@ This defines a <em>norm</em> for $\mathrm{L}^{2}(a, b)$.  Note that integral of 
 
 
 
-<p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals $I_j = \left[ x_j , x_{j+1} \right]$ of length $h_j$ such that
-</p>
 $$
 [a, b] = \bigcup\limits_{j=0}^{K−1}I_j.$$<p>
 Let ${h = \max\limits_{0 \le j \le K−1} h_j}$.</p>
-<p>For $k \geq 1$, introduce on $\mathcal{T}_h$ the piecewise polynomial space
-</p>
 $$
 \begin{equation*}
 X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,  v |_{I_j} \in \mathbb{P}_k \left( I_j \right), \quad \forall \, I_j \in \mathcal{T}_h \bigr\rbrace \tag{2}
@@ -3005,8 +2985,6 @@ X_h^k = \bigl\lbrace v \in C^0([a, b]) \, : \,  v |_{I_j} \in \mathbb{P}_k \left
 $$<p>which is the space of the continuous functions over the interval $[a, b]$ whose restrictions on each $I_j$ are polynomials of degree less than or equal to $k$.</p>
 <p>Then, for any continuous function $f$ in $[a, b]$, the piecewise interpolation polynomial $\Pi^k_h f$ coincides on each $I_j$ with the interpolating polynomial of $\left. f \right|_{I_j}$ at the $n + 1$ nodes
 $\lbrace x_j^{(i)}, 0 \leq i \leq n \rbrace$.</p>
-<p>As a consequence, if $f \in C^{k+1}([a, b])$, then from \eqref{eq:basic_interpolation_error} within each interval the following error estimate holds
-</p>
 $$
 \begin{equation*}
 \left\Vert f − \Pi_h^k f \right\Vert_\infty \leq C h^{k+1} \left\Vert f^{(k+1} \right\Vert_\infty .
@@ -3025,16 +3003,11 @@ $$<div class="details admonition Theorem open">
         <div class="admonition-content">
             <p>Partition $\mathcal{T_h}$ of $[a, b]$ into $K$ subintervals
 $I_j = [x_j , x_{j+1}]$ of length $h_j$, with $h = \max\limits_{0 \le j \le K−1} h_j$, such that $[a, b] = \bigcup\limits_{j=0}^{K−1}I_j$. Now using Lagrange interpolation on each subinterval $I_j$ using $n + 1$ equally spaced nodes $\lbrace{ x^{(i)}_{j}, 0 \le i \le n \rbrace}$ with a small $n$. Then $\Pi_n^k$ is the <em>piecewise interpolation polynomial</em>.</p>
-<p>Let $0 \leq m \leq k+1$, with $k \geq 1$ and assume that $f^{(m)} \in$ $\mathrm{L}^{2}(a, b)$ for $0 \leq m \leq k+1$ then there exists a positive constant $C$, independent of $h$, such that
-</p>
 $$
 \begin{equation*}
 \left\| \left( f - \Pi_{h}^{k} f\right)^{(m)} \right\|_{\mathrm{L}^{2}(a, b)} \leq C h^{k+1-m} \left\| f^{(k+1)} \right\|_{\mathrm{L}^{2}(a, b)} .
 \end{equation*}
-$$<p>
-In particular, for $k=1$ and $m=0$, or $m=1$
-</p>
-$$
+$$$$
 \begin{equation*}
 \begin{aligned}
 \left\| f-\Pi_{h}^{1} f \right\|_{\mathrm{L}^{2}(a, b)} & \leq C_{1} h^{2} \left\| f^{\prime \prime} \right\|_{\mathrm{L}^{2}(a, b)} \newline

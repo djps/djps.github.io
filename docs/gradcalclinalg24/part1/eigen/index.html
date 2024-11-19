@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 18, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: November 19, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -2822,13 +2822,10 @@
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>In linear algebra, an eigenvector is a non-zero vector that has its direction unchanged by a given linear transformation. More precisely, an eigenvector, $\boldsymbol{v}$, of a linear transformation,  $A$, is scaled by a constant factor, $\lambda$, when the linear transformation is applied to it:
-</p>
-$$
+            $$
 A \boldsymbol {v} = \lambda \boldsymbol {v}.
 $$<p>
 then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the corresponding eigenvalue. Thus $A\boldsymbol{v}$ and $\boldsymbol{v}$ are <em>collinear</em>.</p>
-
         </div>
     </div>
 </div>
@@ -2838,10 +2835,7 @@ then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the cor
 
 $$
 A \boldsymbol {v} = \lambda \boldsymbol {v} \Rightarrow A \boldsymbol {v} - \lambda \boldsymbol {v} = \boldsymbol{0}
-$$<p>
-i.e.
-</p>
-$$
+$$$$
 B \boldsymbol {v} = \boldsymbol{0} \quad \text{where} \quad B = A - \lambda I.
 $$<p>
 As $\boldsymbol{v}$ is not a zero vector and $B \boldsymbol{v} = \boldsymbol{0}$ then the determinant of $B$ is zero. Finding the roots to $\left| A- \lambda I \right|$ yields the eigenvalues, whose eigenvectors are in the span of the nullspace of $B=A-\lambda I$.</p>
@@ -2877,8 +2871,6 @@ $$<p>Thus powers of matrices, such as $A^k$ can be easily computed for any $k$.<
 <p>Principal Component Analysis is a linear transformation of a dataset, $Z$ onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data.</p>
 <p>Shift so that the mean of each column is zero, i.e. subtract the mean of each column of $Z$ from itself, yielding a new matrix $X$.</p>
 <p>$X\boldsymbol{w}$ is the projection of each data row on the direction $w$.</p>
-<p>Given the mean of each column is zero, so the variance of the set of column vectors is given by
-</p>
 $$
 \begin{align*}
 \text{var} \, X & = \dfrac{1}{n-1} \left( x_{1}^{2} + \ldots + x_n^2 \right) \\
@@ -2890,9 +2882,7 @@ Find the vector $\boldsymbol{w}$ so that variance is maximal.</p>
 <p>Note that as ${A = X^T X}$ is symmetric, i.e. ${A^T = A}$, then all eigenvalues are real and there exists a orthonormal basis given by the eigenvectors, $\boldsymbol{q_i}$ of $A$. Let ${Q = \left( \boldsymbol{q_1} \, \boldsymbol{q_2} \cdots \boldsymbol{q_n} \right)}$, with ${Q^T = Q^{-1}}$ and ${D = \text{diag}\, {D} }$. Then $A$ can be expressed using the eigenvalues and eigenvectors, thus</p>
 $$
 X^T X = A = Q D Q^T .
-$$<p>Then, the expression for the variance is given by
-</p>
-$$
+$$$$
 \begin{align*}
 \boldsymbol{w}^T X^T X \boldsymbol{w} & = \boldsymbol{w}^T A \boldsymbol{w} \\
 & = \boldsymbol{w}^T Q D Q^T \boldsymbol{w} \\
