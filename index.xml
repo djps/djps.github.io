@@ -359,7 +359,6 @@ markmap:
 &lt;li&gt;difference schemes&lt;/li&gt;
 &lt;li&gt;Richardson extrapolation&lt;/li&gt;
 &lt;li&gt;quadrature rules&lt;/li&gt;
-&lt;li&gt;Monte Carlo integration&lt;/li&gt;
 &lt;li&gt;time stepping schemes for ordinary differential equations&lt;/li&gt;
 &lt;li&gt;Runge-Kutta schemes&lt;/li&gt;
 &lt;li&gt;finite difference method for partial differential equations&lt;/li&gt;
@@ -373,7 +372,7 @@ markmap:
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  title Provisional Schedule
+  title Provisional Schedule **2024**
 
   section  Errors
   Taylor Series                    :a1,  02-01, 1w
@@ -482,7 +481,7 @@ markmap:
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
-&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
+&lt;p&gt;Homework will be assigned approximately every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
@@ -762,7 +761,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-123674895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-153849672&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -780,7 +779,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-123674895&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-153849672&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7119,13 +7118,14 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalanalysis22/assignments/assignments/</guid>
       <description>&lt;h2 id=&#34;assignments&#34;&gt;Assignments&lt;/h2&gt;
+&lt;p&gt;As per the instructions &lt;a href=&#34;https://djps.github.io/docs/numericalanalysis22/intro/intro/#assignments&#34;&gt;here&lt;/a&gt;, by submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as a bonus achievement.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/1/assignment1.pdf&#34;&gt;Assignment 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/2/assignment2.pdf&#34;&gt;Assignment 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/3/assignment3.pdf&#34;&gt;Assignment 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/4/assignment4.pdf&#34;&gt;Assignment 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/5/assignment5.pdf&#34;&gt;Assignment 5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/6/assignment6.pdf&#34;&gt;Assignment 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment1.pdf&#34;&gt;Assignment 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment2.pdf&#34;&gt;Assignment 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment3.pdf&#34;&gt;Assignment 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment4.pdf&#34;&gt;Assignment 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment5.pdf&#34;&gt;Assignment 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/assignments/2022/ca-math-804/assignment6.pdf&#34;&gt;Assignment 6&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -10510,7 +10510,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-536917824&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-318679245&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10528,7 +10528,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-536917824&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-318679245&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10539,7 +10539,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-631852497&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-523478691&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10557,7 +10557,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-631852497&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-523478691&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10570,7 +10570,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-982567143&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-694312587&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10588,7 +10588,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-982567143&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-694312587&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
