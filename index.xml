@@ -372,10 +372,10 @@ markmap:
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  title Provisional Schedule **2024**
+  title Provisional Schedule 2024
 
   section  Errors
-  Taylor Series                    :a1,  02-01, 1w
+  Taylor Series                    :a1,  cl1, 02-01, 1w
   Number Representations           :a1b, 02-08, 1w
 
   section  Equations
@@ -392,6 +392,11 @@ markmap:
 
   section  Summary
   Summary                          :active, a7,  05-15, 1w
+
+  click cl1  href &#34;https://djps.github.io/docs/numericalmethods24/part1/taylor/&#34;
+  click cl1b href &#34;https://djps.github.io/docs/numericalmethods24/part1/number-representations/&#34;
+  click cl2  href &#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#direct-methods&#34;
+  click cl2b href &#34;https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/&#34;
 &lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
@@ -761,7 +766,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-153849672&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-657423819&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -779,7 +784,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-153849672&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-657423819&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7203,7 +7208,7 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
       <link>https://djps.github.io/talks/bremen/</link>
       <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/talks/bremen/</guid>
-      <description>&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/bremen.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;!-- The slides can be found [[here]](/presentations/bremen.pdf). --&gt;
 &lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/bremen/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;span style = &#34;font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;&#34;&gt;github&lt;/span&gt; repository for some of the content can be found &lt;a href=&#34;https://github.com/djps/rayleigh-plesset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -10510,7 +10515,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-318679245&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-467152398&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10528,7 +10533,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-318679245&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-467152398&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10539,7 +10544,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-523478691&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-275641389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10557,7 +10562,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-523478691&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-275641389&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10570,7 +10575,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-694312587&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-495236718&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10588,7 +10593,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-694312587&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-495236718&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
