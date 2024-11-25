@@ -137,7 +137,14 @@
   section  Summary
   Summary                          :active, a7,  05-15, 1w
 
-  click a1  href &#34;https://djps.github.io/docs/numericalmethods24/part1/taylor/&#34;
+  click a1   href &#34;https://djps.github.io/docs/numericalmethods24/part1/taylor/&#34;
+  click a1b  href &#34;https://djps.github.io/docs/numericalmethods24/part1/number-representations/&#34;
+  click a2   href &#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#direct-methods/&#34;
+  click a2b  href &#34;https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/&#34;  
+  click a5   href &#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#indirect-methods&#34;
+  click a3   href &#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&#34;
+  click a4   href &#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&#34;  
+  click a6   href &#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&#34;  
 &lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
