@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cavitation | David Sinden</title>
+    <link>https://djps.github.io/tags/cavitation/</link>
+      <atom:link href="https://djps.github.io/tags/cavitation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cavitation</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hu1617270246782058896.png</url>
+      <title>Cavitation</title>
+      <link>https://djps.github.io/tags/cavitation/</link>
+    </image>
+    
+    <item>
+      <title>Nonlinear Dynamics of Microbubbles in Tissue</title>
+      <link>https://djps.github.io/abstracts/bremen/</link>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/abstracts/bremen/</guid>
+      <description>&lt;p&gt;High-intensity focused ultrasound (HIFU) aims to destroy pathogenic tissue by converting energy from ultrasound into heat. At certain pressures and frequencies, cavitation activity has been shown to greatly enhance the local rate of heat deposition and also provide a significant aid to treatment monitoring. However, cavitation occurring pre-focally or growing unstably around the focal region is known to impede safe and effective treatment delivery. Thus, the influence of cavitation on wave propagation and beam focusing and thus effective treatment delivery is of real importance. This talk presents the rich nonlinear behaviour the bubbles, stable and chaotic oscillation, interactions, and strategies to control their oscillations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Dynamics of Microbubbles in Tissue</title>
+      <link>https://djps.github.io/talks/bremen/</link>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/bremen/</guid>
+      <description>&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/bremen.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/bremen/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;span style = &#34;font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;&#34;&gt;github&lt;/span&gt; repository for some of the content can be found &lt;a href=&#34;https://github.com/djps/rayleigh-plesset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
