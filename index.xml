@@ -273,7 +273,7 @@ markmap:
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
+      <description>&lt;p&gt;This site will be the primary source of information for the course.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
 &lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -378,7 +378,7 @@ markmap:
   Taylor Series                    :a1,  02-01, 1w
   Number Representations           :a1b, 02-08, 1w
 
-  section  Equations
+  section  Algebraic Equations
   Linear Equations 1               :a2,  02-14, 3w
   Nonlinear Equations              :a2b, 03-02, 1w
   Linear Equations 2               :a5,  04-17, 3w
@@ -402,6 +402,45 @@ markmap:
   click a4   href &#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&#34;  
   click a6   href &#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&#34;  
 &lt;/div&gt;
+&lt;!--
+```mermaid
+gantt
+  dateFormat   MM-DD
+  axisFormat   %e-%b
+
+  title Provisional Schedule 2025
+
+  section  Errors
+  Taylor Series                    :a1,  02-03, 1w
+  Number Representations           :a1b, 02-10, 1w
+
+  section  Equations
+  Linear Equations 1               :a2,  02-17, 2.5w
+  Nonlinear Equations              :a2b, 03-10, 1w
+  Linear Equations 2               :a5,  03-17, 2.5w
+
+  section  Approximations
+  Interpolation                    :a3a, 04-07, 1w
+  Break                            :crit, aX,  04-14, 1w
+  Interpolation                    :a3b, 04-21, 1w
+  Integration                      :a4,  04-28, 2w
+
+  section  Solutions
+  Ordinary Differential Equations  :a6,  05-02, 2w
+
+  section  Summary
+  Summary                          :active, a7,  05-14, 1w
+
+  click a1   href &#34;https://djps.github.io/docs/numericalmethods24/part1/taylor/&#34;
+  click a1b  href &#34;https://djps.github.io/docs/numericalmethods24/part1/number-representations/&#34;
+  click a2   href &#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#direct-methods/&#34;
+  click a2b  href &#34;https://djps.github.io/docs/numericalmethods24/part1/nonlinear-equations/&#34;  
+  click a5   href &#34;https://djps.github.io/docs/numericalmethods24/part1/linear-equations/#indirect-methods&#34;
+  click a3a  href &#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&#34;
+  click a3b  href &#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&#34;
+  click a4   href &#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&#34;  
+  click a6   href &#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&#34;  
+``` --&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
@@ -441,7 +480,7 @@ markmap:
       - Trapezium
       - Romberg Algorithm
       - Gaussian Quadrature
-  - [Differential Equations](/docs/numericalmethods24/part3/odes/)
+  - [Solutions](/docs/numericalmethods24/part3/odes/)
     - Difference Schemes
     - Ordinary Differential Equations
     - Partial Differential Equations&lt;/pre&gt;
@@ -483,13 +522,13 @@ markmap:
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in May and a resit in August.&lt;/p&gt;
+&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;p&gt;Previous exams, as well as sample questions and solutions can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
-&lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
+&lt;p&gt;Homework submission is voluntary, although highly recommended. It is possible to get a 100% final grade without submitting homework.&lt;/p&gt;
 &lt;p&gt;Homework will be assigned approximately every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
@@ -497,7 +536,7 @@ markmap:
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
 &lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
-&lt;h2 id=&#34;artifical-intelligence-ai-use-policy&#34;&gt;Artifical Intelligence (AI) Use Policy&lt;/h2&gt;
+&lt;h2 id=&#34;artificial-intelligence-ai-use-policy&#34;&gt;Artificial Intelligence (AI) Use Policy&lt;/h2&gt;
 &lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -770,7 +809,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-245367918&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-954321786&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -788,7 +827,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-245367918&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-954321786&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3584,7 +3623,7 @@ then $\boldsymbol {v}$ is called an eigenvector of $A$, and $\lambda$ is the cor
 $$
 A \boldsymbol {v} = \lambda \boldsymbol {v} \Rightarrow A \boldsymbol {v} - \lambda \boldsymbol {v} = \boldsymbol{0}
 $$$$
-B \boldsymbol {v} = \boldsymbol{0} \quad \text{where} \quad B = A - \lambda I.
+B \boldsymbol {v} = \boldsymbol{0} \quad \textsf{where} \quad B = A - \lambda I.
 $$&lt;p&gt;
 As $\boldsymbol{v}$ is not a zero vector and $B \boldsymbol{v} = \boldsymbol{0}$ then the determinant of $B$ is zero. Finding the roots to $\left| A- \lambda I \right|$ yields the eigenvalues, whose eigenvectors are in the span of the nullspace of $B=A-\lambda I$.&lt;/p&gt;
 $$
@@ -10519,7 +10558,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-286579143&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-376418259&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10537,7 +10576,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-286579143&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-376418259&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10548,7 +10587,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-341957826&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-547281369&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10566,7 +10605,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-341957826&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-547281369&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10579,7 +10618,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-952364781&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-389514267&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10597,7 +10636,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-952364781&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-389514267&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
