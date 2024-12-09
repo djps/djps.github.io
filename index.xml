@@ -93,12 +93,13 @@
 &lt;li&gt;Jacobians and Hessians&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
+&lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
 &lt;div class=&#34;mermaid&#34;&gt;gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5
+  todayMarker  off 
 
   title Provisional Schedule 2024
 
@@ -229,18 +230,18 @@ markmap:
 &lt;p&gt;By the end of the module, students will be able to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;describe the basic principles of discretization which are used in the numerical treatment of continuous problems;&lt;/p&gt;
+&lt;p&gt;Describe the basic principles of discretization which are used in the numerical treatment of continuous problems;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;&lt;/p&gt;
+&lt;p&gt;Command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;&lt;/p&gt;
+&lt;p&gt;Recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
   &lt;!-- - implement simple numerical algorithms in a high level programming language; --&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.&lt;/li&gt;
+&lt;li&gt;Understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;knowledge-abilities-or-skills&#34;&gt;Knowledge, Abilities, or Skills&lt;/h2&gt;
 &lt;ul&gt;
@@ -315,12 +316,12 @@ markmap:
       * De Casteljau&#39;s algorithm --&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
-&lt;!-- todayMarker  off stroke-width:5px, stroke:#164e63, opacity:0.5 --&gt;
+&lt;!-- todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5 --&gt;
 &lt;div class=&#34;mermaid&#34;&gt;gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  todayMarker  off stroke-width:5px, stroke:#0f0, opacity:0.5
+  todayMarker  off
 
   title Provisional Schedule 2024
 
@@ -483,7 +484,7 @@ markmap:
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
 &lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
-&lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
+&lt;p&gt;The problems on the exam will be similar to the ones from homework. So, by doing homework you prepare for the exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
 &lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code of Academic Integrity&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
 &lt;h2 id=&#34;artificial-intelligence-use-policy&#34;&gt;Artificial Intelligence Use Policy&lt;/h2&gt;
@@ -759,7 +760,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-462879513&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-659283174&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -777,7 +778,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-462879513&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-659283174&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10508,7 +10509,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-897153426&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-296357814&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10526,7 +10527,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-897153426&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-296357814&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10537,7 +10538,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-196237584&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-983147265&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10555,7 +10556,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-196237584&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-983147265&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10568,7 +10569,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-197583426&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-469215738&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10586,7 +10587,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-197583426&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-469215738&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
