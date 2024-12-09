@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: December 5, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: December 9, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-12-05T15:54:37&#43;01:00">
+    <meta property="article:modified_time" content="2024-12-09T09:47:12&#43;01:00">
   
 
   
@@ -1786,9 +1786,9 @@
             </li>
           <li>
               <a
-                href="#artificial-intelligence-ai-use-policy"
+                href="#artificial-intelligence-use-policy"
                 class="hb-docs-link"
-              >Artificial Intelligence (AI) Use Policy</a>
+              >Artificial Intelligence Use Policy</a>
             </li>
           </ul>
   
@@ -2890,7 +2890,7 @@
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#academic-integrity">Academic Integrity</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#artificial-intelligence-ai-use-policy">Artificial Intelligence (AI) Use Policy</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#artificial-intelligence-use-policy">Artificial Intelligence Use Policy</a>
       </li></ul>
 
   
@@ -2934,13 +2934,14 @@
 
       <div class="content text-base">
         <h1>JTMS-MAT-13: Numerical Methods</h1>
-        <p>This site will be the primary source of information for the course.</p>
+        <p>This site will be the primary source of information and resources for the course.</p>
 <h2 id="lectures">Lectures</h2>
 <p>All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.</p>
+<p>An office hour will be announced in due course.</p>
 <p>Course notes can be found <a href="/docs/numericalmethods24/notes/">here</a>.</p>
 <h2 id="intended-learning-outcomes">Intended Learning Outcomes</h2>
 <p>By the end of the module, students will be able to:</p>
-<ul>
+<ol>
 <li>
 <p>describe the basic principles of discretization which are used in the numerical treatment of continuous problems;</p>
 </li>
@@ -2950,18 +2951,18 @@
 <li>
 <p>recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;</p>
 </li>
-</ul>
+</ol>
   <!-- - implement simple numerical algorithms in a high level programming language; -->
-<ul>
+<ol start="4">
 <li>understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.</li>
-</ul>
+</ol>
 <h2 id="knowledge-abilities-or-skills">Knowledge, Abilities, or Skills</h2>
 <ul>
 <li>
-<p>Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations</p>
+<p>Knowledge of calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations</p>
 </li>
 <li>
-<p>Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations</p>
+<p>Knowledge of linear algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations</p>
 </li>
 <li>
 <p>Some examples will be presented as <a href="/docs/numericalmethods24/notebooks/">python notebooks</a>, but no knowledge of python is required, nor will there be any assessment of ability to code.</p>
@@ -2982,17 +2983,18 @@
 <p>The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).</p>
 </li>
 <li>
-<p>Mandatory for ECE, IMS, MATH, PHY.</p>
-</li>
-<li>
-<p>Elective for all other study programs.</p>
+<p>Mandatory for ECE. Mandatory elective for CS and RIS.</p>
 </li>
 </ul>
 <h2 id="text-books">Text Books</h2>
 <p>There is no primary or required book, but there are many suitable books, such as:</p>
 <ul>
-<li>&ldquo;<em>An Introduction to Numerical Methods and Analysis</em>&rdquo; - J. F. Epperson (2013) Wiley 2nd Edition.</li>
-<li>&ldquo;<em>Numerical Analysis</em>&rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition.</li>
+<li>
+<p>&ldquo;<em>An Introduction to Numerical Methods and Analysis</em>&rdquo; - J. F. Epperson (2013) Wiley 2nd Edition. ISBN: <span class="font-mono">978-1118367599</span>.</p>
+</li>
+<li>
+<p>&ldquo;<em>Numerical Analysis</em>&rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition. ISBN: <span class="font-mono">978-0538733519</span>.</p>
+</li>
 </ul>
 <h2 id="course-outline">Course Outline</h2>
 <p>The following topics will be covered:</p>
@@ -3027,9 +3029,12 @@
       * De Casteljau's algorithm -->
 <h3 id="itinerary">Itinerary</h3>
 <p>Provisionally, the course will run as follows</p>
+<!-- todayMarker  off stroke-width:5px, stroke:#164e63, opacity:0.5 -->
 <div class="mermaid">gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
+
+  todayMarker  off stroke-width:5px, stroke:#0f0, opacity:0.5
 
   title Provisional Schedule 2024
 
@@ -3194,8 +3199,8 @@ markmap:
 <p>Note that each homework assignment carries equal marks.</p>
 <p>The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.</p>
 <h2 id="academic-integrity">Academic Integrity</h2>
-<p>All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the <a href="https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity" target="_blank" rel="noopener">&ldquo;Code of Academic Integrity&rdquo;</a>. Violations of the Code should be brought to the attention of the Academic Integrity Committee.</p>
-<h2 id="artificial-intelligence-ai-use-policy">Artificial Intelligence (AI) Use Policy</h2>
+<p>All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the <a href="https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity" target="_blank" rel="noopener">Code of Academic Integrity</a>. Violations of the Code should be brought to the attention of the Academic Integrity Committee.</p>
+<h2 id="artificial-intelligence-use-policy">Artificial Intelligence Use Policy</h2>
 <p>This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.</p>
 <ol>
 <li>
@@ -3232,9 +3237,9 @@ https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-05T15:54:37.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-09T09:47:12.000Z">
     <span>Last updated on</span>
-    Dec 5, 2024</time>
+    Dec 9, 2024</time>
       
       
   

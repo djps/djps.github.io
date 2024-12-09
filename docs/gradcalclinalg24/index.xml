@@ -98,6 +98,8 @@
   dateFormat   MM-DD
   axisFormat   %e-%b
 
+  todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5
+
   title Provisional Schedule 2024
 
   section  Linear Algebra
@@ -199,7 +201,7 @@ markmap:
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
 &lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
-&lt;h2 id=&#34;artifical-intelligence-ai-use-policy&#34;&gt;Artifical Intelligence (AI) Use Policy&lt;/h2&gt;
+&lt;h2 id=&#34;artifical-intelligence-use-policy&#34;&gt;Artifical Intelligence Use Policy&lt;/h2&gt;
 &lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -228,7 +230,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-489356712&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-462879513&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -246,7 +248,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-489356712&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-462879513&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

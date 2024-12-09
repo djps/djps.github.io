@@ -17,13 +17,14 @@
       <link>https://djps.github.io/docs/numericalmethods24/intro/intro/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods24/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of information for the course.&lt;/p&gt;
+      <description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
+&lt;p&gt;An office hour will be announced in due course.&lt;/p&gt;
 &lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
 &lt;p&gt;By the end of the module, students will be able to:&lt;/p&gt;
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;describe the basic principles of discretization which are used in the numerical treatment of continuous problems;&lt;/p&gt;
 &lt;/li&gt;
@@ -33,18 +34,18 @@
 &lt;li&gt;
 &lt;p&gt;recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
   &lt;!-- - implement simple numerical algorithms in a high level programming language; --&gt;
-&lt;ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;understand the documentation of standard numerical library code and understand potential limitations and caveats of such algorithms.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;knowledge-abilities-or-skills&#34;&gt;Knowledge, Abilities, or Skills&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations&lt;/p&gt;
+&lt;p&gt;Knowledge of calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
+&lt;p&gt;Knowledge of linear algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Some examples will be presented as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/&#34;&gt;python notebooks&lt;/a&gt;, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
@@ -65,17 +66,18 @@
 &lt;p&gt;The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Mandatory for ECE, IMS, MATH, PHY.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Elective for all other study programs.&lt;/p&gt;
+&lt;p&gt;Mandatory for ECE. Mandatory elective for CS and RIS.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;text-books&#34;&gt;Text Books&lt;/h2&gt;
 &lt;p&gt;There is no primary or required book, but there are many suitable books, such as:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;An Introduction to Numerical Methods and Analysis&lt;/em&gt;&amp;rdquo; - J. F. Epperson (2013) Wiley 2nd Edition.&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;Numerical Analysis&lt;/em&gt;&amp;rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;An Introduction to Numerical Methods and Analysis&lt;/em&gt;&amp;rdquo; - J. F. Epperson (2013) Wiley 2nd Edition. ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-1118367599&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;&lt;em&gt;Numerical Analysis&lt;/em&gt;&amp;rdquo; - R. L. Burden and J. D. Faires (2011) Brooks/Cole. 9th Edition. ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-0538733519&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
 &lt;p&gt;The following topics will be covered:&lt;/p&gt;
@@ -110,9 +112,12 @@
       * De Casteljau&#39;s algorithm --&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
+&lt;!-- todayMarker  off stroke-width:5px, stroke:#164e63, opacity:0.5 --&gt;
 &lt;div class=&#34;mermaid&#34;&gt;gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
+
+  todayMarker  off stroke-width:5px, stroke:#0f0, opacity:0.5
 
   title Provisional Schedule 2024
 
@@ -277,8 +282,8 @@ markmap:
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
-&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
-&lt;h2 id=&#34;artificial-intelligence-ai-use-policy&#34;&gt;Artificial Intelligence (AI) Use Policy&lt;/h2&gt;
+&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code of Academic Integrity&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
+&lt;h2 id=&#34;artificial-intelligence-use-policy&#34;&gt;Artificial Intelligence Use Policy&lt;/h2&gt;
 &lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
