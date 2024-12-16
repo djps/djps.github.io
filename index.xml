@@ -99,7 +99,7 @@
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  todayMarker  off 
+  todayMarker  off
 
   title Provisional Schedule 2024
 
@@ -197,7 +197,7 @@ markmap:
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
 &lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
-&lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
+&lt;p&gt;The two lowest homework scores will be deleted before the final homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
@@ -316,8 +316,10 @@ markmap:
       * De Casteljau&#39;s algorithm --&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
-&lt;!-- todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5 --&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
+&lt;!-- todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5
+
+```mermaid
+gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
@@ -352,29 +354,29 @@ markmap:
   click a3   href &#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&#34;
   click a4   href &#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&#34;  
   click a6   href &#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&#34;  
-&lt;/div&gt;
-&lt;!--
-```mermaid
-gantt
+```
+--&gt;
+&lt;div class=&#34;mermaid&#34;&gt;gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
+  todayMarker  off
 
   title Provisional Schedule 2025
 
   section  Errors
-  Taylor Series                    :a1,  02-03, 1w
-  Number Representations           :a1b, 02-10, 1w
+  Taylor Series                    :a1,       02-03, 1w
+  Number Representations           :a1b,      02-10, 1w
 
   section  Equations
-  Linear Equations 1               :a2,  02-17, 2.5w
-  Nonlinear Equations              :a2b, 03-10, 1w
-  Linear Equations 2               :a5,  03-17, 2.5w
+  Linear Equations 1               :a2,        02-17, 2.5w
+  Nonlinear Equations              :a2b,       03-10, 1w
+  Linear Equations 2               :a5,        03-17, 2.5w
 
   section  Approximations
-  Interpolation                    :a3a, 04-07, 1w
+  Interpolation                    :a3a,       04-07, 1w
   Break                            :crit, aX,  04-14, 1w
-  Interpolation                    :a3b, 04-21, 1w
-  Integration                      :a4,  04-28, 2w
+  Interpolation                    :a3b,       04-21, 1w
+  Integration                      :a4,        04-28, 2w
 
   section  Solutions
   Ordinary Differential Equations  :a6,  05-02, 2w
@@ -391,7 +393,7 @@ gantt
   click a3b  href &#34;https://djps.github.io/docs/numericalmethods24/part2/interpolation/&#34;
   click a4   href &#34;https://djps.github.io/docs/numericalmethods24/part2/integration/&#34;  
   click a6   href &#34;https://djps.github.io/docs/numericalmethods24/part3/odes/&#34;  
-``` --&gt;
+&lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
@@ -482,7 +484,7 @@ markmap:
 &lt;p&gt;Homework submission is voluntary, although highly recommended. It is possible to get a 100% final grade without submitting homework.&lt;/p&gt;
 &lt;p&gt;Homework will be assigned approximately every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/numericalmethods24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
-&lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
+&lt;p&gt;The two lowest homework scores will be deleted before the final homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
 &lt;p&gt;The problems on the exam will be similar to the ones from homework. So, by doing homework you prepare for the exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
@@ -519,6 +521,8 @@ markmap:
 https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
 https://francisbach.com/richardson-extrapolation/
 https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
+numerical accidents
+quarter precision arithmetic
 --&gt;
 </description>
     </item>
@@ -760,7 +764,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-659283174&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-524983167&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -778,7 +782,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-659283174&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-524983167&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10509,7 +10513,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-296357814&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-846739152&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10527,7 +10531,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-296357814&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-846739152&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10538,7 +10542,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-983147265&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-214385679&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10556,7 +10560,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-983147265&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-214385679&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10569,7 +10573,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-469215738&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-823156974&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10587,7 +10591,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-469215738&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-823156974&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

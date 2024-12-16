@@ -99,7 +99,7 @@
   dateFormat   MM-DD
   axisFormat   %e-%b
 
-  todayMarker  off 
+  todayMarker  off
 
   title Provisional Schedule 2024
 
@@ -197,7 +197,7 @@ markmap:
 &lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
 &lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
-&lt;p&gt;The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
+&lt;p&gt;The two lowest homework scores will be deleted before the final homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.&lt;/p&gt;
 &lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
 &lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
 &lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
@@ -231,7 +231,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-659283174&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-524983167&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -249,7 +249,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-659283174&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-524983167&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

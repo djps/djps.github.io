@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: December 9, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: December 16, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-12-09T09:57:05&#43;01:00">
+    <meta property="article:modified_time" content="2024-12-16T10:55:42&#43;01:00">
   
 
   
@@ -1136,11 +1136,11 @@
               class="nav-link 
                 
                 
-                
+                active
               
                 
                 
-                active
+                
               
                 
                 
@@ -1159,10 +1159,10 @@
           
           <li class="nav-dropdown-item">
             <a
-              class="nav-dropdown-link "
+              class="nav-dropdown-link active"
               
-              href="/docs/gradcalclinalg24/intro/intro/">
-              Grad. Calculus &amp; Linear Algebra
+              href="/docs/numericalmethods24/intro/intro/">
+              Numerical Methods
             </a>
           </li>
           
@@ -1170,10 +1170,10 @@
           
           <li class="nav-dropdown-item">
             <a
-              class="nav-dropdown-link active"
+              class="nav-dropdown-link "
               
-              href="/docs/numericalmethods24/intro/intro/">
-              Numerical Methods
+              href="/docs/gradcalclinalg24/intro/intro/">
+              Grad. Calculus &amp; Linear Algebra
             </a>
           </li>
           
@@ -3029,8 +3029,10 @@
       * De Casteljau's algorithm -->
 <h3 id="itinerary">Itinerary</h3>
 <p>Provisionally, the course will run as follows</p>
-<!-- todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5 -->
-<div class="mermaid">gantt
+<!-- todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5
+
+```mermaid
+gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
@@ -3065,29 +3067,29 @@
   click a3   href "https://djps.github.io/docs/numericalmethods24/part2/interpolation/"
   click a4   href "https://djps.github.io/docs/numericalmethods24/part2/integration/"  
   click a6   href "https://djps.github.io/docs/numericalmethods24/part3/odes/"  
-</div>
-<!--
-```mermaid
-gantt
+```
+-->
+<div class="mermaid">gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
+  todayMarker  off
 
   title Provisional Schedule 2025
 
   section  Errors
-  Taylor Series                    :a1,  02-03, 1w
-  Number Representations           :a1b, 02-10, 1w
+  Taylor Series                    :a1,       02-03, 1w
+  Number Representations           :a1b,      02-10, 1w
 
   section  Equations
-  Linear Equations 1               :a2,  02-17, 2.5w
-  Nonlinear Equations              :a2b, 03-10, 1w
-  Linear Equations 2               :a5,  03-17, 2.5w
+  Linear Equations 1               :a2,        02-17, 2.5w
+  Nonlinear Equations              :a2b,       03-10, 1w
+  Linear Equations 2               :a5,        03-17, 2.5w
 
   section  Approximations
-  Interpolation                    :a3a, 04-07, 1w
+  Interpolation                    :a3a,       04-07, 1w
   Break                            :crit, aX,  04-14, 1w
-  Interpolation                    :a3b, 04-21, 1w
-  Integration                      :a4,  04-28, 2w
+  Interpolation                    :a3b,       04-21, 1w
+  Integration                      :a4,        04-28, 2w
 
   section  Solutions
   Ordinary Differential Equations  :a6,  05-02, 2w
@@ -3104,7 +3106,7 @@ gantt
   click a3b  href "https://djps.github.io/docs/numericalmethods24/part2/interpolation/"
   click a4   href "https://djps.github.io/docs/numericalmethods24/part2/integration/"  
   click a6   href "https://djps.github.io/docs/numericalmethods24/part3/odes/"  
-``` -->
+</div>
 <h3 id="structure">Structure</h3>
 <p>The course content has the following structure:</p>
 <div class="markmap" style="height: 500px;">
@@ -3195,7 +3197,7 @@ markmap:
 <p>Homework submission is voluntary, although highly recommended. It is possible to get a 100% final grade without submitting homework.</p>
 <p>Homework will be assigned approximately every two weeks. Homework assignments are posted on <a href="/docs/numericalmethods24/assignments/">here</a> and on Teams approximately ten days before the due date.</p>
 <p>You are allowed to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!</p>
-<p>The two lowest homework scores will be deleted before the final quiz/homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.</p>
+<p>The two lowest homework scores will be deleted before the final homework score is computed. This rule covers short illness, excursions, late adding of the course, and similar situations.</p>
 <p>Note that each homework assignment carries equal marks.</p>
 <p>The problems on the exam will be similar to the ones from homework. So, by doing homework you prepare for the exam - maths is not a spectator sport.</p>
 <h2 id="academic-integrity">Academic Integrity</h2>
@@ -3232,14 +3234,16 @@ markmap:
 https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
 https://francisbach.com/richardson-extrapolation/
 https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
+numerical accidents
+quarter precision arithmetic
 -->
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-09T09:57:05.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-16T10:55:42.000Z">
     <span>Last updated on</span>
-    Dec 9, 2024</time>
+    Dec 16, 2024</time>
       
       
   
