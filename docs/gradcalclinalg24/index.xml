@@ -57,7 +57,7 @@
 
   * Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.
 
-  * Some examples will be presented as [python notebooks](/docs/numericalmethods24/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
+  * Some examples will be presented as [python notebooks](/docs/gradcalclinalg24/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
 --&gt;
 &lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
 &lt;ul&gt;
@@ -240,7 +240,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-924381567&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-278639514&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -258,7 +258,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-924381567&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-278639514&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -986,7 +986,7 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a class=&#34;hover:red&#34; href=&#34;https://djps.github.io/docs/numericalmethods24/notebooks/iterative/&#34; style=&#34;text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+            &lt;p&gt;An &lt;span class=&#34;mycode&#34;&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a class=&#34;hover:red&#34; href=&#34;https://djps.github.io/docs/numericalmethods/notebooks/iterative/&#34; style=&#34;text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a class=&#34;underline text-red-600 hover:text-red-800 visited:text-red-600 dark:text-red-300 dark:hover:text-red-200&#34; href=&#34;https://djps.github.io/ipyth/iterative.py/&#34; &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href=&#34;https://djps.github.io/ipyth/iterative.ipynb&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 
         &lt;/div&gt;
