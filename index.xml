@@ -758,7 +758,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-384267915&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-349652718&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -776,7 +776,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-384267915&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-349652718&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7188,21 +7188,21 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     
     <item>
       <title>Nonlinear Dynamics of Microbubbles in Tissue</title>
-      <link>https://djps.github.io/abstracts/bremen/</link>
-      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/abstracts/bremen/</guid>
-      <description>&lt;p&gt;High-intensity focused ultrasound (HIFU) aims to destroy pathogenic tissue by converting energy from ultrasound into heat. At certain pressures and frequencies, cavitation activity has been shown to greatly enhance the local rate of heat deposition and also provide a significant aid to treatment monitoring. However, cavitation occurring pre-focally or growing unstably around the focal region is known to impede safe and effective treatment delivery. Thus, the influence of cavitation on wave propagation and beam focusing and thus effective treatment delivery is of real importance. This talk presents the rich nonlinear behaviour the bubbles, stable and chaotic oscillation, interactions, and strategies to control their oscillations.&lt;/p&gt;
+      <link>https://djps.github.io/talks/bremen/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/talks/bremen/</guid>
+      <description>&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/bremen.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/bremen/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;span style = &#34;font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;&#34;&gt;github&lt;/span&gt; repository for some of the content can be found &lt;a href=&#34;https://github.com/djps/rayleigh-plesset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Nonlinear Dynamics of Microbubbles in Tissue</title>
-      <link>https://djps.github.io/talks/bremen/</link>
+      <link>https://djps.github.io/abstracts/bremen/</link>
       <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/talks/bremen/</guid>
-      <description>&lt;p&gt;The slides can be found &lt;a href=&#34;https://djps.github.io/presentations/bremen.pdf&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The abstract can be found &lt;a href=&#34;https://djps.github.io/abstracts/bremen/&#34;&gt;[here]&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;span style = &#34;font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;&#34;&gt;github&lt;/span&gt; repository for some of the content can be found &lt;a href=&#34;https://github.com/djps/rayleigh-plesset&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://djps.github.io/abstracts/bremen/</guid>
+      <description>&lt;p&gt;High-intensity focused ultrasound (HIFU) aims to destroy pathogenic tissue by converting energy from ultrasound into heat. At certain pressures and frequencies, cavitation activity has been shown to greatly enhance the local rate of heat deposition and also provide a significant aid to treatment monitoring. However, cavitation occurring pre-focally or growing unstably around the focal region is known to impede safe and effective treatment delivery. Thus, the influence of cavitation on wave propagation and beam focusing and thus effective treatment delivery is of real importance. This talk presents the rich nonlinear behaviour the bubbles, stable and chaotic oscillation, interactions, and strategies to control their oscillations.&lt;/p&gt;
 </description>
     </item>
     
@@ -10507,7 +10507,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-381247956&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-784915362&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10525,7 +10525,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-381247956&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-784915362&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10536,7 +10536,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-674359218&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-745238619&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10554,7 +10554,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-674359218&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-745238619&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10567,7 +10567,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-549178632&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-659731824&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10585,7 +10585,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-549178632&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-659731824&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
