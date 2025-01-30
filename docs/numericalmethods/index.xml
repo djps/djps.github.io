@@ -29,7 +29,7 @@
 &lt;p&gt;Describe the basic principles of discretization which are used in the numerical treatment of continuous problems;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Command the methods described in the content section of this module description to the extent that they can solve standard text-book problems reliably and with confidence;&lt;/p&gt;
+&lt;p&gt;Command the methods described in the &lt;a href=&#34;#knowledge-abilities-or-skills&#34;&gt;content section&lt;/a&gt; of this module description to the extent that they can solve standard text-book problems reliably and with confidence;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Recognize mathematical terminology used in textbooks and research papers on numerical methods in the quantitative sciences, engineering, and mathematics to the extent that they fall into the content categories covered in this module;&lt;/p&gt;
@@ -48,11 +48,11 @@
 &lt;p&gt;Knowledge of linear algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Some examples will be presented as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/notebooks/&#34;&gt;python notebooks&lt;/a&gt;, but no knowledge of python is required, nor will there be any assessment of ability to code.&lt;/p&gt;
+&lt;p&gt;Some examples will be presented as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/notebooks/&#34;&gt;python notebooks&lt;/a&gt;, but no knowledge of python is required, nor will there be any assessment of ability to code in the course.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
-&lt;p&gt;Taking &amp;ldquo;&lt;em&gt;Calculus and Elements of Linear Algebra II&lt;/em&gt;&amp;rdquo; (CTMS-MAT-10) before taking this module is recommended, but not a pre-requisite.&lt;/p&gt;
+&lt;p&gt;Taking &amp;ldquo;&lt;em&gt;Calculus and Elements of Linear Algebra II&lt;/em&gt;&amp;rdquo; (CTMS-MAT-10) before taking this module is recommended, but is not a pre-requisite.&lt;/p&gt;
 &lt;p&gt;A thorough review of &amp;ldquo;&lt;em&gt;Calculus and Elements of Linear Algebra&lt;/em&gt;&amp;rdquo; (CTMS-MAT-09), with emphasis on the topics listed as &amp;ldquo;Content and Educational Aims&amp;rdquo; is recommended.&lt;/p&gt;
 &lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
 &lt;ul&gt;
@@ -60,10 +60,7 @@
 &lt;p&gt;The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;This module is a co-recommendation for the module &amp;ldquo;&lt;em&gt;Applied Dynamical Systems Lab&lt;/em&gt;&amp;rdquo; (CA-S-MAT-810) in which the actual implementation in a high level programming language of the learned methods will be covered.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The module is a mandatory / mandatory elective module of the Methods and Skills area that is part of the Constructor Track (Methods and Skills modules; Community Impact Project module; Language modules; Big Questions modules).&lt;/p&gt;
+&lt;p&gt;This module is a co-recommendation for the module &amp;ldquo;&lt;em&gt;Applied Dynamical Systems Lab&lt;/em&gt;&amp;rdquo; (CA-S-MAT-810) in which the actual implementation in a high level programming language of the methods will be covered.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Mandatory for ECE. Mandatory elective for CS and RIS.&lt;/p&gt;
@@ -234,7 +231,7 @@ markmap:
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/&#34;&gt;here&lt;/a&gt;. Note that the exam will comprise of both long-form and multiple choice questions.&lt;/p&gt;
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary, although highly recommended. It is possible to get a 100% final grade without submitting homework.&lt;/p&gt;
@@ -262,7 +259,9 @@ https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002
 https://francisbach.com/richardson-extrapolation/
 https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
 numerical accidents
-quarter precision arithmetic
+quarter precision arithmetic - machine learning
+
+segmentation is important.
 
 todayMarker  stroke-width:5px, stroke:#164e63, opacity:0.5
 
