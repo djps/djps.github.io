@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Previous | David Sinden</title>
+    <link>https://djps.github.io/tags/previous/</link>
+      <atom:link href="https://djps.github.io/tags/previous/index.xml" rel="self" type="application/rss+xml" />
+    <description>Previous</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://djps.github.io/media/logo_hu1617270246782058896.png</url>
+      <title>Previous</title>
+      <link>https://djps.github.io/tags/previous/</link>
+    </image>
+    
+    <item>
+      <title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CA-MATH-804: Numerical Analysis</title>
+      <link>https://djps.github.io/docs/numericalanalysis22/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/numericalanalysis22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MECH1010: Modelling and Analysis in Engineering I</title>
+      <link>https://djps.github.io/docs/mech1010/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/mech1010/</guid>
+      <description>&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
+&lt;p&gt;Lecture notes on integration can be found &lt;a href=&#34;https://djps.github.io/mech1010/integration_notes.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1.pdf&#34;&gt;Problem sheet 1&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_2.pdf&#34;&gt;Problem sheet 2&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_2_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_3.pdf&#34;&gt;Problem sheet 3&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_3_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/mid_year_test.pdf&#34;&gt;Mid-year test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/end_of_year_test.pdf&#34;&gt;End of year test&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;linear-algebra&#34;&gt;Linear Algebra&lt;/h2&gt;
+&lt;p&gt;Lecture notes on linear algebra can be found &lt;a href=&#34;https://djps.github.io/mech1010/matrices_notes.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/problem_sheet_1a.pdf&#34;&gt;Problem sheet 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/problem_sheet_2b.pdf&#34;&gt;Problem sheet 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/quiz_questions.pdf&#34;&gt;Mid-year test&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+
+
+
+
+&lt;div id=&#34;chart-947328516&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+  async function fetchChartJSON() {
+    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
+    const response = await fetch(&#39;\/plotly\/vector_addition.json&#39;);
+    return await response.json();
+  }
+
+  (function() {
+    let a = setInterval( function() {
+      if ( typeof window.Plotly === &#39;undefined&#39; ) {
+        console.debug(&#39;Plotly not loaded yet...&#39;)
+        return;
+      }
+      clearInterval( a );
+
+      fetchChartJSON().then(chart =&gt; {
+        console.debug(&#39;Plotting chart...&#39;)
+        window.Plotly.newPlot(&#39;chart-947328516&#39;, chart.data, chart.layout, {responsive: true});
+      });
+    }, 500 );
+  })();
+&lt;/script&gt;
+
+
+
+
+
+
+&lt;div id=&#34;chart-239867145&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+  async function fetchChartJSON() {
+    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
+    const response = await fetch(&#39;.\/charts\/plot_name.json&#39;);
+    return await response.json();
+  }
+
+  (function() {
+    let a = setInterval( function() {
+      if ( typeof window.Plotly === &#39;undefined&#39; ) {
+        console.debug(&#39;Plotly not loaded yet...&#39;)
+        return;
+      }
+      clearInterval( a );
+
+      fetchChartJSON().then(chart =&gt; {
+        console.debug(&#39;Plotting chart...&#39;)
+        window.Plotly.newPlot(&#39;chart-239867145&#39;, chart.data, chart.layout, {responsive: true});
+      });
+    }, 500 );
+  })();
+&lt;/script&gt;
+
+
+This should be from the static folder:
+
+
+
+
+
+&lt;div id=&#34;chart-852697413&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+  async function fetchChartJSON() {
+    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
+    const response = await fetch(&#39;\/plot_name.json&#39;);
+    return await response.json();
+  }
+
+  (function() {
+    let a = setInterval( function() {
+      if ( typeof window.Plotly === &#39;undefined&#39; ) {
+        console.debug(&#39;Plotly not loaded yet...&#39;)
+        return;
+      }
+      clearInterval( a );
+
+      fetchChartJSON().then(chart =&gt; {
+        console.debug(&#39;Plotting chart...&#39;)
+        window.Plotly.newPlot(&#39;chart-852697413&#39;, chart.data, chart.layout, {responsive: true});
+      });
+    }, 500 );
+  })();
+&lt;/script&gt;
+
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Math6502: Mathematics for Engineers II</title>
+      <link>https://djps.github.io/docs/math6502/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/math6502/</guid>
+      <description>&lt;h2 id=&#34;class-tests&#34;&gt;Class Tests&lt;/h2&gt;
+&lt;p&gt;Sample tests from &lt;a href=&#34;https://djps.github.io/math6502/Math6502_2008_questions.pdf&#34;&gt;2008&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/math6502/Math6502_2009_questions.pdf&#34;&gt;2009&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;sample-exam&#34;&gt;Sample Exam&lt;/h2&gt;
+&lt;p&gt;Sample exam from &lt;a href=&#34;https://djps.github.io/math6502/Math6502_sample_paper.pdf&#34;&gt;2008&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
