@@ -545,7 +545,7 @@ $$
 \left| \Delta y \right| \le \sum\limits_{i=1}^{n}\left| \dfrac{\partial y}{\partial x_i} \right| \left| \Delta x_i \right|
 $$&lt;p&gt;
 where
-$\left| \Delta x_i \right| = \left| \tilde{x}_i - x_i\right|$ for an approximation $\tilde{x}_i$, thus  ${\left\| \Delta y_i \right\| = \tilde{y}_i - y_i = f \left( \tilde{x}_i \right) - \left( x_i \right)}$.&lt;/p&gt;
+$\left| \Delta x_i \right| = \left| \tilde{x}_i - x_i\right|$ for an approximation $\tilde{x}_i$, thus  ${\left| \Delta y_i \right| = \left| \tilde{y}_i - y_i  \right|= \left| f \left( \tilde{x}_i \right) - \left( x_i \right) \right|}$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
