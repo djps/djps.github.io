@@ -710,8 +710,10 @@ $$
 x = \sigma \times f \times b^{t-p}
 $$&lt;p&gt;
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
-$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$&lt;p&gt;
-where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, may store a number $x$ as&lt;/p&gt;
+$$
+x= \pm 0 \cdot a_1 \ldots a_k \times b^n
+$$&lt;p&gt;where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
 &lt;p&gt;Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.&lt;/p&gt;
 
         &lt;/div&gt;

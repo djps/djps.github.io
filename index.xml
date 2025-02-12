@@ -768,7 +768,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-926174385&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-647915823&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -786,7 +786,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-926174385&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-647915823&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1462,8 +1462,10 @@ $$
 x = \sigma \times f \times b^{t-p}
 $$&lt;p&gt;
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
-$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$&lt;p&gt;
-where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is called the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Normalized&lt;/em&gt; floating point representations with respect to some base $b$, may store a number $x$ as&lt;/p&gt;
+$$
+x= \pm 0 \cdot a_1 \ldots a_k \times b^n
+$$&lt;p&gt;where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&gt;digits&lt;/strong&gt;, $k$ is the &lt;strong&gt;precision&lt;/strong&gt; and $n$ is the &lt;strong&gt;exponent&lt;/strong&gt;. The set $a_1, \ldots, a_k$ is the &lt;strong&gt;mantissa&lt;/strong&gt;. Impose that $a_1 \ne 0$, it makes the representation unique.&lt;/p&gt;
 &lt;p&gt;Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -10504,7 +10506,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-539168274&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-438952716&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10522,7 +10524,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-539168274&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-438952716&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10533,7 +10535,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-634859172&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-715268493&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10551,7 +10553,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-634859172&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-715268493&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10564,7 +10566,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-742985631&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-643582917&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10582,7 +10584,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-742985631&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-643582917&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

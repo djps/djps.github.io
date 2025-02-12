@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-02-12T11:10:44&#43;01:00">
+    <meta property="article:modified_time" content="2025-02-12T11:15:46&#43;01:00">
   
 
   
@@ -3123,8 +3123,10 @@ $$
 x = \sigma \times f \times b^{t-p}
 $$<p>
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)</p>
-$$x= \pm 0 \cdot a_1 \ldots a_k \times b^n$$<p>
-where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is called the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</p>
+<p><em>Normalized</em> floating point representations with respect to some base $b$, may store a number $x$ as</p>
+$$
+x= \pm 0 \cdot a_1 \ldots a_k \times b^n
+$$<p>where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digits</strong>, $k$ is the <strong>precision</strong> and $n$ is the <strong>exponent</strong>. The set $a_1, \ldots, a_k$ is the <strong>mantissa</strong>. Impose that $a_1 \ne 0$, it makes the representation unique.</p>
 <p>Alternative conventions may express $x= \pm  a_1 \cdot a_2 \ldots a_{k-1} \times b^n$, with $a_1 \ne 0$. Normalization refers to specifying the digits before the decimal place.</p>
 
         </div>
@@ -3163,7 +3165,7 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-12T11:10:44.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-12T11:15:46.000Z">
     <span>Last updated on</span>
     Feb 12, 2025</time>
       
