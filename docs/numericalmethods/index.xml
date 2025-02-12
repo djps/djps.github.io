@@ -865,7 +865,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A matrix, $M$, is said to be &lt;strong&gt;positive definite&lt;/strong&gt; if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.
+            A square matrix, $M$, is said to be &lt;strong&gt;positive definite&lt;/strong&gt; if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -885,7 +885,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A matrix is &lt;strong&gt;non-singular&lt;/strong&gt; or &lt;strong&gt;invertible&lt;/strong&gt; if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.
+            A square matrix is &lt;strong&gt;non-singular&lt;/strong&gt; (or &lt;strong&gt;invertible&lt;/strong&gt;) if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -907,7 +907,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;For a nonsingular matrix, the following all hold:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Nonsingular matrix has full rank&lt;/li&gt;
+&lt;li&gt;A nonsingular matrix has full rank&lt;/li&gt;
 &lt;li&gt;A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.&lt;/li&gt;
 &lt;li&gt;If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1048,7 +1048,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And&lt;/p&gt;
+$$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$$$
 U = U_{n-1} \cdots U_2 U_1 A.
@@ -1121,6 +1122,7 @@ $$
 
 
 &lt;h3 id=&#34;indirect-methods&#34;&gt;Indirect Methods&lt;/h3&gt;
+&lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme&lt;/p&gt;
 $$
 Q x_{k +1}= \left( Q - A \right) x_{k} + b.
 $$&lt;p&gt;This is equivalent to&lt;/p&gt;
@@ -1138,10 +1140,12 @@ $$&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The &lt;a id=&#34;spectral&#34;&gt;&lt;strong&gt;spectral radius&lt;/strong&gt;&lt;/a&gt; of a matrix $A$ is defined as&lt;/p&gt;
+$$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
 $$&lt;p&gt;
 where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1181,10 +1185,12 @@ where the $\lambda_i$ are the eigenvalues of the matrix.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
+$$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$&lt;p&gt;
 This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that&lt;/p&gt;
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$
@@ -1207,10 +1213,11 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The  &lt;a id=&#34;Jacobi&#34;&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so&lt;/p&gt;
+$$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
-$$&lt;p&gt;
-where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
+$$&lt;p&gt;where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1230,7 +1237,8 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;A matrix $A \in \mathbb{R}^{n \times n}$ is said to be &lt;strong&gt;diagonally dominant&lt;/strong&gt; if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.&lt;/p&gt;
+$$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \text{for all } i \in (1,n)
 $$
         &lt;/div&gt;
@@ -1272,12 +1280,14 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let $Q=L + D$, then the &lt;a id=&#34;GS&#34;&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by&lt;/p&gt;
+$$
 \begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
 \end{equation*}
 $$&lt;p&gt;
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1317,7 +1327,8 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id=&#34;SOR&#34;&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by&lt;/p&gt;
+$$
 \begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation*}
@@ -1392,6 +1403,7 @@ $$
 
 
 
+&lt;p&gt;For linear systems, a fixed point, $x^{\ast}$, fulfils&lt;/p&gt;
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
@@ -1515,7 +1527,8 @@ so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error&lt;/p&gt;
+$$
 \left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
 $$
         &lt;/div&gt;
@@ -1538,7 +1551,8 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let a function $f \in C^1 \left( \left[a, b \right] \right)$, then for an initial guess $x_0$, Newton&amp;rsquo;s method is&lt;/p&gt;
+$$
 x_{n+1} = x_n - \dfrac{f\left( x_n \right)}{f\left( x_n \right)}.
 $$
         &lt;/div&gt;
@@ -1594,6 +1608,7 @@ $$
 &lt;ul&gt;
 &lt;li&gt;if $f(a) &lt; 0$ and $f^{\prime\prime}(a) &gt; 0$ &lt;em&gt;or&lt;/em&gt; $f(a) &gt; 0$ and $f^{\prime\prime}(a) &lt; 0$ then $x \in \left[ r, b \right]$.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The iterate in the sequence satisfies&lt;/p&gt;
 $$
 \left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
 $$
@@ -1644,7 +1659,8 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The secant method is defined as&lt;/p&gt;
+$$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$
         &lt;/div&gt;
@@ -1666,7 +1682,8 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let $f \in C^2\left( \left[a, b\right] \right)$, and $r \in \left(a,b\right)$ such that ${f\left(r\right) = 0}$ and ${f^{\prime}\left(r\right) \ne 0}$. Furthermore, let&lt;/p&gt;
+$$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$&lt;p&gt;
 Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &lt; \delta}$ and ${\left\|  r - x_1 \right\| &lt; \delta}$, then the following holds:&lt;/p&gt;
@@ -1675,6 +1692,7 @@ Then there exists a $\delta &gt; 0$ such that when ${\left\|  r - x_0 \right\| &
 and&lt;/li&gt;
 &lt;li&gt;$\left\|  r - x_{n+1} \right\| \le \mu \left\|  r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$&lt;/li&gt;
 &lt;/ol&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1739,16 +1757,20 @@ and&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that&lt;/p&gt;
+$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
-$$$$
+$$&lt;p&gt;The sequences converges &lt;strong&gt;super-linearly&lt;/strong&gt; if&lt;/p&gt;
+$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 0
-$$$$
+$$&lt;p&gt;and &lt;strong&gt;sub-linearly&lt;/strong&gt; if&lt;/p&gt;
+$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 1.
-$$$$
+$$&lt;p&gt;More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that&lt;/p&gt;
+$$
 \lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|^q } = \mu
-$$&lt;p&gt;
-Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
+$$&lt;p&gt;Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1807,10 +1829,10 @@ Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector&lt;/p&gt;
+$$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
-$$&lt;p&gt;
-the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
+$$&lt;p&gt;the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 $$
 \begin{equation*}
 J = \left(
@@ -1822,12 +1844,13 @@ J = \left(
   \end{array}
   \right) \in \mathbb{R}^{n \times n}.
   \end{equation*}
-$$$$
+$$&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&amp;rsquo;s method can be written as&lt;/p&gt;
+$$
 x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
-$$$$
+$$&lt;p&gt;where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$&lt;sup&gt;th&lt;/sup&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system&lt;/p&gt;
+$$
 J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
-$$&lt;p&gt;
-is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
+$$&lt;p&gt;is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1836,44 +1859,6 @@ is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.&lt
 
 
 
-&lt;!--
-```markmap
-- Numerical Methods
-  - Errors
-    - [Taylor Series](/docs/numericalmethods/part1/taylor/)
-    - [Number Representations](docs/numericalmethods24/part1/number-representations/)
-  - Algebraic Equations
-    - Linear Equations
-      - [Direct Methods](/docs/numericalmethods/part1/linear-equations/#direct-methods)
-        - Gaussian Elimination
-        - Partial Pivoting
-        - LU Decomposition
-        - Cholesky Decomposition
-      - [Iterative Methods](/docs/numericalmethods/part1/linear-equations/#indirect-methods)
-        - Jacobi
-        - Gauss-Seidel
-        - SOR
-    - [Nonlinear Equations](/docs/numericalmethods/part1/nonlinear-equations/)
-      - Bisection Method
-      - Newton Method
-      - Secant Method
-  - Approximations
-    - [Interpolation](/docs/numericalmethods/part2/interpolation/)
-      - Polynomial
-      - Lagrange
-      - Newton
-      - $b$-splines
-    - [Integration](/docs/numericalmethods/part2/integration/#numerical-integration)
-      - Simpson
-      - Trapezium
-      - Romberg Algorithm
-      - Gaussian Quadrature
-  - [Differential Equations](/docs/numericalmethods/part3/odes/)
-    - Difference Schemes
-    - Ordinary Differential Equations
-    - Partial Differential Equations
-```
---&gt;
 </description>
     </item>
     

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: February 11, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: February 12, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-12-18T14:05:23&#43;01:00">
+    <meta property="article:modified_time" content="2025-02-12T11:10:44&#43;01:00">
   
 
   
@@ -1621,7 +1621,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalmethods/part1/number-representations/"
     
-  >Numbers Representations
+  >Number Representations
     </a>
               
             </li><li class="flex flex-col open"><a
@@ -2333,7 +2333,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/numericalmethods/part1/number-representations/"
     
-  >Numbers Representations
+  >Number Representations
     </a>
               
             </li><li class="flex flex-col open"><a
@@ -2979,7 +2979,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            A matrix, $M$, is said to be <strong>positive definite</strong> if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.
+            A square matrix, $M$, is said to be <strong>positive definite</strong> if it is symmetric (or Hermitian) and all its eigenvalues are real and positive.
         </div>
     </div>
 </div>
@@ -2999,7 +2999,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            A matrix is <strong>non-singular</strong> or <strong>invertible</strong> if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.
+            A square matrix is <strong>non-singular</strong> (or <strong>invertible</strong>) if there exists a matrix $A^{-1}$ such that ${A^{-1}A = A A^{-1} = I,}$ where $I$ is the identity matrix.
         </div>
     </div>
 </div>
@@ -3021,7 +3021,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
         <div class="admonition-content">
             <p>For a nonsingular matrix, the following all hold:</p>
 <ul>
-<li>Nonsingular matrix has full rank</li>
+<li>A nonsingular matrix has full rank</li>
 <li>A square matrix is nonsingular if and only if the determinant of the matrix is non-zero.</li>
 <li>If a matrix is singular, both versions of Gaussian elimination will fail due to division by zero, yielding a floating exception error.</li>
 </ul>
@@ -3162,7 +3162,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And</p>
+$$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
 $$$$
 U = U_{n-1} \cdots U_2 U_1 A.
@@ -3235,6 +3236,7 @@ $$
 
 
 <h3 id="indirect-methods">Indirect Methods</h3>
+<p>For a non-singular matrix $A$, consider the iterative scheme</p>
 $$
 Q x_{k +1}= \left( Q - A \right) x_{k} + b.
 $$<p>This is equivalent to</p>
@@ -3252,10 +3254,12 @@ $$<div class="details admonition Definition open">
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>The <a id="spectral"><strong>spectral radius</strong></a> of a matrix $A$ is defined as</p>
+$$
 \rho \left( A \right) = \max \left\{  \left|  \lambda_1 \right|,  \left|  \lambda_2 \right|, \ldots   \left|  \lambda_n \right| \right\}
 $$<p>
 where the $\lambda_i$ are the eigenvalues of the matrix.</p>
+
         </div>
     </div>
 </div>
@@ -3295,10 +3299,12 @@ where the $\lambda_i$ are the eigenvalues of the matrix.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Let $Q=I$, then <strong>Richardson iteration</strong> computes the sequence of vectors</p>
+$$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$<p>
 This sequence may converge to $x = A^{-1} b$, depending on $A$.</p>
+<p>The <strong>modified Richardson iteration</strong> scales ${Q = \omega I}$, so that</p>
 $$
 x_{k +1}=  x_{k} + \omega \left( b - A x_{k} \right).
 $$
@@ -3321,10 +3327,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>The  <a id="Jacobi"><strong>Jacobi iteration</strong></a> scheme has $Q=D$, so</p>
+$$
 x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
-$$<p>
-where $D$ is the matrix comprised of the diagonal elements of $A$.</p>
+$$<p>where $D$ is the matrix comprised of the diagonal elements of $A$.</p>
+
         </div>
     </div>
 </div>
@@ -3344,7 +3351,8 @@ where $D$ is the matrix comprised of the diagonal elements of $A$.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>A matrix $A \in \mathbb{R}^{n \times n}$ is said to be <strong>diagonally dominant</strong> if, for every row, the absolute value of the diagonal element is greater or equal to the sum of the magnitudes of all other elements, i.e.</p>
+$$
 \left| a_{i,i} \right| \ge \sum\limits_{\substack{j=1,\newline{}j \neq i}}^n \left| a_{i,j} \right| \quad \text{for all } i \in (1,n)
 $$
         </div>
@@ -3386,12 +3394,14 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Let $Q=L + D$, then the <a id="GS"><strong>Gauss-Seidel</strong></a> scheme is given by</p>
+$$
 \begin{equation*}
 (D + L) x_{k+1} = -U x_{k} + b
 \end{equation*}
 $$<p>
 where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.</p>
+
         </div>
     </div>
 </div>
@@ -3431,7 +3441,8 @@ where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of <a id="SOR"><strong>successive over relaxation</strong></a> (SOR) is given by</p>
+$$
 \begin{equation*}
 (D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
 \end{equation*}
@@ -3506,6 +3517,7 @@ $$
 
 
 
+<p>For linear systems, a fixed point, $x^{\ast}$, fulfils</p>
 $$
 x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
 $$<p>If the iterative method for a linear system is stable then</p>
@@ -3579,9 +3591,9 @@ so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 \Vert
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-18T14:05:23.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-12T11:10:44.000Z">
     <span>Last updated on</span>
-    Dec 18, 2024</time>
+    Feb 12, 2025</time>
       
       
   
