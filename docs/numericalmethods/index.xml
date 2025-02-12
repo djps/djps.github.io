@@ -546,6 +546,7 @@ mjx-assistive-mml {
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;If $y(x)$ is a smooth function, i.e. is differentiable, then $\left| y^{\prime} \right|$ can be interpreted as the &lt;strong&gt;linear sensitivity&lt;/strong&gt; of $y(x)$ to uncertainties in $x$.&lt;/p&gt;
+&lt;p&gt;For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then&lt;/p&gt;
 $$
 \left| \Delta y \right| \le \sum\limits_{i=1}^{n}\left| \dfrac{\partial y}{\partial x_i} \right| \left| \Delta x_i \right|
 $$&lt;p&gt;
@@ -594,7 +595,8 @@ $\left| \Delta x_i \right| = \left| \tilde{x}_i - x_i\right|$ for an approximati
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$ can be written as a unique expansion with respect to base $b$ as&lt;/p&gt;
+$$
 \begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation*}
@@ -703,7 +705,8 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;A number may be represented as&lt;/p&gt;
+$$
 x = \sigma \times f \times b^{t-p}
 $$&lt;p&gt;
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)&lt;/p&gt;
@@ -730,8 +733,12 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the &lt;strong&g
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$&lt;p&gt;
+            &lt;p&gt;Let $x$ and $y$ be two normalized floating point numbers with ${x &gt; y &gt; 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that&lt;/p&gt;
+$$
+2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}
+$$&lt;p&gt;
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

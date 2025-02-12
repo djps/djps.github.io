@@ -249,7 +249,7 @@
         content="2021-06-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-02-12T00:54:56&#43;01:00">
+    <meta property="article:modified_time" content="2025-02-12T00:59:11&#43;01:00">
   
 
   
@@ -2959,6 +2959,7 @@ mjx-assistive-mml {
     <div class="details-content">
         <div class="admonition-content">
             <p>If $y(x)$ is a smooth function, i.e. is differentiable, then $\left| y^{\prime} \right|$ can be interpreted as the <strong>linear sensitivity</strong> of $y(x)$ to uncertainties in $x$.</p>
+<p>For functions of several variables, i.e. $f : \mathbb{R}^n \rightarrow \mathbb{R}$, then</p>
 $$
 \left| \Delta y \right| \le \sum\limits_{i=1}^{n}\left| \dfrac{\partial y}{\partial x_i} \right| \left| \Delta x_i \right|
 $$<p>
@@ -3007,7 +3008,8 @@ $\left| \Delta x_i \right| = \left| \tilde{x}_i - x_i\right|$ for an approximati
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Let $b \in \mathbb{N} \backslash \lbrace 1 \rbrace$. Every integer $x \in \mathbb{N}_0$ can be written as a unique expansion with respect to base $b$ as</p>
+$$
 \begin{equation*}
 \left(x\right)_b = a_0 b^0 + a_1 b^1 + \ldots + a_n b^n = \sum \limits_{i=0}^{n} a_i b^i
 \end{equation*}
@@ -3116,7 +3118,8 @@ which at each steps provides an $a_i$ and updates $y$.</li>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>A number may be represented as</p>
+$$
 x = \sigma \times f \times b^{t-p}
 $$<p>
 where $\sigma$ is the sign of the number, i.e. $\pm 1$, $f$ is the mantissa, $b$ is the base, $t$ is the shifted exponent (where $p$ is the shift required to determine the actual exponent.)</p>
@@ -3143,8 +3146,12 @@ where the $a_i \in \lbrace 0, 1, \ldots b-1 \rbrace$ are called the <strong>digi
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}$$<p>
+            <p>Let $x$ and $y$ be two normalized floating point numbers with ${x > y > 0}$ and base ${b=2}$. If there exists integers $p$ and ${q \in \mathbb{N}_0}$ such that</p>
+$$
+2^{-p} \leq 1 - \dfrac{y}{x} \leq 2^{-q}
+$$<p>
 then, at most $p$ and at least $q$ significant bits (i.e. significant figures written in base 2) are lost during subtraction.</p>
+
         </div>
     </div>
 </div>
@@ -3156,7 +3163,7 @@ then, at most $p$ and at least $q$ significant bits (i.e. significant figures wr
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-12T00:54:56.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-12T00:59:11.000Z">
     <span>Last updated on</span>
     Feb 12, 2025</time>
       
