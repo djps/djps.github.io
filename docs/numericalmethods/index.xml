@@ -1064,7 +1064,8 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
             &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And&lt;/p&gt;
 $$
 L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$$$
+$$&lt;p&gt;where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by&lt;/p&gt;
+$$
 U = U_{n-1} \cdots U_2 U_1 A.
 $$
         &lt;/div&gt;
@@ -1422,8 +1423,7 @@ x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{
 $$&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
 $$
 e_k = \left( I - Q^{-1} A \right)^k e_0,
-$$&lt;p&gt;
-so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
+$$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
 &lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
