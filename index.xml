@@ -779,7 +779,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-486125397&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-893417652&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -797,7 +797,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-486125397&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-893417652&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -2428,14 +2428,14 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $s$ with entries $s_i= \max_{j=1,\ldots,n}\left| a_{i,j}\right|$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries $s_i= \max\limts_{j=1,\ldots,n} \left| a_{i,j} \right|$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
 &lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
 &lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
 &lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $s$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $\vec{s}$ &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
@@ -10517,7 +10517,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-451637982&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-134589726&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10535,7 +10535,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-451637982&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-134589726&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10546,7 +10546,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-472851396&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-879132564&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10564,7 +10564,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-472851396&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-879132564&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10577,7 +10577,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-843591762&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-974325168&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10595,7 +10595,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-843591762&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-974325168&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
