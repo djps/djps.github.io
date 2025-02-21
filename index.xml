@@ -779,7 +779,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-427961385&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-956237841&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -797,7 +797,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-427961385&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-956237841&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -4144,15 +4144,14 @@ $$&lt;p&gt;so that at every node $u_j$, the polynomial satisfies $p\left( u_j \r
 $$
 \Phi \alpha = p
 $$&lt;p&gt;where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points&lt;/p&gt;
-&lt;p&gt;$$
+$$
 \begin{equation*}
 \Phi = \left( \begin{array}{cccc}
-\varphi_0 (u_0) &amp;amp; \varphi_1 (u_0) &amp;amp; \cdots &amp;amp; \varphi_n (u_0) \\
-\vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
-\varphi_0 (u_n) &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \varphi_n (u_n) \end{array} \right).
-\end{equation*}&lt;/p&gt;
-&lt;p&gt;$$
-Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
+  \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\
+  \vdots &amp; &amp; &amp; \vdots \\
+  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
+\end{equation*}
+$$&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -10556,7 +10555,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-624793158&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-536429178&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10574,7 +10573,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-624793158&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-536429178&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10585,7 +10584,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-254861793&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-587469123&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10603,7 +10602,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-254861793&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-587469123&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10616,7 +10615,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-237864591&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-926573184&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10634,7 +10633,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-237864591&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-926573184&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

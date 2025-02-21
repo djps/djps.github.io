@@ -2351,15 +2351,14 @@ $$&lt;p&gt;so that at every node $u_j$, the polynomial satisfies $p\left( u_j \r
 $$
 \Phi \alpha = p
 $$&lt;p&gt;where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points&lt;/p&gt;
-&lt;p&gt;$$
+$$
 \begin{equation*}
 \Phi = \left( \begin{array}{cccc}
-\varphi_0 (u_0) &amp;amp; \varphi_1 (u_0) &amp;amp; \cdots &amp;amp; \varphi_n (u_0) \\
-\vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
-\varphi_0 (u_n) &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \varphi_n (u_n) \end{array} \right).
-\end{equation*}&lt;/p&gt;
-&lt;p&gt;$$
-Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
+  \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\
+  \vdots &amp; &amp; &amp; \vdots \\
+  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
+\end{equation*}
+$$&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 
         &lt;/div&gt;
