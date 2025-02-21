@@ -779,7 +779,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-263145897&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-427961385&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -797,7 +797,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-263145897&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-427961385&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3720,9 +3720,10 @@ $$
 \begin{equation*}
 D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 \end{equation*}
-$$
-The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/li&gt;
+$$&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -3742,7 +3743,8 @@ The forward and backwards difference schemes are first order approximations to t
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be&lt;/p&gt;
+$$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$
         &lt;/div&gt;
@@ -3805,9 +3807,11 @@ $$
 L\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
-$$$$
+$$&lt;p&gt;so that&lt;/p&gt;
+$$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$$$
+$$&lt;p&gt;Additionally, the &lt;a id=&#34;left&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;left&lt;/strong&gt;&lt;/a&gt; and &lt;a id=&#34;right&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;&lt;strong&gt;right Riemann sums&lt;/strong&gt;&lt;/a&gt; are given, respectively, by&lt;/p&gt;
+$$
 \begin{align*}
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 &amp; \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
@@ -3832,9 +3836,11 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;&lt;a id=&#34;trap&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;Rather than rectangles, use trapezoids to approximate the integral in a sub domain&lt;/a&gt;&lt;/p&gt;
+$$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$$$
+$$&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by&lt;/p&gt;
+$$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
         &lt;/div&gt;
@@ -3857,6 +3863,7 @@ $$
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.&lt;/p&gt;
+&lt;p&gt;The error can be shown to have the form:&lt;/p&gt;
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$&lt;p&gt;that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as&lt;/p&gt;
@@ -3883,15 +3890,15 @@ $$&lt;p&gt;for some ${\xi \in \left(a, b\right)}$.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The integral is approximated as&lt;/p&gt;
+$$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
-$$&lt;p&gt;
-Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
+$$&lt;p&gt;Simpson&amp;rsquo;s rule uses interpolation with &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/interpolation/#polyinterp&#34;&gt;quadratic polynomials&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.&lt;/p&gt;
+&lt;p&gt;Let ${h=\dfrac{b-a}{2}}$, then Simpson&amp;rsquo;s Rule is written as&lt;/p&gt;
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
-$$&lt;p&gt;
-and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
+$$&lt;p&gt;and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/strong&gt;. It uses quadratic interpolation of the function through the end and midpoints.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -3932,9 +3939,11 @@ $$
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x &amp; = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
-$$$$
+$$&lt;p&gt;Note that there no odd terms in the error. Then, define the next approximation as&lt;/p&gt;
+$$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$$$
+$$&lt;p&gt;which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&amp;rsquo;s rule. The recurrence formula can be derived&lt;/p&gt;
+$$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
         &lt;/div&gt;
@@ -3967,12 +3976,12 @@ $$
 
 
 &lt;h3 id=&#34;gaussian-quadrature&#34;&gt;Gaussian Quadrature&lt;/h3&gt;
+&lt;p&gt;Generalise the quadrature formula so that an integral is approximated as&lt;/p&gt;
 $$
 \begin{equation*}
 I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
 \end{equation*}
-$$&lt;p&gt;
-The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
+$$&lt;p&gt;The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the &lt;em&gt;nodes&lt;/em&gt; of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its &lt;em&gt;coefficients&lt;/em&gt; or &lt;em&gt;weights&lt;/em&gt;. Both weights and nodes depend in general on $n$.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Can the weights be chosen such that the error in an integral is minimized?&lt;/li&gt;
 &lt;li&gt;Furthermore, can the nodes be chosen such that the integral can be further improved?&lt;/li&gt;
@@ -4022,10 +4031,10 @@ $$
   $$
 i.e. $q(x)$ is orthogonal to $x^k$.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Then, denote the integral as&lt;/p&gt;
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
-$$&lt;p&gt;
-with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
+$$&lt;p&gt;with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part-2/interpolation/#interpolation&#34;&gt;Lagrange interpolation&lt;/a&gt; for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.&lt;/p&gt;
 &lt;p&gt;Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ &lt;em&gt;exactly&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.&lt;/p&gt;
 
@@ -4048,15 +4057,18 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The Legendre polynomials are a set of orthogonal polynomials where&lt;/p&gt;
+$$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$$$
+$$&lt;p&gt;and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:&lt;/p&gt;
+$$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
-$$&lt;p&gt;
-Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
+$$&lt;p&gt;Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$&lt;/p&gt;
+&lt;p&gt;The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation&lt;/p&gt;
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$$$
+$$&lt;p&gt;so that&lt;/p&gt;
+$$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
         &lt;/div&gt;
@@ -4125,18 +4137,21 @@ mjx-assistive-mml {
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;&lt;a id=&#34;polyinterp&#34; style=&#34;font-weight:400; text-decoration:none; color:var(--tw-prose-body);&#34;&gt;If the interpolating function is a polynomial&lt;/a&gt;, it can be written as&lt;/p&gt;
+$$
 p\left( u \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u \right)
-$$$$
+$$&lt;p&gt;so that at every node $u_j$, the polynomial satisfies $p\left( u_j \right) = \sum\limits_{i=0}^{n} \alpha_i \varphi_i \left( u_j \right)$. Thus, solving for all the values of $\alpha$ which fit the interpolating function to the data, leads to a linear system of the form&lt;/p&gt;
+$$
 \Phi \alpha = p
-$$$$
+$$&lt;p&gt;where $p$ is the vector defined the polynomial evaluated at the node points, i.e. ${p=p\left( u_j \right)}$ and $\Phi$ is the &lt;strong&gt;collocation matrix&lt;/strong&gt;, whose entries are given by the polynomials evaluated at the node points&lt;/p&gt;
+&lt;p&gt;$$
 \begin{equation*}
 \Phi = \left( \begin{array}{cccc}
-  \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\\
-  \vdots &amp; &amp; &amp; \vdots \\\
-  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
-\end{equation*}
-$$&lt;p&gt;
+\varphi_0 (u_0) &amp;amp; \varphi_1 (u_0) &amp;amp; \cdots &amp;amp; \varphi_n (u_0) \\
+\vdots &amp;amp; &amp;amp; &amp;amp; \vdots \\
+\varphi_0 (u_n) &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \varphi_n (u_n) \end{array} \right).
+\end{equation*}&lt;/p&gt;
+&lt;p&gt;$$
 Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
 &lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 
@@ -4182,16 +4197,18 @@ where $\Phi$ is the &lt;strong&gt;Vandermonde matrix&lt;/strong&gt;.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The &lt;strong&gt;Lagrange form of an interpolating polynomial&lt;/strong&gt; is given by&lt;/p&gt;
+$$
 \begin{equation*}
 p \left( x\right) = \sum\limits_{i=0}^{n} p_i l_i\left(x\right)
 \end{equation*}
-$$$$
+$$&lt;p&gt;where $l_{i} \in \mathbb{P}_{n}$ such that $l_{i}\left( x_{j} \right) = \delta_{ij}$. The polynomials $l_i\left(x\right) \in \mathbb{P}_n$ for $i=0, \ldots, n$, are called &lt;strong&gt;characteristic polynomials&lt;/strong&gt; and are given by&lt;/p&gt;
+$$
 \begin{equation*}
 l_{i} \left( x \right) = \prod \limits_{\substack{j = 0,\newline{}j \ne i}}^{n} \dfrac{x - x_j}{x_i - x_j}.    
 \end{equation*}
-$$&lt;p&gt;
-By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
+$$&lt;p&gt;By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&gt;. Thus, there is no need to invert the matrix to solve for the weights $\alpha$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4211,9 +4228,11 @@ By construction, &lt;em&gt;the collocation matrix is the identity matrix&lt;/em&
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Newton interpolation interpolates a set of points $(x_i, y_i)$ as ${p \left( x\right) = \sum\limits_{i=0}^{n} \alpha_i n_i\left(x\right)}$ using a linear combination of Newton basis polynomials, which are defined as&lt;/p&gt;
+$$
 n_0(x) = 1, \quad n_i(x) = \left(x - x_0 \right) \left(x - x_1 \right) \cdots \left(x - x_{i-1} \right).
-$$$$
+$$&lt;p&gt;By construction, $\alpha_0=y_0$, and subsequent terms must be solved by evaluating the interpolating polynomial at increasing orders, leading to the formula&lt;/p&gt;
+$$
 \alpha_{i+1} = \dfrac{ y_{i+1} - p_i \left( x_{i+1} \right) }{ n_i \left(  x_{i+1} \right) }.
 $$
         &lt;/div&gt;
@@ -4382,8 +4401,7 @@ $$
 $$&lt;p&gt;where&lt;/p&gt;
 $$
 \alpha_{i}^{n-1}\left(u \right) = \dfrac{u - u_i}{u_{i+n} - u_i}
-$$&lt;p&gt;
-is a local parameter.&lt;/p&gt;
+$$&lt;p&gt;is a local parameter.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -4395,7 +4413,8 @@ is a local parameter.&lt;/p&gt;
 &lt;p&gt;Given data with nodes $u_i$ and values $p_i$, to interpolate with splines, of order $n$, requires solving&lt;/p&gt;
 $$
 \text{Find} \quad s = \sum\limits_{i=0}^{m} \alpha_i \mathcal{N}_{i}^{n} \left( u\right) \quad \text{such that} \quad s\left(u_i \right) = p_i \quad \text{for} \quad i=0, \ldots, m
-$$$$
+$$&lt;p&gt;which is matrix form is ${\Phi \alpha = p}$, where the collocation matrix, $\Phi \in \mathbb{R}^{\left(m+1\right) \times \left(m+1\right)}$ is given by&lt;/p&gt;
+$$
 \Phi = \left(
   \begin{array}{ccc}
   \mathcal{N}_{0}^{n} \left(u_0\right) &amp; \cdots &amp; \mathcal{N}_{m}^{n} \left(u_0\right) \\\
@@ -4416,11 +4435,14 @@ $$&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares&lt;/p&gt;
+$$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
-$$$$
+$$&lt;p&gt;The minimum is found when&lt;/p&gt;
+$$
 \dfrac{\partial E}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m
-$$$$
+$$&lt;p&gt;i.e.&lt;/p&gt;
+$$
 -2 \sum\limits_{i=0}^{n} \left(y_i - f\left(x_i, \beta_j \right) \right) \dfrac{\partial f\left( x_i, \beta \right)}{\partial \beta_j} = 0 \quad \text{for all } \quad j=1, \ldots m.
 $$
         &lt;/div&gt;
@@ -4442,16 +4464,20 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;If the function $y(x)$ is a function of the form&lt;/p&gt;
+$$
 y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$$$
-E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2
-$$$$
+$$&lt;p&gt;where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as&lt;/p&gt;
+$$
+E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2 .
+$$&lt;p&gt;This has a minimum when&lt;/p&gt;
+$$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$$$
+$$&lt;p&gt;Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,&lt;/p&gt;
+$$
 \Phi^T \Phi \beta = \Phi^T y,
-$$&lt;p&gt;
-i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
+$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4563,10 +4589,11 @@ mjx-assistive-mml {
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives&lt;/p&gt;
+$$
 u_{n+1} = u_n + h f_n
-$$&lt;p&gt;
-where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+$$&lt;p&gt;where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4587,10 +4614,11 @@ where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. 
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;&lt;strong&gt;Backward Euler&lt;/strong&gt; uses the backward finite difference approximation of the first-order derivative&lt;/p&gt;
+$$
 u_{n+1} = u_n + h f_{n+1}
-$$&lt;p&gt;
-where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+$$&lt;p&gt;where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \right), t_{n+1} \right) }$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4611,7 +4639,8 @@ where ${f_{n+1} = f\left( u_{n+1}, t_{n+1} \right) = f\left( u\left(t_{n+1} \rig
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The &lt;strong&gt;Crank-Nicolson method&lt;/strong&gt; is given by&lt;/p&gt;
+$$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f_{n+1} \right).
 $$
         &lt;/div&gt;
@@ -4634,7 +4663,8 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;&lt;strong&gt;Heun&amp;rsquo;s method&lt;/strong&gt; is given by&lt;/p&gt;
+$$
 u_{n+1} = u_n + \dfrac{h}{2}\left( f_n + f\left( u_n + h f_n, t_{n+1} \right) \right).
 $$
         &lt;/div&gt;
@@ -4667,6 +4697,7 @@ $$
 &lt;p&gt;Often, implicit methods require, at each step $k+1$, the solution of a nonlinear equation for computing $u_{k+1}$.&lt;/p&gt;
 &lt;p&gt;Both the Forward Euler and Heun&amp;rsquo;s method are explicit. The Backward Euler and Crank-Nicolson methods are implicit.&lt;/p&gt;
 &lt;p&gt;Heun&amp;rsquo;s method can be interpreted as the Crank-Nicolson method with the approximation ${u_{n+1} \approx u_n + h f_n}$ replacing the explicit $f_{n+1}$ term, which depends on $u_{n+1}$.&lt;/p&gt;
+&lt;p&gt;Alternatively, the solution to the differential equation can be written as &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/integration/#numerical-integration&#34;&gt;quadrature&lt;/a&gt;:&lt;/p&gt;
 $$
 y\left( t + h \right) = y\left( t \right) + \int_{t}^{t+h} f\left( y\left(\tau\right), \tau \right) \, \mathrm{d}\tau.
 $$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/integration/#left&#34;&gt;left Riemann sum&lt;/a&gt;, Backward Euler is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/integration/#right&#34;&gt;right Riemann sum&lt;/a&gt; and the Crank-Nicolson is the &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/part2/integration/#trap&#34;&gt;trapezoidal rule&lt;/a&gt;.&lt;/p&gt;
@@ -4683,10 +4714,12 @@ $$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.gi
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that&lt;/p&gt;
+$$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$&lt;p&gt;
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -4706,7 +4739,8 @@ for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Li
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;Any explicit one-step method has the form&lt;/p&gt;
+$$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$&lt;p&gt;
 with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
@@ -4738,12 +4772,13 @@ $$&lt;p&gt;where $\varepsilon_n = h \tau_n$ for a ${\tau_n = \tau_n\left(h\right
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;The &lt;strong&gt;global truncation error&lt;/strong&gt; is the difference between the exact solution, $y_n = y(t_n)$ and the approximate solution, $u_n$, at the time $t_n$,&lt;/p&gt;
+$$
 \tau_{g,n} = \left| y_n - u_n \right|
-$$$$
+$$&lt;p&gt;which is given by&lt;/p&gt;
+$$
 \tau_{g,n} = \left| y_n - \left( u_0 + h\Phi\left(t_0, u_0, f_0, h\right) +h\Phi\left(t_1, u_1, f_1, h\right) + \ldots + h\Phi\left(t_n, u_n, f_n, h\right) \right) \right|.
-$$&lt;p&gt;
-If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
+$$&lt;p&gt;If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is said to be &lt;strong&gt;locally convergent&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The scheme is &lt;strong&gt;convergent&lt;/strong&gt; if the global truncation error goes to zero as the step size goes to zero, that is ${\lim\limits_{h \to 0} \max\limits_{n} | \tau_{g,n}  | = 0}$.&lt;/p&gt;
 
         &lt;/div&gt;
@@ -4785,10 +4820,11 @@ If $\lim\limits_{h\rightarrow 0} u_{n+1} = y\left(t_{n+1} \right)$ the method is
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            $$
+            &lt;p&gt;A method of the form&lt;/p&gt;
+$$
 u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
-$$&lt;p&gt;
-with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
+$$&lt;p&gt;with $\Phi$ the increment function, is called &lt;strong&gt;zero-stable&lt;/strong&gt; if there exists both a maximal step size, $h_{\mathrm{max}}$ and a constant, $C$, such that for all ${h \in \left[0, h_{\mathrm{max}} \right]}$ and for some ${\varepsilon \gt 0}$, then the following holds:&lt;/p&gt;
+&lt;p&gt;If, for all time-steps ${0 \le n \le N}$, there exists a ${\delta_n \le \varepsilon}$ and if a method is given by&lt;/p&gt;
 $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
 $$&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
@@ -4848,10 +4884,10 @@ $$
 &lt;ul&gt;
 &lt;li&gt;if $\left| y_0 - u_0 \right| \rightarrow 0$ as $h \rightarrow 0$,&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;then the global error has&lt;/p&gt;
 $$
 \lim \limits_{h \rightarrow 0} \left| y_n - u_n \right| = 0.
-$$&lt;p&gt;
-Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
+$$&lt;p&gt;Also, if the method is of order $p$ and if ${\left| y_0 - u_0 \right| = \mathcal{O}\left(h^p\right)}$ as ${h\rightarrow 0}$, then the convergence is of order $p$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -4952,6 +4988,7 @@ k_i = f\left( u_n + h\sum_{j=1}^s a_{i, j} k_j, t_n + c_i h \right) \quad i=1, \
 $$&lt;p&gt;where $s$ is referred to as the number of stages of the method.&lt;/p&gt;
 &lt;p&gt;Thus, an $s$-stage scheme is characterised by coefficients $b_i$, $c_i$ and $a_{i,j}$ for ${i, j = 1,\ldots s}$&lt;/p&gt;
 &lt;p&gt;If the matrix defined by the elements $a_{i,j}$ is lower triangular, i.e. ${a_{i,j}=0}$ for all ${i \le j}$, then each $k_i$ can be computed explicitly in terms of the previous coefficients ${k_1, \ldots, k_{i-1}}$. Such schemes are &lt;strong&gt;explicit&lt;/strong&gt;, otherwise they are said to be &lt;strong&gt;implicit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The components of a Runge-Kutta scheme are expressed in a Butcher array&lt;/p&gt;
 $$
 \begin{array}{c|cccc}
 c_1    &amp; a_{1,1} &amp; \ldots &amp; a_{1,s} \\
@@ -4960,7 +4997,8 @@ c_s    &amp; a_{s,1} &amp; \ldots &amp; a_{s,s} \\
 \hline
        &amp; b_1     &amp; \ldots &amp; b_s
 \end{array}
-$$$$
+$$&lt;p&gt;The &lt;strong&gt;local truncation error&lt;/strong&gt;, which characterises the error induced at each step of the method, is defined as&lt;/p&gt;
+$$
 h \tau_{n+1}\left(h\right) = y\left(t_{n+1} \right) - y\left(t_{n} \right) - h F\left( t_n, u_n, h; f \right).
 $$&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\left(h\right) \right| \rightarrow 0}$ as ${h \rightarrow 0}$ if and only if ${\sum_{i=1}^s b_i = 1}$.&lt;/p&gt;
 &lt;p&gt;A Runge-Kutta method is of order ${p \ge 1}$ if ${\tau\left( h \right) = \mathcal{O}\left( h^p \right)}$ as ${h \rightarrow 0}$.&lt;/p&gt;
@@ -4970,7 +5008,8 @@ $$&lt;p&gt;It can be shown that ${\tau\left(h\right) = \max\left| \tau_{n+1}\lef
 &lt;p&gt;The most common form of the Runge-Kutta method is the fourth order Runge-Kutta method (RK4). It takes the form:&lt;/p&gt;
 $$
 u_{n+1} = u_n + \dfrac{h}{6} \left( k_1 + 2k_2 + 2 k_3 + k_4 \right)
-$$$$
+$$&lt;p&gt;where&lt;/p&gt;
+$$
 \begin{align*}
 k_1 &amp; = f\left( u_n, t_n \right), \\\
 k_2 &amp; = f\left( u_n + \dfrac{h}{2} k_1, t_n + \dfrac{h}{2} \right), \\\
@@ -8420,7 +8459,7 @@ Second maximum value:  0.004225969342977254
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lagrange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Polynomial&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;coef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[::&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;coef&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;z&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;x&amp;#39;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;x^&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{}&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;z&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;z&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;md&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Coefficients of the interpolating polynomial: &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;[&#39;1.0&#39;, &#39;3.5x&#39;, &#39;-1.5x^2&#39;]
@@ -10517,7 +10556,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-473261895&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-624793158&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10535,7 +10574,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-473261895&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-624793158&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10546,7 +10585,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-793451628&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-254861793&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10564,7 +10603,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-793451628&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-254861793&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10577,7 +10616,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-318594276&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-237864591&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10595,7 +10634,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-318594276&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-237864591&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

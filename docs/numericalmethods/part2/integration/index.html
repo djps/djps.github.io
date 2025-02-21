@@ -249,7 +249,7 @@
         content="2023-11-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-12-18T14:05:23&#43;01:00">
+    <meta property="article:modified_time" content="2025-02-21T14:07:41&#43;01:00">
   
 
   
@@ -2918,9 +2918,10 @@ $$
 \begin{equation*}
 D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 \end{equation*}
-$$
-The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.</li>
+$$</li>
 </ol>
+<p>The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.</p>
+
         </div>
     </div>
 </div>
@@ -2940,7 +2941,8 @@ The forward and backwards difference schemes are first order approximations to t
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>Using the Taylor series of $f(x+h)$ and $f(x-h)$, the second-order derivative can be shown to be</p>
+$$
 f^{\prime\prime} \left( x \right) = \dfrac{ f(x - h) - 2 f (x) + f(x+h)}{h^2} + \mathcal{O} \left( h^2 \right) .
 $$
         </div>
@@ -3003,9 +3005,11 @@ $$
 L\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) m_i \quad \textsf{where} \quad  m_i = \min_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right), \\
 U\left(f, p\right) = & \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) M_i \quad \textsf{where} \quad  M_i = \max_{x\in\left[ x_i, x_{i+1} \right]} f\left(x \right)
 \end{align*}
-$$$$
+$$<p>so that</p>
+$$
 L\left(f, p\right) \le \int_{a}^{b} f\left(x \right) \, \mathrm{d}x \le U\left(f, p\right).
-$$$$
+$$<p>Additionally, the <a id="left" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);"><strong>left</strong></a> and <a id="right" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);"><strong>right Riemann sums</strong></a> are given, respectively, by</p>
+$$
 \begin{align*}
 & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i-1} \right), \\
 & \sum\limits_{i=0}^{n-1} \left( x_{i+1} -x_i \right) f\left(x_{i} \right).
@@ -3030,9 +3034,11 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p><a id="trap" style="font-weight:400; text-decoration:none; color:var(--tw-prose-body);">Rather than rectangles, use trapezoids to approximate the integral in a sub domain</a></p>
+$$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
-$$$$
+$$<p>If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by</p>
+$$
 T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
 $$
         </div>
@@ -3055,6 +3061,7 @@ $$
     <div class="details-content">
         <div class="admonition-content">
             <p>Let ${f \in C^2\left( \left[a,b \right] \right)}$ and $p$ be equidistant partition of $\left[a,b \right]$, with ${h = x_{i+1} - x_i}$.</p>
+<p>The error can be shown to have the form:</p>
 $$
 \left| \int \limits_{a}^b f\left(x\right) \, \mathrm{d}x - T\left(f,p\right) \right| = a_2 h^2 + a_4 h^4 + \ldots
 $$<p>that is, the error terms are even powers of the discretization.  More precisely, the error for the trapezium rule can be written as</p>
@@ -3081,15 +3088,15 @@ $$<p>for some ${\xi \in \left(a, b\right)}$.</p>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>The integral is approximated as</p>
+$$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{b-a}{6} \left( f\left(a\right) + 4 f\left(\dfrac{a+b}{2}\right) +f\left(b\right) \right).
-$$<p>
-Simpson&rsquo;s rule uses interpolation with <a href="/docs/numericalmethods/part2/interpolation/#polyinterp">quadratic polynomials</a>.</p>
+$$<p>Simpson&rsquo;s rule uses interpolation with <a href="/docs/numericalmethods/part2/interpolation/#polyinterp">quadratic polynomials</a>.</p>
 <p>It can be applied in a composite manner, i.e. on many subdomains. It has an asymptotic error of $\mathcal{O}\left(h^4\right)$.</p>
+<p>Let ${h=\dfrac{b-a}{2}}$, then Simpson&rsquo;s Rule is written as</p>
 $$
 \int_a^b f\left( x\right) \, \mathrm{d}x \approx \dfrac{h}{3} \left( f\left(a\right) + 4 f\left( a + h \right) +f\left(b\right) \right)
-$$<p>
-and is referred to as <strong>Simpson&rsquo;s 1/3 Rule</strong>. It uses quadratic interpolation of the function through the end and midpoints.</p>
+$$<p>and is referred to as <strong>Simpson&rsquo;s 1/3 Rule</strong>. It uses quadratic interpolation of the function through the end and midpoints.</p>
 
         </div>
     </div>
@@ -3130,9 +3137,11 @@ $$
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i-1}^0 + a_2 h^2 + a_4 h^4 + \ldots \\
 \int_{a}^{b} f\left( x \right) \, \mathrm{d} x & = R_{i}^0 + a_2 \left( \dfrac{h}{2} \right)^2 + a_4 \left( \dfrac{h}{2} \right)^4 + \ldots  
 \end{align*}
-$$$$
+$$<p>Note that there no odd terms in the error. Then, define the next approximation as</p>
+$$
 R_i^1 = \dfrac{1}{3} \left( 4 R_i^0 - R_{i-1}^0 \right).
-$$$$
+$$<p>which has an error $\mathcal{O}\left(h^4\right)$. The extrapolated values are equivalent to integrals approximated by Simpson&rsquo;s rule. The recurrence formula can be derived</p>
+$$
 R_i^m = \dfrac{1}{4^m - 1} \left( 4^m R_i^{m-1} - R_{i-1}^{m-1} \right).
 $$
         </div>
@@ -3165,12 +3174,12 @@ $$
 
 
 <h3 id="gaussian-quadrature">Gaussian Quadrature</h3>
+<p>Generalise the quadrature formula so that an integral is approximated as</p>
 $$
 \begin{equation*}
 I_{n}[f] = \sum \limits_{i=0}^{n} A_{i} f\left( x_{i} \right).
 \end{equation*}
-$$<p>
-The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
+$$<p>The above equation is a weighted sum of the values of $f$ at the points $x_{i}$, for $i=0, \ldots, n$. These points are said to be the <em>nodes</em> of the quadrature formula, while the  $A_{i} \in \mathbb{R}$ are its <em>coefficients</em> or <em>weights</em>. Both weights and nodes depend in general on $n$.</p>
 <ul>
 <li>Can the weights be chosen such that the error in an integral is minimized?</li>
 <li>Furthermore, can the nodes be chosen such that the integral can be further improved?</li>
@@ -3220,10 +3229,10 @@ $$
   $$
 i.e. $q(x)$ is orthogonal to $x^k$.</li>
 </ol>
+<p>Then, denote the integral as</p>
 $$
 I_n\left[ f\right] = \int_{a}^{b} f\left(x\right) \, \mathrm{d}x = \sum\limits_{i=0}^n A_i  f\left( x_i \right)
-$$<p>
-with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using <a href="/docs/numericalmethods/part-2/interpolation/#interpolation">Lagrange interpolation</a> for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.</p>
+$$<p>with nodes given by the roots of the orthogonal polynomial $q$, and weights given by $A_i = \int_{a}^{b} l_i \left(x\right) \, \mathrm{d}x$, using <a href="/docs/numericalmethods/part-2/interpolation/#interpolation">Lagrange interpolation</a> for all polynomials $f\left(x\right)$ of degree less than or equal to ${2n+1}$.</p>
 <p>Then, the integral $I_n\left[ f\right]$ integrates all polynomials of degree ${2n+1}$ <em>exactly</em>.</p>
 <p>It is said that the degree of exactness of $I\left[ f\right]$ is ${2n+1}$.</p>
 
@@ -3246,15 +3255,18 @@ with nodes given by the roots of the orthogonal polynomial $q$, and weights give
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            $$
+            <p>The Legendre polynomials are a set of orthogonal polynomials where</p>
+$$
 \int_{-1}^1 P_m(x) P_n(x) \, \mathrm{d} x = 0 \quad \textsf{for} \quad n \ne m.
-$$$$
+$$<p>and $P_0 = 1$. Thus, $P_1 = x$, ${P_2 = \left(3x^2 -1\right) / 2}$. The Legendre polynomials obey a recursive formula:</p>
+$$
 P_n = \dfrac{2n-1}{n} x P_{n-1}(x) - \dfrac{n-1}{n} P_{n-2}(x) \quad \textsf{for} \quad n \ge 2.
-$$<p>
-Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$</p>
+$$<p>Gauss-Legendre quadrature uses the roots of the Legendre polynomials as the nodes for integration, and weights may also be found by equating the quadrature expressions with the exact integrals for orders of $f(x)$, i.e. ${f(x)=1, x, x^2, \ldots}$</p>
+<p>The domain of integration can be scaled from $(-1,1)$ to $(a, b)$ via the invertible transformation</p>
 $$
 x = \dfrac{b-a}{2} t + \dfrac{a+b}{2},
-$$$$
+$$<p>so that</p>
+$$
 \int_a^b f(x) \, \mathrm{d}x = \dfrac{b - a}{2} \int_{-1}^1 f\left( \dfrac{b-a}{2} t + \dfrac{a+b}{2}\right) \, \mathrm{d}t.
 $$
         </div>
@@ -3268,9 +3280,9 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-12-18T14:05:23.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-21T14:07:41.000Z">
     <span>Last updated on</span>
-    Dec 18, 2024</time>
+    Feb 21, 2025</time>
       
       
   
