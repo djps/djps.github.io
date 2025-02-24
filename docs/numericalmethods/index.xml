@@ -1010,7 +1010,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries $s_i= \max\limts_{j=1,\ldots,n} \left| a_{i,j} \right|$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries $s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
 &lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
