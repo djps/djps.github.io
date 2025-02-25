@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: February 24, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: February 25, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-02-24T15:39:14&#43;01:00">
+    <meta property="article:modified_time" content="2025-02-25T10:50:04&#43;01:00">
   
 
   
@@ -3142,7 +3142,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            A square matrix is said to be <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero and <strong>upper triangular</strong> if all the entries below the main diagonal are zero.
+            A square matrix is said to be a <strong>lower triangular matrix</strong> if all the elements above the main diagonal are zero and <strong>upper triangular</strong> if all the entries below the main diagonal are zero.
         </div>
     </div>
 </div>
@@ -3150,6 +3150,10 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
+<ul>
+<li>The product of two upper triangular matrices is also upper triangular.</li>
+<li>The inverse of an upper triangular matrix is also upper triangular.</li>
+</ul>
 <div class="details admonition Theorem open">
     <div class="details-summary admonition-title">
         
@@ -3162,12 +3166,13 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And</p>
+            <p>Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix.</p>
+<p>A single pass of Gaussian forward elimination can be written as a matrix operation, where the elementary row operations are expressed as a Gaussian transformation matrix, $M$. This is a lower triangular matrix. It can be shown that</p>
 $$
-L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$<p>where each matrix $U_i$ is a matrix which describes the $i$&lt;sup&lt;th</sup> step in forward elimination. The upper triangular matrix $U$ is given by</p>
+L = M_1^{-1} M_2^{-1} \cdots M_{n-1}^{-1}
+$$<p>where each matrix $M_i$ is a matrix which describes the $i$<sup>th</sup> pass of forward elimination. Equivalently, the upper triangular matrix $U$ is given by</p>
 $$
-U = U_{n-1} \cdots U_2 U_1 A.
+U = M_{n-1} \cdots M_2 M_1 A.
 $$
         </div>
     </div>
@@ -3209,7 +3214,7 @@ $$
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as</p>
+            <p>Cholesky&rsquo;s algorithm to compute the entries of the triangular matrix $\tilde{L}$ can be written as</p>
 <p><small>1 </small> For $i=1$ to $n$: <br>
 <small>2 </small> $\hspace{2cm}$ For $j = 1$ to $i-1$: <br>
 <small>3 </small> $\hspace{4cm}$ Set $y = a_{i,j}$ <br>
@@ -3220,7 +3225,7 @@ $$
 <small>8 </small> $\hspace{2cm}$ End <br>
 <small>9 </small> $\hspace{2cm}$ Set $y = a_{i,i}$ <br>
 <small>10</small> $\hspace{2cm}$ For $k= 1$ to $i-1$: <br>
-<small>11</small> $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ <br>
+<small>11</small> $\hspace{4cm}$ $y = y - l_{i,k} \, l_{i,k}$ <br>
 <small>12</small> $\hspace{2cm}$ End <br>
 <small>13</small> $\hspace{2cm}$ If $y \le 0$: <br>
 <small>14</small> $\hspace{4cm}$ exit as there is no solution <br>
@@ -3591,9 +3596,9 @@ $$<p>so then ${\Vert I - Q^{-1} A \Vert < 1}$ for ${\Vert e_k \Vert < \Vert e_0 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-24T15:39:14.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-02-25T10:50:04.000Z">
     <span>Last updated on</span>
-    Feb 24, 2025</time>
+    Feb 25, 2025</time>
       
       
   

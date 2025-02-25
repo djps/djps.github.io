@@ -1041,7 +1041,7 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A square matrix is said to be &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.
+            A square matrix is said to be a &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1049,6 +1049,10 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
 
 
 
+&lt;ul&gt;
+&lt;li&gt;The product of two upper triangular matrices is also upper triangular.&lt;/li&gt;
+&lt;li&gt;The inverse of an upper triangular matrix is also upper triangular.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;details admonition Theorem open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
@@ -1061,12 +1065,13 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix, And&lt;/p&gt;
+            &lt;p&gt;Let ${A \in \mathbb{R}^{n \times n}}$ be invertible. Then there exists a decomposition of $A$ such that ${A=LU}$, where $L$ is a lower triangular matrix and $U$ is an upper triangular matrix.&lt;/p&gt;
+&lt;p&gt;A single pass of Gaussian forward elimination can be written as a matrix operation, where the elementary row operations are expressed as a Gaussian transformation matrix, $M$. This is a lower triangular matrix. It can be shown that&lt;/p&gt;
 $$
-L = U_1^{-1} U_2^{-1} \cdots U_{n-1}^{-1}
-$$&lt;p&gt;where each matrix $U_i$ is a matrix which describes the $i$&amp;lt;sup&amp;lt;th&lt;/sup&gt; step in forward elimination. The upper triangular matrix $U$ is given by&lt;/p&gt;
+L = M_1^{-1} M_2^{-1} \cdots M_{n-1}^{-1}
+$$&lt;p&gt;where each matrix $M_i$ is a matrix which describes the $i$&lt;sup&gt;th&lt;/sup&gt; pass of forward elimination. Equivalently, the upper triangular matrix $U$ is given by&lt;/p&gt;
 $$
-U = U_{n-1} \cdots U_2 U_1 A.
+U = M_{n-1} \cdots M_2 M_1 A.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -1108,7 +1113,7 @@ $$
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $L$ can be written as&lt;/p&gt;
+            &lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $\tilde{L}$ can be written as&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $i=1$ to $n$: &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ Set $y = a_{i,j}$ &lt;br&gt;
@@ -1119,7 +1124,7 @@ $$
 &lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Set $y = a_{i,i}$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; $\hspace{2cm}$ For $k= 1$ to $i-1$: &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\hspace{4cm}$ $y = y - l_{i,k} l_{i,k}$ &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{4cm}$ $y = y - l_{i,k} \, l_{i,k}$ &lt;br&gt;
 &lt;small&gt;12&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
 &lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ If $y \le 0$: &lt;br&gt;
 &lt;small&gt;14&lt;/small&gt; $\hspace{4cm}$ exit as there is no solution &lt;br&gt;
