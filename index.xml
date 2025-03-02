@@ -13,222 +13,9 @@
     </image>
     
     <item>
-      <title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title>
-      <link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link>
-      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
-&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
-&lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
-&lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
-&lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
-&lt;p&gt;There are no recommendations beyond reading the syllabus and the outline of the course.&lt;/p&gt;
-&lt;h2 id=&#34;content-and-educational-aims&#34;&gt;Content and Educational Aims&lt;/h2&gt;
-&lt;p&gt;This module offers a highly structured introduction to the fundamentals of two major pillars of mathematical modelling and analysis: single and multivariable calculus on the one hand and linear algebra on the other.&lt;/p&gt;
-&lt;p&gt;It is a gateway for graduate students who have not been exposed to the topics so far, or who would benefit from a refresher.&lt;/p&gt;
-&lt;p&gt;This course will focus on practical experience rather than on mathematical rigour.&lt;/p&gt;
-&lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
-&lt;p&gt;Upon completion of this module, students will be able to&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Apply the fundamental concepts of calculus and linear algebra in structured situations&lt;/li&gt;
-&lt;li&gt;Understand and use vectors and matrices, calculate determinants, eigenvalues and eigenvectors in simple cases&lt;/li&gt;
-&lt;li&gt;Calculate derivatives and simple integrals&lt;/li&gt;
-&lt;li&gt;Explain the importance of the methods of calculus and linear algebra in problems arising from applications&lt;/li&gt;
-&lt;li&gt;Understand the methods of calculus and linear algebra used in more advanced modules as well as in scientific literature&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The informal aim is to build intuition of some of the fundamental concepts in modern mathematics which are used in machine learning.&lt;/p&gt;
-&lt;h2 id=&#34;indicative-literature&#34;&gt;Indicative Literature&lt;/h2&gt;
-&lt;p&gt;There is no primary or required course book, but there are many suitable books, such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Linear Algebra&lt;/em&gt;&amp;rdquo; - G. Strang (2016) Wellesley-Cambridge Press, 5&lt;sup&gt;th&lt;/sup&gt; edition ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-09802327-7-6&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Other useful resources are&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;Linear Algebra and Learning from Data&lt;/em&gt;&amp;rdquo; - G. Strang (2019) Wellesley-Cambridge Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-06921963-8-0&lt;/span&gt;.&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares&lt;/em&gt;&amp;rdquo; - S. Boyd and L. Vandenberghe (2018) Cambridge University Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-1316518960&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--
-## Knowledge, Abilities, or Skills
-
-  * Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations
-
-  * Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations
-
-  * Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.
-
-  * Some examples will be presented as [python notebooks](/docs/gradcalclinalg24/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
---&gt;
-&lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The module is a non-mandatory remedial module of the Data Engineering MSc and an elective module Data Science for Society and Business MSc.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This module introduces and refreshes the essential calculus and linear algebra required in most of the modules of the data engineering program.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;There is a placement test offered in the orientation week before the start of the first semester to help all students to find out if they need to take this course.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
-&lt;p&gt;The following topics will be covered:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vectors: addition of vectors and multiplication by a scalar, linear combinations, lengths and dot products&lt;/li&gt;
-&lt;li&gt;Matrices&lt;/li&gt;
-&lt;li&gt;Vector spaces, subspaces, column spaces, span, linear independence, basis. The nullspace of a matrix&lt;/li&gt;
-&lt;li&gt;Basis of the nullspace and the column space via Gaussian elimination. Free columns and pivot columns. Solutions of systems of linear equations&lt;/li&gt;
-&lt;li&gt;Rank of a matrix. Sum of the dimensions of the nullspace and the column space. Multiplication of matrices&lt;/li&gt;
-&lt;li&gt;Inverse of a matrix. Finding the inverse using Gaussian elimination&lt;/li&gt;
-&lt;li&gt;Orthogonality. Orthonormal bases, projections, and Gram-Schmidt&lt;/li&gt;
-&lt;li&gt;Determinants&lt;/li&gt;
-&lt;li&gt;Eigenvalues and eigenvectors&lt;/li&gt;
-&lt;li&gt;Diagonalization of a matrix&lt;/li&gt;
-&lt;li&gt;Symmetric matrices.&lt;/li&gt;
-&lt;li&gt;Principal Component Analysis&lt;/li&gt;
-&lt;li&gt;Derivatives, tangent lines, higher order derivatives, curve sketching.&lt;/li&gt;
-&lt;li&gt;Taylor series&lt;/li&gt;
-&lt;li&gt;Functions of several variables. Partial derivatives&lt;/li&gt;
-&lt;li&gt;Optimization problems. Positive/negative definite matrices&lt;/li&gt;
-&lt;li&gt;Jacobians and Hessians&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
-&lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
-&lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
-  dateFormat   MM-DD
-  axisFormat   %e-%b
-
-  todayMarker  off
-
-  title Provisional Schedule 2024
-
-  section  Linear Algebra
-  Vectors                          :a1a,  09-02, 2w
-  Assignment 1 : milestone, done, m1, 09-18, 0w
-  Matrices                         :a1b,  09-16, 1w
-  Linear equations                 :a1c,  09-23, 1w
-  Assignment 2 : milestone, done, m2, 10-02, 0w
-  Vector Spaces                    :a1d,  09-30, 1w
-  Break                            :crit, 10-07, 1w
-  Vector Spaces                    :a1e,  10-14, 1w
-  Assignment 3 : milestone, m3, 10-21, 1d
-  Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
-  Assignment 4 : milestone, active, m4, 11-01, 0d
-  Assignment 5 : milestone, active, m5, 11-12, 0w
-
-  section  Calculus
-  Single Variables                 :a2c,  11-11, 1w
-  Taylor Series                    :a2d,  11-18, 1w
-  Multiple Variables               :a2e,  11-25, 1w
-  Assignment 6 : milestone, active, m6, 11-23, 0w
-
-  section  Summary
-  Summary                          :active, a3a,  12-02, 1w
-&lt;/div&gt;
-&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
-&lt;p&gt;The course content has the following structure:&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
-
-&lt;pre&gt;---
-markmap:
-  zoom: false
-  pan: false
----
-- Linear Algebra
-  - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
-  - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
-  - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
-  - [Vector Spaces](/docs/gradcalclinalg24/part1/spaces/)
-  - [Matrices &amp; Eigenvalues](/docs/gradcalclinalg24/part1/eigen/)
-- Calculus
-  - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
-  - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
-  - [Many Variable Calculus](/docs/gradcalclinalg24/part2/many-variables/)&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
-&lt;h3 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Examination Type:&lt;/td&gt;
-          &lt;td&gt;Module examination&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Assessment Type:&lt;/td&gt;
-          &lt;td&gt;Written examination&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Scope:&lt;/td&gt;
-          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Duration:&lt;/td&gt;
-          &lt;td&gt;120 min&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Weight:&lt;/td&gt;
-          &lt;td&gt;100%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
-&lt;!-- 
-
-
-
-
-  
-    
-  
-
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Wednesday 11 January between 12:30 and 14:30 at East Hall 8&lt;/strong&gt;&lt;/span&gt;
-&lt;/div&gt; --&gt;
-&lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
-&lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
-&lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
-&lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
-&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
-&lt;p&gt;You are encouraged to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
-&lt;p&gt;The two lowest homework scores will be discarded before the final homework score is calculated. This rule covers short illness, excursions, late joining of the course, and similar situations.&lt;/p&gt;
-&lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
-&lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
-&lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
-&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
-&lt;h2 id=&#34;artifical-intelligence-use-policy&#34;&gt;Artifical Intelligence Use Policy&lt;/h2&gt;
-&lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;You are discouraged from using AI tools &lt;em&gt;unless&lt;/em&gt; under direct instruction from your instructor to do so. Please contact your instructor if you are unsure or have questions &lt;em&gt;before&lt;/em&gt; using AI for any assignment.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Note that the material generated by these programs may be inaccurate, incomplete, or otherwise problematic.  Their use may also stifle your own independent thinking and creativity. Accordingly, reduction in the grade is likely when using AI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If any part of this AI policy is confusing or uncertain, please reach out to your instructor for a conversation before submitting your work.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>CTMS-MAT-13: Numerical Methods</title>
       <link>https://djps.github.io/docs/numericalmethods/intro/intro/</link>
-      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid>
       <description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
@@ -538,6 +325,219 @@ gantt
     </item>
     
     <item>
+      <title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title>
+      <link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
+      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
+&lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
+&lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
+&lt;p&gt;There are no recommendations beyond reading the syllabus and the outline of the course.&lt;/p&gt;
+&lt;h2 id=&#34;content-and-educational-aims&#34;&gt;Content and Educational Aims&lt;/h2&gt;
+&lt;p&gt;This module offers a highly structured introduction to the fundamentals of two major pillars of mathematical modelling and analysis: single and multivariable calculus on the one hand and linear algebra on the other.&lt;/p&gt;
+&lt;p&gt;It is a gateway for graduate students who have not been exposed to the topics so far, or who would benefit from a refresher.&lt;/p&gt;
+&lt;p&gt;This course will focus on practical experience rather than on mathematical rigour.&lt;/p&gt;
+&lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
+&lt;p&gt;Upon completion of this module, students will be able to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Apply the fundamental concepts of calculus and linear algebra in structured situations&lt;/li&gt;
+&lt;li&gt;Understand and use vectors and matrices, calculate determinants, eigenvalues and eigenvectors in simple cases&lt;/li&gt;
+&lt;li&gt;Calculate derivatives and simple integrals&lt;/li&gt;
+&lt;li&gt;Explain the importance of the methods of calculus and linear algebra in problems arising from applications&lt;/li&gt;
+&lt;li&gt;Understand the methods of calculus and linear algebra used in more advanced modules as well as in scientific literature&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The informal aim is to build intuition of some of the fundamental concepts in modern mathematics which are used in machine learning.&lt;/p&gt;
+&lt;h2 id=&#34;indicative-literature&#34;&gt;Indicative Literature&lt;/h2&gt;
+&lt;p&gt;There is no primary or required course book, but there are many suitable books, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Linear Algebra&lt;/em&gt;&amp;rdquo; - G. Strang (2016) Wellesley-Cambridge Press, 5&lt;sup&gt;th&lt;/sup&gt; edition ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-09802327-7-6&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other useful resources are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Linear Algebra and Learning from Data&lt;/em&gt;&amp;rdquo; - G. Strang (2019) Wellesley-Cambridge Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-06921963-8-0&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;em&gt;Introduction to Applied Linear Algebra: Vectors, Matrices, and Least Squares&lt;/em&gt;&amp;rdquo; - S. Boyd and L. Vandenberghe (2018) Cambridge University Press, ISBN: &lt;span class=&#34;font-mono&#34;&gt;978-1316518960&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+## Knowledge, Abilities, or Skills
+
+  * Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations
+
+  * Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations
+
+  * Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.
+
+  * Some examples will be presented as [python notebooks](/docs/gradcalclinalg24/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
+--&gt;
+&lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The module is a non-mandatory remedial module of the Data Engineering MSc and an elective module Data Science for Society and Business MSc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This module introduces and refreshes the essential calculus and linear algebra required in most of the modules of the data engineering program.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is a placement test offered in the orientation week before the start of the first semester to help all students to find out if they need to take this course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
+&lt;p&gt;The following topics will be covered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vectors: addition of vectors and multiplication by a scalar, linear combinations, lengths and dot products&lt;/li&gt;
+&lt;li&gt;Matrices&lt;/li&gt;
+&lt;li&gt;Vector spaces, subspaces, column spaces, span, linear independence, basis. The nullspace of a matrix&lt;/li&gt;
+&lt;li&gt;Basis of the nullspace and the column space via Gaussian elimination. Free columns and pivot columns. Solutions of systems of linear equations&lt;/li&gt;
+&lt;li&gt;Rank of a matrix. Sum of the dimensions of the nullspace and the column space. Multiplication of matrices&lt;/li&gt;
+&lt;li&gt;Inverse of a matrix. Finding the inverse using Gaussian elimination&lt;/li&gt;
+&lt;li&gt;Orthogonality. Orthonormal bases, projections, and Gram-Schmidt&lt;/li&gt;
+&lt;li&gt;Determinants&lt;/li&gt;
+&lt;li&gt;Eigenvalues and eigenvectors&lt;/li&gt;
+&lt;li&gt;Diagonalization of a matrix&lt;/li&gt;
+&lt;li&gt;Symmetric matrices.&lt;/li&gt;
+&lt;li&gt;Principal Component Analysis&lt;/li&gt;
+&lt;li&gt;Derivatives, tangent lines, higher order derivatives, curve sketching.&lt;/li&gt;
+&lt;li&gt;Taylor series&lt;/li&gt;
+&lt;li&gt;Functions of several variables. Partial derivatives&lt;/li&gt;
+&lt;li&gt;Optimization problems. Positive/negative definite matrices&lt;/li&gt;
+&lt;li&gt;Jacobians and Hessians&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
+&lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
+&lt;p&gt;Provisionally, the course will run as follows&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;gantt
+  dateFormat   MM-DD
+  axisFormat   %e-%b
+
+  todayMarker  off
+
+  title Provisional Schedule 2024
+
+  section  Linear Algebra
+  Vectors                          :a1a,  09-02, 2w
+  Assignment 1 : milestone, done, m1, 09-18, 0w
+  Matrices                         :a1b,  09-16, 1w
+  Linear equations                 :a1c,  09-23, 1w
+  Assignment 2 : milestone, done, m2, 10-02, 0w
+  Vector Spaces                    :a1d,  09-30, 1w
+  Break                            :crit, 10-07, 1w
+  Vector Spaces                    :a1e,  10-14, 1w
+  Assignment 3 : milestone, m3, 10-21, 1d
+  Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
+  Assignment 4 : milestone, active, m4, 11-01, 0d
+  Assignment 5 : milestone, active, m5, 11-12, 0w
+
+  section  Calculus
+  Single Variables                 :a2c,  11-11, 1w
+  Taylor Series                    :a2d,  11-18, 1w
+  Multiple Variables               :a2e,  11-25, 1w
+  Assignment 6 : milestone, active, m6, 11-23, 0w
+
+  section  Summary
+  Summary                          :active, a3a,  12-02, 1w
+&lt;/div&gt;
+&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
+&lt;p&gt;The course content has the following structure:&lt;/p&gt;
+&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
+
+&lt;pre&gt;---
+markmap:
+  zoom: false
+  pan: false
+---
+- Linear Algebra
+  - [Vectors](/docs/gradcalclinalg24/part1/vectors/)
+  - [Matrices](/docs/gradcalclinalg24/part1/matrices/)
+  - [Linear Equations](/docs/gradcalclinalg24/part2/linear-equations/)
+  - [Vector Spaces](/docs/gradcalclinalg24/part1/spaces/)
+  - [Matrices &amp; Eigenvalues](/docs/gradcalclinalg24/part1/eigen/)
+- Calculus
+  - [Single Variable Calculus](/docs/gradcalclinalg24/part2/one-variable/)
+  - [Taylor Series](/docs/gradcalclinalg24/part2/taylor/)
+  - [Many Variable Calculus](/docs/gradcalclinalg24/part2/many-variables/)&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
+&lt;h3 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Examination Type:&lt;/td&gt;
+          &lt;td&gt;Module examination&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Assessment Type:&lt;/td&gt;
+          &lt;td&gt;Written examination&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Scope:&lt;/td&gt;
+          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Duration:&lt;/td&gt;
+          &lt;td&gt;120 min&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Weight:&lt;/td&gt;
+          &lt;td&gt;100%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
+&lt;!-- 
+
+
+
+
+  
+    
+  
+
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Wednesday 11 January between 12:30 and 14:30 at East Hall 8&lt;/strong&gt;&lt;/span&gt;
+&lt;/div&gt; --&gt;
+&lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
+&lt;p&gt;The pass mark is 45%.&lt;/p&gt;
+&lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
+&lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
+&lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
+&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/gradcalclinalg24/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
+&lt;p&gt;You are encouraged to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
+&lt;p&gt;The two lowest homework scores will be discarded before the final homework score is calculated. This rule covers short illness, excursions, late joining of the course, and similar situations.&lt;/p&gt;
+&lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
+&lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
+&lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
+&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
+&lt;h2 id=&#34;artifical-intelligence-use-policy&#34;&gt;Artifical Intelligence Use Policy&lt;/h2&gt;
+&lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You are discouraged from using AI tools &lt;em&gt;unless&lt;/em&gt; under direct instruction from your instructor to do so. Please contact your instructor if you are unsure or have questions &lt;em&gt;before&lt;/em&gt; using AI for any assignment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Note that the material generated by these programs may be inaccurate, incomplete, or otherwise problematic.  Their use may also stifle your own independent thinking and creativity. Accordingly, reduction in the grade is likely when using AI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If any part of this AI policy is confusing or uncertain, please reach out to your instructor for a conversation before submitting your work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>CA-MATH-804: Numerical Analysis</title>
       <link>https://djps.github.io/docs/numericalanalysis22/intro/intro/</link>
       <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
@@ -779,7 +779,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-275934816&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-965387142&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -797,7 +797,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-275934816&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-965387142&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10560,7 +10560,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-539276841&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-975612483&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10578,7 +10578,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-539276841&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-975612483&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10589,7 +10589,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-615482793&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-459132786&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10607,7 +10607,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-615482793&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-459132786&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10620,7 +10620,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-835426917&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-237189564&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10638,7 +10638,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-835426917&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-237189564&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
