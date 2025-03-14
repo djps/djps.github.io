@@ -48,7 +48,7 @@
 &lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;There will be no lecture on Wednesday 5 March, due to the Careers Fair taking place at this time.&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The provision date for the exam is Thursday 21 May between 9:00 - 11:00&lt;/span&gt;
 &lt;/div&gt;
 --&gt;
 &lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -258,6 +258,7 @@ markmap:
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;!-- The provision date for the exam is Thursday 21 May between 9:00 - 11:00 --&gt;
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
@@ -792,7 +793,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-647538129&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-312845679&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -810,7 +811,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-647538129&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-312845679&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10573,7 +10574,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-239461785&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-426571398&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10591,7 +10592,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-239461785&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-426571398&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10602,7 +10603,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-365984271&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-426195783&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10620,7 +10621,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-365984271&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-426195783&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10633,7 +10634,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-945718326&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-145769382&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10651,7 +10652,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-945718326&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-145769382&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
