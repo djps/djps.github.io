@@ -7,7 +7,7 @@
     <description>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://djps.github.io/media/logo_hu1617270246782058896.png</url>
+      <url>https://djps.github.io/docs/gradcalclinalg24/featured.jpg</url>
       <title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title>
       <link>https://djps.github.io/docs/gradcalclinalg24/</link>
     </image>
@@ -240,7 +240,7 @@ markmap:
 
 
 
-&lt;div id=&#34;chart-618247935&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-721635984&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -258,7 +258,7 @@ markmap:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-618247935&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-721635984&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
