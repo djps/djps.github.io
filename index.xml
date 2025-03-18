@@ -156,8 +156,8 @@
   Linear Equations 2               :a5,        03-10, 2.5w
 
   section  Approximations
-  Integration                      :a3a,       03-25, 2w
-  Interpolation                    :a3b,       04-07, 1w
+  Interpolation                    :a3a,       03-25, 2w
+  Integration                      :a3b,       04-07, 1w
   Break                            :crit, aX,  04-14, 1w
   Integration                      :a4,        04-21, 2w
 
@@ -793,7 +793,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-624385179&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-459136827&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -811,7 +811,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-624385179&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-459136827&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10574,7 +10574,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-346258917&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-539417286&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10592,7 +10592,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-346258917&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-539417286&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10603,7 +10603,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-267948513&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-475826391&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10621,7 +10621,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-267948513&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-475826391&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10634,7 +10634,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-574283619&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-831254679&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10652,7 +10652,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-574283619&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-831254679&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
