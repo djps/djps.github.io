@@ -780,7 +780,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-462985137&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-618945723&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -798,7 +798,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-462985137&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-618945723&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -7246,6 +7246,14 @@ The error estimate shows that the Galerkin method is _convergent_, that is the a
     </item>
     
     <item>
+      <title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title>
+      <link>https://djps.github.io/publication/neizert2025oma/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://djps.github.io/publication/neizert2025oma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nonlinear Dynamics of Microbubbles in Tissue</title>
       <link>https://djps.github.io/talks/bremen/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
@@ -10561,7 +10569,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-648512937&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-594826713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10579,7 +10587,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-648512937&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-594826713&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10590,7 +10598,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-174685923&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-983621457&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10608,7 +10616,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-174685923&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-983621457&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10621,7 +10629,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-182367954&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-615497328&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10639,7 +10647,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-182367954&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-615497328&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
