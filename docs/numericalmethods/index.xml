@@ -2274,8 +2274,8 @@ $$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
 $$&lt;p&gt;Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,&lt;/p&gt;
 $$
-\Phi^T \Phi \beta = \Phi^T y,
-$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
+\Phi \Phi^T \beta = \Phi y,
+$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi^T$ is the collocation matrix.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;

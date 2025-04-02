@@ -780,7 +780,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-276439158&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-562431978&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -798,7 +798,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-276439158&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-562431978&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -4067,8 +4067,8 @@ $$
 \dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
 $$&lt;p&gt;Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,&lt;/p&gt;
 $$
-\Phi^T \Phi \beta = \Phi^T y,
-$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
+\Phi \Phi^T \beta = \Phi y,
+$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi^T$ is the collocation matrix.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -10569,7 +10569,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-768429135&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-349871526&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10587,7 +10587,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-768429135&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-349871526&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10598,7 +10598,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-625931748&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-216598734&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10616,7 +10616,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-625931748&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-216598734&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10629,7 +10629,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-582314679&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-187239465&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10647,7 +10647,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-582314679&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-187239465&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
