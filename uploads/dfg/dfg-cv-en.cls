@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{dfg_cv}
+\ProvidesClass{dfg-cv-en}
 \LoadClass[11pt, a4paper]{scrartcl}
 
 %%% DFG format specifics
@@ -16,7 +16,7 @@
 \RequirePackage{amsmath}
 %\usepackage[hidelinks]{hyperref}
 
-\RequirePackage[usenames,dvipsnames,svgnames]{xcolor}
+\RequirePackage[dvipsnames,svgnames]{xcolor}
 
 \usepackage[pdftex, colorlinks=true, linkcolor=MidnightBlue, citecolor=MidnightBlue, urlcolor=MidnightBlue, pdfauthor={Dr.\ Martin Hoelzer}, pdfpagelayout=SinglePage, bookmarks, bookmarksopen]{hyperref}
 
@@ -37,7 +37,7 @@
 \RequirePackage{pgfgantt}
 \RequirePackage{xspace}
 \RequirePackage{verbatim}
-\RequirePackage{longtable}
+
 
 
 
@@ -105,10 +105,20 @@
 %% Have tables with thicker border
 \newcommand{\vthick}{1pt}
 \newcommand{\thick}{0.8pt}
-\RequirePackage{tabularx}
+%\RequirePackage{tabularx}
 \RequirePackage{xltabular}
 \RequirePackage{makecell}
-\RequirePackage{array}
+
+%\RequirePackage{longtable}
+\RequirePackage{array} % For defining new column types
+\RequirePackage{tabularx} % For the X column type
+
+\usepackage{ltablex}
+
+%\RequirePackage{array}
+
+% Define a new column type for fixed width
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \newcolumntype{?}{!{\vrule width \vthick}}
 \newcolumntype{+}{!{\vrule width \thick}}
@@ -138,22 +148,42 @@
         First name & \@vorname \\ \Xhline{\thick}
         Name & \@nachname \\ \Xhline{\thick}
         Current Position & \@position \\ \Xhline{\thick}
-        Current institution(s)/site(s), country & \@institution \\ \Xhline{\thick}
+        \RaggedRight Current institution(s)/site(s), country & \@institution \\ \Xhline{\thick}
         Identifiers/ORCID  & \@orcid \\
     \Xhline{\vthick}\end{tabularx}
 
 
     % Qualifizierung und Werdegang - Tabelle
-    \section*{Qualifications and Career}
-    \begin{tabularx}{\textwidth}{?p{5.24cm}+X?}\Xhline{\vthick}
-        \textbf{Stages} & \textbf{Periods and Details} \\ \Xhline{\thick}
-        \ifMY@walterbenjamin
-            Schule, Land & \@schule \\ \Xhline{\thick}
-        \fi
-            Degree programme & \@studium \\ \Xhline{\thick}
-            Doctorate  & \@promotion \\ \Xhline{\thick}
-            Stages of academic/professional  & \@stationen \\
-    \Xhline{\vthick}\end{tabularx}
+    
+%%    \section*{Qualifications and Career}
+%    \noindent\textbf{\large{Qualifications and Career}}\\
+%%    \vspace{0cm}
+%    \begin{tabularx}{\textwidth}{?p{5.24cm}+X?}
+%    % \Xhline{\vthick}
+%        %\Xhline{\vthick}
+%        \hline
+%        \textbf{Stages} & \textbf{Periods and Details} \\ 
+%        \hline
+%%
+%%		This & thhat \\        
+%%        
+%%        %\Xhline{\thick}
+%%        %\endfirsthead
+%%        %
+%%%        \ifMY@walterbenjamin
+%%%            Schule, Land & \@schule \\ %\Xhline{\thick}
+%%%        \fi
+%        Degree programme & \@studium \\ 
+%        \hline
+%        %\endhead% \Xhline{\thick}
+%        Doctorate  & \@promotion \\ 
+%        \hline %\Xhline{\thick}
+%        Stages of academic/professional career & \@stationen \\
+%%          \Xhline{\vthick}
+%%         \endfoot
+%		\hline
+%%		\endlastfoot
+%    		\end{tabularx}
 }
 
 
