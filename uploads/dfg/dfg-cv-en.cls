@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
 \ProvidesClass{dfg-cv-en}
+
 \LoadClass[11pt, a4paper]{scrartcl}
 
 %%% DFG format specifics
@@ -10,20 +11,27 @@
 
 
 
-
-
-
 \RequirePackage{amsmath}
 %\usepackage[hidelinks]{hyperref}
 
 \RequirePackage[dvipsnames,svgnames]{xcolor}
 
-\usepackage[pdftex, colorlinks=true, linkcolor=MidnightBlue, citecolor=MidnightBlue, urlcolor=MidnightBlue, pdfauthor={Dr.\ Martin Hoelzer}, pdfpagelayout=SinglePage, bookmarks, bookmarksopen]{hyperref}
+\usepackage[pdftex, 
+colorlinks=true, 
+linkcolor=MidnightBlue, 
+citecolor=MidnightBlue, 
+urlcolor=MidnightBlue, 
+pdfauthor={David Sinden}, 
+pdfpagelayout=SinglePage, 
+bookmarks, 
+bookmarksopen]{hyperref}
 
 \usepackage{microtype}
 
 %\usepackage[headheight = 28pt, tmargin = 70pt, lmargin = 55pt, rmargin = 55pt, bmargin = 70pt]{geometry}
+
 % use DFG margins according to https://github.com/hoelzer/dfg/issues/56
+
 \usepackage[headheight = 1cm, tmargin = 2.5cm, lmargin = 2.5cm, rmargin = 2cm, bmargin = 1.5cm]{geometry}
 
 \RequirePackage[exponent-product = \cdot]{siunitx}
@@ -39,7 +47,7 @@
 \RequirePackage{verbatim}
 
 
-
+%\RequirePackage{fancyhdr}
 
 
 
@@ -84,8 +92,13 @@
 \RequirePackage{setspace}
 \renewcommand{\baselinestretch}{1.2} % Zeilenabstand 1.2
 \RequirePackage{ragged2e} % Kein Blocksatz in Tabelle
+
+\usepackage[normalem]{ulem}
 \RequirePackage{soul} % Underline with overlap (vs. \underline)
 \setuldepth{www.de/}
+
+
+
 
 \RequirePackage{kvoptions}
 \SetupKeyvalOptions{family=MY,prefix=MY@}
@@ -127,9 +140,9 @@
 \DeclareRobustCommand\actitle[1]{\gdef\@actitle{#1}}
 \DeclareRobustCommand\vorname[1]{\gdef\@vorname{#1}}
 \DeclareRobustCommand\nachname[1]{\gdef\@nachname{#1}}
-\DeclareRobustCommand\position[1]{\gdef\@position{#1}}
-\DeclareRobustCommand\institution[1]{\gdef\@institution{#1}}
-\DeclareRobustCommand\orcid[1]{\gdef\@orcid{#1}}
+%\DeclareRobustCommand\position[1]{\gdef\@position{#1}}
+%\DeclareRobustCommand\institution[1]{\gdef\@institution{#1}}
+%\DeclareRobustCommand\orcid[1]{\gdef\@orcid{#1}}
 \DeclareRobustCommand\schule[1]{\gdef\@schule{#1}}
 \DeclareRobustCommand\studium[1]{\gdef\@studium{#1}}
 \DeclareRobustCommand\promotion[1]{\gdef\@promotion{#1}}
@@ -138,19 +151,19 @@
 
 
 %%% DFG content specfics
-\AtBeginDocument{
-    \section*{Curriculum Vitae}
-    \section*{Personal Data}
-
-    % Persönliche Daten - Tabelle
-    \begin{tabularx}{\textwidth}{?p{5.24cm}+X?}\Xhline{\vthick}
-        Title & \@actitle  \\ \Xhline{\thick}
-        First name & \@vorname \\ \Xhline{\thick}
-        Name & \@nachname \\ \Xhline{\thick}
-        Current Position & \@position \\ \Xhline{\thick}
-        \RaggedRight Current institution(s)/site(s), country & \@institution \\ \Xhline{\thick}
-        Identifiers/ORCID  & \@orcid \\
-    \Xhline{\vthick}\end{tabularx}
+%\AtBeginDocument{
+%    \section*{Curriculum Vitae\quad David Sinden}
+%    \section*{Personal Data}
+%
+%    % Persönliche Daten - Tabelle
+%    \begin{tabularx}{\textwidth}{?p{5.24cm}+X?}\Xhline{\vthick}
+%        Title & \@actitle  \\ \Xhline{\thick}
+%        First name & \@vorname \\ \Xhline{\thick}
+%        Name & \@nachname \\ \Xhline{\thick}
+%        Current Position & \@position \\ \Xhline{\thick}
+%        \RaggedRight Current institution(s)/site(s), country & \@institution \\ \Xhline{\thick}
+%        Identifiers/ORCID  & \@orcid \\
+%    \Xhline{\vthick}\end{tabularx}
 
 
     % Qualifizierung und Werdegang - Tabelle
@@ -184,13 +197,13 @@
 %		\hline
 %%		\endlastfoot
 %    		\end{tabularx}
-}
+%}
 
 
 
 
 % --- Ergänzende Angaben zum Werdegang ---
-\newcommand{\secWerdegang}{\section*{Supplementary Career Information}} 
+\newcommand{\secSupplementary}{\section*{Supplementary Career Information}} 
 % optional, Freitextfeld
 
 % --- Engagement im Wissenschaftssystem ---
@@ -198,33 +211,33 @@
 % optional, Freitextfeld
 
 % --- Betreuung von Forschenden in frühen Karrierephasen ---
-\newcommand{\secBetreuung}{\section*{Supervision of Researchers in Early Career Phases}} 
+\newcommand{\secSupervision}{\section*{Supervision of Researchers in Early Career Phases}} 
 % optional, Freitextfeld
 
 % --- Wissenschaftliche Ergebnisse ---
-\newcommand{\secErgebnisse}{\section*{Scientific Results}} 
+\newcommand{\secResults}{\section*{Scientific Results}} 
 % Teil A obligatorisch, Teil B optional, Freitextfelder
 
 % --- Kategorie A ---
-\newcommand{\secKatA}{\section*{Category A}} 
+\newcommand{\secCategoryA}{\section*{Category A}} 
 % obligatorisch, Freitextfeld
 
 % --- Kategorie B ---
-\newcommand{\secKatB}{\section*{Category B}} 
+\newcommand{\secCategoryB}{\section*{Category B}} 
 % optional, Freitextfeld
 
 % --- Anerkennung durch das Wissenschaftssystem ---
-\newcommand{\secAnerkennung}{\section*{Academic Distinctions}} 
+\newcommand{\secAwards}{\section*{Academic Distinctions}} 
 % optional, Freitextfeld
 
 % --- Sonstige Angaben --- 
-\newcommand{\secSonstiges}{\section*{Other Information}} 
+\newcommand{\secOther}{\section*{Other Information}} 
 % optional, Freitextfeld
 
 % --- Datenschutz und Einwilligung in die Verarbeitung optionaler Angaben ---
 
 \AtEndDocument{\section*{Data protection and consent to the processing of optional data}
-{\small
+{\small\noindent%
 If you provide voluntary information (marked as optional) in this CV, your consent is required. Please confirm your consent by checking the box below. 
 
 \vspace{.4\baselineskip}
