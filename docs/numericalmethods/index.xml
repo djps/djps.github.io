@@ -36,7 +36,7 @@
 &lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The provision date for the exam is &lt;strong&gt;Wednesday 21 May&lt;/strong&gt; between 9:00 - 11:00, in SCC Hall 1-2 and 3-4.&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The provision date for the exam is &lt;strong&gt;Wednesday 21 May&lt;/strong&gt; between 9:00 - 11:00, in SCC Hall 1-2 and 3-4. For details regarding the exam see &lt;a href=&#34;#examination-type&#34;&gt;here&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
@@ -111,12 +111,12 @@
 &lt;li&gt;Newton interpolation&lt;/li&gt;
 &lt;li&gt;piecewise interpolation&lt;/li&gt;
 &lt;li&gt;spline interpolation&lt;/li&gt;
-&lt;li&gt;$b$-splines&lt;/li&gt;
+&lt;li&gt;B-splines&lt;/li&gt;
 &lt;li&gt;least squares approximation&lt;/li&gt;
-&lt;li&gt;polynomial regression&lt;/li&gt;
 &lt;li&gt;difference schemes&lt;/li&gt;
 &lt;li&gt;Richardson extrapolation&lt;/li&gt;
-&lt;li&gt;quadrature rules&lt;/li&gt;
+&lt;li&gt;quadrature rules: Trapezium, Simpson&lt;/li&gt;
+&lt;li&gt;Romberg Method&lt;/li&gt;
 &lt;li&gt;time stepping schemes for ordinary differential equations&lt;/li&gt;
 &lt;li&gt;Runge-Kutta schemes&lt;/li&gt;
 &lt;li&gt;finite difference method for partial differential equations&lt;/li&gt;
@@ -197,7 +197,7 @@ markmap:
       - Polynomial
       - Lagrange
       - Newton
-      - $b$-splines
+      - B-splines
     - [Integration](/docs/numericalmethods/part2/integration/#numerical-integration)
       - Simpson
       - Trapezium
