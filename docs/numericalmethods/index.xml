@@ -2737,7 +2737,7 @@ mjx-assistive-mml {
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one of more derivatives of a function of a single variable.
+            An &lt;strong&gt;ordinary differential equation&lt;/strong&gt; (ODE) is an equation that involves one or more derivatives of a function of a single variable.
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -2926,7 +2926,7 @@ $$&lt;p&gt;Thus, the Forward Euler method is the &lt;a href=&#34;https://djps.gi
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \lt 0}$ such that&lt;/p&gt;
+            &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \gt 0}$ such that&lt;/p&gt;
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le  C \Vert x - y\Vert^\alpha
 $$&lt;p&gt;
@@ -2957,7 +2957,7 @@ u_{n+1} = u_n + h \Phi\left( t_n, u_n, f_n, h \right)
 $$&lt;p&gt;
 with $\Phi$ the increment function. For the exact solution to the differential equation, $y\left(t_n \right) = y_n$, the solution is&lt;/p&gt;
 $$
-y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n  
+y_{n+1} = y_n + h \Phi\left( t_n, y(t_n), f_n, h \right) + \varepsilon_n ,
 $$&lt;p&gt;which can be written as&lt;/p&gt;
 $$
 \tau_n = \dfrac{y_{n+1} - y_n}{h} - \Phi\left( t_n, y(t_n), f_n, h \right)
