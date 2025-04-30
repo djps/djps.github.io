@@ -2460,7 +2460,7 @@ $$
 \int\limits_{a}^{b}f\left( x\right) \mathrm{d}x \approx \sum\limits_{i=0}^{n-1} \left( x_{i+1} - x_i \right) \dfrac{ f\left( x_{i} \right) + f\left( x_{i+1} \right)}{2}.
 $$&lt;p&gt;If the nodes of the partition are equally spaced, so that ${h=x_{i+1} - x_i}$, then the formula is given by&lt;/p&gt;
 $$
-T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-2}f\left( x_{i} \right).
+T\left(f,p\right) = \dfrac{h}{2} \left( f\left(x_0 \right) + f\left(x_n \right) \right) + h \sum\limits_{i=1}^{n-1} f\left( x_{i} \right).
 $$
         &lt;/div&gt;
     &lt;/div&gt;
