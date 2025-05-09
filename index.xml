@@ -742,7 +742,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-793528461&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-273619458&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -760,7 +760,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-793528461&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-273619458&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3704,10 +3704,11 @@ $$
 \Phi = \left( \begin{array}{cccc}
   \varphi_0 (u_0) &amp; \varphi_1 (u_0) &amp; \cdots &amp; \varphi_n (u_0) \\
   \vdots &amp; &amp; &amp; \vdots \\
-  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right).
+  \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right)
 \end{equation*}
-$$&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.&lt;/p&gt;
-&lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
+$$&lt;p&gt;i.e. $\Phi_{i,j} = \varphi_j (u_i)$.&lt;/p&gt;
+&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$ &amp;ndash; if $\Phi$ is square.&lt;/p&gt;
+&lt;p&gt;Furthermore, the collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -3989,7 +3990,7 @@ $$&lt;h2 id=&#34;least-squares-approximation&#34;&gt;Least-Squares Approximation
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares&lt;/p&gt;
+            &lt;p&gt;Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares&lt;/p&gt;
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
 $$&lt;p&gt;The minimum is found when&lt;/p&gt;
@@ -4020,17 +4021,20 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;If the function $y(x)$ is a function of the form&lt;/p&gt;
 $$
-y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$&lt;p&gt;where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as&lt;/p&gt;
+y = \sum\limits_{j=0}^{m} \beta_j \varphi_j \left( x \right)
+$$&lt;p&gt;where $\varphi_j$ are linearly independent, i.e. there are no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as&lt;/p&gt;
 $$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2 .
 $$&lt;p&gt;This has a minimum when&lt;/p&gt;
 $$
-\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$&lt;p&gt;Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;,&lt;/p&gt;
+\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{k=0}^m \beta_k \varphi_k \left( x_i \right)  \right) \varphi_j \left( x_i \right) = 0.
+$$&lt;p&gt;Thus, the weights $\beta$ can be determined by solving the &lt;strong&gt;normal equations&lt;/strong&gt;, that is, from the linear equation&lt;/p&gt;
 $$
-\Phi \Phi^T \beta = \Phi y,
-$$&lt;p&gt;i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi^T$ is the collocation matrix.&lt;/p&gt;
+\vec{y} = \Phi \vec{\beta},
+$$&lt;p&gt;so,&lt;/p&gt;
+$$
+\Phi^T \Phi \beta = \Phi^T \vec{y},
+$$&lt;p&gt;i.e. $\beta = \left( \Phi^T \Phi \right)^{-1} \Phi^T y$, where $\Phi$ is the collocation matrix.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
@@ -10531,7 +10535,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-126478359&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-436725198&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10549,7 +10553,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-126478359&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-436725198&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10560,7 +10564,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-367425918&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-594178623&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10578,7 +10582,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-367425918&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-594178623&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10591,7 +10595,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-762483591&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-961834725&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10609,7 +10613,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-762483591&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-961834725&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

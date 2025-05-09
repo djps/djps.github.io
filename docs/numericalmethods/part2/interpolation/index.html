@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: May 5, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: May 9, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head>
@@ -249,7 +249,7 @@
         content="2023-11-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-04-02T16:14:17&#43;02:00">
+    <meta property="article:modified_time" content="2025-05-09T22:47:36&#43;02:00">
   
 
   
@@ -2973,10 +2973,11 @@ $$
 \Phi = \left( \begin{array}{cccc}
   \varphi_0 (u_0) & \varphi_1 (u_0) & \cdots & \varphi_n (u_0) \\
   \vdots & & & \vdots \\
-  \varphi_0 (u_n) & \cdots & \cdots & \varphi_n (u_n) \end{array} \right).
+  \varphi_0 (u_n) & \cdots & \cdots & \varphi_n (u_n) \end{array} \right)
 \end{equation*}
-$$<p>Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$.</p>
-<p>The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
+$$<p>i.e. $\Phi_{i,j} = \varphi_j (u_i)$.</p>
+<p>Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$ &ndash; if $\Phi$ is square.</p>
+<p>Furthermore, the collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.</p>
 
         </div>
     </div>
@@ -3258,7 +3259,7 @@ $$<h2 id="least-squares-approximation">Least-Squares Approximation</h2>
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x_0$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares</p>
+            <p>Given a set of points $y=\left( y_0, y_1, \ldots y_n \right)$ at nodes $x$, seek a continuous function of $x$, with a given form characterized by $m$ parameters $\beta=\left( \beta_0, \beta_1, \ldots, \beta_m \right)$, i.e. $f\left( x, \beta \right)$, which approximates the points while minimizing the error, defined by the sum of the squares</p>
 $$
 E = \sum\limits_{i=0}^{n} \left( y - f\left(x_i, \beta \right) \right)^2.
 $$<p>The minimum is found when</p>
@@ -3289,17 +3290,20 @@ $$
         <div class="admonition-content">
             <p>If the function $y(x)$ is a function of the form</p>
 $$
-y = \sum\limits_{j=1}^{m} \beta_j \varphi_j \left( x \right)
-$$<p>where $\varphi_j$ are linearly independent, i.e. there is no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as</p>
+y = \sum\limits_{j=0}^{m} \beta_j \varphi_j \left( x \right)
+$$<p>where $\varphi_j$ are linearly independent, i.e. there are no non-zero constants $c_1$ and $c_2$ such that ${c_1 \varphi_i + c_2 \varphi_j =0}$ for all $x$. Then the least squares problem can be expressed as</p>
 $$
 E\left( \beta \right) = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{j=0}^m \beta_j \varphi_j\left( x_i \right) \right)^2 .
 $$<p>This has a minimum when</p>
 $$
-\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{j=1}^m \left( \sum\limits_{i=1}^n \varphi_j\left( x_i \right) \varphi_k \left( x_i \right) \right) = 0.
-$$<p>Thus, the weights $\beta$ can be determined by solving the <strong>normal equations</strong>,</p>
+\dfrac{\partial E}{\partial \beta_j} = \sum\limits_{i=0}^n \left( y_i - \sum\limits_{k=0}^m \beta_k \varphi_k \left( x_i \right)  \right) \varphi_j \left( x_i \right) = 0.
+$$<p>Thus, the weights $\beta$ can be determined by solving the <strong>normal equations</strong>, that is, from the linear equation</p>
 $$
-\Phi \Phi^T \beta = \Phi y,
-$$<p>i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi^T$ is the collocation matrix.</p>
+\vec{y} = \Phi \vec{\beta},
+$$<p>so,</p>
+$$
+\Phi^T \Phi \beta = \Phi^T \vec{y},
+$$<p>i.e. $\beta = \left( \Phi^T \Phi \right)^{-1} \Phi^T y$, where $\Phi$ is the collocation matrix.</p>
 
         </div>
     </div>
@@ -3312,9 +3316,9 @@ $$<p>i.e. $\beta = \left( \Phi \Phi^T \right)^{-1} \Phi y$, where $\Phi^T$ is th
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-04-02T16:14:17.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-05-09T22:47:36.000Z">
     <span>Last updated on</span>
-    Apr 2, 2025</time>
+    May 9, 2025</time>
       
       
   
