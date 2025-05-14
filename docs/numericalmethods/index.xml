@@ -1004,7 +1004,9 @@ so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            A square matrix is said to be a &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.
+            &lt;p&gt;A square matrix is said to be a &lt;strong&gt;lower triangular matrix&lt;/strong&gt; if all the elements above the main diagonal are zero and &lt;strong&gt;upper triangular&lt;/strong&gt; if all the entries below the main diagonal are zero.&lt;/p&gt;
+&lt;p&gt;If all of the entries on the main diagonal of a lower triangular matrix are also zero, the matrix is called &lt;strong&gt;strictly lower triangular&lt;/strong&gt;.&lt;/p&gt;
+
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -1268,7 +1270,7 @@ $$
 (D + L) x_{k+1} = -U x_{k} + b
 \end{equation*}
 $$&lt;p&gt;
-where $L$ is the lower triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
+where $L$ is the strictly lower triangular part of $A$, $U$ is the strictly upper triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
 
         &lt;/div&gt;
     &lt;/div&gt;
