@@ -140,8 +140,8 @@
 &lt;li&gt;least squares approximation&lt;/li&gt;
 &lt;li&gt;difference schemes&lt;/li&gt;
 &lt;li&gt;Richardson extrapolation&lt;/li&gt;
-&lt;li&gt;quadrature rules: Trapezium, Simpson&lt;/li&gt;
-&lt;li&gt;Romberg Method&lt;/li&gt;
+&lt;li&gt;quadrature rules: the trapezium and Simpson&amp;rsquo;s methods&lt;/li&gt;
+&lt;li&gt;Romberg method&lt;/li&gt;
 &lt;li&gt;time stepping schemes for ordinary differential equations&lt;/li&gt;
 &lt;li&gt;Runge-Kutta schemes&lt;/li&gt;
 &lt;li&gt;finite difference method for partial differential equations&lt;/li&gt;
@@ -272,12 +272,12 @@ markmap:
 &lt;/table&gt;
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The date for the first exam is Thursday 21 May 2025 between 9:00 - 11:00&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;The date for the first exam is Thursday 21 May 2025 between 9:00 - 11:00.&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;For the second exam, the provisional date is set for Friday August 22 between 08:00 - 10:00.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/&#34;&gt;here&lt;/a&gt;. Note that the exam will comprise of both long-form and multiple choice questions.&lt;/p&gt;
+&lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
 &lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements. The bonus marks are only added if the exam is passed, and no more than 100% can be achieved.&lt;/p&gt;
 &lt;p&gt;Homework submission is voluntary, although highly recommended. It is possible to get a 100% final grade without submitting homework.&lt;/p&gt;
@@ -767,7 +767,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-945836712&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-245789316&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -785,7 +785,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-945836712&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-245789316&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10562,7 +10562,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-126784593&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-471589263&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10580,7 +10580,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-126784593&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-471589263&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10591,7 +10591,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-439582176&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-698572134&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10609,7 +10609,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-439582176&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-698572134&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10622,7 +10622,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-829513674&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-297358416&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10640,7 +10640,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-829513674&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-297358416&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
