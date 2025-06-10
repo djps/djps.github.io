@@ -306,7 +306,10 @@ https://francisbach.com/richardson-extrapolation/
 https://home.uni-leipzig.de/physik/sites/mona/wp-content/uploads/sites/3/2017/07/Lecture07-CurveFitting.pdf
 numerical accidents
 quarter precision arithmetic - machine learning
-
+https://en.wikipedia.org/wiki/Catastrophic_cancellation
+https://scicomp.stackexchange.com/questions/20629/when-should-log1p-and-expm1-be-used
+https://bpb-us-e1.wpmucdn.com/sites.ucsc.edu/dist/7/1905/files/2025/03/romberg.pdf
+https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html - may be too long
 
 --&gt;
 </description>
@@ -767,7 +770,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-632941587&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-814579236&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -785,7 +788,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-632941587&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-814579236&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10562,7 +10565,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-597468321&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-723816549&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10580,7 +10583,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-597468321&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-723816549&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10591,7 +10594,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-964578123&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-489716523&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10609,7 +10612,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-964578123&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-489716523&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10622,7 +10625,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-165893472&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-539782164&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10640,7 +10643,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-165893472&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-539782164&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
