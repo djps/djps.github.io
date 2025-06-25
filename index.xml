@@ -772,7 +772,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-132465879&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-974632185&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -790,7 +790,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-132465879&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-974632185&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -8610,7 +8610,10 @@ $$&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;c
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;that is:&lt;/p&gt;
 $$
-\left( \dfrac{10 - 2\sqrt{2}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 = 3.673675536076871
+\begin{align*}
+E = \left( \dfrac{10 - 2\sqrt{2}}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 \\
+&amp; = \dfrac{2}{7} \left( 27 - 10 \sqrt{2} \right)
+&amp; = 3.673675536076871
 $$</description>
     </item>
     
@@ -10628,7 +10631,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-134295876&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-961572438&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10646,7 +10649,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-134295876&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-961572438&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10657,7 +10660,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-123698745&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-756432819&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10675,7 +10678,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-123698745&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-756432819&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10688,7 +10691,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-417856923&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-349728615&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10706,7 +10709,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-417856923&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-349728615&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
