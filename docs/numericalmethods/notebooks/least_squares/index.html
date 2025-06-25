@@ -249,7 +249,7 @@
         content="2024-03-04T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-06-25T14:14:19&#43;02:00">
+    <meta property="article:modified_time" content="2025-06-25T14:15:44&#43;02:00">
   
 
   
@@ -2887,7 +2887,7 @@ $$<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-
 </span></span></code></pre></div><p>Compute the function to minimize, $\beta = (a,b)^T$</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">beta</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">p</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">u_i</span><span class="p">)</span> <span class="o">-</span> <span class="n">p_i</span>
-</span></span></code></pre></div><p>Specify an initial guess</p>
+</span></span></code></pre></div><p>The scipy least square routine solves the problem iteratively from an initial guess, so let</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">beta0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
 </span></span></code></pre></div><p>Compute the least squares solution. Note that the output of the cost function provide by the scipy function is half the sum of the square differences, see <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html#scipy.optimize.least_squares" target="_blank" rel="noopener">here</a>, so</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">res</span> <span class="o">=</span> <span class="n">least_squares</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">beta0</span><span class="p">)</span>
@@ -2915,7 +2915,7 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-06-25T14:14:19.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-06-25T14:15:44.000Z">
     <span>Last updated on</span>
     Jun 25, 2025</time>
       
