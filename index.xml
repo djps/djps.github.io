@@ -965,7 +965,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-537168429&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-412836579&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -983,7 +983,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-537168429&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-412836579&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -9312,6 +9312,7 @@ We consider the equilibrium equations of a conducting rod in a uniform magnetic 
 &lt;/blockquote&gt;
 &lt;p&gt;Scientific computing and numerical analysis are research fields that aim to provide methods for solving large-scale problems from various areas of science with the help of computers. Typical problems are ordinary and partial differential equations (ODEs, PDEs), their discretizations, and the solution of linear algebra problems arising from them.&lt;/p&gt;
 &lt;p&gt;This is from my &lt;a href=&#34;https://github.com/djps/awesome-scientific-computing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fork&lt;/a&gt; of Nico Schlömer&amp;rsquo;s github repo, which can be found &lt;a href=&#34;https://github.com/nschloe/awesome-scientific-computing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Another useful, although less focused, resource, would be GitHub starred &lt;a href=&#34;https://github.com/djps?tab=stars&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repos&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#basic-linear-algebra&#34;&gt;Basic linear algebra&lt;/a&gt;&lt;/li&gt;
@@ -9482,6 +9483,7 @@ license&lt;/a&gt;,
 &lt;li&gt;&lt;a href=&#34;https://topology-tool-kit.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TTK&lt;/a&gt; - Topological data analysis and visualization.
 (C++/Python, BSD, &lt;a href=&#34;https://github.com/topology-tool-kit/ttk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ABRG-Models/morphologica&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;morphologica&lt;/a&gt; - Header-only, modern OpenGL code to visualize numerical simulations at runtime. (C++, Apache 2.0, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://napari.org/stable/#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;napari&lt;/a&gt; - A fast, interactive viewer for multi-dimensional images (Python, BSD-3, &lt;a href=&#34;https://github.com/napari/napari&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;medical-image-computing&#34;&gt;Medical image computing&lt;/h2&gt;
@@ -9537,20 +9539,24 @@ license&lt;/a&gt;,
 &lt;li&gt;&lt;a href=&#34;https://github.com/stanfordnqp/jaxwell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jaxwell&lt;/a&gt; - An iterative solver for solving the finite-difference frequency-domain Maxwell equations on NVIDIA GPUs. (Python, GPL-3, GitHub)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mit.edu/~wsshin/fd3d.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fd3d&lt;/a&gt; - Solve the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, using an iterative methods to avoid the large memory requirement of direct methods for 3D problems. (C, &lt;a href=&#34;https://github.com/wsshin/fd3d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mit.edu/~wsshin/maxwellfdfd.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maxwellfdfd&lt;/a&gt; - Solves the frequency-domain Maxwell&amp;rsquo;s equations (Matlab, &lt;a href=&#34;https://github.com/wsshin/maxwellfdfd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;) -&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/zhaonat/py-maxwell-fd3d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;py-maxwell-fd3d&lt;/a&gt; - Solve the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, with direct and iterative methods (python, MIT, GitHub)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bempp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bempp&lt;/a&gt; - open-source computational boundary element platform to solve electrostatic, acoustic and electromagnetic problems. (Python, MIT, &lt;a href=&#34;https://github.com/bempp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zhaonat/py-maxwell-fd3d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;py-maxwell-fd3d&lt;/a&gt; - Solves the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, with direct and iterative methods (python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bempp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bempp&lt;/a&gt; - Open-source computational boundary element platform to solve electrostatic, acoustic and electromagnetic problems. (Python, MIT, &lt;a href=&#34;https://github.com/bempp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ucl-bug.github.io/jwave&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jwave&lt;/a&gt; - k-Wave in JAX. (Python, LGPL-3, &lt;a href=&#34;https://github.com/ucl-bug/jwave&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jsoneson/HITU_Simulator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HITU_simulator&lt;/a&gt; - A nonlinear axisymmetric beamer simulator. (Matlab, GPL-3, GitHub)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.fusfoundation.org/for-researchers/resources/kranion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kranion&lt;/a&gt; - interactive transcranial focused ultrasound visualization system (java, MIT, &lt;a href=&#34;https://github.com/jws2f/Kranion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fusfoundation.org/for-researchers/resources/kranion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kranion&lt;/a&gt; - Interactive transcranial focused ultrasound visualization system (java, MIT, &lt;a href=&#34;https://github.com/jws2f/Kranion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.egr.msu.edu/~fultras-web/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Focus&lt;/a&gt; - Fast nearfield method (Matlab)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://m-sound.github.io/mSOUND/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mSound&lt;/a&gt; - Solves Westervelt equation by computing multiple reflections (Matlab, GNU, &lt;a href=&#34;https://github.com/m-SOUND/mSOUND&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;AberSim - No longer maintained/publically available.&lt;/li&gt;
 &lt;li&gt;Bergen - No longer maintained/publically available.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://field-ii.dk/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FieldII&lt;/a&gt; - Diagnostic simulator (Matlab, MIT)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://limu.msu.ru/product/3555/home?language=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beam&lt;/a&gt; - 3D nonlinear continuous wave simulator (Matlab/Fortran )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://limu.msu.ru/product/3555/home?language=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beam&lt;/a&gt; - 3D nonlinear continuous wave simulator (Matlab/Fortran)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.stride.codes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stride&lt;/a&gt; - modelling and optimisation framework for medical ultrasound (python, AGPL-3, &lt;a href=&#34;https://github.com/trustimaging/stride&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ProteusMRIgHIFU/BabelViscoFDTD&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BabelBrain&lt;/a&gt; - FDTD of viscoelastic equation using a staggered grid arrangement with support for GPU and CPU backends (C++/OpenCL, BSD-3, GitHub)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rvelseg/FiVoNAGI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FiVoNAGI&lt;/a&gt; - Finite volume nonlinear acoustics GPU implementation in 2D (C++/Cuda, BSD, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rvelseg/FiVoNAGI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FiVoNAGI&lt;/a&gt; - Finite volume nonlinear acoustics GPU implementation in 2D
+(C++/Cuda, BSD, GitHub)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://individual.utoronto.ca/kzhu/program/ac2d/doc/html/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AC2D&lt;/a&gt; - 2D finite-difference time-domain solver
+(C++, BSD, &lt;a href=&#34;https://sourceforge.net/projects/ac2d/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SourceForge&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://agencyenterprise.github.io/neurotechdevkit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Neurotech Development Kit&lt;/a&gt; - rovides support for transcranial focused ultrasound stimulation, along with comprehensive documentation, API flexibility, and 2D/3D visualizations (python, Apache, &lt;a href=&#34;https://github.com/agencyenterprise/neurotechdevkit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;physics-informed-neural-networks&#34;&gt;Physics-informed neural networks&lt;/h2&gt;
 &lt;ul&gt;
@@ -9562,15 +9568,9 @@ license&lt;/a&gt;,
 &lt;/ul&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://mathematical-tours.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathematical Tours&lt;/a&gt; - Mathematical tours of data science.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.numerical-tours.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Numerical Tours&lt;/a&gt; - Numerical tours of data science.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heffte&lt;/a&gt; - Highly Efficient FFT for Exascale (C++, BSD-3, &lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mathematical-tours.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mathematical Tours&lt;/a&gt; - Mathematical tours of data science.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.numerical-tours.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Numerical Tours&lt;/a&gt; - Numerical tours of data science.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;heffte&lt;/a&gt; - Highly Efficient FFT for Exascale (C++, BSD-3, &lt;a href=&#34;https://github.com/icl-utk-edu/heffte&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;other-libraries-and-tools&#34;&gt;Other libraries and tools&lt;/h2&gt;
@@ -9629,7 +9629,7 @@ license&lt;/a&gt;,
 &lt;li&gt;&lt;a href=&#34;https://people.maths.ox.ac.uk/trefethen/videos.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nick Trefethen&amp;rsquo;s Video Lectures&lt;/a&gt; - 36 video lectures on approximation theory/practice and scientific computing.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.johndcook.com/blog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;John D. Cook&amp;rsquo;s blog&lt;/a&gt; - Feats of scientific computing.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://netlib.org/utk/people/JackDongarra/la-sw.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jack Dongarra&amp;rsquo;s software list&lt;/a&gt; - List of freely available software for the solution of linear algebra problems.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://netlib.org/na-digest-html/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NA Digest&lt;/a&gt; - Collection of articles on topics related to numerical analysis and those who practice it.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://na-digest.coecis.cornell.edu/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NA Digest&lt;/a&gt; - Collection of articles on topics related to numerical analysis and those who practice it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- markdown-link-check-disable --&gt;
 &lt;ul&gt;
@@ -10824,7 +10824,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-964351287&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-946123785&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10842,7 +10842,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-964351287&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-946123785&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10853,7 +10853,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-892347516&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-142793568&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10871,7 +10871,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-892347516&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-142793568&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10884,7 +10884,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-273561498&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-193675428&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10902,7 +10902,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-273561498&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-193675428&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
