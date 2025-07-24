@@ -516,6 +516,12 @@ https://wiki.math.ntnu.no/_media/ma2501/2015v/sol02.pdf
       <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid>
       <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Autumn 2024.&lt;/span&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
 &lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
@@ -728,7 +734,14 @@ markmap:
       <link>https://djps.github.io/docs/numericalanalysis22/intro/intro/</link>
       <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalanalysis22/intro/intro/</guid>
-      <description>&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
+&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Spring 2022.&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures take place: 11:15-12:30 &lt;del&gt;Tuesday&lt;/del&gt; Thursday (East Hall 8) and Fridays (East Hall 4), from 1 February until 13 May 2022.&lt;/p&gt;
 &lt;h2 id=&#34;content-and-educational-aims&#34;&gt;Content and Educational Aims&lt;/h2&gt;
 &lt;p&gt;The module is an introduction to the analysis of basic classes of numerical algorithms used in large-scale scientific computing.&lt;/p&gt;
@@ -965,7 +978,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-514386972&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-163852974&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -983,7 +996,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-514386972&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-163852974&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10863,7 +10876,13 @@ Society for Thermal Medicine 2022 Annual Meeting
       <link>https://djps.github.io/docs/mech1010/</link>
       <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/mech1010/</guid>
-      <description>&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Autumn 2010.&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
 &lt;p&gt;Lecture notes on integration can be found &lt;a href=&#34;https://djps.github.io/mech1010/integration_notes.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1.pdf&#34;&gt;Problem sheet 1&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
@@ -10884,7 +10903,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-783416592&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-845967321&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10902,7 +10921,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-783416592&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-845967321&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10913,7 +10932,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-176259834&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-596713248&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10931,7 +10950,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-176259834&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-596713248&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10944,7 +10963,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-143859726&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-936751824&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10962,7 +10981,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-143859726&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-936751824&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10977,7 +10996,13 @@ This should be from the static folder:
       <link>https://djps.github.io/docs/math6502/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/math6502/</guid>
-      <description>&lt;h2 id=&#34;class-tests&#34;&gt;Class Tests&lt;/h2&gt;
+      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
+&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
+  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Autumn 2008 and 2009.&lt;/span&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;class-tests&#34;&gt;Class Tests&lt;/h2&gt;
 &lt;p&gt;Sample tests from &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_2008_questions.pdf&#34;&gt;2008&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_2009_questions.pdf&#34;&gt;2009&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;sample-exam&#34;&gt;Sample Exam&lt;/h2&gt;
 &lt;p&gt;Sample exam from &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_sample_paper.pdf&#34;&gt;2008&lt;/a&gt;.&lt;/p&gt;
