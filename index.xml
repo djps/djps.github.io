@@ -978,7 +978,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-163852974&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-934826175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -996,7 +996,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-163852974&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-934826175&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3162,6 +3162,82 @@ $$
 $$&lt;p&gt;but the expectation can be computed via&lt;/p&gt;
 $$
 {E} [Y] = \int_{-\infty}^{\infty} g(x) \, f_X(x) \, \text{d}x.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;h2 id=&#34;conditional-expectations&#34;&gt;Conditional Expectations&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Conditional Expectation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;The &lt;strong&gt;conditional expectation&lt;/strong&gt; of $X$ given that an event $B$ has occurred is&lt;/p&gt;
+$$
+E \left[ X \, \vert \, B \right] &amp; = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Conditional Expectation&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;discrete&lt;/em&gt; random variables with a joint PMF $P_{X,Y}\left(x_i, y_j\right)$. Then the conditional expectation of $Y$ given $X=x_i$, denoted by $E\left[ Y \, \vert \, X=x_i \right]$ is&lt;/p&gt;
+$$
+E \left[ Y \, \vert \, X=x_i \right] &amp; = \sum_{j} y_j \, P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right),
+$$&lt;p&gt;where the conditional probability that $\left\{ Y = y_j \right\}$ occurs given $\left\{ X=x_i \right\}$ has occurred is given by&lt;/p&gt;
+$$
+P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
+$$
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
+    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
+        
+        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
+          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+        &lt;/span&gt;
+        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
+          Definition: &lt;em&gt;Conditional PDFs&lt;/em&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;details-content&#34;&gt;
+        &lt;div class=&#34;admonition-content&#34;&gt;
+            &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;continuous&lt;/em&gt; random variables with a joint PDF $f_{XY}\left(x, y\right)$.  The conditional pdf of $Y$ given $X=x$ is denoted by&lt;/p&gt;
+$$
+f_{Y \, \vert \, X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X \left( x \right) },
+$$&lt;p&gt;where $f_X(x) \ne 0$. Then the conditional expectation of $Y$ given that $X=x$ is given by $E\left[ Y \,\vert\, X=x \right]$&lt;/p&gt;
+$$
+E \left[ Y \, \vert X=x \, \right] &amp; = \int_{-\infty}^{\infty} y \, f_{Y \, \vert \, X}\left( y \, \vert \, x \right) \text{d}y.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -10903,7 +10979,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-845967321&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-912547368&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10921,7 +10997,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-845967321&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-912547368&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10932,7 +11008,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-596713248&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-754123968&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10950,7 +11026,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-596713248&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-754123968&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10963,7 +11039,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-936751824&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-821439675&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10981,7 +11057,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-936751824&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-821439675&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

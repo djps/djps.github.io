@@ -249,7 +249,7 @@
         content="2025-07-24T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-07-24T16:23:36&#43;02:00">
+    <meta property="article:modified_time" content="2025-07-24T23:02:41&#43;02:00">
   
 
   
@@ -1654,6 +1654,14 @@
     
   >Expectations
     </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#conditional-expectations"
+                class="hb-docs-link"
+              >Conditional Expectations</a>
+            </li>
+          </ul>
   
               
             </li><li class="flex flex-col "><a
@@ -3065,11 +3073,87 @@ $$
 
 
 
+<h2 id="conditional-expectations">Conditional Expectations</h2>
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Conditional Expectation</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>The <strong>conditional expectation</strong> of $X$ given that an event $B$ has occurred is</p>
+$$
+E \left[ X \, \vert \, B \right] & = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
+$$
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Conditional Expectation</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>Let $X$ and $Y$ be <em>discrete</em> random variables with a joint PMF $P_{X,Y}\left(x_i, y_j\right)$. Then the conditional expectation of $Y$ given $X=x_i$, denoted by $E\left[ Y \, \vert \, X=x_i \right]$ is</p>
+$$
+E \left[ Y \, \vert \, X=x_i \right] & = \sum_{j} y_j \, P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right),
+$$<p>where the conditional probability that $\left\{ Y = y_j \right\}$ occurs given $\left\{ X=x_i \right\}$ has occurred is given by</p>
+$$
+P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
+$$
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="details admonition Definition open">
+    <div class="details-summary admonition-title">
+        
+        <span class="flex pr-3 pt-1">
+          <svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/></svg>
+        </span>
+        <span class="dark:text-neutral-300">
+          Definition: <em>Conditional PDFs</em>
+        </span>
+    </div>
+    <div class="details-content">
+        <div class="admonition-content">
+            <p>Let $X$ and $Y$ be <em>continuous</em> random variables with a joint PDF $f_{XY}\left(x, y\right)$.  The conditional pdf of $Y$ given $X=x$ is denoted by</p>
+$$
+f_{Y \, \vert \, X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X \left( x \right) },
+$$<p>where $f_X(x) \ne 0$. Then the conditional expectation of $Y$ given that $X=x$ is given by $E\left[ Y \,\vert\, X=x \right]$</p>
+$$
+E \left[ Y \, \vert X=x \, \right] & = \int_{-\infty}^{\infty} y \, f_{Y \, \vert \, X}\left( y \, \vert \, x \right) \text{d}y.
+$$
+        </div>
+    </div>
+</div>
+
+
+
+
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-24T16:23:36.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-24T23:02:41.000Z">
     <span>Last updated on</span>
     Jul 24, 2025</time>
       
