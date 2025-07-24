@@ -978,7 +978,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-934826175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-619253874&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -996,7 +996,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-934826175&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-619253874&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3133,7 +3133,7 @@ $$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt
             &lt;p&gt;If $P_X = P \left( X=x_i \right) = p_i$, then the &lt;strong&gt;expectation&lt;/strong&gt; is of a &lt;em&gt;discrete&lt;/em&gt; random variable is defined as:&lt;/p&gt;
 $$
 E[X] = \sum _{i=1}^{\infty} x_{i} \, p_{i}.
-$$&lt;p&gt;For a &lt;em&gt;continuous&lt;/em&gt; random variable $X$, with a probability density function $f$, then the expectation is given by&lt;/p&gt;
+$$&lt;p&gt;For a &lt;em&gt;continuous&lt;/em&gt; random variable $X$, with a probability density function $f_X$, then the expectation is given by&lt;/p&gt;
 $$
 E[X] = \int_{-\infty}^{\infty} x \, f_X(x) \, \text{d}x.
 $$
@@ -3185,7 +3185,7 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;The &lt;strong&gt;conditional expectation&lt;/strong&gt; of $X$ given that an event $B$ has occurred is&lt;/p&gt;
 $$
-E \left[ X \, \vert \, B \right] &amp; = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
+E \left[ X \, \vert \, B \right] = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -3208,10 +3208,10 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;discrete&lt;/em&gt; random variables with a joint PMF $P_{X,Y}\left(x_i, y_j\right)$. Then the conditional expectation of $Y$ given $X=x_i$, denoted by $E\left[ Y \, \vert \, X=x_i \right]$ is&lt;/p&gt;
 $$
-E \left[ Y \, \vert \, X=x_i \right] &amp; = \sum_{j} y_j \, P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right),
+E \left[ Y \, \vert \, X=x_i \right] = \sum_{j} y_j \, P_{Y \vert  X}\left( y_j \, \vert \, x_i \right),
 $$&lt;p&gt;where the conditional probability that $\left\{ Y = y_j \right\}$ occurs given $\left\{ X=x_i \right\}$ has occurred is given by&lt;/p&gt;
 $$
-P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
+P_{Y \vert X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -3234,10 +3234,10 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;continuous&lt;/em&gt; random variables with a joint PDF $f_{XY}\left(x, y\right)$.  The conditional pdf of $Y$ given $X=x$ is denoted by&lt;/p&gt;
 $$
-f_{Y \, \vert \, X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X \left( x \right) },
+f_{Y \vert X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X ( x ) },
 $$&lt;p&gt;where $f_X(x) \ne 0$. Then the conditional expectation of $Y$ given that $X=x$ is given by $E\left[ Y \,\vert\, X=x \right]$&lt;/p&gt;
 $$
-E \left[ Y \, \vert X=x \, \right] &amp; = \int_{-\infty}^{\infty} y \, f_{Y \, \vert \, X}\left( y \, \vert \, x \right) \text{d}y.
+E \left[ Y \, \vert X=x \, \right] = \int_{-\infty}^{\infty} y \, f_{Y  \vert X}\left( y \, \vert \, x \right) \text{d}y.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -10979,7 +10979,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-912547368&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-374851296&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10997,7 +10997,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-912547368&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-374851296&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11008,7 +11008,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-754123968&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-756431982&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11026,7 +11026,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-754123968&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-756431982&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11039,7 +11039,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-821439675&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-249715863&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11057,7 +11057,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-821439675&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-249715863&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

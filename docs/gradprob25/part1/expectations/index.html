@@ -249,7 +249,7 @@
         content="2025-07-24T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-07-24T23:02:41&#43;02:00">
+    <meta property="article:modified_time" content="2025-07-24T23:12:51&#43;02:00">
   
 
   
@@ -3036,7 +3036,7 @@
             <p>If $P_X = P \left( X=x_i \right) = p_i$, then the <strong>expectation</strong> is of a <em>discrete</em> random variable is defined as:</p>
 $$
 E[X] = \sum _{i=1}^{\infty} x_{i} \, p_{i}.
-$$<p>For a <em>continuous</em> random variable $X$, with a probability density function $f$, then the expectation is given by</p>
+$$<p>For a <em>continuous</em> random variable $X$, with a probability density function $f_X$, then the expectation is given by</p>
 $$
 E[X] = \int_{-\infty}^{\infty} x \, f_X(x) \, \text{d}x.
 $$
@@ -3088,7 +3088,7 @@ $$
         <div class="admonition-content">
             <p>The <strong>conditional expectation</strong> of $X$ given that an event $B$ has occurred is</p>
 $$
-E \left[ X \, \vert \, B \right] & = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
+E \left[ X \, \vert \, B \right] = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
 $$
         </div>
     </div>
@@ -3111,10 +3111,10 @@ $$
         <div class="admonition-content">
             <p>Let $X$ and $Y$ be <em>discrete</em> random variables with a joint PMF $P_{X,Y}\left(x_i, y_j\right)$. Then the conditional expectation of $Y$ given $X=x_i$, denoted by $E\left[ Y \, \vert \, X=x_i \right]$ is</p>
 $$
-E \left[ Y \, \vert \, X=x_i \right] & = \sum_{j} y_j \, P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right),
+E \left[ Y \, \vert \, X=x_i \right] = \sum_{j} y_j \, P_{Y \vert  X}\left( y_j \, \vert \, x_i \right),
 $$<p>where the conditional probability that $\left\{ Y = y_j \right\}$ occurs given $\left\{ X=x_i \right\}$ has occurred is given by</p>
 $$
-P_{Y \, \vert \, X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
+P_{Y \vert X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
 $$
         </div>
     </div>
@@ -3137,10 +3137,10 @@ $$
         <div class="admonition-content">
             <p>Let $X$ and $Y$ be <em>continuous</em> random variables with a joint PDF $f_{XY}\left(x, y\right)$.  The conditional pdf of $Y$ given $X=x$ is denoted by</p>
 $$
-f_{Y \, \vert \, X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X \left( x \right) },
+f_{Y \vert X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X ( x ) },
 $$<p>where $f_X(x) \ne 0$. Then the conditional expectation of $Y$ given that $X=x$ is given by $E\left[ Y \,\vert\, X=x \right]$</p>
 $$
-E \left[ Y \, \vert X=x \, \right] & = \int_{-\infty}^{\infty} y \, f_{Y \, \vert \, X}\left( y \, \vert \, x \right) \text{d}y.
+E \left[ Y \, \vert X=x \, \right] = \int_{-\infty}^{\infty} y \, f_{Y  \vert X}\left( y \, \vert \, x \right) \text{d}y.
 $$
         </div>
     </div>
@@ -3153,7 +3153,7 @@ $$
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-24T23:02:41.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-24T23:12:51.000Z">
     <span>Last updated on</span>
     Jul 24, 2025</time>
       
