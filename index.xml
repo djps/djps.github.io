@@ -484,7 +484,7 @@ markmap:
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;del&gt;The date for the first exam is Thursday 21 May 2025 between 9:00 - 11:00.&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;For the second exam, the provisional date is set for Friday August 22 between 08:00 - 10:00.&lt;/li&gt;
+&lt;li&gt;For the second exam, the date is set for Friday August 22 between 08:00 - 10:00 in ICC Eastwing&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
@@ -1025,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-687293514&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-831629754&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-687293514&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-831629754&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11040,7 +11040,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-124397658&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-379826541&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11058,7 +11058,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-124397658&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-379826541&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11069,7 +11069,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-867532419&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-764921835&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11087,7 +11087,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-867532419&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-764921835&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11100,7 +11100,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-638429175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-341257698&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11118,7 +11118,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-638429175&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-341257698&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
