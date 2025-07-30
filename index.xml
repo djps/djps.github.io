@@ -100,7 +100,7 @@ course.&lt;/p&gt;
   Failure Rates                     :b1e,  10-21, 3w
 
   section  Functions of Random Variables
-  blanks                            :c1a,  10-21, 3w
+  Functions of Random Variables     :c1a,  10-21, 3w
 
   section  Expectations  
   Expectations                      :d2a,  11-11, 1w
@@ -112,7 +112,7 @@ course.&lt;/p&gt;
   Summary                           :active, a3a,  11-25, 1w
 &lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
-&lt;p&gt;The course content has the following structure:&lt;/p&gt;
+&lt;p&gt;Provisionally, the course content has the following structure:&lt;/p&gt;
 &lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
 
 &lt;pre&gt;---
@@ -122,27 +122,27 @@ markmap:
 ---
 - Probability
   - [Fundamentals](/docs/gradprob25/part1/fundamentals/)
-    - [Joint, Conditional and Total Probabilities](docs/gradprob25/part1/fundamentals/#joint-conditional-and-total-probabilities)
-    - [Sets, Fields and Events](docs/gradprob25/part1/fundamentals/#sets-fields-and-events)
-    - [Bayes Theorem](docs/gradprob25/part1/fundamentals/#bayes-theorem)
-    - [Combinatorics](docs/gradprob25/part1/fundamentals/#combinatorics)
-    - [Bernoulli Trials and Binomial Law](docs/gradprob25/part1/fundamentals/#bernoulli-trials-and-binomial-law)
-    - [Poisson Law](docs/gradprob25/part1/fundamentals/#poisson-law)
+    - [Joint, Conditional and Total Probabilities](/docs/gradprob25/part1/fundamentals/#joint-conditional-and-total-probabilities)
+    - [Sets, Fields and Events](/docs/gradprob25/part1/fundamentals/#sets-fields-and-events)
+    - [Bayes Theorem](/docs/gradprob25/part1/fundamentals/#bayes-theorem)
+    - [Combinatorics](/docs/gradprob25/part1/fundamentals/#combinatorics)
+    - [Bernoulli Trials and Binomial Law](/docs/gradprob25/part1/fundamentals/#bernoulli-trials-and-binomial-law)
+    - [Poisson Law](/docs/gradprob25/part1/fundamentals/#poisson-law)
     - [Normal Approximations](/docs/gradprob25/part1/fundamentals/#normal-approximations)
   - [Random Variables](/docs/gradprob25/part1/random_variables/)
-    - [Cumulative Distributions Function](docs/gradprob25/part1/random_variables/#cumulative-distributions-functions)
-    - [Probability Density Functions](docs/gradprob25/part1/random_variables/#probability-density-functions)
-    - [Continuous, Discrete and Mixed](docs/gradprob25/part1/random_variables/#continuous-discrete-and-mixed)
-    - [Conditional and Joint PDFs, pdfs](docs/gradprob25/part1/random_variables/#conditional-and-joint-pdfs-pdfs)
-    - [Failure Rates](docs/gradprob25/part1/random_variables/#failure-rates)
+    - [Cumulative Distributions Function](/docs/gradprob25/part1/random_variables/#cumulative-distributions-functions)
+    - [Probability Density Functions](/docs/gradprob25/part1/random_variables/#probability-density-functions)
+    - [Continuous, Discrete and Mixed](/docs/gradprob25/part1/random_variables/#continuous-discrete-and-mixed)
+    - [Conditional and Joint PDFs, pdfs](/docs/gradprob25/part1/random_variables/#conditional-and-joint-pdfs-pdfs)
+    - [Failure Rates](/docs/gradprob25/part1/random_variables/#failure-rates)
   - [Functions of Random Variables](/docs/gradprob25/part1/functions_random_variables/)
     - single
     - Mixed
   - [Expectations](/docs/gradprob25/part1/expectations/)
-    - [Expectations](docs/gradprob25/part1/expectations/#expected-value-of-a-random-variable)
-    - [Conditional expectations](docs/gradprob25/part1/expectations/#conditional-expectations)
-    - [Moment-generating functions](docs/gradprob25/part1/expectations/#moment-generating-functions)
-    - [Estimators](docs/gradprob25/part1/expectations/#estimators-for-mean-and-variance)&lt;/pre&gt;
+    - [Expectations](/docs/gradprob25/part1/expectations/#expected-value-of-a-random-variable)
+    - [Conditional expectations](/docs/gradprob25/part1/expectations/#conditional-expectations)
+    - [Moment-generating functions](/docs/gradprob25/part1/expectations/#moment-generating-functions)
+    - [Estimators](/docs/gradprob25/part1/expectations/#estimators-for-mean-and-variance)&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
@@ -1025,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-683924517&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-687293514&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-683924517&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-687293514&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3241,7 +3241,7 @@ $$
         &lt;div class=&#34;admonition-content&#34;&gt;
             &lt;p&gt;The &lt;strong&gt;conditional expectation&lt;/strong&gt; of $X$ given that an event $B$ has occurred is&lt;/p&gt;
 $$
-E \left[ X \, \vert \, B \right] = \int_{-\infty}^{\infty} x \, f_{X \, \vert \, B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
+E \left[ X \, \vert \, B \right] = \int_{-\infty}^{\infty} x \, f_{X \vert B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
 $$
         &lt;/div&gt;
     &lt;/div&gt;
@@ -11040,7 +11040,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-516374928&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-124397658&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11058,7 +11058,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-516374928&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-124397658&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11069,7 +11069,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-859263147&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-867532419&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11087,7 +11087,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-859263147&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-867532419&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11100,7 +11100,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-489172356&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-638429175&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11118,7 +11118,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-489172356&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-638429175&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
