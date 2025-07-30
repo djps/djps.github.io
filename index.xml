@@ -84,7 +84,7 @@ course.&lt;/p&gt;
   title Provisional Schedule 2025
 
   section  Fundamentals
-  Conditional and joint prob.       :a1a,  09-02, 2w
+  Conditional and joint prob        :a1a,  09-02, 2w
   Sets                              :a1b,  09-16, 1w
   Bayes Theorem                     :a1c,  09-23, 1w
   Combinatorics                     :a1d,  09-30, 1w
@@ -100,7 +100,7 @@ course.&lt;/p&gt;
   Failure Rates                     :b1e,  10-21, 3w
 
   section  Functions of Random Variables
-                                    :c1a,  10-21, 3w
+  blanks                            :c1a,  10-21, 3w
 
   section  Expectations  
   Expectations                      :d2a,  11-11, 1w
@@ -1025,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-785134692&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-683924517&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-785134692&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-683924517&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11040,7 +11040,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-947856312&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-516374928&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11058,7 +11058,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-947856312&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-516374928&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11069,7 +11069,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-286741395&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-859263147&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11087,7 +11087,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-286741395&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-859263147&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11100,7 +11100,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-924783651&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-489172356&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11118,7 +11118,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-924783651&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-489172356&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
