@@ -249,7 +249,7 @@
         content="2025-05-27T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-07-25T23:50:22&#43;02:00">
+    <meta property="article:modified_time" content="2025-07-30T15:13:24&#43;02:00">
   
 
   
@@ -827,6 +827,12 @@
 
 
 
+
+
+
+
+
+<script defer src="/js/mermaid.bundle.addbbabb71331768410cfb03a610179690ff1dfd413519d34219c06a8fd39202.js" integrity="sha256-rdu6u3EzF2hBDPsDphAXlpD/Hf1BNRnTQhnAao/TkgI="></script>
 
 
 
@@ -1717,7 +1723,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradprob25/part1/fundamentals/"
     
-  >Fundamentals
+  >Fundamentals of Probability
     </a>
               
             </li><li class="flex flex-col "><a
@@ -1741,7 +1747,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradprob25/part1/expectations/"
     
-  >Expectations
+  >Expectations of Random Variables
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2513,7 +2519,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradprob25/part1/fundamentals/"
     
-  >Fundamentals
+  >Fundamentals of Probability
     </a>
               
             </li><li class="flex flex-col "><a
@@ -2537,7 +2543,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/docs/gradprob25/part1/expectations/"
     
-  >Expectations
+  >Expectations of Random Variables
     </a>
               
             </li><li class="flex flex-col "><a
@@ -3232,9 +3238,7 @@ course.</p>
 <h3 id="itinerary">Itinerary</h3>
 <!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 -->
 <p>An outline will be produced shortly.</p>
-<!--
-```mermaid
-gantt
+<div class="mermaid">gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
@@ -3264,20 +3268,19 @@ gantt
 
   section  Summary
   Summary                          :active, a3a,  12-02, 1w
-```
--->
+</div>
 <h3 id="structure">Structure</h3>
 <p>The course content has the following structure:</p>
-<!--
-```markmap
----
+<div class="markmap" style="height: 500px;">
+
+<pre>---
 markmap:
   zoom: false
   pan: false
 ---
 - Probability
   - [Fundamentals](/docs/gradprob25/part1/fundamentals/)
-    - Joint probabilities
+    - [Normal Approximations](/docs/gradprob25/part1/fundamentals/#normal-approximations)
     - Combinatorics
     - Bionomial, Gauss and Poisson
   - [Random Variables](/docs/gradprob25/part1/random_variables/)
@@ -3288,11 +3291,11 @@ markmap:
     - Mixed
   - [Expectations](/docs/gradprob25/part1/expectations/)
     - Expectations
-    - Conditional Expectations
-    - Moments
-    - Estimators
-```
--->
+    - Conditional expectations
+    - Moment-generating functions
+    - Estimators</pre>
+</div>
+
 <h2 id="assessment">Assessment</h2>
 <h3 id="examination-type">Examination Type</h3>
 <table>
@@ -3372,9 +3375,9 @@ markmap:
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-25T23:50:22.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-30T15:13:24.000Z">
     <span>Last updated on</span>
-    Jul 25, 2025</time>
+    Jul 30, 2025</time>
       
       
   
@@ -3396,7 +3399,7 @@ markmap:
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Fundamentals</span
+            >Fundamentals of Probability</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               

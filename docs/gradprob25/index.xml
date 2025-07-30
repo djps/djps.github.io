@@ -73,9 +73,7 @@ course.&lt;/p&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
 &lt;p&gt;An outline will be produced shortly.&lt;/p&gt;
-&lt;!--
-```mermaid
-gantt
+&lt;div class=&#34;mermaid&#34;&gt;gantt
   dateFormat   MM-DD
   axisFormat   %e-%b
 
@@ -105,20 +103,19 @@ gantt
 
   section  Summary
   Summary                          :active, a3a,  12-02, 1w
-```
---&gt;
+&lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
-&lt;!--
-```markmap
----
+&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
+
+&lt;pre&gt;---
 markmap:
   zoom: false
   pan: false
 ---
 - Probability
   - [Fundamentals](/docs/gradprob25/part1/fundamentals/)
-    - Joint probabilities
+    - [Normal Approximations](/docs/gradprob25/part1/fundamentals/#normal-approximations)
     - Combinatorics
     - Bionomial, Gauss and Poisson
   - [Random Variables](/docs/gradprob25/part1/random_variables/)
@@ -129,11 +126,11 @@ markmap:
     - Mixed
   - [Expectations](/docs/gradprob25/part1/expectations/)
     - Expectations
-    - Conditional Expectations
-    - Moments
-    - Estimators
-```
---&gt;
+    - Conditional expectations
+    - Moment-generating functions
+    - Estimators&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
 &lt;h3 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h3&gt;
 &lt;table&gt;
@@ -213,7 +210,7 @@ markmap:
     </item>
     
     <item>
-      <title>Fundamentals</title>
+      <title>Fundamentals of Probability</title>
       <link>https://djps.github.io/docs/gradprob25/part1/fundamentals/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradprob25/part1/fundamentals/</guid>
