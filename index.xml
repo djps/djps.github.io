@@ -985,7 +985,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-659173284&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-265983714&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1003,7 +1003,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-659173284&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-265983714&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3125,7 +3125,8 @@ $$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt
       <link>https://djps.github.io/docs/gradprob25/part1/expectations/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/gradprob25/part1/expectations/</guid>
-      <description>&lt;div class=&#34;details admonition Definition open&#34;&gt;
+      <description>&lt;h2 id=&#34;expected-value-of-a-random-variable&#34;&gt;Expected Value of a Random Variable&lt;/h2&gt;
+&lt;div class=&#34;details admonition Definition open&#34;&gt;
     &lt;div class=&#34;details-summary admonition-title&#34;&gt;
         
         &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
@@ -3253,6 +3254,11 @@ $$
 
 
 
+&lt;h2 id=&#34;moment-generating-functions&#34;&gt;Moment-Generating Functions&lt;/h2&gt;
+&lt;h2 id=&#34;chebyshev-and-schwarz-inequalities&#34;&gt;Chebyshev and Schwarz Inequalities&lt;/h2&gt;
+&lt;h2 id=&#34;chernoff-bound&#34;&gt;Chernoff Bound&lt;/h2&gt;
+&lt;h2 id=&#34;characteristic-functions--central-limit-theorem&#34;&gt;Characteristic Functions &amp;amp; Central Limit Theorem&lt;/h2&gt;
+&lt;h2 id=&#34;estimators-for-mean-and-variance&#34;&gt;Estimators for Mean and Variance&lt;/h2&gt;
 </description>
     </item>
     
@@ -10986,7 +10992,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-465173829&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-162438975&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11004,7 +11010,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-465173829&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-162438975&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11015,7 +11021,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-176284593&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-681573492&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11033,7 +11039,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-176284593&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-681573492&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11046,7 +11052,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-617593284&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-895217634&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11064,7 +11070,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-617593284&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-895217634&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
