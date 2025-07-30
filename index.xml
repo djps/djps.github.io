@@ -68,7 +68,9 @@ course.&lt;/p&gt;
 &lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
 &lt;p&gt;The following topics will be covered:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Probability&lt;/li&gt;
+&lt;li&gt;Fundamentals of probability: discrete and continuous outcomes;&lt;/li&gt;
+&lt;li&gt;Random Variables and processes; functions of random variables&lt;/li&gt;
+&lt;li&gt;Expectations of random variables; moment-generating functions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
 &lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
@@ -82,27 +84,32 @@ course.&lt;/p&gt;
   title Provisional Schedule 2025
 
   section  Fundamentals
-  Bayes                            :a1a,  09-02, 2w
-  Matrices                         :a1b,  09-16, 1w
-  Linear equations                 :a1c,  09-23, 1w
-  Vector Spaces                    :a1d,  09-30, 1w
-  Break                            :crit, 10-07, 1w
-  Vector Spaces                    :a1e,  10-14, 1w
-  Matrices &amp; Eigenvalues           :a1f,  10-21, 3w
+  Conditional and joint prob.       :a1a,  09-02, 2w
+  Sets                              :a1b,  09-16, 1w
+  Bayes Theorem                     :a1c,  09-23, 1w
+  Combinatorics                     :a1d,  09-30, 1w
+  Bernoulli Trials and Binomial Law :a1e,  10-14, 1w
+  Poisson Law                       :a1f,  10-21, 3w
+  Normal Approximations             :a1g,  10-21, 3w
 
   section  Random Variables
-  Matrices &amp; Eigenvalues           :b1a,  10-21, 3w
+  CDF                               :b1a,  10-21, 3w
+  PDF                               :b1b,  10-21, 3w
+  Mixed                             :b1c,  10-21, 3w
+  Conditional                       :b1d,  10-21, 3w
+  Failure Rates                     :b1e,  10-21, 3w
 
   section  Functions of Random Variables
-  Matrices &amp; Eigenvalues           :c1a,  10-21, 3w
+                                    :c1a,  10-21, 3w
 
-  section  Expectations
-  Single Variables                 :d2a,  11-11, 1w
-  Taylor Series                    :d2b,  11-18, 1w
-  Multiple Variables               :d2c,  11-25, 1w
+  section  Expectations  
+  Expectations                      :d2a,  11-11, 1w
+  Conditional expectations          :d2b,  11-18, 1w
+  Conditional expectations          :d2c,  11-25, 1w
+  Estimators                        :d2d,  11-25, 1w
 
   section  Summary
-  Summary                          :active, a3a,  12-02, 1w
+  Summary                           :active, a3a,  11-25, 1w
 &lt;/div&gt;
 &lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
 &lt;p&gt;The course content has the following structure:&lt;/p&gt;
@@ -115,20 +122,27 @@ markmap:
 ---
 - Probability
   - [Fundamentals](/docs/gradprob25/part1/fundamentals/)
+    - [Joint, Conditional and Total Probabilities](docs/gradprob25/part1/fundamentals/#joint-conditional-and-total-probabilities)
+    - [Sets, Fields and Events](docs/gradprob25/part1/fundamentals/#sets-fields-and-events)
+    - [Bayes Theorem](docs/gradprob25/part1/fundamentals/#bayes-theorem)
+    - [Combinatorics](docs/gradprob25/part1/fundamentals/#combinatorics)
+    - [Bernoulli Trials and Binomial Law](docs/gradprob25/part1/fundamentals/#bernoulli-trials-and-binomial-law)
+    - [Poisson Law](docs/gradprob25/part1/fundamentals/#poisson-law)
     - [Normal Approximations](/docs/gradprob25/part1/fundamentals/#normal-approximations)
-    - Combinatorics
-    - Bionomial, Gauss and Poisson
   - [Random Variables](/docs/gradprob25/part1/random_variables/)
-    - pdf
-    - cdf
-  - [Functions](/docs/gradprob25/part1/functions_random_variables/)
+    - [Cumulative Distributions Function](docs/gradprob25/part1/random_variables/#cumulative-distributions-functions)
+    - [Probability Density Functions](docs/gradprob25/part1/random_variables/#probability-density-functions)
+    - [Continuous, Discrete and Mixed](docs/gradprob25/part1/random_variables/#continuous-discrete-and-mixed)
+    - [Conditional and Joint PDFs, pdfs](docs/gradprob25/part1/random_variables/#conditional-and-joint-pdfs-pdfs)
+    - [Failure Rates](docs/gradprob25/part1/random_variables/#failure-rates)
+  - [Functions of Random Variables](/docs/gradprob25/part1/functions_random_variables/)
     - single
     - Mixed
   - [Expectations](/docs/gradprob25/part1/expectations/)
-    - Expectations
-    - Conditional expectations
-    - Moment-generating functions
-    - Estimators&lt;/pre&gt;
+    - [Expectations](docs/gradprob25/part1/expectations/#expected-value-of-a-random-variable)
+    - [Conditional expectations](docs/gradprob25/part1/expectations/#conditional-expectations)
+    - [Moment-generating functions](docs/gradprob25/part1/expectations/#moment-generating-functions)
+    - [Estimators](docs/gradprob25/part1/expectations/#estimators-for-mean-and-variance)&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
@@ -1011,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-713286945&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-785134692&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1029,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-713286945&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-785134692&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3167,7 +3181,7 @@ $$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Expectation&lt;/em&gt;
+          Definition: &lt;em&gt;Expectation of a random variable&lt;/em&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
@@ -3193,12 +3207,12 @@ $$
           &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
         &lt;/span&gt;
         &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;Expectation&lt;/em&gt;
+          Theorem: &lt;em&gt;Expectation of a function of a random variable&lt;/em&gt;
         &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class=&#34;details-content&#34;&gt;
         &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Y = g(X)$, then by the definition of the expectation, the random variable $Y$ is given by&lt;/p&gt;
+            &lt;p&gt;Let $Y = g(X)$ be a function of a continuous random variable, then by the definition of the expectation, the random variable $Y$ is given by&lt;/p&gt;
 $$
 {E} [Y] = \int_{-\infty}^{\infty} y \, f_Y(y) \, \mathrm{d}y
 $$&lt;p&gt;but the expectation can be computed via&lt;/p&gt;
@@ -11026,7 +11040,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-158634279&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-947856312&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11044,7 +11058,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-158634279&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-947856312&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11055,7 +11069,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-681457239&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-286741395&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11073,7 +11087,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-681457239&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-286741395&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11086,7 +11100,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-135687942&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-924783651&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11104,7 +11118,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-135687942&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-924783651&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
