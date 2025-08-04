@@ -1025,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-532149768&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-176325489&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-532149768&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-176325489&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11040,7 +11040,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-942685317&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-379581246&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11058,7 +11058,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-942685317&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-379581246&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11069,7 +11069,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-196375248&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-957164832&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11087,7 +11087,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-196375248&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-957164832&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11100,7 +11100,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-965732184&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-578169342&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11118,7 +11118,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-965732184&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-578169342&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
