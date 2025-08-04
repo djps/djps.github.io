@@ -1025,7 +1025,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-592631874&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-937428615&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +1043,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-592631874&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-937428615&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -3960,9 +3960,7 @@ $$&lt;p&gt;is solved for the unknown vector $x_{k+1} - x_k$ and then $x_{k+1}$ i
     &lt;label class=&#34;sidenote-label&#34; for=&#34;sidenote-12&#34;&gt;&lt;/label&gt;
     &lt;input class=&#34;sidenote-checkbox&#34; type=&#34;checkbox&#34; id=&#34;sidenote-12&#34;&gt;&lt;/input&gt;
     &lt;span class=&#34;sidenote-content sidenote-right&#34;&gt;
-    
-[Exam](/docs/numericalmethods/exam/#spring-2024) August 24 Q2(c)
-
+    &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/#spring-2024&#34;&gt;Exam&lt;/a&gt; August 24 Q2(c)
     &lt;/span&gt;
 &lt;/span&gt;
 
@@ -11051,7 +11049,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-678349152&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-743862519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11069,7 +11067,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-678349152&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-743862519&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11080,7 +11078,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-872415639&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-218794653&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11098,7 +11096,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-872415639&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-218794653&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11111,7 +11109,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-573946218&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-576329148&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11129,7 +11127,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-573946218&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-576329148&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
