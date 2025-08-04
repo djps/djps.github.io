@@ -1872,6 +1872,16 @@ $$&lt;p&gt;is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ i
 
 
 
+&lt;span class=&#34;sidenote&#34;&gt;
+    &lt;label class=&#34;sidenote-label&#34; for=&#34;sidenote-12&#34;&gt;This is an example sidenote&lt;/label&gt;
+    &lt;input class=&#34;sidenote-checkbox&#34; type=&#34;checkbox&#34; id=&#34;sidenote-12&#34;&gt;&lt;/input&gt;
+    &lt;span class=&#34;sidenote-content sidenote-right&#34;&gt;
+    
+Sidenotes are pretty cool, this is how they work. Maybe I could make them look a little better, though.
+
+    &lt;/span&gt;
+&lt;/span&gt;
+
 </description>
     </item>
     
