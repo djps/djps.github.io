@@ -249,7 +249,7 @@
         content="2023-11-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2025-08-04T16:19:45&#43;02:00">
+    <meta property="article:modified_time" content="2025-08-04T16:44:59&#43;02:00">
   
 
   
@@ -3458,10 +3458,10 @@ $$<p>Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit 
     </div>
     <div class="details-content">
         <div class="admonition-content">
-            <p>For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^n$, which takes as an argument the vector</p>
+            <p>For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^m$, which takes as an argument the vector</p>
 $$
 x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
-$$<p>the <strong>Jacobian</strong> matrix is defined as</p>
+$$<p>and returns a vector in $\mathbb{R}^m$, the <strong>Jacobian</strong> matrix is defined as</p>
 $$
 \begin{equation*}
 J = \left(
@@ -3469,17 +3469,18 @@ J = \left(
   \dfrac{\partial f_1 }{\partial x_1} & \dfrac{\partial f_1 }{\partial x_2} & \cdots & \dfrac{\partial f_1 }{\partial x_n} \\\
   \dfrac{\partial f_2 }{\partial x_1} & & & \vdots \\\
   \vdots & & & \vdots \\\
-  \dfrac{\partial f_n }{\partial x_1} & \dfrac{\partial f_n }{\partial x_2} & \cdots & \dfrac{\partial f_n }{\partial x_n}
+  \dfrac{\partial f_m }{\partial x_1} & \dfrac{\partial f_m }{\partial x_2} & \cdots & \dfrac{\partial f_m }{\partial x_n}
   \end{array}
-  \right) \in \mathbb{R}^{n \times n}.
+  \right) \in \mathbb{R}^{m \times n}.
   \end{equation*}
-$$<p>If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$. Newton&rsquo;s method can be written as</p>
+$$<p>If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$.</p>
+<p>If $m=n$, so that the matrix is square, then Newton&rsquo;s method can be written as</p>
 $$
-x_{m+1} = x_m - J^{-1} \left( x_m \right) f\left( x_m \right)
-$$<p>where $J^{-1} \left( x_m \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_m$, which is the $m$<sup>th</sup> iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system</p>
+x_{k+1} = x_k - J^{-1} \left( x_k \right) f\left( x_k \right)
+$$<p>where $J^{-1} \left( x_k \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_k$, which is the $k$<sup>th</sup> iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system</p>
 $$
-J \left( x_m \right) \left( x_{m+1} - x_m \right) = -f \left( x_m \right)
-$$<p>is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is found.</p>
+J \left( x_k \right) \left( x_{k+1} - x_k \right) = -f \left( x_k \right)
+$$<p>is solved for the unknown vector $x_{k+1} - x_k$ and then $x_{k+1}$ is found.</p>
 
         </div>
     </div>
@@ -3489,11 +3490,11 @@ $$<p>is solved for the unknown vector $x_{m+1} - x_m$ and then $x_{m+1}$ is foun
 
 
 <span class="sidenote">
-    <label class="sidenote-label" for="sidenote-12">This is an example sidenote</label>
+    <label class="sidenote-label" for="sidenote-12"></label>
     <input class="sidenote-checkbox" type="checkbox" id="sidenote-12"></input>
     <span class="sidenote-content sidenote-right">
     
-Sidenotes are pretty cool, this is how they work. Maybe I could make them look a little better, though.
+[Exam](/docs/numericalmethods/exam/#spring-2024) August 24 Q2(c)
 
     </span>
 </span>
@@ -3502,7 +3503,7 @@ Sidenotes are pretty cool, this is how they work. Maybe I could make them look a
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-08-04T16:19:45.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-08-04T16:44:59.000Z">
     <span>Last updated on</span>
     Aug 4, 2025</time>
       
