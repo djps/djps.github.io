@@ -13,217 +13,6 @@
     </image>
     
     <item>
-      <title>MDE-MET-02: Probability for Graduate Students</title>
-      <link>https://djps.github.io/docs/gradprob25/intro/intro/</link>
-      <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradprob25/intro/intro/</guid>
-      <description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This set of pages is under construction &amp;#x1f3d7;&amp;#xfe0f;&lt;/span&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
-&lt;p&gt;Lectures will take place in autumn 2025.&lt;/p&gt;
-&lt;p&gt;An office hour can be arranged by appointment.&lt;/p&gt;
-&lt;p&gt;Course notes can be found &lt;a href=&#34;https://djps.github.io/docs/gradprob25/notes/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;recommendations-for-preparation&#34;&gt;Recommendations for Preparation&lt;/h2&gt;
-&lt;p&gt;There are no recommendations beyond reading the syllabus and the outline of the course.&lt;/p&gt;
-&lt;h2 id=&#34;content-and-educational-aims&#34;&gt;Content and Educational Aims&lt;/h2&gt;
-&lt;p&gt;This module offers a highly structured introduction to the fundamentals of combinatorics and probabilities as they are used for statistical modeling and estimation. It is a gateway for graduate students who have not been exposed to the topics so far, or who were exposed long ago and needs to be refreshed.&lt;/p&gt;
-&lt;p&gt;The module starts with the concept of probabilities, including joint, conditional and total probabilities with a focus on independence, which leads us to a discussion of Bayes’s theorem. We shall then proceed to factorials, and binomial coefficients, with many applications to be followed by the binomial law, and its Poisson and Normal approximations.&lt;/p&gt;
-&lt;p&gt;A second block covers random variables with their distributions and density functions. Here we are going to discuss continuous random variables in detail.&lt;/p&gt;
-&lt;p&gt;Block three continues with the essential ideas of expected values, moments, and estimation.&lt;/p&gt;
-&lt;!-- links --&gt;
-&lt;h2 id=&#34;intended-learning-outcomes&#34;&gt;Intended Learning Outcomes&lt;/h2&gt;
-&lt;p&gt;Upon completion of this module, students will be able to:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;understand the fundamental concepts of probabilities and combinatorics and to apply them in structured
-situations,&lt;/li&gt;
-&lt;li&gt;apply important probability laws (Binomial, Poisson, Normal),&lt;/li&gt;
-&lt;li&gt;understand and apply probability distributions and densities,&lt;/li&gt;
-&lt;li&gt;understand and apply means, variances, and covariances – also in the context of simple estimation contexts.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;indicative-literature&#34;&gt;Indicative Literature&lt;/h2&gt;
-&lt;p&gt;The course loosely follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;&lt;em&gt;Probability and Random Processes: With Applications to Signal Processing&lt;/em&gt;&amp;rdquo; - H. Stark &amp;amp; J. W. Woods (2001) Person Press, 3&lt;sup&gt;rd&lt;/sup&gt; edition ISBN: &lt;span class=&#34;font-mono&#34;&gt;0-13-178457-9&lt;/span&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--
-## Knowledge, Abilities, or Skills
-
-  * Knowledge of Calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations
-
-  * Knowledge of Linear Algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations
-
-  * Some examples will be presented as python notebooks, but no knowledge of python is required, nor will there be any assessment of ability to code.
-
-  * Some examples will be presented as [python notebooks](/docs/gradprob25/notebooks/), but no knowledge of python is required, nor will there be any assessment of ability to code.
---&gt;
-&lt;h2 id=&#34;usability-and-relationship-to-other-modules&#34;&gt;Usability and Relationship to other Modules&lt;/h2&gt;
-&lt;p&gt;Familiarity with probability-related concepts is the basis to understand the foundations of stochastic modelling and the data analytics and machine learning techniques which form a central part of data engineering.&lt;/p&gt;
-&lt;p&gt;There is a placement test offered in the orientation week before the start of the first semester to help all students to find out if they need to take this remedial
-course.&lt;/p&gt;
-&lt;h2 id=&#34;course-outline&#34;&gt;Course Outline&lt;/h2&gt;
-&lt;p&gt;The following topics will be covered:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fundamentals of probability: discrete and continuous outcomes;&lt;/li&gt;
-&lt;li&gt;Random Variables and processes; functions of random variables&lt;/li&gt;
-&lt;li&gt;Expectations of random variables; moment-generating functions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;itinerary&#34;&gt;Itinerary&lt;/h3&gt;
-&lt;!-- todayMarker  stroke-width:3px, stroke:#164e63, opacity:0.5 --&gt;
-&lt;p&gt;An outline will be produced shortly.&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
-  dateFormat   MM-DD
-  axisFormat   %e-%b
-
-  todayMarker  off
-
-  title Provisional Schedule 2025
-
-  section  Fundamentals
-  Conditional and joint prob        :a1a,  09-02, 2w
-  Sets                              :a1b,  09-16, 1w
-  Bayes Theorem                     :a1c,  09-23, 1w
-  Combinatorics                     :a1d,  09-30, 1w
-  Bernoulli Trials and Binomial Law :a1e,  10-14, 1w
-  Poisson Law                       :a1f,  10-21, 3w
-  Normal Approximations             :a1g,  10-21, 3w
-
-  section  Random Variables
-  CDF                               :b1a,  10-21, 3w
-  PDF                               :b1b,  10-21, 3w
-  Mixed                             :b1c,  10-21, 3w
-  Conditional                       :b1d,  10-21, 3w
-  Failure Rates                     :b1e,  10-21, 3w
-
-  section  Functions of Random Variables
-  Functions of Random Variables     :c1a,  10-21, 3w
-
-  section  Expectations  
-  Expectations                      :d2a,  11-11, 1w
-  Conditional expectations          :d2b,  11-18, 1w
-  Conditional expectations          :d2c,  11-25, 1w
-  Estimators                        :d2d,  11-25, 1w
-
-  section  Summary
-  Summary                           :active, a3a,  11-25, 1w
-&lt;/div&gt;
-&lt;h3 id=&#34;structure&#34;&gt;Structure&lt;/h3&gt;
-&lt;p&gt;Provisionally, the course content has the following structure:&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
-
-&lt;pre&gt;---
-markmap:
-  zoom: false
-  pan: false
----
-- Probability
-  - [Fundamentals](/docs/gradprob25/part1/fundamentals/)
-    - [Joint, Conditional and Total Probabilities](/docs/gradprob25/part1/fundamentals/#joint-conditional-and-total-probabilities)
-    - [Sets, Fields and Events](/docs/gradprob25/part1/fundamentals/#sets-fields-and-events)
-    - [Bayes Theorem](/docs/gradprob25/part1/fundamentals/#bayes-theorem)
-    - [Combinatorics](/docs/gradprob25/part1/fundamentals/#combinatorics)
-    - [Bernoulli Trials and Binomial Law](/docs/gradprob25/part1/fundamentals/#bernoulli-trials-and-binomial-law)
-    - [Poisson Law](/docs/gradprob25/part1/fundamentals/#poisson-law)
-    - [Normal Approximations](/docs/gradprob25/part1/fundamentals/#normal-approximations)
-  - [Random Variables](/docs/gradprob25/part1/random_variables/)
-    - [Cumulative Distributions Function](/docs/gradprob25/part1/random_variables/#cumulative-distributions-functions)
-    - [Probability Density Functions](/docs/gradprob25/part1/random_variables/#probability-density-functions)
-    - [Continuous, Discrete and Mixed](/docs/gradprob25/part1/random_variables/#continuous-discrete-and-mixed)
-    - [Conditional and Joint PDFs, pdfs](/docs/gradprob25/part1/random_variables/#conditional-and-joint-pdfs-pdfs)
-    - [Failure Rates](/docs/gradprob25/part1/random_variables/#failure-rates)
-  - [Functions of Random Variables](/docs/gradprob25/part1/functions_random_variables/)
-    - single
-    - Mixed
-  - [Expectations](/docs/gradprob25/part1/expectations/)
-    - [Expectations](/docs/gradprob25/part1/expectations/#expected-value-of-a-random-variable)
-    - [Conditional expectations](/docs/gradprob25/part1/expectations/#conditional-expectations)
-    - [Moment-generating functions](/docs/gradprob25/part1/expectations/#moment-generating-functions)
-    - [Estimators](/docs/gradprob25/part1/expectations/#estimators-for-mean-and-variance)&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;assessment&#34;&gt;Assessment&lt;/h2&gt;
-&lt;h3 id=&#34;examination-type&#34;&gt;Examination Type&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Examination Type:&lt;/td&gt;
-          &lt;td&gt;Module examination&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Assessment Type:&lt;/td&gt;
-          &lt;td&gt;Written examination&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Scope:&lt;/td&gt;
-          &lt;td&gt;All intended learning outcomes of this module&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Duration:&lt;/td&gt;
-          &lt;td&gt;120 min&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Weight:&lt;/td&gt;
-          &lt;td&gt;100%&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
-&lt;!-- 
-
-
-
-
-  
-    
-  
-
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;The exam will take place on &lt;strong&gt;Wednesday 11 January between 12:30 and 14:30 at East Hall 8&lt;/strong&gt;&lt;/span&gt;
-&lt;/div&gt; --&gt;
-&lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
-&lt;p&gt;The pass mark is 45%.&lt;/p&gt;
-&lt;h3 id=&#34;assignments&#34;&gt;Assignments&lt;/h3&gt;
-&lt;p&gt;By submitting homework assignments, via &lt;em&gt;Teams&lt;/em&gt; as a single pdf, you can improve this grade by up to 0.66 points, as bonus achievements.&lt;/p&gt;
-&lt;p&gt;Homework submission is voluntary although highly recommended. It is possible to get a 100% final grade without submitting homework or participating in quizzes.&lt;/p&gt;
-&lt;p&gt;Homework will be assigned every two weeks. Homework assignments are posted on &lt;a href=&#34;https://djps.github.io/docs/gradprob25/assignments/&#34;&gt;here&lt;/a&gt; and on Teams approximately ten days before the due date.&lt;/p&gt;
-&lt;p&gt;You are encouraged to discuss homework between each other. However, the submitted assignments should be written individually. No copying is allowed!&lt;/p&gt;
-&lt;p&gt;The two lowest homework scores will be discarded before the final homework score is calculated. This rule covers short illness, excursions, late joining of the course, and similar situations.&lt;/p&gt;
-&lt;p&gt;Note that each homework assignment carries equal marks.&lt;/p&gt;
-&lt;p&gt;The problems on the final exam will be similar to the ones from homework. So, by doing homework you prepare for the final exam - maths is not a spectator sport.&lt;/p&gt;
-&lt;h2 id=&#34;academic-integrity&#34;&gt;Academic Integrity&lt;/h2&gt;
-&lt;p&gt;All involved parties (lecturers, instructors and students) are expected to abide by the word and spirit of the &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies/code-of-academic-integrity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Code of Academic Integrity&amp;rdquo;&lt;/a&gt;. Violations of the Code should be brought to the attention of the Academic Integrity Committee.&lt;/p&gt;
-&lt;h2 id=&#34;artifical-intelligence-use-policy&#34;&gt;Artifical Intelligence Use Policy&lt;/h2&gt;
-&lt;p&gt;This policy covers any generative AI tool, such as ChatGPT, Elicit, etc. This includes text, slides, artwork/graphics/video/audio and other products.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;You are discouraged from using AI tools &lt;em&gt;unless&lt;/em&gt; under direct instruction from your instructor to do so. Please contact your instructor if you are unsure or have questions &lt;em&gt;before&lt;/em&gt; using AI for any assignment.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Note that the material generated by these programs may be inaccurate, incomplete, or otherwise problematic.  Their use may also stifle your own independent thinking and creativity. Accordingly, reduction in the grade is likely when using AI.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If any part of this AI policy is confusing or uncertain, please reach out before submitting your work.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>CTMS-MAT-13: Numerical Methods</title>
       <link>https://djps.github.io/docs/numericalmethods/intro/intro/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
@@ -839,35 +628,6 @@ markmap:
     </item>
     
     <item>
-      <title>Fundamentals of Probability</title>
-      <link>https://djps.github.io/docs/gradprob25/part1/fundamentals/</link>
-      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradprob25/part1/fundamentals/</guid>
-      <description>&lt;h2 id=&#34;joint-conditional-and-total-probabilities&#34;&gt;Joint, Conditional and Total Probabilities&lt;/h2&gt;
-&lt;h2 id=&#34;sets-fields-and-events&#34;&gt;Sets, Fields and Events&lt;/h2&gt;
-&lt;h2 id=&#34;bayes-theorem&#34;&gt;Bayes Theorem&lt;/h2&gt;
-&lt;h2 id=&#34;combinatorics&#34;&gt;Combinatorics&lt;/h2&gt;
-&lt;h2 id=&#34;bernoulli-trials-and-binomial-law&#34;&gt;Bernoulli Trials and Binomial Law&lt;/h2&gt;
-&lt;h2 id=&#34;poisson-law&#34;&gt;Poisson Law&lt;/h2&gt;
-&lt;h2 id=&#34;normal-approximations&#34;&gt;Normal Approximations&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Random Variables</title>
-      <link>https://djps.github.io/docs/gradprob25/part1/random_variables/</link>
-      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradprob25/part1/random_variables/</guid>
-      <description>&lt;h2 id=&#34;cumulative-distributions-functions&#34;&gt;Cumulative Distributions Functions&lt;/h2&gt;
-&lt;p&gt;Probability distribution function is a CDF.&lt;/p&gt;
-&lt;h2 id=&#34;probability-density-functions&#34;&gt;Probability Density Functions&lt;/h2&gt;
-&lt;h2 id=&#34;continuous-discrete-and-mixed&#34;&gt;Continuous, Discrete and Mixed&lt;/h2&gt;
-&lt;h2 id=&#34;conditional-and-joint-pdfs-pdfs&#34;&gt;Conditional and Joint PDFs, pdfs&lt;/h2&gt;
-&lt;h2 id=&#34;failure-rates&#34;&gt;Failure Rates&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Taylor Series</title>
       <link>https://djps.github.io/docs/numericalmethods/part1/taylor/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
@@ -1025,7 +785,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-259846713&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-136294875&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1043,7 +803,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-259846713&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-136294875&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1186,14 +946,6 @@ It can be derived from the Cauchy-Schwarz inequality.&lt;/p&gt;
 &lt;p&gt;For the Cauchy-Schwarz inequality, when the vectors $\vec{v}$ and $\vec{w}$ lie on the same line, then $\left| \vec{v} \cdot \vec{w} \right| = \left| \vec{v} \right| \left| \vec{w} \right|$.&lt;/p&gt;
 &lt;p&gt;For the triangle inequality, when the vectors point in the same direction, then the $\left| \vec{v} + \vec{w} \right| = \left| \vec{v} \right| + \left| \vec{w} \right|$.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Functions of Random Variables</title>
-      <link>https://djps.github.io/docs/gradprob25/part1/functions_random_variables/</link>
-      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradprob25/part1/functions_random_variables/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -3165,148 +2917,6 @@ $$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>Expectations of Random Variables</title>
-      <link>https://djps.github.io/docs/gradprob25/part1/expectations/</link>
-      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/gradprob25/part1/expectations/</guid>
-      <description>&lt;h2 id=&#34;expected-value-of-a-random-variable&#34;&gt;Expected Value of a Random Variable&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Expectation of a random variable&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;If $P_X = P \left( X=x_i \right) = p_i$, then the &lt;strong&gt;expectation&lt;/strong&gt; is of a &lt;em&gt;discrete&lt;/em&gt; random variable is defined as:&lt;/p&gt;
-$$
-E[X] = \sum _{i=1}^{\infty} x_{i} \, p_{i}.
-$$&lt;p&gt;For a &lt;em&gt;continuous&lt;/em&gt; random variable $X$, with a probability density function $f_X$, then the expectation is given by&lt;/p&gt;
-$$
-E[X] = \int_{-\infty}^{\infty} x \, f_X(x) \, \text{d}x.
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Theorem open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0M3.75 12h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0m-.375 5.25h.007v.008H3.75zm.375 0a.375.375 0 1 1-.75 0a.375.375 0 0 1 .75 0&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Theorem: &lt;em&gt;Expectation of a function of a random variable&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $Y = g(X)$ be a function of a continuous random variable, then by the definition of the expectation, the random variable $Y$ is given by&lt;/p&gt;
-$$
-{E} [Y] = \int_{-\infty}^{\infty} y \, f_Y(y) \, \mathrm{d}y
-$$&lt;p&gt;but the expectation can be computed via&lt;/p&gt;
-$$
-{E} [Y] = \int_{-\infty}^{\infty} g(x) \, f_X(x) \, \text{d}x.
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h2 id=&#34;conditional-expectations&#34;&gt;Conditional Expectations&lt;/h2&gt;
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Conditional Expectation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;The &lt;strong&gt;conditional expectation&lt;/strong&gt; of $X$ given that an event $B$ has occurred is&lt;/p&gt;
-$$
-E \left[ X \, \vert \, B \right] = \int_{-\infty}^{\infty} x \, f_{X \vert B}\left( x \, \vert \, B \right) \, \mathrm{d}x.
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Conditional Expectation&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;discrete&lt;/em&gt; random variables with a joint PMF $P_{X,Y}\left(x_i, y_j\right)$. Then the conditional expectation of $Y$ given $X=x_i$, denoted by $E\left[ Y \, \vert \, X=x_i \right]$ is&lt;/p&gt;
-$$
-E \left[ Y \, \vert \, X=x_i \right] = \sum_{j} y_j \, P_{Y \vert  X}\left( y_j \, \vert \, x_i \right),
-$$&lt;p&gt;where the conditional probability that $\left\{ Y = y_j \right\}$ occurs given $\left\{ X=x_i \right\}$ has occurred is given by&lt;/p&gt;
-$$
-P_{Y \vert X}\left( y_j \, \vert \, x_i \right) = \dfrac{P_{X,Y}\left(x_i, y_j\right) }{P_X \left(x_i \right)}.
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;div class=&#34;details admonition Definition open&#34;&gt;
-    &lt;div class=&#34;details-summary admonition-title&#34;&gt;
-        
-        &lt;span class=&#34;flex pr-3 pt-1&#34;&gt;
-          &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-        &lt;/span&gt;
-        &lt;span class=&#34;dark:text-neutral-300&#34;&gt;
-          Definition: &lt;em&gt;Conditional PDFs&lt;/em&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;details-content&#34;&gt;
-        &lt;div class=&#34;admonition-content&#34;&gt;
-            &lt;p&gt;Let $X$ and $Y$ be &lt;em&gt;continuous&lt;/em&gt; random variables with a joint PDF $f_{XY}\left(x, y\right)$.  The conditional pdf of $Y$ given $X=x$ is denoted by&lt;/p&gt;
-$$
-f_{Y \vert X} \left( y \, \vert \, x \right) = \dfrac{f_{XY}\left(x,y\right)}{ f_X ( x ) },
-$$&lt;p&gt;where $f_X(x) \ne 0$. Then the conditional expectation of $Y$ given that $X=x$ is given by $E\left[ Y \,\vert\, X=x \right]$&lt;/p&gt;
-$$
-E \left[ Y \, \vert X=x \, \right] = \int_{-\infty}^{\infty} y \, f_{Y  \vert X}\left( y \, \vert \, x \right) \text{d}y.
-$$
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;h2 id=&#34;moment-generating-functions&#34;&gt;Moment-Generating Functions&lt;/h2&gt;
-&lt;h2 id=&#34;chebyshev-and-schwarz-inequalities&#34;&gt;Chebyshev and Schwarz Inequalities&lt;/h2&gt;
-&lt;h2 id=&#34;chernoff-bound&#34;&gt;Chernoff Bound&lt;/h2&gt;
-&lt;h2 id=&#34;characteristic-functions--central-limit-theorem&#34;&gt;Characteristic Functions &amp;amp; Central Limit Theorem&lt;/h2&gt;
-&lt;h2 id=&#34;estimators-for-mean-and-variance&#34;&gt;Estimators for Mean and Variance&lt;/h2&gt;
 </description>
     </item>
     
@@ -11049,7 +10659,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-314952786&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-762395418&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11067,7 +10677,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-314952786&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-762395418&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11078,7 +10688,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-576491832&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-932486157&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11096,7 +10706,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-576491832&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-932486157&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -11109,7 +10719,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-231764958&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-862374951&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -11127,7 +10737,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-231764958&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-862374951&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
