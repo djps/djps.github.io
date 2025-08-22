@@ -289,10 +289,6 @@ markmap:
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See &lt;a href=&#34;https://constructor.university/student-life/student-services/university-policies/academic-policies&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Policies&lt;/a&gt; for more details). The exams in this course are offered twice per year: firstly in May and then a resit in August.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;del&gt;The date for the first exam is Thursday 21 May 2025 between 9:00 - 11:00.&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;For the second exam, the date is set for Friday August 22 between 08:00 - 10:00 in ICC Eastwing&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary however. Note that graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
 &lt;p&gt;Previous exams, as well as sample questions and solutions, can be found &lt;a href=&#34;https://djps.github.io/docs/numericalmethods/exam/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -803,7 +799,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-185429736&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-793826145&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -821,7 +817,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-185429736&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-793826145&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10693,7 +10689,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-947286531&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-562749831&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10711,7 +10707,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-947286531&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-562749831&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10722,7 +10718,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-657231498&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-367128945&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10740,7 +10736,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-657231498&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-367128945&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10753,7 +10749,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-124763985&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-159374682&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10771,7 +10767,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-124763985&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-159374682&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
