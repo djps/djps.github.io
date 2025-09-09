@@ -116,6 +116,74 @@
 
 \definecolor{sectionrulecolor}{RGB}{8,145,178}
 
+
+
+
+
+
+%-------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+
+% GanttHeader setups some parameters for the rest of the diagram
+% #1 Width of the diagram
+% #2 Width of the space reserved for task numbers
+% #3 Width of the space reserved for task names
+% #4 Number of months in the diagram
+% In addition to these parameters, the layout of the diagram is influenced
+% by keys defined below, such as y, which changes the vertical scale
+\def\GanttHeader#1#2#3#4{%
+ \pgfmathparse{(#1-#2-#3)/#4}
+ \tikzset{y=7mm, task number/.style={left, font=\bfseries},
+     task description/.style={text width=#3,  right, draw=none,
+           font=\sffamily, xshift=#2,
+           minimum height=2em},
+     gantt bar/.style={draw=black, fill=blue!30},
+     help lines/.style={draw=black!30, dashed},
+     x=\pgfmathresult pt
+     }
+  \def\totalmonths{#4}
+  \node (Header) [task description] at (0,0) {\textbf{\large Tasks}};
+  \begin{scope}[shift=($(Header.south east)$)]
+    \foreach \x in {1,...,#4}
+      \node[above] at (\x,0) {\footnotesize\x};
+ \end{scope}
+}
+
+% This macro adds a task to the diagram
+% #1 Number of the task
+% #2 Task's name
+% #3 Starting date of the task (month's number, can be non-integer)
+% #4 Task's duration in months (can be non-integer)
+\def\Task#1#2#3#4{%
+\node[task number] at ($(Header.west) + (0, -#1)$) {#1};
+\node[task description] at (0,-#1) {#2};
+\begin{scope}[shift=($(Header.south east)$)]
+  \draw (0,-#1) rectangle +(\totalmonths, 1);
+  \foreach \x in {1,...,\totalmonths}
+    \draw[help lines] (\x,-#1) -- +(0,1);
+  \filldraw[gantt bar] ($(#3, -#1+0.2)$) rectangle +(#4,0.6);
+\end{scope}
+}
+%-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 \renewcommand{\familydefault}{\sfdefault}         
 % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 
@@ -466,8 +534,6 @@ Continued~\cite{ravishankar2023sonosamtrack} here.
 
 
 
-
-
 \newpage
 \section{Contribution}
 
@@ -478,20 +544,17 @@ Describe the \enquote{Boost} to your career: Let us know how the funding, career
 What potential would remain untapped without this funding? You are welcome to be specific, personal, and authentic. 
 
 
-
-%\begingroup
-% disable writing to .toc
-%\let\addcontentsline\@gobblethree
-  % now call your normal bibliography commands
-%\bibliographystyle{custom}%
-%\bibliography{bibliography}
-%\endgroup
-
-
-
 \newpage
 \section{Time Scales}
-here.
+
+    \begin{tikzpicture}
+      \GanttHeader{\textwidth}{2ex}{4cm}{7}
+      \Task{1}{First task}{0.5}{2.5}
+      \Task{2}{Second task}{1.5}{2}
+      \Task{3}{Another one}{3}{1}
+      \Task{4}{Another one}{4}{1}
+      \Task{5}{Yet another one}{5}{2}
+    \end{tikzpicture}
 
 \end{document}
 
