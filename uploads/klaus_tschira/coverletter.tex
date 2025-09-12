@@ -87,6 +87,40 @@
 \newcommand*{\bodyfont}{\sourcesanspro}
 \newcommand*{\bodyfontlight}{\sourcesansprolight}
 
+\usepackage{ifxetex}
+\ifxetex
+
+  % use support for setting fonts
+  \usepackage{fontspec}
+  \usepackage[no-sscript]{xltxtra}
+  \usepackage{xunicode}
+
+  % allow TeX short cuts such as -- or ``
+  \defaultfontfeatures{Mapping=tex-text}
+
+  % set Frutiger as sans serif font (overwrites arev)
+  \setsansfont[BoldFont={Frutiger LT Com 65 Bold}, 
+               ItalicFont={Frutiger LT Com 56 Italic}, 
+               BoldItalicFont={Frutiger LT Com 66 Bold Italic}]{Frutiger LT Com 55 Roman}
+
+  % define really small font for footline
+  \font\rsf="Frutiger LT Com 55 Roman" at 4pt
+
+  \def\copyrightsymbol{\copyright}
+
+\else
+
+  \RequirePackage[utf8]{inputenc}
+  \usepackage[utf8]{inputenc}
+  \def\rsf{\fontsize{4pt}{4pt}\selectfont}
+  \def\XeLaTeX{XeLaTeX}
+  \def\copyrightsymbol{\textcircled{\hspace{-0.1pt}c}}%Arev does not provide Â© symbol, but this looks close enough
+  \DeclareUnicodeCharacter{00B5}{{\fontfamily{phv}\selectfont \textmu}}%Arev does not have Âµ symbol, but Helvetica's looks close enough
+
+\fi
+
+
+
 %-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
@@ -346,22 +380,20 @@
   pdfsubject={Cover Letter},
   pdfkeywords={Cover Letter, Job Application, Research Scientist, Computational Modeling Scientist}
 }
-%
 \thispagestyle{fancy}
 %
-\recipient{Philips}{Eindhoven\\{Noord-Brabant}\\{}Netherlands}
-%
-\date{August 31 2025}
-%
-%\opening{}
+\recipient{GSO e. V.}{Friedrichstrasse 60\\
+10117 Berlin}
+
+\date{October 1, 2025}
+
+\opening{Letter of motivation}
 %
 \makemyletterhead 
-%
-\makecvfooter{August, 2025}{David Sinden~~~·~~~Philips Motivation Letter}{\thepage~of~\pageref{LastPage}}
+
+\makecvfooter{October, 2025}{David Sinden~~~·~~~Motivation Letter}{\thepage~of~\pageref{LastPage}}
 %
 \closing{Yours faithfully,}
-%
-\enclosure[Attached]{R\'{e}sum\'{e}}    
 %
 To Whom it May Concern,\\
 
@@ -372,7 +404,15 @@ To Whom it May Concern,\\
 %\vspace{1\baselineskip}
 \vfill
 
-\vfill
-\makeletterclosing
+Not all members of the final selection committee are from your field, but they are interested to learn more about you as a person. They will evaluate your letter of motivation based on these questions: 
+
+* What are your personal and professional development and career goals?  
+* What kind of support do you need/desire? 
+* What drives you?  
+* What is important to you in scientific collaboration?  
+* How do you ensure that research and collaboration work well?  
+* What do you contribute that creates and adds value to science (and to the group of fellows)? 
+
+
 \vfill
 \end{document}

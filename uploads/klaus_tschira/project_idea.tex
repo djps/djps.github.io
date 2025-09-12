@@ -3,8 +3,11 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{moderncvcolorcustom}[2013/02/09 v1.3.0 modern curriculum vitae and letter color scheme: custom]
 \definecolor{color0}{rgb}{0,0,0}% black
-\definecolor{color1}{rgb}{0.031, 0.569, 0.698}
+% \definecolor{color1}{rgb}{0.031, 0.569, 0.698}
 \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+\definecolor{FhGreen}{RGB}{23,156,125}
+%
+\definecolor{color1}{RGB}{23,156,125}
 \endinput
 \end{filecontents*}
 
@@ -35,6 +38,22 @@
 
 
 % \usepackage[notbib, notlof, notlot, nottoc]{tocbibind}
+
+%% ───────────────────────────────────────────────────────────────────────────────
+
+\usepackage{tabularx}
+
+\RequirePackage{FraunhoferColors}
+
+%% use Fraunhofer colors beamer structure elements:
+%\setbeamercolor{structure}{fg=FhGreen}
+%\setbeamercolor{alerted text}{fg=FhDarkOrange}
+%\setbeamercolor{example text}{fg=FhLightTeal}
+%
+%% colorize itemize elements:
+%\setbeamercolor{item}{fg=FhGreen}
+%\setbeamercolor{subitem}{fg=FhSilver}
+%\setbeamercolor{subsubitem}{fg=FhSilver}
 
 %% ───────────────────────────────────────────────────────────────────────────────
 %% 1) needed packages
@@ -108,8 +127,11 @@
 \definecolor{custom}{rgb}{0.031, 0.569, 0.698}
 \definecolor{awesome}{rgb}{0.031, 0.569, 0.698}
 
+\definecolor{custom}{RGB}{23,156,125}
+\definecolor{awesome}{RGB}{23,156,125}
+
 \definecolor{color0}{rgb}{0,0,0}% black
-\definecolor{color1}{rgb}{0.031, 0.569, 0.698}
+%\definecolor{color1}{rgb}{0.031, 0.569, 0.698}
 \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
 \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
@@ -118,7 +140,8 @@
 
 
 
-
+\definecolor{blueXIIdark}{cmyk}{1,.8,.30,.05}
+\definecolor{blueXIIlight}{cmyk}{.0,.30,1,.00}
 
 
 %-------------------------------------------------
@@ -129,6 +152,7 @@
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
+\usetikzlibrary{fit}
 \usepackage{graphicx}
 
 % GanttHeader setups some parameters for the rest of the diagram
@@ -144,7 +168,7 @@
      task description/.style={text width=#3,  right, draw=none,
            font=\sffamily, xshift=#2,
            minimum height=2em},
-     gantt bar/.style={draw=black, fill=blue!30},
+     gantt bar/.style={draw=black, fill=FhGreen!30},
      help lines/.style={draw=black!30, dashed},
      x=\pgfmathresult pt
      }
@@ -318,7 +342,7 @@
 % footer text style
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 
-\renewcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{color1} #1}}
+\renewcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{custom} #1}}
 
 \renewcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
@@ -472,34 +496,150 @@
 %----------------------------------------------------------------------------------
 
 
+\usepackage{ifxetex}
+\ifxetex
+
+  % use support for setting fonts
+  \usepackage{fontspec}
+  \usepackage[no-sscript]{xltxtra}
+  \usepackage{xunicode}
+
+  % allow TeX short cuts such as -- or ``
+  \defaultfontfeatures{Mapping=tex-text}
+
+  % set Frutiger as sans serif font (overwrites arev)
+  \setsansfont[BoldFont={Frutiger LT Com 65 Bold}, 
+               ItalicFont={Frutiger LT Com 56 Italic}, 
+               BoldItalicFont={Frutiger LT Com 66 Bold Italic}]{Frutiger LT Com 55 Roman}
+
+  % define really small font for footline
+  \font\rsf="Frutiger LT Com 55 Roman" at 4pt
+
+  \def\copyrightsymbol{\copyright}
+
+\else
+
+  \RequirePackage[utf8]{inputenc}
+  \usepackage[utf8]{inputenc}
+  \def\rsf{\fontsize{4pt}{4pt}\selectfont}
+  \def\XeLaTeX{XeLaTeX}
+  \def\copyrightsymbol{\textcircled{\hspace{-0.1pt}c}}%Arev does not provide Â© symbol, but this looks close enough
+  \DeclareUnicodeCharacter{00B5}{{\fontfamily{phv}\selectfont \textmu}}%Arev does not have Âµ symbol, but Helvetica's looks close enough
+
+\fi
+
+\newfontfamily\frutigerfont{Frutiger LT Com 65 Bold}  % or your system’s Frutiger name
+\tikzset{
+  frutiger node/.style={font=\frutigerfont}
+}
+
+
+
 \usepackage[sectionbib, square, sort, comma, numbers]{natbib}
 \usepackage{chapterbib}
 
 % footer details
 \usepackage{lastpage}
 
-\usepackage{bibtopic} 
+\usepackage{bibtopic} %bib by section
+
+\usepackage{eso-pic} % AddToShipoutPictureBG
 
 \begin{document} 
 
 \hypersetup{%
-  pdftitle={David Sinden - Research Statement},
+  pdftitle={David Sinden - Project Proposal},
   pdfauthor={David Sinden},
-  pdfsubject={Research Statement},
-  pdfkeywords={Ultrasound, Cosserat, Thermal therapies, Cavitation, Computational Topology}
+  pdfsubject={Klaus Tschira Stiftung Proposal},
+  pdfkeywords={Ultrasound}
 }
 
+\AddToShipoutPictureBG*{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[
+      anchor=north west,
+      inner sep=0pt,
+      xshift=0cm,
+      yshift=0cm
+    ] at (current page.north west) {%
+      \includegraphics[width=\paperwidth,  
+                       trim=0cm 15cm 0cm 0cm,
+                       clip]{fhg_smooth.pdf}%
+    };
+  \end{tikzpicture}%
+}
+
+\makecvfooter{October, 2025}{David Sinden~~~$\cdot$~~~Project Proposal}{\thepage\ ~of~ \pageref{LastPage}}
+
+\noindent\hfill
+\scalebox{2}{%
+\begin{tikzpicture}[remember picture, overlay]
+% \draw ([yshift=-\baselineskip]current page.north) node[inner sep=0, outer sep=0] (icon) { \includegraphics[width=1.0\baselineskip]{fhgicon}};
+
+  \node[
+    inner sep=0, outer sep=0, anchor=north west
+  ] (icon)
+    at ([yshift=-4.5\baselineskip, xshift=-10\baselineskip]current page.north east)
+    {\includegraphics[width=1.0\baselineskip]{fhgicon}};
+
+%\node[frutiger node, anchor=south west, xshift=-0.1\baselineskip, yshift=-0.3\baselineskip] (fhg) at (icon.south east) {\Large Fraunhofer};
+
+  \node[
+    frutiger node,
+    %draw,                 
+    %thick,                
+    %rounded corners,      
+    inner sep=2pt,        
+    anchor=south west,
+    xshift=-0.1\baselineskip,
+    yshift=-0.18\baselineskip
+  ] (fhg) at (icon.south east) {\large Fraunhofer};
+
+\node[frutiger node, anchor=north east, yshift=0.4\baselineskip, xshift=0.15\baselineskip] (mevis) at (fhg.south east) {\tiny {MEVIS}}; 
+% \node[draw,rounded corners,inner sep=4pt,fit=(icon)(fhg)(mevis)] {};
+\end{tikzpicture}
+}
+%}
+%}
+%\end{flushright}
+
+\vspace{3cm}
+
+{\centering\Huge\color{FhGreen}Here comes the title of the dissertation}
+
+\vspace{3cm}
+
+\begin{tikzpicture}
+  % A node of fixed width, filled with yellow!30
+  \node[
+    fill=FhGreen!10,        % background color
+    % draw=orange,           % optional border
+    % thick,                 % border width
+    % rounded corners,       % nice corners
+    inner sep=1em,         % padding
+    text width=\textwidth, % wrap lines at 80% of line width
+    align=justify          % or left, center, right
+  ] {Controlling the oscillations of microbubbles to safely and reversibly open the blood-brain-barrier is a problem. There little state of the art of the modelling. Koopman operators have been applied to single free bubbles. Here we propose to exploit non-spherical oscillations. };
+\end{tikzpicture}
+
+\vfill
+
+\large\color{black}
+\begin{tabularx}{\textwidth}{Xr}
+& \textbf{\Large David Sinden, PhD}\vspace{0.8cm}\\
+%Institute : 
+                                                & Microbubbles \\
+Fraunhofer Institute for Digital Medicine MEVIS & Drug Delivery \\
+                                                & Control Theory %\\[2cm]
+%& Submitted 2025
+\end{tabularx}
+
+%\vspace{1.5cm}
+%\noindent\makebox[\linewidth]{\color{blueXIIlight}\rule{30cm}{8pt}}
+
+\newpage
 \thispagestyle{fancy}
-
-\recipient{name}{Address}
-
-\date{October 1 2025}
-
-\opening{Application}
-
-\makemyletterhead
-
-\makecvfooter{October, 2025}{David Sinden~~~$\cdot$~~~Research Statement}{\thepage\ ~of~ \pageref{LastPage}}
+\section{Project Idea}
 
 \bibliographystyle{apsrev4-1long} 
 \begin{btUnit}
@@ -533,7 +673,6 @@ Continued~\cite{ravishankar2023sonosamtrack} here.
 \end{btUnit} 
 
 
-
 \newpage
 \section{Contribution}
 
@@ -546,6 +685,10 @@ What potential would remain untapped without this funding? You are welcome to be
 
 \newpage
 \section{Time Scales}
+
+Outline the time frame for your project, including preliminary work, intermediate and final project goals. 
+
+What are the key milestones of the project during the funding period?
 
     \begin{tikzpicture}
       \GanttHeader{\textwidth}{2ex}{4cm}{7}
