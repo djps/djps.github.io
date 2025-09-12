@@ -574,15 +574,14 @@
 \noindent\hfill
 \scalebox{2}{%
 \begin{tikzpicture}[remember picture, overlay]
-% \draw ([yshift=-\baselineskip]current page.north) node[inner sep=0, outer sep=0] (icon) { \includegraphics[width=1.0\baselineskip]{fhgicon}};
+
+	% \draw ([yshift=-\baselineskip]current page.north) node[inner sep=0, outer sep=0] (icon) { \includegraphics[width=1.0\baselineskip]{fhgicon}};
 
   \node[
     inner sep=0, outer sep=0, anchor=north west
   ] (icon)
     at ([yshift=-4.5\baselineskip, xshift=-10\baselineskip]current page.north east)
     {\includegraphics[width=1.0\baselineskip]{fhgicon}};
-
-%\node[frutiger node, anchor=south west, xshift=-0.1\baselineskip, yshift=-0.3\baselineskip] (fhg) at (icon.south east) {\Large Fraunhofer};
 
   \node[
     frutiger node,
@@ -605,7 +604,9 @@
 
 \vspace{3cm}
 
-{\centering\Huge\color{FhGreen}Here comes the title of the dissertation}
+\begin{center}
+{\Huge\color{FhGreen}Enabling targeted drug delivery through the blood brain barrier}
+\end{center}
 
 \vspace{3cm}
 
@@ -626,11 +627,12 @@
 
 \large\color{black}
 \begin{tabularx}{\textwidth}{Xr}
-& \textbf{\Large David Sinden, PhD}\vspace{0.8cm}\\
+& \textbf{\Large David Sinden, PhD}\\
+& \texttt{david.sinden{@}mevis.fraunhofer.de}\vspace{0.8cm}\\
 %Institute : 
-                                                & Microbubbles \\
-Fraunhofer Institute for Digital Medicine MEVIS & Drug Delivery \\
-                                                & Control Theory %\\[2cm]
+Fraunhofer Institute for Digital Medicine MEVIS & Microbubbles \\
+Max-von-Laue-Strasse 2                          & Drug Delivery \\
+28359 Bremen                                    & Control Theory %\\[2cm]
 %& Submitted 2025
 \end{tabularx}
 
@@ -644,6 +646,7 @@ Fraunhofer Institute for Digital Medicine MEVIS & Drug Delivery \\
 \bibliographystyle{apsrev4-1long} 
 \begin{btUnit}
 \begin{btSect}[apsrev4-1long]{bibliography} 
+% Background and Motivation
 
 I am an interdisciplinary applied mathematician, having worked worked with clinicians, engineers and measurement scientist. I received my Ph.D. in 2009 under the guidance of Prof. Gert van der Heijden at the Centre for Nonlinear Dynamics at University College London, motivated by the static post-buckling configuration of an charged elastic rod in a magnetic field. After my Ph.D. I took a post doctoral position at the department of Mechanical Engineering, also at UCL, as part of the ultrasound research group. The research moved from Hamiltonian dynamical systems to collective behaviour of driven nonlinear oscillators, investigating the oscillations of bubbles which can form in tissue when exposed to high-intensity therapeutic ultrasound.
 
@@ -686,9 +689,22 @@ What potential would remain untapped without this funding? You are welcome to be
 \newpage
 \section{Time Scales}
 
-Outline the time frame for your project, including preliminary work, intermediate and final project goals. 
+\vspace{\baselineskip}
 
-What are the key milestones of the project during the funding period?
+% Outline the time frame for your project, including preliminary work, intermediate and final project goals. What are the key milestones of the project during the funding period?
+
+\begin{description}
+\item[WP1: Model] \hfill Duration $\quad$ Deliverable 
+\newline{} Content
+
+\item[WP2: Coated Microbubbles] \hfill Duration $\quad$ Deliverable 
+\newline{} Content
+
+\item[WP3: Shape] \hfill Duration $\quad$ Deliverable 
+\newline{} Content
+\end{description}
+
+\vspace{\baselineskip}
 
     \begin{tikzpicture}
       \GanttHeader{\textwidth}{2ex}{4cm}{7}
@@ -698,6 +714,15 @@ What are the key milestones of the project during the funding period?
       \Task{4}{Another one}{4}{1}
       \Task{5}{Yet another one}{5}{2}
     \end{tikzpicture}
+
+\newpage
+\section{Budget Plan}
+
+%\begin{tikzpicture}
+%\fbox{
+\includegraphics[scale=1, trim=2.45cm 6cm 2.6cm 1.9cm, clip]{budget.pdf}
+%}
+%\end{tikzpicture}
 
 \end{document}
 
