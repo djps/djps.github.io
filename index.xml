@@ -18,27 +18,16 @@
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid>
       <description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
-&lt;!--
-
-
-
-
-
-  
-    
-  
-
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
 &lt;/span&gt;
   &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Spring 2024 and 2025.&lt;/span&gt;
 &lt;/div&gt;
+&lt;!--
+&gt; [!NOTE]  
+&gt; This course was delivered in Spring 2024 and 2025.
 --&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]&lt;br&gt;
-This course was delivered in Spring 2024 and 2025.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
 &lt;!--
@@ -814,7 +803,7 @@ $$
 
 
 
-&lt;div id=&#34;chart-957241638&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-716542389&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -832,7 +821,7 @@ $$
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-957241638&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-716542389&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10704,7 +10693,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-591478632&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-927318546&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10722,7 +10711,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-591478632&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-927318546&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10733,7 +10722,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
 
 
-&lt;div id=&#34;chart-614359278&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-327961548&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10751,7 +10740,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-614359278&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-327961548&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -10764,7 +10753,7 @@ This should be from the static folder:
 
 
 
-&lt;div id=&#34;chart-279853461&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-943627518&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -10782,7 +10771,7 @@ This should be from the static folder:
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-279853461&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-943627518&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
