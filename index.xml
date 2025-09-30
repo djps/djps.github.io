@@ -688,7 +688,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-843761529" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-693842751" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -704,7 +704,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-843761529', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-693842751', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9174,7 +9174,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-794523681" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-968571243" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9190,12 +9190,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-794523681', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-968571243', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-128654397" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-846259173" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9211,13 +9211,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-128654397', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-846259173', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-943785261" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-584276931" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9233,7 +9233,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-943785261', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-584276931', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
