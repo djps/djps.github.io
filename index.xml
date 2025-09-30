@@ -646,7 +646,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-635712984" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-936185247" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -662,7 +662,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-635712984', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-936185247', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6273,7 +6273,7 @@ which is worth reading.&lt;/p&gt;
 &lt;div class="flex justify-center "&gt;
 &lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/pca_manual.png" alt="PCA performed manually" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;</description></item><item><title>Numerical Modelling for Simulation and Planning of Focused Ultrasound Treatments</title><link>https://djps.github.io/publications/bookchapter/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/bookchapter/</guid><description/></item><item><title>Experience</title><link>https://djps.github.io/experience/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/experience/</guid><description>&lt;p&gt;what is here?&lt;/p&gt;</description></item><item><title>Taylor Series</title><link>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</guid><description>&lt;h2 id="taylor-series-expansion"&gt;Taylor Series Expansion&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>Numerical Modelling for Simulation and Planning of Focused Ultrasound Treatments</title><link>https://djps.github.io/publications/bookchapter/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/bookchapter/</guid><description/></item><item><title>Experience</title><link>https://djps.github.io/experience/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/experience/</guid><description/></item><item><title>Taylor Series</title><link>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</guid><description>&lt;h2 id="taylor-series-expansion"&gt;Taylor Series Expansion&lt;/h2&gt;
 &lt;!-- &lt;a target="_blank" href="https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/taylor_series.ipynb"&gt;
 &lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/&gt;
 &lt;/a&gt;
@@ -9133,7 +9133,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-679314528" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-728536194" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9149,12 +9149,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-679314528', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-728536194', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-167389542" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-748196235" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9170,13 +9170,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-167389542', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-748196235', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-469218573" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-147238965" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9192,7 +9192,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-469218573', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-147238965', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
