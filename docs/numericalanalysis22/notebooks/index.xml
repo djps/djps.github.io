@@ -41,7 +41,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/LagrangeInterpolation_8_0.png" alt="Runge phenomenon" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/LagrangeInterpolation_8_0.png" alt="Runge phenomenon" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -61,7 +61,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/LagrangeInterpolation_9_0.png" alt="Lagrange polynomial" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/LagrangeInterpolation_9_0.png" alt="Lagrange polynomial" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>Lagrange Polynomials</title><link>https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalanalysis22/notebooks/characteristicpolynomial/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
@@ -144,7 +144,7 @@ function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_7_0.png" alt="Cubic Lagrange basis functions" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_7_0.png" alt="Cubic Lagrange basis functions" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Now use a different set of points, defined by a function $x \log(x)$.&lt;/p&gt;
@@ -180,7 +180,7 @@ function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_12_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_12_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Plot the errors&lt;/p&gt;
@@ -197,7 +197,7 @@ function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_14_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_14_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Compute the bounds on the errors.&lt;/p&gt;
@@ -219,7 +219,7 @@ function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_16_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_16_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>Numerical Integration</title><link>https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalanalysis22/notebooks/integrals/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
@@ -290,7 +290,7 @@ $$&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code c
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/integrals_11_0.png" alt="Illustration of convergence of trapezoid rule" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/integrals_11_0.png" alt="Illustration of convergence of trapezoid rule" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Tabulate the data and display it&lt;/p&gt;
@@ -486,7 +486,7 @@ Now define two functions to solve the problem numerically&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/1dfem_11_0.png" alt="Error reduces with element size" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/1dfem_11_0.png" alt="Error reduces with element size" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id="error-analysis"&gt;Error Analysis&lt;/h2&gt;
@@ -941,7 +941,7 @@ Next create a uniform mesh on a square domain between $(x_0,x_1)$ with $N$ eleme
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/2dfem_8_0.png" alt="finite element grid" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/2dfem_8_0.png" alt="finite element grid" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Compute the solution&lt;/p&gt;
@@ -949,6 +949,6 @@ Next create a uniform mesh on a square domain between $(x_0,x_1)$ with $N$ eleme
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/2dfem_10_0.png" alt="solution on 2d grid" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/2dfem_10_0.png" alt="solution on 2d grid" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item></channel></rss>

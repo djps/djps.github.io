@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students | David Sinden</title><link>https://djps.github.io/docs/gradcalclinalg24/</link><atom:link href="https://djps.github.io/docs/gradcalclinalg24/index.xml" rel="self" type="application/rss+xml"/><description>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/docs/gradcalclinalg24/featured.jpg</url><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/</link></image><item><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
-&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900"&gt;
-&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-&lt;span class="dark:text-neutral-300"&gt;This course was delivered in Autumn 2024.&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;This course was delivered in Autumn 2024.&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;Lectures will take place in autumn 2024, on Wednesday mornings 9:45-11:00 and 11:15-12:30 at &lt;del&gt;EH-4 (East Hall Classroom 4)&lt;/del&gt; IRC Seminar Room III.&lt;/p&gt;
@@ -163,11 +168,16 @@ pan: false
 &lt;p&gt;You have three attempts to pass the module. Once you pass the module, no further retakes of the exam are possible. (See
 for more details.) The exams in this course are offered twice per year: in December and January.&lt;/p&gt;
 &lt;!--
-&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900"&gt;
-&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-&lt;span class="dark:text-neutral-300"&gt;The exam will take place on &lt;strong&gt;Wednesday 11 January between 12:30 and 14:30 at East Hall 8&lt;/strong&gt;&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;The exam will take place on &lt;strong&gt;Wednesday 11 January between 12:30 and 14:30 at East Hall 8&lt;/strong&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt; --&gt;
 &lt;p&gt;No supplementary material can be brought to the exam. A calculator is necessary. Graphical and scientific calculators are permitted.&lt;/p&gt;
 &lt;p&gt;The pass mark is 45%.&lt;/p&gt;
@@ -199,7 +209,7 @@ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-395268714" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-843761529" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -215,7 +225,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-395268714', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-843761529', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -226,7 +236,7 @@ window.Plotly.newPlot('chart-395268714', chart.data, chart.layout, {responsive: 
 &lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/vector_addition.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/vector_addition.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;div class="details admonition Definition open"&gt;
@@ -649,7 +659,6 @@ If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then t
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
@@ -686,7 +695,6 @@ Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;

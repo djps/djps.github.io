@@ -70,7 +70,7 @@ Note that in this example, only odd powers of $x$ contribute to the expansion.&l
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/output_2_0.png" alt="Illustration of convergence of taylor series for sin about zero" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/output_2_0.png" alt="Illustration of convergence of taylor series for sin about zero" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>Number Representations</title><link>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</link><pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
@@ -284,7 +284,7 @@ Also plotted are the two eigenvectors for which the labels give the eigenvalues&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/eigenvectors.png" alt="effectof eigenvectors and values" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/eigenvectors.png" alt="effectof eigenvectors and values" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id="iterative-solvers-for-linear-systems-of-equations"&gt;Iterative solvers for linear systems of equations:&lt;/h3&gt;
@@ -450,7 +450,7 @@ iteration&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/nonlinear0.png" alt="convergence of newton method" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/nonlinear0.png" alt="convergence of newton method" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In this case, convergence is relatively slow.&lt;/p&gt;
@@ -531,7 +531,7 @@ iteration&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/nonlinear1.png" alt="convergence bisection and newton method" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/nonlinear1.png" alt="convergence bisection and newton method" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Error of bisection method for each iteration. One can see a linear reduction of error. Sometimes error gets larger again, as the selection of the interval changes (left or right part of bisected interval).&lt;/p&gt;
@@ -646,7 +646,7 @@ To find maximum of $g(x)$, we need to find roots of $g^{\prime}(x)$, so a can de
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/max_finder2.png" alt="Sketch of function g(x)" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/max_finder2.png" alt="Sketch of function g(x)" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Newton method&lt;/p&gt;
@@ -719,7 +719,7 @@ Second maximum value: 0.004225969342977254
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/max_finder1.png" alt="Sketch of function g(x) with local maxima" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/max_finder1.png" alt="Sketch of function g(x) with local maxima" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>Lagrange Polynomials</title><link>https://djps.github.io/docs/numericalmethods/notebooks/lagrange_polynomials/</link><pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/lagrange_polynomials/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
@@ -802,7 +802,7 @@ function to compute the Lagrange polynomial.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_7_0.png" alt="Cubic Lagrange basis functions" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/characteristicPolynomial_7_0.png" alt="Cubic Lagrange basis functions" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>Least Squares Data Fitting</title><link>https://djps.github.io/docs/numericalmethods/notebooks/least_squares/</link><pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/least_squares/</guid><description>&lt;p&gt;Import the libraries&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -908,7 +908,7 @@ $$&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code c
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/integrals_11_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/integrals_11_0.png" alt="png" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Tabulate the data and display it&lt;/p&gt;
@@ -994,7 +994,7 @@ from the scipy interpolation library&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/runge.png" alt="Runge phenomenon" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/runge.png" alt="Runge phenomenon" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item><item><title>ODE Solvers</title><link>https://djps.github.io/docs/numericalmethods/notebooks/ode_solvers/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/ode_solvers/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
@@ -1079,6 +1079,6 @@ The solution is given by $y\left(t\right) = y_0 e^{a t}$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 &lt;figure &gt;
 &lt;div class="flex justify-center "&gt;
-&lt;div class="w-100" &gt;&lt;img src="https://djps.github.io/img/odes.png" alt="accuracy of ode solvers" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/odes.png" alt="accuracy of ode solvers" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;</description></item></channel></rss>
