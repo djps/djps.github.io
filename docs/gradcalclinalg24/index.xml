@@ -7,7 +7,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;This course was delivered in Autumn 2024.&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2024.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
@@ -209,7 +209,7 @@ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-193847625" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-456379128" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -225,7 +225,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-193847625', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-456379128', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();

@@ -262,7 +262,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;This course was delivered in Autumn 2024.&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2024.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
@@ -467,7 +467,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;This course was delivered in Spring 2022.&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Spring 2022.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
@@ -658,7 +658,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-193847625" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-456379128" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -674,7 +674,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-193847625', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-456379128', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9103,7 +9103,8 @@ Society for Thermal Medicine 2022 Annual Meeting
 &lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
 &lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;</description></item><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;</description></item><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
 &lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
@@ -9111,7 +9112,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;This course was delivered in Autumn 2010.&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2010.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="integration"&gt;Integration&lt;/h2&gt;
@@ -9144,7 +9145,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-179654823" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-571238649" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9160,12 +9161,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-179654823', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-571238649', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-948362715" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-824759361" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9181,13 +9182,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-948362715', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-824759361', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-378269145" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-415276398" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9203,12 +9204,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-378269145', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-415276398', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
---&gt;</description></item><item><title>Math6502: Mathematics for Engineers II</title><link>https://djps.github.io/docs/math6502/</link><pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/math6502/</guid><description>&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+--&gt;</description></item><item><title>Math6502: Mathematics for Engineers II</title><link>https://djps.github.io/docs/math6502/</link><pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/math6502/</guid><description>
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
 &lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
@@ -9216,7 +9218,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;This course was delivered in Autumn 2008 and 2009.&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2008 and 2009.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="class-tests"&gt;Class Tests&lt;/h2&gt;
