@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs | David Sinden</title><link>https://djps.github.io/blog/</link><atom:link href="https://djps.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><description>Blogs</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/blog/featured.jpg</url><title>Blogs</title><link>https://djps.github.io/blog/</link></image><item><title>Awesome List of Scientific Computing Resources</title><link>https://djps.github.io/blog/awesome-scientific-computing/</link><pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/awesome-scientific-computing/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Useful resources for scientific computing and numerical analysis, with a selection of ultrasound and medical tools&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Scientific computing and numerical analysis are research fields that aim to provide methods for solving large-scale problems from various areas of science with the help of computers. Typical problems are ordinary and partial differential equations (ODEs, PDEs), their discretizations, and the solution of linear algebra problems arising from them.&lt;/p&gt;
+&lt;p&gt;This is from my
+of Nico Schlömer&amp;rsquo;s github repo, which can be found
+.&lt;/p&gt;
+&lt;p&gt;Another useful, although less focused, resource, would be GitHub starred
+.&lt;/p&gt;
+&lt;h2 id="contents"&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="basic-linear-algebra"&gt;Basic linear algebra&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Standard building blocks for performing basic vector and matrix operations.
+(Fortran, public domain,
+)&lt;/li&gt;
+&lt;li&gt;
+- Optimized BLAS library based on GotoBLAS2.
+(C and Assembly, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- High-performance BLAS-like dense linear algebra libraries.
+(C, BSD, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Routines for solving systems of linear equations, linear least-squares, eigenvalue problems, etc.
+(Fortran, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- C++ template library for linear algebra.
+(C++, MPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- High-performance manycore linear algebra library, focus on sparse systems.
+(C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- High-performance C++ math library for dense and sparse arithmetic.
+(C++, BSD, Bitbucket)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="multi-purpose-toolkits"&gt;Multi-purpose toolkits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Parallel solution of scientific applications modeled by PDEs.
+(C, 2-clause BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Toolbox for solving PDEs with grid-based methods.
+(C++, GPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Python modules for statistics, optimization, integration, linear algebra, etc.
+(Python, mostly BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Fundamental package needed for scientific computing with Python.
+(Python, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Toolbox for solving different types of differential equations numerically. (Julia, MIT,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="finite-elements"&gt;Finite Elements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Computing platform for solving PDEs in Python and C++.
+(C++/Python, LGPL 3,
+/
+)&lt;/li&gt;
+&lt;li&gt;
+- Framework for the numerical simulation of PDEs using unstructured discretizations.
+(C++, LGPL 2.1,
+)&lt;/li&gt;
+&lt;li&gt;
+- Software library supporting the creation of finite element codes.
+(C++, LGPL 2.1,
+)&lt;/li&gt;
+&lt;li&gt;
+- High performance multiphysics finite element software.
+(C++, LGPL 2.1,
+)&lt;/li&gt;
+&lt;li&gt;
+- Automated system for the solution of PDEs using the finite element method.
+(Python, LGPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Multiphysics Object Oriented Simulation Environment.
+(C++, LGPL 2.1,
+)&lt;/li&gt;
+&lt;li&gt;
+- Free, lightweight, scalable C++ library for finite element methods.
+(C++, BSD-3-Clause,
+)&lt;/li&gt;
+&lt;li&gt;
+- Simple Finite Elements in Python.
+(Python, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- High level multiphysics-multimesh finite element language.
+(C++, LGPL,
+)&lt;/li&gt;
+&lt;li&gt;
+- Code for Efficient Extensible Discretizations.
+(C, 2-clause BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Simple finite element assemblers.
+(Python, BSD/GPL, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="meshing"&gt;Meshing&lt;/h2&gt;
+&lt;h3 id="triangular-and-tetrahedral-meshing"&gt;Triangular and tetrahedral meshing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Three-dimensional finite element mesh generator with pre- and post-processing facilities.
+(C++, GPL,
+)&lt;/li&gt;
+&lt;li&gt;
+- Python interface for Gmsh.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Quality triangular and tetrahedral mesh generation.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Algorithms for computational geometry.
+(C++, mixed LGPL/GPL,
+)&lt;/li&gt;
+&lt;li&gt;
+- Python interface for CGAL&amp;rsquo;s 3D meshing capabilities.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Quality tetrahedral mesh generator and 3D Delaunay triangulator.
+(C++, AGPLv3)&lt;/li&gt;
+&lt;li&gt;
+- Two-dimensional quality mesh generator and Delaunay triangulator.
+(C, &lt;em&gt;nonfree software&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;
+- Simple generator for unstructured triangular and tetrahedral meshes.
+(MATLAB, GPL 3)&lt;/li&gt;
+&lt;li&gt;
+- Loading and using triangular meshes with an emphasis on watertight surfaces.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Simple generator for unstructured triangular meshes, inspired by distmesh.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Generate tetrahedral meshes for triangular surface meshes.
+(C++, GPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Robust triangulation with curve constraints.
+(C++, MPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Same as TetWild, but faster.
+(C++, MPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Parallel 2D/3D triangle/tetrahedral mesh generation with sliver removal.
+(Python and C++, GPL 3, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="quadrilateral-and-hexahedral-meshing"&gt;Quadrilateral and hexahedral meshing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Scalable and robust quadrangulation from triangulation.
+(C++, BSD,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="mesh-tools"&gt;Mesh tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- I/O for various mesh formats, file conversion.
+(Python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Representing and evaluating mesh data.
+(C++, mostly LGPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Triangular mesh smoothing.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Polygon mesh processing library.
+(C++, MIT with Employer Disclaimer,
+)&lt;/li&gt;
+&lt;li&gt;
+- Robust, open-source &amp;amp; multidisciplinary software for remeshing.
+(C, LGPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Fast tools for simplex meshes.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="data-formats"&gt;Data formats&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Software libraries and data formats for array-oriented scientific data.
+(C/C++/Fortran/Java/Python,
+,
+)&lt;/li&gt;
+&lt;li&gt;
+- Data model, library, and file format for storing and managing data.
+(C/Fortran, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- eXtensible Data Model and Format for data from High Performance Computing codes.
+(C++,
+)&lt;/li&gt;
+&lt;li&gt;
+- Format for the storage of chunked, compressed, N-dimensional arrays.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sparse-linear-solvers"&gt;Sparse linear solvers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Direct solution of large, sparse, nonsymmetric systems of linear equations.
+(C, mostly BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Algebraic Multigrid Solvers in Python.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Library of high-performance preconditioners and solvers.
+(C, Apache 2.0/MIT,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="visualization"&gt;Visualization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Multi-platform data analysis and visualization application based on VTK.
+(C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Process images and create 3D computer graphics.
+(C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- 3D scientific data visualization and plotting in Python.
+(Python, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Viewer and user interface for 3D geometry processing.
+(C++, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- 3D plotting and mesh analysis through a streamlined interface for VTK.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Library for scientific analysis and visualization of 3D objects based on VTK.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Toolkit for analysis and visualization of volumetric data.
+(Python, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Cross-platform, fast, and minimalist 3D viewer with scientific visualization tools.
+(C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Topological data analysis and visualization.
+(C++/Python, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Header-only, modern OpenGL code to visualize numerical simulations at runtime. (C++, Apache 2.0, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- A fast, interactive viewer for multi-dimensional images (Python, BSD-3,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="medical-image-computing"&gt;Medical image computing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Spatially-oriented architecture for processing, segmentation, and registration of scientific images in two, three, or more dimensions. (C++, Apache-2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Software for the development of interactive medical image processing software (C++, BSD-3-clause,
+)&lt;/li&gt;
+&lt;li&gt;
+- converts DICOM to an stl&lt;/li&gt;
+&lt;li&gt;
+- Simulations on vessels (C++, GNU,
+)&lt;/li&gt;
+&lt;li&gt;
+- Vascular modelling toolkit (C/C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+finite elements for biological tissue (C++, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- a 3D surface and volumetric mesh generator for MATLAB/Octave (Matlab, GPL,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="platforms"&gt;Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Visualization, processing, segmentation, registration, and analysis of medical, biomedical, and other 3D images and meshes; and planning and navigating image-guided procedures. (C++, BSD-like,
+)
+&lt;ul&gt;
+&lt;li&gt;
+- Modules supporting image-guided interventions in 3D Slicer. (C++, BSD-3-clause,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MITK Workbench - platform for MITK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="io"&gt;I/O&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- handling of xml in C++ (C++, SourceForge)&lt;/li&gt;
+&lt;li&gt;
+- provides a data structure that stores an arbitrarily deeply nested tree of values, indexed at each level by some key (C++, Boost,
+)&lt;/li&gt;
+&lt;li&gt;
+- json for modern C++ (C++, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Read, modify and write DICOM files with python code (Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- (C/C++, BSD-3-clause,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="odes"&gt;ODEs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- A library for solving initial value problems (IVP) of ordinary differential equations. (C++, Boost,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="gpus"&gt;GPUs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- GPGPU language (
+)&lt;/li&gt;
+&lt;li&gt;
+- A C++ interface to multi-core CPU and GPGPU computing platforms based on OpenCL. (C++, Boost,
+)&lt;/li&gt;
+&lt;li&gt;
+- OpenCL BLAS library written in C++11 (C++, Apache-2, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- A general purpose GPU library (C++, BSD-3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Open-source linear algebra library for computations on many-core architectures (C++, GNU,
+)&lt;/li&gt;
+&lt;li&gt;SyCL&lt;/li&gt;
+&lt;li&gt;HIP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="solvers"&gt;Solvers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. (C/C++/Fortran, BSD-3,
+)&lt;/li&gt;
+&lt;li&gt;
+- dense linear algebra for HPC (C++, BSD-3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Python wrapper for DifferentialEquations.jl (Python/Julia, MIT, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="wave-propagation"&gt;Wave propagation&lt;/h2&gt;
+&lt;p&gt;The Focused Ultrasound Foundation provides a set of open-source tools for modelling and validation
+.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- An iterative solver for solving the finite-difference frequency-domain Maxwell equations on NVIDIA GPUs. (Python, GPL-3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Solve the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, using an iterative methods to avoid the large memory requirement of direct methods for 3D problems. (C,
+)&lt;/li&gt;
+&lt;li&gt;
+- Solves the frequency-domain Maxwell&amp;rsquo;s equations (Matlab,
+) -&lt;/li&gt;
+&lt;li&gt;
+- Solves the frequency-domain Maxwell&amp;rsquo;s equations in a 3D domain, with direct and iterative methods (python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Open-source computational boundary element platform to solve electrostatic, acoustic and electromagnetic problems. (Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- k-Wave in JAX. (Python, LGPL-3,
+)&lt;/li&gt;
+&lt;li&gt;
+- A nonlinear axisymmetric beamer simulator. (Matlab, GPL-3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Interactive transcranial focused ultrasound visualization system (java, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Fast nearfield method (Matlab)&lt;/li&gt;
+&lt;li&gt;
+- Solves Westervelt equation by computing multiple reflections (Matlab, GNU,
+)&lt;/li&gt;
+&lt;li&gt;AberSim - No longer maintained/publically available.&lt;/li&gt;
+&lt;li&gt;Bergen - No longer maintained/publically available.&lt;/li&gt;
+&lt;li&gt;
+- Diagnostic simulator (Matlab, MIT)&lt;/li&gt;
+&lt;li&gt;
+- 3D nonlinear continuous wave simulator (Matlab/Fortran)&lt;/li&gt;
+&lt;li&gt;
+- modelling and optimisation framework for medical ultrasound (python, AGPL-3,
+)&lt;/li&gt;
+&lt;li&gt;
+- FDTD of viscoelastic equation using a staggered grid arrangement with support for GPU and CPU backends (C++/OpenCL, BSD-3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Finite volume nonlinear acoustics GPU implementation in 2D
+(C++/Cuda, BSD, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- 2D finite-difference time-domain solver
+(C++, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- finite-difference time-domain computations of the elastodynamic equations in two or three-dimensions (Matlab, GPL)&lt;/li&gt;
+&lt;li&gt;
+- rovides support for transcranial focused ultrasound stimulation, along with comprehensive documentation, API flexibility, and 2D/3D visualizations (python, Apache,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="physics-informed-neural-networks"&gt;Physics-informed neural networks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Website for open source software for scientific machine learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="sbml"&gt;SBML&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Native library for reading, writing and manipulating files and data streams containing the Systems Biology Markup Language (C/C++/C#/Java/JavaScript/MATLAB/Perl/PHP/Python/R/Ruby, LGPL-2,
+).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Mathematical tours of data science.&lt;/li&gt;
+&lt;li&gt;
+- Numerical tours of data science.&lt;/li&gt;
+&lt;li&gt;
+- Highly Efficient FFT for Exascale (C++, BSD-3,
+)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="other-libraries-and-tools"&gt;Other libraries and tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Discrete Fourier transforms in one or more dimensions, of arbitrary input size, real and complex.
+(C, GPL2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Convex hull, Delaunay triangulation, Voronoi diagram, halfspace intersection about a point, etc.
+(C/C++,
+,
+)&lt;/li&gt;
+&lt;li&gt;
+- Random number generators, special functions, and least-squares fitting etc.
+(C/C++, GPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Free, open source CFD (computational fluid dynamics) software.
+(C++, GPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Numerical integration (quadrature, cubature) in Python.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Finite-volume PDE solver.
+(Python,
+,
+)&lt;/li&gt;
+&lt;li&gt;
+- Accurate sums and dot products for Python.
+(Python, GPL 3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Scalable Library for Eigenvalue Problem Computations.
+(C, 2-clause BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Computing with functions to about 15-digit accuracy.
+(MATLAB, BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Model Order Reduction with Python.
+(Python, 2-clause BSD,
+)&lt;/li&gt;
+&lt;li&gt;
+- Modeling language for convex optimization problems.
+(Python, Apache 2.0,
+)&lt;/li&gt;
+&lt;li&gt;
+- Wavelet transforms in Python.
+(Python, MIT,
+)&lt;/li&gt;
+&lt;li&gt;
+- Nonequispaced fast Fourier transform.
+(C/MATLAB, GPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Coupling library for partitioned multi-physics simulations (FSI, CHT, and more).
+(C++, LGPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Compute orthogonal polynomials efficiently.
+(Python, proprietary, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Generalized Additive Models in Python.
+(Python, Apache 2.0,
+)&lt;/li&gt;
+&lt;li&gt;
+- Solve partial differential equations with spectral methods.
+(Python, GPL 3,
+)&lt;/li&gt;
+&lt;li&gt;
+- Massively parallel optimization.
+(Python/C++, MPL 2,
+)&lt;/li&gt;
+&lt;li&gt;
+- High-performance Python library for the spectral Galerkin method.
+(Python, BSD-2,
+)&lt;/li&gt;
+&lt;li&gt;
+- Dynamic Mode Decomposition (DMD) in Python.
+(Python, MIT, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- High-performance unified framework for domain decomposition methods.
+(C++, LGPL 3, GitHub)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="community"&gt;Community&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Computational Science on the StackExchange network.&lt;/li&gt;
+&lt;li&gt;
+- MATH 676: Finite element methods in scientific computing.&lt;/li&gt;
+&lt;li&gt;
+- Mostly on MATLAB, general computing advice.&lt;/li&gt;
+&lt;li&gt;
+- 36 video lectures on approximation theory/practice and scientific computing.&lt;/li&gt;
+&lt;li&gt;
+- Feats of scientific computing.&lt;/li&gt;
+&lt;li&gt;
+- List of freely available software for the solution of linear algebra problems.&lt;/li&gt;
+&lt;li&gt;
+- Collection of articles on topics related to numerical analysis and those who practice it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- markdown-link-check-disable --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- One tweet a day on computational mathematics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- markdown-link-check-enable --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+- Discord messaging server on numerical software.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Annual Meeting of the Society for Thermal Medicine 2022</title><link>https://djps.github.io/blog/stm/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/stm/</guid><description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
+&lt;p&gt;The conference site, with details on talks and schedules, can be found
+.&lt;/p&gt;
+&lt;p&gt;The conference homepage can be found
+.&lt;/p&gt;
+&lt;p&gt;The presentation can be accessed from
+.&lt;/p&gt;
+&lt;h3 id="patient-specific-modelling-of-microwave-ablation"&gt;Patient-Specific Modelling of Microwave Ablation&lt;/h3&gt;
+&lt;!-- &lt;span style="font-size:1.5em; font-weight=700; margin-top:1.6em; margin-bottom:0.6666667em; line-height:1.3333333;"&gt;Patient-Specific Modelling of Microwave Ablation&lt;/span&gt; --&gt;
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: For the frequencies used in radiofrequency ablation it is possible to simplify the harmonic Maxwell equations by considering a quasi-static approximation. The problem reduces to a generalised Laplace equation, which can be solved in a straight forward manner. However, for the frequencies used in microwave ablation, the assumptions which lead to this model are longer valid. Solving the time-harmonic Maxwell equations can be computationally demanding. In order to overcome this, many predictions regarding ablation volumes in needle-based microwave ablation use ellipsoids which are derived from axisymmetric finite-element models, validated against homogeneous phantom data.&lt;/p&gt;
+&lt;p&gt;However, patient data is not homogeneous, and the presence of vascular structures or tumour heterogeneity mean that predicted ablation volumes based on axisymmetric models may not be accurate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
+&lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;</description></item></channel></rss>

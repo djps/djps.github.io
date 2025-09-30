@@ -1,132 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ultrasound Simulation | David Sinden</title>
-    <link>https://djps.github.io/tags/ultrasound-simulation/</link>
-      <atom:link href="https://djps.github.io/tags/ultrasound-simulation/index.xml" rel="self" type="application/rss+xml" />
-    <description>Ultrasound Simulation</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://djps.github.io/media/logo_hu1617270246782058896.png</url>
-      <title>Ultrasound Simulation</title>
-      <link>https://djps.github.io/tags/ultrasound-simulation/</link>
-    </image>
-    
-    <item>
-      <title>k-wave-python</title>
-      <link>https://djps.github.io/opensource/kwavepython/</link>
-      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/opensource/kwavepython/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg&#34; alt=&#34;tests passing&#34; class=&#34;myImg&#34; /&gt; &lt;img src=&#34;https://readthedocs.org/projects/k-wave-python/badge/?version=latest&#34; alt=&#34;docs passing&#34; class=&#34;myImg&#34; /&gt; &lt;img src=&#34;https://codecov.io/gh/waltsims/k-wave-python/graph/badge.svg?token=6ofwtPiDNG&#34; alt=&#34;code cov&#34; class=&#34;myImg&#34; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ultrasound Simulation | David Sinden</title><link>https://djps.github.io/tags/ultrasound-simulation/</link><atom:link href="https://djps.github.io/tags/ultrasound-simulation/index.xml" rel="self" type="application/rss+xml"/><description>Ultrasound Simulation</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>Ultrasound Simulation</title><link>https://djps.github.io/tags/ultrasound-simulation/</link></image><item><title>k-wave-python</title><link>https://djps.github.io/opensource/kwavepython/</link><pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/opensource/kwavepython/</guid><description>&lt;p&gt;&lt;img src="https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg" alt="tests passing" class="myImg" /&gt; &lt;img src="https://readthedocs.org/projects/k-wave-python/badge/?version=latest" alt="docs passing" class="myImg" /&gt; &lt;img src="https://codecov.io/gh/waltsims/k-wave-python/graph/badge.svg?token=6ofwtPiDNG" alt="code cov" class="myImg" /&gt;&lt;/p&gt;
 &lt;!--
-&lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/test_pages.yml/badge.svg&#34; alt=&#34;docs passing&#34; class=&#34;myImg&#34; /&gt; &lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg&#34; alt=&#34;tests passing&#34; class=&#34;myImg&#34; /&gt; &lt;img src=&#34;https://camo.githubusercontent.com/ab4485e4a025571fb74c7c765df2eea54dff59b2859ceb4e29498fcd198dce66/68747470733a2f2f636f6465636f762e696f2f67682f77616c7473696d732f6b2d776176652d707974686f6e2f67726170682f62616467652e7376673f746f6b656e3d366f6677745069444e47&#34; /&gt;
-
-&lt;img src=&#34;https://camo.githubusercontent.com/e7fcc2969828d2e81fee861de39ed434efd12fd07664df38bccb389b0a1020df/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6b2d776176652d707974686f6e2f62616467652f3f76657273696f6e3d6c6174657374&#34; class=&#34;myImg&#34; /&gt;
+&lt;img src="https://github.com/waltsims/k-wave-python/actions/workflows/test_pages.yml/badge.svg" alt="docs passing" class="myImg" /&gt; &lt;img src="https://github.com/waltsims/k-wave-python/actions/workflows/pytest.yml/badge.svg" alt="tests passing" class="myImg" /&gt; &lt;img src="https://camo.githubusercontent.com/ab4485e4a025571fb74c7c765df2eea54dff59b2859ceb4e29498fcd198dce66/68747470733a2f2f636f6465636f762e696f2f67682f77616c7473696d732f6b2d776176652d707974686f6e2f67726170682f62616467652e7376673f746f6b656e3d366f6677745069444e47" /&gt;
+&lt;img src="https://camo.githubusercontent.com/e7fcc2969828d2e81fee861de39ed434efd12fd07664df38bccb389b0a1020df/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6b2d776176652d707974686f6e2f62616467652f3f76657273696f6e3d6c6174657374" class="myImg" /&gt;
 --&gt;
-&lt;!--&lt;img src=&#34;https://github.com/waltsims/k-wave-python/actions/workflows/test_pages.yml/badge.svg&#34; alt=&#34;docs passing&#34; class=&#34;myImg&#34; /&gt; --&gt;
+&lt;!--&lt;img src="https://github.com/waltsims/k-wave-python/actions/workflows/test_pages.yml/badge.svg" alt="docs passing" class="myImg" /&gt; --&gt;
 &lt;!--
 [![Documentation Status](https://readthedocs.org/projects/k-wave-python/badge/?version=latest)](https://k-wave-python.readthedocs.io/en/latest/?badge=latest)[![codecov](https://codecov.io/gh/waltsims/k-wave-python/graph/badge.svg?token=6ofwtPiDNG)](https://codecov.io/gh/waltsims/k-wave-python)
 --&gt;
 &lt;!-- Place this tag where you want the button to render.
-&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-size=&#34;large&#34; aria-label=&#34;Follow @djps on GitHub&#34;&gt;Follow @djps&lt;/a&gt;
-&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps/k-wave-python&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star djps/k-wave-python on GitHub&#34;&gt;Star&lt;/a&gt;
-&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/djps/k-wave-python/subscription&#34; data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34; data-icon=&#34;octicon-eye&#34; data-size=&#34;large&#34; aria-label=&#34;Watch djps/k-wave-python on GitHub&#34;&gt;Watch&lt;/a&gt;--&gt;
+&lt;a class="github-button" href="https://github.com/djps" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @djps on GitHub"&gt;Follow @djps&lt;/a&gt;
+&lt;a class="github-button" href="https://github.com/djps/k-wave-python" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star djps/k-wave-python on GitHub"&gt;Star&lt;/a&gt;
+&lt;a class="github-button" href="https://github.com/djps/k-wave-python/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" aria-label="Watch djps/k-wave-python on GitHub"&gt;Watch&lt;/a&gt;--&gt;
 &lt;p&gt;
-
-
-
-
-
-
-    
-    
-    
-
-
-
-
-
-
-
-
 &lt;a
-class=&#34;github-button&#34;
-href=&#34;https://github.com/djps&#34;
-data-icon=&#34;octicon-mark-github&#34;
-aria-label=&#34;Follow @djps on GitHub&#34;
- data-show-count=&#34;true&#34;
-data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
-data-size=&#34;large&#34;
+class="github-button"
+href="https://github.com/djps"
+data-icon="octicon-mark-github"
+aria-label="Follow @djps on GitHub"
+data-show-count="true"
+data-color-scheme="no-preference: light; light: light; dark: dark;"
+data-size="large"
 &gt;
 Follow @djps
 &lt;/a&gt;
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
 &lt;a
-class=&#34;github-button&#34;
-href=&#34;https://github.com/djps/k-wave-python/&#34;
-data-icon=&#34;octicon-star&#34;
-aria-label=&#34;Star djps/k-wave-python on GitHub&#34;
- data-show-count=&#34;true&#34;
-data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
-data-size=&#34;large&#34;
+class="github-button"
+href="https://github.com/djps/k-wave-python/"
+data-icon="octicon-star"
+aria-label="Star djps/k-wave-python on GitHub"
+data-show-count="true"
+data-color-scheme="no-preference: light; light: light; dark: dark;"
+data-size="large"
 &gt;
 Star
 &lt;/a&gt;
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
 &lt;a
-class=&#34;github-button&#34;
-href=&#34;https://github.com/djps/k-wave-python/subscription&#34;
-data-icon=&#34;octicon-eye&#34;
-aria-label=&#34;Watch djps/k-wave-python on GitHub&#34;
- data-show-count=&#34;true&#34;
-data-color-scheme=&#34;no-preference: light; light: light; dark: dark;&#34;
-data-size=&#34;large&#34;
+class="github-button"
+href="https://github.com/djps/k-wave-python/subscription"
+data-icon="octicon-eye"
+aria-label="Watch djps/k-wave-python on GitHub"
+data-show-count="true"
+data-color-scheme="no-preference: light; light: light; dark: dark;"
+data-size="large"
 &gt;
 Watch
 &lt;/a&gt;
 &lt;/p&gt;
 &lt;!-- Place this tag in your head or just before your close body tag.
-&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt; --&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;script async defer src="https://buttons.github.io/buttons.js"&gt;&lt;/script&gt; --&gt;</description></item></channel></rss>

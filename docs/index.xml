@@ -1,154 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Courses | David Sinden</title>
-    <link>https://djps.github.io/docs/</link>
-      <atom:link href="https://djps.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
-    <description>Courses</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
-    <image>
-      <url>https://djps.github.io/docs/featured.jpg</url>
-      <title>Courses</title>
-      <link>https://djps.github.io/docs/</link>
-    </image>
-    
-    <item>
-      <title>MECH1010: Modelling and Analysis in Engineering I</title>
-      <link>https://djps.github.io/docs/mech1010/</link>
-      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/mech1010/</guid>
-      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Courses | David Sinden</title><link>https://djps.github.io/docs/</link><atom:link href="https://djps.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><description>Courses</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://djps.github.io/docs/featured.jpg</url><title>Courses</title><link>https://djps.github.io/docs/</link></image><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900"&gt;
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Autumn 2010.&lt;/span&gt;
+&lt;span class="dark:text-neutral-300"&gt;This course was delivered in Autumn 2010.&lt;/span&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
-&lt;p&gt;Lecture notes on integration can be found &lt;a href=&#34;https://djps.github.io/mech1010/integration_notes.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="integration"&gt;Integration&lt;/h2&gt;
+&lt;p&gt;Lecture notes on integration can be found
+.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1.pdf&#34;&gt;Problem sheet 1&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_1_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_2.pdf&#34;&gt;Problem sheet 2&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_2_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_3.pdf&#34;&gt;Problem sheet 3&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/mech1010/integration/problem_sheet_3_solutions.pdf&#34;&gt;solutions&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/mid_year_test.pdf&#34;&gt;Mid-year test&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/integration/end_of_year_test.pdf&#34;&gt;End of year test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;linear-algebra&#34;&gt;Linear Algebra&lt;/h2&gt;
-&lt;p&gt;Lecture notes on linear algebra can be found &lt;a href=&#34;https://djps.github.io/mech1010/matrices_notes.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="linear-algebra"&gt;Linear Algebra&lt;/h2&gt;
+&lt;p&gt;Lecture notes on linear algebra can be found
+.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/problem_sheet_1a.pdf&#34;&gt;Problem sheet 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/problem_sheet_2b.pdf&#34;&gt;Problem sheet 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://djps.github.io/mech1010/matrices/quiz_questions.pdf&#34;&gt;Mid-year test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-
-
-
-
-&lt;div id=&#34;chart-927318546&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id="chart-564189732" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;\/plotly\/vector_addition.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-927318546&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('\/plotly\/vector_addition.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-564189732', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
 &lt;/script&gt;
-
-
-
-
-
-
-&lt;div id=&#34;chart-327961548&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id="chart-564271938" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;.\/charts\/plot_name.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-327961548&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('.\/charts\/plot_name.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-564271938', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
 &lt;/script&gt;
-
-
 This should be from the static folder:
-
-
-
-
-
-&lt;div id=&#34;chart-943627518&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id="chart-247385961" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;\/plot_name.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-943627518&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('\/plot_name.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-247385961', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
 &lt;/script&gt;
-
---&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Math6502: Mathematics for Engineers II</title>
-      <link>https://djps.github.io/docs/math6502/</link>
-      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://djps.github.io/docs/math6502/</guid>
-      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
+--&gt;</description></item><item><title>Math6502: Mathematics for Engineers II</title><link>https://djps.github.io/docs/math6502/</link><pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/math6502/</guid><description>&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900"&gt;
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;This course was delivered in Autumn 2008 and 2009.&lt;/span&gt;
+&lt;span class="dark:text-neutral-300"&gt;This course was delivered in Autumn 2008 and 2009.&lt;/span&gt;
 &lt;/div&gt;
-&lt;h2 id=&#34;class-tests&#34;&gt;Class Tests&lt;/h2&gt;
-&lt;p&gt;Sample tests from &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_2008_questions.pdf&#34;&gt;2008&lt;/a&gt; and &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_2009_questions.pdf&#34;&gt;2009&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;sample-exam&#34;&gt;Sample Exam&lt;/h2&gt;
-&lt;p&gt;Sample exam from &lt;a href=&#34;https://djps.github.io/math6502/MATH6502_sample_paper.pdf&#34;&gt;2008&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;h2 id="class-tests"&gt;Class Tests&lt;/h2&gt;
+&lt;p&gt;Sample tests from
+and
+.&lt;/p&gt;
+&lt;h2 id="sample-exam"&gt;Sample Exam&lt;/h2&gt;
+&lt;p&gt;Sample exam from
+.&lt;/p&gt;</description></item></channel></rss>
