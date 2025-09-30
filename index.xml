@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Sinden</title><link>https://djps.github.io/</link><atom:link href="https://djps.github.io/index.xml" rel="self" type="application/rss+xml"/><description>David Sinden</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>David Sinden</title><link>https://djps.github.io/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
+&lt;!--
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -10,10 +11,18 @@ data-callout-metadata=""&gt;
 &lt;div class="callout-body"&gt;This course was delivered in Spring 2024 and 2025.&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--
-&gt; [!NOTE]
-&gt; This course was delivered in Spring 2024 and 2025.
 --&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Spring 2024 and 2025.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
 &lt;!--
@@ -688,7 +697,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-693842751" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-385612947" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -704,7 +713,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-693842751', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-385612947', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9174,7 +9183,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-968571243" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-756983241" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9190,12 +9199,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-968571243', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-756983241', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-846259173" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-346598712" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9211,13 +9220,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-846259173', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-346598712', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-584276931" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-795364821" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9233,7 +9242,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-584276931', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-795364821', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();

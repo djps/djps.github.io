@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CTMS-MAT-13: Numerical Methods | David Sinden</title><link>https://djps.github.io/docs/numericalmethods/</link><atom:link href="https://djps.github.io/docs/numericalmethods/index.xml" rel="self" type="application/rss+xml"/><description>CTMS-MAT-13: Numerical Methods</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
+&lt;!--
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -10,10 +11,18 @@ data-callout-metadata=""&gt;
 &lt;div class="callout-body"&gt;This course was delivered in Spring 2024 and 2025.&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!--
-&gt; [!NOTE]
-&gt; This course was delivered in Spring 2024 and 2025.
 --&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Spring 2024 and 2025.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
 &lt;p&gt;All information regarding scheduling, as well as a link to this site, will also be found on CampusNet.&lt;/p&gt;
 &lt;!--
