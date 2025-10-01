@@ -646,7 +646,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-748623915" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-376981542" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -662,7 +662,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-748623915', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-376981542', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -4142,7 +4142,7 @@ $$&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
 &lt;!--
 CFL.
 Heat Equation
---&gt;</description></item><item><title>QualiPerF</title><link>https://djps.github.io/projects/qualiperf/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/qualiperf/</guid><description>&lt;h2 id="quantifying-liver-perfusion-function-relationship-in-complex-resection--a-systems-medicine-approach"&gt;Quantifying Liver Perfusion-Function Relationship in Complex Resection – A Systems Medicine Approach&lt;/h2&gt;
+--&gt;</description></item><item><title>QuaLiPerF</title><link>https://djps.github.io/projects/qualiperf/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/qualiperf/</guid><description>&lt;h2 id="quantifying-liver-perfusion-function-relationship-in-complex-resection--a-systems-medicine-approach"&gt;Quantifying Liver Perfusion-Function Relationship in Complex Resection – A Systems Medicine Approach&lt;/h2&gt;
 &lt;p&gt;The goal of the research unit is to better predict the recovery of hepatic function during regeneration after liver surgery of diseased livers.&lt;/p&gt;
 &lt;p&gt;Hepatic disease affect hepatic processes at different spatial scales: individual hepatocytes, hepatic sinusoids/lobuli (including zonated phenomena), the organ, and the entire organism. Surgery and subsequent regeneration further perturb the hepatic processes at the different scales.&lt;/p&gt;
 &lt;p&gt;In QuaLiPerF, these effects will be included in computational models of the metabolization of selected test compounds representative for liver function.&lt;/p&gt;
@@ -9133,7 +9133,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-749623518" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-214586397" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9149,12 +9149,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-749623518', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-214586397', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-147286935" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-139576428" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9170,13 +9170,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-147286935', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-139576428', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-927835641" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-513697482" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9192,7 +9192,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-927835641', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-513697482', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
