@@ -646,7 +646,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-463125798" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-614532897" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -662,7 +662,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-463125798', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-614532897', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6113,10 +6113,7 @@ or
 &lt;ul&gt;
 &lt;li&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;div style="text-align: center;"&gt;
-&lt;img src="featured.png" alt="Radius-time curve" style="width: 100%; height: auto;"&gt;
-&lt;/div&gt;
-&lt;p&gt;The slides can be found
+&lt;/ul&gt;</description></item><item><title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;p&gt;The slides can be found
 .&lt;/p&gt;
 &lt;p&gt;The abstract can be found &lt;a href="https://djps.github.io/abstracts/bremen/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;span style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;"&gt;github&lt;/span&gt; repository for some of the content can be found
@@ -9133,7 +9130,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-817593642" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-378469251" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9149,12 +9146,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-817593642', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-378469251', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-412869753" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-765134982" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9170,13 +9167,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-412869753', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-765134982', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-846539271" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-421968537" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9192,7 +9189,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-846539271', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-421968537', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
