@@ -197,7 +197,7 @@ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-195478362" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-264573891" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -213,7 +213,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-195478362', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-264573891', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
