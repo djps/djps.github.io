@@ -1,0 +1,299 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[english, print]{cv-style-wide}     
+     
+% Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+% Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+%\sethyphenation[variant=british]{english}{Uniform} % Add words between the {} to avoid them to be cut 
+
+% implemented, lead, revolutionised, leveraged, conduct, explore, manage,% detail (or results) orientated / accomplihsed / skilled / experienced / adapt, conduct , explore
+
+
+%LANGUAGES               | SOFTWARE
+%Native :                | Libraries and Packages
+%English, German         | PyTorch • PyTorchLightning • Numpy
+%Advanced :              | k-Wave • CUDA • OpenMPI • OpenMP
+%Python, MATLAB, Bash    | Tools
+%Intermediate :          | Linux • Docker • profiling • vim • tmux •Kubernetes
+%Julia, C++              | Polyaxon • PyCharm • CLion • CMake
+
+
+
+
+
+
+
+
+% https://www.overleaf.com/latex/templates/faangpath-simple-template/npsfpdqnxmbc
+
+\usepackage{changepage} 
+
+\begin{hyphenrules}{english}
+\hyphenation{Uniform}
+\end{hyphenrules}
+
+
+% \usepackage{hyperref}
+
+\usepackage[unicode,
+            colorlinks=false,
+            bookmarks=true,
+            bookmarksopen=true,
+            bookmarksdepth=2
+           ]{hyperref}
+\hypersetup{
+    pdftitle=CV David Sinden,
+    pdfauthor=David Sinden,
+    pdfsubject={CV, Resume},
+    colorlinks=false,
+    linkbordercolor=blue,
+    urlbordercolor=red
+}
+
+\begin{document}
+
+\settowidth{\bwidth}{BSc}
+\settowidth{\mwidth}{MSc}
+\settowidth{\pwidth}{PhD}
+
+\settowidth{\thesiswidth}{Thesis:}
+\settowidth{\advisorwidth}{Advisor:}
+\setlength{\uclwidth}{\advisorwidth - \thesiswidth}
+
+\setlength{\diffbwidth}{\mwidth - \bwidth}
+\setlength{\diffpwidth}{\mwidth - \pwidth}
+
+\header{David }{Sinden}{}
+       % Your name
+\begin{tikzpicture}[remember picture,overlay]
+  % pick a point 1.1cm below the top of the page, horizontally centered
+  \node[
+    anchor=north,
+    text=MidnightBlue,         % white on screen‐mode, gray in print‐mode
+    font=\thinfont
+  ] at ([yshift=-1.48cm]current page.north) {home: \href{https://djps.github.io}{djps.github.io} \quad \href{https://github.com/djps}{github: djps} \quad \href{https://www.linkedin.com/in/sindendavid/}{linkedin: sindendavid} \quad \href{https://x.com/david_sinden}{twitter: @david\_{}sinden}    };
+\end{tikzpicture}       
+        
+\lastupdated
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Skills}
+  %\vspace{-0.2cm}  
+
+% Experienced scientist with a demonstrated history of developing product-level code and algorithms in close collaboration with business partners and end customers. Over 10 years of experience in the domain of external beam radiation therapy, developing automatic segmentation algorithms and advanced algorithms for plan optimization. Recent projects on anatomical mapping for cardiac electro-physiology as well as cone-beam reconstruction for c-arm systems. Over 20 years of experience using and developing statistical machine learning methods. I master C++, python, *nix, work agile, believe in test-driven development, CI/CD, and quickly learn tools that help improve efficiency. Basic knowledge in containerization, cuda, PyTorch. My interests are to work on developing machine learning methods in combination with (advanced) physical and mathematical modeling - together with friendly and collaborative colleagues.
+
+% I have been researching methods in the field of medical imaging systems and their clinical application for more than 20 years. I focus on classical image processing, machine learning and data analysis. My strengths lie in my ability to quickly familiarize myself with related fields, to structure complex situations and to recognize connections between different disciplines. I find it easy to shape the dialog between scientists, IT developers and customers. This results in new perspectives and inn
+
+%\item[\checkmark] Implemented XYZ method - Accomplished [X] as measured by [Y], by doing [Z] 
+%    \item[\checkmark] Developed XYZ using ABC that led to X\% improvement 
+%    \item[\checkmark] Solved ABC with AAA method leading to CCC.
+%    \item[\checkmark] Implemented XYZ library for ABC.
+%    \item[\checkmark] Utilized XYZ that increased AA by x\%
+\setulcolor{MidnightBlue}%
+\setul{0.5ex}{0.4pt}%
+Innovative applied mathematician with a strong track record in \newhl{scientific computation}, with over 15 years' experience working in applied research with a focus on medical interventions. Looking for new challenges in modelling to support medical device development.
+  \begin{NoHyphItemize}
+    \item Formulates realistic yet tractable mathematical models, and associated deployable, tested and documented simulations.  Excellent \newhl{coding} and \newhl{software development} skills developed through deployment into clinical and commercial environments, satisfying ISO 13485 standard.  
+    \item Communication skills refined through working in multi-disciplinary, international teams at the interface of academic research and industry; lecturing and teaching at universities; delivering invited presentations at international conferences.
+    \item 17 \href{https://scholar.google.co.uk/citations?user=lauJqakAAAAJ&hl=en}{peer-reviewed journal papers} (over 250 citations), a book chapter, acquisition of grants (over 500,000\euro), 12 invited presentations, industrial supervisor to three PhD students, an MSc student, and maintainer of widely used open source code, \href{https://k-wave-python.readthedocs.io/en/latest/index.html#citation}{\ul{k-wave-python}}
+  \end{NoHyphItemize}
+  
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+% \vfill
+
+\section{Experience}
+\pdfbookmark[1]{Experience}{sec:experience}
+\vspace{-0.2cm}
+\begin{entrylist}
+%------------------------------------------------
+
+% Developed large-scale simulations for microwave and ultrasound ablative therapies  by architecting and parallelizing high-performance numerical methods, enabling clinically relevant treatment planning at scale.
+
+% Engineered fast ultrasound beamforming algorithms and a transcranial acoustic/elastic propagation simulator  by leveraging GPU-accelerated signal-processing techniques, delivering real-time imaging performance and improved diagnostic accuracy.
+
+\entry
+  {2019--}
+  {Fraunhofer Institute for Digital Medicine MEVIS}
+  {Bremen, Germany}
+  {\jobtitle{Senior Research Scientist - \href{https://www.mevis.fraunhofer.de/en/research-and-technologies/modeling-and-simulation.html}{Modelling and Simulation Group}}
+  \begin{itemize}[topsep=0pt]
+% \item Developed \newhl{large-scale}, \newhl{clinically relevant} simulations for microwave and ultrasound ablative therapies.
+\item Developed large-scale simulations for microwave and ultrasound ablative therapies by architecting and parallelizing high-performance numerical methods, enabling clinically relevant treatment planning at scale.
+% \item Fast ultrasound beamforming algorithms, developed simulator for transcranial acoustic/elastic propagation.
+\item Engineered fast ultrasound beamforming algorithms and a transcranial acoustic/elastic propagation simulator by leveraging GPU-accelerated reconstruction techniques, delivering novel application.
+% \item Uncertainty analysis for pharmacokinetic modelling to inform modelling formulation and experimental design
+  \end{itemize}}
+%------------------------------------------------
+
+% Established measurement-based simulation for nonlinear propagation through complex media by integrating empirical measurements into high-fidelity nonlinear computational models, enabling accurate predictions and incorporation into the IEC standard.
+
+\entry
+  {2014--2019}
+  {National Physical Laboratory}
+  {Teddington, United Kingdom}
+  {\jobtitle{Senior Research Scientist - \href{https://www.npl.co.uk/research/ultrasound/therapeutic}{Medical Ultrasound Group}}
+  \begin{itemize}
+% \item Developed numerical tools for ultrasonic field characterisation for certification
+% \item Established measurement-based simulation for nonlinear propagation through complex media for accurate predictions, included in IEC standard. 
+\item Established measurement-based simulation for nonlinear propagation through complex media by integrating empirical measurements into computational models, incorporated into IEC technical specification 63587.
+  \end{itemize}}
+%------------------------------------------------
+
+% Developed an ultrasound-guided high-intensity focused ultrasound treatment planning system with a multi-element phased-array by integrating real-time ultrasonic imaging and adaptive beamforming control, enabling precise focus steering, dynamic treatment adjustments, and enhanced therapy safety.
+
+\entry
+  {2011--2014}
+  {Institute of Cancer Research/The Royal Marsden Hospital}
+  {Sutton, United Kingdom}
+  {\jobtitle{Post-Doctoral Research Associate - \href{https://www.icr.ac.uk/research-and-discoveries/icr-divisions/radiotherapy-and-imaging/therapeutic-ultrasound}{Therapeutic Ultrasound Group}/Joint Department of Physics}
+    \begin{itemize}
+    % \item Development of ultrasound-guided high-intensity focused ultrasound treatment planning system with a multi-element phased-array. 
+    \item Developed an ultrasound-guided high-intensity focused ultrasound treatment planning system with a multi-element phased-array by integrating beamforming control, for focal steering and enhanced safety.
+    \end{itemize}}
+%------------------------------------------------
+
+% Investigated the influence of cavitation on therapeutic ultrasound by employing numerical simulations and analytical modeling, enabling accurate prediction of cavitation thresholds and optimization of treatment efficacy and safety.
+
+\entry
+  {2008--2011}
+  {University College London}
+  {London, United Kingdom}
+  {\jobtitle{Post-Doctoral Research Associate - \href{https://www.ucl.ac.uk/engineering/ultrasonics-group}{Ultrasonics Group}/Department of Mechanical Engineering}
+  	\begin{itemize}
+      % \item Investigation of influence of cavitation on therapeutic ultrasound using numerical and analytic methods.
+      \item Investigated the influence of cavitation on therapeutic ultrasound by employing numerical and analytical approaches, enabling accurate prediction of cavitation in order to optimize treatment efficacy and safety.
+    \end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+%\vfill
+
+\vspace{-0.2cm}
+\section{Education}
+\pdfbookmark[1]{Education}{sec:education}
+\vspace{-0.2cm}
+%------------------------------------------------
+\begin{entrylist}
+%\vspace*{-0.5cm}
+\entry
+{2004--2008}
+{PhD \hspace{\diffpwidth/2}-\hspace{\diffpwidth/2} Dynamical Systems}
+{\setulcolor{MidnightBlue}%
+\setul{0.5ex}{0.4pt}%
+\href{https://ucl.ac.uk}{\ul{University College London}}
+}%
+{%
+\setulcolor{MidnightBlue}%
+\setul{0.5ex}{0.4pt}%
+Thesis: \hspace{\uclwidth}\href{https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://discovery.ucl.ac.uk/15832/1/15832.pdf}{\enquote{Integrability, Localisation and Bifurcation of an Elastic Conducting Rod in a Uniform Magnetic Field}},\newline{}Advisor: \href{https://profiles.ucl.ac.uk/12184-gert-van-der-heijden}{\ul{Prof. Gert van der Heijden}}%
+}
+%------------------------------------------------
+%\vspace*{-0.5cm}
+\threeentry
+{2003--2004}
+{MSc - Modern Applications of Mathematics}
+{%
+\setulcolor{MidnightBlue}%
+\setul{0.5ex}{0.4pt}%
+\href{https://bath.ac.uk}{\ul{University of Bath}}%
+}%
+{~}
+%------------------------------------------------
+%\vspace*{-0.5cm}
+\threeentry
+{2000--2003}
+{BSc \hspace{\diffbwidth/2}-\hspace{\diffbwidth/2} Mathematics with Applied Mathematics/Mathematical Physics}
+{%
+\setulcolor{MidnightBlue}%
+\setul{0.5ex}{0.4pt}%
+\href{https://imperial.ac.uk}{\ul{Imperial College London}}%
+}%
+{}
+
+%------------------------------------------------
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%\vfill
+
+\section{Awards \& Esteem Indicators}
+\addcontentsline{toc}{Awards}{sec:awards}
+\pdfbookmark[1]{Awards}{sec:awards}
+\vspace{-0.2cm}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2020}
+{IEEE IUS Challenge on Ultrasound Beamforming with Deep Learning (CUBDL)}
+{~}
+%{Joint~\newhl{first place}~in IEEE IUS Challenge for \enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding} (2020) }
+{Joint~\newhl{first place}~in IEEE IUS \href{https://cubdl.jhu.edu/}{CUBDL} Challenge for \enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding} (2020) }
+
+\entry
+{2015-}
+{International Expert}
+{~}
+{Member \href{https://iec.ch/dyn/www/f?p=103:7:::::FSP_ORG_ID:1281}{IEC}/\href{https://standardsdevelopment.bsigroup.com/committees/50001534}{BSI} Technical Committee 87 (Ultrasonics), in an individual capacity, associate \href{https://ima.org.uk/}{IMA}, full member \href{https://www.iop.org/}{IOP}}
+%
+%
+%\entry
+%{2020}
+%{Award name}
+%{~}
+%{Award description. Award description. Award description. Award description. Award description. Award description. Award description. }
+%
+\entry
+{Various}
+{EPSRC Enhanced Scholarships}
+{~}
+{Enhanced funding for MSc (2004), PhD (2008) and post-doctoral work (2014)}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% DevOps & Testing
+
+\section{Skills}\pdfbookmark[1]{Skills}{sec:skills}
+  \vspace{-0.2cm}
+\begin{tabular}{p{0.48\textwidth} p{0.60\textwidth} }
+\textbf{programming:} python, C++, Matlab, OpenCL &
+\textbf{libraries:} ITK, VTK, boost, eigen; \\
+\textbf{version control}: git, svn & \textbf{CI/CD}: github, gitlab \\
+\textbf{testing}: google test, pytest & \textbf{documentation}: sphinx, doxygen \\
+\textbf{build systems}: make, cmake, visual studio  & \textbf{presentation}: \LaTeX{}, Bib\TeX{}, html, css: tailwind, bootstrap \\
+\textbf{computation} FEniCS, Comsol & \textbf{languages:} English (native), German (B2.1) with permanent residency 
+\end{tabular}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\vfill
+%
+%\section{Referees}
+%  \vspace{-0.2cm}
+%Available on request.
+%----------------------------------------------------------------------------------------
+\end{document}

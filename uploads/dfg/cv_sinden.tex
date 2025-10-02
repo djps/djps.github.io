@@ -1,0 +1,230 @@
+\documentclass[checked=true, walterbenjamin=false]{dfg-cv-en}
+
+\newcommand{\academicTitle}[1]{Dr.}
+%\actitle{Dr.} 
+
+\newcommand{\firstName}[1]{David}
+%\vorname{David}
+
+\newcommand{\secondName}[1]{Sinden}
+%\nachname{Sinden} 
+
+\newcommand{\position}[1]{Senior Research Scientist}
+%\position{Senior Research Scientist} 
+
+\newcommand{\institution}[1]{Fraunhofer Institute for Digital Medicine MEVIS, Bremen,\newline% 
+Germany}
+%\institution{Fraunhofer Institute for Digital Medicine MEVIS, Bremen, Germany} 
+
+\newcommand{\orcid}[1]{0000-0002-8514-8279}
+%\orcid{0000-0002-8514-8279} 
+ 
+\newpairofpagestyles{firstpage}{%
+	\ihead{}
+	\ohead{}
+	\ifoot{
+	{
+    		\renewcommand{\arraystretch}{0.7} % Adjust row height for this table		
+    		\raisebox{1cm}[0pt][0pt]{%
+      	\begin{tabular}[t]{@{}l}
+      		{\normalfont\small\textbf{\textcolor{MidnightBlue}{Deutsche Forschungsgemeinschaft}} }\\
+			{\normalfont\small Kennedyallee 40 $\cdot$ 53175 Bonn $\cdot$ postal address: 53170 Bonn}\\
+			{\normalfont\small phone: + 49 228 885-1 $\cdot$ fax: + 49 228 885-2777 $\cdot$ postmaster@dfg.de $\cdot$ www.dfg.de}
+		\end{tabular}
+    		}
+    }
+  }
+  \cfoot{
+    \raisebox{1cm}[0pt][0pt]{%
+      %Footer on 1\textsuperscript{st} page only
+    }
+  }
+  \ofoot{
+    \raisebox{0.5cm}[0pt][0pt]{%  <=======================================
+      \color{MidnightBlue}{{\normalfont\fontsize{37}{44}\selectfont DFG}}
+      %\normalsize
+    }
+  }
+}
+% Page Layout for normal pages
+\newpairofpagestyles{normalpage}{%
+  \ihead{}
+  \ohead{}
+  \ifoot{}
+  \ofoot{}
+}
+
+% Abstaende
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=1\baselineskip
+]{section}
+
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=1\baselineskip
+]{subsection}
+
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=1\baselineskip
+]{subsubsection}
+
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=1\baselineskip
+]{paragraph}
+
+\RedeclareSectionCommand[
+  beforeskip=1\baselineskip,
+  afterskip=1\baselineskip
+]{subparagraph}
+
+% 
+\setlength{\parskip}{0cm}
+
+
+
+
+\begin{document}
+%
+\newgeometry{%
+	headheight = 1cm, 
+	tmargin = 2.5cm, 
+	lmargin = 2.5cm, 
+	rmargin = 2cm, 
+	bmargin = 3.25cm}
+%
+\thispagestyle{firstpage}
+\pagestyle{normalpage}
+%
+\section*{Curriculum Vitae\quad David Sinden}
+\section*{Personal Data}
+%
+\noindent
+\begin{tabularx}{\textwidth}{?p{5.24cm}+X?} \hline
+Title & \academicTitle{} \\ \hline
+First name & \firstName{} \\ \hline
+Name & \secondName{} \\ \hline
+Current Position & \position{} \\ \hline
+\RaggedRight%
+Current institution(s)/site(s), country & \institution{} \\ \hline
+Identifiers/ORCID  & \orcid{} \\ \hline
+\end{tabularx}
+%
+\section*{Qualifications and Career}
+%
+\noindent
+\begin{longtable}{?p{5.24cm}+p{10.4cm}?}
+\hline
+\textbf{Stages} & \textbf{Periods and Details} \\ 
+\hline
+%
+Degree programme & \textbf{MSc} – \emph{Modern Applications of Mathematics}, 2003-2004, \newline% 
+University of Bath, United Kingdom \newline%
+\textbf{MSc} – \emph{Math. with. Applied Math. and Theo. Phys.}, %
+2000-2003, Imperial College London, United Kingdom \\
+%
+\hline
+Doctorate  & 31.07.2008, Prof.\ Gert van der Heijden, Centre for Nonlinear Dynamics, University College London, United Kingdom \\      
+\hline
+Stages of academic/professional career & 2019-Present, Senior Research Scientist, Fraunhofer Institute for Digital Medicine MEVIS, (Prof Tobias Preusser) Bremen
+\begin{compactItemize}
+\item Thermal ablation modelling
+\item Pharmacokinetic modelling of liver function
+\item Transcranial ultrasound simulation
+\end{compactItemize}	
+2014-2019: Senior Research Scientist,
+Ultrasound and Underwater Acoustics Group (Prof Bajram Zeqiri) National Physical Laboratory, Teddington, United Kingdom
+\begin{compactItemize}
+\item Worked on development of proto-type phase-insensitive breast imaging
+\item Assessed design of ultrasound systems and generated acoustic fields for clinical imaging and therapy system for regulatory approval using measurement-based simulations of linear and nonlinear fields.  
+\end{compactItemize}	\\
+& 2011-2014: Post-Doctoral Research Associate, Therapeutic Ultrasound Group (Prof. Gail ter Haar), Institute of Cancer Research/Royal Marsden Cancer NHS Foundation Trust, Sutton, United Kingdom.
+\begin{compactItemize}
+\item Design and implementation of treatment planning software for pre-clinical large phased-array ultrasound transducer for transcostal thermal ablations
+\end{compactItemize}	\\
+& 2008-2011: Post-Doctoral Research Associate, Department of Mechanical Engineering (Prof. Eleanor Stride), University College London, United Kingdom
+\begin{compactItemize}
+\item Modelling cavitation activity in tissue during high-intensity focus ultrasound therapy.
+\item Delivered mathematics lectures to engineering students
+\end{compactItemize}	 \\
+		\hline
+    		\end{longtable}
+
+
+\secSupplementary 
+
+\secEngagement 
+\begin{compactItemize}
+\item Teaching: 
+\begin{compactItemize}
+\item Calculus and Linear Algebra for Graduate Students, Constructor University, Bremen 2025
+\item Numerical Methods, Constructor University, Bremen 2024, 2025 
+\item Numerical Analysis, Jacobs University, Bremen 2022 (now known as Constructor University)
+\end{compactItemize}
+\item Standardisation: IEC Technical Committee 87 (Ultrasonics), Working Group 6 (High Pressure) Author New Work Item 62900: \enquote{Measurement-based Simulation in Water and Complex Media}. Also, member of parallel national committee BSI EPL/87 (Ultrasonics). 
+\end{compactItemize}
+
+
+\secSupervision 
+\noindent%
+Prior to moving to Fraunhofer MEVIS, at the National Physical Laboratory I was the industrial supervisor to three PhD students (2018-2019):
+\begin{compactItemize}
+\item Katherine Baxter: PhD: \enquote{Linear and nonlinear wave equation models with power law attenuation}, 2018-2019, Primary Supervisor: Prof. Lehel Banjai, Dept. Mathematics, Heriot-Watt University, United Kingdom, awarded 2022. Software developer at Wood Mackenzie, Edinburgh.  Acknowledged in: K. Baker, L. Banjai \enquote{Numerical analysis of a wave equation for lossy media obeying a frequency power law}, IMA J. Numer. Anal., 42(3) pp 2083–2117 (2022), doi: 10.1093/imanum/drab028
+\item Santeri Kaupinmaki: PhD: \enquote{Inverse Problems for Ultrasound Computed Tomography of the Breast} 2018-2019. Primary Supervisor: Prof. S. Arridge, Dept. Medical Physics, University College London, United Kingdom, 
+\item Morgan Roberts: PhD: \enquote{Ultrasound Computed Tomography of the Breast}. Primary Supervisor: Prof. Ben Cox, Dept. Medical Physics, University College London, United Kingdom
+\end{compactItemize}
+\vspace{\baselineskip}\noindent
+Fraunhofer Institute for Digital Medicine MEVIS:
+\begin{compactItemize}
+\item Sandeep Gyawali: MSc: \enquote{Extending Composite Finite Element Method for PDE Problems with Geometric Uncertainties} (2022). Primary Supervisor: Prof. Tobias Preusser, (Jacobs University Bremen). Now a scientific software developer at TechsoMed GmBH, Bremen
+\end{compactItemize}
+%
+\secResults
+%
+\secCategoryA 
+%
+\begin{compactEnumerate}
+\item C. A. Neizert, H. N. C. Do, M. Zibell, C. Rieder, \uline{D. Sinden}, S. M. Niehues, J. L. Vahldiek, K.~S.~Lehmann, F. G. M. Poch \enquote{Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model} \emph{Sci. Rep.} 12 p. 17061 (2022). \newline
+doi: \texttt{10.1038/s41598-022-21437-4}
+\begin{compactItemize}
+\item A unified experiment and modelling analysis describing the importance of influence of vascular on thermal ablation. 
+\end{compactItemize}
+\item  P. C. Guillemin, \uline{D. Sinden}, Y. M’Rad, M. Schwenke, J. Le Guevelou, J. Uiterwijk, O. Lorton, M.~Scheffler, P.-A. Poletti, J. Jenne, T. Zilli, R. Salomir \enquote{A novel concept of transperineal focused ultrasound transducer for prostate cancer local deep hyperthermia treatments} \emph{Cancers} 15(1) p.~163 (2023). doi: \texttt{3390/cancers15010163}
+\begin{compactItemize}
+\item Designed and performed patient specific simulations of acoustic and thermal fields from novel thermal ablation device. Results were validated against experimental data. 
+\end{compactItemize}
+\item  D. Hyun, A. Wiacek, S. Goudarzi, S. Rothlübbers, A. Asif, K. Eickel, Y. C. Eldar, J. Huang, M. Mischi, H. Rivaz, \uline{D. Sinden}, R. J. G. van Sloun, H, Strohm, M. A. L. Bell \enquote{Deep learning for ultrasound image formation: CUBDL evaluation framework and open datasets} \emph{IEEE Trans. Ultrason. Ferroelectr. Freq. Control} 68(12) 3466-3483 (2021). 
+doi: \texttt{10.1109/TUFFC.2021.3094849}
+\begin{compactItemize}
+\item Paper presents open-source, standardisation, open source, reproducible and reliable data in order to enable researchers to benchmark machine learning algorithms against test cases.\end{compactItemize}
+\item  K. Heimes, M. Evers, T. Gerrits, S. Gyawali, \uline{D. Sinden}, T. Preusser, L. Linsen \enquote{Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis} \emph{VCBM 2022: Eurographics Workshop on Visual Computing for Biology and Medicine.}
+doi: \texttt{10.2312/vcbm.20221187}
+\begin{compactItemize}
+\item Creation of clinically relevant case studies for visualisation of uncertainties associated with variability of tissue properties.\end{compactItemize}
+\item  K.J. Pahk, P. Gélat, \uline{D. Sinden}, D. K. Dhar, N. Saffari \enquote{Numerical and experimental study of mechanisms involved in boiling histotripsy} \emph{Ultrasound Med. Biol.} 43(12) 2848-2861 (2017).\newline%
+doi: \texttt{10.1016/j.ultrasmedbio.2017.08.938}
+\begin{compactItemize}
+\item Performed simulations of nonlinear acoustic simulations which lead to boiling histotripsy. Validated against experiments to show utility of simulations as a treatment planning tool.
+\end{compactItemize}
+\item \uline{D. Sinden}, G. ter Haar \enquote{Dosimetry implications for correct ultrasound dose deposition: uncertainties in descriptors, planning and treatment delivery} \emph{Transl. Cancer Res.} 3(5) 459-471 (2014). \newline%
+doi: \texttt{10.3978/j.issn.2218-676X.2014.10.02}
+\begin{compactItemize}
+\item Outlined sources of uncertainty and potential mitigations for successful clinical delivery of thermal therapy by therapeutic ultrasound. 
+\end{compactItemize}
+\end{compactEnumerate}
+
+\secCategoryB 
+\noindent%
+Developer of open-source acoustic simulator k-wave-python
+
+\secAwards
+\begin{compactItemize}
+\item Member of winning team for IEEE IUS 2020 Challenge on Beamforming using Deep Learning (CUBDL) for paper \enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding}
+\item Presentation from paper \enquote{Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis} received honourable mention at Eurographics Workshop on Visual Computing for Biology and Medicine 2022.
+\end{compactItemize}
+
+\secOther 
+
+\end{document}

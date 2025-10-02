@@ -1,0 +1,627 @@
+\documentclass[a4paper,10pt]{article}
+%
+\include{cv-commands-01}
+%
+\hypersetup{
+% non-Latin characters in Acrobat’s bookmarks
+    unicode      = false,
+% show Acrobat’s toolbar?
+    pdftoolbar   = true,
+% show Acrobat’s menu?
+    pdfmenubar   = true,
+% window fit to page when opened?
+    pdffitwindow = false,
+% fits the width of the page to the window
+    pdfstartview = {FitH},
+% title
+    pdftitle     = {David Sinden : Curriculum Vitae},
+% author
+    pdfauthor    = {David Sinden},
+% subject of the document
+    pdfsubject   = {},
+ % creator of the document
+    pdfcreator   = {David Sinden},
+% producer of the document
+    pdfproducer  = {David Sinden},
+% list of keywords
+    pdfkeywords  = {},
+ % links in new window
+    pdfnewwindow = true,
+% false: boxed links; true: colored links
+    colorlinks   = true,
+% color of internal links
+    linkcolor    = black,
+% color of links to bibliography
+    citecolor    = green,
+% color of file links
+    filecolor    = magenta,
+% color of external links
+    urlcolor     = MidnightBlue
+}
+%
+\begin{document}
+%
+\pagestyle{fancy}
+%
+\header{\hspace*{-2.9mm}David Sinden}
+{\hspace*{-2.9mm}{Applied Mathematician}}
+{\href{mailto:david.sinden@gmail.com}{david.sinden@gmail.com}\\
+Max-Planck-Strasse 43, Bremen, 28357, Germany\\
+3 April 2020 \\
+\smcp{+49 (1)76 343 68520}%
+}
+%
+\begin{resumeblock}{Profile}
+\resumeitem{}{\textcolor{red}{David Sinden is a senior research scientist at NPL. He is an applied mathematician working primarily on numerical simulations of the propagation of ultrasound in biomedical applications. He is the lead author of six papers, and has published a book chapter on treatment planning for therapeutic ultrasound. He is a member of the British Standards Institute and leads a new work item for IEC Technical Committee 87 Working Group 6 on measurement-based simulation for high pressure fields in water and other media.}\\
+& \hspace{0.50cm}ORCID: 0000-0002-8514-8279
+%& \hspace{0.50cm}\begin{minipage}{14cm} Numerical modelling of a variety of problems in acoustics: such as piezo-electric microtransducers, three-dimensional nonlinear acoustic wave propagation solvers, heat solvers. \end{minipage} \\[6mm]
+%& Line-Manager: Pete Theobald
+}\\[3mm]
+\end{resumeblock}
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{resumeblock}{Professional Experience}
+\resumeitem{11/19--}{Senior Research Scientist, Fraunhofer Institute for Digital Medicine MEVIS\\
+& {\em Mathematical Modelling in Image-Guided Therapies} \\[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} Stuff\end{minipage} \\[6mm]
+& Line-Manager: Prof. Tobias Preusser}\\[3mm]
+\shortskip
+
+\resumeitem{07/14--11/19}{Senior Research Scientist, National Physical Laboratory\\
+& {\em Mathematical Modelling in Medical Physics} \\[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} Numerical modelling of a variety of problems in acoustics: such as piezo-electric microtransducers, three-dimensional nonlinear acoustic wave propagation solvers, heat solvers, optimization of ultrasonic  imaging systems. Additional projects include modelling of magnetic resonance imaging and applications of data science in digital health. \end{minipage} \\[6mm]
+& Line-Manager: Dr. Stuart Kitney}\\[3mm]
+\shortskip
+
+\resumeitem{01/14--06/14}{Research Associate, Joint Physics Department, Institute of Cancer Research \& Royal Marsden Hospital \\
+& {\em Vascular Remodelling} \\[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} Investigated the use of hyperthermia to increase blood flow, enhance local oxygenation levels so that cells may be more susceptible to radiotherapy. This work involves image analysis, detailed mathematical analysis using asymptotic homogenisation to regularise small-scale micro-perfusion models, and large-scale computational models. \end{minipage} \\[6mm]
+& Line-Manager: Prof.~G.~ter~Haar}\\[3mm]
+\shortskip
+%
+\resumeitem{07/11--12/13}{Research Associate, Joint Physics Department, Institute of Cancer Research \& Royal Marsden Hospital\\
+& {\em Forward Modelling of high-intensity focused ultrasound through tissue} \\[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} Responsible for the design of procedure which focuses a multi-element transducer to target a succession of focal regions within a cancerous legion as the ultrasonic beam passes through the rib cage, constrained by temperature on the skin, the pressure around the ribs, amplitude of sidelobes and the likelihood of cavitation activity. This is a constrained optimisation process for a nonlinear partial differential equation through multi-layered inhomogeneous materials based on patient specific data to be used in clinical trials run on high-performance computing cluster.\\ \end{minipage} \\[6mm]
+& Line-Manager: Prof.~G.~ter~Haar}\\[3mm]
+\shortskip
+% \resumeitem{}{From June 2011 up to August 2012 I was a carer for my grandmother.} \\%[7mm]
+%
+\resumeitem{06/08--06/11}{Research Associate, Department of Mechanical Engineering, University College London \\
+& {\em Cavitation modelling in liver tissue under high-intensity focused ultrasound} \\[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} Cavitation activity has been shown to greatly enhance the local rate of heat deposition and provide a significant aid to treatment monitoring. However, cavitation occurring pre-focally or growing unstable around the focal region is known to impede safe and effective treatment delivery. As part of a combined theoretical and experimental approach with collaborators at the University of Oxford and the Institute of Cancer Research, investigated the likelihood of cavitation inception and possible strategies to control cavitation activity. \end{minipage} \\[13mm]
+& Line-Managers: Prof.~N.~Saffari \& Dr.~E.~Stride}\\
+\shortskip
+\end{resumeblock}
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\newpage
+\begin{edblock}{Education}
+%
+\resumeitem{Ph.D.}{Centre for Nonlinear Dynamics, University College London & 2004--8\\%
+& \multicolumn{2}{l}{\em Integrability, localisation and bifurcation of a elastic conducting rod in a magnetic field} \\ %[1mm]
+& \hspace{0.50cm}\begin{minipage}{14cm} The static configurations of a rod in a magnetic field were rederived as a Hamiltonian system with symmetry, and shown to be completely integrable. Melnikov's method was then applied to show that for certain material properties spatially chaotic configurations could exist. The bifurcation of structure of single and multi-pulse homoclinic solutions was investigated, and it was found that the rods may buckle in a Hamiltonian-Hopf-Hopf bifurcation. \end{minipage} \\
+& Advisor: Prof.~G.~H.~M. van der Heijden.\\
+& Examiners: Prof.~D.~D.~Holm \& Prof.~G.~Lord} \\[3mm]
+% \shortskip
+%
+\resumeitem{M.Sc.}{Department of Mathematical Sciences, University of Bath & 2003--4\\%
+& {\em The Modern Applications of Mathematics} & \\
+& Dissertation: The closing mechanism of the Venus Flytrap & \\
+& Advisers: Prof.~C.~J.~Budd \& Prof.~G.~W.~Hunt} \\[3mm]
+% \shortskip
+%
+\resumeitem{B.Sc.}{Department of Mathematics, Imperial College London & 2000--3\\
+& {\em Mathematics with Applied Mathematics/Theoretical Physics -- 2.1} & }\\
+\shortskip
+%
+\end{edblock} \\
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\clearpage
+%\vfill
+\begin{resumeblock}{Professional Responsibilities}
+%
+ \resumeitem{Standardisation:}{Project leader IEC TC87 WG6 New Work Item: ``Measurement-based Simulation ''\\%
+ & \hspace*{0.1cm} Leading team of over ten internationally recognised experts in writing of technical\\ 
+ & \hspace*{0.1cm} specification}\\
+ \shortskip
+%
+\resumeitem{Reviewer:}{
+% \hspace*{-1.5cm}
+\begin{minipage}{1.00\textwidth}
+ \begin{tabular}{p{0.25\textwidth} p{0.75\textwidth}}
+\hspace*{-0.5cm}\begin{minipage}[t]{1\textwidth}
+ \begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em J. Fluid Mech.} 2010--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em Ultrasonics} 2011--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em Ultrasound} 2012--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em Chaos} 2013--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em J. Therap. Ultrasound} 2016--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em Ultrasound Med. Biol.} 2016--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em IOP e-books} 2019--
+\end{itemize}
+\end{minipage} &
+\begin{minipage}[t]{\textwidth}
+ \begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-1mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\bullet$}] {\em Med. Phys.} 2012--
+\item[\textcolor{MidnightBlue}{$\bullet$}] {\em J. Acoust. Soc. Am.} 2012--
+\item[\textcolor{MidnightBlue}{$\bullet$}] {\em Int. J. Hypertherm.} 2013--
+\item[\textcolor{MidnightBlue}{$\bullet$}] {\em IEEE Trans. Ultrason., Ferroelect., Freq. Contr.} 2014--
+ \item[\textcolor{MidnightBlue}{$\bullet$}] {\em Ultrasonics Sonochemistry} 2012--
+  \item[\textcolor{MidnightBlue}{$\bullet$}] {\em J. Verif. Valid. Uncert.} 2016--
+\end{itemize}
+\end{minipage}
+\end{tabular}
+\end{minipage}}\\[15mm]
+
+\resumeitem{Conference:}{Member of organising committe for Advanced Measurements for Ultrasound in Medicine,\\
+& \hspace*{0.1cm} AMUM2019, National Physical Laboratory, May 2019}\\[3mm]
+
+\resumeitem{}{Chairperson of symposium: modelling therapeutic ultrasound at International Symposium \\%
+& \hspace*{0.1cm} on Therapeutic Ultrasound, Heidelberg, 2012}\\[3mm]
+
+\resumeitem{}{Chairperson of symposium: computation methods applied to mechanical systems at \\
+& \hspace*{0.1cm} European Nonlinear Oscillations Conference, Rome, 2011}\\[3mm]
+
+\resumeitem{Responsibilities:}{Board member Athena Swan accreditation at Institute of Cancer Research  (2012)}\\
+\shortskip
+\end{resumeblock}
+%
+% \vfill
+% \vspace*{-20mm}
+\begin{resumeblock}{Patents}
+%
+\resumeitem{}{Patent ``Trilaminar Array'' filed on 29 June 2018, UK Patent Application 1810751.6}\\
+%
+\end{resumeblock}
+
+%
+% \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \vspace*{-20mm}
+\begin{resumeblock}{Affiliations, Awards \& Achievements}
+%
+\resumeitem{}{Member of the Society for Industrial and Applied Mathematics member (2004--present),\\
+& \hspace*{0.1cm}associate member of the Institute of Mathematics (2016--present), and member of \\
+& \hspace*{0.1cm}the Institute of Physics (2008--present)}\\[3mm]
+% \shortskip
+%
+\resumeitem{}{M.Sc. funded by an EPSRC scholarship (2003--4), EPSRC funding was awarded for\\
+& \hspace*{0.1cm} Ph.D. (2004--7) and post-doctoral work (2008--2011, 2011--2013, 2014)}\\[3mm]
+% \shortskip
+%
+% \resumeitem{}{Top-tier consultancy firm Freshminds ``Ones to watch'' (2003)}\\[3mm]
+% % \shortskip
+%
+\resumeitem{}{J.~Goodwin \& C.~E.~Heath awards for achievement and mathematics (2000)}\\[3mm]
+% \shortskip
+%
+\resumeitem{}{Creativity in Science and Technology Gold award (1999)}\\
+\shortskip
+%
+\end{resumeblock}
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\newpage
+\begin{resumeblock}{Grants}
+%
+\resumeitem{}{European Metrology Programme for Innovation and Research (EMPIR): Radiotherapy Coupled with Hyperthermia -- Adapting the Biological Equivalent Dose Concept, $\pounds$180,000 (2019-21)}\\[3mm]
+
+\resumeitem{}{Focused Ultrasound Foundation invited participant in workshop {\em Pancreatic cancer workshop} fees, expenses, accommodation and flights to Washington D.C., $\pounds$2,000 (2019)}\\[3mm]
+
+\resumeitem{}{Analysis for Innovators, with Deltex Medical Devices: Optimizing Oesophageal Doppler Transducers, $\pounds$26,500 (2018)}\\[3mm]
+
+\resumeitem{}{Industrial Challenge Strategy Fund, Wave 1, Metrology for Medical Imaging, with Huntleigh Diagnostics: Optimizing Fetal Doppler Transducers $\pounds$45,500 (2018-19)}\\[3mm]
+
+\resumeitem{}{EPSRC Network+ ``Thunddar'' feasibility study: Machine learning for cavitation detection $\pounds$26,500 (2016)}\\[3mm]
+%
+\resumeitem{}{NPL Strategic Research Award: Mathematical modelling of histotripsy $\pounds$25,000 (2015)}\\[3mm]
+%
+\resumeitem{}{EPSRC/ICR platform grant: Vascular remodelling, $\approx \pounds 25,000$ (2014)}\\[3mm]
+%
+\resumeitem{}{American Institute of Mathematics invited participant in workshop {\em Nonlinear solvers for high-intensity focused ultrasound} fees, expenses, accommodation and flights to Paolo Alto, California $\pounds$2,000 (2012)}\\[3mm]
+%
+\resumeitem{}{Institute of Mathematics and its Applications Small Grant $\pounds$300 (2011)}\\[3mm]
+% \shortskip
+%
+\resumeitem{}{UCL Graduate School Conference Fund $\pounds$250 (2010)}\\[3mm]
+% \shortskip
+%
+\resumeitem{}{UCL Study Assistance Scheme $\pounds$350 (2008)}\\
+\shortskip
+%
+\end{resumeblock}
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{resumeblock}{Outreach}
+%
+\resumeitem{}{Scientific consultant on documentary ``The healing power of sound'' (2012)}\\
+\shortskip
+
+\resumeitem{}{NPL Scientific Ambassador: Talks at number of schools and colleges on careers in science as well as demonstrations of experiments relating to objective measurements (2016-2019)}\\
+\shortskip
+%
+\end{resumeblock}
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{resumeblock}{Professional Skills}
+\resumeitem{Platforms:}{Proficient in Windows and Microsoft Office applications. Proficient in Linux (Slackware,\\%
+& \hspace*{0.1cm} Red Hat, Fedora, Ubuntu), working knowledge of Sun Solaris operating systems}\\[3mm]
+% \shortskip
+\resumeitem{Computing:}{Proficient in Matlab and Maple, basic Mathematica. Proficient in FEniCS, COMSOL. Proficient in Fortran 77/90/95, OpenMP, \CC, python, shell scripting in bash, PBS and LSF scripting for HPC applications, version control with git. Basic MPI, C, code profiling}\\[3mm]
+% \shortskip
+\resumeitem{Presentation:}{Proficient in \LaTeXe, Bib\TeX, html, javascript and css scripting}\\
+\shortskip
+\end{resumeblock}
+%
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\clearpage
+\begin{teachblock}{Teaching \& Administration Experience}
+%
+\resumeitem{Supervision:}{PhD Industrial-Supervisor, Morgan Roberts, Medical Physics, University College London, (with Dr. Ben Cox) ``Ultrasound Computed Tomography of the Breast'' & 2018--2019}\\[7mm]
+%
+\resumeitem{}{PhD Industrial-Supervisor, Kaupinm\"{a}ki, University College London, (with Prof. Simon Arridge) ``Inverse Problems for Ultrasound Computed Tomography of the Breast'' & 2018--2019}\\[7mm]
+%
+\resumeitem{}{PhD Industrial-Supervisor, Katie Baxter, Mathematics, Heriot-Watt University, (with Dr. Lehel Banjai) ``Fast Methods for Convolution Quadrature Integration '' & 2017--2019}\\[7mm]
+%
+\resumeitem{}{Summer student Antoine Lucquiaud, \'{E}cole Normale Sup\'{e}rieure de Cachan, ``Boundary Element Methods for Bubble Activity'' & 2015}\\[7mm]
+%
+\resumeitem{}{Summer student Jade Junqua, Enseirb-Matmeca and Bordeaux 1, investigating mode conversion and heating aound the ribs due to high-intensity ultrasound. & 2012}\\[7mm]
+%
+\resumeitem{Administration:}{Involved in administration and running of Centre for Preparatory Studies, Nazarbayez University, Astana, Kazakhstan for students on prestigious Bolashak scholarship and in establishing partner campus at Nazarbayez University
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Involved in construction of modules of new courses in mechanical and civil engineering degrees, design of syllabus and preparation of course notes
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\boldsymbol{\Rightarrow}$}] Project management skills, including liaising with host organisation and participating partner institutions in the United States
+\end{itemize}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Ran tutorials and revision classes for students in mathematics and physics classes
+\item[\textcolor{MidnightBlue}{$\bullet$}] Marking of tests and exam scripts
+\end{itemize} & 2011}\\
+%
+\resumeitem{Lecturing:}{Two years lecturing experience teaching general mathematical methods (linear algebra and techniques and applications of integration) to first year Mechanical Engineering undergraduate students at University College London
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Lecturing and production of lecture notes for twenty hours worth of material
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\boldsymbol{\Rightarrow}$}] Communicating complex material in a clear and accessible manner
+\end{itemize}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Production of exam and tutorial questions and solutions, marking exam scripts
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\boldsymbol{\Rightarrow}$}] Attention to detail, precision
+\end{itemize}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Organisation of tutorial sessions, supervision of post-graduate students who run the tutorials, room bookings
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\boldsymbol{\Rightarrow}$}] Organisation and leadership skills
+\end{itemize}
+\end{itemize} & 2009--11}\\
+%
+\resumeitem{Teaching:}{Seven years teaching experience, including general mathematical methods to first and second year Civil and Mechanical Engineering undergraduate students at University College London, first year Mathematics students at the University of Bath and M.Sc. students in Mathematics Department in dynamical systems at University College London
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Running problem-based tutorials
+\begin{itemize}\addtolength{\itemsep}{-0.25\baselineskip}\addtolength{\parsep}{-2mm}\addtolength{\parskip}{-2mm}
+\item[\textcolor{MidnightBlue}{$\boldsymbol{\Rightarrow}$}] Understanding students' difficulties in understanding course, identifying the strengths and weaknesses of alternative solutions, conclusions or approaches.
+\end{itemize}
+\item[\textcolor{MidnightBlue}{$\bullet$}] Assisting course directors in teaching-related duties
+\end{itemize} & 2004--11}%\\
+% \shortskip
+%
+\end{teachblock}
+%
+\begin{resumeblock}{References}
+%
+\resumeitem{}{Professor Gail ter Haar,\\
+&The Institute of Cancer Research,\\
+&15 Cotswold Road,\\
+&Sutton,\\
+&SM2~5NG,\\
+&United Kingdom}\\
+\shortskip
+%
+\resumeitem{}{Professor Nader Saffari,\\
+&Department of Mechanical Engineering,\\
+&University College London,\\
+&London,\\
+&WC1E~7JE,\\
+&United Kingdom}\\
+\shortskip
+
+%\resumeitem{}{Professor Gert van der Heijden,\\
+%&Department of Civil, Environmental \& Geometic Engineering,\\
+%&University College London,\\
+%&London,\\
+%&WC1E~7JE,\\
+%&United Kingdom}\\
+%\shortskip
+
+%\begin{minipage}{\textwidth}
+%\begin{center}
+%\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+%Professor Gail ter Haar, & Professor Nader Saffari, \\
+%The Institute of Cancer Research, 15 Cotswold Road, Sutton, SM2~5NG, United Kingdom & Department of Mechanical Engineering, University College London, London, WC1E~7JE, United Kingdom
+%\end{tabular}
+%\end{center}
+%\end{minipage}
+
+\end{resumeblock}
+
+
+% \vfill
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\newpage
+\header
+{David Sinden}
+{List of Publications}
+{\vspace*{0.25cm} \textcolor{MidnightBlue}{\today} \vspace*{1.00cm} }
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{pubblock}{Book Chapters}
+\resumeitem{}{``Numerical Modelling of Treatment Planning'', in {\em Therapeutic Ultrasound}, ed. G. ter Haar, F. Wu \& I.~R.~Rivens, CRC Press, 2016.}
+\end{pubblock}
+
+\begin{pubblock}{Refereed Publications}
+\resumeitem{}{D.~Hyun, A.~Wiacek, S.~Goudarzi, S.~Rothl\"ubbers, A.~Asif, K.~Eickel, Y.~Eldar, J.~Huang, M.~Mischi, H.~Rivaz, {\bf D.~Sinden},  R.~van~Sloun,  H.~Strohm,\& M.~A.~Lediju~Bell, ``Deep Learning for Ultrasound Image Formation: CUBDL Evaluation Framework \& Open Datasets'' {\em IEEE Trans. Ultrason., Ferroelect., Freq. Contr.} XXXX, XXX (2021)\\% 
+\hspace*{2.45cm}\href{https://doi.org/10.1109/TUFFC.2021.3094849}{\textcolor{cyan}{\texttt{doi:10.1109/TUFFC.2021.3094849}}}} \\
+\shortskip
+
+\resumeitem{}{{\bf D.~Sinden}, S.~Rajagopal, P.~Miloro \& B.~Zeqiri, ``{Factors for validation of measurement-based simulations}'', {\em J. Acous. Soc. Amer.} 148, pp.~2521 (2020)\\%
+\hspace*{2.45cm}\href{https://doi.org/10.1121/1.5147005}{\textcolor{cyan}{\texttt{doi:10.1121/1.5147005}}}} \\
+\shortskip
+
+\resumeitem{}{S.~J.~Kaupinm\"{a}ki, B.~Cox, S.~Arridge, C.~Baker, {\bf D.~Sinden} \& B.~Zeqiri, ``{Pyroelectric ultrasound sensor model: directional response}'', {\em Meas. Sci. Tech.} 32(3), pp.~033106 (2021)\\%
+\hspace*{2.45cm}\href{https://doi.org/10.1088/1361-6501/abc866}{\textcolor{cyan}{\texttt{doi:/10.1088/1361-6501/abc866}}}} \\
+\shortskip
+
+\resumeitem{}{S.~Rothl\"{u}bbers, H.~Stromh, K.~Eickel, J.~Jenne, V.~Kuhlen, {\bf D.~Sinden} \& M.~G\"{u}nther, ``{Improving image quality of single plane wave ultrasound via deep learning based channel compounding}'' {\em 2020 IEEE International Ultrasonics Symposium (IUS)} \\
+\hspace*{2.45cm}\href{https://doi.org/10.1109/IUS46767.2020.9251322}{\textcolor{cyan}{\texttt{doi:/10.1109/IUS46767.2020.9251322}}}} \\
+\shortskip
+
+\resumeitem{}{I.~X.~Partarrieu, E.~Fox, F.~Brochu, M.~Cashmore, N.~Koonjoo, S.~Shen, {\bf D.~Sinden}, M.~Rosen \& M.~G.~Hall, ``{Assessing generalized multi-pool exchange tissue model MRI simulations for the modelling of an ultra-low field scanner}'' {\em ISMRM} \\
+\hspace*{2.45cm}\href{https://doi.org/10.1121/1.5137366}{\textcolor{cyan}{\texttt{doi:/XXXX}}}} \\
+\shortskip
+
+\resumeitem{}{N.~A.~S.~Smith, {\bf D.~Sinden}, S.~A.~Thomas, M.~Romanchikova, J.~E.~Talbott \& M.~Adeogun, ``{Building confidence in digital health through metrology}'', {\em Brit J. Radiol.} 93(1) pp.~20190574 (2020)\\%
+\hspace*{2.45cm}\href{https://www.birpublications.org/doi/abs/10.1259/bjr.20190574}{\textcolor{cyan}{\texttt{doi:10.1016/10.1259/bjr.20190574}}}}\\
+\shortskip
+
+\resumeitem{}{S.~J.~Kaupinm\"{a}ki, B.~Cox, S.~Arridge, C.~Baker, {\bf D.~Sinden} \& B.~Zeqiri, ``{Pyroelectric ultrasound sensor model}'', {\em J. Acous. Soc. Amer.} 146, pp.~2995 (2019)\\%
+\hspace*{2.45cm}\href{https://doi.org/10.1121/1.5137366}{\textcolor{cyan}{\texttt{doi:/10.1121/1.5137366}}}} \\
+\shortskip
+
+\resumeitem{}{K.~J.~Pahk, P.~G\'{e}lat, {\bf D.~Sinden}, D.~Dhar \& N.~Saffari, ``{Numerical and Experimental Study of Mechanisms Involved in Boiling Histotripsy}'', {\em Ultra. Med. Biol.} 43(12) pg.~2848--2861 (2017)\\%
+\hspace*{2.45cm}\href{https://www.sciencedirect.com/science/article/pii/S0301562917312991}{\textcolor{cyan}{\texttt{doi:10.1016/j.ultrasmedbio.2017.08.938}}}}\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, S.~Rajagopal, N.~C.~Chaggares, G.~Pang \& O.~Ivanytskyy, ``{Reducing uncertainties for spatial averaging at high frequencies}'', {\em IEEE Int. Ultrason. Symp.} (2017)\\%
+\hspace*{2.45cm}\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8091600}{\textcolor{cyan}{\texttt{doi:10.1109/ULTSYM.2017.8091672}}} }\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, G. ter~Haar, ``{Dosimetry implications for correct ultrasound dose deposition: uncertainties in descriptors, planning and treatment delivery}'', {\em Trans. Cancer Res.} 3(5) pg.~459--471, (2014)\\%
+\hspace*{2.45cm}\href{http://tcr.amegroups.com/article/view/3366}{\textcolor{cyan}{\texttt{doi:10.3978/j.issn.2218-676X.2014.10.02}}}   }\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, ``{Approximations for acoustically excited bubble cluster dynamics}'', {\em J.~Phys.:~Conf.~Ser.} 353 pp.~012008, (2012) \\%
+\hspace*{2.45cm}\href{https://iopscience.iop.org/article/10.1088/1742-6596/353/1/012008}{\textcolor{cyan}{\texttt{doi:10.1088/1742-6596/353/1/012008}}} }\\
+\shortskip  
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, ``{The effects of nonlinear wave propagation on the stability of inertial cavitation}'', {\em J.~Phys.:~Conf.~Ser.} 195 (2009), pp.~012008.\\%
+\hspace*{2.45cm}\href{https://iopscience.iop.org/article/10.1088/1742-6596/195/1/012008/meta}{\textcolor{cyan}{\texttt{doi:10.1088/1742-6596/195/1/012008}}}}\\%\href{www.ucl.ac.uk/~ucesdsi/cav_nonlinear_wave_abs.html}{[Abstract]}
+%\href{http://www.iop.org/EJ/article/1742-6596/195/1/012008/jpconf9_195_012008.pdf?request-id=39b23b0f-b8a5-4e2a-8cac-6bcc645da2fa}{[Journal]} }\\
+\shortskip 
+%
+\resumeitem{}{{\bf D.~Sinden}, G.~H.~M.~van~der~Heijden, ``{Spatial chaos of an extensible elastic rod in a uniform magnetic field}'', {\em J.\ Phys.\ A: Math.\ Theor}.\ 42 pp.~375207, (2009)\\%
+\hspace*{2.45cm}\href{https://iopscience.iop.org/article/10.1088/1751-8113/42/37/375207/pdf}{\textcolor{cyan}{\texttt{doi:10.1088/1751-8113/42/37/375207}}}}\\%\href{www.ucl.ac.uk/~ucesdsi/melnikov_abs.html}{[Abstract]}
+% \href{http://www.iop.org/EJ/article/-ffissn=1751-8121/-ff30=all/1751-8121/42/37/375207/a9_37_375207.pdf?request-id=548e59a9-d349-497d-8f0d-ba8de98d0433}{[Journal]} }\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, G.~H.~M.~van~der~Heijden, ``{Integrability of a conducting elastic rod in a magnetic field}'', {\em J.\ Phys.\ A: Math.\ Theor}.\ 41 pp.~045207 (2008)\\% 
+\hspace*{2.45cm}\href{https://iopscience.iop.org/article/10.1088/1751-8113/41/4/045207/meta}{\textcolor{cyan}{\texttt{doi:10.1088/1751-8113/41/4/045207}}}}\\%\href{www.ucl.ac.uk/~ucesdsi/magnetic_abs.html}{[Abstract]}
+% \href{http://www.iop.org/EJ/article/1751-8121/41/4/045207/a8_4_045207.pdf?request-id=85c276d5-5f7d-43f1-8a10-7d442271f90d}{[Journal]}}\\
+\shortskip
+%
+\end{pubblock}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{pubblock}{Submitted}
+%
+\resumeitem{}{{\bf D.~Sinden}, G.~H.~M. van~der~Heijden, Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation, (In review {\em Phys.\ D}\,) }\\%\href{www.ucl.ac.uk/~ucesdsi/multi_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, Phase entrainment and collective instability in oscillating bubbles, (In review {\em Phys.\ Rev.\ E}\,).} \\%\href{www.ucl.ac.uk/~ucesdsi/sync_abs.html}{[Abstract]}\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, On the stability of small bubble clouds, (In review {\em Phys.\ Rev.\ E}\,) }\\%\href{http://www.ucl.ac.uk/~ucesdsi/bjerknes_abs.html}{[Abstract]}}\\
+\shortskip
+%
+%
+\end{pubblock}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{pubblock}{In Preparation}
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, The effects of delays on multi-bubble stability. (To be submitted to {\em Nonlinearity})}\\%~\href{http://www.ucl.ac.uk/~ucesdsi/delays_abs.html}{[Abstract]}} \\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, V.~Bull, J.~Civale, I.~H.~Rivens, G.~ter~Haar, N.~Saffari, C.~C.~Coussios, P.~Friend, Thermal ablation of perfused livers using focused ultrasound. (To be submitted to {\em Med.~Phys.})} \\
+\shortskip
+
+\resumeitem{}{{\bf D.~Sinden}, I.~H.~Rivens, G.~ter~Haar, Intensity Modulated High-Frequency Focused ultrasound. (In preparation)} \\
+\shortskip
+%
+\end{pubblock}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \vfill
+\begin{pubblock}{Conference Proceedings}
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, The effects of fluid compressibility on multibubble cavitation for high‐intensity focused ultrasound, 161$^\mathrm{th}$ Meeting of the Acoustical Society of America, Seattle, Washington, 23-27 May 2011. {\em J.\ Acoust.\ Soc.\ Am}.\ 129, pp.~2587 (2011)\\% 
+\hspace*{2.45cm}\href{http://dx.doi.org/10.1121/1.3588557}{\textcolor{cyan}{\texttt{doi:10.1121/1.3588557}} } } \\
+% \href{hhtp://www.ucl.ac.uk/~ucesdsi/asa11_abs.html}{[Abstract]} %
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, E.~Stride, N.~Saffari, Phase synchronisation and the collective instability oscillating bubble clouds, 159$^\mathrm{th}$ Meeting of the Acoustical Society of America, Baltimore, Maryland, 19-23 April 2010. {\em J.\ Acoust.\ Soc.\ Am}.\ 127, pp.~1865 (2010)\\%
+\hspace*{2.45cm}\href{http://dx.doi.org/10.1121/1.3384478}{\textcolor{cyan}{\texttt{doi:10.1121/1.3384478}} } } \\
+%\href{hhtp://www.ucl.ac.uk/~ucesdsi/balt_ds_abs.html}{[Abstract]} \href{http://dx.doi.org/10.1121/1.3384478}{[Journal]} }\\
+\shortskip
+%
+\resumeitem{}{G.~H.~M.~van~der~Heijden, {\bf D.~Sinden}, Localisation of a twisted conducting rod in a uniform magnetic field: the
+Hamiltonian-Hopf-Hopf bifurcation, Proc. 7$^\mathrm{th}$ EUROMECH Nonlinear Dynamics Conf. (ENOC 2011), July 24-29 2011, Rome, Italy\\% 
+\hspace*{2.45cm}\href{https://www.worldcat.org/title/proceedings-of-the-7th-european-nonlinear-dynamics-conference-enoc-2011-july-24-29-2011-rome-italy/oclc/804881785}{\textcolor{cyan}{\texttt{isbn:9788890623424}} }}\\
+%\href{http://www.ucl.ac.uk/~ucesdsi/enoc_abs.html}{[Abstract]} \href{http://w3.uniroma1.it/dsg/enoc2011/proceedings/pdf/Van_der_Heijden_Sinden.pdf}{[Journal]}} \\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, G.~H.~M.~van~der~Heijden, The buckling of magneto-strictive Cosserat rods, Proc. 7$^\mathrm{th}$ EUROMECH Nonlinear Dynamics Conf. (ENOC 2011), July 24-29 2011, Rome, Italy\\%
+\hspace*{2.45cm}\href{https://www.worldcat.org/title/proceedings-of-the-7th-european-nonlinear-dynamics-conference-enoc-2011-july-24-29-2011-rome-italy/oclc/804881785}{\textcolor{cyan}{\texttt{isbn:9788890623424}} } }\\
+%\href{http://www.ucl.ac.uk/~ucesdsi/enoc1_abs.html}{[Abstract]} \href{http://w3.uniroma1.it/dsg/enoc2011/proceedings/pdf/Sinden_Van_der_Heijden.pdf}{[Journal]}  } \\
+\shortskip
+%
+\end{pubblock}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \vfill
+\begin{pubblock}{Theses}
+\resumeitem{}{{\bf D.~Sinden}, {\em Integrability, localisation and bifurcation of an elastic conducting rod in a magnetic field}, Ph.D.\ thesis, University College London, 2008}\\% \href{http://www.ucl.ac.uk/~ucesdsi/thesis_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{{\bf D.~Sinden}, {\em The closing mechanism of the Venus Flytrap}, M.Sc.\ thesis, University of Bath, 2004}
+\end{pubblock}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\newpage
+\header
+{David Sinden}
+{List of Presentations}
+{\vspace*{0.25cm} \textcolor{MidnightBlue}{\today} \vspace*{1.0cm} }
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{pubblock}{Past Presentations}
+%
+\resumeitem{}{Machine Learning for Cavitation Detection, British Medical Ultrasound Symposium, 5 December 2018}\\
+\shortskip
+
+\resumeitem{}{Acceleration Techniques for Acoustic Holography, British Medical Ultrasound Symposium, 8 December 2016}\\
+\shortskip
+
+\resumeitem{}{Computational challenges in high-intensity focused ultrasound, University of Strathclyde, 25 October 2016 {\bf (Invited)} }\\
+\shortskip
+
+\resumeitem{}{Absorption of ultrasound by tissue: fractional operators and integral equations Maxwell Institute for Applied Analysis, International Centre for Mathematical Sciences, Edinburgh, 7 October 2016 {\bf (Invited)} }\\
+\shortskip
+
+\resumeitem{}{Leslie Comrie Lecture, University of Greenwich, 11 April 2016 {\bf (Invited)} }\\
+\shortskip
+
+\resumeitem{}{Computational challenges in high-intensity focused ultrasound treatment planning, University of Surrey, 15 December 2015 {\bf (Invited)} }\\
+\shortskip
+
+\resumeitem{}{Wave3D: A parallelised three-dimensional nonlinear acoustic wave propagation solver, Anglo-French Physical Acoustics Conference 15, London, 13--15 January 2016}\\
+\shortskip
+
+\resumeitem{}{Computational challenges in high-intensity focused ultrasound treatment planning, 14$\mathrm{th}$ International Symposium on Therapeutic Ultrasound, Las Vegas, Nevada, 2--4 April 2014}\\
+\shortskip
+
+\resumeitem{}{Treatment Planning of high-intensity focused ultrasound, Medical Modelling Group, University College London, 30 September 2013 {\bf(Invited)}}\\
+\shortskip
+
+\resumeitem{}{The challenges in boundary element modelling for high-intensity focused ultrasound treatment planning, Boundary Integral Equation Methods for High-Frequency Scattering, University of Reading, 25 May 2012 {\bf(Invited)}}\\
+\shortskip
+
+\resumeitem{}{The effects of nonlinear wave propagation on thermal ablation high-intensity focused ultrasound, Department of Electrical Engineering, Stanford University, California, 11 April 2012 {\bf(Invited)}}\\
+\shortskip
+
+\resumeitem{}{The buckling of magneto-strictive Cosserat rods, 7$^{\mathrm{th}}$ European Mechanics Society European Nonlinear Oscillations Conference, Rome, Italy, 24--29 July 2011 }\\%\href{http://www.ucl.ac.uk/~ucesdsi/enoc1_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation, 7$^{\mathrm{th}}$ European Mechanics Society European Nonlinear Oscillations Conference, Rome, Italy, 24--29 July 2011}\\% \href{http://www.ucl.ac.uk/~ucesdsi/enoc_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Cavitation in tissue under high-intensity focused ultrasound, SIAM Conference on Applications of Dynamical Systems, Snowbird, Utah, 22--26 May 2011}\\% \href{http://www.ucl.ac.uk/~ucesdsi/siam_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{The effect of fluid compressibility on multi-bubble cavitation for high-intensity focused ultrasound, 161$^{\mathrm{st}}$ Meeting of the Acoustical Society of America, Seattle, Washington, 23--27 May 2011}\\% \href{http://www.ucl.ac.uk/~ucesdsi/asa11_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Modelling cavitation in liver tissue under high-intensity focused ultrasound, British Applied Mathematics Colloquium, University of Birmingham, 11--13 April 2011}\\% \href{http://www.ucl.ac.uk/~ucesdsi/bamc2011_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Cavitation in models of wave propagation through tissue under high-intensity focused ultrasound, Anglo-French Physical Acoustics Conference 11, Fr{\textrm{\'}}\hspace*{-1.75mm}ejus, France, 19--21 January 2011}\\% \href{http://www.ucl.ac.uk/~ucesdsi/afpac11_abs.html}{[Abstract]} } \\
+\shortskip
+
+\resumeitem{}{The influence of liquid viscosity and compressibility on multi-bubble cavitation, UK Therapeutic Ultrasound Interest Group, University College London, 20 December 2010}\\% \href{http://www.ucl.ac.uk/~ucesdsi/thugs8_abs.html}{[Abstract]}} \\
+\shortskip
+
+\resumeitem{}{Multi-bubble interactions, and high-intensity focused ultrasound therapy, 10th International Symposium on Therapeutic Ultrasound, Tokyo, 9--12 June 2010}\\% \href{http://www.ucl.ac.uk/~ucesdsi/istu10_abs.html}{[Abstract]} } \\
+\shortskip
+%
+\resumeitem{}{On the stability of interacting bubbles, UK Therapeutic Ultrasound Interest Group, Institute of Cancer Research, 11 May 2010 }\\%\href{http://www.ucl.ac.uk/~ucesdsi/thugs7_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Cavitation in high-intensity focused ultrasound treatment, Medical Modelling Group, University College London, 4 May 2010}\\% \href{http://www.ucl.ac.uk/~ucesdsi/mmg_abs.html}{[Abstract]} } \\
+\shortskip
+%
+\resumeitem{}{Integrability, spatially complex localisation and bifurcation of an elastic conducting rod in a uniform magnetic field, London Dynamical Systems Workshop, Imperial College, 29 April 2010 {\bf(Invited)}}\\% \href{http://www.ucl.ac.uk/~ucesdsi/ldsg_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Phase synchronisation and the collective instability oscillating bubble clouds, 159$^{\mathrm{th}}$ Meeting of the Acoustical Society of America, Baltimore, Maryland, 19--23 April 2010. \emph{J.\ Acoust.\ Soc.\ Am}.\ 127(3), 1865--1865}\\% \href{http://www.ucl.ac.uk/~ucesdsi/balt_ds_abs.html}{[Abstract]}  }\\
+\shortskip
+%
+\resumeitem{}{On multi-bubble interactions, Anglo-French Physical Acoustics Conference 10, Kendal, 18--22 January 2010}\\% \href{http://www.ucl.ac.uk/~ucesdsi/thugs6_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{On multi-bubble interactions, UK Therapeutic Ultrasound Interest Group, University College London, 11 November 2009}\\% \href{http://www.ucl.ac.uk/~ucesdsi/thugs6_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{The effects of viscoelasticity on the stability of inertial cavitation, 9$^\mathrm{th}$ International Symposium on Therapeutic Ultrasound, Aix-en-Province, 23--26 September 2009}\\% \href{http://www.ucl.ac.uk/~ucesdsi/istu09_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{The effects of nonlinear wave propagation on inertial cavitation, UK Theuraputic Ultrasound Interest Group, University College London, 18 December 2008}\\% \href{http://www.ucl.ac.uk/~ucesdsi/thugs5_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{The effects of nonlinear wave propagation on inertial cavitation, Anglo-French Physical Acoustics Conference 9, Arcachon, 8--10 December 2008}\\% \href{http://www.ucl.ac.uk/~ucesdsi/Surrey_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Integrability, spatially complex localisation and bifurcation of an elastic conducting rod in a uniform magnetic field, University of Surrey, 3 October 2008 {\bf(Invited)}}\\% \href{http://www.ucl.ac.uk/~ucesdsi/istu10_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{Spatially complex localisation of an elastic conducting rod in a uniform magnetic field, Bifurcations in Dynamical Systems with Applications, University of Bielefeld, 19--21 May 2008 }\\%\href{http://www.ucl.ac.uk/~ucesdsi/bielefeld_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\resumeitem{}{The integrability of a conducting elastic rod in a magnetic field, British Applied Mathematics Colloquium, Bristol University, 17--19 April 2007}\\% \href{http://www.ucl.ac.uk/~ucesdsi/bamc_abs.html}{[Abstract]} }\\
+\shortskip
+%
+\end{pubblock}
+%
+%%%%%%%%%%%%
+%
+\end{document}
