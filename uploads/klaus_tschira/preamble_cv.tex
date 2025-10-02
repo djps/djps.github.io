@@ -1,0 +1,527 @@
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+%\fontdir[/usr/share/texlive/texmf-dist/fonts/]
+
+\usepackage{fontspec}
+
+% Set Raleway as the main font
+\setmainfont{Raleway}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+
+% this is teal
+\definecolor{awesome}{HTML}{008080}
+
+% tailwind-cyan-500
+\definecolor{awesome}{HTML}{06b6d4}
+% tailwind-cyan-600
+\definecolor{awesome}{HTML}{0891b2} 
+\definecolor{awesome}{RGB}{8, 145, 178}
+
+\definecolor{awesome-faded}{RGB}{85, 222, 255}
+
+
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% This overwrites the boolean above
+\makeatletter
+\def\@sectioncolor{\color{awesome}}
+\makeatother
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+
+
+
+
+
+
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+\newlength{\xbigstrutjot}
+\setlength{\xbigstrutjot}{1em}
+
+\makeatletter
+\@ifundefined{xbigstrutjot}{\newdimen\xbigstrutjot}{} 
+\xbigstrutjot=10pt
+
+\newcommand\xbigstrut[1][x]{%
+  \leavevmode\unskip\@tempdima=\ht\@arstrutbox \@tempdimb=\dp\@arstrutbox
+  \ifx #1b\relax \else \advance\@tempdima by \xbigstrutjot\fi
+  \ifx #1t\relax \else \advance\@tempdimb by \xbigstrutjot\fi
+  \hbox{\textcolor{blue}{\vrule} \@height\@tempdima \@depth\@tempdimb \@width\z@}\ignorespaces}
+\makeatother
+
+ \newcommand{\customstrut}{\textcolor{blue}{\rule{0pt}{0.5em}}}
+
+\usepackage[calc]{datetime2}
+
+\DTMsavenow{mytoday}
+
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+ 
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\usepackage{colortbl}
+
+\usepackage{printlen}
+
+%%%%%%%%%%%%%%%%
+\RequirePackage{tikz}
+\usepackage{adjustbox}
+\usepackage{mdframed}
+
+\usepackage{verbatimbox}
+
+\RequirePackage{multirow}
+\RequirePackage{arydshln} % incompatible with fancy style
+
+\makeatletter
+
+\newcommand*{\@initializelength}[1]{%
+  \ifdefined#1
+  \else%
+    \newlength{#1}\fi%
+  \setlength{#1}{0pt}}
+
+% creates an if switch if not yet defined
+\newcommand*{\@initializeif}[1]{%
+%  \ifdefined#1% not working due to the nested \if
+%  \else%
+    \newif#1%\fi
+  }
+
+\@initializeif{\if@aftersection}\@aftersectionfalse%
+
+% definitions form elsewhere
+\newcommand*{\hintfont}{}
+\newcommand*{\hintstyle}[1]{{\hintfont#1}}
+
+\renewcommand*{\hintstyle}[1]{{\hintfont\textcolor{awesome}{#1}}}
+
+\@initializelength{\separatorcolumnwidth}         
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+
+\@initializelength{\hintscolumnwidth}             
+\setlength{\hintscolumnwidth}{0.0\textwidth}
+
+\@initializelength{\maincolumnwidth}
+\setlength{\maincolumnwidth}{\textwidth-\leftskip-\rightskip}%
+
+\@initializelength{\cvSkill@RectangleSize}
+\setlength{\cvSkill@RectangleSize}{1.2ex}
+\newcount\my@repeat@count
+
+\DeclareDocumentCommand{\cvskill}{m}{%
+%   Illustrate skill level with little colored boxes.
+%   By default five skill levels are predefined.   
+% 
+%   Input: 
+%       integer between 0 and 5
+%   Example usage: 
+%       \cvskill{3}
+\smash{\raisebox{-0.65\baselineskip}{
+%\fbox{
+    \begingroup
+        \my@repeat@count=\z@
+        \@whilenum\my@repeat@count<#1\do{\tikz\filldraw[awesome] (0, 0) rectangle (\cvSkill@RectangleSize, \cvSkill@RectangleSize);\advance%
+        \my@repeat@count\@ne\,}%
+        \my@repeat@count=\numexpr5-\z@\relax
+        \@whilenum\my@repeat@count>#1\do{\tikz\filldraw[awesome-faded] (0, 0) rectangle (\cvSkill@RectangleSize, \cvSkill@RectangleSize);\advance%
+        \my@repeat@count\m@ne\,}%
+    \endgroup
+    %}
+    }}
+}% end \cvskill
+
+\@initializelength{\cvskill@width}
+\@initializelength{\cvskill@descriptorwidth}
+\@initializelength{\cvskill@experiencewidth}
+
+\@initializelength{\skillmatrix@columnwidth}
+\@initializelength{\skillmatrix@commentwidth}
+\@initializelength{\skillmatrix@padding}
+\@initializelength{\skillmatrix@hintscolumnwidth}
+\@initializelength{\skillmatrix@bodylength}
+
+\@initializelength{\cvskilllegend@leftdescriptorwidth}
+\@initializelength{\cvskilllegend@rightdescriptorwidth}
+
+\@initializelength{\skilllegend@hintscolumnwidth}
+\@initializelength{\skilllegend@padding}
+\@initializelength{\skilllegend@bodylength}
+
+\@initializelength{\separatorrulewidth}
+
+\DeclareDocumentCommand{\skilllegend@leftdesriptorfactor}{}{}%
+
+%% DEFINITION \recompute@cvskillmatrix@lengths
+% declare the command \recompute@cvskillmatrix@lengths empty
+
+\DeclareDocumentCommand{\recompute@cvskillmatrix@lengths}{}{}%
+
+\RenewDocumentCommand{\recompute@cvskillmatrix@lengths}{}{%
+
+\setlength{\skillmatrix@padding}{1ex}%
+
+\setlength{\skillmatrix@hintscolumnwidth}{\hintscolumnwidth}%
+
+\setlength{\cvskill@width}{\widthof{\cvskill{5}}}%
+
+\setlength{\cvskill@experiencewidth}{\widthof{``Year''}}%
+
+\setlength{\skillmatrix@bodylength}{\maincolumnwidth}%
+
+\setlength{\skillmatrix@columnwidth}{0.45\skillmatrix@bodylength}%
+
+\setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+
+\setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-\skillmatrix@padding}%
+
+% lengths and definitions needed for the legends
+% note that \skillmatrix@padding also affects the appearance of legends
+\setlength{\skilllegend@padding}{0.25ex}%
+
+\setlength{\skilllegend@hintscolumnwidth}{\hintscolumnwidth}%
+
+\setlength{\skilllegend@bodylength}{\skillmatrix@bodylength}%
+
+\RenewDocumentCommand{\skilllegend@leftdesriptorfactor}{}{0.5}%
+
+%\setlength{\cvskill@descriptorwidth}{5cm}%
+%\setlength{\skillmatrix@commentwidth}{10cm}%
+%\setlength{\skilllegendbodylength}{\skillmatrix@bodylength}%
+}
+
+% \setcvskillcolumns[<width>][<factor>][<exp_width>]
+\DeclareDocumentCommand{\setcvskillcolumns}{+O{\skillmatrix@hintscolumnwidth} +O{\skillmatrix@columnwidth} +O{\cvskill@experiencewidth}}{%
+%   adjust column width of skill table
+% 
+%   The \cvskillentry command comes with default FIXED width definitions of the kill matrix for the columns 
+%   based on the author's own skill matrix. This is necessary to ensure that the entries are nicely aligned 
+%   and actually yield a decent looking table. The defaults depend on the style used and are chosen reasonably.
+%   However, depending on the user input and the style that is used some of the columns might need adjustments. 
+%   The \setcvskillcolumns command provides means to influence the width of the first, the third and the fourth 
+%   skill matrix column. The second column containg the output of \cvskill remains fixed width. The last column,
+%   the comment column gets recalculated according to the setting of the other columns.
+% 
+%   Input
+%       Input_1 (optional):     width smaller than \textwidth,  default <\skillmatrix@hintscolumnwidth>
+%       Input_2 (optional):     float between 0 and 1 adjusting how much percent of the table width without 
+%                               the first column is used columns two, three and four. Through this parameter
+%                               the width of the 3rd column (skill name) can be adjusted,   default <\skillmatrix@columnwidth>
+%       Input_3 (optional):     width smaller than \textwidth, setting the width of the 4th column 
+%                               (Years of experience), default <\cvskill@experiencewidth>
+% 
+%   Example usage
+%       \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
+%       \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
+%       \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
+%       \setcvskillcolumns[\widthof{``Language''}][0.48][]%     adjust 1st and 3rd columns. Same as \setcvskillcolumns[\widthof{``Language''}][0.45]    
+%       \setcvskillcolumns[\widthof{``Management Tools''}][0.6][3em]%   ajust all at once.
+% 
+%   Note
+%       - For the styles 'classic' and 'casual' the first column is set to hintscolumnwidth such that
+%         it aligns with the rest of the entries. A readjustment of the first column should therefor 
+%         be avoided. It is recomended to only use \setcvskillcolumns in the form of 
+%         \setcvskillcolumns[][<factor>][<width>], thereby leaving the defaults in place for the first column.
+% 
+    \def\arg@new@hintscolumnwidth{#1}% <-- all these terminal % signs are necessary for the fancy style to not show weird spaces!!!
+    \def\arg@new@bodyLengthFactor{#2}% 
+    \def\arg@new@experienceWidth{#3}% 
+    % Check for empty arguments. Defaults are given. Thus a call of \setcvskillcolumns 
+    % without any arguments leads to nonempty arguments \arg@new@hintscolumnwidth and
+    % \def\arg@new@bodyLengthFactor{#2}. However, we need to take care of calls like 
+    % \setcvskillcolumns[], \setcvskillcolumns[][], \setcvskillcolumns[][][] or even 
+    % \setcvskillcolumns[<somelength>][], \setcvskillcolumns[][<somefactor>]  \setcvskillcolumns[][][<length>]
+    \ifdefempty{\arg@new@hintscolumnwidth}{%
+        % Case \setcvskillcolumns[], \setcvskillcolumns[][] or \setcvskillcolumns[][<somefactor>]
+        \ifdefempty{\arg@new@bodyLengthFactor}{%
+            % Case \setcvskillcolumns[][] do nothing here and check if third argument is empty
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[][][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[][][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+                \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }{%
+            % Case \setcvskillcolumns[][<somefactor>], \setcvskillcolumns[][<somefactor>][<possilly length>]
+            \setlength{\skillmatrix@columnwidth}{\arg@new@bodyLengthFactor\skillmatrix@bodylength}%
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[][<somefactor>][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[][<somefactor>][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+                \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%            
+            \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            \setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-3\skillmatrix@padding}%
+        }%
+        % Case \setcvskillcolumns[] nothing needs to be done here recalculate lengths affected by the change
+    }{% 
+        % Case \setcvskillcolumns, \setcvskillcolumns[<width>], \setcvskillcolumns[<width>][] 
+        % or \setcvskillcolumns[<width>][<somefactor>]
+        \setlength{\skillmatrix@hintscolumnwidth}{\arg@new@hintscolumnwidth}%
+        \setlength{\skillmatrix@bodylength}{\maincolumnwidth-\skillmatrix@hintscolumnwidth-\separatorcolumnwidth}%
+        % in case second argument is given but left empty use default
+        \ifdefempty{\arg@new@bodyLengthFactor}{%
+            % Case \setcvskillcolumns[<width>][] do nothing here and use default
+            % \skillmatrix@columnwidth and check third argument
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[<width>][][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[<width>][][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+%                 \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }{%
+            % Case \setcvskillcolumns, \setcvskillcolumns[<width>], \setcvskillcolumns[<width>][<somefactor>]
+            \setlength{\skillmatrix@columnwidth}{\arg@new@bodyLengthFactor\skillmatrix@bodylength}%
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[<width>][<somefactor>][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[<width>][<somefactor>][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+%                 \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }%
+        \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+        \setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-3\skillmatrix@padding}%
+    }%
+}%
+
+
+% %-------------------------------------------------------------------------------
+% %                \cvskillentry 
+% %-------------------------------------------------------------------------------
+% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+\DeclareDocumentCommand\cvskillentry{s +O{} +m +m +m +m +m}{}%
+%     add cvskill matrix row.
+% 
+%     Input:
+%         asterix (optional): include horizontal (dashed) line above the entered line. This behaviour depends on the body style. 
+%                             For the fancy style, the asterix has no meaning.
+%         input_1 (optional): padding length appended to the legend, default: <0.25em>
+%         input_2: string, naming skill cathegory, default: <>
+%         input_3: integer between 0 and 5, describing level of skill. \cvskill{input_2} is called internally, default: <>
+%         input_4: string, naming the skill, default: <>
+%         input_5: positive real number, stating the number of years of experience with this skill , default: <>
+%         input_6: string, explaining details w.r.t. that particual skill default: <>
+% 
+%     Example usages:
+%         \cvskillentry*{Language:}{3}{Python}{2}{I have done a million projects with Python}
+%         \cvskillentry{}{2}{Lilypond}{14}{So much sheet music! Man I'm the best!}
+%         \cvskillentry{}{3}{\LaTeX}{14}{Clearly I rock at \LaTeX}
+%         \cvskillentry*[1.5em]{OS:}{3}{Linux}{2}{I only use Archlinux}
+% 
+%     Note:   
+%         - The width of the columns can be adjusted by the \setcvskillcolumns command, see \setcvskillcolumns.
+
+% Definition of \cvskillentry
+%\RenewDocumentCommand\cvskillentry{s +O{.25em} +m +m +m +m +m}{%
+%    %test for the star * in the command
+%    \IfBooleanTF{#1}{% If a star is seen a dotted line is drawn above the entry
+%        \begingroup
+%            \renewcommand{\arraystretch}{1.1}
+%            \arrayrulecolor{awesome}
+%            % [*][<post_padding>]{<skill_category>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+%            \begin{tabular}{| p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}} | p{\cvskill@width}@{\hspace{\skillmatrix@padding}} | p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}} | p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} | p{\skillmatrix@commentwidth}@{} | } %
+%                \cdashline{2-5}[.6pt/1pt] %
+%                \raggedleft \entrypositionstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%                %\raggedleft \hintstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%            \end{tabular}%
+%        \endgroup
+%        \par\addvspace{#2}
+%    }{
+%% If no star is seen no line is drawn
+%\begin{tabular}{|p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}} | %
+%p{\cvskill@width}@{\hspace{\skillmatrix@padding}} | %
+%p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}} | %
+%p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} | %
+%p{\skillmatrix@commentwidth}@{} |}%
+%%\raggedleft \skilltypestyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%\raggedleft \entrypositionstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%
+%\end{tabular}%
+%\par\addvspace{#2}
+%}
+%}
+
+
+    \DeclareDocumentCommand\@starIndependentMatrixEntry{}{}%
+    \RenewDocumentCommand\cvskillentry{s O{.25em} +m +m +m +m +m}{%
+        \arrayrulecolor{awesome}%
+        \setlength\arrayrulewidth{\separatorrulewidth}%
+        \vspace*{-\separatorrulewidth}% HACK; I don't understand where the space is coming from, nor what it's exact value is :(
+        %test for the star * in the command. 
+        \RenewDocumentCommand{\@starIndependentMatrixEntry}{}{%
+        %\fbox{
+            \begingroup%
+                % \renewcommand{\arraystretch}{1.25}%
+%                \addvbuffer[1pt 2pt]
+                \begin{tabular}[c!]{ | @{} p{\hintscolumnwidth}@{\hspace{\skillmatrix@padding}}%
+                                %@{\hspace{\separatorcolumnwidth}}@{\hspace{\separatorcolumnwidth}} 
+                                         | p{\skillmatrix@hintscolumnwidth} @{\hspace{\skillmatrix@padding}}%
+                                         | p{\cvskill@width}@{\hspace{\skillmatrix@padding}} %
+                                         | p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}}%
+                                         | p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} | p{\skillmatrix@commentwidth}@{}| }%
+                     %\cline{3-6}%
+    %\hline
+                    & \entrypositionstyle{#3}\hspace*{3\skillmatrix@padding} & \centering \cvskill{#4} & \centering \skilldetailstyle {#5} &  \centering \skilldetailstyle{#6} & \skilldetailstyle{#7} \\[#2]%                  
+                    % \skilldetailstyle{#7} \\[#2]%
+                \end{tabular}%
+            \endgroup%
+            %}
+        }%
+        \IfBooleanTF{#1}{% the star does not do anything here
+            \@starIndependentMatrixEntry%
+        }{% 
+            \@starIndependentMatrixEntry%
+        }%
+        \\[-0.5\baselineskip] %\newline\@aftersectionfalse\ignorespaces%
+    }%
+
+
+
+% \setcvskillcolumns[][0.3][2em]
+
+\NewDocumentCommand\skillLegend@FontSize{}{\scriptsize}
+
+\DeclareDocumentCommand\cvskilllegend{s +O{} +O{} +O{} +O{} +O{} +O{} +m}{}%
+
+\NewDocumentCommand\skillLegend@defaultLevelOne{}{basic knowledge}
+\NewDocumentCommand\skillLegend@defaultLevelTwo{}{intermediate knowledge with some project experience}
+\NewDocumentCommand\skillLegend@defaultLevelThree{}{extensive project experience}
+\NewDocumentCommand\skillLegend@defaultLevelFour{}{deepened expert knowledge}
+\NewDocumentCommand\skillLegend@defaultLevelFive{}{expert\,/\,specialist}
+
+\RenewDocumentCommand\cvskilllegend{s +O{.25em} +O{\skilllegend@defaultLevelOne} +O{\skillLegend@defaultLevelTwo} +O{\skillLegend@defaultLevelThree} +O{\skillLegend@defaultLevelFour} +O{\skillLegend@defaultLevelFive} +m}{%
+    \IfBooleanTF#1{% if a star is given, add dashed line
+        \begingroup%
+            \arrayrulecolor{red}%
+            % calculate descriptor widths
+% left width            
+            \setlength{\cvskilllegend@leftdescriptorwidth}{6cm}
+            %\skilllegend@leftdesriptorfactor\skilllegend@bodylength-\cvskill@width-\skillmatrix@padding-3\skilllegend@padding}%
+% right width            
+            \setlength{\cvskilllegend@rightdescriptorwidth}{5cm}%\skilllegend@bodylength-\skilllegend@leftdesriptorfactor\skilllegend@bodylength-\cvskill@width-\skillmatrix@padding-3\skilllegend@padding}%
+            % table
+            \begin{tabular}{ %| @{}p{\skilllegend@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}%
+                             %  | p{\cvskill@width}@{\hspace{\skilllegend@padding}};{.6pt/1pt}%
+                             %  | p{2\skilllegend@padding} %
+                             %  | p{\cvskilllegend@leftdescriptorwidth}@{}@{\hspace{2\skillmatrix@padding}}%
+                             %  | p{\cvskill@width}@{\hspace{\skilllegend@padding}};{.6pt/1pt}%
+                             %  | p{2\skilllegend@padding}%
+                             %  | p{\cvskilllegend@rightdescriptorwidth}@{}
+%                               
+%                              
+%| p{\skillmatrix@hintscolumnwidth} %@{} p{\hintscolumnwidth}@{\hspace{\skillmatrix@padding}}% 0
+%
+p{\skillmatrix@hintscolumnwidth} @{\hspace{\skillmatrix@padding}} %
+| p{\skillmatrix@hintscolumnwidth} @{\hspace{\skillmatrix@padding}}% 1
+| p{5cm} % 2
+| p{\skillmatrix@hintscolumnwidth} @{\hspace{\skillmatrix@padding}}% 3  
+| p{5cm} | %4                  
+                               }%
+% first line
+                \cdashline{2-3}[6pt/1.5pt]
+                &  \cvskill{1} & \skilldetailstyle{basic knowledge}                  & \cvskill{3} & \skilldetailstyle{ #5} \\
+                      &  \cvskill{2} & \multirow{2}{5cm}{\skilldetailstyle{ #4}} & \cvskill{4} & \skilldetailstyle{ #6} \\
+                      &              &                                         & \cvskill{5} &  \skilldetailstyle{ #7}% 
+                
+%                \raggedleft\hintstyle{{\bfseries#8}} & \cvskill{1} & & {\skilllegend@FontSize #3} & \cvskill{3} & & {\skilllegend@FontSize #5} \\ %
+%%
+%% second
+%                 & \cvskill{2} & & \multirow{2}{\cvskilllegend@leftdescriptorwidth}{{\skilllegend@FontSize #4}} & \cvskill{4} & & {\skilllegend@FontSize #6} \\%
+%                    %         
+%% third
+%                 & & & & \cvskill{5} & & {\skilllegend@FontSize #7}%
+
+
+% first line
+%                \cdashline{2-7}[6pt/1.5pt]
+%                \raggedleft\hintstyle{{\bfseries #8}} & 1 & 2 & 3 & 4 & 5 & \skilldetailstyle{ #6} \\ %
+%
+% second
+%                 0 & 1 & 2 & 3 &  \fbox{\cvskill{4}} & \skilldetailstyle{ #5} & 6 \\%
+%                    %         
+% third
+%                 experience0 & experience1 & experience2 & experience3 & experience4 & experience5 & \skilldetailstyle{ #7} %
+
+            \end{tabular}%
+        \endgroup
+        % second part, without star
+        \par\addvspace{#2}}{%
+        % if no star is given, do not add dashed line. We need less padding in this case
+        \begingroup%
+            % calculate descriptor columns width. note the adjusted padding
+            \setlength{\cvskilllegend@leftdescriptorwidth}{\skilllegend@leftdesriptorfactor\skilllegend@bodylength-\cvskill@width-\skillmatrix@padding-1\skilllegend@padding}%
+            \setlength{\cvskilllegend@rightdescriptorwidth}{\skilllegend@bodylength-\skilllegend@leftdesriptorfactor\skilllegend@bodylength-\cvskill@width-\skillmatrix@padding-1\skilllegend@padding}%
+            \begin{tabular}{@{}p{\skilllegend@hintscolumnwidth}%
+                            @{\hspace{\separatorcolumnwidth}}%
+                            p{\cvskill@width}@{\hspace{\skilllegend@padding}}%
+                            p{\cvskilllegend@leftdescriptorwidth}@{\hspace{2\skillmatrix@padding}}%
+                            p{\cvskill@width}@{\hspace{\skilllegend@padding}}%
+                            p{\cvskilllegend@rightdescriptorwidth}@{}}%
+                \raggedleft\hintstyle{{\bfseries#8}}  & \cvskill{1} \, & \, {\skilllegend@FontSize #3} & \cvskill{3} \, & \,{\skilllegend@FontSize #5 } \\%
+                            %
+                        & \cvskill{2} \, & \, \multirow{2}{\cvskilllegend@leftdescriptorwidth}{{\skilllegend@FontSize #4}} & \cvskill{4}\, & \,{\skilllegend@FontSize #6 } \\%
+                    %         
+                        &  &   & \cvskill{5} \, & \, {\skilllegend@FontSize #7}%
+            \end{tabular}%
+        \endgroup%
+        \par\addvspace{#2}%
+    }%
+}%
+
+\makeatother
+%%%%%%%%%%%%%%%%
+
+% 1 : skill type
+% 2 : columns 2,3,4
+% 3 : size of year 
+\setcvskillcolumns[\widthof{ \entrypositionstyle{Presentations111}} ][0.425][2em]
