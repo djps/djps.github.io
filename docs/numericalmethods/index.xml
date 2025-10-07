@@ -299,10 +299,10 @@ $$
 \begin{equation*}
 f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation*}
-$$&lt;p&gt;for some value $\xi \in \left[ a, b \right]$ where&lt;/p&gt;
+$$&lt;p&gt;for some value $\xi$ which depends on $x$, and exist on $\xi(x) \in \left[ c, x \right]$. The remainder term&lt;/p&gt;
 $$
 \begin{equation*}
-\lim\limits_{\xi \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
+\lim\limits_{x \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
 \end{equation*}
 $$
 &lt;/div&gt;
@@ -1194,7 +1194,7 @@ Theorem: &lt;em&gt;Bisection Method&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error&lt;/p&gt;
 $$
-\left\| r - c_n \right\| \lt \dfrac{b-a}{2n}.
+\left\| r - c_n \right\| \lt \dfrac{b-a}{2^n}.
 $$
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1282,7 +1282,12 @@ Theorem: &lt;em&gt;&lt;/em&gt;
 &lt;li&gt;$f^\prime\left( x \right) \ne 0$ for all $x \in \left( a, b \right)$&lt;/li&gt;
 &lt;li&gt;$f^{\prime\prime}\left( x \right)$ exists and is continuous, i.e. ${f\left( x \right) \in C^2\left( \left[ a, b \right]\right)}$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Then, if $x_0$ is close enough to the root $r$, Newton&amp;rsquo;s method converges quadratically.&lt;/p&gt;
+&lt;p&gt;Then, if $x_0$ is close enough to the root $r$, Newton&amp;rsquo;s method converges quadratically:&lt;/p&gt;
+$$
+\begin{equation*}
+\left| r - x_{n+1} \right| \le \dfrac{M}{2m} \left| r - x_{n} \right|^2
+\end{equation*}
+$$&lt;p&gt;where $M = \left| \max_{\xi_n} f^{\prime\prime} \left( \xi_n \right) \right|$ and $m= \left| \min{x_n} f^{\prime} \left( x_n \right) \right|$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1497,7 +1502,7 @@ Definition: &lt;em&gt;Interpolating Functions&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Given as set of points $p_0$, $\ldots$, ${p_n \in \mathbb{R}}$ and corresponding nodes $u_0$, $\ldots$, ${u_n \in \mathbb{R}}$, a function ${f : \mathbb{R} \rightarrow \mathbb{R}}$ with ${f(u_i) = p_i}$ is called an &lt;strong&gt;interpolating function&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This can be generalised to higher dimensions, i.e. ${f : \mathbb{R} \rightarrow \mathbb{R}^N }$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1863,7 +1868,7 @@ D_{j}^{0} u = \dfrac{u_{j+1} - u_{j-1}}{2h}
 \end{equation*}
 $$&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The forward and backwards difference schemes are first order approximations to the derivative. The central difference scheme is a second order accurate approximation.&lt;/p&gt;
+&lt;p&gt;The forward and backwards difference schemes are first order approximations to the derivative, i.e. $D^{+}u = f(x) + \mathcal{O}(h)$. The central difference scheme is a second order accurate approximation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2229,7 +2234,7 @@ Definition: &lt;em&gt;&lt;/em&gt;
 &lt;p&gt;&lt;strong&gt;Forward Euler&lt;/strong&gt; approximates the derivative in an initial value problem using the forward difference approximation of first-order derivatives&lt;/p&gt;
 $$
 u_{n+1} = u_n + h f_n
-$$&lt;p&gt;where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
+$$&lt;p&gt;where $u_n = u \left(t_n \right)$ and ${f_{n} = f\left( u_{n}, t_{n} \right)}$. The location truncation error is $\mathcal{O}\left( h^2 \right)$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2332,7 +2337,7 @@ Definition: &lt;em&gt;&lt;/em&gt;
 $$
 \left| f\left(x\right) - f\left(y\right) \right| \le C \Vert x - y\Vert^\alpha
 $$&lt;p&gt;
-for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipshitz continuous&lt;/strong&gt;.&lt;/p&gt;
+for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipchitz continuous&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2437,7 +2442,7 @@ Theorem: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-If the increment function $\Phi$ of a one step numerical scheme is Lipshitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.
+If the increment function $\Phi$ of a one step numerical scheme is Lipschitz continuous for $u_n$ for any $h$ and $t_n$, then the one step method is zero-stable.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2455,7 +2460,7 @@ Theorem: &lt;em&gt;&lt;/em&gt;
 &lt;p&gt;If the increment function $\Phi$ is&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Lipshitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
+&lt;p&gt;Lipschitz continuous for $y_n$ for any $h$ and $t_{n+1}$,&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;the method is
@@ -2612,7 +2617,7 @@ A &lt;strong&gt;partial differential equation&lt;/strong&gt; is relation involvi
 &lt;/div&gt;
 &lt;p&gt;A partial differential equation is said to be linear if it only contains linear terms of the unknown and its derivatives. For example, a second-order linear partial differential equation for a function ${u=u(x,t)}$&lt;/p&gt;
 $$
-a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_3(x,t) u_x + a_4(x,t) u_t + a_5(x,t) u = f(x,t).
+a_1(x,t) u_{xx} + a_2(x,t) u_{xt} + a_3 u(x,t)_{tt} + a_4(x,t) u_x + a_5(x,t) u_t + a_6(x,t) u = f(x,t).
 $$&lt;p&gt;where $u_{xx} = \dfrac{\partial^2 u}{\partial x^2}$, etc.&lt;/p&gt;
 &lt;p&gt;For finite-difference schemes, &lt;em&gt;all&lt;/em&gt; partial derivatives must be approximated by
 .&lt;/p&gt;
