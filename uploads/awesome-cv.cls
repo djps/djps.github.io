@@ -42,6 +42,9 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\RequirePackage{soul}  
+\RequirePackage{longfbox}  
+\RequirePackage{framed}  
 
 %-------------------------------------------------------------------------------
 %                3rd party packages
@@ -57,7 +60,7 @@
 % Needed to make header & footer effeciently
 \RequirePackage{fancyhdr}
 % Needed to manage colors
-\RequirePackage[table]{xcolor}
+\RequirePackage[table, dvipsnames]{xcolor}
 % Needed to use \ifxetex-\else-\fi statement
 \RequirePackage{ifxetex}
 % Needed to use \if-\then-\else statement
@@ -101,6 +104,9 @@
   pdfkeywords={}
 }
 
+
+\definecolor{lightblue}{HTML}{E6F0FA}  % oder ein anderes Hex-/RGB-Value  
+\sethlcolor{lightblue}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
@@ -841,4 +847,16 @@
       \\\\\\
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% highlighting
+\newcommand{\newhl}[1]{%
+  {%
+    \setlength{\fboxsep}{0pt}%  % remove all padding
+    \setlength{\fboxrule}{0pt}% % remove any border thickness
+    \colorbox{lightblue}{%
+      \strut\textbf{\textcolor{MidnightBlue}{#1}}%
+    }%
+  }%
 }
