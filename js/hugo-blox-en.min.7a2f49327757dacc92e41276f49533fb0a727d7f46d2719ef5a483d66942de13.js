@@ -1,4 +1,4 @@
-/*! Hugo Blox Builder Tailwind UI v0.8.0 | https://hugoblox.com/ */
+/*! Hugo Blox Builder Tailwind UI v0.9.0 | https://hugoblox.com/ */
 /*! Copyright 2016-present George Cushen (https://georgecushen.com/) */
 /*! License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */
 

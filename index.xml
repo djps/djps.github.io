@@ -646,7 +646,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-918463275" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-629358174" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -662,7 +662,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-918463275', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-629358174', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -1155,6 +1155,7 @@ $$
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Euclid&lt;/em&gt;
@@ -1184,6 +1185,7 @@ which at each steps provides an $a_i$ and updates $y$.&lt;/li&gt;
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Horner&lt;/em&gt;
@@ -1642,6 +1644,7 @@ If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then t
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
@@ -1678,6 +1681,7 @@ Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
@@ -1963,6 +1967,7 @@ If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then t
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
@@ -1999,6 +2004,7 @@ Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt;
@@ -2081,6 +2087,7 @@ A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Cholesky Algorithm&lt;/em&gt;
@@ -3541,6 +3548,7 @@ $$&lt;p&gt;and is referred to as &lt;strong&gt;Simpson&amp;rsquo;s 1/3 Rule&lt;/
 &lt;div class="details admonition Algorithm open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"&gt;&lt;path stroke="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Algorithm: &lt;em&gt;Romberg&amp;#39;s Algorithm&lt;/em&gt;
@@ -4450,6 +4458,7 @@ If $A$ is symmetric and positive definite, let the vectors $u$ and $v$ be &lt;st
 &lt;div class="details admonition Lemma open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"&gt;&lt;path stroke="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Lemma: &lt;em&gt;&lt;/em&gt;
@@ -4477,6 +4486,7 @@ $$
 &lt;div class="details admonition Lemma open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"&gt;&lt;path stroke="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Lemma: &lt;em&gt;&lt;/em&gt;
@@ -5449,6 +5459,7 @@ Theorem: &lt;em&gt;Errors for Finite-Difference Quotients&lt;/em&gt;
 &lt;div class="details admonition Lemma open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"&gt;&lt;path stroke="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Lemma: &lt;em&gt;&lt;/em&gt;
@@ -5507,6 +5518,7 @@ i.e. it approximates an integral.&amp;#160;&lt;a href="#fnref:1" class="footnote
 &lt;div class="details admonition Lemma open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"&gt;&lt;path stroke="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Lemma: &lt;em&gt;&lt;/em&gt;
@@ -5912,6 +5924,7 @@ $$
 &lt;div class="details admonition Lemma open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"&gt;&lt;path stroke="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;span class="dark:text-neutral-300"&gt;
 Lemma: &lt;em&gt;Céa&lt;/em&gt;
@@ -9135,7 +9148,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-519468327" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-327819546" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9151,12 +9164,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-519468327', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-327819546', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-176834592" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-746192853" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9172,13 +9185,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-176834592', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-746192853', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-432798156" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-623471589" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9194,7 +9207,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-432798156', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-623471589', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
