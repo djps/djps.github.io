@@ -856,7 +856,11 @@
     \setlength{\fboxsep}{0pt}%  % remove all padding
     \setlength{\fboxrule}{0pt}% % remove any border thickness
     \colorbox{lightblue}{%
-      \strut\textbf{\textcolor{MidnightBlue}{#1}}%
+      \strut\textnormal{\textcolor{MidnightBlue}{#1}}%
     }%
   }%
 }
+
+%\newcommand{\newhl}[1]{
+%\textcolor{awesome}{\underline{#1}}
+%}
