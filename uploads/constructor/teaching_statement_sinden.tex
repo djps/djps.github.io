@@ -23,9 +23,6 @@
 % adjust the page margins
 \usepackage{geometry}
 
-% footer details
-\usepackage{lastpage}
-
 % Configure page margins with geometry
 \geometry{left=2.4cm, top=2.8cm, right=2.4cm, bottom=2.8cm, footskip=.5cm}
 
@@ -96,6 +93,8 @@
 % Configure styles for each CV elements
 % For fundamental structures
 
+
+
 % Boolean value to switch section color highlighting
 \newbool{acvSectionColorHighlight}
 \setbool{acvSectionColorHighlight}{true}
@@ -104,6 +103,7 @@
 \def\@sectioncolor#1#2#3{%
   \ifbool{acvSectionColorHighlight}{{\color{custom}#1#2#3}}{#1#2#3}%
 }
+
 
 % Colors 
 \definecolor{darktext}{HTML}{414141}
@@ -115,6 +115,7 @@
 \colorlet{text}{darkgray}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
+
 
 
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
@@ -167,15 +168,6 @@
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
 
-% document language
-\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
-
-\usepackage[normalem]{ulem}
-\usepackage{textcomp}
-\usepackage{csquotes}
-\usepackage{lastpage}
-
-\newcommand{\myname}[1]{\uline{#1}}
 
 
 % Define a footer for CV
@@ -191,13 +183,22 @@
   \fancyfoot{} % clear all header and footer fields
   \fancyfoot[L]{December, 2023}
   \fancyfoot[C]{David Sinden~~~·~~~Teaching Statement}
-  \fancyfoot[R]{\thepage ~~ of ~~ \pageRef{LastPage}}
+  \fancyfoot[R]{\thepage}
 }
 
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{csquotes}
+\usepackage{lastpage}
+
+\newcommand{\myname}[1]{\uline{#1}}
 
 % personal data
 \name{David}{Sinden}
-\title{Teaching statement}     % optional, remove / comment the line if not wanted
+\title{Teaching statements}     % optional, remove / comment the line if not wanted
 
 \email{david.sinden@gmail.com}                         % optional, remove / comment the line if not wanted
 \homepage{djps.github.io}                              % optional, remove / comment the line if not wanted
@@ -250,8 +251,6 @@
 
 \extrainfo{\href{https://www.github.com/djps}{\githubsocialsymbol}~djps~{\upshape{}|}~\href{https://www.twitter.com/david_sinden}{\twittersocialsymbol}~%
            david\_{}sinden}
-
-\renewcommand*{\addressfont}{\small\mdseries}
 
 % commands
 \makeatletter
@@ -325,7 +324,7 @@
 
 \makemyletterhead
 
-\makecvfooter{December, 2023}{David Sinden~~~·~~~Teaching Statement}{\thepage\ ~of~ \pageref{LastPage}}
+\makecvfooter{December, 2023}{David Sinden~~~·~~~Teaching Statement}{\thepage of \pageref{LastPage}}
 
 I have been teaching mathematics courses since 2008, when I began teaching as an instructor. I have had the opportunity to teach a number of courses, although mainly in applied mathematics -- including, in 2022, Numerical Analysis at Constructor University. I enjoy teaching, both for the joy of sharing mathematics, but also for the opportunity to revisit some familiar material and enhance my own understanding. 
 
@@ -337,17 +336,24 @@ I have experience of providing supervision to undergraduate, masters and PhD stu
 
 I am confident in my ability to teach a variety of undergraduate courses, specifically in areas of applied mathematics such as dynamical systems, ordinary and partial differential equations and numerical methods and analysis. I believe I have been an effective a teacher, as evidenced by positive student evaluations as well as many unsolicited compliments I've received from students. As mentioned, I enjoy sharing a subject which interests me, and believe that this should not be confined to the lecture theatre. Where possible, I have been involved in outreach events, as I believe that there should be no barriers to studying mathematics. 
 
-During my first week as an undergraduate, a document was distributed called learning to learn, and it featured the quote by George P\'{o}lya, \enquote{Maths is not a spectator sport}. To me this means being active and participating in the act of thinking mathematically about a given problem. To foster an environment to enable this approach, I try to adopt an open and non-judgemental manner, and encourage students to ask any questions they want about the course content. Especially in the beginning of courses, I emphasize that no question is a \enquote{stupid question}. I believe that continuing to ask questions may help re-frame concepts and lead to a better understanding of mathematical ideas. 
+During my first week as an undergraduate, a document was distributed called learning to learn, and it featured the quote by George P\'{o}lya, \enquote{Maths is not a spectator sport}. To me this means being active and participating in the act of thinking mathematically about a given problem. To foster an environment I try to adopt an open and non-judgemental manner, and encourage students to ask any questions they want about the course content. Especially in the beginning of courses, I emphasize that no question is a \enquote{stupid question}. I believe that continuing to ask questions may help re-frame concepts and lead to a better understanding of mathematical ideas. 
 
 I understand that there are many approaches to learning and I have provided printed and online materials as well as coded examples in order to cater for as many learning preferences as possible. 
 
-Applied mathematics has undergone significant changes in the past decade, primarily through advances in machine learning, and the broad range of applications touching many areas. As such I believe that course content should reflect this, so that graduates from Constructor University are equipped with the tools and understanding to thrive.  
+Applied mathematics has undergone significant changes in the past decade with advances in machine learning, and the broad range of applications touching many areas. As such I believe that course content should reflect this, so that graduates from Constructor University are equipped with the tools and understanding to thrive.  
 
-\begin{center}
-\textcolor{custom}{\rule{0.5\textwidth}{0.5pt}}
-\end{center}
 
 \end{document}
 
 
-% in a position to influence and train students (and others) in the importance and techniques (and limitations) of mathematically and data-driven climate models. This includes making sure that policymakers, and the media, are aware both of the predictions that these can make, and also of the quantifiable levels of uncertainty that they have. We all have a responsibility to the next generation to make sure that the power of mathematical modelling is not forgotten. 
+% First, I make myself accessible. This means that I learn the names of my students, I arrive to class early to answer questions as they trickle in, and I end each class by saying Thats it for today, but please stick around if you have more questions. My students are more confident knowing Im invested in their learning. 
+
+% Second, we discuss the pictures behind a concept. Students sometimes feel that even though they can solve the homework, they don t fully understand what is going on. I think that spending time on pictures helps here. For example, consider the equation vw= v w cos ,where istheangle between vectors v and w. To discuss this equation, I come to class equipped with an extendable pointer and a chopstick (pictured). The pointer is vector v, the chopstick is vector w, and my st is the origin. We discuss how the dot product changes as I vary the angle between the vectors, or as I vary the length of vector v by extending the pointer. My students are more condent in a topic after we discuss the pictures behind it. 
+
+% Third, I make our class a conversation. Talking about math can be intimidating for students at first, so joining a mathematical discussion improves their condence (while passively listening to me talk does not). How do I invite conversation in class? Knowing my students interests is a necessary first step. I give the students frequent opportunities to speak by asking recall questions, such as: Subset V Rn is a linear subspace if ...do you remember any of the three conditions? I also use paradoxical questions, such as: If S = v1v2v3 is a linearly dependent set, then can every vector in S be written as a linear combination of the other two? Paradoxical questions lead to longer discussions which I often nurture instead of marching on with the planned topic as the students try to reconcile their intuition with an answer they werent expecting. 
+
+% Fourth, I prepare my board work and solution sets carefully. I want my board to read like a terse set of notes, but I dont want to spend all of class writing furiously. Therefore, I plan succinct yet clear language for my board work ahead of time. This carries over to the solution sets that I write for homeworks and exams: mathematics is a language that students learn how to speak, and by my example I help them learn to speak e ciently. 
+
+% When I began as an Assistant Professor at Colorado State University in 2015, my main strength as a teacher was compassionate organization, by which I mean the following. I make detailed publicly available notes for each class I teach (see 1 for these notes), about 100 pages per class. In LaTeX I write solution sets for every homework, every practice exam, and every exam that I assign, including graduate classes; these solutions sets clarify my expectations for student work. Having well-written resources allows me to make my class periods more conversational I feel comfortable devoting class time to discussing an interesting problem posed by a student, while my written resources allow the main themes of the class to remain clear. I refer to this as compassionate organization because my preparation sends my students the message that I am invested in their education. This message is heard: around 25 students ask me to write letters of recommendation for them each year. My students are more invested in their learning after observing how diligently I prepare for them. 
+
+% Combinatorics: https://www.math.colostate.edu/~adams/teaching/Notes_Math301.pdf Linear Programming: https://www.math.colostate.edu/~adams/teaching/Notes_Math510.pdf Algebra: https://www.math.colostate.edu/~adams/teaching/Notes_Math366.pdf Topology I: https://www.math.colostate.edu/~adams/teaching/Notes_Math570.pdf Topology II: https://www.math.colostate.edu/~adams/teaching/Notes_Math571.pdf 
