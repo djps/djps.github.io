@@ -1,6 +1,6 @@
 % -- Encoding UTF-8 without BOM
 
-\ProvidesClass{cv-style-wide}[2015/02/27 CV class]
+\ProvidesClass{cv-style-wide}[2015/02/27 CV-style-wide class]
 \NeedsTeXFormat{LaTeX2e}
 
 \RequirePackage{currfile}
@@ -10,6 +10,7 @@
 \edef\fontraleway{\currfiledir../commercial/fonts/raleway/}
 
 \DeclareOption{espanol}{\def\@cv@espanol{}}
+\DeclareOption{german}{\def\@cv@deutsch{}}
 \DeclareOption{print}{\def\@cv@print{}}
 
 \DeclareOption*{%
@@ -208,11 +209,15 @@ ItalicFont=Lato-LightItalic]{Lato-Light}
 \ifdefined\@cv@espanol
   \setdefaultlanguage{spanish}
   \def\lastupdatedtext{Última Actualización el}
+\else  
+\ifdefined\@cv@deutsch
+  \setdefaultlanguage{german}
+  \def\lastupdatedtext{Zuletzt aktualisiert am}
 \else
   \setdefaultlanguage[variant=british]{english}
   \def\lastupdatedtext{Last Updated on}
 \fi
-
+\fi
 % units for textblock
 \setlength{\TPHorizModule}{3cm}
 \setlength{\TPVertModule}{1cm}
@@ -289,7 +294,7 @@ ItalicFont=Lato-LightItalic]{Lato-Light}
        \textbf{#2}%
        \hfill%
        {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-       #4 \vspace{0.8\parsep}%
+       #4 \vspace{1.8\parsep}%
       } \\ }
 
 \newcommand{\threeentry}[4]{%
