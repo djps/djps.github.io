@@ -86,31 +86,35 @@
 \setmainfont[Mapping=tex-text, Color=textcolor, Path = \fontraleway]{Raleway-Light}
 
 %----------------------------------------------------------------------------------------
+% colors
 
 \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 \setmainfont[Color=primary, 
-Path = \fontlato,
-BoldItalicFont=Lato-Italic,
-BoldFont=Lato-Regular,
-ItalicFont=Lato-LightItalic]{Lato-Light}
+             Path=\fontlato,
+             BoldItalicFont=Lato-Italic,
+             BoldFont=Lato-Regular,
+             ItalicFont=Lato-LightItalic]{Lato-Light}
 
-\setsansfont[Scale=MatchLowercase, Mapping=tex-text, Path = \fontraleway]{Raleway-ExtraLight}
+\setsansfont[Scale=MatchLowercase, 
+             Mapping=tex-text, 
+             Path=\fontraleway]{Raleway-ExtraLight}
 
 % Name command
 \newcommand{\namesection}[3]{
+	\centering{
+		\fontsize{40pt}{60pt}
+		\fontspec[Path = \fontlato]{Lato-Thin}\selectfont #1 
+		\fontspec[Path = \fontlato]{Lato-Light}\selectfont #2
+	} \\[5pt]
 \centering{
-\fontsize{40pt}{60pt}
-\fontspec[Path = \fontlato]{Lato-Thin}\selectfont #1 
-\fontspec[Path = \fontlato]{Lato-Light}\selectfont #2
-} \\[5pt]
-\centering{
-\color{headings}
-\fontspec[Path = \mystyle@fontraleway]{Raleway-Regular}\fontsize{11pt}{14pt}\selectfont #3}
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-\vspace{-15pt}
+		\color{headings}
+		\fontspec[Path = \mystyle@fontraleway]{Raleway-Regular}\fontsize{11pt}{14pt}\selectfont #3}
+		\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}
+	}
+	\vspace{-15pt}
 }
 
 % Section seperators 
@@ -123,10 +127,14 @@ ItalicFont=Lato-LightItalic]{Lato-Light}
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 
 % Headings command
-\titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = \mystyle@fontpath/lato/]{Lato-Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase%
+\titleformat{\section}{
+	\color{headings}
+	\scshape\fontspec[Path = \mystyle@fontpath/lato/]{Lato-Light}\fontsize{16pt}{24pt}\selectfont 			\raggedright\uppercase%
 \color{MidnightBlue}{\vhrulefill{0.9pt}}%
-}{}{0em}{}
+}%
+{}%
+{0em}%
+{}
 
 % Subeadings command
 \titleformat{\subsection}{
@@ -279,18 +287,21 @@ ItalicFont=Lato-LightItalic]{Lato-Light}
 
 \usepackage{array}              % for defining new column types
 
+\setlength{\tabcolsep}{0pt}
+
 % define a ragged‐right p‐column for convenience
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
-\setlength{\tabcolsep}{0pt}
+
+
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{} P{3cm} @{\extracolsep{\fill}} P{16.8cm} @{} } % @{\extracolsep{\fill}} l l }
+  \begin{tabular*}{\textwidth}{@{} P{3.45cm} @{\extracolsep{\fill}} P{16.5cm} @{} } % @{\extracolsep{\fill}} l l }
 }{%
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1 & \parbox[t]{16.8cm}{%
+  #1 & \parbox[t]{16.5cm}{%
        \textbf{#2}%
        \hfill%
        {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -298,7 +309,7 @@ ItalicFont=Lato-LightItalic]{Lato-Light}
       } \\ }
 
 \newcommand{\threeentry}[4]{%
-  #1 & \parbox[t]{16.8cm}{%
+  #1 & \parbox[t]{16.5cm}{%
        \textbf{#2}%
        \hfill%
        {\footnotesize\addfontfeature{Color=lightgray} #3} %
