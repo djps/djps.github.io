@@ -60,14 +60,30 @@
 \setlength{\diffpwidth}{\mwidth - \pwidth}
 
 \header{David }{Sinden}{}
-       % Your name
+
+
 \begin{tikzpicture}[remember picture,overlay]
-  % pick a point 1.1cm below the top of the page, horizontally centered
   \node[
-    anchor=north,
-    text=MidnightBlue,         % white on screen‐mode, gray in print‐mode
+    anchor=north west,
+  ] at ([yshift=-0.25cm, xshift=0.8cm]current page.north west)
+  {\includegraphics[width=2.5cm]{../img/profile.png}};  
+  \node[
+    anchor=north west,
+    xshift=3.5cm,                          % 2.5cm(photo)+0.5cm margin
+    yshift=-1.48cm,
+    text width=\dimexpr\paperwidth-3cm-1.5cm\relax, % leave 1cm right margin
+    align=left,                        % or center or flush left/right as you like
+    text=MidnightBlue,
     font=\thinfont
-  ] at ([yshift=-1.48cm]current page.north) {home: \href{https://djps.github.io}{djps.github.io} \quad \href{https://github.com/djps}{github: djps} \quad \href{https://www.linkedin.com/in/sindendavid/}{linkedin: sindendavid} \quad \href{https://www.xing.com/profile/David_Sinden}{xing: david\_sinden} \quad \href{https://x.com/david_sinden}{twitter: @david\_{}sinden}  \quad \href{david.sinden@gmail.com}{david.sinden@gmail.com}   };
+  ] at (current page.north west) {%
+    home: \href{https://djps.github.io}{djps.github.io} \quad
+    \href{https://github.com/djps}{github: djps} \quad
+    \href{https://www.linkedin.com/in/sindendavid/}{linkedin: sindendavid} \quad
+    \href{https://www.xing.com/profile/David_Sinden}{xing: david\_sinden} \quad
+    % \href{https://x.com/david_sinden}{twitter: @david\_sinden} \quad
+    \href{mailto:david.sinden@gmail.com}{david.sinden@gmail.com} \\
+    Bremen, \quad Britischer Staatsbürger mit ständigem Wohnsitz in Deutschland, \quad 27.12.1981
+  };  
 \end{tikzpicture}       
         
 \lastupdated
@@ -80,7 +96,8 @@
 %\vfill
 
 %\section{Skills}
-  %\vspace{-0.2cm}  
+
+\vspace{0.5cm}  
 
 % Experienced scientist with a demonstrated history of developing product-level code and algorithms in close collaboration with business partners and end customers. Over 10 years of experience in the domain of external beam radiation therapy, developing automatic segmentation algorithms and advanced algorithms for plan optimization. Recent projects on anatomical mapping for cardiac electro-physiology as well as cone-beam reconstruction for c-arm systems. Over 20 years of experience using and developing statistical machine learning methods. I master C++, python, *nix, work agile, believe in test-driven development, CI/CD, and quickly learn tools that help improve efficiency. Basic knowledge in containerization, cuda, PyTorch. My interests are to work on developing machine learning methods in combination with (advanced) physical and mathematical modeling - together with friendly and collaborative colleagues.
 
