@@ -253,6 +253,11 @@ https://scicomp.stackexchange.com/questions/20629/when-should-log1p-and-expm1-be
 https://bpb-us-e1.wpmucdn.com/sites.ucsc.edu/dist/7/1905/files/2025/03/romberg.pdf
 https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html - may be too long
 https://wiki.math.ntnu.no/_media/ma2501/2015v/sol02.pdf
+https://aimath.org/textbooks/approved-textbooks/ page hosted by the American Institute of Mathematics.
+Mathematics section of the Khan Academy.
+https://math.libretexts.org/Bookshelves page at Mathematics Libretexts.
+What is the consequence between the difference in matrix shape: square -&gt; algebra (equation solving). Non-square -&gt; analysis (curve fitting)
+https://www.lms.ac.uk/sites/default/files/inline-files/NLMS_517.v5.nocrop.pdf
 --&gt;</description></item><item><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
@@ -646,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-631498752" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-438219675" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -662,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-631498752', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-438219675', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9148,7 +9153,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-826439175" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-714293568" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9164,12 +9169,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-826439175', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-714293568', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-589247136" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-867391425" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9185,13 +9190,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-589247136', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-867391425', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-178534692" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-713624958" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9207,7 +9212,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-178534692', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-713624958', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();

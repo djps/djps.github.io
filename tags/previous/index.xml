@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Previous | David Sinden</title><link>https://djps.github.io/tags/previous/</link><atom:link href="https://djps.github.io/tags/previous/index.xml" rel="self" type="application/rss+xml"/><description>Previous</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>Previous</title><link>https://djps.github.io/tags/previous/</link></image><item><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/</guid><description/></item><item><title>CA-MATH-804: Numerical Analysis</title><link>https://djps.github.io/docs/numericalanalysis22/</link><pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalanalysis22/</guid><description/></item><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Previous | David Sinden</title><link>https://djps.github.io/tags/previous/</link><atom:link href="https://djps.github.io/tags/previous/index.xml" rel="self" type="application/rss+xml"/><description>Previous</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>Previous</title><link>https://djps.github.io/tags/previous/</link></image><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -40,7 +40,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-826439175" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-714293568" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -56,12 +56,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-826439175', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-714293568', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-589247136" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-867391425" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -77,13 +77,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-589247136', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-867391425', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-178534692" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-713624958" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -99,7 +99,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-178534692', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-713624958', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
