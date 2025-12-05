@@ -651,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-348159276" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-975428136" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -667,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-348159276', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-975428136', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6440,7 +6440,7 @@ Note that in this example, only odd powers of $x$ contribute to the expansion.&l
 &lt;div class="flex justify-center "&gt;
 &lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/output_2_0.png" alt="Illustration of convergence of taylor series for sin about zero" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;</description></item><item><title>Test</title><link>https://djps.github.io/docs/numericalmethods/notebooks/test/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/test/</guid><description>&lt;p&gt;Blank.&lt;/p&gt;</description></item><item><title>Number Representations</title><link>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</link><pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</guid><description>&lt;!--
+&lt;/p&gt;</description></item><item><title>Number Representations</title><link>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</link><pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/number_representations/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; March 02, 2024 &amp;middot;
 &lt;i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; 10 minute read &lt;/p&gt;
@@ -9153,7 +9153,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-482691357" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-195367842" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9169,12 +9169,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-482691357', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-195367842', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-436871259" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-915278346" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9190,13 +9190,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-436871259', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-915278346', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-245678139" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-462317985" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9212,7 +9212,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-245678139', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-462317985', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
