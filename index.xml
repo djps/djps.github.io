@@ -651,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-145638927" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-396518742" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -667,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-145638927', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-396518742', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9153,7 +9153,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-957824613" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-293461875" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9169,12 +9169,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-957824613', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-293461875', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-469785213" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-365194287" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9190,13 +9190,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-469785213', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-365194287', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-318259674" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-218547639" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9212,7 +9212,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-318259674', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-218547639', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9335,14 +9335,14 @@ data-callout-metadata=""&gt;
 specifically the screw motions whose axis is the magnetic field. Concretely:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;If you translate the entire rod a little way along the direction of $̂\vec{B}$ (&lt;em&gt;with no change in its shape&lt;/em&gt;) and at the same time rotate each cross-section about the same axis so as to keep the magnetic field fixed in the body–frame, nothing in the energy or in the equilibrium equations changes.&lt;/p&gt;
+&lt;p&gt;If you translate the entire rod a little way along the direction of (&lt;em&gt;with no change in its shape&lt;/em&gt;) and at the same time rotate each cross-section about the same axis so as to keep the magnetic field fixed in the body–frame, nothing in the energy or in the equilibrium equations changes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;By Noether&amp;rsquo;s theorem this screw–symmetry must produce a conserved &amp;ldquo;momentum map.&amp;rdquo;&amp;quot; One checks (either by direct contraction of the balance laws or by working out the infinitesimal generator of that screw–action in the non–canonical Poisson bracket) that the corresponding conserved quantity is exactly
+&lt;p&gt;By Noether&amp;rsquo;s theorem this screw–symmetry must produce a conserved momentum map. The corresponding conserved quantity is exactly
 &lt;/p&gt;
 $$
-&gt; C_1 = \dfrac{1}{2} \boldsymbol{n} \cdot \boldsymbol{n} + \boldsymbol{m} \cdot \boldsymbol{B}.
-&gt; $$&lt;p&gt;
+C_1 = \dfrac{1}{2} \boldsymbol{n} \cdot \boldsymbol{n} + \boldsymbol{m} \cdot \boldsymbol{B}.
+$$&lt;p&gt;
 Thus, $C_1$ is the momentum-map of the one-parameter group of translation-and-rotation symmetries of the uniform–field problem.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

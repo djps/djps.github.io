@@ -28,14 +28,14 @@ data-callout-metadata=""&gt;
 specifically the screw motions whose axis is the magnetic field. Concretely:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;If you translate the entire rod a little way along the direction of $̂\vec{B}$ (&lt;em&gt;with no change in its shape&lt;/em&gt;) and at the same time rotate each cross-section about the same axis so as to keep the magnetic field fixed in the body–frame, nothing in the energy or in the equilibrium equations changes.&lt;/p&gt;
+&lt;p&gt;If you translate the entire rod a little way along the direction of (&lt;em&gt;with no change in its shape&lt;/em&gt;) and at the same time rotate each cross-section about the same axis so as to keep the magnetic field fixed in the body–frame, nothing in the energy or in the equilibrium equations changes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;By Noether&amp;rsquo;s theorem this screw–symmetry must produce a conserved &amp;ldquo;momentum map.&amp;rdquo;&amp;quot; One checks (either by direct contraction of the balance laws or by working out the infinitesimal generator of that screw–action in the non–canonical Poisson bracket) that the corresponding conserved quantity is exactly
+&lt;p&gt;By Noether&amp;rsquo;s theorem this screw–symmetry must produce a conserved momentum map. The corresponding conserved quantity is exactly
 &lt;/p&gt;
 $$
-&gt; C_1 = \dfrac{1}{2} \boldsymbol{n} \cdot \boldsymbol{n} + \boldsymbol{m} \cdot \boldsymbol{B}.
-&gt; $$&lt;p&gt;
+C_1 = \dfrac{1}{2} \boldsymbol{n} \cdot \boldsymbol{n} + \boldsymbol{m} \cdot \boldsymbol{B}.
+$$&lt;p&gt;
 Thus, $C_1$ is the momentum-map of the one-parameter group of translation-and-rotation symmetries of the uniform–field problem.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
