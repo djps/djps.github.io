@@ -182,7 +182,7 @@ text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hove
 
 
 
-<div id="chart-524168793" class="chart"></div>
+<div id="chart-134957286" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -200,7 +200,7 @@ text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hove
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-524168793', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-134957286', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
