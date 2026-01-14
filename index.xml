@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Sinden</title><link>https://djps.github.io/</link><atom:link href="https://djps.github.io/index.xml" rel="self" type="application/rss+xml"/><description>David Sinden</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>David Sinden</title><link>https://djps.github.io/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Sinden</title><link>https://djps.github.io/</link><atom:link href="https://djps.github.io/index.xml" rel="self" type="application/rss+xml"/><description>David Sinden</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>David Sinden</title><link>https://djps.github.io/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -651,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-679254813" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-145638927" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -667,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-679254813', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-145638927', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9153,7 +9153,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-569138274" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-957824613" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9169,12 +9169,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-569138274', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-957824613', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-931748625" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-469785213" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9190,13 +9190,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-931748625', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-469785213', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-571269438" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-318259674" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9212,7 +9212,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-571269438', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-318259674', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9322,4 +9322,30 @@ Ignacio Xavier Partarrieu1, Elliot Fox1,2, Frederic Brochu1, Matt Cashmore1, Neh
 &lt;p&gt;For a single element, unsteered transducer the Khokhlov-Zabolotskaya-Kuznetsov (KZK) equation, modelling nonlinear wave propagation through both water and soft-tissue, was coupled to the bioheat transfer equation, from which the thermal-dose is calculated. Using the range of values from tissue characterisation measurements, distributions were found which matched the spread of data for various acoustic and thermal properties. Hence empirically derived confidence intervals for various material parameters were formulated. A sensitivity analysis was performed on the governing equations to show the relative importance of each of the acoustic and thermal properties. Simulations are found to be in good agreement with experimental data away from the vessels within the range of uncertainties of tissue properties.&lt;/p&gt;
 &lt;p&gt;Results from numerical and experiment data are presented, compared and discussed in the context of the implications for therapeutic ultrasound treatment planning, specifically for the effects of cavitation enhanced heating and the viability of treatment next to thermally significant large vessels.&lt;/p&gt;</description></item><item><title>Approximations for acoustically excited bubble cluster dynamics</title><link>https://djps.github.io/publications/sinden2012aae/</link><pubDate>Fri, 09 Mar 2012 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/sinden2012aae/</guid><description/></item><item><title>The buckling of magneto-strictive Cosserat rods</title><link>https://djps.github.io/publications/sinden2011bmc/</link><pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/sinden2011bmc/</guid><description/></item><item><title>Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation</title><link>https://djps.github.io/publications/vanderheijden2011ltc/</link><pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/vanderheijden2011ltc/</guid><description/></item><item><title>The effects of nonlinear wave propagation on the stability of inertial cavitation</title><link>https://djps.github.io/publications/sinden2009enw/</link><pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/sinden2009enw/</guid><description/></item><item><title>Integrability, Localisation and Bifurcation of an Elastic Conducting Rod in a Uniform Magnetic Field</title><link>https://djps.github.io/publications/thesis/</link><pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/thesis/</guid><description/></item><item><title>Spatial chaos of an extensible conducting rod in a uniform magnetic field</title><link>https://djps.github.io/publications/sinden2009sce/</link><pubDate>Sat, 20 Jun 2009 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/sinden2009sce/</guid><description>&lt;p&gt;A preprint can be found on the
 .&lt;/p&gt;</description></item><item><title>Integrability of a conducting elastic rod in a magnetic field</title><link>https://djps.github.io/publications/sinden2008ice/</link><pubDate>Fri, 20 Jun 2008 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/sinden2008ice/</guid><description>&lt;p&gt;A preprint can be found on the
-.&lt;/p&gt;</description></item></channel></rss>
+.&lt;/p&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Update: Jan 2026&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;The key point is that even in the presence of the Lorentz body force, the rod in a uniform magnetic field is &lt;em&gt;still&lt;/em&gt; invariant under a one–parameter family of Euclidean motions,
+specifically the screw motions whose axis is the magnetic field. Concretely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you translate the entire rod a little way along the direction of $̂\vec{B}$ (&lt;em&gt;with no change in its shape&lt;/em&gt;) and at the same time rotate each cross-section about the same axis so as to keep the magnetic field fixed in the body–frame, nothing in the energy or in the equilibrium equations changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By Noether&amp;rsquo;s theorem this screw–symmetry must produce a conserved &amp;ldquo;momentum map.&amp;rdquo;&amp;quot; One checks (either by direct contraction of the balance laws or by working out the infinitesimal generator of that screw–action in the non–canonical Poisson bracket) that the corresponding conserved quantity is exactly
+&lt;/p&gt;
+$$
+&gt; C_1 = \dfrac{1}{2} \boldsymbol{n} \cdot \boldsymbol{n} + \boldsymbol{m} \cdot \boldsymbol{B}.
+&gt; $$&lt;p&gt;
+Thus, $C_1$ is the momentum-map of the one-parameter group of translation-and-rotation symmetries of the uniform–field problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The caveat, with no change in its shape is important, as it means that, in the case of the Lorentz body force, inextensibility breaks integrability.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students | David Sinden</title><link>https://djps.github.io/docs/gradcalclinalg24/</link><atom:link href="https://djps.github.io/docs/gradcalclinalg24/index.xml" rel="self" type="application/rss+xml"/><description>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/docs/gradcalclinalg24/featured.jpg</url><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/</link></image><item><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students | David Sinden</title><link>https://djps.github.io/docs/gradcalclinalg24/</link><atom:link href="https://djps.github.io/docs/gradcalclinalg24/index.xml" rel="self" type="application/rss+xml"/><description>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/docs/gradcalclinalg24/featured.jpg</url><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/</link></image><item><title>MDE-MET-01: Calculus and Linear Algebra for Graduate Students</title><link>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</link><pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information for this course.&lt;/p&gt;
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -197,7 +197,7 @@ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-679254813" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-145638927" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -213,7 +213,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-679254813', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-145638927', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
