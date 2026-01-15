@@ -1,0 +1,549 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Also see
+% https://github.com/liantze/AltaCV/blob/main/sample.png
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter.
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+%\fontdir[/usr/share/texlive/texmf-dist/fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{008080}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% This overwrites the boolean above
+\makeatletter
+\def\@sectioncolor{\color{awesome}}
+\makeatother
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle, edge/noedge, left/right
+
+\photo{profile.png}
+
+\name{David Sinden}{}
+
+\position{Applied Mathematician}
+
+\email{\href{mailto:david.sinden@gmail.com}{\nolinkurl{david.sinden@gmail.com}}}
+\homepage{djps.github.io}
+\github{djps}
+\linkedin{sindendavid}
+\twitter{david\_sinden}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+ 
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\usepackage{colortbl}
+
+\usepackage{printlen}
+
+%%%%%%%%%%%%%%%%
+
+
+\makeatletter
+\def\ifPositive#1{%
+    \@ifnextchar{-}%
+      {\expandafter\@secondoftwo\remove@to@nnil}%
+      {\expandafter\@firstoftwo\remove@to@nnil}%
+        #1\@nnil
+}
+\makeatother
+
+
+
+
+
+\RequirePackage{tikz}
+\usepackage{adjustbox}
+\usepackage{mdframed}
+
+% footer details
+\usepackage{lastpage}
+
+\usepackage{verbatimbox}
+
+\RequirePackage{multirow}
+\RequirePackage{arydshln} % incompatible with fancy style
+
+\makeatletter
+
+\newcommand*{\@initializelength}[1]{%
+  \ifdefined#1
+  \else%
+    \newlength{#1}\fi%
+  \setlength{#1}{0pt}}
+
+% creates an if switch if not yet defined
+\newcommand*{\@initializeif}[1]{%
+%  \ifdefined#1% not working due to the nested \if
+%  \else%
+    \newif#1%\fi
+  }
+
+\@initializeif{\if@aftersection}\@aftersectionfalse%
+
+% definitions form elsewhere
+\newcommand*{\hintfont}{}
+\newcommand*{\hintstyle}[1]{{\hintfont#1}}
+
+\renewcommand*{\hintstyle}[1]{{\hintfont\textcolor{awesome}{#1}}}
+
+\@initializelength{\separatorcolumnwidth}         
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+
+\@initializelength{\hintscolumnwidth}             
+\setlength{\hintscolumnwidth}{0.0\textwidth}
+
+\@initializelength{\maincolumnwidth}
+\setlength{\maincolumnwidth}{\textwidth-\leftskip-\rightskip}%
+
+\@initializelength{\cvSkill@RectangleSize}
+\setlength{\cvSkill@RectangleSize}{1.2ex}
+\newcount\my@repeat@count
+
+\DeclareDocumentCommand{\cvskill}{m}{%
+%   Illustrate skill level with little colored boxes.
+%   By default five skill levels are predefined.   
+% 
+%   Input: 
+%       integer between 0 and 5
+%   Example usage: 
+%       \cvskill{3}
+\ifPositive{#1}{
+
+\smash{\raisebox{-0.65\baselineskip}{
+%\fbox{
+    \begingroup
+        \my@repeat@count=\z@
+        \@whilenum\my@repeat@count<#1\do{\tikz\filldraw[awesome] (0, 0) rectangle (\cvSkill@RectangleSize, \cvSkill@RectangleSize);\advance%
+        \my@repeat@count\@ne\,}%
+        \my@repeat@count=\numexpr5-\z@\relax
+        \@whilenum\my@repeat@count>#1\do{\tikz\filldraw[awesome!30] (0, 0) rectangle (\cvSkill@RectangleSize, \cvSkill@RectangleSize);\advance%
+        \my@repeat@count\m@ne\,}%
+    \endgroup
+    %}
+    }}
+}{}
+}% end \cvskill
+
+\@initializelength{\cvskill@width}
+\@initializelength{\cvskill@descriptorwidth}
+\@initializelength{\cvskill@experiencewidth}
+
+\@initializelength{\skillmatrix@columnwidth}
+\@initializelength{\skillmatrix@commentwidth}
+\@initializelength{\skillmatrix@padding}
+\@initializelength{\skillmatrix@hintscolumnwidth}
+\@initializelength{\skillmatrix@bodylength}
+
+\@initializelength{\cvskilllegend@leftdescriptorwidth}
+\@initializelength{\cvskilllegend@rightdescriptorwidth}
+
+\@initializelength{\skilllegend@hintscolumnwidth}
+\@initializelength{\skilllegend@padding}
+\@initializelength{\skilllegend@bodylength}
+
+\@initializelength{\separatorrulewidth}
+
+\DeclareDocumentCommand{\skilllegend@leftdesriptorfactor}{}{}%
+
+%% DEFINITION \recompute@cvskillmatrix@lengths
+% declare the command \recompute@cvskillmatrix@lengths empty
+
+\DeclareDocumentCommand{\recompute@cvskillmatrix@lengths}{}{}%
+
+\RenewDocumentCommand{\recompute@cvskillmatrix@lengths}{}{%
+
+\setlength{\skillmatrix@padding}{1ex}%
+
+\setlength{\skillmatrix@hintscolumnwidth}{\hintscolumnwidth}%
+
+\setlength{\cvskill@width}{\widthof{\cvskill{5}}}%
+
+\setlength{\cvskill@experiencewidth}{\widthof{``Year''}}%
+
+\setlength{\skillmatrix@bodylength}{\maincolumnwidth}%
+
+\setlength{\skillmatrix@columnwidth}{0.45\skillmatrix@bodylength}%
+
+\setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+
+\setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-\skillmatrix@padding}%
+
+% lengths and definitions needed for the legends
+% note that \skillmatrix@padding also affects the appearance of legends
+\setlength{\skilllegend@padding}{0.25ex}%
+
+\setlength{\skilllegend@hintscolumnwidth}{\hintscolumnwidth}%
+
+\setlength{\skilllegend@bodylength}{\skillmatrix@bodylength}%
+
+\RenewDocumentCommand{\skilllegend@leftdesriptorfactor}{}{0.5}%
+
+%\setlength{\cvskill@descriptorwidth}{5cm}%
+%\setlength{\skillmatrix@commentwidth}{10cm}%
+%\setlength{\skilllegendbodylength}{\skillmatrix@bodylength}%
+}
+
+% \setcvskillcolumns[<width>][<factor>][<exp_width>]
+\DeclareDocumentCommand{\setcvskillcolumns}{+O{\skillmatrix@hintscolumnwidth} +O{\skillmatrix@columnwidth} +O{\cvskill@experiencewidth}}{%
+%   adjust column width of skill table
+% 
+%   The \cvskillentry command comes with default FIXED width definitions of the kill matrix for the columns 
+%   based on the author's own skill matrix. This is necessary to ensure that the entries are nicely aligned 
+%   and actually yield a decent looking table. The defaults depend on the style used and are chosen reasonably.
+%   However, depending on the user input and the style that is used some of the columns might need adjustments. 
+%   The \setcvskillcolumns command provides means to influence the width of the first, the third and the fourth 
+%   skill matrix column. The second column containg the output of \cvskill remains fixed width. The last column,
+%   the comment column gets recalculated according to the setting of the other columns.
+% 
+%   Input
+%       Input_1 (optional):     width smaller than \textwidth,  default <\skillmatrix@hintscolumnwidth>
+%       Input_2 (optional):     float between 0 and 1 adjusting how much percent of the table width without 
+%                               the first column is used columns two, three and four. Through this parameter
+%                               the width of the 3rd column (skill name) can be adjusted,   default <\skillmatrix@columnwidth>
+%       Input_3 (optional):     width smaller than \textwidth, setting the width of the 4th column 
+%                               (Years of experience), default <\cvskill@experiencewidth>
+% 
+%   Example usage
+%       \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
+%       \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
+%       \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
+%       \setcvskillcolumns[\widthof{``Language''}][0.48][]%     adjust 1st and 3rd columns. Same as \setcvskillcolumns[\widthof{``Language''}][0.45]    
+%       \setcvskillcolumns[\widthof{``Management Tools''}][0.6][3em]%   ajust all at once.
+% 
+%   Note
+%       - For the styles 'classic' and 'casual' the first column is set to hintscolumnwidth such that
+%         it aligns with the rest of the entries. A readjustment of the first column should therefor 
+%         be avoided. It is recomended to only use \setcvskillcolumns in the form of 
+%         \setcvskillcolumns[][<factor>][<width>], thereby leaving the defaults in place for the first column.
+% 
+    \def\arg@new@hintscolumnwidth{#1}% <-- all these terminal % signs are necessary for the fancy style to not show weird spaces!!!
+    \def\arg@new@bodyLengthFactor{#2}% 
+    \def\arg@new@experienceWidth{#3}% 
+    % Check for empty arguments. Defaults are given. Thus a call of \setcvskillcolumns 
+    % without any arguments leads to nonempty arguments \arg@new@hintscolumnwidth and
+    % \def\arg@new@bodyLengthFactor{#2}. However, we need to take care of calls like 
+    % \setcvskillcolumns[], \setcvskillcolumns[][], \setcvskillcolumns[][][] or even 
+    % \setcvskillcolumns[<somelength>][], \setcvskillcolumns[][<somefactor>]  \setcvskillcolumns[][][<length>]
+    \ifdefempty{\arg@new@hintscolumnwidth}{%
+        % Case \setcvskillcolumns[], \setcvskillcolumns[][] or \setcvskillcolumns[][<somefactor>]
+        \ifdefempty{\arg@new@bodyLengthFactor}{%
+            % Case \setcvskillcolumns[][] do nothing here and check if third argument is empty
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[][][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[][][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+                \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }{%
+            % Case \setcvskillcolumns[][<somefactor>], \setcvskillcolumns[][<somefactor>][<possilly length>]
+            \setlength{\skillmatrix@columnwidth}{\arg@new@bodyLengthFactor\skillmatrix@bodylength}%
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[][<somefactor>][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[][<somefactor>][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+                \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%            
+            \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            \setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-3\skillmatrix@padding}%
+        }%
+        % Case \setcvskillcolumns[] nothing needs to be done here recalculate lengths affected by the change
+    }{% 
+        % Case \setcvskillcolumns, \setcvskillcolumns[<width>], \setcvskillcolumns[<width>][] 
+        % or \setcvskillcolumns[<width>][<somefactor>]
+        \setlength{\skillmatrix@hintscolumnwidth}{\arg@new@hintscolumnwidth}%
+        \setlength{\skillmatrix@bodylength}{\maincolumnwidth-\skillmatrix@hintscolumnwidth-\separatorcolumnwidth}%
+        % in case second argument is given but left empty use default
+        \ifdefempty{\arg@new@bodyLengthFactor}{%
+            % Case \setcvskillcolumns[<width>][] do nothing here and use default
+            % \skillmatrix@columnwidth and check third argument
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[<width>][][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[<width>][][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+%                 \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }{%
+            % Case \setcvskillcolumns, \setcvskillcolumns[<width>], \setcvskillcolumns[<width>][<somefactor>]
+            \setlength{\skillmatrix@columnwidth}{\arg@new@bodyLengthFactor\skillmatrix@bodylength}%
+            \ifdefempty{\arg@new@experienceWidth}{%
+                % Case \setcvskillcolumns[<width>][<somefactor>][] do nothing here
+            }{%
+                % Case \setcvskillcolumns[<width>][<somefactor>][<length>]. reset \cvskill@experiencewidth and
+                % \cvskill@descriptorwidth accordingly
+                \setlength{\cvskill@experiencewidth}{\arg@new@experienceWidth}%
+%                 \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+            }%
+        }%
+        \setlength{\cvskill@descriptorwidth}{\skillmatrix@columnwidth-\cvskill@width-\cvskill@experiencewidth}%
+        \setlength{\skillmatrix@commentwidth}{\skillmatrix@bodylength-\skillmatrix@columnwidth-3\skillmatrix@padding}%
+    }%
+}%
+
+
+% %-------------------------------------------------------------------------------
+% %                \cvskillentry 
+% %-------------------------------------------------------------------------------
+% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+\DeclareDocumentCommand\cvskillentry{s +O{} +m +m +m +m +m}{}%
+%     add cvskill matrix row.
+% 
+%     Input:
+%         asterix (optional): include horizontal (dashed) line above the entered line. This behaviour depends on the body style. 
+%                             For the fancy style, the asterix has no meaning.
+%         input_1 (optional): padding length appended to the legend, default: <0.25em>
+%         input_2: string, naming skill cathegory, default: <>
+%         input_3: integer between 0 and 5, describing level of skill. \cvskill{input_2} is called internally, default: <>
+%         input_4: string, naming the skill, default: <>
+%         input_5: positive real number, stating the number of years of experience with this skill , default: <>
+%         input_6: string, explaining details w.r.t. that particual skill default: <>
+% 
+%     Example usages:
+%         \cvskillentry*{Language:}{3}{Python}{2}{I have done a million projects with Python}
+%         \cvskillentry{}{2}{Lilypond}{14}{So much sheet music! Man I'm the best!}
+%         \cvskillentry{}{3}{\LaTeX}{14}{Clearly I rock at \LaTeX}
+%         \cvskillentry*[1.5em]{OS:}{3}{Linux}{2}{I only use Archlinux}
+% 
+%     Note:   
+%         - The width of the columns can be adjusted by the \setcvskillcolumns command, see \setcvskillcolumns.
+
+% Definition of \cvskillentry
+%\RenewDocumentCommand\cvskillentry{s +O{.25em} +m +m +m +m +m}{%
+%    %test for the star * in the command
+%    \IfBooleanTF{#1}{% If a star is seen a dotted line is drawn above the entry
+%        \begingroup
+%            \renewcommand{\arraystretch}{1.1}
+%            \arrayrulecolor{awesome}
+%            % [*][<post_padding>]{<skill_category>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}%
+%            \begin{tabular}{| p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}} | p{\cvskill@width}@{\hspace{\skillmatrix@padding}} | p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}} | p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} | p{\skillmatrix@commentwidth}@{} | } %
+%                \cdashline{2-5}[.6pt/1pt] %
+%                \raggedleft \entrypositionstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%                %\raggedleft \hintstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%            \end{tabular}%
+%        \endgroup
+%        \par\addvspace{#2}
+%    }{
+%% If no star is seen no line is drawn
+%\begin{tabular}{|p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}} | %
+%p{\cvskill@width}@{\hspace{\skillmatrix@padding}} | %
+%p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}} | %
+%p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} | %
+%p{\skillmatrix@commentwidth}@{} |}%
+%%\raggedleft \skilltypestyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%\raggedleft \entrypositionstyle{#3} & \centering \cvskill{#4} & \centering {\skilldetailstyle{#5}} & \centering \skilldetailstyle{#6} & {\skilldetailstyle{ #7}}%
+%
+%\end{tabular}%
+%\par\addvspace{#2}
+%}
+%}
+
+
+    \DeclareDocumentCommand\@starIndependentMatrixEntry{}{}%
+    \RenewDocumentCommand\cvskillentry{s O{.25em} +m +m +m +m +m}{%
+        \arrayrulecolor{awesome}%
+        \setlength\arrayrulewidth{\separatorrulewidth}%
+        \vspace*{-\separatorrulewidth}% HACK; I don't understand where the space is coming from, nor what it's exact value is :(
+        %test for the star * in the command. 
+        \RenewDocumentCommand{\@starIndependentMatrixEntry}{}{%
+        %\fbox{
+            \begingroup%
+                % \renewcommand{\arraystretch}{1.25}%
+%                \addvbuffer[1pt 2pt]
+                \begin{tabular}[c!]{ @{} p{\hintscolumnwidth}@{\hspace{\skillmatrix@padding}}%
+                                %@{\hspace{\separatorcolumnwidth}}@{\hspace{\separatorcolumnwidth}} 
+                                         p{\skillmatrix@hintscolumnwidth} @{\hspace{\skillmatrix@padding}}%
+                                         p{\cvskill@width}@{\hspace{\skillmatrix@padding}} | %
+                                         p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}} | %
+                                         p{\cvskill@experiencewidth}@{\hspace{\skillmatrix@padding}} p{\skillmatrix@commentwidth}@{}}%
+                     %\cline{3-6}%
+    %\hline
+                    & \entrypositionstyle{#3}\hspace*{3\skillmatrix@padding} & \centering \cvskill{#4} & \centering \skilldetailstyle {#5} &  \centering \skilldetailstyle{#6} & \skilldetailstyle{#7} \\[#2]%                  
+                    % \skilldetailstyle{#7} \\[#2]%
+                \end{tabular}%
+            \endgroup%
+            %}
+        }%
+        \IfBooleanTF{#1}{% the star does not do anything here
+            \@starIndependentMatrixEntry%
+        }{% 
+            \@starIndependentMatrixEntry%
+        }%
+        \\[-0.5\baselineskip] %\newline\@aftersectionfalse\ignorespaces%
+    }%
+
+\makeatother
+%%%%%%%%%%%%%%%%
+
+% 1 : skill type
+% 2 : columns 2,3,4
+% 3 : size of year 
+\setcvskillcolumns[\widthof{ \entrypositionstyle{Presentations111}} ][0.425][2em]
+
+% \setcvskillcolumns[][0.3][2em]
+
+\hypersetup{%
+  pdftitle={David Sinden - Publication List},
+  pdfauthor={David Sinden},
+  pdfsubject={Publication List},
+  pdfkeywords={CV, Applied Maths, Ultrasound}
+}
+
+
+\begin{document}
+
+\makecvfooter
+  {April, 2023}
+    {David Sinden~~~·~~~publication\_list\_sinden}
+  {\thepage\ ~of~ \pageref{LastPage}}
+
+
+\hypertarget{publications-preprints}{\section{Publications \& Preprints}\label{publications-preprints}}
+
+\footnotesize
+In descending chronological order. Citation data from Google Scholar.
+%\vfill
+
+\begin{cvhonorsStretch}
+%\vfill
+%\cvhonor{<position>}{<title>}{<location>}{<date>}
+%
+\cvhonorStretch[2]{}{Pauline Coralie Guillemin, \textcolor{awesome}{\underline{David Sinden}}, Yacine M’Rad, Michael Schwenke, Jennifer Le Guevelou, Johan Uiterwijk, Orane Lorton, Max Scheffler, Pierre-Alexandre Poletti, J\"{u}rgen Jenne, Thomas Zilli, and Rares Salomir, %
+\href{https://www.mdpi.com/2072-6694/15/1/163/pdf}{\enquote{A novel concept of transperineal focused ultrasound transducer for prostate cancer local deep hyperthermia treatments}}. \emph{Cancers} 15, 163}{---}{2022}
+%\vfill
+%
+\cvhonorStretch[2]{}{Christina A. Neizert, Hoang N. C. Do, Miriam Zibell, Christian Rieder, \textcolor{awesome}{\underline{David Sinden}}, Stefan M. Niehues, Janis L. Vahldiek, Kai S. Lehmann, and Franz G. M. Poch, \href{https://doi.org/10.1038/s41598-022-21437-4}{\enquote{Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model}}, \emph{Sci. Rep.} 12, 17061}{cites: 2}{2022}
+%
+%\vfill
+\cvhonorStretch[0.05]{}{Karl Heimes, Marina Evers, Tim Gerrits, Sandeep Gyawali, \textcolor{awesome}{\underline{David Sinden}}, Tobias Preusser, and Lars Linsen, \href{https://doi.org/10.2312/vcbm.20221187}{\enquote{Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis}}, in Eurographics Workshop on Visual Computing for Biology and Medicine, edited by Renata G. Raidou, Bj\"{o}rn Sommer, Torsten W. Kuhlen, Michael Krone, Thomas Schultz, and Hsiang--Yun Wu (The Eurographics Association, 2022) ISBN 978-3-03868-177-9, ISSN 2070-5786}{---}{2022}
+%
+%\vfill
+%
+% \cvhonorStretch[0.05]{}{}{}{}
+%
+\cvhonorStretch[1]{}{Santeri Kaupinm\"{a}ki, Ben Cox, Simon Arridge, Christian Baker, \textcolor{awesome}{\underline{David Sinden}}, and Bajram Zeqiri, \href{https://doi.org/10.1088/1361-6501/abc866}{\enquote{Pyroelectric ultrasound sensor model: directional response}}, \emph{Meas. Sci. Technol.} 32, 035106}{cites: 4}{2021}
+%
+%
+%\vfill
+\cvhonorStretch[2]{}{Dongwoon Hyun, Alycen Wiacek, Sobhan Goudarzi, Sven Rothlübbers, Amir Asif, Klaus Eickel, Yonina C. Eldar, Jiaqi Huang, Massimo Mischi, Hassan Rivaz, \textcolor{awesome}{\underline{David Sinden}}, Ruud J. G. van Sloun, Hannah Strohm, and Muyinatu A. Lediju Bell, \href{https://doi.org/10.1109/TUFFC.2021.3094849}{\enquote{Deep learning for ultrasound image formation: CUBDL evaluation framework and open datasets}}, \emph{IEEE Trans. Ultrason. Ferroelectr. Freq. Control} 68, 3466-–3483}{cites: 54}{2021}
+%
+%\vfill
+\cvhonorStretch[2]{}{Sven Rothl\"{u}bbers, Hannah Strohm, Klaus Eickel, J\"{u}rgen Jenne, Vincent Kuhlen, \textcolor{awesome}{\underline{David Sinden}}, and Matthias G\"{u}nther, \href{https://doi.org/10.1109/IUS46767.2020.9251322}{\enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding}}, \emph{2020 IEEE International Ultrasonics Symposium~(IUS)} pp. 1-–4}{cites: 22}{2020}
+%\vfill
+%
+\cvhonorStretch[2]{}{Nadia A. S. Smith, \textcolor{awesome}{\underline{David Sinden}}, Spencer A. Thomas, Marina Romanchikova, Jessica E. Talbott, and Michael Adeogun, \href{https://doi.org/10.1259/bjr.20190574}{\enquote{Building confidence in digital health through metrology}}, \emph{Br. J. Radiol.} 93, 20190574}{cites: 12}{2020}
+%
+%\vfill
+\cvhonorStretch[2]{}{Ki Joo Pahk, Pierre Gélat, \textcolor{awesome}{\underline{David Sinden}}, Dipok Kumar Dhar, and Nader Saffari, \href{https://doi.org/10.1016/j.ultrasmedbio.2017.08.938}{\enquote{Numerical and experimental study of mechanisms involved in boiling histotripsy}}, \emph{Ultrasound Med. Biol.} 43, 2848-–2861}{cites: 37}{2017}
+%
+%\vfill
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}}, Srinath Rajagopal, N. Christopher Chaggares, Guofeng Pang, and Oleg Ivanytskyy, \href{https://doi.org/10.1109/ULTSYM.2017.8091600}{\enquote{Reducing uncertainties for spatial averaging at high frequencies}}, \emph{2017 IEEE International Ultrasonics Symposium~(IUS)} (IEEE, 2017) pp. 1–4}{cites: 1}{2017}
+%
+%\vfill
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}} and Gail ter Haar, \href{https://doi.org/10.3978/j.issn.2218-676X.2014.10.02}{\enquote{Dosimetry implications for correct ultrasound dose deposition: uncertainties in descriptors, planning and treatment delivery}}, \emph{Trans. Cancer Res.} 3, 459-–471}{cites: 10}{2014}
+%
+%\vfill
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}}, Eleanor Stride, and Nader Saffari, \href{https://doi.org/10.1088/1742-6596/353/1/012008}{\enquote{Approximations for acoustically excited bubble cluster dynamics}}, \emph{J. Phys.: Conf. Ser.}, Vol. 353 (IOP Publishing, 2012) p. 012008}{cites: 3}{2012}
+%
+%\vfill
+\cvhonorStretch[2]{}{Gert H. M. van der Heijden and \textcolor{awesome}{\underline{David Sinden}}, \enquote{Localisation of a twisted conducting rod in a uniform magnetic field: the Hamiltonian-Hopf-Hopf bifurcation}, in Proc. 7$^\text{th}$ European Nonlinear Dynamics Conference (ENOC 2011), edited by D. Bernardini, G. Rega, and F. Romeo (European Mechanics Society, 2011) p. 4, ISBN 978-88-906234-2-4}{cites: 2}{2011}
+% \href{https://www.worldcat.org/title/proceedings-of-the-7th-european-nonlinear-dynamics-conference-enoc-2011-july-24-29-2011-rome-italy/oclc/804881785}{\textcolor{cyan}{\texttt{isbn:9788890623424}} }
+%\vfill
+%
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}} and Gert H. M. van der Heijden, \enquote{The buckling of magneto-strictive Cosserat rods}, in Proc. 7$^\text{th}$ European Nonlinear Dynamics Conference (ENOC 2011), edited by D. Bernardini, G. Rega, and F. Romeo (European Mechanics Society, 2011) p. 4, ISBN 978-88-906234-2-4}{---}{2011}
+%\vfill
+%
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}}, Eleanor Stride, and Nader Saffari, \href{https://doi.org/10.1088/1742-6596/195/1/012008}{\enquote{The effects of nonlinear wave propagation on the stability of inertial cavitation}}, \emph{J. Phys.: Conf. Ser.}, Vol. 195 (IOP Publishing, 2009) p. 012008}{cites: 3}{2009}
+%
+%\vfill
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}} and Gert H. M. van der Heijden, \href{https://doi.org/10.1088/1751-8113/42/37/375207}{\enquote{Spatial chaos of an extensible conducting rod in a uniform magnetic field}}, \emph{J. Phys. A: Math. Theor.} 42, 375207}{cites: 10}{2009}
+%
+%\vfill
+\cvhonorStretch[2]{}{\textcolor{awesome}{\underline{David Sinden}} and Gert H. M. van der Heijden, \href{https://doi.org/10.1088/1751-8113/41/4/045207}{\enquote{Integrability of a conducting elastic rod in a magnetic field}}, \newline\emph{J. Phys. A: Math. Theor.} 41, 045207}{cites: 10}{2008}
+%
+%\vfill
+\end{cvhonorsStretch}
+%\vfill
+\end{document}
