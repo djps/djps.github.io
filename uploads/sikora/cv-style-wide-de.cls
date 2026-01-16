@@ -170,13 +170,13 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture, overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=1.5cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=1.5cm] (box) at ([yshift=-0.6em]current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{30pt}{50pt}\color{header}%
       %\fontsize{40pt}{65pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
-    \node[anchor=north, text=pink] (details) at ([yshift=0.5em]box.south) {%
+    \node[anchor=north, text=pink] (details) at ([yshift=-99.5em]box.south) {%
       %\color{header}
       {\small #3}
     };
@@ -231,7 +231,7 @@
 \setlength{\TPVertModule}{1cm}
 
 \newcommand{\lastupdated}{ 
-  \begin{textblock}{1}(6, 0.05)
+  \begin{textblock}{1}(6, 0.45)
     \raggedleft
     \fontsize{8pt}{10pt}\color{date}\thinfont 
     \lastupdatedtext{} \today
@@ -369,7 +369,7 @@
 
 \newenvironment{NoHyphItemize}
   {%
-    \begin{itemize}[topsep=0pt, rightmargin=0.4cm]
+    \begin{itemize}[topsep=0pt, rightmargin=0.2cm]
       \hyphenpenalty=10000
       \exhyphenpenalty=10000
       \sloppy
