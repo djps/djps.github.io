@@ -725,12 +725,20 @@
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0.5em}
     %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
-    \begin{tabular*}{\textwidth}%
-    {>{\centering\arraybackslash}m{1.0cm} >{\raggedright\arraybackslash} m{\textwidth - 3.0cm} >{\raggedleft\arraybackslash}b{2.0cm} }
+%    \begin{tabular*}{\textwidth}%
+%    {>{\centering\arraybackslash}m{1.0cm} >{\raggedright\arraybackslash} m{\textwidth - 3.0cm} >{\raggedleft\arraybackslash}b{2.0cm} }
+%}{%
+%    \end{tabular*}
+
+    \begin{longtable}%
+    {>{\centering\arraybackslash}m{1.0cm} >{\raggedright\arraybackslash}m{\textwidth - 3.0cm} >{\raggedleft\arraybackslash}b{2.0cm}}
 }{%
-    \end{tabular*}
+    \end{longtable}
+
   \end{center}
 }
+
+
 
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonorStretch{<position>}{<title>}{<location>}{<date>}

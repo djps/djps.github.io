@@ -1,0 +1,288 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[english]{cv-style}     
+     
+% Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+% Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+%\sethyphenation[variant=british]{english}{Uniform} % Add words between the {} to avoid them to be cut 
+
+% implemented, lead, revolutionised, leveraged, conduct, explore, manage,% detail (or results) orientated / accomplihsed / skilled / experienced
+% evidence everything
+% boost /itk, eigen, vtk
+% Add years to experience.
+% Add seeking part to statement
+% remove address?
+
+
+\begin{hyphenrules}{english}
+\hyphenation{Uniform}
+\end{hyphenrules}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle=CV David Sinden,
+    pdfauthor=David Sinden,
+    pdfsubject={CV, Resume},
+    colorlinks=false,
+    linkbordercolor=blue,
+    urlbordercolor=red
+}
+
+\begin{document}
+
+\settowidth{\bwidth}{BSc}
+\settowidth{\mwidth}{MSc}
+\settowidth{\pwidth}{PhD}
+
+\setlength{\diffbwidth}{\mwidth - \bwidth}
+\setlength{\diffpwidth}{\mwidth - \pwidth}
+
+\header{David }{Sinden}         % Your name
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+\begin{aside}
+%
+\section{Contact}\vspace{0.5\baselineskip}
+%\textcolor{darkgray}{\faMapMarker}$\quad$
+Max-Planck-Str. 43
+28357 Bremen
+Germany
+~
+%\textcolor{darkgray}{\faPhone}$\quad$
++49 176 343 68520
+~
+%\textcolor{darkgray}{\faAt}$\quad$
+\href{mailto:david.sinden@gmail.com}{david.sinden@gmail.com}
+%
+\section{Links}\vspace{0.5\baselineskip}
+home: \href{https://djps.github.io}{djps.github.io}\vspace{0.5\baselineskip}
+%
+\href{https://github.com/djps}{github: djps}\vspace{0.5\baselineskip}
+%
+\href{https://www.linkedin.com/in/sindendavid/}{linkedin: sindendavid}\vspace{0.5\baselineskip}
+%
+\href{https://x.com/david_sinden}{twitter: @david\_{}sinden}
+%
+%\textcolor{darkgray}{\faLink}$\quad$
+%\href{https://djps.github.io}{\textcolor{darkgray}{\texttt{djps.github.io}}}%\vspace{-0.15\baselineskip}
+%\href{https://github.com/djps}{\textcolor{darkgray}{\texttt{github.com/djps}}}%\vspace{-0.15\baselineskip}
+%\href{https://www.linkedin.com/in/sindendavid/}{\textcolor{darkgray}{\texttt{linkedin.com/in/sindendavid}}}
+%
+\section{Languages}\vspace{0.5\baselineskip}
+%
+English: native, German: B2.1% \vspace{0.5\baselineskip}
+%German: B2.1
+%
+\section{Programming}\vspace{0.5\baselineskip}
+\emph{scientific programming}: C++, python, matlab, fortran, java
+~
+\emph{computational}: FEniCS, Comsol
+~
+\emph{accelerators}: openCL, numba, cupy
+~
+\emph{libraries}: ITK, VTK, boost, eigen
+%
+\section{Tools}\vspace{0.5\baselineskip}
+%{\emph{version control}: git, svn}\vspace{0.5\baselineskip}
+%{\emph{CI/CD}: github, gitlab}\vspace{0.5\baselineskip}
+%\emph{testing}: google test, pytest\vspace{0.5\baselineskip}
+%\emph{documentation}: sphinx, doxygen\vspace{0.5\baselineskip}
+%\emph{build systems}: make, cmake, visual studio\vspace{0.5\baselineskip}
+%\emph{presentation}: \LaTeX{}, html, css~(tailwind, bootstrap)
+\emph{version control}: git, svn
+~
+\emph{CI/CD}: github, gitlab
+~
+\emph{testing}: google test, pytest
+~
+\emph{documentation}: sphinx, doxygen
+~
+\emph{build systems}: make, cmake, visual studio
+%\emph{presentation}: \LaTeX{}, html, css~(tailwind, bootstrap)
+%
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+  \vspace{-0.2cm}  
+
+% Experienced scientist with a demonstrated history of developing product-level code and algorithms in close collaboration with business partners and end customers. Over 10 years of experience in the domain of external beam radiation therapy, developing automatic segmentation algorithms and advanced algorithms for plan optimization. Recent projects on anatomical mapping for cardiac electro-physiology as well as cone-beam reconstruction for c-arm systems. Over 20 years of experience using and developing statistical machine learning methods. I master C++, python, *nix, work agile, believe in test-driven development, CI/CD, and quickly learn tools that help improve efficiency. Basic knowledge in containerization, cuda, PyTorch. My interests are to work on developing machine learning methods in combination with (advanced) physical and mathematical modeling - together with friendly and collaborative colleagues.
+
+%\item[\checkmark] Implemented XYZ method - Accomplished [X] as measured by [Y], by doing [Z] 
+%    \item[\checkmark] Developed XYZ using ABC that led to X\% improvement 
+%    \item[\checkmark] Solved ABC with AAA method leading to CCC.
+%    \item[\checkmark] Implemented XYZ library for ABC.
+%    \item[\checkmark] Utilized XYZ that increased AA by x\%
+
+Innovative applied mathematician with a strong track record in scientific computation, with over 15 years' experience working in applied research with a focus \myhl{numerical modelling} applied to medical interventions. Looking for new opportunities.
+  \begin{NoHyphItemize}
+    \item Formulates realistic yet tractable mathematical models, and associated deployable, tested and documented simulations.  Excellent coding and software development skills developed through deployment into clinical and commercial environments, satisfying ISO 13485 standard.  
+    \item Communication skills refined through working in multi-disciplinary, international teams at the interface of academic research and industry; lecturing and teaching at universities; delivering invited presentations at international conferences.
+    \item 17 \href{https://scholar.google.co.uk/citations?user=lauJqakAAAAJ&hl=en}{peer-reviewed journal papers} (with over 250 citations), 1 book chapter, acquisition of grants ($\sim$500,000\euro), 12 invited presentations, industrial supervisor to three PhD students, an MSc student, and maintainer of widely used open source code, \href{https://k-wave-python.readthedocs.io/en/latest/index.html#citation}{k-wave-python}
+  \end{NoHyphItemize}
+  
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vfill
+
+\section{Experience}
+\vspace{-0.2cm}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2019--}
+  {Fraunhofer Institute for Digital Medicine MEVIS}
+  {Bremen, Germany}
+  {\jobtitle{Senior Research Scientist - Modelling and Simulation Group}
+  \begin{itemize}[topsep=0pt]
+\item Developed large-scale yet clinically relevant thermal ablation simulations for microwave and ultrasound therapies.
+\item Fast ultrasound beamforming algorithms, developed simulator for transcranial acoustic/elastic propagation for imaging.
+% \item Uncertainty analysis for pharmacokinetic modelling to inform modelling formulation and experimental design
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2014--2019}
+  {National Physical Laboratory}
+  {Teddington, United Kingdom}
+  {\jobtitle{Senior Research Scientist - Medical Ultrasound Group}
+  \begin{itemize}
+% \item Developed numerical tools for ultrasonic field characterisation for certification
+\item Established measurement-based simulation for nonlinear propagation through complex media for accurate predictions, included in IEC standard. 
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2011--2014}
+  {Institute of Cancer Research/The Royal Marsden Hospital}
+  {Sutton, United Kingdom}
+  {\jobtitle{Post-Doctoral Research Associate - Focused Ultrasound Group}
+    \begin{itemize}
+    \item Development of ultrasound-guided high-intensity focused ultrasound \newline{}treatment planning system with a multi-element phased-array. 
+    \end{itemize}}
+%------------------------------------------------
+\entry
+  {2008--2011}
+  {University College London}
+  {London, United Kingdom}
+  {\jobtitle{Post-Doctoral Research Associate - Dept. Mechanical Engineering}
+  	\begin{itemize}
+      \item Investigation of influence of cavitation on therapeutic ultrasound treatment.
+    \end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vfill
+
+\vspace{-0.2cm}
+\section{Education}
+\vspace{-0.2cm}
+%------------------------------------------------
+\begin{entrylist}
+%\vspace*{-0.5cm}
+\entry
+{2004--2008}
+{PhD \hspace{\diffpwidth/2}-\hspace{\diffpwidth/2} Dynamical Systems}
+{%\setulcolor{MidnightBlue}%
+ %\setul{0.5ex}{0.4pt}%
+ %\href{https://ucl.ac.uk}{\ul{University College London}}
+University College London%
+}%
+{\enquote{Integrability, Localisation and Bifurcation of an Elastic Conducting Rod in a \newline{Uniform} Magnetic Field}, (Advisor: Prof. Gert van der Heijden%\href{https://profiles.ucl.ac.uk/12184-gert-van-der-heijden}{Prof. Gert van der Heijden}%
+)}
+%------------------------------------------------
+\vspace*{-0.5cm}\entry
+{2003--2004}
+{MSc - Modern Applications of Mathematics}
+{%\setulcolor{MidnightBlue}%
+ %\setul{0.5ex}{0.4pt}%
+ %\href{https://bath.ac.uk}{\ul{University of Bath}}%
+University of Bath%
+}%
+{}
+%------------------------------------------------
+\vspace*{-0.5cm}\entry
+{2000--2003}
+{BSc \hspace{\diffbwidth/2}-\hspace{\diffbwidth/2} Mathematics with Appl. Math./Math. Phys.}
+{%
+Imperial College London%
+%\setulcolor{MidnightBlue}%
+% \setul{0.5ex}{0.4pt}%
+% \href{https://imperial.ac.uk}{\ul{Imperial College London}}%
+}%
+{}
+
+%------------------------------------------------
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\vfill
+
+\section{Awards \& Esteem Indicators}
+\vspace{-0.2cm}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2020}
+{IEEE IUS Challenge on Ultrasound Beamforming with Deep Learning (CUBDL)}
+{~}
+%{Joint~\newhl{first place}~in IEEE IUS Challenge for \enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding} (2020) }
+{Joint~first place~in IEEE IUS Challenge for \enquote{Improving image quality of single plane wave ultrasound via deep learning based channel compounding} (2020) }
+
+\entry
+{2015-}
+{International Expert}
+{~}
+{Member of IEC Technical Committee 87 (Ultrasonics), BSI}
+%
+%
+%\entry
+%{2020}
+%{Award name}
+%{~}
+%{Award description. Award description. Award description. Award description. Award description. Award description. Award description. }
+%
+\entry
+{Various}
+{EPSRC Enhanced Scholarships}
+{~}
+{Enhanced funding for MSc (2004), PhD (2008) and post-doctoral work (2014)}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{interests}
+%  \vspace{-0.2cm}
+%
+%\textbf{professional:} professional interest 1, professional interest 2 and professional interest 3.\newline 
+%\textbf{personal:} Running
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%\vfill
+%
+%\section{Referees}
+%  \vspace{-0.2cm}
+%Available on request.
+%----------------------------------------------------------------------------------------
+\end{document}

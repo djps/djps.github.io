@@ -1,0 +1,137 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[german, print]{cv-style-wide}
+
+\usepackage{changepage}
+
+\usepackage[unicode,
+            colorlinks=false,
+            bookmarks=true,
+            bookmarksopen=true,
+            bookmarksdepth=2
+           ]{hyperref}
+\hypersetup{
+    pdftitle={Curriculum Vitae},
+    pdfauthor={},
+    pdfsubject={CV},
+    colorlinks=false
+}
+
+\begin{document}
+
+\settowidth{\bwidth}{BSc}
+\settowidth{\mwidth}{MSc}
+\settowidth{\pwidth}{PhD}
+
+\header{Vorname}{Nachname}{}
+
+\begin{center}
+home: \href{https://example.com}{example.com} \quad
+github: anonymized \quad
+linkedin: anonymized \quad
+xing: anonymized \quad
+\href{mailto:email@example.com}{email@example.com} \\
+Stadt, Land \quad Staatsangehörigkeit, Wohnsitz \\
+\end{center}
+
+\lastupdated
+
+\vspace{0.5cm}
+
+Innovativer angewandter Mathematiker mit langjähriger Erfahrung in wissenschaftlicher Datenverarbeitung und über 15 Jahren \\
+Berufserfahrung in der angewandten Forschung mit Schwerpunkt auf medizinischen Interventionen. International anerkannter Experte \\
+für Ultraschallsimulation in Therapie und Diagnostik. Auf der Suche nach neuen Herausforderungen in der Modellierung zur \\
+Unterstützung der Entwicklung medizinischer Geräte. Umzugsbereit.
+\begin{NoHyphItemize}
+  \item Erstellt realistische und gleichzeitig handhabbare mathematische Modelle sowie einsetzbare, getestete und dokumentierte Simulationen. Ausgezeichnete Programmier- und Softwareentwicklungskenntnisse, erfüllt ISO 13485/IEC 62304.
+  \item Kommunikationsfähigkeiten, verfeinert durch Arbeit in multidisziplinären, internationalen Teams, Lehr- und Vortragstätigkeit an Universitäten und Konferenzen.
+  \item 17 begutachtete Zeitschriftenartikel (über 250 Zitierungen), ein Buchkapitel, eingeworbene Fördermittel (über 500.000 €), 12 eingeladene Vorträge, Betreuung von drei Doktoranden und einem Masterstudenten sowie Pflege des Open-Source-Codes \href{https://k-wave-python.readthedocs.io}{k-wave-python}.
+\end{NoHyphItemize}
+
+\section{Berufliche Erfahrungen}
+
+\begin{entrylist}
+
+\entry
+  {Nov 2019--}
+  {Fraunhofer-Institut für Digitale Medizin MEVIS}
+  {Bremen, Deutschland}
+  {\jobtitle{Leitender Wissenschaftler — Modellierungs- und Simulationsgruppe\\
+   \textnormal{Fähigkeiten: python, VTK, Ultraschallmodellierung, Behandlungsplanung, Softwareentwicklung, Elastographie, Unsicherheitsanalyse}}%
+   \begin{itemize}[topsep=0pt]
+     \item Entwicklung groß angelegter Simulationen für Mikrowellen- und Ultraschallablationstherapien durch Konzeption und Parallelisierung leistungsstarker numerischer Methoden zur klinisch relevanten Behandlungsplanung.
+     \item Entwicklung schneller Ultraschall-Beamforming-Algorithmen und eines transkraniellen akustischen/elastischen Ausbreitungssimulators mittels GPU-beschleunigter Techniken.
+   \end{itemize}}
+
+\entry
+  {Jun 2014--Nov 2019}
+  {National Physical Laboratory}
+  {Teddington, Vereinigtes Königreich}
+  {\jobtitle{Leitender Wissenschaftler — Gruppe für Ultraschall und Unterwasserakustik\\
+   \textnormal{Fähigkeiten: python, matlab, FEM (COMSOL, FeniCS), Ultraschallmodellierung, Signalverarbeitung}}%
+   \begin{itemize}
+     \item Etablierung messbasierter Simulation nichtlinearer Ausbreitung komplexer Medien; Integration empirischer Daten in Rechenmodelle, Aufnahme in IEC 63587.
+   \end{itemize}}
+
+\entry
+  {Jun 2011--Jun 2014}
+  {Institute of Cancer Research / The Royal Marsden Hospital}
+  {Sutton, Vereinigtes Königreich}
+  {\jobtitle{Postdoktoranden-Wissenschaftler — Therapeutische Ultraschallgruppe / Physik\\
+   \textnormal{Fähigkeiten: python, VTK, ultrasound modelling, treatment planning, software development}}%
+   \begin{itemize}
+     \item Entwicklung eines hochintensiven fokussierten Ultraschall-Behandlungsplanungssystems mit Multi-Element-Phased-Array zur präzisen Fokussteuerung und Sicherheit.
+   \end{itemize}}
+
+\entry
+  {Jun 2008--Jun 2011}
+  {University College London}
+  {London, Vereinigtes Königreich}
+  {\jobtitle{Postdoktoranden-Wissenschaftler — Ultraschallgruppe / Maschinenbau\\
+   \textnormal{Fähigkeiten: Mathematische Modellierung, Fortran, Differentialgleichungen}}%
+   \begin{itemize}
+     \item Untersuchung des Einflusses von Kavitation auf therapeutischen Ultraschall mittels numerischer und analytischer Verfahren zur Optimierung von Wirksamkeit und Sicherheit.
+   \end{itemize}}
+
+\end{entrylist}
+
+\section{Ausbildung}
+
+\begin{entrylist}
+\threeentry{2004--2008}{PhD — Dynamical Systems}{University College London, Vereinigtes Königreich}{}
+\threeentry{2003--2004}{MSc — Modern Applications of Mathematics}{University of Bath, Vereinigtes Königreich}{}
+\threeentry{2000--2003}{BSc — Mathematics with Applied Math./Math. Physics}{Imperial College London, Vereinigtes Königreich}{}
+\end{entrylist}
+
+\section{Auszeichnungen \& Wertschätzungsindikatoren}
+
+\begin{entrylist}
+\entry
+  {2020}
+  {IEEE IUS Challenge on Ultrasound Beamforming with Deep Learning (CUBDL)}
+  {}
+  {Gemeinsamer erster Platz bei internationalem ML-Wettbewerb zur Ultraschallbildrekonstruktion (2020)}
+
+\entry
+  {2015--}
+  {Internationaler Experte}
+  {}
+  {Mitglied IEC/BSI TC 87 (Ultrasonics), Mitarbeiter Institute of Mathematics and its Applications, Vollmitglied Institute of Physics}
+
+\entry
+  {Mehrere}
+  {Erweiterte Stipendien}
+  {}
+  {Fördermittel für MSc (2004), PhD (2008) und Postdoc (2014) durch EPSRC.}
+\end{entrylist}
+
+\section{Zusatzqualifikationen}
+
+\begin{tabular}{p{0.6\textwidth} p{0.4\textwidth}}
+\textbf{Programming:} python, C++, Matlab, OpenCL & \textbf{Libraries:} ITK, VTK, boost, eigen \\
+\textbf{DevOps:} git, svn, github, gitlab, google test, pytest, make, cmake, visual studio & \textbf{Computation:} FEniCS, Comsol \\
+\textbf{Sprachen:} Englisch (Muttersprache), Deutsch (B2.1) & \\
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,415 @@
+\documentclass[11pt, a4paper, sans]{moderncv}        
+% possible options include:
+% font size ('10pt', '11pt' and '12pt'), 
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') 
+% font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\moderncvcolor{custom}                               
+% color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple', 'red' and 'custom'
+
+\renewcommand{\familydefault}{\sfdefault}         
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+%\nopagenumbers{}                                  
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{fancyhdr}
+% \usepackage{hyperref}
+
+% adjust the page margins
+\usepackage{geometry}
+
+% footer details
+\usepackage{lastpage}
+
+% Configure page margins with geometry
+\geometry{left=2.4cm, top=2.8cm, right=2.4cm, bottom=2.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+%\fontdir[/usr/share/texlive/texmf-dist/fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+
+\setlength{\footskip}{36.00005pt}                 
+% depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+
+%\setlength{\hintscolumnwidth}{3cm}                
+% if you want to change the width of the column with the dates
+
+%\setlength{\makecvheadnamewidth}{10cm}            
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage{academicons}
+\RequirePackage[default,opentype]{sourcesanspro}
+%-------------------------------------------------------------------------------
+%                Configuration for fonts
+%-------------------------------------------------------------------------------
+% Set the FontAwesome font to be up-to-date.
+%\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+% Set font for header (default is Roboto)
+\newfontfamily\headerfont[
+  %Path=\@fontdir,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+]{Roboto}
+
+\newfontfamily\headerfontlight[
+  %Path=\@fontdir,
+  UprightFont=*-Thin,
+  ItalicFont=*-ThinItalic,
+  BoldFont=*-Medium,
+  BoldItalicFont=*-MediumItalic,
+]{Roboto}
+
+\newcommand*{\footerfont}{\sourcesanspro}
+\newcommand*{\bodyfont}{\sourcesanspro}
+\newcommand*{\bodyfontlight}{\sourcesansprolight}
+
+%-------------------------------------------------------------------------------
+%                Configuration for styles
+%-------------------------------------------------------------------------------
+% Configure styles for each CV elements
+% For fundamental structures
+
+
+
+% Boolean value to switch section color highlighting
+\newbool{acvSectionColorHighlight}
+\setbool{acvSectionColorHighlight}{true}
+
+% Awesome section color
+\def\@sectioncolor#1#2#3{%
+  \ifbool{acvSectionColorHighlight}{{\color{custom}#1#2#3}}{#1#2#3}%
+}
+
+
+% Colors 
+\definecolor{darktext}{HTML}{414141}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{5D5D5D}
+\definecolor{lightgray}{HTML}{999999}
+
+% Text colors
+\colorlet{text}{darkgray}
+\colorlet{graytext}{gray}
+\colorlet{lighttext}{lightgray}
+
+
+
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+
+% \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
+
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{lighttext} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+% footer text style
+\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
+
+\renewcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\renewcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
+\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
+
+% For elements of entry
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{custom} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
+% For elements of subentry
+\newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
+\newcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{custom} #1}}
+\newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
+% For elements of honor
+\newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{custom} #1}}
+
+% For elements of skill
+\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+
+\newcommand*{\skilldetailstyle}[1]{{\fontsize{9pt}{0em}\bodyfontlight\color{text} #1}}
+
+% For elements of the cover letter
+\newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
+\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
+
+
+
+
+% Define a footer for CV
+% Usage: \makecvfooter{<left>}{<center>}{<right>}
+\newcommand*{\makecvfooter}[3]{%
+  \fancyfoot{}
+  \fancyfoot[L]{\footerstyle{#1}}
+  \fancyfoot[C]{\footerstyle{#2}}
+  \fancyfoot[R]{\footerstyle{#3}}
+}
+
+\fancypagestyle{plain}{
+  \fancyfoot{} % clear all header and footer fields
+  \fancyfoot[L]{December, 2023}
+  \fancyfoot[C]{David Sinden~~~·~~~Research Statement}
+  \fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+}
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{csquotes}
+
+\newcommand{\myname}[1]{\uline{#1}}
+
+% personal data
+\name{David}{Sinden}
+\title{Applied Mathematician --- Curriculum Vitae}     % optional, remove / comment the line if not wanted
+
+\email{david.sinden@gmail.com}                         % optional, remove / comment the line if not wanted
+\homepage{djps.github.io}                              % optional, remove / comment the line if not wanted
+
+% Social icons
+\social[linkedin]{sindendavid}                         % optional, remove / comment the line if not wanted
+\social[twitter]{david\_sinden}                        % optional, remove / comment the line if not wanted
+\social[github]{djps}                                  % optional, remove / comment the line if not wanted
+\social[orcid]{0000-0002-8514-8279}                    % optional, remove / comment the line if not wanted
+\social[researchgate]{David-Sinden}                    % optional, remove / comment the line if not wanted
+\social[googlescholar]{lauJqakAAAAJ}                   % optional, remove / comment the line if not wanted
+
+
+%%%%%
+%% Add the field "lettersubject" to the definition of the letter header
+%\makeatletter
+%\newcommand\lettersubject[1]{\def\@lettersubject{#1}}
+%
+%\renewcommand*{\makeletterhead}{%
+%  \makehead%
+%  \par%
+%  \begin{minipage}[t]{.5\textwidth}
+%    \raggedright%
+%    \addressfont%
+%    {\bfseries\upshape\@recipientname}\\%
+%    \@recipientaddress%
+%  \end{minipage}
+%  % date
+%  \hfill% US style
+%%  \\[1em]% UK style
+%  \@date\\[2em]% US informal style: "January 1, 1900"; UK formal style: "01/01/1900"
+%  %________ADDED_<<<<<<
+%\bigskip
+%\textbf{Subject: \@lettersubject}\\
+%\noindent
+%%_______________________
+%  % opening
+%  \raggedright%
+%  \@opening\\[1.5em]%
+%  % ensure no extra spacing after \makelettertitle due to a possible blank line
+%  \hspace{0pt}\par\vspace{-\baselineskip}\vspace{-\parskip}}
+%\makeatother
+%%%%%
+
+%-------------------------------------------------------------------------------
+%                letter head definition
+%-------------------------------------------------------------------------------
+% lengths
+%\renewcommand*{\recomputeletterheadlengths}{}
+
+\renewcommand*{\addressfont}{\small\mdseries}
+
+\extrainfo{\href{https://www.github.com/djps}{\githubsocialsymbol}~djps~{\upshape{}|}~\href{https://www.twitter.com/david_sinden}{\twittersocialsymbol}~%
+           david\_{}sinden}
+
+% commands
+\makeatletter
+\newcommand*{\makemyletterhead}{%
+  % recompute lengths (in case we are switching from letter to resume, or vice versa)
+  \recomputeletterlengths%
+  % sender contact info
+  \hfill%
+  \begin{minipage}{.5\textwidth}%
+    % optional detailed information
+    \if@details%
+      \raggedleft%
+      \addressfont\textcolor{color2}{%
+        {\bfseries\upshape\@firstname~\@lastname}\@firstdetailselementfalse%
+        % optional detailed information
+        \ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\@addressstreet%
+          \ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\@addresscity}% if \addresstreet is defined, \addresscity and addresscountry will always be defined but could be empty
+          \ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\@addresscountry}}%
+        \collectionloop{phones}{% the key holds the phone type (=symbol command prefix), the item holds the number
+          \makenewline\csname\collectionloopkey \phonesymbol\endcsname\collectionloopitem}%
+        \ifthenelse{\isundefined{\@email}}{}{\makenewline\emailsymbol\emaillink{\@email}}%
+        \ifthenelse{\isundefined{\@homepage}}{}{\makenewline\homepagesymbol\httpslink{\@homepage}}%
+        %\ifthenelse{\isundefined{\@social[twitter]}}{}{\makenewline\twittersocialsymbol\httpslink{\@twitter}}%
+        \ifthenelse{\isundefined{\@extrainfo}}{}{\makenewline\@extrainfo}}\fi%
+    \end{minipage} \\[2\baselineskip]
+  % recipient block
+  \begin{minipage}[t]{.5\textwidth}
+    \raggedright%
+    \addressfont%
+    {\bfseries\upshape\@recipientname}\\%
+    \@recipientaddress%
+  \end{minipage}
+  % date
+  \hfill% US style
+%  \\[1em]% UK style
+  \@date\\[2\baselineskip]% US informal style: "January 1, 1900"; UK formal style: "01/01/1900"
+  % optional subject
+  \ifthenelse{\isundefined{\@subject}}{}{{\bfseries\@subject\\[2\baselineskip]}}
+  % opening
+  {\centering%
+  \textcolor{color1}{\@opening}\\[2\baselineskip]}%
+  % ensure no extra spacing after \makelettertitle due to a possible blank line
+%  \ignorespacesafterend% not working
+  %\hspace{0pt}\par\vspace{-\baselineskip}\vspace{-\parskip}
+  }
+\makeatother
+
+
+
+
+%----------------------------------------------------------------------------------
+%            content
+% chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ams.org/journals/notices/202108/rnoti-p1321.pdf?trk=2328&cat=career
+%----------------------------------------------------------------------------------
+
+
+\usepackage[sectionbib, square, sort, comma, numbers]{natbib}
+\usepackage{chapterbib}
+
+% footer details
+\usepackage{lastpage}
+
+\usepackage{bibtopic} 
+
+\begin{document} 
+
+\hypersetup{%
+  pdftitle={David Sinden - Research Statement},
+  pdfauthor={David Sinden},
+  pdfsubject={Research Statement},
+  pdfkeywords={Ultrasound, Cosserat, Thermal therapies, Cavitation, Computational Topology}
+}
+
+\thispagestyle{fancy}
+
+\recipient{Constructor University gGmbH}{Campus Ring 1\\28759 Bremen}
+
+\date{December 20 2023}
+
+\opening{Research Statement}
+
+\makemyletterhead
+
+\makecvfooter{December, 2023}{David Sinden~~~$\cdot$~~~Research Statement}{\thepage\ ~of~ \pageref{LastPage}}
+
+\bibliographystyle{apsrev4-1long} 
+
+\begin{btUnit} 
+\begin{btSect}[apsrev4-1long]{prev} 
+
+I am an interdisciplinary applied mathematician, having worked worked with clinicians, engineers and measurement scientist. I received my Ph.D. in 2009 under the guidance of Prof. Gert van der Heijden at the Centre for Nonlinear Dynamics at University College London, motivated by the static post-buckling configuration of an charged elastic rod in a magnetic field. After my Ph.D. I took a post doctoral position at the department of Mechanical Engineering, also at UCL, as part of the ultrasound research group. The research moved from Hamiltonian dynamical systems to collective behaviour of driven nonlinear oscillators, investigating the oscillations of bubbles which can form in tissue when exposed to high-intensity therapeutic ultrasound.
+
+This lead to an another post-doctoral position at the Institute of Cancer Research, where I designed a treatment planning platform for transcostal high-intensity focused ultrasound. This involved optimization of linear partial differential equations for acoustics on large domains, with constrained on where the acoustic field should be focused, while minimizing damage to surrounding structures. I then obtained a permanent position at the National Physical Laboratory, which is the government laboratory in the United Kingdom. My main responsibility was to lead the standardisation efforts for therapeutic ultrasound. A significant proportion of my work related to validating measurement-based simulations, i.e. simulations on domains computed from imaging data, with initial conditions taken measurement data. I am an active member the IEC technical committee on ultrasound, working to bring the knowledge to a standard. 
+
+At Fraunhofer MEVIS I have worked on a number of projects, expanding expertise into other areas of diagnostic ultrasound, image-guided therapy as well as systems biology. I have recently been awarded a Fraunhofer DISCOVER grant to investigate applications of computational topology in medical imaging.
+
+% {\footnotesize\btPrintCited }
+
+\end{btSect} 
+\end{btUnit}
+
+%%% begin firstbtUnit
+
+% \newpage
+\begin{btUnit}
+\begin{btSect}[apsrev4-1long]{other} 
+
+\section*{Computational Topology in Medical Imaging}
+
+Classical medical image analysis is based upon geometric measures, such as lengths, angles, shapes etc. This is somewhat limited as such measures do not fully capture the complexity of information across lengths scales (as these are measured at single spatial scale), or global properties of data. Radiomics seeks to extend classical image analysis by looking at local variations in pixel-to-pixel intensity, giving a measure of texture. Such local measures seek to quantify intuitive concepts such as smoothness or roughness and have been applied to image segmentation. However, the are highly dependent on the imaging modality and are not reproducible. 
+
+Computational topology, and specifically a tool called persistent homology, has recently emerged as powerful tool which can provide insight which is distinct from pixel-based approaches by describing measures of connectedness between objects in an image~\cite{lum2013extracting, singh2023topological}. It is referred to characterising the shape of data.  It has also been significant as embedding in highly connected networks~\cite{clough2020topological}. 
+
+I plan to apply techniques from computational topology to two fields: \textcolor{custom}{ultrasound thermometry} and \textcolor{custom}{characterisation of aspects of liver function}, via structure~\cite{rocks2020revealing}. The first application is to use specular information~\cite{harris2010speckle} to correlate persistence diagrams with relative changes in temperature. 
+
+The second application has a number of aspects. The main aim is to quantitatively model changes in perfusion after resection, via persistence diagrams~\cite{takahashi2022analysis}. Another topic will be to develop tools which measure cell alignment, which characterise regeneration and also, from microscopy data, characterise the fenestrations along the liver endothelial cells which influence metabolic rates.
+
+\footnotesize\btPrintCited 
+
+\end{btSect} 
+\end{btUnit} 
+
+%%% end first btUnit 
+
+
+\begin{btUnit} 
+
+\begin{btSect}[apsrev4-1long]{ultrasound} 
+%
+\section*{Ultrasound \& Thermal Therapies}
+
+\subsection*{The Right Dose In The Right Place}
+While focusing a therapeutic ultrasound device to a desired location has been studies as an inverse problem, the subsequent biological effects due to the ultrasound have only been investigated experimentally. 
+%
+\begin{itemize}
+\item A foundational tool would be an open-source model for histotripsy~\cite{pahk2017numerical}. This would be a time-domain finite-volume solver which would solve for the acoustic field with spatially and temporally-varying material properties, including significantly, \textcolor{custom}{phase-changes due to both boiling and acoustic cavitation}. The nucleation of bubbles would be modelled via a threshold for the peak-negative pressure. The frequency-dependent powerlaw for the absorption of the acoustic wave will be modelled as an integral, solved via convolutional quadrature~\cite{banjai2014fast}. The presence of bubbles would present a number of computational challenges, the main being that the bubble dynamics would need to be computed to determine the scatterer co-efficient. The bubble dynamics occur on a finer time scale than the wave equation. Furthermore, dense bubble clouds may require that the interaction between bubbles be taken into account. Preliminary numerical and analytical work has investigated homogenization strategies to reduce the computational cost~\cite{sinden2012approximations}. The model would be written in a language which supports automatic differentiation, thus enabling optimization of settings in order to ensure only targeted tissue is treated in a computationally efficient manner.
+\item A measure of dose would be due to the \textcolor{custom}{mechanical damage} induced by both the acoustic wave and the bubble activity.
+\item The second measure of biological effect would be to model the expression of \textcolor{custom}{heat-shock proteins}, via a systems biology approach~\cite{dudziuk2019biologically}, and couple this to the measures of thermal dose.
+\item Following from this, a longer term goal would then be \textcolor{custom}{correlate the dependence of radio-sensitivity} (via the linear-quadratic model) with the extended \textcolor{custom}{thermal dose}, rather than temperature~\cite{kok2014quantifying} as a more biologically relevant measure.
+\end{itemize}
+
+\subsection*{Quantitative Ultrasound}
+Typically image reconstruction and segmenting objects within the image are performed separately. However, in ultrasound, the most basic image formation approach neglects almost all variations in material properties, so produces images with significant artefacts. 
+
+Recently a \textcolor{custom}{joint segmentation and reconstruction} approach has been proposed for image processing~\cite{budd2023joint}. This applies a alternating iterative scheme to a variational problem. These will be ideally suited to ultrasound, and would be implemented by coupling the Computed Ultrasound Tomography in Echo mode (CUTE) method~\cite{stahli2020improved} to the {Chan-Vese} or {Mumford-Shah} equation via minimizing the Ginzberg-Landau energy in both steps of the scheme. Such an approach would have immediate impact in ultrasound imaging, thermometry and dosimetry. There is some literature on directly segmenting images from ultrasound data, but all approached have used deep-learning methods~\cite{nair2020deep}. The drawback is that these methods typically required training on labelled data, and producing this can be a laborious process. Thus the methods are trained on synthetic data, and do not generalise well. The proposed approach would overcome this short-coming while still retaining the ability to include anatomical information via initial guesses for segmentation curves. To maximize impact, validation would have be performed on phantoms with known geometry. An open question is the whether the system can converge sufficiently quickly to reconstruct images in close to real time.
+
+{\footnotesize\btPrintCited}
+
+\end{btSect}
+ 
+\end{btUnit} 
+
+%%% end second btUnit 
+
+\end{document}
