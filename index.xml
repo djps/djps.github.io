@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Sinden</title><link>https://djps.github.io/</link><atom:link href="https://djps.github.io/index.xml" rel="self" type="application/rss+xml"/><description>David Sinden</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>David Sinden</title><link>https://djps.github.io/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Sinden</title><link>https://djps.github.io/</link><atom:link href="https://djps.github.io/index.xml" rel="self" type="application/rss+xml"/><description>David Sinden</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>David Sinden</title><link>https://djps.github.io/</link></image><item><title>CTMS-MAT-13: Numerical Methods</title><link>https://djps.github.io/docs/numericalmethods/intro/intro/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/intro/intro/</guid><description>&lt;p&gt;This site will be the primary source of information and resources for the course.&lt;/p&gt;
 &lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
 data-callout="note"
 data-callout-metadata=""&gt;
@@ -38,7 +38,7 @@ of this module description to the extent that they can solve standard text-book 
 &lt;p&gt;Knowledge of calculus: functions, inverse functions, sets, real numbers, sequences and limits, polynomials, rational functions, trigonometric functions, logarithm and exponential function, parametric equations, tangent lines, graphs, derivatives, anti-derivatives, elementary techniques for solving equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Knowledge of linear algebra: vectors, matrices, lines, planes, $n$-dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
+&lt;p&gt;Knowledge of linear algebra: vectors, matrices, lines, planes, $n$‑dimensional Euclidean vector space, rotation, translation, dot product (scalar product), cross product, normal vectors, eigenvalues, eigenvectors, elementary techniques for solving systems of linear equations&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Some examples will be presented as
@@ -651,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-479852163" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-861597423" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -667,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-479852163', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-861597423', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -9153,7 +9153,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-513487962" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-862347195" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9169,12 +9169,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-513487962', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-862347195', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-358912647" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-658972341" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9190,13 +9190,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-358912647', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-658972341', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-321547689" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-948317562" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9212,7 +9212,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-321547689', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-948317562', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
