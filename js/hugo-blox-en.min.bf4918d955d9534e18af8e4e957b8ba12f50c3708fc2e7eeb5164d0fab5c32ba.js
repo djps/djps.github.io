@@ -1,4 +1,4 @@
-/*! Hugo Blox Kit Tailwind UI v0.11.0 | https://hugoblox.com/ */
+/*! Hugo Blox Builder Tailwind UI v0.11.0 | https://hugoblox.com/ */
 /*! Copyright 2016-present George Cushen (https://georgecushen.com/) */
 /*! License: https://github.com/HugoBlox/kit/blob/main/LICENSE.md */
 
