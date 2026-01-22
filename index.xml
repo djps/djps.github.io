@@ -651,7 +651,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-528734169" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-254763918" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -667,7 +667,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-528734169', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-254763918', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -5327,9 +5327,7 @@ $$
 $$
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Computational Topology in Medical Imaging</title><link>https://djps.github.io/projects/comptop/</link><pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/comptop/</guid><description>&lt;h2 id="computational-topology"&gt;Computational Topology&lt;/h2&gt;
-&lt;p&gt;&lt;mark&gt;More details to appear.&lt;/mark&gt;&lt;/p&gt;
-&lt;!-- Funded by Fraunhofer DISCOVER grant. --&gt;</description></item><item><title>MAIBAI: Metrology for Image-Based AI</title><link>https://djps.github.io/projects/maibai/</link><pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/maibai/</guid><description>&lt;h2 id="developing-a-metrological-framework-for-assessment-of-image-based-artificial-intelligence-systems-for-disease-detection"&gt;Developing a Metrological Framework for Assessment of Image-based Artificial Intelligence Systems for Disease Detection&lt;/h2&gt;
+&lt;/div&gt;</description></item><item><title>MAIBAI: Metrology for Image-Based AI</title><link>https://djps.github.io/projects/maibai/</link><pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/maibai/</guid><description>&lt;h2 id="developing-a-metrological-framework-for-assessment-of-image-based-artificial-intelligence-systems-for-disease-detection"&gt;Developing a Metrological Framework for Assessment of Image-based Artificial Intelligence Systems for Disease Detection&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Details can be found at the funder&amp;rsquo;s website
@@ -9153,7 +9151,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-296743518" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-263419875" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9169,12 +9167,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-296743518', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-263419875', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-784213695" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-547319628" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9190,13 +9188,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-784213695', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-547319628', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-192435768" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-347815692" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9212,7 +9210,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-192435768', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-347815692', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
