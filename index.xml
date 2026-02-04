@@ -655,7 +655,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-583917624" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-524768913" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -671,7 +671,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-583917624', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-524768913', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6117,8 +6117,12 @@ with
 . It was funded the EPSRC.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Thesis can be found online
-or
+(offical) or
 .&lt;/li&gt;
+&lt;li&gt;The github repository which generates a copy of the thesis can be found
+.&lt;/li&gt;
+&lt;li&gt;Code which generates the homoclinic orbits and bifurcation diagrams can be found
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Journal publications can be found here:&lt;/p&gt;
 &lt;ul&gt;
@@ -9155,7 +9159,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-427516839" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-128635479" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9171,12 +9175,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-427516839', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-128635479', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-891237564" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-328651479" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9192,13 +9196,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-891237564', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-328651479', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-829156734" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-251678394" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9214,7 +9218,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-829156734', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-251678394', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
