@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">David Sinden's GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 9, Total Commits  (last year) : 0, Total PRs: 44, Total Issues: 36, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 9, Total Commits  (last year) : 0, Total PRs: 45, Total Issues: 36, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 196.6322864205263;
+        stroke-dashoffset: 196.16226017757364;
       }
     }
   
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >44</text>
+      >45</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
