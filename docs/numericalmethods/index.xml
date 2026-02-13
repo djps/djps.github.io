@@ -7,7 +7,7 @@ data-callout-metadata=""&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
 &lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;&lt;p&gt;Lectures will take place in Konrad Naber Lecture Hall, Reimer Lüst Hall, at Wednesdays from 14:15&lt;/p&gt;&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;Lectures will take place in Conrad Naber Lecture Hall, Reimer Lüst Hall, at Wednesdays from 14:15&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
@@ -179,7 +179,7 @@ pan: false
 - Partial Differential Equations&lt;/pre&gt;
 &lt;/div&gt;
 &lt;h2 id="assessment"&gt;Assessment&lt;/h2&gt;
-&lt;p&gt;There will be two short quizes held, in person, covering the course material. The duration of the test will be 1 hour. Dates will be announced in due course.&lt;/p&gt;
+&lt;p&gt;There will be two short quizzes held, in person, covering the course material. The duration of the test will be 1 hour. Dates will be announced in due course.&lt;/p&gt;
 &lt;h3 id="examination-type"&gt;Examination Type&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -308,7 +308,7 @@ $$
 \begin{equation*}
 f\left( x \right) = \sum\limits_{k=0}^{n} \dfrac{f^{(k)} \left(c\right) }{k!} \left( x- c \right)^{k} + \dfrac{f^{(n+1)} \left( \xi \right) }{\left( n + 1 \right)!} \left( x - c \right)^{n+1}
 \end{equation*}
-$$&lt;p&gt;for some value $\xi$ which depends on $x$, and exist on $\xi(x) \in \left[ c, x \right]$. The remainder term&lt;/p&gt;
+$$&lt;p&gt;for some value $\xi$ which depends on $x$, and exist on $\xi(x) \in \left[ c, x \right]$. The remainder term is given by&lt;/p&gt;
 $$
 \begin{equation*}
 \lim\limits_{x \rightarrow c} \dfrac{ f^{(n+1)} \left( \xi \right) }{ \left( n + 1 \right)!} \left( x - c \right)^{n+1} = 0.
@@ -344,7 +344,7 @@ Theorem: &lt;em&gt;Rolle&amp;#39;s Theorem&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b)}$, then there exists at least one $c$ in the open interval $(a, b)$ such that&lt;/p&gt;
+&lt;p&gt;If a real-valued function $f$ is continuous on a proper closed interval $[a, b]$, differentiable on the open interval $(a, b)$, and has ${f (a) = f (b),}$ then there exists at least one $c$ in the open interval $(a, b)$ such that&lt;/p&gt;
 $$
 f^\prime (c) = 0.
 $$
