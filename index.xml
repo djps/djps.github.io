@@ -245,6 +245,15 @@ and on Teams approximately ten days before the due date.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If any part of this AI policy is confusing or uncertain, please reach out to your instructor for a conversation before submitting your work.&lt;/p&gt;
+&lt;p&gt;In the words of Terence Tao, when asked as to why there is value in a human approach:&lt;/p&gt;
+&lt;blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 my-6"&gt;
+&lt;p&gt;These problems are like distant locations that you would hike to. And in
+the past, you would have to go on a journey. You can lay down trail markers
+that other people could follow, and you could make maps. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;AI tools are like taking a helicopter to drop you off at the site. You miss all the
+benefits of the journey itself. You just get right to the destination, which
+actually was only just a part of the value of solving these problems.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;!--
 https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
 https://francisbach.com/richardson-extrapolation/
@@ -608,7 +617,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/taylor_series/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of the Taylor series for $\sin\left(x\right)$ can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/taylor_series/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/taylor_series.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/taylor_series.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -654,7 +663,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-173584692" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-879136254" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -670,7 +679,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-173584692', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-879136254', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -1967,7 +1976,7 @@ Definition: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-If $\tilde{x}$ is an approximate solution to the linear problem ${A\boldsymbol{x} =\boldsymbol{b} }$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${\boldsymbol{r} = A \tilde{x}-\boldsymbol{x} }$.
+If $\boldsymbol{\tilde{x}}$ is an approximate solution to the linear problem ${A\boldsymbol{x} =\boldsymbol{b} }$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${\boldsymbol{r} = A \boldsymbol{\tilde{x}} -\boldsymbol{x} }$.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1991,20 +2000,20 @@ Algorithm: &lt;em&gt;Gaussian Elimination&lt;/em&gt;
 &lt;/ul&gt;
 &lt;p&gt;Forward elimination is written as&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $i = k + 1$ to $n$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ For $j = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{6cm} a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
+&lt;small&gt;2 &lt;/small&gt; $\hspace{2em}$ For $i = k + 1$ to $n$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{4em}$ For $j = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{6em} a_{i,j} = a_{i,j} - \dfrac{a_{i,k}}{a_{k,k}} a_{k,j}$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{4em}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2em} b_{i} = b_{i} - \dfrac{a_{i,k}}{a_{k,k}} b_{k}$ &lt;br&gt;
 &lt;small&gt;7 &lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Then back substitute, starting with the last unknown first:&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;8 &lt;/small&gt; Set $x_n = \dfrac{b_n}{a_{n,n}}$ &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; For $i$ =$n-1$ to $1$: &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; $\hspace{2cm} y = b_i$ &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\hspace{2cm}$ For $j = n$ to $i+1$: &lt;br&gt;
-&lt;small&gt;12&lt;/small&gt; $\hspace{4cm} y = y - a_{i,j} x_j$ &lt;br&gt;
-&lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;14&lt;/small&gt; $\hspace{2cm} x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; For $i = n-1$ to $1$: &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; $\hspace{2em} y = b_i$ &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{2em}$ For $j = n$ to $i+1$: &lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; $\hspace{4em} y = y - a_{i,j} x_j$ &lt;br&gt;
+&lt;small&gt;13&lt;/small&gt; $\hspace{2em}$ End &lt;br&gt;
+&lt;small&gt;14&lt;/small&gt; $\hspace{2em} x_i = \dfrac{y}{a_{i,i}}$ &lt;br&gt;
 &lt;small&gt;15&lt;/small&gt; End&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2021,15 +2030,15 @@ Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries $s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries ${s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|}$ &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{2cm}$ For $i = k$ to $n$: &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{2cm}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; $\hspace{2cm}$ Swap rows $k$ and $j$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ Swap entries $k$ and $j$ in vector $\vec{s}$ &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Do forward elimination on row $k$ &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{2em}$ For $i = k$ to $n$: &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{4em}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{2em}$ End &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{2em}$ Find row with largest relative pivot element, denote this as row $j$ &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; $\hspace{2em}$ Swap rows $k$ and $j$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2em}$ Swap entries $k$ and $j$ in vector $\vec{s}$ &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; $\hspace{2em}$ Do forward elimination on row $k$ &lt;br&gt;
 &lt;small&gt;10&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;The matrix will be in row-echelon form, so that back substitution can now be performed.&lt;/p&gt;
 &lt;/div&gt;
@@ -2088,7 +2097,7 @@ Definition: &lt;em&gt;Cholesky-Decomposition&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-A symmetric, positive definite matrix can be decomposed as $A=\tilde{L}\tilde{L}^T$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements $d_i$ are all positive, so that $D^{1/2}$ has diagonal elements $\sqrt{d_i}$.
+A symmetric, positive definite matrix can be decomposed as ${A=\tilde{L}\tilde{L}^T}$, where ${\tilde{L} = L D^{1/2}}$, where $D$ is a diagonal matrix whose elements ${d_{i,i}=d_i}$ are all positive, so that $D^{1/2}$ has diagonal elements $\sqrt{d_i}$.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2105,33 +2114,33 @@ Algorithm: &lt;em&gt;Cholesky Algorithm&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;Cholesky&amp;rsquo;s algorithm to compute the entries of the triangular matrix $\tilde{L}$ can be written as&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;1 &lt;/small&gt; For $i=1$ to $n$: &lt;br&gt;
-&lt;small&gt;2 &lt;/small&gt; $\hspace{2cm}$ For $j = 1$ to $i-1$: &lt;br&gt;
-&lt;small&gt;3 &lt;/small&gt; $\hspace{4cm}$ Set $y = a_{i,j}$ &lt;br&gt;
-&lt;small&gt;4 &lt;/small&gt; $\hspace{4cm}$ For $k = 1$ to $j-1$: &lt;br&gt;
-&lt;small&gt;5 &lt;/small&gt; $\hspace{6cm}$ $y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
-&lt;small&gt;6 &lt;/small&gt; $\hspace{4cm}$ End &lt;br&gt;
-&lt;small&gt;7 &lt;/small&gt; $\hspace{4cm}$ $l_{i,j} = y / l_{j,j}$ &lt;br&gt;
-&lt;small&gt;8 &lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;9 &lt;/small&gt; $\hspace{2cm}$ Set $y = a_{i,i}$ &lt;br&gt;
-&lt;small&gt;10&lt;/small&gt; $\hspace{2cm}$ For $k= 1$ to $i-1$: &lt;br&gt;
-&lt;small&gt;11&lt;/small&gt; $\hspace{4cm}$ $y = y - l_{i,k} \, l_{i,k}$ &lt;br&gt;
-&lt;small&gt;12&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;13&lt;/small&gt; $\hspace{2cm}$ If $y \le 0$: &lt;br&gt;
-&lt;small&gt;14&lt;/small&gt; $\hspace{4cm}$ exit as there is no solution &lt;br&gt;
-&lt;small&gt;15&lt;/small&gt; $\hspace{2cm}$ Else: &lt;br&gt;
-&lt;small&gt;16&lt;/small&gt; $\hspace{4cm}$ $l_{i,i} = \sqrt{y}$ &lt;br&gt;
-&lt;small&gt;12&lt;/small&gt; $\hspace{2cm}$ End &lt;br&gt;
-&lt;small&gt;17&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
+&lt;small&gt;2 &lt;/small&gt; $\hspace{2em}$ For $j = 1$ to $i-1$: &lt;br&gt;
+&lt;small&gt;3 &lt;/small&gt; $\hspace{4em}$ Set $y = a_{i,j}$ &lt;br&gt;
+&lt;small&gt;4 &lt;/small&gt; $\hspace{4em}$ For $k = 1$ to $j-1$: &lt;br&gt;
+&lt;small&gt;5 &lt;/small&gt; $\hspace{6em}$ $y = y - l_{i,k} l_{j,k}$ &lt;br&gt;
+&lt;small&gt;6 &lt;/small&gt; $\hspace{4em}$ End &lt;br&gt;
+&lt;small&gt;7 &lt;/small&gt; $\hspace{4em}$ $l_{i,j} = y / l_{j,j}$ &lt;br&gt;
+&lt;small&gt;8 &lt;/small&gt; $\hspace{2em}$ End &lt;br&gt;
+&lt;small&gt;9 &lt;/small&gt; $\hspace{2em}$ Set $y = a_{i,i}$ &lt;br&gt;
+&lt;small&gt;10&lt;/small&gt; $\hspace{2em}$ For $k= 1$ to $i-1$: &lt;br&gt;
+&lt;small&gt;11&lt;/small&gt; $\hspace{4em}$ $y = y - l_{i,k} \, l_{i,k}$ &lt;br&gt;
+&lt;small&gt;12&lt;/small&gt; $\hspace{2em}$ End &lt;br&gt;
+&lt;small&gt;13&lt;/small&gt; $\hspace{2em}$ If $y \le 0$: &lt;br&gt;
+&lt;small&gt;14&lt;/small&gt; $\hspace{4em}$ exit as there is no solution &lt;br&gt;
+&lt;small&gt;15&lt;/small&gt; $\hspace{2em}$ Else: &lt;br&gt;
+&lt;small&gt;16&lt;/small&gt; $\hspace{4em}$ $l_{i,i} = \sqrt{y}$ &lt;br&gt;
+&lt;small&gt;17&lt;/small&gt; $\hspace{2em}$ End &lt;br&gt;
+&lt;small&gt;18&lt;/small&gt; End &lt;br&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id="indirect-methods"&gt;Indirect Methods&lt;/h3&gt;
 &lt;p&gt;For a non-singular matrix $A$, consider the iterative scheme&lt;/p&gt;
 $$
-Q x_{k +1}= \left( Q - A \right) x_{k} + b.
+Q \boldsymbol{x}_{k +1}= \left( Q - A \right) \boldsymbol{x}_{k} + \boldsymbol{b}.
 $$&lt;p&gt;This is equivalent to&lt;/p&gt;
 $$
-x_{k +1} = \left( I - Q^{-1} A \right) x_{k} + Q^{-1} b.
+\boldsymbol{x}_{k +1} = \left( I - Q^{-1} A \right) \boldsymbol{x}_{k} + Q^{-1} \boldsymbol{b}.
 $$&lt;div class="details admonition Definition open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
@@ -2179,12 +2188,12 @@ Definition: &lt;em&gt;Richardson Iteration&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;Let $Q=I$, then &lt;strong&gt;Richardson iteration&lt;/strong&gt; computes the sequence of vectors&lt;/p&gt;
 $$
-x_{k +1} = \left(I - A \right) x_{k} + b.
+\boldsymbol{x}_{k +1} = \left(I - A \right) \boldsymbol{x}_{k} + \boldsymbol{b}.
 $$&lt;p&gt;
 This sequence may converge to $\boldsymbol{x} = A^{-1} \boldsymbol{x} $, depending on $A$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that&lt;/p&gt;
 $$
-x_{k +1}= x_{k} + \omega \left( b - A x_{k} \right).
+\boldsymbol{x}_{k + 1}= \boldsymbol{x}_{k} + \omega \left( \boldsymbol{b} - A \boldsymbol{x}_{k} \right).
 $$
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2202,7 +2211,7 @@ Definition: &lt;em&gt;Jacobi Iteration&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;The &lt;a id="Jacobi"&gt;&lt;strong&gt;Jacobi iteration&lt;/strong&gt;&lt;/a&gt; scheme has $Q=D$, so&lt;/p&gt;
 $$
-x_{k +1} = \left(I - D^{-1} A \right) x_{k} + D^{-1} b.
+\boldsymbol{x}_{k +1} = \left(I - D^{-1} A \right) \boldsymbol{x}_{k} + D^{-1} \boldsymbol{b}.
 $$&lt;p&gt;where $D$ is the matrix comprised of the diagonal elements of $A$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2236,7 +2245,7 @@ Theorem: &lt;em&gt;Convergence of Jacobi Scheme&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-If the matrix $A$ is diagonally dominant, then the Jacobi scheme converges for any initial guess $x_0$.
+If the matrix $A$ is diagonally dominant, then the Jacobi scheme converges for any initial guess $\boldsymbol{x}_0$.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2254,7 +2263,7 @@ Definition: &lt;em&gt;Gauss-Seidel Scheme&lt;/em&gt;
 &lt;p&gt;Let $Q=L + D$, then the &lt;a id="GS"&gt;&lt;strong&gt;Gauss-Seidel&lt;/strong&gt;&lt;/a&gt; scheme is given by&lt;/p&gt;
 $$
 \begin{equation*}
-(D + L) x_{k+1} = -U x_{k} + b
+(D + L) \boldsymbol{x}_{k+1} = -U \boldsymbol{x}_{k} + \boldsymbol{b}
 \end{equation*}
 $$&lt;p&gt;
 where $L$ is the strictly lower triangular part of $A$, $U$ is the strictly upper triangular part of $A$, and $D$ is the diagonal matrix of $A$.&lt;/p&gt;
@@ -2272,7 +2281,7 @@ Theorem: &lt;em&gt;Convergence of Gauss-Seidel Scheme&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-If the matrix $A$ is diagonally dominant, then the Gauss-Seidel scheme converges for any initial guess $x_0$.
+If the matrix $A$ is diagonally dominant, then the Gauss-Seidel scheme converges for any initial guess $\boldsymbol{x}_0$.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2290,7 +2299,7 @@ Definition: &lt;em&gt;Successive Over Relaxation (SOR)&lt;/em&gt;
 &lt;p&gt;Let $Q=L + \dfrac{1}{\omega}D$, thus, the method of &lt;a id="SOR"&gt;&lt;strong&gt;successive over relaxation&lt;/strong&gt;&lt;/a&gt; (SOR) is given by&lt;/p&gt;
 $$
 \begin{equation*}
-(D + \omega L) x_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) x_{k} + \omega b.
+(D + \omega L) \boldsymbol{x}_{k+1} = -\left( \left(\omega - 1 \right)D + \omega U \right) \boldsymbol{x}_{k} + \omega \boldsymbol{b} .
 \end{equation*}
 $$
 &lt;/div&gt;
@@ -2323,7 +2332,7 @@ Definition: &lt;em&gt;Stable&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left\| e_k \right\| &lt; \left\| e_0 \right\| }$.&lt;/p&gt;
+&lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $\boldsymbol{e}_0$ is damped during the iterations, i.e. ${\left\| \boldsymbol{e}_k \right\| &lt; \left\| \boldsymbol{e}_0 \right\| }$.&lt;/p&gt;
 &lt;p&gt;Note that $\Vert \boldsymbol{x} \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert \boldsymbol{x} \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_n^2} }$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2339,17 +2348,17 @@ Definition: &lt;em&gt;Consistent&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $x^{\ast}$ of the iteration is a solution to the problem being solved.
+A numerical method is said to be &lt;strong&gt;consistent&lt;/strong&gt; if any fixed point $\boldsymbol{x}^{\ast}$ of the iteration is a solution to the problem being solved.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;For linear systems, a fixed point, $x^{\ast}$, fulfils&lt;/p&gt;
+&lt;p&gt;For linear systems, a fixed point, $\boldsymbol{x}^{\ast}$, fulfils&lt;/p&gt;
 $$
-x^{\ast} = \left( I - Q^{-1} A \right) x^{\ast} + Q^{-1} b \Leftrightarrow A x^{\ast} = b.
+\boldsymbol{x}^{\ast} = \left( I - Q^{-1} A \right) \boldsymbol{x}^{\ast} + Q^{-1} \boldsymbol{b} \Leftrightarrow A \boldsymbol{x}^{\ast} = \boldsymbol{b}.
 $$&lt;p&gt;If the iterative method for a linear system is stable then&lt;/p&gt;
 $$
-e_k = \left( I - Q^{-1} A \right)^k e_0,
-$$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert e_k \Vert &lt; \Vert e_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
+\boldsymbol{e}_k = \left( I - Q^{-1} A \right)^k \boldsymbol{e}_0,
+$$&lt;p&gt;so then ${\Vert I - Q^{-1} A \Vert &lt; 1}$ for ${\Vert \boldsymbol{e}_k \Vert &lt; \Vert \boldsymbol{e}_0 \Vert}$, where ${\Vert I - Q^{-1} A \Vert}$ is a &lt;em&gt;matrix norm&lt;/em&gt;.&lt;/p&gt;
 &lt;div class="details admonition Definition open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
@@ -2361,7 +2370,7 @@ Definition: &lt;em&gt;Convergent&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${x_k \rightarrow x^{\ast}}$ as ${k \rightarrow \infty}$ where $x^{\ast}$ is the exact solution.
+A numerical method is said to be &lt;strong&gt;convergent&lt;/strong&gt; if ${\boldsymbol{x}_k \rightarrow \boldsymbol{x}^{\ast}}$ as ${k \rightarrow \infty}$ where $\boldsymbol{x}^{\ast}$ is the exact solution.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2391,8 +2400,9 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online &lt;a class="hover:red" href="https://djps.github.io/docs/numericalmethods/notebooks/iterative/" style="text-decoration: underline; font-weight: 500; text-decoration-color: #651fff;"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It can be downloaded from &lt;a class="underline text-red-600 hover:text-red-800 visited:text-red-600 dark:text-red-300 dark:hover:text-red-200" href="https://djps.github.io/ipyth/iterative.py/" &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/iterative.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for linear systems can be accessed online
+&lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/iterative/" &gt;[here]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/iterative.py/" &gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/iterative.ipynb/" &gt;[here]&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>Vector Spaces</title><link>https://djps.github.io/docs/gradcalclinalg24/part1/spaces/</link><pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/part1/spaces/</guid><description>&lt;div class="details admonition Definition open"&gt;
@@ -2635,7 +2645,7 @@ Theorem: &lt;em&gt;Bisection Method&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;The bisection method, when applied in the interval $[a,b]$ to a function $f \in C^0 \left( \left[a, b\right] \right)$ with ${f(a)f(b) &lt; 0}$ will compute, after $n$ steps, an approximation $c_n$ of the root $r$ with error&lt;/p&gt;
 $$
-\left\| r - c_n \right\| \lt \dfrac{b-a}{2^n}.
+\left| r - c_n \right| \lt \dfrac{b-a}{2^n}.
 $$
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2701,7 +2711,7 @@ Theorem: &lt;em&gt;&lt;/em&gt;
 &lt;/ul&gt;
 &lt;p&gt;The iterate in the sequence satisfies&lt;/p&gt;
 $$
-\left\| x_n - r\right\| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left\| f^{\prime}\left( x \right) \right\|}.
+\left| x_n - r\right| \lt \dfrac{f\left( x_n \right)}{\min \limits_{x \in [a,b]}\left| f^{\prime}\left( x \right) \right|}.
 $$
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2766,11 +2776,11 @@ Theorem: &lt;em&gt;&lt;/em&gt;
 $$
 x_{n+1} = x_n - f \left( x_n \right) \dfrac{x_{n-1} - x_n}{f \left( x_{n-1} \right) - f \left( x_n \right)}.
 $$&lt;p&gt;
-Then there exists a $\delta &gt; 0$ such that when ${\left\| r - x_0 \right\| &lt; \delta}$ and ${\left\| r - x_1 \right\| &lt; \delta}$, then the following holds:&lt;/p&gt;
+Then there exists a $\delta &gt; 0$ such that when ${\left| r - x_0 \right| &lt; \delta}$ and ${\left| r - x_1 \right| &lt; \delta}$, then the following holds:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;$\lim\limits_{n\rightarrow\infty} \left\| r - x_n \right\| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$,
+&lt;li&gt;$\lim\limits_{n\rightarrow\infty} \left| r - x_n \right| = 0 \Leftrightarrow \lim\limits_{n\rightarrow\infty} x_n = r$,
 and&lt;/li&gt;
-&lt;li&gt;$\left\| r - x_{n+1} \right\| \le \mu \left\| r - x_{n} \right\|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$&lt;/li&gt;
+&lt;li&gt;$\left| r - x_{n+1} \right| \le \mu \left| r - x_{n} \right|^{\alpha}$ with ${\alpha =\dfrac{1+\sqrt{5}}{2} }.$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2786,7 +2796,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/nonlinear/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of iterative solvers for nonlinear systems can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/nonlinear/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/nonlinear.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/nonlinear.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2802,7 +2812,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/max_finder/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example using the secant method to find a local maxima can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/max_finder/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/max_finder.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/max_finder.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2821,16 +2831,16 @@ Definition: &lt;em&gt;&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;If a sequence $x_n$ converges to $r$ as $n \rightarrow \infty$, then it is said to &lt;strong&gt;converge linearly&lt;/strong&gt; if there exists a $\mu \in \left( 0,1\right)$ such that&lt;/p&gt;
 $$
-\lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = \mu.
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = \mu.
 $$&lt;p&gt;The sequences converges &lt;strong&gt;super-linearly&lt;/strong&gt; if&lt;/p&gt;
 $$
-\lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 0
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = 0
 $$&lt;p&gt;and &lt;strong&gt;sub-linearly&lt;/strong&gt; if&lt;/p&gt;
 $$
-\lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|} = 1.
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|} = 1.
 $$&lt;p&gt;More generally, a sequence converges with order $q$ if there exists a ${\mu \gt 0}$ such that&lt;/p&gt;
 $$
-\lim\limits_{n\rightarrow\infty} \dfrac{\left\| x_{n+1} - r \right\|}{\left\| x_{n} - r \right\|^q } = \mu
+\lim\limits_{n\rightarrow\infty} \dfrac{\left| x_{n+1} - r \right|}{\left| x_{n} - r \right|^q } = \mu
 $$&lt;p&gt;Thus a sequence is said to converge quadratically when ${q=2}$ and exhibit cubic convergence when $q=3$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2887,7 +2897,7 @@ Definition: &lt;em&gt;Multi-dimensional Newton Method&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;For a vector-valued function $f : \mathbb{R}^n \rightarrow \mathbb{R}^m$, which takes as an argument the vector&lt;/p&gt;
 $$
-x= \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
+\boldsymbol{x} = \left( x_1, x_2 \ldots, x_n \right) \in \mathbb{R}^n
 $$&lt;p&gt;and returns a vector in $\mathbb{R}^m$, the &lt;strong&gt;Jacobian&lt;/strong&gt; matrix is defined as&lt;/p&gt;
 $$
 \begin{equation*}
@@ -2900,24 +2910,26 @@ J = \left(
 \end{array}
 \right) \in \mathbb{R}^{m \times n}.
 \end{equation*}
-$$&lt;p&gt;If the derivatives are evaluated at the vector $x$, the Jacobian matrix can be parameterised as $J\left(x\right)$.&lt;/p&gt;
+$$&lt;p&gt;If the derivatives are evaluated at the vector $\boldsymbol{x}$, the Jacobian matrix can be parameterised as $J\left( \boldsymbol{x} \right)$.&lt;/p&gt;
 &lt;p&gt;If $m=n$, so that the matrix is square, then Newton&amp;rsquo;s method can be written as&lt;/p&gt;
 $$
-x_{k+1} = x_k - J^{-1} \left( x_k \right) f\left( x_k \right)
-$$&lt;p&gt;where $J^{-1} \left( x_k \right)$ is the inverse of the Jacobian matrix evaluated at the vector $x_k$, which is the $k$&lt;sup&gt;th&lt;/sup&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system&lt;/p&gt;
+\boldsymbol{x}_{k+1} = \boldsymbol{x}_k - J^{-1} \left( \boldsymbol{x}_k \right) f\left( \boldsymbol{x}_k \right)
+$$&lt;p&gt;where $J^{-1} \left( \boldsymbol{x}_k \right)$ is the inverse of the Jacobian matrix evaluated at the vector $\boldsymbol{x}_k$, which is the $k$&lt;sup&gt;th&lt;/sup&gt; iterate of the scheme. In practice, as matrix inversion can be computationally expensive, the system&lt;/p&gt;
 $$
-J \left( x_k \right) \left( x_{k+1} - x_k \right) = -f \left( x_k \right)
-$$&lt;p&gt;is solved for the unknown vector $x_{k+1} - x_k$ and then $x_{k+1}$ is found.&lt;/p&gt;
+J \left( \boldsymbol{x}_k \right) \left( \boldsymbol{x}_{k+1} - \boldsymbol{x}_k \right) = -f \left( \boldsymbol{x}_k \right)
+$$&lt;p&gt;is solved for the unknown vector $\boldsymbol{x}_{k+1} - \boldsymbol{x}_k$ and then $\boldsymbol{x}_{k+1}$ is found.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;!--
 &lt;span class="sidenote"&gt;
 &lt;label class="sidenote-label" for="sidenote-12"&gt;&lt;/label&gt;
 &lt;input class="sidenote-checkbox" type="checkbox" id="sidenote-12"&gt;&lt;/input&gt;
 &lt;span class="sidenote-content sidenote-right"&gt;
 August 24 Q2(c)
 &lt;/span&gt;
-&lt;/span&gt;</description></item><item><title>Eigenvalues &amp; Principal Component Analysis</title><link>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</link><pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</guid><description>&lt;h2 id="eigenvalues--eigenvectors"&gt;Eigenvalues &amp;amp; Eigenvectors&lt;/h2&gt;
+&lt;/span&gt;
+--&gt;</description></item><item><title>Eigenvalues &amp; Principal Component Analysis</title><link>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</link><pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/part1/eigen/</guid><description>&lt;h2 id="eigenvalues--eigenvectors"&gt;Eigenvalues &amp;amp; Eigenvectors&lt;/h2&gt;
 &lt;div class="details admonition Definition open"&gt;
 &lt;div class="details-summary admonition-title"&gt;
 &lt;span class="flex pr-3 pt-1"&gt;
@@ -3071,8 +3083,8 @@ $$
 \varphi_0 (u_n) &amp; \cdots &amp; \cdots &amp; \varphi_n (u_n) \end{array} \right)
 \end{equation*}
 $$&lt;p&gt;i.e. $\Phi_{i,j} = \varphi_j (u_i)$.&lt;/p&gt;
-&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$ &amp;ndash; if $\Phi$ is square.&lt;/p&gt;
-&lt;p&gt;Furthermore, the collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
+&lt;p&gt;Thus, to fit the polynomials to the data $\alpha = \Phi^{-1} p$, if $\Phi$ is square and invertible.&lt;/p&gt;
+&lt;p&gt;The collocation matrix is invertible if and only if the set of functions $\varphi$ are linearly independent.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3604,7 +3616,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/integrals/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of numerical integration using the Trapezium rule can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/integrals/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/integrals.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/integrals.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -3874,7 +3886,7 @@ Definition: &lt;em&gt;&lt;/em&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;A function $f$ is &lt;strong&gt;Hölder continuous&lt;/strong&gt; if there exists real constants ${C \ge 0}$ and ${\alpha \gt 0}$ such that&lt;/p&gt;
 $$
-\left| f\left(x\right) - f\left(y\right) \right| \le C \Vert x - y\Vert^\alpha
+\left| f\left(x\right) - f\left(y\right) \right| \le C \left| x - y \right|^\alpha
 $$&lt;p&gt;
 for all $x$ and $y$. If ${\alpha=1}$ the function is said to be &lt;strong&gt;Lipchitz continuous&lt;/strong&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -3964,7 +3976,7 @@ $$
 z_{n+1} = z_n + h \Phi\left( t_n, z_n, f_n\left(z_n, t_n\right), h \right) + \delta_{n+1}
 $$&lt;p&gt;with $z_0 = {y_0 +\delta_0}$, then&lt;/p&gt;
 $$
-\left\| z_n - u_n \right\| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
+\left| z_n - u_n \right| \le C \varepsilon \quad \text{for} \quad 0 \le n \le N.
 $$
 &lt;/div&gt;
 &lt;/div&gt;
@@ -9158,7 +9170,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-592638741" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-459386217" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9174,12 +9186,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-592638741', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-459386217', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-678532149" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-387619425" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9195,13 +9207,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-678532149', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-387619425', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-218693745" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-394281576" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9217,7 +9229,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-218693745', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-394281576', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
