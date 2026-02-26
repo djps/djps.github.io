@@ -654,7 +654,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-895762341" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-173584692" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -670,7 +670,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-895762341', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-173584692', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -1871,7 +1871,7 @@ b_m
 \right),
 \end{align*}
 $$&lt;p&gt;
-so that $A \in \mathbb{R}^{m \times n}$, $x \in \mathbb{R}^n$ and $b \in \mathbb{R}^m$.&lt;/p&gt;
+so that $A \in \mathbb{R}^{m \times n}$, $\boldsymbol{x} \in \mathbb{R}^n$ and $\boldsymbol{b} \in \mathbb{R}^m$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1967,7 +1967,7 @@ Definition: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-If $\tilde{x}$ is an approximate solution to the linear problem ${Ax=b}$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${r = A \tilde{x}-b}$.
+If $\tilde{x}$ is an approximate solution to the linear problem ${A\boldsymbol{x} =\boldsymbol{b} }$, then the &lt;strong&gt;residual&lt;/strong&gt; is defined as ${\boldsymbol{r} = A \tilde{x}-\boldsymbol{x} }$.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2181,7 +2181,7 @@ Definition: &lt;em&gt;Richardson Iteration&lt;/em&gt;
 $$
 x_{k +1} = \left(I - A \right) x_{k} + b.
 $$&lt;p&gt;
-This sequence may converge to $x = A^{-1} b$, depending on $A$.&lt;/p&gt;
+This sequence may converge to $\boldsymbol{x} = A^{-1} \boldsymbol{x} $, depending on $A$.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;modified Richardson iteration&lt;/strong&gt; scales ${Q = \omega I}$, so that&lt;/p&gt;
 $$
 x_{k +1}= x_{k} + \omega \left( b - A x_{k} \right).
@@ -2324,7 +2324,7 @@ Definition: &lt;em&gt;Stable&lt;/em&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;A numerical method is said to be &lt;strong&gt;stable&lt;/strong&gt; if and only if any initial error $e_0$ is damped during the iterations, i.e. ${\left\| e_k \right\| &lt; \left\| e_0 \right\| }$.&lt;/p&gt;
-&lt;p&gt;Note that $\Vert x \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert x \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_n^2} }$.&lt;/p&gt;
+&lt;p&gt;Note that $\Vert \boldsymbol{x} \Vert $ is a &lt;em&gt;norm&lt;/em&gt; of a vector, such as ${\Vert \boldsymbol{x} \Vert_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_n^2} }$.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -9158,7 +9158,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-643892175" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-592638741" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9174,12 +9174,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-643892175', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-592638741', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-271498653" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-678532149" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9195,13 +9195,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-271498653', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-678532149', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-965217438" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-218693745" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9217,7 +9217,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-965217438', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-218693745', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
