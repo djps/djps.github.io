@@ -663,7 +663,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-879136254" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-419568372" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -679,7 +679,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-879136254', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-419568372', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -1129,7 +1129,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/number_representations/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/number_representations/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/number_representations.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/number_representations.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2030,7 +2030,8 @@ Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries ${s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|}$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries &lt;/p&gt;
+$${s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|}$$&lt;p&gt; &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{2em}$ For $i = k$ to $n$: &lt;br&gt;
 &lt;small&gt;4 &lt;/small&gt; $\hspace{4em}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
@@ -9170,7 +9171,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-459386217" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-957821634" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9186,12 +9187,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-459386217', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-957821634', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-387619425" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-421637985" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -9207,13 +9208,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-387619425', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-421637985', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-394281576" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-954781326" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -9229,7 +9230,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-394281576', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-954781326', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();

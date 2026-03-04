@@ -464,7 +464,7 @@ Example: &lt;em&gt;&lt;/em&gt;
 &lt;/div&gt;
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
-&lt;p&gt;An &lt;span class="mycode"&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/number_representations/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;span class="font-mono"&gt;.ipynb&lt;/span&gt; notebook with an example of errors and number representations can be accessed online &lt;a href="https://djps.github.io/docs/numericalmethods/notebooks/number_representations/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It can be downloaded from &lt;a href="https://djps.github.io/ipyth/number_representations.py/"&gt;[here]&lt;/a&gt; as a python file or downloaded as a notebook from &lt;a href="https://djps.github.io/ipyth/number_representations.ipynb"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -801,7 +801,8 @@ Algorithm: &lt;em&gt;Gaussian Elimination with Scaled Partial Pivoting&lt;/em&gt
 &lt;div class="details-content"&gt;
 &lt;div class="admonition-content"&gt;
 &lt;p&gt;A pivot element is the element of a matrix, $A$, which is selected to do certain calculations first. Pivoting helps reduce errors due to rounding.&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries ${s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|}$ &lt;br&gt;
+&lt;p&gt;&lt;small&gt;1 &lt;/small&gt; Find maximal absolute values vector $\vec{s}$ with entries &lt;/p&gt;
+$${s_i= \max\limits_{j=1,\ldots,n} \left| a_{i,j} \right|}$$&lt;p&gt; &lt;br&gt;
 &lt;small&gt;2 &lt;/small&gt; For $k=1$ to $n-1$: &lt;br&gt;
 &lt;small&gt;3 &lt;/small&gt; $\hspace{2em}$ For $i = k$ to $n$: &lt;br&gt;
 &lt;small&gt;4 &lt;/small&gt; $\hspace{4em}$ Compute $\left| \dfrac{a_{i,k}}{s_i} \right|$ &lt;br&gt;
