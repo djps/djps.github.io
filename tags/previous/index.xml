@@ -40,7 +40,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-176245983" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-738491625" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -56,12 +56,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-176245983', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-738491625', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-356982174" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-351748296" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -77,13 +77,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-356982174', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-351748296', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-467358921" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-157398264" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -99,7 +99,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-467358921', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-157398264', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
