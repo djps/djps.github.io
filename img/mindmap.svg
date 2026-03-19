@@ -3,7 +3,7 @@
 
 <svg
    version="1.1"
-   id="svg1"
+   id="svg"
    width="598.98535"
    height="531.56403"
    viewBox="0 0 598.98535 531.56403"
@@ -1048,12 +1048,13 @@
     <text
        id="text87"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,432.31067,86.889333)"><tspan
-         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,1.3333333,432.31067,86.889333)"
+       class="fill-white hover:fill-sky-500 transition-colors duration-200 cursor-pointer"><tspan
+         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;stroke:none"
          x="0 6.4755197 11.46262 15.94581 20.429001 25.416101 28.401905 33.389008"
          y="0"
          sodipodi:role="line"
-         id="tspan87">Cosserat</tspan></text>
+         id="tspan87">Cosserater</tspan></text>
     <path
        id="path88"
        d="M -41.46877,38.6795 -80.06984,-4.19089 4.20094,-80.06923 42.80202,-37.1988 Z"

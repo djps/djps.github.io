@@ -8,11 +8,19 @@
    height="531.56403"
    viewBox="0 0 598.98535 531.56403"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   sodipodi:docname="mindmap (1).pdf"
+   sodipodi:docname="mindmap(1).pdf"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+   <style>
+      .fill-white { fill: #fff; }
+      .cursor-pointer { cursor: pointer; }
+      .transition-colors { transition-property: fill, stroke, color; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.4,0,0.2,1); }
+      .hover\:fill-sky-500:hover { fill: #0ea5e9; }
+    </style>
+
+
   <defs
      id="defs1">
     <clipPath
@@ -616,8 +624,8 @@
        d="m 150.80788,-134.79836 c 0,13.69875 -11.10471,24.80347 -24.80345,24.80347 -13.69875,0 -24.80347,-11.10472 -24.80347,-24.80347 0,-13.69874 11.10472,-24.80344 24.80347,-24.80344 13.69874,0 24.80345,11.1047 24.80345,24.80344 z"
        style="fill:#10b981;fill-opacity:1;fill-rule:nonzero;stroke:#10b981;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
-    
-	<a xlink:href="https://djps.github.io/tags/ultrasound/" target="_blank"> 
+
+	<a xlink:href="https://djps.github.io/tags/ultrasound/" target="_blank">
 	<text
        id="text9"
        xml:space="preserve"
@@ -656,7 +664,8 @@
     <text
        id="text16"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,479.208,313.74933)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,479.208,313.74933)"
+	   class="fill-white hover:fill-sky-500 transition-colors duration-200 cursor-pointer"><tspan
          style="font-variant:normal;font-weight:normal;font-size:4.98132px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0 3.8107097 6.7745953 9.6787052 11.033624 12.119552 15.023661 17.947697 20.662516 22.410959 23.496887 25.165628"
          y="0"
@@ -1048,16 +1057,15 @@
        d="m 126.72847,105.32736 c 0,17.61267 -14.27748,31.89015 -31.89017,31.89015 -17.61267,0 -31.89015,-14.27748 -31.89015,-31.89015 0,-17.61268 14.27748,-31.89016 31.89015,-31.89016 17.61269,0 31.89017,14.27748 31.89017,31.89016 z"
        style="fill:#ecc94b;fill-opacity:1;fill-rule:nonzero;stroke:#ecc94b;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
-    
-	<a xlink:href="https://djps.github.io/project/cosserat/" target="_blank">
+
+	<a href="https://djps.github.io/projects/cosserat/" target="_blank" class="summary_links">
 	<text
        id="text87"
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,431.94933,86.818667)"><tspan
-         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;stroke:none"
          x="0 6.1509366 11.485932 15.85256 20.219187 25.482452 28.566887 33.417698"
          y="0"
-         sodipodi:role="line"
          id="tspan87">Cosserat</tspan></text> </a>
     <path
        id="path88"
