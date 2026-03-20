@@ -14,11 +14,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
    <style>
-      .fill-white { fill: #fff; }
-      .cursor-pointer { cursor: pointer; }
-      .transition-colors { transition-property: fill, stroke, color; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.4,0,0.2,1); }
-      .hover\:fill-sky-500:hover { fill: #0ea5e9; }
-    </style>
+        .fill-white { fill: #fff; }
+        .cursor-pointer { cursor: pointer; }
+        .transition-colors { transition-property: fill, stroke, color; transition-duration: 200ms; transition-timing-function: cubic-bezier(0.4,0,0.2,1); }
+        .hover\:fill-sky-500:hover { fill: #0ea5e9; }
+   </style>
 
 
   <defs
@@ -625,16 +625,18 @@
        style="fill:#10b981;fill-opacity:1;fill-rule:nonzero;stroke:#10b981;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
 
-	<a xlink:href="https://djps.github.io/tags/ultrasound/" target="_blank">
-	<text
-       id="text9"
-       xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,470.54267,406.6)"><tspan
-         style="font-variant:normal;font-weight:normal;font-size:7.97011px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         x="0 5.9775825 8.1454525 10.815439 13.557158 17.900867 21.78231 26.524527 31.258772 35.905346"
-         y="0"
-         sodipodi:role="line"
-         id="tspan9">Ultrasound</tspan></text> </a>
+	<a href="https://djps.github.io/tags/ultrasound/" target="_blank" class="svg-links not-prose">
+  	<text
+         id="text9"
+         xml:space="preserve"
+         transform="matrix(1.3333333,0,0,1.3333333,470.54267,406.6)">
+         <tspan
+           x="0 5.9775825 8.1454525 10.815439 13.557158 17.900867 21.78231 26.524527 31.258772 35.905346"
+           y="0"
+           sodipodi:role="line"
+           id="tspan9">Ultrasound</tspan>
+      </text>
+    </a>
     <path
        id="path10"
        d="M 0.99628,31.89432 H -31.89015 V -31.89432 H 0.99628 Z"
@@ -664,8 +666,7 @@
     <text
        id="text16"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,479.208,313.74933)"
-	   class="fill-white hover:fill-sky-500 transition-colors duration-200 cursor-pointer"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,479.208,313.74933)"><tspan
          style="font-variant:normal;font-weight:normal;font-size:4.98132px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0 3.8107097 6.7745953 9.6787052 11.033624 12.119552 15.023661 17.947697 20.662516 22.410959 23.496887 25.165628"
          y="0"
@@ -1058,12 +1059,11 @@
        style="fill:#ecc94b;fill-opacity:1;fill-rule:nonzero;stroke:#ecc94b;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
 
-	<a href="https://djps.github.io/projects/cosserat/" target="_blank" class="summary_links">
+	<a href="https://djps.github.io/projects/cosserat/" target="_blank" class="svg-links">
 	<text
        id="text87"
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,431.94933,86.818667)"><tspan
-         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;stroke:none"
          x="0 6.1509366 11.485932 15.85256 20.219187 25.482452 28.566887 33.417698"
          y="0"
          id="tspan87">Cosserat</tspan></text> </a>
