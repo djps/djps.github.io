@@ -589,15 +589,15 @@
        d="m 75.68896,-134.79836 c 0,17.61269 -14.27748,31.89017 -31.89015,31.89017 -17.61268,0 -31.89016,-14.27748 -31.89016,-31.89017 0,-17.61267 14.27748,-31.89016 31.89016,-31.89016 17.61267,0 31.89015,14.27749 31.89015,31.89016 z"
        style="fill:#10b981;fill-opacity:1;fill-rule:nonzero;stroke:#10b981;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
+    <a href="https://djps.github.io/tags/image-guided-therapy/" target="_blank" class="svg-links not-prose">
     <text
        id="text2"
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,378.89467,407.01867)"><tspan
-         style="font-variant:normal;font-weight:normal;font-size:8.96638px;font-family:Raleway;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0 2.2236621 8.464263"
          y="0"
          sodipodi:role="line"
-         id="tspan2">IGT</tspan></text>
+         id="tspan2">IGT</tspan></text></a>
     <path
        id="path3"
        d="M 54.2331,16.57285 36.40659,71.43881 -71.4439,36.3981 -53.61739,-18.46786 Z"
@@ -698,26 +698,21 @@
        d="m 176.40631,-75.88057 c 0,9.04971 -7.33607,16.38577 -16.38579,16.38577 -9.04972,0 -16.38578,-7.33606 -16.38578,-16.38577 0,-9.04973 7.33606,-16.38579 16.38578,-16.38579 9.04972,0 16.38579,7.33606 16.38579,16.38579 z"
        style="fill:#31a881;fill-opacity:1;fill-rule:nonzero;stroke:#31a881;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
-    <a href="https://djps.github.io/tags/treatment-planning/" target="_blank" class="svg-links not-prose">
-    <text
-       id="text23"
-       xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,527.508,321.85067)"><tspan
-       style="font-size:4.98132px;"
-         x="0 2.49066 4.1095891 7.0336237 9.7285175 11.39726 15.975093 18.899128 21.778332"
-         y="0"
-         sodipodi:role="line"
-         id="tspan23">Treatment</tspan></text></a>
-    <a href="https://djps.github.io/tags/treatment-planning/" target="_blank" class="svg-links not-prose">
-    <text
-       id="text24"
-       xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,529.792,329.82)"><tspan
-         style="font-size:4.98132px;"
-         x="0 3.0734744 4.4283934 7.1432128 10.047322 12.951432 14.03736 16.941469"
-         y="0"
-         sodipodi:role="line"
-         id="tspan24">planning</tspan></text></a>
+
+    <a href="https://djps.github.io/tags/treatment-planning/" target="_blank" class="svg-links not-prose ">
+      <text
+         id="text23"
+         xml:space="preserve"
+         transform="matrix(1.3333333,0,0,1.3333333,527.508,321.85067)">
+        <tspan
+           style="font-size:4.98132px;"
+           x="0 2.49066 4.1095891 7.0336237 9.7285175 11.39726 15.975093 18.899128 21.778332 2 5.0734744 6.4283934 9.1432128 12.047322 14.951432 16.03736 18.941469"
+           y="0 0       0         0         0          0       0          0         0        6  6         6         6          6         6         6        6"
+           sodipodi:role="line"
+           id="tspan23">Treatmentplanning</tspan>
+ </text>
+</a>
+
     <path
        id="path24"
        d="M -20.98422,13.26529 -33.8837,-9.07758 9.081,-33.88258 21.98047,-11.5397 Z"
@@ -748,23 +743,13 @@
     <text
        id="text30"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,565.916,355.052)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,564.42533, 355.052)"><tspan
          style="font-size:4.98132px;"
-         x="0 3.317559 6.2415938 8.9564133 13.534246"
-         y="0"
+         x="1 4.317559 7.2415938 9.9564133 14.534246 0 1.5143213 4.4782066 6.2266502 10.804483 11.89041 14.79452"
+         y="0  0        0          0         0       6  6         6         6          6         6        6"
          sodipodi:role="line"
-         id="tspan30">Beam-</tspan></text>
+         id="tspan30">Beam-forming</tspan></text>
        </a>
-    <a href="https://djps.github.io/tags/beamforming/" target="_blank" class="svg-links not-prose">
-    <text
-       id="text31"
-       xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,564.42533,363.02267)"><tspan
-       style="font-size:4.98132px;"
-         x="0 1.5143213 4.4782066 6.2266502 10.804483 11.89041 14.79452"
-         y="0"
-         sodipodi:role="line"
-         id="tspan31">forming</tspan></text></a>
     <path
        id="path31"
        d="M -11.5397,21.98047 -33.88258,9.081 l 24.805,-42.9647 22.34287,12.89948 z"
@@ -899,7 +884,7 @@
        style="fill:#4299e1;fill-opacity:1;fill-rule:nonzero;stroke:#4299e1;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
 
-   <a href="https://djps.github.io/tags/uncertainty/" target="_blank" class="svg-links not-prose">
+   <a href="https://djps.github.io/tags/uncertainty/" target="_blank" class="not-prose svg-links">
       <text
        id="text58"
        xml:space="preserve"
@@ -1069,7 +1054,7 @@
        style="fill:#ecc94b;fill-opacity:1;fill-rule:nonzero;stroke:#ecc94b;stroke-width:1.19553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,329.78133,223.04533)" />
 
-	<a href="https://djps.github.io/projects/cosserat/" target="_blank" class="svg-links">
+	<a href="https://djps.github.io/projects/cosserat/" target="_blank" class="svg-links not-prose">
 	<text
        id="text87"
        xml:space="preserve"
