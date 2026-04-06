@@ -6,8 +6,20 @@ data-callout-metadata=""&gt;
 &lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
 &lt;/span&gt;
 &lt;div class="callout-content dark:text-neutral-300"&gt;
-&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note: Lectures&lt;/div&gt;
 &lt;div class="callout-body"&gt;&lt;p&gt;Lectures will take place in Conrad Naber Lecture Hall, Reimer Lüst Hall, at Wednesdays from 14:15&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-purple-100 dark:bg-purple-900 border-purple-500"
+data-callout="important"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-purple-600 dark:text-purple-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9 3.75h.008v.008H12z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note: Exam Dates&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;The exam will be on &lt;strong&gt;Wednesday 27 May&lt;/strong&gt; between 16:00-18:00 in ICC-East Wing, ICC-Conference Hall and ICC-Conference Room.&lt;/p&gt;
+&lt;p&gt;The resit exam is provisionally scheduled to be on &lt;strong&gt;Saturday 29 August&lt;/strong&gt; between 16:00-18:00.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="lectures"&gt;Lectures&lt;/h2&gt;
@@ -663,7 +675,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-567348291" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-147538629" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -679,7 +691,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-567348291', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-147538629', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6155,7 +6167,7 @@ with
 &lt;ul&gt;
 &lt;li&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;p&gt;The slides can be found
+&lt;/ul&gt;</description></item><item><title>Visual Ensemble Analysis with Deep Learning Prediction for Studying the Effect of Tissue Properties on Radiofrequency Ablation</title><link>https://djps.github.io/publications/gol2026vea/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/gol2026vea/</guid><description/></item><item><title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;p&gt;The slides can be found
 .&lt;/p&gt;
 &lt;p&gt;The abstract can be found &lt;a href="https://djps.github.io/abstracts/bremen/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;span style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;"&gt;github&lt;/span&gt; repository for some of the content can be found
@@ -6312,7 +6324,7 @@ which is worth reading.&lt;/p&gt;
 &lt;div class="flex justify-center "&gt;
 &lt;div class="w-full" &gt;&lt;img src="https://djps.github.io/img/pca_manual.png" alt="PCA performed manually" loading="lazy" data-zoomable /&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;</description></item><item><title>Numerical Modelling for Simulation and Planning of Focused Ultrasound Treatments</title><link>https://djps.github.io/publications/bookchapter/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/bookchapter/</guid><description/></item><item><title>Visual Ensemble Analysis with Deep Learning Prediction for Studying the Effect of Tissue Properties on Radiofrequency Ablation</title><link>https://djps.github.io/publications/gol2026vea/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/gol2026vea/</guid><description/></item><item><title>Experience</title><link>https://djps.github.io/experience/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/experience/</guid><description/></item><item><title>Taylor Series</title><link>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</guid><description>&lt;h2 id="taylor-series-expansion"&gt;Taylor Series Expansion&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>Numerical Modelling for Simulation and Planning of Focused Ultrasound Treatments</title><link>https://djps.github.io/publications/bookchapter/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/bookchapter/</guid><description/></item><item><title>Experience</title><link>https://djps.github.io/experience/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/experience/</guid><description/></item><item><title>Taylor Series</title><link>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</link><pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/gradcalclinalg24/notebooks/taylor_series/</guid><description>&lt;h2 id="taylor-series-expansion"&gt;Taylor Series Expansion&lt;/h2&gt;
 &lt;!-- &lt;a target="_blank" href="https://colab.research.google.com/github/djps/homepage/blob/main/static/ipyth/taylor_series.ipynb"&gt;
 &lt;img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/&gt;
 &lt;/a&gt;
@@ -9130,131 +9142,7 @@ Society for Thermal Medicine 2022 Annual Meeting
 &lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;: We present a numerical scheme, based on a finite-difference frequency-domain scheme, which can model the electromagnetic, thermal and dosimetric fields for continuous wave exposures on patient data. Data from segmented DICOM images is used to form a number of staggered-grids. A perfectly matched layer suppresses spurious numerical artefacts from the boundary of the domain. A novel preconditioner is constructed which significantly accelerates the computation of the electro-magnetic field. The input into the simulation is provided as the electro-magnetic field in a homogeneous medium. This can be obtained via measurements or via an analytical model, for example by modelling the probe as a dipole source in a vacuum.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: The advantage is that the scheme is fully three-dimensional, can be simulated in inhomogeneous media on large, clinically relevant, domains and can simulate multiple exposures. Having computed the electro-magnetic field for a set of material properties, strategies are presented to update electro-magnetic field as the material properties change due to temperature, dehydration or coagulation in order to reduce the duration of simulations.&lt;/p&gt;
 &lt;p&gt;Validation is performed by comparing the predicted and measured ablated volumes, while considering the sources of uncertainty for both the numerical model, such as staircasing errors, and the experimental results, such as in the identification of the ablated regions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;</description></item><item><title>MECH1010: Modelling and Analysis in Engineering I</title><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>
-&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
-data-callout="note"
-data-callout-metadata=""&gt;
-&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-&lt;div class="callout-content dark:text-neutral-300"&gt;
-&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2010.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id="integration"&gt;Integration&lt;/h2&gt;
-&lt;p&gt;Lecture notes on integration can be found
-.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-and
-.&lt;/li&gt;
-&lt;li&gt;
-and
-.&lt;/li&gt;
-&lt;li&gt;
-and
-.&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="linear-algebra"&gt;Linear Algebra&lt;/h2&gt;
-&lt;p&gt;Lecture notes on linear algebra can be found
-.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!--
-&lt;div id="chart-415796382" class="chart"&gt;&lt;/div&gt;
-&lt;script&gt;
-async function fetchChartJSON() {
-console.debug('Hugo Blox fetching chart JSON...')
-const response = await fetch('\/plotly\/vector_addition.json');
-return await response.json();
-}
-(function() {
-let a = setInterval( function() {
-if ( typeof window.Plotly === 'undefined' ) {
-console.debug('Plotly not loaded yet...')
-return;
-}
-clearInterval( a );
-fetchChartJSON().then(chart =&gt; {
-console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-415796382', chart.data, chart.layout, {responsive: true});
-});
-}, 500 );
-})();
-&lt;/script&gt;
-&lt;div id="chart-657142938" class="chart"&gt;&lt;/div&gt;
-&lt;script&gt;
-(function() {
-async function fetchChartJSON() {
-console.debug('Hugo Blox fetching chart JSON...')
-const response = await fetch('.\/charts\/plot_name.json');
-return await response.json();
-}
-let a = setInterval( function() {
-if ( typeof window.Plotly === 'undefined' ) {
-console.debug('Plotly not loaded yet...')
-return;
-}
-clearInterval( a );
-fetchChartJSON().then(chart =&gt; {
-console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-657142938', chart.data, chart.layout, {responsive: true});
-});
-}, 500 );
-})();
-&lt;/script&gt;
-This should be from the static folder:
-&lt;div id="chart-149568372" class="chart"&gt;&lt;/div&gt;
-&lt;script&gt;
-async function fetchChartJSON() {
-console.debug('Hugo Blox fetching chart JSON...')
-const response = await fetch('\/plot_name.json');
-return await response.json();
-}
-(function() {
-let a = setInterval( function() {
-if ( typeof window.Plotly === 'undefined' ) {
-console.debug('Plotly not loaded yet...')
-return;
-}
-clearInterval( a );
-fetchChartJSON().then(chart =&gt; {
-console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-149568372', chart.data, chart.layout, {responsive: true});
-});
-}, 500 );
-})();
-&lt;/script&gt;
---&gt;</description></item><item><title>Math6502: Mathematics for Engineers II</title><link>https://djps.github.io/docs/math6502/</link><pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/math6502/</guid><description>
-&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
-data-callout="note"
-data-callout-metadata=""&gt;
-&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
-&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-&lt;div class="callout-content dark:text-neutral-300"&gt;
-&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
-&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2008 and 2009.&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id="class-tests"&gt;Class Tests&lt;/h2&gt;
-&lt;p&gt;Sample tests from
-and
-.&lt;/p&gt;
-&lt;h2 id="sample-exam"&gt;Sample Exam&lt;/h2&gt;
-&lt;p&gt;Sample exam from
-.&lt;/p&gt;</description></item><item><title>Pyroelectric ultrasound sensor model: directional response</title><link>https://djps.github.io/publications/kaupinmaki2020pus/</link><pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/kaupinmaki2020pus/</guid><description/></item><item><title>Deep learning for ultrasound image formation: CUBDL evaluation framework and open datasets</title><link>https://djps.github.io/publications/hyun2021dlu/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/hyun2021dlu/</guid><description/></item><item><title>Factors for validation of measurement-based simulation</title><link>https://djps.github.io/abstracts/asa_virtual/</link><pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate><guid>https://djps.github.io/abstracts/asa_virtual/</guid><description>&lt;p&gt;In many instances of therapeutic ultrasound it is preferable to produce near-field measurement-based simulations, rather than perform direct measurements. For example simulation from near-field measurements may have lower uncertainties than direct measurements at higher pressures; the entire field can be inspected and differing material properties can be modelled rather than make repeated measurements. However, to properly validate an approach there needs to be an understanding of uncertainties in data acquisition, the limitations of the governing equations and errors from the numerical methods employed. These are not independent, and are primarily determined by a combination of three factors: duration, intensity and inhomogeneity. Criteria for characterizing each factor are presented and consequent procedures outlined.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;: A numerical scheme is presented which may allow patient-specific treatment planning to be performed for microwave ablation.&lt;/p&gt;</description></item><item><title>Pyroelectric ultrasound sensor model: directional response</title><link>https://djps.github.io/publications/kaupinmaki2020pus/</link><pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/kaupinmaki2020pus/</guid><description/></item><item><title>Deep learning for ultrasound image formation: CUBDL evaluation framework and open datasets</title><link>https://djps.github.io/publications/hyun2021dlu/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/hyun2021dlu/</guid><description/></item><item><title>Factors for validation of measurement-based simulation</title><link>https://djps.github.io/abstracts/asa_virtual/</link><pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate><guid>https://djps.github.io/abstracts/asa_virtual/</guid><description>&lt;p&gt;In many instances of therapeutic ultrasound it is preferable to produce near-field measurement-based simulations, rather than perform direct measurements. For example simulation from near-field measurements may have lower uncertainties than direct measurements at higher pressures; the entire field can be inspected and differing material properties can be modelled rather than make repeated measurements. However, to properly validate an approach there needs to be an understanding of uncertainties in data acquisition, the limitations of the governing equations and errors from the numerical methods employed. These are not independent, and are primarily determined by a combination of three factors: duration, intensity and inhomogeneity. Criteria for characterizing each factor are presented and consequent procedures outlined.&lt;/p&gt;
 &lt;p&gt;Measurements should consider burst length, positioning from transducer, spatial spacing, required resolution and averaging. From measurements, phase unwrapping and interpolation methods, pseudo-continuous wave approximations, as well as sparse and low-rank methods for data completion or identification of outliers, can be used to characterized the transducer as an initial source condition in an appropriate governing equation. This should consider transmission losses and reflections, frequency-dependent attenuation relations, shock-capturing and -fitting schemes, absorbing boundary conditions and the characterization of source terms for thermal simulations.&lt;/p&gt;</description></item><item><title>Factors for Validation of Measurement-Based Simulation</title><link>https://djps.github.io/talks/asa_virtual/</link><pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/asa_virtual/</guid><description>&lt;!-- &lt;span style="font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);"&gt; &lt;b&gt;David Sinden&lt;/b&gt;, Srinath Rajagopal, Piero Miloro, Bajram Zeqiri&lt;/span&gt;
 &lt;span class="middot-divider"&gt;&lt;/span&gt;
 &lt;span style="font-size: 14px; letter-spacing: .03em; color: rgba(0,0,0,.54);"&gt; December 8 2020 &lt;/span&gt;

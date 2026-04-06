@@ -15,7 +15,7 @@ plt.style.use('seaborn-v0_8-whitegrid')
 def draw_vector(v0, v1, ax=None):
     """Helper function to plot principal component directions"""
     ax = ax or plt.gca()
-    arrowprops=dict(arrowstyle='->', linewidth=2, shrinkA=0, shrinkB=0)
+    arrowprops=dict(arrowstyle='->', linewidth=2, shrinkA=0, shrinkB=0, alpha=0.5)
     ax.annotate('', v1, v0, arrowprops=arrowprops)
 
 # Create random data
@@ -62,6 +62,8 @@ ax2.scatter(Z[:, 0], Z[:, 1], alpha=0.2, c='tab:green')
 for length, vector in zip(explained_variance_, components_):
     v = vector * 3.0 * np.sqrt(length)
     draw_vector(mean_, mean_ + v, ax=ax2)
-ax2.axis('equal')
+#ax2.axis('equal')
+
+plt.savefig('pca.svg', backend='svg', transparent=True)
 
 plt.show()
