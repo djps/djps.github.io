@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integration | David Sinden</title><link>https://djps.github.io/tags/integration/</link><atom:link href="https://djps.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml"/><description>Integration</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>Integration</title><link>https://djps.github.io/tags/integration/</link></image><item><title/><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>&lt;div class="-mx-6 md:-mx-12 mb-8 relative h-64 overflow-hidden"&gt;
+&lt;img src="roberts.png" alt="Roberts Building 508"
+class="not-prose w-full h-full object-cover opacity-90"
+style="margin-top:0; margin-bottom:0; display:block;"&gt;
+&lt;div class="absolute inset-0"&gt;&lt;/div&gt;
+&lt;div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"&gt;
+&lt;h1 class="text-4xl font-bold m-0"&gt;MECH1010: Modelling and Analysis in Engineering I&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout flex px-4 py-3 mb-6 rounded-md border-l-4 bg-blue-100 dark:bg-blue-900 border-blue-500"
+data-callout="note"
+data-callout-metadata=""&gt;
+&lt;span class="callout-icon pr-3 pt-1 text-blue-600 dark:text-blue-300"&gt;
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8l.8-2.685a4.5 4.5 0 0 1 1.13-1.897zm0 0L19.5 7.125"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
+&lt;div class="callout-content dark:text-neutral-300"&gt;
+&lt;div class="callout-title font-semibold mb-1"&gt;Note&lt;/div&gt;
+&lt;div class="callout-body"&gt;&lt;p&gt;This course was delivered in Autumn 2010.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="integration"&gt;Integration&lt;/h2&gt;
+&lt;p&gt;Lecture notes on integration can be found
+.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+and
+.&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="linear-algebra"&gt;Linear Algebra&lt;/h2&gt;
+&lt;p&gt;Lecture notes on linear algebra can be found
+.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+&lt;div id="chart-974632851" class="chart"&gt;&lt;/div&gt;
+&lt;script&gt;
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('\/plotly\/vector_addition.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-974632851', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script&gt;
+&lt;div id="chart-928564317" class="chart"&gt;&lt;/div&gt;
+&lt;script&gt;
+(function() {
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('.\/charts\/plot_name.json');
+return await response.json();
+}
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-928564317', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script&gt;
+This should be from the static folder:
+&lt;div id="chart-519846723" class="chart"&gt;&lt;/div&gt;
+&lt;script&gt;
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('\/plot_name.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart =&gt; {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-519846723', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script&gt;
+--&gt;</description></item></channel></rss>

@@ -840,9 +840,10 @@ $$&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code c
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;that is:&lt;/p&gt;
 $$
 \begin{align*}
-E = \left( \dfrac{10 - 2\sqrt{2}}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 \\
-&amp; = \dfrac{2}{7} \left( 27 - 10 \sqrt{2} \right)
+E &amp; = \left( \dfrac{10 - 2\sqrt{2}}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 \\
+&amp; = \dfrac{2}{7} \left( 27 - 10 \sqrt{2} \right) \\
 &amp; = 3.673675536076871
+\end{align*}
 $$</description></item><item><title>Quadrature and Trapezium Rule</title><link>https://djps.github.io/docs/numericalmethods/notebooks/integrals/</link><pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/integrals/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; January 11, 2024 &amp;middot;

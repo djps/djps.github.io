@@ -675,7 +675,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-234681597" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-851437962" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -691,7 +691,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-234681597', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-851437962', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -6167,7 +6167,7 @@ with
 &lt;ul&gt;
 &lt;li&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Visual Ensemble Analysis with Deep Learning Prediction for Studying the Effect of Tissue Properties on Radiofrequency Ablation</title><link>https://djps.github.io/publications/gol2026vea/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/gol2026vea/</guid><description/></item><item><title>Optimizing Microwave Ablation planning with the Ablation Success Ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;p&gt;The slides can be found
+&lt;/ul&gt;</description></item><item><title>Visual ensemble analysis with deep learning prediction for studying the effect of tissue properties on radiofrequency ablation</title><link>https://djps.github.io/publications/gol2026vea/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/gol2026vea/</guid><description/></item><item><title>Optimizing microwave ablation planning with the ablation success ratio</title><link>https://djps.github.io/publications/neizert2025oma/</link><pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2025oma/</guid><description/></item><item><title>Nonlinear Dynamics of Microbubbles in Tissue</title><link>https://djps.github.io/talks/bremen/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>https://djps.github.io/talks/bremen/</guid><description>&lt;p&gt;The slides can be found
 .&lt;/p&gt;
 &lt;p&gt;The abstract can be found &lt;a href="https://djps.github.io/abstracts/bremen/"&gt;[here]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;span style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;"&gt;github&lt;/span&gt; repository for some of the content can be found
@@ -7239,9 +7239,10 @@ $$&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code c
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;that is:&lt;/p&gt;
 $$
 \begin{align*}
-E = \left( \dfrac{10 - 2\sqrt{2}}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 \\
-&amp; = \dfrac{2}{7} \left( 27 - 10 \sqrt{2} \right)
+E &amp; = \left( \dfrac{10 - 2\sqrt{2}}{7} \right)^2 + \left( \dfrac{4-10\sqrt{2}}{7} \right)^2 + \left( \dfrac{5 \sqrt{2} - 2}{7} \right)^2 \\
+&amp; = \dfrac{2}{7} \left( 27 - 10 \sqrt{2} \right) \\
 &amp; = 3.673675536076871
+\end{align*}
 $$</description></item><item><title>Quadrature and Trapezium Rule</title><link>https://djps.github.io/docs/numericalmethods/notebooks/integrals/</link><pubDate>Sun, 03 Mar 2024 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalmethods/notebooks/integrals/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; January 11, 2024 &amp;middot;
@@ -8160,7 +8161,8 @@ finite elements for biological tissue (C++, MIT,
 &lt;ul&gt;
 &lt;li&gt;
 - Discord messaging server on numerical software.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>A novel concept of transperineal focused ultrasound transducer for prostate cancer local deep hyperthermia treatments</title><link>https://djps.github.io/publications/guillemin2022nct/</link><pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/guillemin2022nct/</guid><description/></item><item><title>Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model</title><link>https://djps.github.io/publications/neizert2022tav/</link><pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2022tav/</guid><description/></item><item><title>Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis</title><link>https://djps.github.io/publications/heimes2022set/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/heimes2022set/</guid><description/></item><item><title>Annual Meeting of the Society for Thermal Medicine 2022</title><link>https://djps.github.io/blog/stm/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/stm/</guid><description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>A novel concept of transperineal focused ultrasound transducer for prostate cancer local deep hyperthermia treatments</title><link>https://djps.github.io/publications/guillemin2022nct/</link><pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/guillemin2022nct/</guid><description>&lt;p&gt;This article belongs to the Collection
+&lt;/p&gt;</description></item><item><title>Three-dimensional assessment of vascular cooling effects on hepatic microwave ablation in a standardized ex vivo model</title><link>https://djps.github.io/publications/neizert2022tav/</link><pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/neizert2022tav/</guid><description/></item><item><title>Studying the effect of tissue properties on radiofrequency ablation by visual simulation ensemble analysis</title><link>https://djps.github.io/publications/heimes2022set/</link><pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/publications/heimes2022set/</guid><description/></item><item><title>Annual Meeting of the Society for Thermal Medicine 2022</title><link>https://djps.github.io/blog/stm/</link><pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/stm/</guid><description>&lt;p&gt;Presentation at virtual conference on solving the curl-curl form of Maxwell&amp;rsquo;s equations for needle-based microwave ablations based on segmented patient data.&lt;/p&gt;
 &lt;p&gt;The conference site, with details on talks and schedules, can be found
 .&lt;/p&gt;
 &lt;p&gt;The conference homepage can be found
