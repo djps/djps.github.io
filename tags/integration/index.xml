@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integration | David Sinden</title><link>https://djps.github.io/tags/integration/</link><atom:link href="https://djps.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml"/><description>Integration</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_93d9d9bbe65c67cd.png</url><title>Integration</title><link>https://djps.github.io/tags/integration/</link></image><item><title/><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>&lt;div class="-mx-6 md:-mx-12 mb-8 relative h-64 overflow-hidden"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integration | David Sinden</title><link>https://djps.github.io/tags/integration/</link><atom:link href="https://djps.github.io/tags/integration/index.xml" rel="self" type="application/rss+xml"/><description>Integration</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><image><url>https://djps.github.io/media/logo_hu_57172fd1f977838b.png</url><title>Integration</title><link>https://djps.github.io/tags/integration/</link></image><item><title/><link>https://djps.github.io/docs/mech1010/</link><pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/mech1010/</guid><description>&lt;div class="-mx-6 md:-mx-12 mb-8 relative h-64 overflow-hidden"&gt;
 &lt;img src="roberts.png" alt="Roberts Building 508"
 class="not-prose w-full h-full object-cover opacity-90"
 style="margin-top:0; margin-bottom:0; display:block;"&gt;
@@ -48,7 +48,7 @@ and
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;!--
-&lt;div id="chart-519236847" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-264371895" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -64,12 +64,12 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-519236847', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-264371895', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
-&lt;div id="chart-247916385" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-412765839" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 (function() {
 async function fetchChartJSON() {
@@ -85,13 +85,13 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-247916385', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-412765839', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
 &lt;/script&gt;
 This should be from the static folder:
-&lt;div id="chart-438195762" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-374952618" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -107,7 +107,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-438195762', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-374952618', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
