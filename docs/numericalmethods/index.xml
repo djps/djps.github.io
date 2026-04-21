@@ -99,8 +99,8 @@ of this module description to the extent that they can solve standard text-book 
 &lt;li&gt;Lagrange interpolation&lt;/li&gt;
 &lt;li&gt;Newton interpolation&lt;/li&gt;
 &lt;li&gt;piecewise interpolation&lt;/li&gt;
-&lt;li&gt;spline interpolation&lt;/li&gt;
-&lt;li&gt;B-splines&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;spline interpolation&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;B-splines&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;least squares approximation&lt;/li&gt;
 &lt;li&gt;difference schemes&lt;/li&gt;
 &lt;li&gt;Richardson extrapolation&lt;/li&gt;
@@ -179,7 +179,7 @@ pan: false
 - Polynomial
 - Lagrange
 - Newton
-- B-splines
+- ~~B-splines~~
 - [Integration](/docs/numericalmethods/part2/integration/#numerical-integration)
 - Simpson
 - Trapezium

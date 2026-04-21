@@ -99,8 +99,8 @@ of this module description to the extent that they can solve standard text-book 
 &lt;li&gt;Lagrange interpolation&lt;/li&gt;
 &lt;li&gt;Newton interpolation&lt;/li&gt;
 &lt;li&gt;piecewise interpolation&lt;/li&gt;
-&lt;li&gt;spline interpolation&lt;/li&gt;
-&lt;li&gt;B-splines&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;spline interpolation&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;B-splines&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;least squares approximation&lt;/li&gt;
 &lt;li&gt;difference schemes&lt;/li&gt;
 &lt;li&gt;Richardson extrapolation&lt;/li&gt;
@@ -179,7 +179,7 @@ pan: false
 - Polynomial
 - Lagrange
 - Newton
-- B-splines
+- ~~B-splines~~
 - [Integration](/docs/numericalmethods/part2/integration/#numerical-integration)
 - Simpson
 - Trapezium
@@ -675,7 +675,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-924513876" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-958324176" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -691,7 +691,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-924513876', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-958324176', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
