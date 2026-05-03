@@ -266,6 +266,8 @@ that other people could follow, and you could make maps. &lt;br&gt;&lt;/p&gt;
 benefits of the journey itself. You just get right to the destination, which
 actually was only just a part of the value of solving these problems.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p class="text-right"&gt;From the article &lt;a href="https://www.theatlantic.com/technology/2026/02/ai-math-terrance-tao/686107/" class="underline font-medium text-[#101828] dark:text-gray-400 group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors"&gt;"The Edge of Mathematics"&lt;/a&gt;, published in &lt;i&gt;The Atlantic&lt;/i&gt; on February 24, 2026 by Matteo Wong.
+&lt;/p&gt;
 &lt;!--
 https://towardsdatascience.com/numerical-integration-romberg-integration-3f54002ab538
 https://francisbach.com/richardson-extrapolation/
@@ -675,7 +677,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-958324176" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-651897423" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -691,7 +693,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-958324176', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-651897423', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
