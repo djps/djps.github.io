@@ -677,7 +677,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-651897423" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-241976358" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -693,7 +693,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-651897423', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-241976358', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -7577,7 +7577,7 @@ We consider the equilibrium equations of a conducting rod in a uniform magnetic 
 .&lt;/p&gt;
 &lt;p&gt;There were a number of challenges in writing this, mainly relating to the breadth of the possible applications and, at the same time introducing a number of technical concepts which needed to be defined. Many of the subject areas could have been lecture courses in their own right.&lt;/p&gt;
 &lt;p&gt;The abstract can be found &lt;a href="https://djps.github.io/abstracts/lyon/"&gt;[here]&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The slides will be uploaded soon.&lt;/p&gt;</description></item><item><title>Awesome List of Scientific Computing Resources</title><link>https://djps.github.io/blog/awesome-scientific-computing/</link><pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/awesome-scientific-computing/</guid><description>
+&lt;p&gt;The slides are available on request.&lt;/p&gt;</description></item><item><title>Awesome List of Scientific Computing Resources</title><link>https://djps.github.io/blog/awesome-scientific-computing/</link><pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate><guid>https://djps.github.io/blog/awesome-scientific-computing/</guid><description>
 &lt;blockquote class="border-l-4 border-neutral-300 dark:border-neutral-600 pl-4 italic text-neutral-600 dark:text-neutral-400 my-6"&gt;
 &lt;p&gt;Useful resources for scientific computing and numerical analysis, with a selection of ultrasound and medical tools&lt;/p&gt;
 &lt;/blockquote&gt;
