@@ -677,7 +677,7 @@ $$
 &lt;p&gt;The vector whose every entry is zero is called a zero vector.&lt;/p&gt;
 &lt;p&gt;But note that if $\boldsymbol{v} = \boldsymbol{0} \in \mathbb{R}^2$ and $\boldsymbol{u} = \boldsymbol{0} \in \mathbb{R}^3$, then $\boldsymbol{v} \neq \boldsymbol{u}$, nor can arithmetic operations, such as addition or subtraction be performed.&lt;/p&gt;
 &lt;!--
-&lt;div id="chart-241976358" class="chart"&gt;&lt;/div&gt;
+&lt;div id="chart-359124786" class="chart"&gt;&lt;/div&gt;
 &lt;script&gt;
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -693,7 +693,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart =&gt; {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-241976358', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-359124786', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -5229,7 +5229,14 @@ for two suitable positive constants $C_{1}$ and $C_{2}$.&lt;/p&gt;
 &lt;/div&gt;</description></item><item><title>EHMA</title><link>https://djps.github.io/projects/ehma/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>https://djps.github.io/projects/ehma/</guid><description>&lt;h2 id="enhancing-hepatic-microwave-ablation"&gt;Enhancing Hepatic Microwave Ablation&lt;/h2&gt;
 &lt;!--
 Details.
-https://gepris.dfg.de/gepris/projekt/261433767?language=en --&gt;</description></item><item><title>Integration</title><link>https://djps.github.io/docs/numericalanalysis22/part2/integration/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalanalysis22/part2/integration/</guid><description>&lt;!--
+https://gepris.dfg.de/gepris/projekt/261433767?language=en
+Journal publications can be found here:
+* [Integrability of a conducting elastic rod in a magnetic field](/publications/neizert2026ens/)
+* [Integrability of a conducting elastic rod in a magnetic field](/publications/neizert2025oma/)
+* [Spatial chaos of an extensible conducting rod in a uniform magnetic field](/publications/neizert2022tav/)
+*
+*
+--&gt;</description></item><item><title>Integration</title><link>https://djps.github.io/docs/numericalanalysis22/part2/integration/</link><pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate><guid>https://djps.github.io/docs/numericalanalysis22/part2/integration/</guid><description>&lt;!--
 &lt;p style="font-size: 14px; letter-spacing: 0.03em; color: rgb(0,0,0,0.54);"&gt; &lt;span style="font-weight: 700;"&gt; David Sinden &lt;/span&gt; &amp;middot;
 &lt;i class="far fa-calendar" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; March 11, 2022 &amp;middot;
 &lt;i class="far fa-clock" aria-hidden="true" style="color: rgb(0,0,0,0.54);"&gt;&lt;/i&gt; 45 minute read &lt;/p&gt;
