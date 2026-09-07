@@ -307,6 +307,9 @@ of Nico Schlömer&amp;rsquo;s github repo, which can be found
 &lt;li&gt;
 - A fast, interactive viewer for multi-dimensional images (Python, BSD-3,
 )&lt;/li&gt;
+&lt;li&gt;
+- A fast, interactive 2D viewer. Written in Rust for speed (Rust/Python, Appache-2,
+).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id="medical-image-computing"&gt;Medical image computing&lt;/h2&gt;
@@ -428,14 +431,14 @@ finite elements for biological tissue (C++, MIT,
 &lt;li&gt;
 - Solves Westervelt equation by computing multiple reflections (Matlab, GNU,
 )&lt;/li&gt;
-&lt;li&gt;AberSim - No longer maintained/publically available.&lt;/li&gt;
-&lt;li&gt;Bergen - No longer maintained/publically available.&lt;/li&gt;
+&lt;li&gt;AberSim - No longer maintained/publicly available.&lt;/li&gt;
+&lt;li&gt;Bergen - No longer maintained/publicly available.&lt;/li&gt;
 &lt;li&gt;
 - Diagnostic simulator (Matlab, MIT)&lt;/li&gt;
 &lt;li&gt;
 - 3D nonlinear continuous wave simulator (Matlab/Fortran)&lt;/li&gt;
 &lt;li&gt;
-- modelling and optimisation framework for medical ultrasound (python, AGPL-3,
+- Modelling and optimisation framework for medical ultrasound (python, AGPL-3,
 )&lt;/li&gt;
 &lt;li&gt;
 - FDTD of viscoelastic equation using a staggered grid arrangement with support for GPU and CPU backends (C++/OpenCL, BSD-3, GitHub)&lt;/li&gt;
@@ -447,10 +450,14 @@ finite elements for biological tissue (C++, MIT,
 (C++, BSD,
 )&lt;/li&gt;
 &lt;li&gt;
-- finite-difference time-domain computations of the elastodynamic equations in two or three-dimensions (Matlab, GPL)&lt;/li&gt;
+- Finite-difference time-domain computations of the elastodynamic equations in two or three-dimensions (Matlab, GPL)&lt;/li&gt;
 &lt;li&gt;
-- rovides support for transcranial focused ultrasound stimulation, along with comprehensive documentation, API flexibility, and 2D/3D visualizations (python, Apache,
+- Provides support for transcranial focused ultrasound stimulation, along with comprehensive documentation, API flexibility, and 2D/3D visualizations (python, Apache,
 )&lt;/li&gt;
+&lt;li&gt;
+- Ultrasound wave propagation simulation with heterogeneous power law attenuation modelling capabilities (Python/Cuda/C, LGPL-3, GitHub)&lt;/li&gt;
+&lt;li&gt;
+- Multi-gpu acoustic and elastic scattering (Python, MIT, GitHub)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="physics-informed-neural-networks"&gt;Physics-informed neural networks&lt;/h2&gt;
 &lt;ul&gt;
