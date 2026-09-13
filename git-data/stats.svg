@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">David Sinden&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 0, Total PRs: 47, Total Issues: 43, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 0, Total PRs: 47, Total Issues: 43, Contributed to (last year): 5</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -78,6 +78,7 @@
     }
   
   
+          
 
           
       /* Animations */
@@ -102,9 +103,15 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
@@ -222,7 +229,7 @@
         x="224.01"
         y="12.5"
         data-testid="contribs"
-      >6</text>
+      >5</text>
     </g>
   </g>
     </svg>
